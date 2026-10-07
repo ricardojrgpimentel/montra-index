@@ -24,6 +24,7 @@ operar, nem conta para criar.
    │  1. verifica a assinatura do índice com a chave no APK       │
    │  2. mostra a lista, com cache em disco e snapshot offline    │
    │  3. ao instalar: descarrega → sha256 → certificado → instala │
+   │     (em primeiro plano, com progresso na barra de notificações) │
    └──────────────────────────────────────────────────────────────┘
 ```
 
