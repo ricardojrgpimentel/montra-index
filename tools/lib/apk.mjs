@@ -166,7 +166,10 @@ export async function inspectApk(apkPath, { tools } = {}) {
       info.packageName = val(/name='([^']+)'/);
       info.versionCode = Number(val(/versionCode='([^']+)'/)) || null;
       info.versionName = val(/versionName='([^']*)'/) ?? null;
-    } else if (line.startsWith("sdkVersion:")) {
+    } else if (line.startsWith("minSdkVersion:") || line.startsWith("sdkVersion:")) {
+      // build-tools novas imprimem "minSdkVersion:", antigas "sdkVersion:".
+      // Aceitar as duas: sem isto o minSdk fica nulo em todo o índice, e o
+      // cliente deixa de conseguir avisar que uma app não corre no aparelho.
       info.minSdk = Number(val(/'([^']+)'/)) || null;
     } else if (line.startsWith("targetSdkVersion:")) {
       info.targetSdk = Number(val(/'([^']+)'/)) || null;
