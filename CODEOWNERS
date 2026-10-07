@@ -13,3 +13,7 @@
 # o próprio índice publicado
 /index.json       @ricardojrgpimentel
 /index.json.sig   @ricardojrgpimentel
+
+# o CI que recebe a chave de assinatura: é o ficheiro mais sensível do repositório,
+# porque quem o alterar decide o que corre com a chave no ambiente.
+/.github/         @ricardojrgpimentel

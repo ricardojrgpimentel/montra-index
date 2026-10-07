@@ -1,0 +1,19 @@
+version: 2
+
+# As actions dos workflows estão presas ao commit exacto, não a uma tag (ver a nota
+# no topo de cada workflow). Sem isto os pins envelhecem durante meses e alguém acaba
+# por os trocar de volta por uma tag para "limpar" — que é precisamente o que os
+# pins existem para evitar.
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "chore(actions)"
+    # Actualizações de rotina num PR só, para a revisão ser sobre uma decisão e não
+    # sobre oito. Uma subida de major vem separada, porque essa muda comportamento.
+    groups:
+      actions-menores:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
