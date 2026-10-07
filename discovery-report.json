@@ -1,29 +1,82 @@
 {
-  "generatedAt": "2026-10-07T17:05:17.658Z",
+  "generatedAt": "2026-10-07T17:06:55.163Z",
   "candidates": [
     {
-      "repo": "jameskokoska/Cashew",
-      "stars": 4688,
+      "repo": "AAswordman/Operit",
+      "stars": 8479,
       "archived": false,
-      "pushed": "2026-03-09",
-      "license": "GPL-3.0",
-      "description": "💸 An app created to help users manage a budget and purchases",
-      "homepage": "https://cashewapp.web.app/",
+      "pushed": "2026-10-05",
+      "license": "LGPL-3.0",
+      "description": "The most powerful AI agent and AI chat software on Android/Operit是一款Android上能力最为强大、发展最久的AI Agent",
+      "homepage": "https://operit.app",
       "releases": 20,
-      "downloads": 20795,
+      "downloads": 356980,
       "assetPattern": "app-release.apk",
       "abiAssets": null,
       "assetNames": [
         "app-release.apk"
       ],
-      "assetSize": 42509732,
-      "apkAssetUrl": "https://github.com/jameskokoska/Cashew/releases/download/5.3.4%2B396/app-release.apk",
-      "tag": "5.3.4+396",
+      "assetSize": 404265417,
+      "apkAssetUrl": "https://github.com/AAswordman/Operit/releases/download/v1.12.2/app-release.apk",
+      "tag": "v1.12.2",
       "prerelease": false,
       "verdict": "candidata",
       "reasons": [],
       "onlyDebugBuilds": false,
-      "play": null
+      "packageName": "com.ai.assistance.operit",
+      "versionCode": 51,
+      "versionName": "1.12.2",
+      "minSdk": 26,
+      "targetSdk": 34,
+      "nativeAbis": [
+        "arm64-v8a"
+      ],
+      "signingCertSha256": "70:f2:6f:d7:1f:fd:15:18:8d:a1:90:95:c5:11:af:59:5b:dd:87:23:28:d5:a1:a4:9d:69:84:9a:f3:eb:0d:0a",
+      "size": 404265417,
+      "play": {
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=com.ai.assistance.operit&hl=en&gl=US"
+      }
+    },
+    {
+      "repo": "PimpinPumpkin/Vela",
+      "stars": 809,
+      "archived": false,
+      "pushed": "2026-10-07",
+      "license": "GPL-3.0",
+      "description": "Degoogled maps & turn-by-turn navigation for Android - MapLibre + Overture POI, no Google Play Services",
+      "homepage": "https://pimpinpumpkin.github.io/Vela/",
+      "releases": 20,
+      "downloads": 8197,
+      "assetPattern": "vela-maps-v0.4.1912.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "vela-maps-v0.4.1912.apk"
+      ],
+      "assetSize": 114664403,
+      "apkAssetUrl": "https://github.com/PimpinPumpkin/Vela/releases/download/v0.4.1912/vela-maps-v0.4.1912.apk",
+      "tag": "v0.4.1912",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "app.vela",
+      "versionCode": 39120,
+      "versionName": "0.4.1912",
+      "minSdk": 26,
+      "targetSdk": 35,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "signingCertSha256": "29:93:8b:48:58:06:3e:42:e6:77:ff:95:c9:01:cd:48:24:8a:7f:03:2a:3a:e8:5f:9b:9e:56:17:56:8b:0d:36",
+      "size": 114664403,
+      "play": {
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=app.vela&hl=en&gl=US"
+      }
     },
     {
       "repo": "tema6120/ForgetMeNot",
@@ -47,7 +100,248 @@
       "verdict": "candidata",
       "reasons": [],
       "onlyDebugBuilds": false,
-      "play": null
+      "packageName": "com.odnovolov.forgetmenot",
+      "versionCode": 18,
+      "versionName": "1.9.0",
+      "minSdk": 21,
+      "targetSdk": 30,
+      "nativeAbis": [],
+      "signingCertSha256": "b8:06:29:ec:64:03:c7:99:ac:39:dc:d1:7d:c2:79:12:63:85:c5:81:c3:45:3b:9a:95:12:78:3f:e2:f5:dc:11",
+      "size": 5131380,
+      "play": {
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=com.odnovolov.forgetmenot&hl=en&gl=US"
+      }
+    },
+    {
+      "repo": "InlitX/GymMane",
+      "stars": 812,
+      "archived": false,
+      "pushed": "2026-10-05",
+      "license": "GPL-3.0",
+      "description": " Offline gym log for Android. No account, no ads, no internet.",
+      "homepage": "https://inlitx.github.io/GymMane/",
+      "releases": 5,
+      "downloads": 1531,
+      "assetPattern": null,
+      "abiAssets": {
+        "arm64-v8a": "GymMane-arm64-v8a.apk",
+        "armeabi-v7a": "GymMane-armeabi-v7a.apk",
+        "x86_64": "GymMane-x86_64.apk"
+      },
+      "assetNames": [
+        "GymMane-arm64-v8a.apk",
+        "GymMane-armeabi-v7a.apk",
+        "GymMane-x86_64.apk"
+      ],
+      "assetSize": 38929671,
+      "apkAssetUrl": "https://github.com/InlitX/GymMane/releases/download/v1.4.0/GymMane-x86_64.apk",
+      "tag": "v1.4.0",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "com.gymmane.app",
+      "versionCode": 53,
+      "versionName": "1.4.0",
+      "minSdk": 24,
+      "targetSdk": 36,
+      "nativeAbis": [
+        "x86_64"
+      ],
+      "signingCertSha256": "3b:c3:a9:b2:f6:50:ca:20:8c:6c:84:d5:2c:1a:9c:bd:6e:67:82:e6:90:fa:2e:8f:30:64:80:a4:c9:ca:a0:95",
+      "size": 38929671,
+      "play": {
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=com.gymmane.app&hl=en&gl=US"
+      }
+    },
+    {
+      "repo": "jameskokoska/Cashew",
+      "stars": 4688,
+      "archived": false,
+      "pushed": "2026-03-09",
+      "license": "GPL-3.0",
+      "description": "💸 An app created to help users manage a budget and purchases",
+      "homepage": "https://cashewapp.web.app/",
+      "releases": 20,
+      "downloads": 20795,
+      "assetPattern": "app-release.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "app-release.apk"
+      ],
+      "assetSize": 42509732,
+      "apkAssetUrl": "https://github.com/jameskokoska/Cashew/releases/download/5.3.4%2B396/app-release.apk",
+      "tag": "5.3.4+396",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "com.budget.tracker_app",
+      "versionCode": 396,
+      "versionName": "5.3.4",
+      "minSdk": 19,
+      "targetSdk": 33,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "signingCertSha256": "da:fb:b7:b4:4d:19:6d:98:0c:b1:49:f8:6c:7b:38:b4:d0:5d:e4:96:0e:1a:37:3d:89:27:ae:56:3a:77:9a:b6",
+      "size": 42509732,
+      "play": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=com.budget.tracker_app&hl=en&gl=US",
+        "playName": "Cashew—Expense Budget Tracker",
+        "playAuthor": "Dapper App Developer"
+      }
+    },
+    {
+      "repo": "kylecorry31/Trail-Sense",
+      "stars": 2920,
+      "archived": false,
+      "pushed": "2026-10-05",
+      "license": "MIT",
+      "description": "An Android app that uses your phone's sensors to assist with wilderness treks or survival situations.",
+      "homepage": "https://kylecorry.com/Trail-Sense/",
+      "releases": 20,
+      "downloads": 14140,
+      "assetPattern": "Trail-Sense-8.2.0-release.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "Trail-Sense-8.2.0-release.apk"
+      ],
+      "assetSize": 13288415,
+      "apkAssetUrl": "https://github.com/kylecorry31/Trail-Sense/releases/download/8.2.0/Trail-Sense-8.2.0-release.apk",
+      "tag": "8.2.0",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "com.kylecorry.trail_sense",
+      "versionCode": 148,
+      "versionName": "8.2.0",
+      "minSdk": 23,
+      "targetSdk": 37,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "signingCertSha256": "d3:b7:cb:bc:63:3f:7c:1b:e2:ca:a2:f7:5f:b0:72:ee:9b:40:fd:10:fa:af:96:42:69:2b:27:c4:af:5e:c4:a7",
+      "size": 13288415,
+      "play": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=com.kylecorry.trail_sense&hl=en&gl=US",
+        "playName": "Trail Sense",
+        "playAuthor": "Trail Sense"
+      }
+    },
+    {
+      "repo": "ankidroid/Anki-Android",
+      "stars": 11955,
+      "archived": false,
+      "pushed": "2026-10-07",
+      "license": "GPL-3.0",
+      "description": "AnkiDroid: Anki flashcards on Android. Your secret trick to achieve superhuman information retention.",
+      "homepage": "",
+      "releases": 20,
+      "downloads": 3900,
+      "assetPattern": null,
+      "abiAssets": {
+        "arm64-v8a": "AnkiDroid-2.25.1-arm64-v8a.apk",
+        "x86": "variant-abi-AnkiDroid-2.25.1-x86.apk",
+        "x86_64": "variant-abi-AnkiDroid-2.25.1-x86_64.apk",
+        "armeabi-v7a": "variant-abi-AnkiDroid-2.25.1-armeabi-v7a.apk",
+        "universal": "AnkiDroid-*-full-universal.apk"
+      },
+      "assetNames": [
+        "AnkiDroid-2.25.1-arm64-v8a.apk",
+        "variant-abi-AnkiDroid-2.25.1-x86.apk",
+        "variant-abi-AnkiDroid-2.25.1-x86_64.apk",
+        "variant-abi-AnkiDroid-2.25.1-armeabi-v7a.apk",
+        "AnkiDroid-2.25.1-full-universal.apk",
+        "dev-AnkiDroid-2.25.1-amazon-universal.apk",
+        "dev-AnkiDroid-2.25.1-play-universal.apk",
+        "z-AnkiDroid-2.25.1-full-universal-nominify.apk",
+        "AnkiDroid-2.25.1.parallel.A.apk",
+        "AnkiDroid-2.25.1.parallel.B.apk",
+        "AnkiDroid-2.25.1.parallel.C.apk",
+        "AnkiDroid-2.25.1.parallel.D.apk",
+        "AnkiDroid-2.25.1.parallel.E.apk"
+      ],
+      "assetSize": 111758580,
+      "apkAssetUrl": "https://github.com/ankidroid/Anki-Android/releases/download/v2.25.1/AnkiDroid-2.25.1-full-universal.apk",
+      "tag": "v2.25.1",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [
+        "9 variantes para universal: AnkiDroid-2.25.1-full-universal.apk, dev-AnkiDroid-2.25.1-amazon-universal.apk, dev-AnkiDroid-2.25.1-play-universal.apk, z-AnkiDroid-2.25.1-full-universal-nominify.apk, AnkiDroid-2.25.1.parallel.A.apk, AnkiDroid-2.25.1.parallel.B.apk, AnkiDroid-2.25.1.parallel.C.apk, AnkiDroid-2.25.1.parallel.D.apk, AnkiDroid-2.25.1.parallel.E.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico"
+      ],
+      "onlyDebugBuilds": false,
+      "packageName": "com.ichi2.anki",
+      "versionCode": 22501300,
+      "versionName": "2.25.1",
+      "minSdk": 24,
+      "targetSdk": 36,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "signingCertSha256": "20:71:53:4f:0f:4b:5e:54:ae:95:2d:d2:75:d7:0d:a6:e3:45:9e:e6:99:09:d2:ab:1b:48:43:c4:c5:b2:1a:45",
+      "size": 111758580,
+      "play": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=en&gl=US",
+        "playName": "AnkiDroid Flashcards",
+        "playAuthor": "AnkiDroid Open Source Team"
+      }
+    },
+    {
+      "repo": "simonoppowa/OpenNutriTracker",
+      "stars": 2632,
+      "archived": false,
+      "pushed": "2026-10-07",
+      "license": "GPL-3.0",
+      "description": "🍴 OpenNutriTracker is a free and open source calorie tracker with a focus on simplicity and privacy.",
+      "homepage": "",
+      "releases": 20,
+      "downloads": 2013,
+      "assetPattern": "app-release.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "app-release.apk"
+      ],
+      "assetSize": 104738899,
+      "apkAssetUrl": "https://github.com/simonoppowa/OpenNutriTracker/releases/download/v2.4.0/app-release.apk",
+      "tag": "v2.4.0",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "com.opennutritracker.ont.opennutritracker",
+      "versionCode": 66,
+      "versionName": "2.4.0",
+      "minSdk": 26,
+      "targetSdk": 36,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "signingCertSha256": "84:e8:60:74:ec:7e:da:bb:10:f2:01:79:86:dd:f0:9e:53:1c:af:7a:73:08:0a:c1:17:2b:80:c4:9c:62:08:27",
+      "size": 104738899,
+      "play": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=com.opennutritracker.ont.opennutritracker&hl=en&gl=US",
+        "playName": "OpenNutriTracker",
+        "playAuthor": "simonO"
+      }
     },
     {
       "repo": "Pool-Of-Tears/GreenStash",
@@ -71,7 +365,25 @@
       "verdict": "candidata",
       "reasons": [],
       "onlyDebugBuilds": false,
-      "play": null
+      "packageName": "com.starry.greenstash",
+      "versionCode": 440,
+      "versionName": "4.4.0",
+      "minSdk": 24,
+      "targetSdk": 37,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "signingCertSha256": "5d:fe:06:da:0f:e3:b0:81:3f:3f:3d:c5:30:56:99:c2:db:b9:df:db:ab:13:49:da:7c:41:c5:9d:2f:cf:31:9c",
+      "size": 7207888,
+      "play": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=com.starry.greenstash&hl=en&gl=US",
+        "playName": "GreenStash: Track Your Savings",
+        "playAuthor": "Pool-Of-Tears"
+      }
     }
   ]
 }

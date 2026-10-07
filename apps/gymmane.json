@@ -1,0 +1,45 @@
+{
+  "id": "gymmane",
+  "name": "GymMane",
+  "summary": "Registo de ginásio offline: escolhes os músculos, registas as séries e vês a progressão",
+  "description": {
+    "en": "An offline gym log. You tap the muscles you want to train, log your sets during the session, and it keeps the history and the progression per exercise. The screens are the phone's own: today, body map, live session, progress, history, library and routines.",
+    "pt": "Registo de treino que funciona sem rede. Tocas nos músculos que queres treinar, registas as séries durante a sessão, e a app guarda o histórico e a progressão por exercício. Os ecrãs são os do telemóvel: hoje, mapa corporal, sessão em curso, progresso, histórico, biblioteca e rotinas."
+  },
+  "packageName": "com.gymmane.app",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/InlitX/GymMane",
+  "author": "InlitX",
+  "categories": [
+    "health"
+  ],
+  "tags": [
+    "ginasio",
+    "treino",
+    "saude",
+    "offline",
+    "sem-conta"
+  ],
+  "icon": {
+    "repo": "InlitX/GymMane",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "InlitX/GymMane",
+    "abiAssets": {
+      "arm64-v8a": "GymMane-arm64-v8a.apk",
+      "armeabi-v7a": "GymMane-armeabi-v7a.apk",
+      "x86_64": "GymMane-x86_64.apk"
+    }
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "notes": "Publica APKs por arquitectura sem universal (o validador avisa): um dispositivo cuja ABI não esteja nesta lista não tem download.",
+  "verification": {
+    "signingCertSha256": "3b:c3:a9:b2:f6:50:ca:20:8c:6c:84:d5:2c:1a:9c:bd:6e:67:82:e6:90:fa:2e:8f:30:64:80:a4:c9:ca:a0:95",
+    "pinnedAt": "2026-10-07"
+  }
+}

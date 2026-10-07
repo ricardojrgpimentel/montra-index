@@ -1,0 +1,38 @@
+{
+  "id": "operit",
+  "name": "Operit AI",
+  "summary": "Agente de IA para Android que liga modelos locais ou na nuvem às capacidades do próprio sistema",
+  "description": {
+    "en": "An open source AI agent platform for Android. It talks to cloud models or runs them locally (MNN and GGUF) and, once you grant permission, connects them to the system itself: reading and operating app interfaces, running tasks over files, keeping long-term memory, and opening a terminal with an Ubuntu user space. It needs no account, and the local models work offline.",
+    "pt": "Plataforma de agente de IA de código aberto para Android. Fala com modelos na nuvem ou corre-os localmente (MNN e GGUF) e, depois de autorizares, liga-os ao próprio sistema: lê e opera interfaces de apps, executa tarefas sobre ficheiros, mantém memória de longo prazo e abre um terminal com um espaço Ubuntu. Não precisa de conta, e os modelos locais funcionam sem rede."
+  },
+  "packageName": "com.ai.assistance.operit",
+  "license": "LGPL-3.0-only",
+  "sourceCode": "https://github.com/AAswordman/Operit",
+  "author": "AAswordman",
+  "categories": [
+    "ai"
+  ],
+  "tags": [
+    "ia",
+    "agente",
+    "llm",
+    "modelos-locais",
+    "offline",
+    "terminal"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "AAswordman/Operit",
+    "assetPattern": "app-release.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "notes": "Só publica ícone adaptativo em vetor (XML), que o cliente não descodifica: entra com monograma. O APK é grande (386 MB) porque traz o motor de execução dos modelos locais.",
+  "verification": {
+    "signingCertSha256": "70:f2:6f:d7:1f:fd:15:18:8d:a1:90:95:c5:11:af:59:5b:dd:87:23:28:d5:a1:a4:9d:69:84:9a:f3:eb:0d:0a",
+    "pinnedAt": "2026-10-07"
+  }
+}

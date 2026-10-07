@@ -1,0 +1,42 @@
+{
+  "id": "vela",
+  "name": "Vela Maps",
+  "summary": "Mapas e navegação passo-a-passo sem serviços da Google, sobre dados abertos",
+  "description": {
+    "en": "A degoogled maps and navigation client: open vector tiles for the basemap and place data built from Overture Maps, AllThePlaces and OpenStreetMap, with live traffic and turn-by-turn navigation and no Google Play Services. The project describes it as being to Google Maps what NewPipe is to YouTube, and labels the current series as beta.",
+    "pt": "Cliente de mapas e navegação sem Google: tiles vetoriais abertos para o mapa e dados de lugares construídos a partir de Overture Maps, AllThePlaces e OpenStreetMap, com trânsito em tempo real e navegação passo-a-passo, sem Google Play Services. O projeto descreve-o como sendo para os Mapas da Google o que o NewPipe é para o YouTube, e declara a série atual como beta."
+  },
+  "packageName": "app.vela",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/PimpinPumpkin/Vela",
+  "author": "PimpinPumpkin",
+  "categories": [
+    "maps",
+    "navigation"
+  ],
+  "tags": [
+    "mapas",
+    "navegacao",
+    "openstreetmap",
+    "sem-google",
+    "beta"
+  ],
+  "icon": {
+    "repo": "PimpinPumpkin/Vela",
+    "path": "fdroid/icon.png"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "PimpinPumpkin/Vela",
+    "assetPattern": "vela-maps-v*.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "notes": "O próprio projeto diz que está em beta e que podem aparecer erros. Entra pelas mesmas verificações das outras: sha256 e certificado fixados antes de instalar.",
+  "verification": {
+    "signingCertSha256": "29:93:8b:48:58:06:3e:42:e6:77:ff:95:c9:01:cd:48:24:8a:7f:03:2a:3a:e8:5f:9b:9e:56:17:56:8b:0d:36",
+    "pinnedAt": "2026-10-07"
+  }
+}

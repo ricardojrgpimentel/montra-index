@@ -1,0 +1,39 @@
+{
+  "id": "greenstash",
+  "name": "GreenStash",
+  "summary": "Planeia objetivos de poupança, com uma imagem em cada um para te manter motivado",
+  "description": {
+    "en": "A savings goal tracker. You create a goal with an amount and a date, give it a picture, and log deposits as you go; it shows how far along each goal is and what is left. No account, no ads, and the data stays on the phone.",
+    "pt": "Aplicação para planear e acompanhar objetivos de poupança. Crias um objetivo com um valor e uma data, pões-lhe uma imagem e registas os depósitos à medida que acontecem; ela mostra quanto falta para cada um. Sem conta, sem publicidade, e os dados ficam no telemóvel."
+  },
+  "packageName": "com.starry.greenstash",
+  "license": "MIT",
+  "sourceCode": "https://github.com/Pool-Of-Tears/GreenStash",
+  "author": "Pool-Of-Tears",
+  "categories": [
+    "finance"
+  ],
+  "tags": [
+    "poupanca",
+    "financas",
+    "objetivos",
+    "offline"
+  ],
+  "icon": {
+    "repo": "Pool-Of-Tears/GreenStash",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "Pool-Of-Tears/GreenStash",
+    "assetPattern": "GreenStash-v*.apk"
+  },
+  "playStore": {
+    "present": true
+  },
+  "addedAt": "2026-10-07",
+  "verification": {
+    "signingCertSha256": "5d:fe:06:da:0f:e3:b0:81:3f:3f:3d:c5:30:56:99:c2:db:b9:df:db:ab:13:49:da:7c:41:c5:9d:2f:cf:31:9c",
+    "pinnedAt": "2026-10-07"
+  }
+}
