@@ -65,6 +65,9 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - name: cada app resolve para um asset real
-        run: pnpm run build --dry
+        # --deep 3: se o release mais recente mudou de nomes de assets, cai para
+        # o anterior e avisa, em vez de partir o CI por causa de uma renomeação
+        # a montante. Um padrão que não resolva nada continua a falhar.
+        run: pnpm run build --dry --deep 3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

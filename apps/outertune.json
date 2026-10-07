@@ -21,7 +21,7 @@
   "release": {
     "provider": "github",
     "repo": "OuterTune/OuterTune",
-    "assetPattern": "OuterTune-*-full-universal-release*.apk"
+    "assetPattern": "OuterTune-*full*release*.apk"
   },
   "playStore": {
     "present": false
