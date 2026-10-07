@@ -41,6 +41,12 @@ jobs:
       - name: validar entradas
         run: pnpm run validate
 
+      # hashFiles() não é aceite numa condição de job (rejeita o workflow
+      # inteiro); num passo funciona, e é aqui que já há checkout.
+      - name: verificar a assinatura do índice publicado
+        if: hashFiles('index.json.sig') != ''
+        run: pnpm run verify
+
   releases:
     name: releases resolvíveis
     runs-on: ubuntu-latest
@@ -59,22 +65,3 @@ jobs:
         run: pnpm run build --dry
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  signature:
-    name: assinatura do índice publicado
-    runs-on: ubuntu-latest
-    needs: schema
-    # index.json.sig só é verificado quando ambos existem (a primeira build cria-os).
-    if: hashFiles('index.json.sig') != ''
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - name: verificar assinatura do index.json
-        run: pnpm run verify
