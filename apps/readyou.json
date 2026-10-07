@@ -1,0 +1,52 @@
+{
+  "id": "readyou",
+  "name": "Read You",
+  "summary": "Leitor de RSS com Material You e sincronização com FreshRSS e Fever",
+  "description": {
+    "en": "An RSS reader in Material You style: feed management, read/unread state, and optional synchronisation with FreshRSS, Fever, Google Reader or Miniflux accounts. Also imports and exports OPML.",
+    "pt": "Leitor de RSS no estilo Material You: gestão de feeds, estado lido/não lido e sincronização opcional com contas FreshRSS, Fever, Google Reader ou Miniflux. Também importa e exporta OPML."
+  },
+  "packageName": "me.ash.reader",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/ReadYouApp/ReadYou",
+  "categories": [
+    "reading"
+  ],
+  "tags": [
+    "rss",
+    "feeds",
+    "material-you",
+    "freshrss"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "ReadYouApp/ReadYou",
+    "assetPattern": "ReadYou-*-signed.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "ReadYouApp/ReadYou",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "ReadYouApp/ReadYou",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/feeds.png"
+    },
+    {
+      "repo": "ReadYouApp/ReadYou",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/flow.png"
+    },
+    {
+      "repo": "ReadYouApp/ReadYou",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/read.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "72:1e:40:43:c4:39:bd:70:c9:0f:46:ae:16:6d:dc:23:3f:c7:5c:12:35:bf:8c:b2:7b:99:a4:df:09:cc:3b:99",
+    "pinnedAt": "2026-10-07"
+  }
+}

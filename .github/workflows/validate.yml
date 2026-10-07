@@ -1,0 +1,80 @@
+name: validate
+
+# Runs on every pull request that touches the catalogue. Nothing here downloads
+# APKs: it validates schema, cross-entry rules, and that every app's release
+# config still resolves to a real asset. Fast enough to be a required check.
+on:
+  pull_request:
+    paths:
+      - "apps/**"
+      - "schema/**"
+      - "tools/**"
+      - "index.json"
+      - "package.json"
+      - ".github/workflows/**"
+  push:
+    branches: [main]
+    paths:
+      - "apps/**"
+      - "schema/**"
+      - "tools/**"
+      - "index.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  schema:
+    name: schema + cross-entry rules
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: validar entradas
+        run: pnpm run validate
+
+  releases:
+    name: releases resolvíveis
+    runs-on: ubuntu-latest
+    needs: schema
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: cada app resolve para um asset real
+        run: pnpm run build --dry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  signature:
+    name: assinatura do índice publicado
+    runs-on: ubuntu-latest
+    needs: schema
+    # index.json.sig só é verificado quando ambos existem (a primeira build cria-os).
+    if: hashFiles('index.json.sig') != ''
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: verificar assinatura do index.json
+        run: pnpm run verify

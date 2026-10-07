@@ -1,0 +1,40 @@
+{
+  "id": "molly",
+  "name": "Molly",
+  "summary": "Fork do Signal com cifra da base de dados e sem dependência do Play Services",
+  "description": {
+    "en": "A hardened Signal fork: the local database can be encrypted with a passphrase, the app locks when idle, and the FOSS build drops Google Play Services entirely (using a websocket instead of FCM). Talks to the same Signal network.",
+    "pt": "Fork reforçado do Signal: a base de dados local pode ser cifrada com uma frase-passe, a app bloqueia quando fica inativa e a versão FOSS dispensa por completo os Google Play Services (usa websocket em vez de FCM). Usa a mesma rede Signal."
+  },
+  "packageName": "im.molly.app",
+  "license": "AGPL-3.0-only",
+  "sourceCode": "https://github.com/mollyim/mollyim-android",
+  "author": "Molly.im",
+  "categories": [
+    "communication",
+    "security"
+  ],
+  "tags": [
+    "signal",
+    "messaging",
+    "encryption",
+    "no-gms"
+  ],
+  "links": {
+    "website": "https://molly.im",
+    "docs": "https://molly.im/faq/"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "mollyim/mollyim-android",
+    "assetPattern": "Molly-*.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "verification": {
+    "signingCertSha256": "6a:a8:0f:df:4a:8c:c1:37:37:cf:b4:34:fc:0c:de:48:6f:09:cf:8f:cd:a2:1a:67:be:a5:ee:1c:a2:70:08:86",
+    "pinnedAt": "2026-10-07"
+  }
+}

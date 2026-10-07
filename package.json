@@ -1,0 +1,24 @@
+{
+  "name": "openshelf-index",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The OpenShelf index: a backendless Android app catalogue stored as JSON in git.",
+  "license": "AGPL-3.0-or-later",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node tools/validate.mjs",
+    "build": "node tools/build-index.mjs",
+    "sign": "node tools/sign-index.mjs",
+    "verify": "node tools/verify-index.mjs",
+    "check": "node tools/validate.mjs && node tools/verify-index.mjs",
+    "keys": "node tools/keys.mjs",
+    "discover": "node tools/discover.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

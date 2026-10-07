@@ -1,0 +1,54 @@
+{
+  "id": "libretube",
+  "name": "LibreTube",
+  "summary": "Frontend alternativo para YouTube que passa por instâncias Piped",
+  "description": {
+    "en": "Watches YouTube through Piped instances, so the device never talks to YouTube directly and no account is needed. Includes subscriptions without a Google account, playlists and background audio playback.",
+    "pt": "Vê YouTube através de instâncias Piped, pelo que o dispositivo nunca fala diretamente com o YouTube e não é precisa conta. Inclui subscrições sem conta Google, listas de reprodução e áudio em segundo plano."
+  },
+  "packageName": "com.github.libretube",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/libre-tube/LibreTube",
+  "categories": [
+    "media",
+    "privacy"
+  ],
+  "tags": [
+    "youtube",
+    "piped",
+    "streaming",
+    "no-account"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "libre-tube/LibreTube",
+    "assetPattern": "app-release.apk",
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "libre-tube/LibreTube",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "libre-tube/LibreTube",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_1.jpg"
+    },
+    {
+      "repo": "libre-tube/LibreTube",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_2.jpg"
+    },
+    {
+      "repo": "libre-tube/LibreTube",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_3.jpg"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "72:0c:4f:ce:cf:73:8a:41:d0:33:b9:fb:e0:be:f9:7a:c2:32:03:0c:e9:3e:27:4d:2e:0a:e2:32:e4:4e:ea:ce",
+    "pinnedAt": "2026-10-07"
+  }
+}

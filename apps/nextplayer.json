@@ -1,0 +1,58 @@
+{
+  "id": "nextplayer",
+  "name": "Next Player",
+  "summary": "Reprodutor de vídeo nativo em Compose, simples e sem anúncios",
+  "description": {
+    "en": "A video player written with Jetpack Compose and ExoPlayer/Media3: clean library, gesture controls, subtitles, background audio, playlists and support for network streams. No ads, no tracking, no unnecessary permissions.",
+    "pt": "Reprodutor de vídeo escrito em Jetpack Compose com ExoPlayer/Media3: biblioteca limpa, controlos por gestos, legendas, áudio em segundo plano, listas de reprodução e suporte para streams de rede. Sem anúncios, sem rastreio, sem permissões desnecessárias."
+  },
+  "packageName": "dev.anilbeesetti.nextplayer",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/anilbeesetti/nextplayer",
+  "author": "Anil Kumar Beesetti",
+  "categories": [
+    "multimedia"
+  ],
+  "tags": [
+    "video",
+    "player",
+    "compose",
+    "no-ads"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "anilbeesetti/nextplayer",
+    "abiAssets": {
+      "arm64-v8a": "nextplayer-v*-arm64-v8a.apk",
+      "armeabi-v7a": "nextplayer-v*-armeabi-v7a.apk",
+      "x86_64": "nextplayer-v*-x86_64.apk"
+    }
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=dev.anilbeesetti.nextplayer&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "anilbeesetti/nextplayer",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "anilbeesetti/nextplayer",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1.png"
+    },
+    {
+      "repo": "anilbeesetti/nextplayer",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2.png"
+    },
+    {
+      "repo": "anilbeesetti/nextplayer",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "d3:7c:ab:f3:67:6c:f5:82:24:fb:24:2c:8d:d2:09:12:9d:05:88:03:79:29:5f:aa:a6:d0:fb:60:7b:ec:13:1b",
+    "pinnedAt": "2026-10-07"
+  }
+}

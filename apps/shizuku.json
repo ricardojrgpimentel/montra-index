@@ -1,0 +1,45 @@
+{
+  "id": "shizuku",
+  "name": "Shizuku",
+  "summary": "Dá a apps normais acesso a APIs de sistema através de adb ou root",
+  "description": {
+    "en": "Starts a privileged Java process over ADB (or root) and lends those permissions to other apps through a documented API, so apps that need system-level access do not need root themselves. Many apps in this catalogue build on it.",
+    "pt": "Inicia um processo Java privilegiado por ADB (ou root) e empresta essas permissões a outras apps através de uma API documentada, para que apps que precisam de acesso ao sistema não precisem de root. Muitas apps deste catálogo dependem dele."
+  },
+  "packageName": "moe.shizuku.privileged.api",
+  "license": "Apache-2.0",
+  "sourceCode": "https://github.com/RikkaApps/Shizuku",
+  "author": "Rikka",
+  "categories": [
+    "system",
+    "development"
+  ],
+  "tags": [
+    "adb",
+    "privileged",
+    "api",
+    "root-alternative"
+  ],
+  "links": {
+    "docs": "https://shizuku.rikka.app/guide/setup/"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "RikkaApps/Shizuku",
+    "assetPattern": "shizuku-v*-release.apk",
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "RikkaApps/Shizuku",
+    "path": "manager/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+  },
+  "verification": {
+    "signingCertSha256": "26:8b:55:90:e8:68:fb:08:ba:e7:e0:ac:41:35:64:cd:1f:f8:8f:5c:cf:f7:4a:f9:db:d0:dc:91:8e:30:db:30",
+    "pinnedAt": "2026-10-07"
+  }
+}

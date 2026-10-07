@@ -1,0 +1,59 @@
+{
+  "id": "magisk",
+  "name": "Magisk",
+  "summary": "Solução de root systemless com MagiskSU, módulos e Zygisk",
+  "description": {
+    "en": "The standard way to root a modern Android device without modifying system partitions: MagiskSU for root access, a module system, Zygisk for injecting code into app processes, and a DenyList for hiding modifications from apps that check for root.",
+    "pt": "A forma padrão de obter root num Android moderno sem alterar as partições de sistema: MagiskSU para acesso root, sistema de módulos, Zygisk para injetar código nos processos das apps e DenyList para esconder modificações de apps que verificam root."
+  },
+  "packageName": "com.topjohnwu.magisk",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/topjohnwu/Magisk",
+  "author": "John Wu",
+  "categories": [
+    "system",
+    "security"
+  ],
+  "tags": [
+    "root",
+    "modules",
+    "zygisk",
+    "systemless"
+  ],
+  "links": {
+    "website": "https://topjohnwu.github.io/Magisk/",
+    "docs": "https://topjohnwu.github.io/Magisk/guides.html"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "topjohnwu/Magisk",
+    "assetPattern": "Magisk-v*.apk",
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": false
+  },
+  "antiFeatures": [
+    "knownVuln"
+  ],
+  "addedAt": "2026-10-07",
+  "notes": "antiFeatures=knownVuln: obter root reduz a superfície de segurança do dispositivo por definição. Sinalizado de forma honesta, não é um defeito da app.",
+  "screenshots": [
+    {
+      "repo": "topjohnwu/Magisk",
+      "path": "docs/images/disable_auto_ota.png"
+    },
+    {
+      "repo": "topjohnwu/Magisk",
+      "path": "docs/images/install_inactive_slot.png"
+    },
+    {
+      "repo": "topjohnwu/Magisk",
+      "path": "docs/images/manager_reboot.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "b4:cb:83:b4:da:d9:9f:99:7d:be:87:2f:01:3a:a1:6c:14:ee:c4:1d:16:70:21:f3:71:f7:e1:33:0f:27:3e:e6",
+    "pinnedAt": "2026-10-07"
+  }
+}

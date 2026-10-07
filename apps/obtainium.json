@@ -1,0 +1,60 @@
+{
+  "id": "obtainium",
+  "name": "Obtainium",
+  "summary": "Obtém atualizações de apps diretamente das fontes originais",
+  "description": {
+    "en": "Install and update apps from GitHub, GitLab, F-Droid, APKMirror and other sources, comparing versions and downloading the APK itself. The reference implementation of the 'no store needed' idea, and the tool that proved this catalogue was worth building.",
+    "pt": "Instala e atualiza apps a partir do GitHub, GitLab, F-Droid, APKMirror e outras fontes, comparando versões e descarregando o APK. É a implementação de referência da ideia de 'não precisas de loja' e a ferramenta que provou que este catálogo valia a pena."
+  },
+  "packageName": "dev.imranr.obtainium",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/ImranR98/Obtainium",
+  "author": "Imran R",
+  "categories": [
+    "store",
+    "tools"
+  ],
+  "tags": [
+    "updates",
+    "github-releases",
+    "sideload",
+    "no-store"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "ImranR98/Obtainium",
+    "excludePattern": "*-fdroid-*",
+    "abiAssets": {
+      "universal": "app-release.apk",
+      "arm64-v8a": "app-arm64-v8a-release.apk",
+      "armeabi-v7a": "app-armeabi-v7a-release.apk",
+      "x86_64": "app-x86_64-release.apk"
+    }
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "ImranR98/Obtainium",
+    "path": "assets/graphics/icon-512x512.png"
+  },
+  "screenshots": [
+    {
+      "repo": "ImranR98/Obtainium",
+      "path": "assets/screenshots/1.apps.png"
+    },
+    {
+      "repo": "ImranR98/Obtainium",
+      "path": "assets/screenshots/2.dark_theme.png"
+    },
+    {
+      "repo": "ImranR98/Obtainium",
+      "path": "assets/screenshots/3.material_you.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "b3:53:60:1f:6a:1d:5f:d6:60:3a:e2:f5:0b:e8:0c:f3:01:36:7b:86:b6:ab:8b:1f:66:24:3d:a9:6c:d5:73:62",
+    "pinnedAt": "2026-10-07"
+  }
+}

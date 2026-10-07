@@ -1,0 +1,15 @@
+# --- secrets: a chave privada de assinatura do índice NUNCA entra no git -----
+keys/*.key.pem
+keys/*private*
+*.pem
+!keys/index-signing.pub.pem
+
+# --- build state ------------------------------------------------------------
+.cache/
+node_modules/
+*.log
+
+# --- OS/editor --------------------------------------------------------------
+.DS_Store
+.idea/
+.vscode/

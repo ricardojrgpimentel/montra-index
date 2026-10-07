@@ -1,0 +1,51 @@
+{
+  "id": "droidify",
+  "name": "Droid-ify",
+  "summary": "Cliente de F-Droid rápido e sem distrações, com Material You",
+  "description": {
+    "en": "A clutter-free F-Droid client: fast repository sync, instant search, Material You theming, and support for the IzzyOnDroid repository. Good when you mainly want to search, install and forget.",
+    "pt": "Cliente de F-Droid sem distrações: sincronização rápida de repositórios, pesquisa instantânea, temas Material You e suporte para o repositório IzzyOnDroid. Bom quando queres apenas procurar, instalar e seguir em frente."
+  },
+  "packageName": "com.looker.droidify",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/Droid-ify/client",
+  "categories": [
+    "store"
+  ],
+  "tags": [
+    "fdroid",
+    "repository",
+    "material-you"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "Droid-ify/client",
+    "assetPattern": "app-release.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "Droid-ify/client",
+    "path": "metadata/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "Droid-ify/client",
+      "path": "metadata/en-US/images/phoneScreenshots/1.png"
+    },
+    {
+      "repo": "Droid-ify/client",
+      "path": "metadata/en-US/images/phoneScreenshots/2.png"
+    },
+    {
+      "repo": "Droid-ify/client",
+      "path": "metadata/en-US/images/phoneScreenshots/3.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "ed:88:59:c5:5a:f3:11:16:26:58:b9:4a:f9:82:b9:f0:91:dc:d2:76:28:d4:de:34:86:d1:21:7e:bf:3c:99:35",
+    "pinnedAt": "2026-10-07"
+  }
+}

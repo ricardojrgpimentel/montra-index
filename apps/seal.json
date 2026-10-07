@@ -1,0 +1,60 @@
+{
+  "id": "seal",
+  "name": "Seal",
+  "summary": "Descarregador de vídeo e áudio para Android, feito sobre o yt-dlp",
+  "description": {
+    "en": "A video and audio downloader built on yt-dlp and YouTube-DL, wrapped in a Material You interface. Can use aria2c for faster downloads and ffmpeg for conversion, and can be driven from the Android share sheet.",
+    "pt": "Descarregador de vídeo e áudio construído sobre yt-dlp e YouTube-DL, com interface Material You. Pode usar aria2c para downloads mais rápidos e ffmpeg para conversão, e aceita pedidos a partir do menu de partilha do Android."
+  },
+  "packageName": "com.junkfood.seal",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/JunkFood02/Seal",
+  "categories": [
+    "media",
+    "utilities"
+  ],
+  "tags": [
+    "downloader",
+    "yt-dlp",
+    "video",
+    "audio"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "JunkFood02/Seal",
+    "excludePattern": "*debug*",
+    "abiAssets": {
+      "universal": "Seal-*-universal-release.apk",
+      "arm64-v8a": "Seal-*-arm64-v8a-release.apk",
+      "armeabi-v7a": "Seal-*-armeabi-v7a-release.apk",
+      "x86_64": "Seal-*-x86_64-release.apk",
+      "x86": "Seal-*-x86-release.apk"
+    }
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "JunkFood02/Seal",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "JunkFood02/Seal",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1.jpg"
+    },
+    {
+      "repo": "JunkFood02/Seal",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2.jpg"
+    },
+    {
+      "repo": "JunkFood02/Seal",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3.jpg"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
+    "pinnedAt": "2026-10-07"
+  }
+}

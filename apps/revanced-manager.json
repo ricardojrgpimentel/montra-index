@@ -1,0 +1,43 @@
+{
+  "id": "revanced-manager",
+  "name": "ReVanced Manager",
+  "summary": "Aplica patches a APKs instalados para acrescentar funcionalidades e remover anúncios",
+  "description": {
+    "en": "Downloads patches from the ReVanced project and applies them to APKs on the device, letting you rebuild an app you already have with extra features and without ads. It ships no patched apps itself; it is a build tool.",
+    "pt": "Descarrega patches do projeto ReVanced e aplica-os a APKs no dispositivo, permitindo reconstruir uma app que já tens com funcionalidades extra e sem anúncios. Não distribui apps modificadas: é uma ferramenta de compilação."
+  },
+  "packageName": "app.revanced.manager.flutter",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/ReVanced/revanced-manager",
+  "author": "ReVanced",
+  "categories": [
+    "tools",
+    "utilities"
+  ],
+  "tags": [
+    "patching",
+    "no-ads",
+    "modding"
+  ],
+  "links": {
+    "website": "https://revanced.app"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "ReVanced/revanced-manager",
+    "assetPattern": "revanced-manager-*.apk",
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": false
+  },
+  "antiFeatures": [
+    "nonFreeNet"
+  ],
+  "addedAt": "2026-10-07",
+  "notes": "antiFeatures=nonFreeNet: a app só é útil a modificar aplicações proprietárias que dependem de serviços não livres. O Manager em si é GPL-3.0.",
+  "verification": {
+    "signingCertSha256": "b6:36:2c:6e:a7:88:8e:fd:15:c0:80:0f:48:07:86:ad:0f:5b:13:3b:4f:84:e1:2d:46:af:ba:5f:9e:ac:12:23",
+    "pinnedAt": "2026-10-07"
+  }
+}

@@ -1,0 +1,90 @@
+name: build-index
+
+# Re-resolves every app's newest release, downloads the APKs, hashes them, reads
+# the signing certificates, re-hosts icons/screenshots, signs the result and
+# commits it. A nightly run is what keeps "update available" honest without any
+# backend doing it on demand.
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+    inputs:
+      deep:
+        description: "Quantos releases candidatos inspecionar por app"
+        default: "3"
+        required: false
+
+concurrency:
+  group: build-index
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      # aapt2 and apksigner come from the Android SDK; the JDK is needed because
+      # apksigner is a wrapper around `java -jar`.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: android-actions/setup-android@v3
+      - name: instalar build-tools
+        run: sdkmanager "build-tools;35.0.0" > /dev/null
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: construir o índice
+        run: pnpm run build --deep ${{ github.event.inputs.deep || '3' }} --jobs 4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: assinar
+        run: pnpm run sign
+        env:
+          INDEX_SIGNING_KEY: ${{ secrets.INDEX_SIGNING_KEY }}
+
+      - name: verificar a assinatura como um cliente faria
+        run: pnpm run verify
+
+      - name: validar schema e regras cruzadas
+        run: pnpm run validate
+
+      - name: taxa de sucesso (informativo)
+        run: echo "apps indexadas" && node -e "console.log(JSON.parse(require('fs').readFileSync('index.json','utf8')).apps.length)"
+
+      - name: guardar o índice para auditoria
+        uses: actions/upload-artifact@v4
+        with:
+          name: index-${{ github.run_number }}
+          path: |
+            index.json
+            index.json.sig
+          retention-days: 90
+
+      - name: commit
+        run: |
+          git config user.name "openshelf-bot"
+          git config user.email "openshelf-bot@users.noreply.github.com"
+          git add index.json index.json.sig apps icons screenshots
+          if git diff --cached --quiet; then
+            echo "nada mudou"
+            exit 0
+          fi
+          git commit -m "chore(index): reconstruir $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push

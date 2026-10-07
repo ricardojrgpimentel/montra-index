@@ -1,0 +1,21 @@
+## Que app(s) estou a adicionar ou alterar
+
+<!-- ex.: adiciona apps/foo.json -->
+
+## Checklist
+
+- [ ] `node tools/validate.mjs` passa localmente
+- [ ] A licença em `license` corresponde ao repositório (é software livre, SPDX correto)
+- [ ] `packageName` é o applicationId real do APK (não uma suposição)
+- [ ] `release.assetPattern`/`abiAssets` escolhe exatamente o APK certo
+      (sem builds de debug, sem variantes de outra app)
+- [ ] `summary` é uma linha, sem ponto final, e `description` tem `en` e `pt`
+- [ ] `categories` vem da taxonomia fixa do schema
+- [ ] Corri `node tools/build-index.mjs --update-pins` e revi o diff dos pins
+
+## Se este PR altera um fingerprint de certificado
+
+<!-- Obrigatório: explica porque é que a chave de assinatura mudou. -->
+
+- [ ] Confirmei, no repositório de origem, que a mudança de chave é intencional
+      e anunciada pelo projeto (não é um release comprometido)

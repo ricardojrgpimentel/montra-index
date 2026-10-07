@@ -1,0 +1,51 @@
+{
+  "id": "neo-store",
+  "name": "Neo Store",
+  "summary": "Cliente de F-Droid com interface moderna e funcionalidades extra",
+  "description": {
+    "en": "An F-Droid client with a modern Material interface, better search, repository management, and the ability to install apps that F-Droid's own client refuses because of signature or compatibility checks.",
+    "pt": "Cliente de F-Droid com interface Material moderna, melhor pesquisa, gestão de repositórios e capacidade de instalar apps que o cliente oficial recusa por verificações de assinatura ou compatibilidade."
+  },
+  "packageName": "com.machiav3lli.fdroid",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/NeoApplications/Neo-Store",
+  "categories": [
+    "store"
+  ],
+  "tags": [
+    "fdroid",
+    "repository",
+    "material-you"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "NeoApplications/Neo-Store",
+    "assetPattern": "Neo_Store_*_release.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "NeoApplications/Neo-Store",
+    "path": "metadata/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "NeoApplications/Neo-Store",
+      "path": "metadata/en-US/images/phoneScreenshots/black.png"
+    },
+    {
+      "repo": "NeoApplications/Neo-Store",
+      "path": "metadata/en-US/images/phoneScreenshots/dark.png"
+    },
+    {
+      "repo": "NeoApplications/Neo-Store",
+      "path": "metadata/en-US/images/phoneScreenshots/filters.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "c5:86:01:46:13:8b:77:99:bb:9d:06:17:c3:98:c1:e5:24:15:50:f5:58:25:2a:3f:97:b2:a5:1f:15:26:3e:f7",
+    "pinnedAt": "2026-10-07"
+  }
+}

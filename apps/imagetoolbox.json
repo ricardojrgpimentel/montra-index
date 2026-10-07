@@ -1,0 +1,57 @@
+{
+  "id": "imagetoolbox",
+  "name": "Image Toolbox",
+  "summary": "Conjunto de ferramentas de imagem: conversão, filtros, OCR e edição em lote",
+  "description": {
+    "en": "An image manipulation toolbox: format conversion, resizing, cropping, filters, background removal, OCR, EXIF editing and batch operations over hundreds of files. Everything runs on the device.",
+    "pt": "Conjunto de ferramentas de manipulação de imagem: conversão de formato, redimensionamento, recorte, filtros, remoção de fundo, OCR, edição de EXIF e operações em lote sobre centenas de ficheiros. Tudo corre no dispositivo."
+  },
+  "packageName": "ru.tech.imageresizershrinker",
+  "license": "Apache-2.0",
+  "sourceCode": "https://github.com/T8RIN/ImageToolbox",
+  "categories": [
+    "graphics",
+    "utilities"
+  ],
+  "tags": [
+    "images",
+    "ocr",
+    "batch",
+    "converter"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "T8RIN/ImageToolbox",
+    "abiAssets": {
+      "arm64-v8a": "image-toolbox-*-foss-arm64-v8a.apk",
+      "armeabi-v7a": "image-toolbox-*-foss-armeabi-v7a.apk"
+    }
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=ru.tech.imageresizershrinker&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "T8RIN/ImageToolbox",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "T8RIN/ImageToolbox",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/01.png"
+    },
+    {
+      "repo": "T8RIN/ImageToolbox",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/02.png"
+    },
+    {
+      "repo": "T8RIN/ImageToolbox",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/03.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "20:d7:68:9d:e0:87:4f:00:01:5e:a3:e3:1f:a0:67:c1:5c:03:45:7d:36:2d:41:d5:e7:93:db:3a:86:4f:a5:34",
+    "pinnedAt": "2026-10-07"
+  }
+}

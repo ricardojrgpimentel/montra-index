@@ -1,0 +1,44 @@
+{
+  "id": "findroid",
+  "name": "Findroid",
+  "summary": "Cliente Jellyfin nativo com foco em downloads offline e UI Material You",
+  "description": {
+    "en": "A third-party Jellyfin client built with native Android UI instead of a webview: fast, Material You themed, with solid offline download support and external player integration.",
+    "pt": "Cliente Jellyfin de terceiros construído com interface nativa em vez de webview: rápido, com tema Material You, bom suporte de downloads offline e integração com reprodutores externos."
+  },
+  "packageName": "dev.jdtech.jellyfin",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/jarnedemeulemeester/findroid",
+  "author": "Jarne Demeulemeester",
+  "categories": [
+    "multimedia"
+  ],
+  "tags": [
+    "jellyfin",
+    "media-server",
+    "offline",
+    "material-you"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "jarnedemeulemeester/findroid",
+    "excludePattern": "*proprietary*",
+    "abiAssets": {
+      "arm64-v8a": "findroid-v*-libre-arm64-v8a.apk",
+      "armeabi-v7a": "findroid-v*-libre-armeabi-v7a.apk"
+    }
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=dev.jdtech.jellyfin&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "jarnedemeulemeester/findroid",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "verification": {
+    "signingCertSha256": "ec:c1:20:86:db:dd:b5:fa:a3:e1:b6:50:d1:61:fb:62:3f:5f:24:18:89:92:c1:17:33:39:cd:5a:8b:2f:86:89",
+    "pinnedAt": "2026-10-07"
+  }
+}

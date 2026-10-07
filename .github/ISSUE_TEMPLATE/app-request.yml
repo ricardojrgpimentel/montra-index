@@ -1,0 +1,53 @@
+name: Sugerir uma app
+description: Propõe uma aplicação de código aberto para o catálogo
+labels: ["app-request"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Nome da app
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Repositório
+      placeholder: owner/name no GitHub
+    validations:
+      required: true
+  - type: input
+    id: package
+    attributes:
+      label: Package name (se souberes)
+      placeholder: com.exemplo.app
+    validations:
+      required: false
+  - type: dropdown
+    id: play
+    attributes:
+      label: Está na Google Play?
+      options:
+        - "Não"
+        - "Sim, mas desatualizada"
+        - "Sim"
+        - "Não sei"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Porque é que vale a pena
+      description: O que faz, porque é que a usas, e porque é que pertence a uma loja fora da Play.
+    validations:
+      required: true
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Critérios
+      options:
+        - label: O código-fonte é público e tem licença livre
+          required: true
+        - label: O projeto publica APKs em releases (não só na Play/F-Droid)
+          required: true
+        - label: O projeto está mantido (commits nos últimos 12 meses)
+          required: true

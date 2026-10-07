@@ -1,0 +1,52 @@
+{
+  "id": "outertune",
+  "name": "OuterTune",
+  "summary": "Cliente de YouTube Music com downloads, letras e reprodução local",
+  "description": {
+    "en": "A Material 3 YouTube Music client with library sync, downloads for offline playback, synchronized lyrics, playback speed control, sleep timer and Discord presence. Plays your local files in the same library.",
+    "pt": "Cliente de YouTube Music com Material 3, sincronização de biblioteca, downloads para ouvir offline, letras sincronizadas, controlo de velocidade, temporizador e presença no Discord. Reproduz também ficheiros locais na mesma biblioteca."
+  },
+  "packageName": "com.dd3boh.outertune",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/OuterTune/OuterTune",
+  "categories": [
+    "media"
+  ],
+  "tags": [
+    "youtube-music",
+    "music",
+    "offline",
+    "material-you"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "OuterTune/OuterTune",
+    "assetPattern": "OuterTune-*-full-universal-release*.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "OuterTune/OuterTune",
+    "path": "app/src/main/ic_launcher-playstore.png"
+  },
+  "screenshots": [
+    {
+      "repo": "OuterTune/OuterTune",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/01.jpg"
+    },
+    {
+      "repo": "OuterTune/OuterTune",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/02.jpg"
+    },
+    {
+      "repo": "OuterTune/OuterTune",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/03.jpg"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "ac:dd:87:1a:3d:e2:94:7d:32:53:ec:90:cd:c5:3d:1a:07:40:d6:03:8e:25:a6:48:5d:71:89:9e:ef:a9:6d:b8",
+    "pinnedAt": "2026-10-07"
+  }
+}

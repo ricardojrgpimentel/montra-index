@@ -1,0 +1,2440 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-07T10:24:48.597Z",
+  "generator": "openshelf-index build-index.mjs",
+  "signingKeyId": "4009b8eb68228f4020e56ddfcfd5b625",
+  "apps": [
+    {
+      "id": "app-manager",
+      "name": "App Manager",
+      "summary": "Gestor de pacotes completo: congela, desinstala, faz backup e inspeciona apps",
+      "description": {
+        "en": "A full-featured package manager for Android: uninstall and freeze system apps, back up APKs and data, inspect trackers, permissions and components, and browse what an app actually ships. Much more capable with Shizuku or root.",
+        "pt": "Gestor de pacotes completo para Android: desinstala e congela apps de sistema, faz cópias de segurança de APKs e dados, inspeciona trackers, permissões e componentes, e mostra o que uma app realmente traz. Muito mais capaz com Shizuku ou root."
+      },
+      "packageName": "io.github.muntashirakon.AppManager",
+      "license": "GPL-3.0-or-later",
+      "sourceCode": "https://github.com/MuntashirAkon/AppManager",
+      "author": "Muntashir Akon",
+      "categories": [
+        "system",
+        "tools"
+      ],
+      "tags": [
+        "package-manager",
+        "backup",
+        "debloat",
+        "trackers"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "links": {
+        "docs": "https://muntashirakon.github.io/AppManager/"
+      },
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/app-manager.png",
+      "screenshots": [
+        "screenshots/app-manager/1.png",
+        "screenshots/app-manager/2.png",
+        "screenshots/app-manager/3.png"
+      ],
+      "downloadCount": 41048,
+      "signingCertSha256": "32:0c:0c:0f:e8:ce:f8:73:f2:b5:54:cb:88:c8:37:f1:51:25:89:dc:ce:d5:0c:5b:25:c4:3c:04:59:67:60:ab",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "4.1.1",
+        "versionCode": 451,
+        "tag": "v4.1.1",
+        "publishedAt": "2026-09-04T11:52:33Z",
+        "releaseUrl": "https://github.com/MuntashirAkon/AppManager/releases/tag/v4.1.1",
+        "changelog": "App Manager v4.1.1 improves permissions, installation, ADB connectivity, and several other parts of the application. Visit Settings > About > Version/Changelog for details.\r\n\r\n**Revoke Internet Permission**\r\nApp Manager can now block internet for individual applications utilizing the eBPF rules in root or ADB mode. To block internet for an application, go to the \"Uses permissions\" tab and click on the toggle button next to `android.permission.INTERNET` to revoke the permission.\r\n  \r\n_Known Limitation._ The eBPF rules are lost after a reboot. App Manager attempts to restore the rules right after a reboot. However, in ADB mode, it might take a while to connect to wireless debugging depending on the availability of a Wi-Fi connection. This might allow applications that start after a reboot to use internet.  \r\n\r\n**Others**\r\n- Added support for editing `.bat` files  \r\n- Improved installation reliability and performance  \r\n- Improved permission management  \r\n- Improved ADB pairing, connections, and mode handling  \r\n- Improved settings transitions and startup messages  \r\n- Fixed displaying profiles after creating a profile for the first time  \r\n- Fixed intercepting browser URLs  \r\n- Fixed listing applications on Android 17  \r\n- Fixed title ordering in What's New dialog.  \r\n\r\n**Full Changelog**: https://github.com/MuntashirAkon/AppManager/compare/v4.1.0...v4.1.1",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/MuntashirAkon/AppManager/releases/download/v4.1.1/AppManager_v4.1.1.apk",
+            "sha256": "2540d6d9352acd8b04d6210140630a380abb1bc46ad4745c89ad97603dee3c40",
+            "size": 28270163,
+            "signingCertSha256": "32:0c:0c:0f:e8:ce:f8:73:f2:b5:54:cb:88:c8:37:f1:51:25:89:dc:ce:d5:0c:5b:25:c4:3c:04:59:67:60:ab",
+            "versionCode": 451,
+            "versionName": "4.1.1",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:13.587Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/MuntashirAkon/AppManager/releases/download/v4.1.1/AppManager_v4.1.1.apk",
+        "sha256": "2540d6d9352acd8b04d6210140630a380abb1bc46ad4745c89ad97603dee3c40",
+        "size": 28270163,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "breezy-weather",
+      "name": "Breezy Weather",
+      "summary": "App de meteorologia com mais de 50 fontes de dados e widgets detalhados",
+      "description": {
+        "en": "A feature-rich weather app: over 50 data sources, hourly and daily forecasts, air quality, pollen, alerts, radar and a set of home screen widgets. Free of ads and trackers.",
+        "pt": "App de meteorologia cheio de funcionalidades: mais de 50 fontes de dados, previsões horárias e diárias, qualidade do ar, pólen, alertas, radar e vários widgets de ecrã inicial. Sem anúncios nem rastreadores."
+      },
+      "packageName": "org.breezyweather",
+      "license": "LGPL-3.0-only",
+      "sourceCode": "https://github.com/breezy-weather/breezy-weather",
+      "categories": [
+        "weather"
+      ],
+      "tags": [
+        "weather",
+        "widgets",
+        "forecast",
+        "no-ads"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/breezy-weather.png",
+      "screenshots": [
+        "screenshots/breezy-weather/1.png",
+        "screenshots/breezy-weather/2.png",
+        "screenshots/breezy-weather/3.png"
+      ],
+      "downloadCount": 109094,
+      "signingCertSha256": "29:d4:35:f7:0a:a9:ae:c3:c1:fa:ff:7f:7f:fa:6e:15:78:50:88:d8:7f:06:ec:fc:ab:9c:3c:c6:2d:c2:69:d8",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "6.2.2",
+        "versionCode": 60202,
+        "tag": "v6.2.2",
+        "publishedAt": "2026-08-23T08:24:42Z",
+        "releaseUrl": "https://github.com/breezy-weather/breezy-weather/releases/tag/v6.2.2",
+        "changelog": "**If you don’t know what to do, download and install `breezy-weather-v6.2.2_standard.apk`, or check [INSTALL instructions](https://github.com/breezy-weather/breezy-weather/blob/main/INSTALL.md) for more details.**\r\n\r\n**Improvements and fixes**\r\n- Main screen - Add precipitation probability to hourly feels like tab\r\n- Main screen - Make the sun dark instead of bright when the user explicitly asked for dark mode\r\n\r\n**Sources**\r\n- BMKG - Fix refresh errors\r\n- Met Office (UK) - Fix shifted day sequence in locations with a different timezone than UTC\r\n- NCEI - Fix parsing error\r\n\r\n**Technical**\r\n- [Breezy Update Notifier] Fix broadcast when the location list is changed from the app\r\n\r\n**Translations**\r\n- Initial translation for Creoles and pidgins (English based) (En Oh)\r\n- Initial translation for Hawaiian (En Oh)\r\n- Initial translation for Kannada (Vinay)\r\n- Initial translation for Urdu (haseebwt)\r\n- Translations updated\r\n\r\n---\r\n\r\n### Checksums\r\n| Flavor   | Variant     | SHA-256                                |\r\n|----------|-------------|----------------------------------------|\r\n| Standard | Universal   | 20a33a588e884257ab9329fee794d30a9d15ea067f64302c70c69c9adc3c6309        |\r\n| Standard | arm64-v8a   | 829175ceb23d0e539f99b27d22ff10e06ba8d446ac070b28585a36316fd295d5        |\r\n| Standard | armeabi-v7a | 9900fa4a5ffc1360bb2d1d88d271fe05e98d1daff5a1aa08452bbf077467c1a6      |\r\n| Standard | x86         | 5e3199df2e7b5a31192492c6d5a0ebb4700a2cc1510ebe06e831352cb3cb4457              |\r\n| Standard | x86_64      | 1d95a963ac4176f4b3563056a700b7fc5c5540aeb3ddcd83bfb8fcc5000bd167           |\r\n| Freenet  | Universal   | 1369d817d426498715f8ccb6750baff19dadd78e85f707088e9bca43977570c0 |",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/breezy-weather/breezy-weather/releases/download/v6.2.2/breezy-weather-arm64-v8a-v6.2.2_standard.apk",
+            "sha256": "829175ceb23d0e539f99b27d22ff10e06ba8d446ac070b28585a36316fd295d5",
+            "size": 15737358,
+            "signingCertSha256": "29:d4:35:f7:0a:a9:ae:c3:c1:fa:ff:7f:7f:fa:6e:15:78:50:88:d8:7f:06:ec:fc:ab:9c:3c:c6:2d:c2:69:d8",
+            "versionCode": 60202,
+            "versionName": "6.2.2",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:14.188Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/breezy-weather/breezy-weather/releases/download/v6.2.2/breezy-weather-armeabi-v7a-v6.2.2_standard.apk",
+            "sha256": "9900fa4a5ffc1360bb2d1d88d271fe05e98d1daff5a1aa08452bbf077467c1a6",
+            "size": 14987796,
+            "signingCertSha256": "29:d4:35:f7:0a:a9:ae:c3:c1:fa:ff:7f:7f:fa:6e:15:78:50:88:d8:7f:06:ec:fc:ab:9c:3c:c6:2d:c2:69:d8",
+            "versionCode": 60202,
+            "versionName": "6.2.2",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:14.188Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/breezy-weather/breezy-weather/releases/download/v6.2.2/breezy-weather-arm64-v8a-v6.2.2_standard.apk",
+        "sha256": "829175ceb23d0e539f99b27d22ff10e06ba8d446ac070b28585a36316fd295d5",
+        "size": 15737358,
+        "abi": "arm64-v8a"
+      }
+    },
+    {
+      "id": "cromite",
+      "name": "Cromite",
+      "summary": "Fork do Chromium com bloqueio de anúncios e patches de privacidade",
+      "description": {
+        "en": "A Chromium fork with ad blocking, anti-fingerprinting patches, always-incognito options and removed Google integrations. Updated frequently, and not distributed on the Play Store because it would violate Play's policies.",
+        "pt": "Fork do Chromium com bloqueio de anúncios, patches anti-fingerprinting, opções de incógnito permanente e integrações Google removidas. Atualizado com frequência e não distribuído na Play Store porque violaria as políticas da Play."
+      },
+      "packageName": "org.cromite.cromite",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/uazo/cromite",
+      "author": "uazo e contribuidores",
+      "categories": [
+        "browser",
+        "privacy"
+      ],
+      "tags": [
+        "chromium",
+        "adblock",
+        "privacy",
+        "fingerprinting"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": null,
+      "screenshots": [],
+      "downloadCount": 69397,
+      "signingCertSha256": "63:3f:a4:1d:82:11:d6:d0:91:6a:81:9b:89:66:8c:6d:e9:2e:64:23:2d:a6:7f:9d:16:fd:81:c3:b7:e9:23:ff",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "153.0.8010.37",
+        "versionCode": 801003702,
+        "tag": "v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a",
+        "publishedAt": "2026-09-15T11:51:14Z",
+        "releaseUrl": "https://github.com/uazo/cromite/releases/tag/v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a",
+        "changelog": "https://github.com/uazo/cromite/issues/3040#issuecomment-5679359966",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/uazo/cromite/releases/download/v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a/arm64_ChromePublic.apk",
+            "sha256": "9db12af1af021f42b4371e76d0e9fe476a7085bbbbc76bc410a538d028bf6071",
+            "size": 323809949,
+            "signingCertSha256": "63:3f:a4:1d:82:11:d6:d0:91:6a:81:9b:89:66:8c:6d:e9:2e:64:23:2d:a6:7f:9d:16:fd:81:c3:b7:e9:23:ff",
+            "versionCode": 801003702,
+            "versionName": "153.0.8010.37",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:15.522Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/uazo/cromite/releases/download/v153.0.8010.37-11507ac1061b5ea227806f5e84db5a57df6ccf6a/arm64_ChromePublic.apk",
+        "sha256": "9db12af1af021f42b4371e76d0e9fe476a7085bbbbc76bc410a538d028bf6071",
+        "size": 323809949,
+        "abi": "arm64-v8a"
+      }
+    },
+    {
+      "id": "droidify",
+      "name": "Droid-ify",
+      "summary": "Cliente de F-Droid rápido e sem distrações, com Material You",
+      "description": {
+        "en": "A clutter-free F-Droid client: fast repository sync, instant search, Material You theming, and support for the IzzyOnDroid repository. Good when you mainly want to search, install and forget.",
+        "pt": "Cliente de F-Droid sem distrações: sincronização rápida de repositórios, pesquisa instantânea, temas Material You e suporte para o repositório IzzyOnDroid. Bom quando queres apenas procurar, instalar e seguir em frente."
+      },
+      "packageName": "com.looker.droidify",
+      "license": "GPL-3.0-or-later",
+      "sourceCode": "https://github.com/Droid-ify/client",
+      "categories": [
+        "store"
+      ],
+      "tags": [
+        "fdroid",
+        "repository",
+        "material-you"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/droidify.png",
+      "screenshots": [
+        "screenshots/droidify/1.png",
+        "screenshots/droidify/2.png",
+        "screenshots/droidify/3.png"
+      ],
+      "downloadCount": 49472,
+      "signingCertSha256": "ed:88:59:c5:5a:f3:11:16:26:58:b9:4a:f9:82:b9:f0:91:dc:d2:76:28:d4:de:34:86:d1:21:7e:bf:3c:99:35",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "0.7.8",
+        "versionCode": 780,
+        "tag": "v0.7.8",
+        "publishedAt": "2026-09-12T18:59:36Z",
+        "releaseUrl": "https://github.com/Droid-ify/client/releases/tag/v0.7.8",
+        "changelog": "## Fixed\r\n\r\n- Repo state after import\r\n- QR Scanner working\r\n- Root installer deleting APK\r\n- Material You theming\r\n\r\n**Full Changelog**: https://github.com/Droid-ify/client/compare/v0.7.7...v0.7.8",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/Droid-ify/client/releases/download/v0.7.8/app-release.apk",
+            "sha256": "3e7934ff9b811c2f77794793381241095a02bac2d163bf922cb5a5a0ed25ca82",
+            "size": 5997579,
+            "signingCertSha256": "ed:88:59:c5:5a:f3:11:16:26:58:b9:4a:f9:82:b9:f0:91:dc:d2:76:28:d4:de:34:86:d1:21:7e:bf:3c:99:35",
+            "versionCode": 780,
+            "versionName": "0.7.8",
+            "minSdk": null,
+            "targetSdk": 37,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:12.871Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/Droid-ify/client/releases/download/v0.7.8/app-release.apk",
+        "sha256": "3e7934ff9b811c2f77794793381241095a02bac2d163bf922cb5a5a0ed25ca82",
+        "size": 5997579,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "f-droid",
+      "name": "F-Droid",
+      "summary": "O cliente oficial do repositório F-Droid de aplicações livres",
+      "description": {
+        "en": "The official client for the F-Droid catalogue: browse free software apps, install them, and get updates without any Google account. Every app it ships is built from source by F-Droid's own build servers.",
+        "pt": "O cliente oficial do catálogo F-Droid: navega por aplicações de software livre, instala-as e recebe atualizações sem qualquer conta Google. Tudo o que distribui é compilado a partir do código-fonte pelos servidores do F-Droid."
+      },
+      "packageName": "org.fdroid.fdroid",
+      "license": "GPL-3.0-or-later",
+      "sourceCode": "https://gitlab.com/fdroid/fdroidclient",
+      "author": "F-Droid Limited",
+      "categories": [
+        "store"
+      ],
+      "tags": [
+        "fdroid",
+        "foss",
+        "repository"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "links": {
+        "website": "https://f-droid.org",
+        "docs": "https://f-droid.org/docs/",
+        "donate": "https://f-droid.org/donate/"
+      },
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/f-droid.png",
+      "screenshots": [
+        "screenshots/f-droid/1.png",
+        "screenshots/f-droid/2.png",
+        "screenshots/f-droid/3.png"
+      ],
+      "downloadCount": 67087,
+      "signingCertSha256": "43:23:8d:51:2c:1e:5e:b2:d6:56:9f:4a:3a:fb:f5:52:34:18:b8:2e:0a:3e:d1:55:27:70:ab:b9:a9:c9:cc:ab",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "1.18.0",
+        "versionCode": 1018050,
+        "tag": "1.18.0",
+        "publishedAt": "2024-01-24T09:01:27Z",
+        "releaseUrl": "https://github.com/f-droid/fdroidclient/releases/tag/1.18.0",
+        "changelog": "* Fixed using repos and mirrors from External Storage on recent Android releases\r\n* Improved WiFi management in Nearby\r\n* The navigation bar now remembers its position even when F-Droid restarts\r\n* New language: Swahili\r\n* Fix downloading images for repos still using index-v1\r\n* Fix crashes related to swap, managing repos and more\r\n* The Downgrade button was removed, Android no longer allows that",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/f-droid/fdroidclient/releases/download/1.18.0/org.fdroid.fdroid_1018050.apk",
+            "sha256": "605479594b0b372427ca624840f35de3d65fadfbc9d14acf4904191fa83a0ab5",
+            "size": 12688611,
+            "signingCertSha256": "43:23:8d:51:2c:1e:5e:b2:d6:56:9f:4a:3a:fb:f5:52:34:18:b8:2e:0a:3e:d1:55:27:70:ab:b9:a9:c9:cc:ab",
+            "versionCode": 1018050,
+            "versionName": "1.18.0",
+            "minSdk": null,
+            "targetSdk": 28,
+            "nativeAbis": [],
+            "verifiedAt": "2026-10-07T10:24:13.743Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/f-droid/fdroidclient/releases/download/1.18.0/org.fdroid.fdroid_1018050.apk",
+        "sha256": "605479594b0b372427ca624840f35de3d65fadfbc9d14acf4904191fa83a0ab5",
+        "size": 12688611,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "findroid",
+      "name": "Findroid",
+      "summary": "Cliente Jellyfin nativo com foco em downloads offline e UI Material You",
+      "description": {
+        "en": "A third-party Jellyfin client built with native Android UI instead of a webview: fast, Material You themed, with solid offline download support and external player integration.",
+        "pt": "Cliente Jellyfin de terceiros construído com interface nativa em vez de webview: rápido, com tema Material You, bom suporte de downloads offline e integração com reprodutores externos."
+      },
+      "packageName": "dev.jdtech.jellyfin",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/jarnedemeulemeester/findroid",
+      "author": "Jarne Demeulemeester",
+      "categories": [
+        "multimedia"
+      ],
+      "tags": [
+        "jellyfin",
+        "media-server",
+        "offline",
+        "material-you"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=dev.jdtech.jellyfin&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/findroid.png",
+      "screenshots": [],
+      "downloadCount": 8825,
+      "signingCertSha256": "ec:c1:20:86:db:dd:b5:fa:a3:e1:b6:50:d1:61:fb:62:3f:5f:24:18:89:92:c1:17:33:39:cd:5a:8b:2f:86:89",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "1.1.0",
+        "versionCode": 33,
+        "tag": "v1.1.0",
+        "publishedAt": "2026-07-18T21:41:02Z",
+        "releaseUrl": "https://github.com/jarnedemeulemeester/findroid/releases/tag/v1.1.0",
+        "changelog": "# New features\r\n- Edit `mpv.conf` and `input.conf` directly in the settings.\r\n\r\n\r\n# Improvements\r\n- Updated mpv and use system fonts instead of hardwired font.\r\n\r\n# Fixes\r\n- Fixed mpv seeking with millisecond precision.\r\n- Fixed a resource leak in the downloader.",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/jarnedemeulemeester/findroid/releases/download/v1.1.0/findroid-v1.1.0-libre-arm64-v8a.apk",
+            "sha256": "42594a3f84972caf0ff3561b5ad1ea1d2c0dbdcdd1bfba17781c93b046621a54",
+            "size": 38696636,
+            "signingCertSha256": "ec:c1:20:86:db:dd:b5:fa:a3:e1:b6:50:d1:61:fb:62:3f:5f:24:18:89:92:c1:17:33:39:cd:5a:8b:2f:86:89",
+            "versionCode": 33,
+            "versionName": "1.1.0",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:14.671Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/jarnedemeulemeester/findroid/releases/download/v1.1.0/findroid-v1.1.0-libre-armeabi-v7a.apk",
+            "sha256": "827ef6267eb32e92d19c1466e1ea2d7d7a7d34c9454556cd6d9b4fc1709d73d6",
+            "size": 36279100,
+            "signingCertSha256": "ec:c1:20:86:db:dd:b5:fa:a3:e1:b6:50:d1:61:fb:62:3f:5f:24:18:89:92:c1:17:33:39:cd:5a:8b:2f:86:89",
+            "versionCode": 33,
+            "versionName": "1.1.0",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:14.671Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/jarnedemeulemeester/findroid/releases/download/v1.1.0/findroid-v1.1.0-libre-arm64-v8a.apk",
+        "sha256": "42594a3f84972caf0ff3561b5ad1ea1d2c0dbdcdd1bfba17781c93b046621a54",
+        "size": 38696636,
+        "abi": "arm64-v8a"
+      }
+    },
+    {
+      "id": "harmonic",
+      "name": "Harmonic",
+      "summary": "Cliente de Hacker News com navegação por comentários e leitura offline",
+      "description": {
+        "en": "A modern Hacker News client: collapsible threaded comments, saved stories, offline reading, font size and theme controls, and search. No account, no tracking, no ads.",
+        "pt": "Cliente moderno do Hacker News: comentários em árvore que se colapsam, histórias guardadas, leitura offline, controlo de tamanho de letra e tema, e pesquisa. Sem conta, sem rastreio, sem anúncios."
+      },
+      "packageName": "com.simon.harmonichackernews",
+      "license": "Apache-2.0",
+      "sourceCode": "https://github.com/SimonHalvdansson/Harmonic-HN",
+      "categories": [
+        "reading"
+      ],
+      "tags": [
+        "hacker-news",
+        "news",
+        "offline"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=com.simon.harmonichackernews&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/harmonic.png",
+      "screenshots": [
+        "screenshots/harmonic/1.png",
+        "screenshots/harmonic/2.png",
+        "screenshots/harmonic/3.png"
+      ],
+      "downloadCount": 547,
+      "signingCertSha256": "fb:12:db:f6:d0:69:25:12:ed:70:18:15:06:37:a1:93:2e:ab:09:d6:7d:bf:99:00:45:70:96:a5:52:f8:8e:c6",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "3.1.2",
+        "versionCode": 80,
+        "tag": "v3.1.2",
+        "publishedAt": "2026-07-30T12:06:30Z",
+        "releaseUrl": "https://github.com/SimonHalvdansson/Harmonic-HN/releases/tag/v3.1.2",
+        "changelog": "Only minor changes since 3.1.2, found out I wanted to fix them before releasing 3.1 wide. Will put this up on Google Play and check for any crashes as release goes wider.",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/SimonHalvdansson/Harmonic-HN/releases/download/v3.1.2/app-release.apk",
+            "sha256": "de65ca1f2ba6c6287cc464c4883c8db32d6b562bf56614aff0fe43869f4e1f00",
+            "size": 7551235,
+            "signingCertSha256": "fb:12:db:f6:d0:69:25:12:ed:70:18:15:06:37:a1:93:2e:ab:09:d6:7d:bf:99:00:45:70:96:a5:52:f8:8e:c6",
+            "versionCode": 80,
+            "versionName": "3.1.2",
+            "minSdk": null,
+            "targetSdk": 37,
+            "nativeAbis": [],
+            "verifiedAt": "2026-10-07T10:24:14.417Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/SimonHalvdansson/Harmonic-HN/releases/download/v3.1.2/app-release.apk",
+        "sha256": "de65ca1f2ba6c6287cc464c4883c8db32d6b562bf56614aff0fe43869f4e1f00",
+        "size": 7551235,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "imagetoolbox",
+      "name": "Image Toolbox",
+      "summary": "Conjunto de ferramentas de imagem: conversão, filtros, OCR e edição em lote",
+      "description": {
+        "en": "An image manipulation toolbox: format conversion, resizing, cropping, filters, background removal, OCR, EXIF editing and batch operations over hundreds of files. Everything runs on the device.",
+        "pt": "Conjunto de ferramentas de manipulação de imagem: conversão de formato, redimensionamento, recorte, filtros, remoção de fundo, OCR, edição de EXIF e operações em lote sobre centenas de ficheiros. Tudo corre no dispositivo."
+      },
+      "packageName": "ru.tech.imageresizershrinker",
+      "license": "Apache-2.0",
+      "sourceCode": "https://github.com/T8RIN/ImageToolbox",
+      "categories": [
+        "graphics",
+        "utilities"
+      ],
+      "tags": [
+        "images",
+        "ocr",
+        "batch",
+        "converter"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=ru.tech.imageresizershrinker&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/imagetoolbox.png",
+      "screenshots": [
+        "screenshots/imagetoolbox/1.png",
+        "screenshots/imagetoolbox/2.png",
+        "screenshots/imagetoolbox/3.png"
+      ],
+      "downloadCount": 14706,
+      "signingCertSha256": "20:d7:68:9d:e0:87:4f:00:01:5e:a3:e3:1f:a0:67:c1:5c:03:45:7d:36:2d:41:d5:e7:93:db:3a:86:4f:a5:34",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "4.2.0-foss",
+        "versionCode": 267,
+        "tag": "4.2.0",
+        "publishedAt": "2026-09-04T20:59:32Z",
+        "releaseUrl": "https://github.com/T8RIN/ImageToolbox/releases/tag/4.2.0",
+        "changelog": "## What's Changed\r\n\r\n### New Features\r\n\r\n* Added support for AV2-based AVIF images\r\n* Added chroma subsampling selection for AVIF and HEIC formats\r\n* Added VVC encoding support for HEIF format\r\n* Added Batch Rename tool\r\n* Added ability to cancel loading in spot heal draw mode by #2944\r\n* Added ability to use slices in original name filename pattern by #2951\r\n* Added new filename patterns: Parent Folder, UUID\r\n* Added ability to move and customize markup layers menu by #2941\r\n* Added Auto White Balance filter by #2953\r\n* Added LSB and FD modes for hidden watermarks\r\n* Added settings to control the cache limit and automatic clearing interval\r\n* Added ability to make crop overlay undraggable\r\n* Added a GIF merging tool\r\n* Added ability to select a folder as an image source by #2961\r\n* Added the Duplicate Finder tool\r\n* Added long-press reset for editable slider values\r\n* Added more formats for color copying\r\n* Added natural filename sorting, reverse order, and shuffle options to sort button\r\n* Added quick actions to move items to the start or end of reorder lists\r\n* Added ability to save custom aspect ratios by #2968\r\n* Added ability to export barcodes to SVG format by #2978\r\n* Added 74 new procedural textures to the texture generator\r\n* Added search, categories and favorites to texture generation tool\r\n* Added ability to choose deletion presets in Delete EXIF tool\r\n* Added panorama image stitching mode by #2988\r\n* Added ability to preview AI Tool results before saving\r\n* Added customizable RAW development settings\r\n* Added G’MIC filter engine\r\n* Added 167 new filters based on new engine\r\n* Added Gradient Map filter\r\n* Added ability to toggle nested scroll for sheets by #2997\r\n* Added ability to save images that are already below the size limit in the Resize by Weight tool\r\n* Added 3 new scale modes by #2999\r\n  - Magic Kernel\r\n  - Magic Kernel Sharp 2013\r\n  - Magic Kernel Sharp 2021\r\n* Added an option to return after saving external edits by #3003\r\n* Added ability to ",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/T8RIN/ImageToolbox/releases/download/4.2.0/image-toolbox-4.2.0-foss-arm64-v8a.apk",
+            "sha256": "7df1317a461dd46fba91225b098e4fb24b69118e3bedd641f8072e26aecd3c30",
+            "size": 107826476,
+            "signingCertSha256": "20:d7:68:9d:e0:87:4f:00:01:5e:a3:e3:1f:a0:67:c1:5c:03:45:7d:36:2d:41:d5:e7:93:db:3a:86:4f:a5:34",
+            "versionCode": 267,
+            "versionName": "4.2.0-foss",
+            "minSdk": null,
+            "targetSdk": 37,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:17.054Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/T8RIN/ImageToolbox/releases/download/4.2.0/image-toolbox-4.2.0-foss-armeabi-v7a.apk",
+            "sha256": "38fc042e5564b52da3e2b494d5d375dd47a27c6726d0df942800972d62ba6ef2",
+            "size": 99700122,
+            "signingCertSha256": "20:d7:68:9d:e0:87:4f:00:01:5e:a3:e3:1f:a0:67:c1:5c:03:45:7d:36:2d:41:d5:e7:93:db:3a:86:4f:a5:34",
+            "versionCode": 267,
+            "versionName": "4.2.0-foss",
+            "minSdk": null,
+            "targetSdk": 37,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:17.054Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/T8RIN/ImageToolbox/releases/download/4.2.0/image-toolbox-4.2.0-foss-arm64-v8a.apk",
+        "sha256": "7df1317a461dd46fba91225b098e4fb24b69118e3bedd641f8072e26aecd3c30",
+        "size": 107826476,
+        "abi": "arm64-v8a"
+      }
+    },
+    {
+      "id": "jellyfin",
+      "name": "Jellyfin",
+      "summary": "Cliente oficial do Jellyfin, o servidor de media caseiro livre",
+      "description": {
+        "en": "The official Jellyfin Android client: browse and stream your own film, series and music library from your own server, with download for offline playback. This entry tracks the libre build, which excludes proprietary Google Cast libraries.",
+        "pt": "Cliente Android oficial do Jellyfin: navega e transmite a tua biblioteca de filmes, séries e música a partir do teu próprio servidor, com descarregamento para ver offline. Esta entrada segue a build libre, que exclui as bibliotecas proprietárias do Google Cast."
+      },
+      "packageName": "org.jellyfin.mobile",
+      "license": "GPL-2.0-only",
+      "sourceCode": "https://github.com/jellyfin/jellyfin-android",
+      "author": "Jellyfin",
+      "categories": [
+        "multimedia"
+      ],
+      "tags": [
+        "media-server",
+        "streaming",
+        "self-hosted"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "links": {
+        "website": "https://jellyfin.org",
+        "docs": "https://jellyfin.org/docs/"
+      },
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=org.jellyfin.mobile&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/jellyfin.png",
+      "screenshots": [],
+      "downloadCount": 12641,
+      "signingCertSha256": "d8:81:79:6e:d2:a6:7f:f6:ef:9f:67:68:28:72:3c:6b:1f:a1:8e:09:38:89:62:cb:a4:ab:c4:a5:94:a6:91:31",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "2.7.3",
+        "versionCode": 2070399,
+        "tag": "v2.7.3",
+        "publishedAt": "2026-09-14T15:50:19Z",
+        "releaseUrl": "https://github.com/jellyfin/jellyfin-android/releases/tag/v2.7.3",
+        "changelog": "## 🏗️ Enhancements\r\n\r\n- Allow 2 lines for download names #2189, by [@nielsvanvelzen](https://github.com/nielsvanvelzen)\r\n- Propagate max streaming bitrate from web appsettings to native player #2199, by [@nielsvanvelzen](https://github.com/nielsvanvelzen)\r\n\r\n## 🔧 Bugfixes\r\n\r\n- Fix integrated player stopping in the background #2104, by [@pardovot](https://github.com/pardovot)\r\n- Support external URLs #2186, by [@nielsvanvelzen](https://github.com/nielsvanvelzen)\r\n- Fix player hover highlight by isolating the seek ripple #2194, by [@manuelmorales](https://github.com/manuelmorales)\r\n\r\n## Contributors\r\n\r\n- [@nielsvanvelzen](https://github.com/nielsvanvelzen)\r\n- [@pardovot](https://github.com/pardovot)\r\n- [@manuelmorales](https://github.com/manuelmorales)",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/jellyfin/jellyfin-android/releases/download/v2.7.3/jellyfin-android-v2.7.3-libre-release.apk",
+            "sha256": "f9f4b3ab46cc9434df811194c2d4351417f4db83a4c1a0facd0a662d69533f7f",
+            "size": 8964986,
+            "signingCertSha256": "d8:81:79:6e:d2:a6:7f:f6:ef:9f:67:68:28:72:3c:6b:1f:a1:8e:09:38:89:62:cb:a4:ab:c4:a5:94:a6:91:31",
+            "versionCode": 2070399,
+            "versionName": "2.7.3",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:15.818Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/jellyfin/jellyfin-android/releases/download/v2.7.3/jellyfin-android-v2.7.3-libre-release.apk",
+        "sha256": "f9f4b3ab46cc9434df811194c2d4351417f4db83a4c1a0facd0a662d69533f7f",
+        "size": 8964986,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "jerboa",
+      "name": "Jerboa",
+      "summary": "Cliente nativo de Lemmy, a alternativa federada ao Reddit",
+      "description": {
+        "en": "A native Android client for Lemmy: browse any instance, post, comment and vote on a federated link aggregator that no single company controls. Supports multiple accounts across different instances.",
+        "pt": "Cliente Android nativo para o Lemmy: navega em qualquer instância, publica, comenta e vota num agregador de links federado que nenhuma empresa controla. Suporta várias contas em instâncias diferentes."
+      },
+      "packageName": "com.jerboa",
+      "license": "AGPL-3.0-only",
+      "sourceCode": "https://github.com/LemmyNet/jerboa",
+      "author": "LemmyNet",
+      "categories": [
+        "reading",
+        "communication"
+      ],
+      "tags": [
+        "lemmy",
+        "fediverse",
+        "activitypub",
+        "social"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/jerboa.png",
+      "screenshots": [
+        "screenshots/jerboa/1.png",
+        "screenshots/jerboa/2.png"
+      ],
+      "downloadCount": 1851,
+      "signingCertSha256": "ea:71:95:cf:ce:63:8a:e6:b1:a8:00:2d:dc:0d:48:63:36:60:95:ea:5b:8d:95:c1:cd:5e:25:db:0f:e2:e7:c3",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "0.0.88-fdroid",
+        "versionCode": 88,
+        "tag": "0.0.88",
+        "publishedAt": "2026-07-21T13:03:06Z",
+        "releaseUrl": "https://github.com/LemmyNet/jerboa/releases/tag/0.0.88",
+        "changelog": "## What's Changed\r\n\r\n* Improve ImageViewerScreen logging by @MV-GH in https://github.com/LemmyNet/jerboa/pull/2160\r\n* Changing renovate to monthly by @dessalines in https://github.com/LemmyNet/jerboa/pull/2161\r\n* Fix lint due to new unescaped translation from weblate by @MV-GH in https://github.com/LemmyNet/jerboa/pull/2164\r\n* Implement view pooling for AndroidViews by @MV-GH in https://github.com/LemmyNet/jerboa/pull/2163\r\n* Fix scroll stuck/glitchy in comments when scrolling up to an image by @MV-GH in https://github.com/LemmyNet/jerboa/pull/2162\r\n* AGP 9 upgrade by @MV-GH in https://github.com/LemmyNet/jerboa/pull/2053\r\n* Expand Search Functionality by @MV-GH in https://github.com/LemmyNet/jerboa/pull/2176\r\n* Fix some deprecations by @MV-GH in https://github.com/LemmyNet/jerboa/pull/2182\r\n* Update baselineprofiles + tweak compose compiler config by @MV-GH in https://github.com/LemmyNet/jerboa/pull/2181\r\n* Remove duplicate translation key by @MV-GH in https://github.com/LemmyNet/jerboa/pull/2178\r\n\r\n\r\n**Full Changelog**: https://github.com/LemmyNet/jerboa/compare/0.0.87...0.0.88",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/LemmyNet/jerboa/releases/download/0.0.88/jerboa-fdroid-0.0.88.apk",
+            "sha256": "736b9b85ad8e889d56df34af4c11a39e32966f56645a97a646d602e37378def9",
+            "size": 6149642,
+            "signingCertSha256": "ea:71:95:cf:ce:63:8a:e6:b1:a8:00:2d:dc:0d:48:63:36:60:95:ea:5b:8d:95:c1:cd:5e:25:db:0f:e2:e7:c3",
+            "versionCode": 88,
+            "versionName": "0.0.88-fdroid",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:15.837Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/LemmyNet/jerboa/releases/download/0.0.88/jerboa-fdroid-0.0.88.apk",
+        "sha256": "736b9b85ad8e889d56df34af4c11a39e32966f56645a97a646d602e37378def9",
+        "size": 6149642,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "koreader",
+      "name": "KOReader",
+      "summary": "Leitor de ebooks e PDF com dicionários, notas e gestão de biblioteca",
+      "description": {
+        "en": "An ebook reader for PDF, EPUB, DjVu, CBZ and FB2 with reflow, dictionary lookup, highlights, page cropping and multi-column support. Built for e-ink devices but works well on Android tablets and phones.",
+        "pt": "Leitor de ebooks para PDF, EPUB, DjVu, CBZ e FB2 com reflow, consulta de dicionário, destaques, recorte de páginas e suporte multi-coluna. Feito para e-ink, mas funciona bem em tablets e telefones Android."
+      },
+      "packageName": "org.koreader.launcher",
+      "license": "AGPL-3.0-only",
+      "sourceCode": "https://github.com/koreader/koreader",
+      "author": "KOReader contributors",
+      "categories": [
+        "reading"
+      ],
+      "tags": [
+        "ebook",
+        "pdf",
+        "epub",
+        "e-ink"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "links": {
+        "website": "https://koreader.rocks",
+        "docs": "https://github.com/koreader/koreader/wiki"
+      },
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/koreader.png",
+      "screenshots": [
+        "screenshots/koreader/1.png",
+        "screenshots/koreader/2.png",
+        "screenshots/koreader/3.png"
+      ],
+      "downloadCount": 77537,
+      "signingCertSha256": "fd:49:2a:4f:e0:01:f1:70:58:b8:26:da:43:58:a1:dc:ea:c3:8d:26:68:6f:34:25:22:c5:a4:97:bc:d4:dc:cc",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "v2026.07.1",
+        "versionCode": 119462,
+        "tag": "v2026.07.1",
+        "publishedAt": "2026-08-01T11:10:30Z",
+        "releaseUrl": "https://github.com/koreader/koreader/releases/tag/v2026.07.1",
+        "changelog": "Minor bug fixes, mainly for some virtual artifacts in rounded corners (#15753).\r\n\r\n## What's Changed\r\n* Fix OPDS 2.0 http header (https://github.com/koreader/koreader/pull/15751) @hius07\r\n* bump base (https://github.com/koreader/koreader/pull/15746) @benoit-pierre\r\n* Maintain scroll offset for a kept open, multi-page QuickMenu (https://github.com/koreader/koreader/pull/15756) @asz3\r\n* luxl: keep attribute values that are not ASCII (https://github.com/koreader/koreader/pull/15758) @iav\r\n* Support tolino fw >=5.18 (https://github.com/koreader/koreader/pull/15759) @beedaddy\r\n* OPDS2.0: fix author (https://github.com/koreader/koreader/pull/15770) @hius07\r\n* Wallabag: skip archive dir in recursive scan (https://github.com/koreader/koreader/pull/15767) @liskin\r\n\r\n## New Contributors\r\n* @asz3 made their first contribution in https://github.com/koreader/koreader/pull/15756\r\n\r\n**Full Changelog**: https://github.com/koreader/koreader/compare/v2026.07...v2026.07.1",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/koreader/koreader/releases/download/v2026.07.1/koreader-android-arm64-v2026.07.1.apk",
+            "sha256": "89cecbe06eacd2ff7d91e37152d6beeb52809f2ca38060b6515ed8b00d152412",
+            "size": 30084751,
+            "signingCertSha256": "fd:49:2a:4f:e0:01:f1:70:58:b8:26:da:43:58:a1:dc:ea:c3:8d:26:68:6f:34:25:22:c5:a4:97:bc:d4:dc:cc",
+            "versionCode": 119462,
+            "versionName": "v2026.07.1",
+            "minSdk": null,
+            "targetSdk": 30,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:17.736Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/koreader/koreader/releases/download/v2026.07.1/koreader-android-arm-v2026.07.1.apk",
+            "sha256": "37c5b72202241ee8e85d186b9147534ffde28d39a98981e3e8f794274ee7df93",
+            "size": 29085335,
+            "signingCertSha256": "fd:49:2a:4f:e0:01:f1:70:58:b8:26:da:43:58:a1:dc:ea:c3:8d:26:68:6f:34:25:22:c5:a4:97:bc:d4:dc:cc",
+            "versionCode": 119461,
+            "versionName": "v2026.07.1",
+            "minSdk": null,
+            "targetSdk": 30,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:17.736Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/koreader/koreader/releases/download/v2026.07.1/koreader-android-arm64-v2026.07.1.apk",
+        "sha256": "89cecbe06eacd2ff7d91e37152d6beeb52809f2ca38060b6515ed8b00d152412",
+        "size": 30084751,
+        "abi": "arm64-v8a"
+      },
+      "warnings": [
+        "versionCode difere entre ABIs (119462, 119461); a usar 119462"
+      ]
+    },
+    {
+      "id": "libretube",
+      "name": "LibreTube",
+      "summary": "Frontend alternativo para YouTube que passa por instâncias Piped",
+      "description": {
+        "en": "Watches YouTube through Piped instances, so the device never talks to YouTube directly and no account is needed. Includes subscriptions without a Google account, playlists and background audio playback.",
+        "pt": "Vê YouTube através de instâncias Piped, pelo que o dispositivo nunca fala diretamente com o YouTube e não é precisa conta. Inclui subscrições sem conta Google, listas de reprodução e áudio em segundo plano."
+      },
+      "packageName": "com.github.libretube",
+      "license": "GPL-3.0-or-later",
+      "sourceCode": "https://github.com/libre-tube/LibreTube",
+      "categories": [
+        "media",
+        "privacy"
+      ],
+      "tags": [
+        "youtube",
+        "piped",
+        "streaming",
+        "no-account"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/libretube.png",
+      "screenshots": [
+        "screenshots/libretube/1.jpg",
+        "screenshots/libretube/2.jpg",
+        "screenshots/libretube/3.jpg"
+      ],
+      "downloadCount": 68319,
+      "signingCertSha256": "72:0c:4f:ce:cf:73:8a:41:d0:33:b9:fb:e0:be:f9:7a:c2:32:03:0c:e9:3e:27:4d:2e:0a:e2:32:e4:4e:ea:ce",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "32.1",
+        "versionCode": 72,
+        "tag": "v32.1",
+        "publishedAt": "2026-08-20T20:14:35Z",
+        "releaseUrl": "https://github.com/libre-tube/LibreTube/releases/tag/v32.1",
+        "changelog": "> [!NOTE]\n> ## Release Highlights\n> This release fixes the recent video playback issues and that playlists contain no videos.\n> \n> To overcome the video playback issues, we implemented YouTube's new, custom streaming protocol (called SABR). YouTube started to progressively remove support for traditional streaming protocols, so LibreTube's support for the new protocol should make video playback much more reliable.\n> \n> Apart from this, the release includes support for podcasts and courses tabs on channels, a \"resume all\" option for downloads, as well as many minor bug fixes and small improvements.\n### :bug: Bug Fixes\n- [`a74565b`](https://github.com/libre-tube/LibreTube/commit/a74565bac4666410dc987db88c8d5bc33c66d839) - fullscreen button hidden whenever auto-fullscreen is enabled *(commit by @prefixFelix)*\n- [`a2b30e1`](https://github.com/libre-tube/LibreTube/commit/a2b30e17a696e0326c5686c6df3c3804beba6c9a) - database migration crashes app on Android 13 and below *(commit by @Bnyro)*\n- [`1f21b72`](https://github.com/libre-tube/LibreTube/commit/1f21b728fcdc4b5409c9a4ab811b2f05d592610d) - navigation bar order setting stopped working *(commit by @Bnyro)*\n\n### :wrench: Chores\n- [`6a861f4`](https://github.com/libre-tube/LibreTube/commit/6a861f4282c3de73b840793365d8ac7114b5a80f) - bump version to v32.1 *(commit by @Bnyro)*",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/libre-tube/LibreTube/releases/download/v32.1/app-release.apk",
+            "sha256": "437dbb55540ac573f864938fc3595f69fc13df5d568b237aded9935559fe1353",
+            "size": 9253519,
+            "signingCertSha256": "72:0c:4f:ce:cf:73:8a:41:d0:33:b9:fb:e0:be:f9:7a:c2:32:03:0c:e9:3e:27:4d:2e:0a:e2:32:e4:4e:ea:ce",
+            "versionCode": 72,
+            "versionName": "32.1",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [],
+            "verifiedAt": "2026-10-07T10:24:17.209Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/libre-tube/LibreTube/releases/download/v32.1/app-release.apk",
+        "sha256": "437dbb55540ac573f864938fc3595f69fc13df5d568b237aded9935559fe1353",
+        "size": 9253519,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "magisk",
+      "name": "Magisk",
+      "summary": "Solução de root systemless com MagiskSU, módulos e Zygisk",
+      "description": {
+        "en": "The standard way to root a modern Android device without modifying system partitions: MagiskSU for root access, a module system, Zygisk for injecting code into app processes, and a DenyList for hiding modifications from apps that check for root.",
+        "pt": "A forma padrão de obter root num Android moderno sem alterar as partições de sistema: MagiskSU para acesso root, sistema de módulos, Zygisk para injetar código nos processos das apps e DenyList para esconder modificações de apps que verificam root."
+      },
+      "packageName": "com.topjohnwu.magisk",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/topjohnwu/Magisk",
+      "author": "John Wu",
+      "categories": [
+        "system",
+        "security"
+      ],
+      "tags": [
+        "root",
+        "modules",
+        "zygisk",
+        "systemless"
+      ],
+      "status": "active",
+      "antiFeatures": [
+        "knownVuln"
+      ],
+      "links": {
+        "website": "https://topjohnwu.github.io/Magisk/",
+        "docs": "https://topjohnwu.github.io/Magisk/guides.html"
+      },
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": null,
+      "screenshots": [
+        "screenshots/magisk/1.png",
+        "screenshots/magisk/2.png",
+        "screenshots/magisk/3.png"
+      ],
+      "downloadCount": 4033071,
+      "signingCertSha256": "b4:cb:83:b4:da:d9:9f:99:7d:be:87:2f:01:3a:a1:6c:14:ee:c4:1d:16:70:21:f3:71:f7:e1:33:0f:27:3e:e6",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "30.7",
+        "versionCode": 30700,
+        "tag": "v30.7",
+        "publishedAt": "2026-02-23T08:07:01Z",
+        "releaseUrl": "https://github.com/topjohnwu/Magisk/releases/tag/v30.7",
+        "changelog": "- [MagiskInit] Support Android 16 QPR2 sepolicy format\r\n- [MagiskInit] Support using klogdump partition as pre-init storage\r\n- [Zygisk] Support Android 16 QPR2 and higher\r\n- [Zygisk] Support Android XR and some Nubia devices\r\n- [MagiskSU] Do not drop capabilities by default, even when switching to non-root UIDs. Explicitly use the `--drop-cap` argument to drop capabilities.\r\n- [MagiskBoot] Better lzma format detection\r\n- [MagiskBoot] Fix various commandline argument parsing bugs\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk",
+            "sha256": "e0d32d2123532860f97123d927b1bb86c4e08e6fd8a48bfc6b5bee0afae9ebd5",
+            "size": 11613864,
+            "signingCertSha256": "b4:cb:83:b4:da:d9:9f:99:7d:be:87:2f:01:3a:a1:6c:14:ee:c4:1d:16:70:21:f3:71:f7:e1:33:0f:27:3e:e6",
+            "versionCode": 30700,
+            "versionName": "30.7",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:17.227Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk",
+        "sha256": "e0d32d2123532860f97123d927b1bb86c4e08e6fd8a48bfc6b5bee0afae9ebd5",
+        "size": 11613864,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "molly",
+      "name": "Molly",
+      "summary": "Fork do Signal com cifra da base de dados e sem dependência do Play Services",
+      "description": {
+        "en": "A hardened Signal fork: the local database can be encrypted with a passphrase, the app locks when idle, and the FOSS build drops Google Play Services entirely (using a websocket instead of FCM). Talks to the same Signal network.",
+        "pt": "Fork reforçado do Signal: a base de dados local pode ser cifrada com uma frase-passe, a app bloqueia quando fica inativa e a versão FOSS dispensa por completo os Google Play Services (usa websocket em vez de FCM). Usa a mesma rede Signal."
+      },
+      "packageName": "im.molly.app",
+      "license": "AGPL-3.0-only",
+      "sourceCode": "https://github.com/mollyim/mollyim-android",
+      "author": "Molly.im",
+      "categories": [
+        "communication",
+        "security"
+      ],
+      "tags": [
+        "signal",
+        "messaging",
+        "encryption",
+        "no-gms"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "links": {
+        "website": "https://molly.im",
+        "docs": "https://molly.im/faq/"
+      },
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": null,
+      "screenshots": [],
+      "downloadCount": 36167,
+      "signingCertSha256": "6a:a8:0f:df:4a:8c:c1:37:37:cf:b4:34:fc:0c:de:48:6f:09:cf:8f:cd:a2:1a:67:be:a5:ee:1c:a2:70:08:86",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "v8.19.2-4",
+        "versionCode": 171904,
+        "tag": "v8.19.2-4",
+        "publishedAt": "2026-07-31T11:56:13Z",
+        "releaseUrl": "https://github.com/mollyim/mollyim-android/releases/tag/v8.19.2-4",
+        "changelog": "Fixed a DNS leak when SOCKS5 proxy is configured in v8.19.2-3 (https://github.com/mollyim/mollyim-android/issues/799).\r\n\r\nFor the complete list of changes, see the [CHANGELOG](https://github.com/mollyim/mollyim-android/wiki/Changelog).",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/mollyim/mollyim-android/releases/download/v8.19.2-4/Molly-v8.19.2-4.apk",
+            "sha256": "f1c6fd929f9047809a7a9bb4e663d1ec1ec4d9f33d9794799c8e2f8e1663ec11",
+            "size": 96755948,
+            "signingCertSha256": "6a:a8:0f:df:4a:8c:c1:37:37:cf:b4:34:fc:0c:de:48:6f:09:cf:8f:cd:a2:1a:67:be:a5:ee:1c:a2:70:08:86",
+            "versionCode": 171904,
+            "versionName": "v8.19.2-4",
+            "minSdk": null,
+            "targetSdk": 35,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:19.208Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/mollyim/mollyim-android/releases/download/v8.19.2-4/Molly-v8.19.2-4.apk",
+        "sha256": "f1c6fd929f9047809a7a9bb4e663d1ec1ec4d9f33d9794799c8e2f8e1663ec11",
+        "size": 96755948,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "mpv",
+      "name": "mpv-android",
+      "summary": "Reprodutor de vídeo baseado no mpv, com suporte a tudo o que o ffmpeg lê",
+      "description": {
+        "en": "A hardware-accelerated port of the mpv media player: plays essentially any container and codec ffmpeg can decode, with proper subtitle rendering, audio track selection, gesture controls and a scriptable interface.",
+        "pt": "Port do reprodutor mpv com aceleração por hardware: reproduz praticamente qualquer contentor e codec que o ffmpeg descodifique, com renderização correta de legendas, escolha de faixas de áudio, gestos e interface programável."
+      },
+      "packageName": "is.xyz.mpv",
+      "license": "MIT",
+      "sourceCode": "https://github.com/mpv-android/mpv-android",
+      "categories": [
+        "multimedia"
+      ],
+      "tags": [
+        "video",
+        "player",
+        "ffmpeg",
+        "subtitles"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=is.xyz.mpv&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/mpv.png",
+      "screenshots": [],
+      "downloadCount": 12023,
+      "signingCertSha256": "fa:e7:f9:d0:23:85:cc:24:d9:6e:88:43:66:03:e2:3e:a6:ae:c7:64:9a:d1:25:0a:bb:b4:83:7d:aa:b8:2f:ff",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "2026-09-17-release",
+        "versionCode": 4048,
+        "tag": "2026-09-17",
+        "publishedAt": "2026-09-17T15:33:45Z",
+        "releaseUrl": "https://github.com/mpv-android/mpv-android/releases/tag/2026-09-17",
+        "changelog": "#### :information_source: New `allstorage` APK\r\n \r\nThe `api29` APK has been removed and replaced with `allstorage`, which uses the \"manage external storage\" permission to allow unrestricted file access without having to downgrade the API level.\r\nIt will stay separate and not be shipped to Google Play.\r\n\r\n## Change log\r\n\r\n- Fixes:\r\n  - Fixed freeze/long delay before first TLS connection (@obscenelyvague)\r\n  - hwdec-related bug fixes\r\n\r\n## Full set of build dependencies\r\n\r\n* Android NDK r30\r\n* mbedtls 3.6.7\r\n* dav1d videolan/dav1d@362bc1138228390a0a521ecf3af18b23c6afeb9e\r\n* ffmpeg ffmpeg/ffmpeg@094a2f8a2a5e7fa64736e067de224ce28fdf5979\r\n* libxml2 2.15.4\r\n* fontconfig 2.18.3\r\n* freetype 2.14.3\r\n* fribidi 1.0.16\r\n* harfbuzz 14.4.0\r\n* libunibreak 8.0\r\n* libass libass/libass@b2fe9d8770678a7b5271387d38c20657ebf3429a\r\n* lua 5.2.4\r\n* libplacebo haasn/libplacebo@3330a515d62139259c26239014f286e233bd3a5c\r\n* curl 8.21.0\r\n* libmpv mpv-player/mpv@0b7ed670f7c353dd3dd4f8ae0fc788a181a15aa6\r\n* mpv-android fdf74f6830c47dbaa8a22ac79726e8303f1db5af\r\n\r\n\r\n### :arrow_down_small: Which APK do I download? :arrow_down_small: \r\n\r\nYou generally want to get **`arm64-v8a`**. Try `armeabi-v7a` for old devices. Or `x86` otherwise.\r\nIf you are unsure then the `universal` APK will work everywhere.\r\n\r\n**Note**: Android TV is supported, but only available on F-Droid or by installing the APK manually using e.g. [Downloader](https://play.google.com/store/apps/details?id=com.esaba.downloader).",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/mpv-android/mpv-android/releases/download/2026-09-17/app-default-arm64-v8a-release.apk",
+            "sha256": "0b0e0a534dd6b8d2b117f06952e0600064ad97702e48bff02543e3e32107803d",
+            "size": 34290346,
+            "signingCertSha256": "fa:e7:f9:d0:23:85:cc:24:d9:6e:88:43:66:03:e2:3e:a6:ae:c7:64:9a:d1:25:0a:bb:b4:83:7d:aa:b8:2f:ff",
+            "versionCode": 2048,
+            "versionName": "2026-09-17-release",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:19.284Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/mpv-android/mpv-android/releases/download/2026-09-17/app-default-armeabi-v7a-release.apk",
+            "sha256": "30c63f5528530f56cdece5d6466c749976f01bdcd8c8e67ae76e70a54b7243aa",
+            "size": 30935742,
+            "signingCertSha256": "fa:e7:f9:d0:23:85:cc:24:d9:6e:88:43:66:03:e2:3e:a6:ae:c7:64:9a:d1:25:0a:bb:b4:83:7d:aa:b8:2f:ff",
+            "versionCode": 1048,
+            "versionName": "2026-09-17-release",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:19.284Z"
+          },
+          {
+            "abi": "x86_64",
+            "url": "https://github.com/mpv-android/mpv-android/releases/download/2026-09-17/app-default-x86_64-release.apk",
+            "sha256": "347cef5d0c2fe76ec95e19685597ad5d208e5309cc0642d51ae656b125ce1d07",
+            "size": 40376972,
+            "signingCertSha256": "fa:e7:f9:d0:23:85:cc:24:d9:6e:88:43:66:03:e2:3e:a6:ae:c7:64:9a:d1:25:0a:bb:b4:83:7d:aa:b8:2f:ff",
+            "versionCode": 4048,
+            "versionName": "2026-09-17-release",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:19.284Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/mpv-android/mpv-android/releases/download/2026-09-17/app-default-arm64-v8a-release.apk",
+        "sha256": "0b0e0a534dd6b8d2b117f06952e0600064ad97702e48bff02543e3e32107803d",
+        "size": 34290346,
+        "abi": "arm64-v8a"
+      },
+      "warnings": [
+        "versionCode difere entre ABIs (2048, 1048, 4048); a usar 4048"
+      ]
+    },
+    {
+      "id": "neo-backup",
+      "name": "Neo Backup",
+      "summary": "Cópias de segurança locais de APKs e dados de apps, com ou sem root",
+      "description": {
+        "en": "Back up and restore apps and their data to local storage or a document provider. Works without root for APKs, and with root or Shizuku for app data. The maintained successor to OAndBackupX.",
+        "pt": "Cria e restaura cópias de segurança de apps e dos seus dados no armazenamento local ou num fornecedor de documentos. Funciona sem root para os APKs, e com root ou Shizuku para os dados das apps. É o sucessor mantido do OAndBackupX."
+      },
+      "packageName": "com.machiav3lli.backup",
+      "license": "AGPL-3.0-only",
+      "sourceCode": "https://github.com/NeoApplications/Neo-Backup",
+      "categories": [
+        "system",
+        "utilities"
+      ],
+      "tags": [
+        "backup",
+        "restore",
+        "apk",
+        "shizuku"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/neo-backup.png",
+      "screenshots": [
+        "screenshots/neo-backup/1.png",
+        "screenshots/neo-backup/2.png",
+        "screenshots/neo-backup/3.png"
+      ],
+      "downloadCount": 22490,
+      "signingCertSha256": "c9:4f:10:24:3c:14:d5:7d:d6:9d:ed:e6:1c:23:4b:b5:e8:bb:07:04:d6:1b:45:da:fe:49:67:28:ac:32:f3:78",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "8.3.18",
+        "versionCode": 8331,
+        "tag": "8.3.18",
+        "publishedAt": "2026-05-03T20:55:11Z",
+        "releaseUrl": "https://github.com/NeoApplications/Neo-Backup/releases/tag/8.3.18",
+        "changelog": "## SHA256\r\n\r\nd2bd2fbd57bf1e99d12a40ba4418e66543a2983742f16b0f3509262f36f7b4f7\r\n\r\n## Changelog\r\n\r\n### Function\r\n\r\n- Update: Revamp PrefDelegate to replace Pref\r\n\r\n### UI & UX\r\n\r\n- Add: Onboarding page flow\r\n- Add: Package names to package selector dialogs\r\n- Fix: Updating app on changing theme contrast preference\r\n- Update: Replace legacy user prefs with NeoPrefs\r\n- Update: Revamp permissions and welcome pages to handle onboarding\r\n- Remove: Encryption warning dialog",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/NeoApplications/Neo-Backup/releases/download/8.3.18/Neo_Backup_8.3.18_release.apk",
+            "sha256": "d2bd2fbd57bf1e99d12a40ba4418e66543a2983742f16b0f3509262f36f7b4f7",
+            "size": 11430871,
+            "signingCertSha256": "c9:4f:10:24:3c:14:d5:7d:d6:9d:ed:e6:1c:23:4b:b5:e8:bb:07:04:d6:1b:45:da:fe:49:67:28:ac:32:f3:78",
+            "versionCode": 8331,
+            "versionName": "8.3.18",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:18.434Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/NeoApplications/Neo-Backup/releases/download/8.3.18/Neo_Backup_8.3.18_release.apk",
+        "sha256": "d2bd2fbd57bf1e99d12a40ba4418e66543a2983742f16b0f3509262f36f7b4f7",
+        "size": 11430871,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "neo-store",
+      "name": "Neo Store",
+      "summary": "Cliente de F-Droid com interface moderna e funcionalidades extra",
+      "description": {
+        "en": "An F-Droid client with a modern Material interface, better search, repository management, and the ability to install apps that F-Droid's own client refuses because of signature or compatibility checks.",
+        "pt": "Cliente de F-Droid com interface Material moderna, melhor pesquisa, gestão de repositórios e capacidade de instalar apps que o cliente oficial recusa por verificações de assinatura ou compatibilidade."
+      },
+      "packageName": "com.machiav3lli.fdroid",
+      "license": "GPL-3.0-or-later",
+      "sourceCode": "https://github.com/NeoApplications/Neo-Store",
+      "categories": [
+        "store"
+      ],
+      "tags": [
+        "fdroid",
+        "repository",
+        "material-you"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/neo-store.png",
+      "screenshots": [
+        "screenshots/neo-store/1.png",
+        "screenshots/neo-store/2.png",
+        "screenshots/neo-store/3.png"
+      ],
+      "downloadCount": 9786,
+      "signingCertSha256": "c5:86:01:46:13:8b:77:99:bb:9d:06:17:c3:98:c1:e5:24:15:50:f5:58:25:2a:3f:97:b2:a5:1f:15:26:3e:f7",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "1.3.2",
+        "versionCode": 1303,
+        "tag": "1.3.2",
+        "publishedAt": "2026-10-01T23:28:41Z",
+        "releaseUrl": "https://github.com/NeoApplications/Neo-Store/releases/tag/1.3.2",
+        "changelog": "## SHA256\r\n\r\n87a3d6f553f7ce0e9fe1858748f94c83aa2bc3e54e25410e31a317a2cb93cc3b\r\n\r\n## Changelog\r\n\r\n### Function\r\n\r\n- Fix: Deleting externally downloaded Apks on erase\r\n- Fix: Delayed update of App info chips\r\n- Fix: Clean up Product query",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/NeoApplications/Neo-Store/releases/download/1.3.2/Neo_Store_1.3.2_release.apk",
+            "sha256": "87a3d6f553f7ce0e9fe1858748f94c83aa2bc3e54e25410e31a317a2cb93cc3b",
+            "size": 5924118,
+            "signingCertSha256": "c5:86:01:46:13:8b:77:99:bb:9d:06:17:c3:98:c1:e5:24:15:50:f5:58:25:2a:3f:97:b2:a5:1f:15:26:3e:f7",
+            "versionCode": 1303,
+            "versionName": "1.3.2",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:18.911Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/NeoApplications/Neo-Store/releases/download/1.3.2/Neo_Store_1.3.2_release.apk",
+        "sha256": "87a3d6f553f7ce0e9fe1858748f94c83aa2bc3e54e25410e31a317a2cb93cc3b",
+        "size": 5924118,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "newpipe",
+      "name": "NewPipe",
+      "summary": "Cliente leve de streaming para YouTube, PeerTube e SoundCloud, sem conta Google",
+      "description": {
+        "en": "A lightweight YouTube frontend for Android. It uses the site's own APIs so no Google account, no Google Play Services and no proprietary library is involved. Supports background playback, popup player, audio-only mode, 4K video and downloading.",
+        "pt": "Cliente leve de YouTube para Android. Usa apenas as APIs públicas do site, pelo que não precisa de conta Google, de Google Play Services nem de bibliotecas proprietárias. Suporta reprodução em segundo plano, popup, modo só-áudio, vídeo 4K e descarregamento."
+      },
+      "packageName": "org.schabi.newpipe",
+      "license": "GPL-3.0-or-later",
+      "sourceCode": "https://github.com/TeamNewPipe/NewPipe",
+      "author": "Team NewPipe",
+      "categories": [
+        "media"
+      ],
+      "tags": [
+        "youtube",
+        "streaming",
+        "no-ads",
+        "background-playback"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "links": {
+        "website": "https://newpipe.net",
+        "donate": "https://newpipe.net/donate/",
+        "translate": "https://hosted.weblate.org/projects/newpipe/"
+      },
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/newpipe.png",
+      "screenshots": [
+        "screenshots/newpipe/1.png",
+        "screenshots/newpipe/2.png",
+        "screenshots/newpipe/3.png"
+      ],
+      "downloadCount": 169914,
+      "signingCertSha256": "cb:84:06:9b:d6:81:16:ba:fa:e5:ee:4e:e5:b0:8a:56:7a:a6:d8:98:40:4e:7c:b1:2f:9e:75:6d:f5:cf:5c:ab",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "0.29.1",
+        "versionCode": 1015,
+        "tag": "v0.29.1",
+        "publishedAt": "2026-08-15T22:05:38Z",
+        "releaseUrl": "https://github.com/TeamNewPipe/NewPipe/releases/tag/v0.29.1",
+        "changelog": "This is a hotfix release that fixes media.ccc.de live streams. Happy hacking!",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.1/NewPipe_v0.29.1.apk",
+            "sha256": "18447bfb1e06d113edc88df93f471827280de06f6f3d4dc42f56f28b9c1bab79",
+            "size": 11507122,
+            "signingCertSha256": "cb:84:06:9b:d6:81:16:ba:fa:e5:ee:4e:e5:b0:8a:56:7a:a6:d8:98:40:4e:7c:b1:2f:9e:75:6d:f5:cf:5c:ab",
+            "versionCode": 1015,
+            "versionName": "0.29.1",
+            "minSdk": null,
+            "targetSdk": 35,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:19.714Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/TeamNewPipe/NewPipe/releases/download/v0.29.1/NewPipe_v0.29.1.apk",
+        "sha256": "18447bfb1e06d113edc88df93f471827280de06f6f3d4dc42f56f28b9c1bab79",
+        "size": 11507122,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "nextplayer",
+      "name": "Next Player",
+      "summary": "Reprodutor de vídeo nativo em Compose, simples e sem anúncios",
+      "description": {
+        "en": "A video player written with Jetpack Compose and ExoPlayer/Media3: clean library, gesture controls, subtitles, background audio, playlists and support for network streams. No ads, no tracking, no unnecessary permissions.",
+        "pt": "Reprodutor de vídeo escrito em Jetpack Compose com ExoPlayer/Media3: biblioteca limpa, controlos por gestos, legendas, áudio em segundo plano, listas de reprodução e suporte para streams de rede. Sem anúncios, sem rastreio, sem permissões desnecessárias."
+      },
+      "packageName": "dev.anilbeesetti.nextplayer",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/anilbeesetti/nextplayer",
+      "author": "Anil Kumar Beesetti",
+      "categories": [
+        "multimedia"
+      ],
+      "tags": [
+        "video",
+        "player",
+        "compose",
+        "no-ads"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=dev.anilbeesetti.nextplayer&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/nextplayer.png",
+      "screenshots": [
+        "screenshots/nextplayer/1.png",
+        "screenshots/nextplayer/2.png",
+        "screenshots/nextplayer/3.png"
+      ],
+      "downloadCount": 13362,
+      "signingCertSha256": "d3:7c:ab:f3:67:6c:f5:82:24:fb:24:2c:8d:d2:09:12:9d:05:88:03:79:29:5f:aa:a6:d0:fb:60:7b:ec:13:1b",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "0.18.0",
+        "versionCode": 74,
+        "tag": "v0.18.0",
+        "publishedAt": "2026-09-14T04:11:20Z",
+        "releaseUrl": "https://github.com/anilbeesetti/nextplayer/releases/tag/v0.18.0",
+        "changelog": "## New features\r\n* Added local playlists feature by @anilbeesetti in https://github.com/anilbeesetti/nextplayer/pull/1858\r\n* Added SSH key authentication for SFTP connections by @anilbeesetti in https://github.com/anilbeesetti/nextplayer/pull/1807\r\n* Added M3U playlist support by @anilbeesetti in https://github.com/anilbeesetti/nextplayer/pull/1887\r\n* Added runtime decoder mode switcher by @anilbeesetti in https://github.com/anilbeesetti/nextplayer/pull/1782\r\n* Added playback history by @anilbeesetti in https://github.com/anilbeesetti/nextplayer/pull/1909\r\n* Added video trash and restore actions by @anilbeesetti in https://github.com/anilbeesetti/nextplayer/pull/1910\r\n* Added software AV1 decoder @anilbeesetti in https://github.com/anilbeesetti/nextlib/pull/201\r\n\r\n## Improvements\r\n* Simplified secret folder navigation and biometric unlock support by @anilbeesetti in https://github.com/anilbeesetti/nextplayer/pull/1905\r\n* Improved network connections by @anilbeesetti in https://github.com/anilbeesetti/nextplayer/pull/1915\r\n* Improved TV focus navigation and text input by @anilbeesetti in https://github.com/anilbeesetti/nextplayer/pull/1924\r\n* Improved software decoders @anilbeesetti in https://github.com/anilbeesetti/nextlib/pull/199, https://github.com/anilbeesetti/nextlib/pull/200, \r\n\r\n## Fixes\r\n* Fixed deafult session commands are missing from the media session by @anilbeesetti in https://github.com/anilbeesetti/nextplayer/pull/1919\r\n* Fixed software video rotation is ignored by @anilbeesetti in https://github.com/anilbeesetti/nextlib/pull/210\r\n\r\n**Full Changelog**: https://github.com/anilbeesetti/nextplayer/compare/v0.17.5...v0.18.0",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/anilbeesetti/nextplayer/releases/download/v0.18.0/nextplayer-v0.18.0-arm64-v8a.apk",
+            "sha256": "717ab28053af129f79442aed269843bc3f2009b132c9d955342ddc3117dfd044",
+            "size": 18948102,
+            "signingCertSha256": "d3:7c:ab:f3:67:6c:f5:82:24:fb:24:2c:8d:d2:09:12:9d:05:88:03:79:29:5f:aa:a6:d0:fb:60:7b:ec:13:1b",
+            "versionCode": 74,
+            "versionName": "0.18.0",
+            "minSdk": null,
+            "targetSdk": 37,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:20.170Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/anilbeesetti/nextplayer/releases/download/v0.18.0/nextplayer-v0.18.0-armeabi-v7a.apk",
+            "sha256": "eeb158306e9a4430dcae17f96cb2da055b3b096eb222edbe7aa8f6218f0d8f0c",
+            "size": 17898032,
+            "signingCertSha256": "d3:7c:ab:f3:67:6c:f5:82:24:fb:24:2c:8d:d2:09:12:9d:05:88:03:79:29:5f:aa:a6:d0:fb:60:7b:ec:13:1b",
+            "versionCode": 74,
+            "versionName": "0.18.0",
+            "minSdk": null,
+            "targetSdk": 37,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:20.170Z"
+          },
+          {
+            "abi": "x86_64",
+            "url": "https://github.com/anilbeesetti/nextplayer/releases/download/v0.18.0/nextplayer-v0.18.0-x86_64.apk",
+            "sha256": "80848bcebc422e49ad52005c2d7b34e18b34e1f9bed17baacfac04b3a15514c2",
+            "size": 22854179,
+            "signingCertSha256": "d3:7c:ab:f3:67:6c:f5:82:24:fb:24:2c:8d:d2:09:12:9d:05:88:03:79:29:5f:aa:a6:d0:fb:60:7b:ec:13:1b",
+            "versionCode": 74,
+            "versionName": "0.18.0",
+            "minSdk": null,
+            "targetSdk": 37,
+            "nativeAbis": [
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:20.170Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/anilbeesetti/nextplayer/releases/download/v0.18.0/nextplayer-v0.18.0-arm64-v8a.apk",
+        "sha256": "717ab28053af129f79442aed269843bc3f2009b132c9d955342ddc3117dfd044",
+        "size": 18948102,
+        "abi": "arm64-v8a"
+      }
+    },
+    {
+      "id": "notallyx",
+      "name": "NotallyX",
+      "summary": "App de notas minimalista com etiquetas, listas e pesquisa avançada",
+      "description": {
+        "en": "A minimal notes app that grew up: rich text, lists, labels, colours, pinning, reminders and powerful search over a local database. No cloud, no account, plus backup and export.",
+        "pt": "App de notas minimalista que cresceu: texto formatado, listas, etiquetas, cores, fixação, lembretes e pesquisa avançada sobre uma base de dados local. Sem nuvem, sem conta, com cópia de segurança e exportação."
+      },
+      "packageName": "com.philkes.notallyx",
+      "license": "GPL-3.0-or-later",
+      "sourceCode": "https://github.com/PhilKes/NotallyX",
+      "categories": [
+        "notes",
+        "productivity"
+      ],
+      "tags": [
+        "notes",
+        "offline",
+        "material-you"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/notallyx.png",
+      "screenshots": [
+        "screenshots/notallyx/1.png",
+        "screenshots/notallyx/2.png",
+        "screenshots/notallyx/3.png"
+      ],
+      "downloadCount": 5854,
+      "signingCertSha256": "d2:14:b6:05:7b:79:f8:25:09:dd:cd:1e:35:19:65:b3:c6:ec:c4:b2:a3:89:6e:5c:df:88:5a:70:a0:b6:1d:fd",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "7.11.2",
+        "versionCode": 71120,
+        "tag": "v7.11.2",
+        "publishedAt": "2026-06-03T19:57:45Z",
+        "releaseUrl": "https://github.com/Crustack/NotallyX/releases/tag/v7.11.2",
+        "changelog": "## [v7.11.2](https://github.com/Crustack/NotallyX/tree/v7.11.2) (2026-06-03)\r\n\r\n[Full Changelog](https://github.com/Crustack/NotallyX/compare/v7.11.1...v7.11.2)\r\n\r\n### Added Features\r\n\r\n- Feature Request: Skip duplicate detection [\\#955](https://github.com/Crustack/NotallyX/issues/955)\r\n- PDF export has extremely small margins [\\#948](https://github.com/Crustack/NotallyX/issues/948)\r\n- Log WebView load errors when exporting a note to PDF [\\#1037](https://github.com/Crustack/NotallyX/pull/1037) ([jim-daf](https://github.com/jim-daf))\r\n\r\n### Fixed Bugs\r\n\r\n- App freezes on launch after large import [\\#1033](https://github.com/Crustack/NotallyX/issues/1033)",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/Crustack/NotallyX/releases/download/v7.11.2/NotallyX-7.11.2.apk",
+            "sha256": "0f5204889e86e9cb130d07b4be60a009d421d3f4c7f8ebfc5af24dcb2cee0301",
+            "size": 13993709,
+            "signingCertSha256": "d2:14:b6:05:7b:79:f8:25:09:dd:cd:1e:35:19:65:b3:c6:ec:c4:b2:a3:89:6e:5c:df:88:5a:70:a0:b6:1d:fd",
+            "versionCode": 71120,
+            "versionName": "7.11.2",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:20.245Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/Crustack/NotallyX/releases/download/v7.11.2/NotallyX-7.11.2.apk",
+        "sha256": "0f5204889e86e9cb130d07b4be60a009d421d3f4c7f8ebfc5af24dcb2cee0301",
+        "size": 13993709,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "obtainium",
+      "name": "Obtainium",
+      "summary": "Obtém atualizações de apps diretamente das fontes originais",
+      "description": {
+        "en": "Install and update apps from GitHub, GitLab, F-Droid, APKMirror and other sources, comparing versions and downloading the APK itself. The reference implementation of the 'no store needed' idea, and the tool that proved this catalogue was worth building.",
+        "pt": "Instala e atualiza apps a partir do GitHub, GitLab, F-Droid, APKMirror e outras fontes, comparando versões e descarregando o APK. É a implementação de referência da ideia de 'não precisas de loja' e a ferramenta que provou que este catálogo valia a pena."
+      },
+      "packageName": "dev.imranr.obtainium",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/ImranR98/Obtainium",
+      "author": "Imran R",
+      "categories": [
+        "store",
+        "tools"
+      ],
+      "tags": [
+        "updates",
+        "github-releases",
+        "sideload",
+        "no-store"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/obtainium.png",
+      "screenshots": [
+        "screenshots/obtainium/1.png",
+        "screenshots/obtainium/2.png",
+        "screenshots/obtainium/3.png"
+      ],
+      "downloadCount": 352011,
+      "signingCertSha256": "b3:53:60:1f:6a:1d:5f:d6:60:3a:e2:f5:0b:e8:0c:f3:01:36:7b:86:b6:ab:8b:1f:66:24:3d:a9:6c:d5:73:62",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "1.6.17",
+        "versionCode": 23563,
+        "tag": "v1.6.17",
+        "publishedAt": "2026-09-13T18:08:26Z",
+        "releaseUrl": "https://github.com/ImranR98/Obtainium/releases/tag/v1.6.17",
+        "changelog": "## What's Changed\r\n* Update ru.json by @solokot in https://github.com/ImranR98/Obtainium/pull/3314\r\n* Translation: Update hu.json by @summoner001 in https://github.com/ImranR98/Obtainium/pull/3315\r\n* Restore track-only pseudo-version controls on the app page by @ImranR98 in https://github.com/ImranR98/Obtainium/pull/3316\r\n* Translation: Update hu.json by @summoner001 in https://github.com/ImranR98/Obtainium/pull/3317\r\n* Update ja.json by @bluefly000 in https://github.com/ImranR98/Obtainium/pull/3318\r\n* Update zh.json translations by @Jursin in https://github.com/ImranR98/Obtainium/pull/3319\r\n* docs: Initial documentation for Contributing policies and procedures by @master-bob in https://github.com/ImranR98/Obtainium/pull/3216\r\n\r\nPlus all changes from [v1.6.16](https://github.com/ImranR98/Obtainium/releases/tag/v1.6.16) which was marked as pre-release.\r\n\r\n**Full Changelog**: https://github.com/ImranR98/Obtainium/compare/v1.6.16...v1.6.17",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.17/app-release.apk",
+            "sha256": "46d31797016e4d0c2085e21ebe61fa30de236e31b30ff9622b51593034b76971",
+            "size": 72251016,
+            "signingCertSha256": "b3:53:60:1f:6a:1d:5f:d6:60:3a:e2:f5:0b:e8:0c:f3:01:36:7b:86:b6:ab:8b:1f:66:24:3d:a9:6c:d5:73:62",
+            "versionCode": 2356,
+            "versionName": "1.6.17",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:22.661Z"
+          },
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.17/app-arm64-v8a-release.apk",
+            "sha256": "ce1aa65430af809289f4045994838b1b072a2021bd82fceab1a6f4a90d0108d4",
+            "size": 26154026,
+            "signingCertSha256": "b3:53:60:1f:6a:1d:5f:d6:60:3a:e2:f5:0b:e8:0c:f3:01:36:7b:86:b6:ab:8b:1f:66:24:3d:a9:6c:d5:73:62",
+            "versionCode": 23563,
+            "versionName": "1.6.17",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:22.661Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.17/app-armeabi-v7a-release.apk",
+            "sha256": "455c53a5253f0b7b0ed41261d2f916ec7d0f41fcc1beb411eb9507383da27ef1",
+            "size": 24282162,
+            "signingCertSha256": "b3:53:60:1f:6a:1d:5f:d6:60:3a:e2:f5:0b:e8:0c:f3:01:36:7b:86:b6:ab:8b:1f:66:24:3d:a9:6c:d5:73:62",
+            "versionCode": 23562,
+            "versionName": "1.6.17",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:22.661Z"
+          },
+          {
+            "abi": "x86_64",
+            "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.17/app-x86_64-release.apk",
+            "sha256": "ebdaaa34b464286e3bbed8cfe311bdd74dc04673609740da8aa6a1523602119e",
+            "size": 27702302,
+            "signingCertSha256": "b3:53:60:1f:6a:1d:5f:d6:60:3a:e2:f5:0b:e8:0c:f3:01:36:7b:86:b6:ab:8b:1f:66:24:3d:a9:6c:d5:73:62",
+            "versionCode": 23561,
+            "versionName": "1.6.17",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:22.661Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/ImranR98/Obtainium/releases/download/v1.6.17/app-release.apk",
+        "sha256": "46d31797016e4d0c2085e21ebe61fa30de236e31b30ff9622b51593034b76971",
+        "size": 72251016,
+        "abi": "universal"
+      },
+      "warnings": [
+        "versionCode difere entre ABIs (2356, 23563, 23562, 23561); a usar 23563"
+      ]
+    },
+    {
+      "id": "outertune",
+      "name": "OuterTune",
+      "summary": "Cliente de YouTube Music com downloads, letras e reprodução local",
+      "description": {
+        "en": "A Material 3 YouTube Music client with library sync, downloads for offline playback, synchronized lyrics, playback speed control, sleep timer and Discord presence. Plays your local files in the same library.",
+        "pt": "Cliente de YouTube Music com Material 3, sincronização de biblioteca, downloads para ouvir offline, letras sincronizadas, controlo de velocidade, temporizador e presença no Discord. Reproduz também ficheiros locais na mesma biblioteca."
+      },
+      "packageName": "com.dd3boh.outertune",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/OuterTune/OuterTune",
+      "categories": [
+        "media"
+      ],
+      "tags": [
+        "youtube-music",
+        "music",
+        "offline",
+        "material-you"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/outertune.png",
+      "screenshots": [
+        "screenshots/outertune/1.jpg",
+        "screenshots/outertune/2.jpg",
+        "screenshots/outertune/3.jpg"
+      ],
+      "downloadCount": 61357,
+      "signingCertSha256": "ac:dd:87:1a:3d:e2:94:7d:32:53:ec:90:cd:c5:3d:1a:07:40:d6:03:8e:25:a6:48:5d:71:89:9e:ef:a9:6d:b8",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "0.10.0",
+        "versionCode": 70,
+        "tag": "v0.10.0",
+        "publishedAt": "2025-11-10T03:53:37Z",
+        "releaseUrl": "https://github.com/OuterTune/OuterTune/releases/tag/v0.10.0",
+        "changelog": "# Changelog\r\n\r\n\r\n<!-- highlights -->\r\n## Important changes\r\n- The default for Sync mode changed from read-only to read-write, as most sync issues should be resolved\r\n    - Fix playlist song remove/reorder\r\n    - Fix synced playlists wrongly being registered as editable/non-editable\r\n- Automatic scanner for local media is now enabled by default.\r\n    - Also controls automatic download folder scanning.\r\n    - Fixed downloads sometimes disappearing and requiring a rescan. (if they still don't appear, trigger a rescan manually in storage settings)\r\n\r\n## New features\r\n- Added search functionality to liked/downloaded playlist\r\n- Add liked/library/downloaded functionality to the artists/albums/songs/playlist panes of the library tab\r\n- Local media performance improvements\r\n    - Drastically improved local song artwork loading performance when fast scrolling (migrate from custom image cache to coil)\r\n    - Launching the app no longer a song into the player immediately. Media notification will only be created when playback starts.\r\n    - Drastically improve local media scanner performance for large libraries\r\n    - Added MediaStore scanner as an beta feature\r\n- Added an setting to configure the max multiple queue size (in experimental settings)\r\n- [-full- variant only] Allow using FFmpeg audio decoders for formats you device does not support (FFmpeg audio decoders + custom nextlib implementation). This allows support for formats such as ALAC. Files not supported by ExoPlayer extractor will not be supported\r\n\r\n## Changes and improvements\r\n- Change blur/gradient rendering method. Reduce microstutter and remove 500ms delay\r\n- Playlist list/grid items show icons instead of song thumbnails. The icons show what kind of playlist it is (music note for local, plus sign for editable/synced, play button for remote)\r\n- Improvements to the add to playlist dialog\r\n- Smaller grid sizes in the library gridview and home page\r\n- Show library/liked/download badges in queue\r\n- Moved audio offlo",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/OuterTune/OuterTune/releases/download/v0.10.0/OuterTune-0.10.0-full-universal-release-70.apk",
+            "sha256": "f2082733d26d191366b20990ec4df3569b15428219b7fb86d8e5019e794363ce",
+            "size": 28575262,
+            "signingCertSha256": "ac:dd:87:1a:3d:e2:94:7d:32:53:ec:90:cd:c5:3d:1a:07:40:d6:03:8e:25:a6:48:5d:71:89:9e:ef:a9:6d:b8",
+            "versionCode": 70,
+            "versionName": "0.10.0",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:20.520Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/OuterTune/OuterTune/releases/download/v0.10.0/OuterTune-0.10.0-full-universal-release-70.apk",
+        "sha256": "f2082733d26d191366b20990ec4df3569b15428219b7fb86d8e5019e794363ce",
+        "size": 28575262,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "pipepipe",
+      "name": "PipePipe",
+      "summary": "Fork do NewPipe com suporte a mais serviços e funcionalidades extra",
+      "description": {
+        "en": "A NewPipe fork that adds support for Bilibili, NicoNico, a built-in comment viewer, sponsor-block style segment skipping and a download manager. Actively maintained where upstream is slower to merge.",
+        "pt": "Fork do NewPipe que acrescenta suporte a Bilibili, NicoNico, visualizador de comentários integrado, salto de segmentos e gestor de downloads. Mantido ativamente onde o projeto original demora a integrar contribuições."
+      },
+      "packageName": "InfinityLoop1309.NewPipeEnhanced",
+      "license": "GPL-3.0-or-later",
+      "sourceCode": "https://github.com/InfinityLoop1308/PipePipe",
+      "categories": [
+        "media"
+      ],
+      "tags": [
+        "youtube",
+        "bilibili",
+        "streaming",
+        "newpipe-fork"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/pipepipe.png",
+      "screenshots": [
+        "screenshots/pipepipe/1.png",
+        "screenshots/pipepipe/2.png",
+        "screenshots/pipepipe/3.png"
+      ],
+      "downloadCount": 104892,
+      "signingCertSha256": "de:c7:34:29:ce:25:63:27:5f:5e:d1:98:25:e4:46:52:b3:2b:36:3a:46:f3:8b:df:f9:ad:6d:cd:e4:84:2d:88",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "5.4.0",
+        "versionCode": 110904,
+        "tag": "v5.4.0",
+        "publishedAt": "2026-09-24T23:36:27Z",
+        "releaseUrl": "https://github.com/InfinityLoop1308/PipePipe/releases/tag/v5.4.0",
+        "changelog": "### New Features\r\n\r\n- Greatly optimized TV controls\r\n- Added support for video quality selection in live streams\r\n- The \"Swipe down to minimize\" gesture is now configurable in Settings\r\n- Optimized the deletion interaction for content filters\r\n- Added support for Recommended/Popular live streams (NicoNico)\r\n- Added support for the Live tab on channels (NicoNico)\r\n\r\n### Bug Fixes\r\n\r\n- Fixed the \"Start in fullscreen\" setting not working\r\n- Fixed split-screen mode being unavailable\r\n- Fixed an issue where subtitles would disappear when entering fullscreen mode\r\n- Fixed content blocking not applying to public playlists\r\n- Fixed an issue where live streams continued to fetch data while paused\r\n- Fixed an issue where terminated videos using the SABR protocol could not be resumed\r\n- Fixed a crash that could occur when starting playback under specific conditions\r\n- Fixed an issue where the total playlist duration would increase infinitely in certain scenarios\r\n- Fixed a crash caused by deleting watch history under specific conditions\r\n- Fixed the dislike counter not being disabled by default on fresh installations\r\n- Fixed download failures occurring under specific conditions (BiliBili)\r\n- Fixed recommended live streams appearing empty (BiliBili)\r\n\r\n<hr/>\r\nIf you're enjoying PipePipe, please help share it with your friends. Every bit of support means a lot to us!\r\n<hr/>\r\n\r\n### Which APK should you download?\r\n\r\n- arm64-v8a should work on most devices.\r\n- armeabi-v7a if your device is a 15+ year old phone.\r\n- x86_64 for 64-bit Android simulators (on a PC).\r\n- x86 for 32-bit simulators.",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/InfinityLoop1308/PipePipe/releases/download/v5.4.0/PipePipe_5.4.0-arm64-v8a-release.apk",
+            "sha256": "fd1013786971bb206ca00e0bc98a4096e90a29e43e0c3d2f8659f277f3fe1c54",
+            "size": 32359236,
+            "signingCertSha256": "de:c7:34:29:ce:25:63:27:5f:5e:d1:98:25:e4:46:52:b3:2b:36:3a:46:f3:8b:df:f9:ad:6d:cd:e4:84:2d:88",
+            "versionCode": 110904,
+            "versionName": "5.4.0",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:23.783Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/InfinityLoop1308/PipePipe/releases/download/v5.4.0/PipePipe_5.4.0-armeabi-v7a-release.apk",
+            "sha256": "87ebc4069c4cbe899facf75047adf02a0a19415defe2b09a45a8618b06320cc4",
+            "size": 32088923,
+            "signingCertSha256": "de:c7:34:29:ce:25:63:27:5f:5e:d1:98:25:e4:46:52:b3:2b:36:3a:46:f3:8b:df:f9:ad:6d:cd:e4:84:2d:88",
+            "versionCode": 110901,
+            "versionName": "5.4.0",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:23.783Z"
+          },
+          {
+            "abi": "x86_64",
+            "url": "https://github.com/InfinityLoop1308/PipePipe/releases/download/v5.4.0/PipePipe_5.4.0-x86_64-release.apk",
+            "sha256": "8eeae55f67de6e3b1738981a025af26e0e27d383336ddee110c927f988122662",
+            "size": 32902029,
+            "signingCertSha256": "de:c7:34:29:ce:25:63:27:5f:5e:d1:98:25:e4:46:52:b3:2b:36:3a:46:f3:8b:df:f9:ad:6d:cd:e4:84:2d:88",
+            "versionCode": 110903,
+            "versionName": "5.4.0",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:23.783Z"
+          },
+          {
+            "abi": "x86",
+            "url": "https://github.com/InfinityLoop1308/PipePipe/releases/download/v5.4.0/PipePipe_5.4.0-x86-release.apk",
+            "sha256": "d94a9cf6a495a25c2ae6c1ff9c15a1d890cd1226d7f22718ad8300793b0179ae",
+            "size": 32381217,
+            "signingCertSha256": "de:c7:34:29:ce:25:63:27:5f:5e:d1:98:25:e4:46:52:b3:2b:36:3a:46:f3:8b:df:f9:ad:6d:cd:e4:84:2d:88",
+            "versionCode": 110902,
+            "versionName": "5.4.0",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "x86"
+            ],
+            "verifiedAt": "2026-10-07T10:24:23.783Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/InfinityLoop1308/PipePipe/releases/download/v5.4.0/PipePipe_5.4.0-arm64-v8a-release.apk",
+        "sha256": "fd1013786971bb206ca00e0bc98a4096e90a29e43e0c3d2f8659f277f3fe1c54",
+        "size": 32359236,
+        "abi": "arm64-v8a"
+      },
+      "warnings": [
+        "versionCode difere entre ABIs (110904, 110901, 110903, 110902); a usar 110904"
+      ]
+    },
+    {
+      "id": "readyou",
+      "name": "Read You",
+      "summary": "Leitor de RSS com Material You e sincronização com FreshRSS e Fever",
+      "description": {
+        "en": "An RSS reader in Material You style: feed management, read/unread state, and optional synchronisation with FreshRSS, Fever, Google Reader or Miniflux accounts. Also imports and exports OPML.",
+        "pt": "Leitor de RSS no estilo Material You: gestão de feeds, estado lido/não lido e sincronização opcional com contas FreshRSS, Fever, Google Reader ou Miniflux. Também importa e exporta OPML."
+      },
+      "packageName": "me.ash.reader",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/ReadYouApp/ReadYou",
+      "categories": [
+        "reading"
+      ],
+      "tags": [
+        "rss",
+        "feeds",
+        "material-you",
+        "freshrss"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/readyou.png",
+      "screenshots": [
+        "screenshots/readyou/1.png",
+        "screenshots/readyou/2.png",
+        "screenshots/readyou/3.png"
+      ],
+      "downloadCount": 20768,
+      "signingCertSha256": "72:1e:40:43:c4:39:bd:70:c9:0f:46:ae:16:6d:dc:23:3f:c7:5c:12:35:bf:8c:b2:7b:99:a4:df:09:cc:3b:99",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "0.16.2",
+        "versionCode": 47,
+        "tag": "0.16.2",
+        "publishedAt": "2026-06-03T14:55:20Z",
+        "releaseUrl": "https://github.com/ReadYouApp/ReadYou/releases/tag/0.16.2",
+        "changelog": "## What's Changed\r\n* fix(webview): drop allowFileAccessFromFileURLs in reader WebView by @jim-daf in https://github.com/ReadYouApp/ReadYou/pull/1277\r\n* Fix wrong overload of queryMetadataAll being called by @NatsuCamellia in https://github.com/ReadYouApp/ReadYou/pull/1269\r\n* Translations update from Hosted Weblate by @weblate in https://github.com/ReadYouApp/ReadYou/pull/1227\r\n* Fix a rare crash on launches\r\n\r\n## New Contributors\r\n* @jim-daf made their first contribution in https://github.com/ReadYouApp/ReadYou/pull/1277\r\n* @NatsuCamellia made their first contribution in https://github.com/ReadYouApp/ReadYou/pull/1269\r\n\r\n**Full Changelog**: https://github.com/ReadYouApp/ReadYou/compare/0.16.1...0.16.2",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/ReadYouApp/ReadYou/releases/download/0.16.2/ReadYou-0.16.2-091c9207-signed.apk",
+            "sha256": "a27f6da6961f2d5cd27b515349dc71844a0d20cfacc38b5fc398152fa034ce5e",
+            "size": 11213788,
+            "signingCertSha256": "72:1e:40:43:c4:39:bd:70:c9:0f:46:ae:16:6d:dc:23:3f:c7:5c:12:35:bf:8c:b2:7b:99:a4:df:09:cc:3b:99",
+            "versionCode": 47,
+            "versionName": "0.16.2",
+            "minSdk": null,
+            "targetSdk": 34,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:21.033Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/ReadYouApp/ReadYou/releases/download/0.16.2/ReadYou-0.16.2-091c9207-signed.apk",
+        "sha256": "a27f6da6961f2d5cd27b515349dc71844a0d20cfacc38b5fc398152fa034ce5e",
+        "size": 11213788,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "revanced-manager",
+      "name": "ReVanced Manager",
+      "summary": "Aplica patches a APKs instalados para acrescentar funcionalidades e remover anúncios",
+      "description": {
+        "en": "Downloads patches from the ReVanced project and applies them to APKs on the device, letting you rebuild an app you already have with extra features and without ads. It ships no patched apps itself; it is a build tool.",
+        "pt": "Descarrega patches do projeto ReVanced e aplica-os a APKs no dispositivo, permitindo reconstruir uma app que já tens com funcionalidades extra e sem anúncios. Não distribui apps modificadas: é uma ferramenta de compilação."
+      },
+      "packageName": "app.revanced.manager.flutter",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/ReVanced/revanced-manager",
+      "author": "ReVanced",
+      "categories": [
+        "tools",
+        "utilities"
+      ],
+      "tags": [
+        "patching",
+        "no-ads",
+        "modding"
+      ],
+      "status": "active",
+      "antiFeatures": [
+        "nonFreeNet"
+      ],
+      "links": {
+        "website": "https://revanced.app"
+      },
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": null,
+      "screenshots": [],
+      "downloadCount": 4142824,
+      "signingCertSha256": "b6:36:2c:6e:a7:88:8e:fd:15:c0:80:0f:48:07:86:ad:0f:5b:13:3b:4f:84:e1:2d:46:af:ba:5f:9e:ac:12:23",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "2.6.0",
+        "versionCode": 200600099,
+        "tag": "v2.6.0",
+        "publishedAt": "2026-04-26T13:06:56Z",
+        "releaseUrl": "https://github.com/ReVanced/revanced-manager/releases/tag/v2.6.0",
+        "changelog": "# app [2.6.0](https://github.com/ReVanced/revanced-manager/compare/v2.5.1...v2.6.0) (2026-04-26)\n\n\n### Bug Fixes\n\n* Adjust font size and fix letter spacing in announcements ([e1660a7](https://github.com/ReVanced/revanced-manager/commit/e1660a7f2f94f3f50ee8bb2479888af8b760e51e))\n* BusError when running 32b binary on armv8 with compatibility ([#3279](https://github.com/ReVanced/revanced-manager/issues/3279)) ([c1e1a82](https://github.com/ReVanced/revanced-manager/commit/c1e1a8243adb86fdf907b0b402c97c36c279567b))\n* Dashboard padding ([5f757b6](https://github.com/ReVanced/revanced-manager/commit/5f757b6ee1fd923afaeffeae6bde12934822c30f))\n* Don't hide PatchOptions behind keyboard ([dd3d474](https://github.com/ReVanced/revanced-manager/commit/dd3d474798e39a800fd5ecff129e1561f204e36b))\n* handle errors while loading sources ([b64dae2](https://github.com/ReVanced/revanced-manager/commit/b64dae26d4383a70abd781f54a2be84e10cfece1))\n* Ignore RichTap vibrator hardware crash ([7856652](https://github.com/ReVanced/revanced-manager/commit/7856652506896a804a57fc085e80c6cf5c1fcba0))\n* Missing database migration file [no ci] ([df9b44c](https://github.com/ReVanced/revanced-manager/commit/df9b44c9f4959c81e16a1665e8066bd01e97b1fe))\n* Paddings for AppScreen and PatchesScreen ([af3d0d7](https://github.com/ReVanced/revanced-manager/commit/af3d0d79c582f29b7f7acec2b5e59de3b06ea3e2))\n* Preserve applied patches on patched apps when source patches is deleted ([#3227](https://github.com/ReVanced/revanced-manager/issues/3227)) ([4884fdb](https://github.com/ReVanced/revanced-manager/commit/4884fdb5545134181a8a2176c7a21911aa22be9b))\n* **Updater:** Handle session death ([#3249](https://github.com/ReVanced/revanced-manager/issues/3249)) ([f1c56aa](https://github.com/ReVanced/revanced-manager/commit/f1c56aa0a9655fd93d1386ccca28c7ce7099d4d3))\n* UpdateScreen padding ([e3c6d57](https://github.com/ReVanced/revanced-manager/commit/e3c6d5740b7013446aaf450739b37e848389c2cb))\n\n\n### Features\n\n* Better styling fo",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/ReVanced/revanced-manager/releases/download/v2.6.0/revanced-manager-2.6.0.apk",
+            "sha256": "cba4c461553ea74eb25a7b2e1842419c7f4f40adc619b10d518c114204b7e846",
+            "size": 46860298,
+            "signingCertSha256": "b6:36:2c:6e:a7:88:8e:fd:15:c0:80:0f:48:07:86:ad:0f:5b:13:3b:4f:84:e1:2d:46:af:ba:5f:9e:ac:12:23",
+            "versionCode": 200600099,
+            "versionName": "2.6.0",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:21.868Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/ReVanced/revanced-manager/releases/download/v2.6.0/revanced-manager-2.6.0.apk",
+        "sha256": "cba4c461553ea74eb25a7b2e1842419c7f4f40adc619b10d518c114204b7e846",
+        "size": 46860298,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "seal",
+      "name": "Seal",
+      "summary": "Descarregador de vídeo e áudio para Android, feito sobre o yt-dlp",
+      "description": {
+        "en": "A video and audio downloader built on yt-dlp and YouTube-DL, wrapped in a Material You interface. Can use aria2c for faster downloads and ffmpeg for conversion, and can be driven from the Android share sheet.",
+        "pt": "Descarregador de vídeo e áudio construído sobre yt-dlp e YouTube-DL, com interface Material You. Pode usar aria2c para downloads mais rápidos e ffmpeg para conversão, e aceita pedidos a partir do menu de partilha do Android."
+      },
+      "packageName": "com.junkfood.seal",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/JunkFood02/Seal",
+      "categories": [
+        "media",
+        "utilities"
+      ],
+      "tags": [
+        "downloader",
+        "yt-dlp",
+        "video",
+        "audio"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/seal.png",
+      "screenshots": [
+        "screenshots/seal/1.jpg",
+        "screenshots/seal/2.jpg",
+        "screenshots/seal/3.jpg"
+      ],
+      "downloadCount": 2887643,
+      "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "1.13.1",
+        "versionCode": 11314,
+        "tag": "v1.13.1",
+        "publishedAt": "2024-10-16T17:00:00Z",
+        "releaseUrl": "https://github.com/JunkFood02/Seal/releases/tag/v1.13.1",
+        "changelog": "### Fixes\r\n- Update python to 3.11\r\n\r\n\r\n**Full Changelog**: https://github.com/JunkFood02/Seal/compare/v1.13.0...v1.13.1",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/JunkFood02/Seal/releases/download/v1.13.1/Seal-1.13.1-universal-release.apk",
+            "sha256": "e52c2657fe8fd5a6a970e505171399f1b674c6a7015c15557879e4672e7fa85c",
+            "size": 144991600,
+            "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
+            "versionCode": 11310,
+            "versionName": "1.13.1",
+            "minSdk": null,
+            "targetSdk": 34,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:24.407Z"
+          },
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/JunkFood02/Seal/releases/download/v1.13.1/Seal-1.13.1-arm64-v8a-release.apk",
+            "sha256": "23112395e489da4655fe3f6e5be2a47bca8ab3b406cc5ed7590a00b4548faa37",
+            "size": 43069442,
+            "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
+            "versionCode": 11312,
+            "versionName": "1.13.1",
+            "minSdk": null,
+            "targetSdk": 34,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:24.407Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/JunkFood02/Seal/releases/download/v1.13.1/Seal-1.13.1-armeabi-v7a-release.apk",
+            "sha256": "adfaa7ff9fda8d93a0fab84a6e4477289532e8d292576a40dfcd1af3b008bee7",
+            "size": 40611853,
+            "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
+            "versionCode": 11311,
+            "versionName": "1.13.1",
+            "minSdk": null,
+            "targetSdk": 34,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:24.407Z"
+          },
+          {
+            "abi": "x86_64",
+            "url": "https://github.com/JunkFood02/Seal/releases/download/v1.13.1/Seal-1.13.1-x86_64-release.apk",
+            "sha256": "9b164082766d24b91594cf0dface7e5732c749392eb424cc2a3e38a80ca4ab35",
+            "size": 45218592,
+            "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
+            "versionCode": 11314,
+            "versionName": "1.13.1",
+            "minSdk": null,
+            "targetSdk": 34,
+            "nativeAbis": [
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:24.407Z"
+          },
+          {
+            "abi": "x86",
+            "url": "https://github.com/JunkFood02/Seal/releases/download/v1.13.1/Seal-1.13.1-x86-release.apk",
+            "sha256": "50e3381e791a96afa35d5fd043a25ffad22f47e178cbbded90f0298c082c986c",
+            "size": 44364789,
+            "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
+            "versionCode": 11313,
+            "versionName": "1.13.1",
+            "minSdk": null,
+            "targetSdk": 34,
+            "nativeAbis": [
+              "x86"
+            ],
+            "verifiedAt": "2026-10-07T10:24:24.407Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/JunkFood02/Seal/releases/download/v1.13.1/Seal-1.13.1-universal-release.apk",
+        "sha256": "e52c2657fe8fd5a6a970e505171399f1b674c6a7015c15557879e4672e7fa85c",
+        "size": 144991600,
+        "abi": "universal"
+      },
+      "warnings": [
+        "versionCode difere entre ABIs (11310, 11312, 11311, 11314, 11313); a usar 11314"
+      ]
+    },
+    {
+      "id": "shizuku",
+      "name": "Shizuku",
+      "summary": "Dá a apps normais acesso a APIs de sistema através de adb ou root",
+      "description": {
+        "en": "Starts a privileged Java process over ADB (or root) and lends those permissions to other apps through a documented API, so apps that need system-level access do not need root themselves. Many apps in this catalogue build on it.",
+        "pt": "Inicia um processo Java privilegiado por ADB (ou root) e empresta essas permissões a outras apps através de uma API documentada, para que apps que precisam de acesso ao sistema não precisem de root. Muitas apps deste catálogo dependem dele."
+      },
+      "packageName": "moe.shizuku.privileged.api",
+      "license": "Apache-2.0",
+      "sourceCode": "https://github.com/RikkaApps/Shizuku",
+      "author": "Rikka",
+      "categories": [
+        "system",
+        "development"
+      ],
+      "tags": [
+        "adb",
+        "privileged",
+        "api",
+        "root-alternative"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "links": {
+        "docs": "https://shizuku.rikka.app/guide/setup/"
+      },
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/shizuku.png",
+      "screenshots": [],
+      "downloadCount": 3119601,
+      "signingCertSha256": "26:8b:55:90:e8:68:fb:08:ba:e7:e0:ac:41:35:64:cd:1f:f8:8f:5c:cf:f7:4a:f9:db:d0:dc:91:8e:30:db:30",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "13.6.0.r1086.2650830c",
+        "versionCode": 1086,
+        "tag": "v13.6.0",
+        "publishedAt": "2025-05-25T13:19:47Z",
+        "releaseUrl": "https://github.com/RikkaApps/Shizuku/releases/tag/v13.6.0",
+        "changelog": "## What's Changed\r\n- Support Android16 QPR1\r\n- Update the start command. You can copy this file to any executable location, such as /data/local/tmp/shizuku\r\n- Support auto start without root on Android13+ when connected to a trusted WLAN\r\n\r\n**Full Changelog**: https://github.com/RikkaApps/Shizuku/compare/v13.5.4...v13.6.0",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk",
+            "sha256": "6e273ab0e991c4e79bc8b1bbb9b9dd739ccac1a8712a541a214078886b7b790f",
+            "size": 2571773,
+            "signingCertSha256": "26:8b:55:90:e8:68:fb:08:ba:e7:e0:ac:41:35:64:cd:1f:f8:8f:5c:cf:f7:4a:f9:db:d0:dc:91:8e:30:db:30",
+            "versionCode": 1086,
+            "versionName": "13.6.0.r1086.2650830c",
+            "minSdk": null,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:23.065Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk",
+        "sha256": "6e273ab0e991c4e79bc8b1bbb9b9dd739ccac1a8712a541a214078886b7b790f",
+        "size": 2571773,
+        "abi": "universal"
+      }
+    },
+    {
+      "id": "simplex",
+      "name": "SimpleX Chat",
+      "summary": "Mensagens privadas sem identificadores de utilizador, nem sequer números de telefone",
+      "description": {
+        "en": "A messaging network with no user identifiers at all: no phone number, no username, no account. Conversations happen over unidirectional queues, and the design means the servers cannot see who talks to whom. End-to-end encrypted by default.",
+        "pt": "Rede de mensagens sem qualquer identificador de utilizador: sem número de telefone, sem nome de utilizador, sem conta. As conversas passam por filas unidirecionais e o desenho garante que os servidores não conseguem ver quem fala com quem. Cifrado ponta a ponta por omissão."
+      },
+      "packageName": "chat.simplex.app",
+      "license": "AGPL-3.0-only",
+      "sourceCode": "https://github.com/simplex-chat/simplex-chat",
+      "author": "SimpleX Chat",
+      "categories": [
+        "communication",
+        "privacy"
+      ],
+      "tags": [
+        "messaging",
+        "metadata-resistant",
+        "no-identifiers"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "links": {
+        "website": "https://simplex.chat",
+        "docs": "https://simplex.chat/docs/"
+      },
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=chat.simplex.app&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/simplex.png",
+      "screenshots": [
+        "screenshots/simplex/1.jpg",
+        "screenshots/simplex/2.jpg",
+        "screenshots/simplex/3.jpg"
+      ],
+      "downloadCount": 11016,
+      "signingCertSha256": "3c:52:c4:fd:3c:ad:1c:07:c9:b0:0a:70:80:e3:58:fa:b9:fe:fc:b8:af:5a:ec:14:77:65:f1:6d:0f:21:ad:85",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "7.0.3",
+        "versionCode": 381,
+        "tag": "v7.0.3",
+        "publishedAt": "2026-09-26T14:30:13Z",
+        "releaseUrl": "https://github.com/simplex-chat/simplex-chat/releases/tag/v7.0.3",
+        "changelog": "New in v7.0.3.\r\n\r\n- Build fixes\r\n- Fix reproducible builds script \r\n\r\n[SimpleX domains](https://simplex.domains?utm_source=release) launch on December 12 - one name for your channel and contact address\r\n\r\nYou can get a stake in SimpleX Chat – we launched [equity crowdfunding on Wefunder](https://wefunder.com/simplex.chat).\r\n\r\nThe GitHub release build is independently reproduced by:\r\n| Verifier | Signatures | PGP key to verify |\r\n| ------- | --------- | ----------------- |\r\n| SimpleX Chat team | [_sha256sums.asc][sums] <br>[_simplex-aarch64.apk.asc][arm64]<br>[_simplex-armv7a.apk.asc][armv7] | [BBDF 7BDA D154 8B16 836A F5B9 D53B DFD1 53C3 66BA][pgpkey] |\r\n\r\n[sums]: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.3/_sha256sums.asc\r\n[arm64]: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.3/_simplex-aarch64.apk.asc\r\n[armv7]: https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.3/_simplex-armv7a.apk.asc\r\n[pgpkey]: https://keys.openpgp.org/search?q=build%40simplex.chat\r\n\r\nRead more about verifying and reproducing release builds: https://simplex.chat/reproduce/\r\n\r\nCommits:\r\n- ui: use backward compatible Java api in stripFormattedTextLink (#7464)\r\n- scripts: re-init submodules in reproduce builds (#7508)\r\n- ui: crowdfunding banner on onboarding and in chat list (#7552)\r\n- ui: add wefunder logo to crowdfunding banner (#7553)\r\n- ui: replace wefunder logo with simplex logo on crowdfunding banner (#7555)\r\n- tests: fix race conditions (#7579)\r\n- ui: update crowdfunding title (#7593)\r\n- ui: news channel (#7594)\r\n- assets: compress crowdfunding images\r\n- android: match app links by exact path so simplex.chat pages open in the browser (#7565)\r\n- android: fix SimpleX links (#7596)\r\n- 7.0.3: android 381, desktop 164, ios 359\r\n\r\n**Android APKs**:\r\n\r\nSHA2-256(simplex-aarch64.apk)= d535e5a8986d4e11b9abd5656a3c0e1be5a08e06b00a7b20d6b7587ed0c3457f\r\n\r\nSHA2-256(simplex-armv7a.apk)= 3a89d2f825ce1a30ff51b30487c1b0b58de6eba03426d1500112b7",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.3/simplex-aarch64.apk",
+            "sha256": "d535e5a8986d4e11b9abd5656a3c0e1be5a08e06b00a7b20d6b7587ed0c3457f",
+            "size": 87519748,
+            "signingCertSha256": "3c:52:c4:fd:3c:ad:1c:07:c9:b0:0a:70:80:e3:58:fa:b9:fe:fc:b8:af:5a:ec:14:77:65:f1:6d:0f:21:ad:85",
+            "versionCode": 381,
+            "versionName": "7.0.3",
+            "minSdk": null,
+            "targetSdk": 35,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:25.852Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.3/simplex-armv7a.apk",
+            "sha256": "3a89d2f825ce1a30ff51b30487c1b0b58de6eba03426d1500112b7417e659fdc",
+            "size": 99172880,
+            "signingCertSha256": "3c:52:c4:fd:3c:ad:1c:07:c9:b0:0a:70:80:e3:58:fa:b9:fe:fc:b8:af:5a:ec:14:77:65:f1:6d:0f:21:ad:85",
+            "versionCode": 381,
+            "versionName": "7.0.3",
+            "minSdk": null,
+            "targetSdk": 35,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:25.852Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/simplex-chat/simplex-chat/releases/download/v7.0.3/simplex-aarch64.apk",
+        "sha256": "d535e5a8986d4e11b9abd5656a3c0e1be5a08e06b00a7b20d6b7587ed0c3457f",
+        "size": 87519748,
+        "abi": "arm64-v8a"
+      }
+    },
+    {
+      "id": "syncthing-fork",
+      "name": "Syncthing-Fork",
+      "summary": "Sincronização de ficheiros ponto-a-ponto com o fork mantido do cliente Syncthing",
+      "description": {
+        "en": "A maintained fork of the Syncthing Android wrapper: continuous folder sync between your devices with no cloud in the middle, per-folder settings, and fixes the upstream wrapper no longer gets.",
+        "pt": "Fork mantido do cliente Syncthing para Android: sincronização contínua de pastas entre os teus dispositivos sem nuvem pelo meio, configuração por pasta e correções que o cliente original já não recebe."
+      },
+      "packageName": "com.github.catfriend1.syncthingfork",
+      "license": "MPL-2.0",
+      "sourceCode": "https://github.com/Catfriend1/syncthing-android",
+      "categories": [
+        "utilities",
+        "system"
+      ],
+      "tags": [
+        "sync",
+        "p2p",
+        "files",
+        "no-cloud"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "links": {
+        "website": "https://syncthing.net"
+      },
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-07",
+      "icon": null,
+      "screenshots": [],
+      "downloadCount": 16474,
+      "signingCertSha256": "d3:74:b8:de:50:57:01:31:43:c7:d1:51:5a:01:55:98:c2:df:40:3b:e8:16:0c:ae:01:a5:8c:22:7e:6e:86:aa",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "2.1.6.0",
+        "versionCode": 2010600,
+        "tag": "v2.1.6.0",
+        "publishedAt": "2026-10-06T07:56:40Z",
+        "releaseUrl": "https://github.com/researchxxl/syncthing-android/releases/tag/v2.1.6.0",
+        "changelog": "### Fixes\r\n- fix(AndroidManifest): add requestRawExternalStorageAccess by @researchxxl in #403\r\n- Add local network permission in onboarding @researchxxl\r\n\r\n### Other\r\n- target sdk is now Android 17\r\n- ndk version is now 30\r\n- go version is now 1.27.1\r\n\r\n**Full Changelog**: https://github.com/researchxxl/syncthing-android/compare/v2.1.5.0...v2.1.6.0",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/researchxxl/syncthing-android/releases/download/v2.1.6.0/com.github.catfriend1.syncthingfork_release_v2.1.6.0_arm64-v8a.apk",
+            "sha256": "15f17037805d87f67d9407eef436691e458ea4185b42871889297c7e98bbfd67",
+            "size": 32424982,
+            "signingCertSha256": "d3:74:b8:de:50:57:01:31:43:c7:d1:51:5a:01:55:98:c2:df:40:3b:e8:16:0c:ae:01:a5:8c:22:7e:6e:86:aa",
+            "versionCode": 2010600,
+            "versionName": "2.1.6.0",
+            "minSdk": null,
+            "targetSdk": 37,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:24.964Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/researchxxl/syncthing-android/releases/download/v2.1.6.0/com.github.catfriend1.syncthingfork_release_v2.1.6.0_armeabi-v7a.apk",
+            "sha256": "eb2f4e5b94629f604449fc39278e30ef67c0efa0c92c904e49cdc01c2b2838d7",
+            "size": 32850970,
+            "signingCertSha256": "d3:74:b8:de:50:57:01:31:43:c7:d1:51:5a:01:55:98:c2:df:40:3b:e8:16:0c:ae:01:a5:8c:22:7e:6e:86:aa",
+            "versionCode": 2010600,
+            "versionName": "2.1.6.0",
+            "minSdk": null,
+            "targetSdk": 37,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:24.964Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/researchxxl/syncthing-android/releases/download/v2.1.6.0/com.github.catfriend1.syncthingfork_release_v2.1.6.0_arm64-v8a.apk",
+        "sha256": "15f17037805d87f67d9407eef436691e458ea4185b42871889297c7e98bbfd67",
+        "size": 32424982,
+        "abi": "arm64-v8a"
+      }
+    },
+    {
+      "id": "termux",
+      "name": "Termux",
+      "summary": "Emulador de terminal com um ambiente Linux completo e gestor de pacotes",
+      "description": {
+        "en": "A terminal emulator with its own APT package repository: bash, git, ssh, Python, Node, compilers and more, all running on the device without root. The GitHub build is far newer than the abandoned Play Store listing.",
+        "pt": "Emulador de terminal com repositório APT próprio: bash, git, ssh, Python, Node, compiladores e muito mais, tudo a correr no dispositivo sem root. A versão do GitHub está muito mais atual do que a listagem abandonada na Play Store."
+      },
+      "packageName": "com.termux",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/termux/termux-app",
+      "author": "Fredrik Fornwall e contribuidores",
+      "categories": [
+        "development",
+        "tools"
+      ],
+      "tags": [
+        "terminal",
+        "linux",
+        "apt",
+        "shell"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "links": {
+        "website": "https://termux.dev",
+        "docs": "https://wiki.termux.com"
+      },
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=com.termux&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-07",
+      "icon": "icons/termux.png",
+      "screenshots": [
+        "screenshots/termux/1.jpg",
+        "screenshots/termux/2.jpg",
+        "screenshots/termux/3.jpg"
+      ],
+      "downloadCount": 2404140,
+      "signingCertSha256": "b6:da:01:48:0e:ef:d5:fb:f2:cd:37:71:b8:d1:02:1e:c7:91:30:4b:dd:6c:4b:f4:1d:3f:aa:ba:d4:8e:e5:e1",
+      "resolvedAt": "2026-10-07T10:24:48.579Z",
+      "release": {
+        "versionName": "0.119.0-beta.3",
+        "versionCode": 1022,
+        "tag": "v0.119.0-beta.3",
+        "publishedAt": "2025-05-22T22:48:54Z",
+        "releaseUrl": "https://github.com/termux/termux-app/releases/tag/v0.119.0-beta.3",
+        "changelog": "## v0.119.0-beta.3 - 2025-05-22 10:48\r\n\r\n**Commit history:** [`v0.119.0-beta.2...v0.119.0-beta.3`](https://github.com/termux/termux-app/compare/e3449515...v0.119.0-beta.3)\r\n\r\n## Downloads\r\n\r\n### Android `7+` only\r\n\r\n- [`termux-app_v0.119.0-beta.3+apt-android-7-github-debug_universal.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_universal.apk)\r\n- [`termux-app_v0.119.0-beta.3+apt-android-7-github-debug_arm64-v8a.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_arm64-v8a.apk)\r\n- [`termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_armeabi-v7a.apk)\r\n- [`termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86_64.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86_64.apk)\r\n- [`termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-7-github-debug_x86.apk)\r\n\r\n### Android `5` and `6` only\r\n\r\n- [`termux-app_v0.119.0-beta.3+apt-android-5-github-debug_universal.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-5-github-debug_universal.apk)\r\n- [`termux-app_v0.119.0-beta.3+apt-android-5-github-debug_arm64-v8a.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-5-github-debug_arm64-v8a.apk)\r\n- [`termux-app_v0.119.0-beta.3+apt-android-5-github-debug_armeabi-v7a.apk`](https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3+apt-android-5-github-debug_armeabi-v7a.apk)\r\n- [`termux-app_v0.119.0-beta.3+apt-andro",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3%2Bapt-android-7-github-debug_universal.apk",
+            "sha256": "a11d1e97b06e779be3c8c938cf89903d7dcc46b99cc7c6e5a9409b5bebdcb131",
+            "size": 119267555,
+            "signingCertSha256": "b6:da:01:48:0e:ef:d5:fb:f2:cd:37:71:b8:d1:02:1e:c7:91:30:4b:dd:6c:4b:f4:1d:3f:aa:ba:d4:8e:e5:e1",
+            "versionCode": 1022,
+            "versionName": "0.119.0-beta.3",
+            "minSdk": null,
+            "targetSdk": 28,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T10:24:25.361Z"
+          },
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3%2Bapt-android-7-github-debug_arm64-v8a.apk",
+            "sha256": "3bb969df2400d884ccb929b7d79cc76861f291c98942c401e12408d734a460f3",
+            "size": 35738948,
+            "signingCertSha256": "b6:da:01:48:0e:ef:d5:fb:f2:cd:37:71:b8:d1:02:1e:c7:91:30:4b:dd:6c:4b:f4:1d:3f:aa:ba:d4:8e:e5:e1",
+            "versionCode": 1022,
+            "versionName": "0.119.0-beta.3",
+            "minSdk": null,
+            "targetSdk": 28,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-07T10:24:25.361Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/termux/termux-app/releases/download/v0.119.0-beta.3/termux-app_v0.119.0-beta.3%2Bapt-android-7-github-debug_universal.apk",
+        "sha256": "a11d1e97b06e779be3c8c938cf89903d7dcc46b99cc7c6e5a9409b5bebdcb131",
+        "size": 119267555,
+        "abi": "universal"
+      }
+    }
+  ]
+}

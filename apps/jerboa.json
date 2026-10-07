@@ -1,0 +1,50 @@
+{
+  "id": "jerboa",
+  "name": "Jerboa",
+  "summary": "Cliente nativo de Lemmy, a alternativa federada ao Reddit",
+  "description": {
+    "en": "A native Android client for Lemmy: browse any instance, post, comment and vote on a federated link aggregator that no single company controls. Supports multiple accounts across different instances.",
+    "pt": "Cliente Android nativo para o Lemmy: navega em qualquer instância, publica, comenta e vota num agregador de links federado que nenhuma empresa controla. Suporta várias contas em instâncias diferentes."
+  },
+  "packageName": "com.jerboa",
+  "license": "AGPL-3.0-only",
+  "sourceCode": "https://github.com/LemmyNet/jerboa",
+  "author": "LemmyNet",
+  "categories": [
+    "reading",
+    "communication"
+  ],
+  "tags": [
+    "lemmy",
+    "fediverse",
+    "activitypub",
+    "social"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "LemmyNet/jerboa",
+    "assetPattern": "jerboa-fdroid-*.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "LemmyNet/jerboa",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "LemmyNet/jerboa",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/01.png"
+    },
+    {
+      "repo": "LemmyNet/jerboa",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/02.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "ea:71:95:cf:ce:63:8a:e6:b1:a8:00:2d:dc:0d:48:63:36:60:95:ea:5b:8d:95:c1:cd:5e:25:db:0f:e2:e7:c3",
+    "pinnedAt": "2026-10-07"
+  }
+}

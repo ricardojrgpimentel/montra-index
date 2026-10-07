@@ -1,0 +1,45 @@
+{
+  "id": "jellyfin",
+  "name": "Jellyfin",
+  "summary": "Cliente oficial do Jellyfin, o servidor de media caseiro livre",
+  "description": {
+    "en": "The official Jellyfin Android client: browse and stream your own film, series and music library from your own server, with download for offline playback. This entry tracks the libre build, which excludes proprietary Google Cast libraries.",
+    "pt": "Cliente Android oficial do Jellyfin: navega e transmite a tua biblioteca de filmes, séries e música a partir do teu próprio servidor, com descarregamento para ver offline. Esta entrada segue a build libre, que exclui as bibliotecas proprietárias do Google Cast."
+  },
+  "packageName": "org.jellyfin.mobile",
+  "license": "GPL-2.0-only",
+  "sourceCode": "https://github.com/jellyfin/jellyfin-android",
+  "author": "Jellyfin",
+  "categories": [
+    "multimedia"
+  ],
+  "tags": [
+    "media-server",
+    "streaming",
+    "self-hosted"
+  ],
+  "links": {
+    "website": "https://jellyfin.org",
+    "docs": "https://jellyfin.org/docs/"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "jellyfin/jellyfin-android",
+    "assetPattern": "jellyfin-android-v*-libre-release.apk",
+    "excludePattern": "*debug*",
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=org.jellyfin.mobile&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "jellyfin/jellyfin-android",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "verification": {
+    "signingCertSha256": "d8:81:79:6e:d2:a6:7f:f6:ef:9f:67:68:28:72:3c:6b:1f:a1:8e:09:38:89:62:cb:a4:ab:c4:a5:94:a6:91:31",
+    "pinnedAt": "2026-10-07"
+  }
+}

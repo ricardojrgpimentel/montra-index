@@ -1,0 +1,58 @@
+{
+  "id": "app-manager",
+  "name": "App Manager",
+  "summary": "Gestor de pacotes completo: congela, desinstala, faz backup e inspeciona apps",
+  "description": {
+    "en": "A full-featured package manager for Android: uninstall and freeze system apps, back up APKs and data, inspect trackers, permissions and components, and browse what an app actually ships. Much more capable with Shizuku or root.",
+    "pt": "Gestor de pacotes completo para Android: desinstala e congela apps de sistema, faz cópias de segurança de APKs e dados, inspeciona trackers, permissões e componentes, e mostra o que uma app realmente traz. Muito mais capaz com Shizuku ou root."
+  },
+  "packageName": "io.github.muntashirakon.AppManager",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/MuntashirAkon/AppManager",
+  "author": "Muntashir Akon",
+  "categories": [
+    "system",
+    "tools"
+  ],
+  "tags": [
+    "package-manager",
+    "backup",
+    "debloat",
+    "trackers"
+  ],
+  "links": {
+    "docs": "https://muntashirakon.github.io/AppManager/"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "MuntashirAkon/AppManager",
+    "assetPattern": "AppManager_v*.apk",
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "MuntashirAkon/AppManager",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "MuntashirAkon/AppManager",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1.png"
+    },
+    {
+      "repo": "MuntashirAkon/AppManager",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2.png"
+    },
+    {
+      "repo": "MuntashirAkon/AppManager",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "32:0c:0c:0f:e8:ce:f8:73:f2:b5:54:cb:88:c8:37:f1:51:25:89:dc:ce:d5:0c:5b:25:c4:3c:04:59:67:60:ab",
+    "pinnedAt": "2026-10-07"
+  }
+}

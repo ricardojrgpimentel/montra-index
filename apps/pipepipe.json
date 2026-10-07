@@ -1,0 +1,58 @@
+{
+  "id": "pipepipe",
+  "name": "PipePipe",
+  "summary": "Fork do NewPipe com suporte a mais serviços e funcionalidades extra",
+  "description": {
+    "en": "A NewPipe fork that adds support for Bilibili, NicoNico, a built-in comment viewer, sponsor-block style segment skipping and a download manager. Actively maintained where upstream is slower to merge.",
+    "pt": "Fork do NewPipe que acrescenta suporte a Bilibili, NicoNico, visualizador de comentários integrado, salto de segmentos e gestor de downloads. Mantido ativamente onde o projeto original demora a integrar contribuições."
+  },
+  "packageName": "InfinityLoop1309.NewPipeEnhanced",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/InfinityLoop1308/PipePipe",
+  "categories": [
+    "media"
+  ],
+  "tags": [
+    "youtube",
+    "bilibili",
+    "streaming",
+    "newpipe-fork"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "InfinityLoop1308/PipePipe",
+    "excludePattern": "*-debug*",
+    "abiAssets": {
+      "arm64-v8a": "PipePipe_*-arm64-v8a-release.apk",
+      "armeabi-v7a": "PipePipe_*-armeabi-v7a-release.apk",
+      "x86_64": "PipePipe_*-x86_64-release.apk",
+      "x86": "PipePipe_*-x86-release.apk"
+    }
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "InfinityLoop1308/PipePipe",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "InfinityLoop1308/PipePipe",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/00-v2.png"
+    },
+    {
+      "repo": "InfinityLoop1308/PipePipe",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/01-v3.png"
+    },
+    {
+      "repo": "InfinityLoop1308/PipePipe",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/02-v3.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "de:c7:34:29:ce:25:63:27:5f:5e:d1:98:25:e4:46:52:b3:2b:36:3a:46:f3:8b:df:f9:ad:6d:cd:e4:84:2d:88",
+    "pinnedAt": "2026-10-07"
+  }
+}

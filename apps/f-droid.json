@@ -1,0 +1,57 @@
+{
+  "id": "f-droid",
+  "name": "F-Droid",
+  "summary": "O cliente oficial do repositório F-Droid de aplicações livres",
+  "description": {
+    "en": "The official client for the F-Droid catalogue: browse free software apps, install them, and get updates without any Google account. Every app it ships is built from source by F-Droid's own build servers.",
+    "pt": "O cliente oficial do catálogo F-Droid: navega por aplicações de software livre, instala-as e recebe atualizações sem qualquer conta Google. Tudo o que distribui é compilado a partir do código-fonte pelos servidores do F-Droid."
+  },
+  "packageName": "org.fdroid.fdroid",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://gitlab.com/fdroid/fdroidclient",
+  "author": "F-Droid Limited",
+  "categories": [
+    "store"
+  ],
+  "tags": [
+    "fdroid",
+    "foss",
+    "repository"
+  ],
+  "links": {
+    "website": "https://f-droid.org",
+    "docs": "https://f-droid.org/docs/",
+    "donate": "https://f-droid.org/donate/"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "f-droid/fdroidclient",
+    "assetPattern": "org.fdroid.fdroid_*.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "f-droid/fdroidclient",
+    "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+  },
+  "screenshots": [
+    {
+      "repo": "f-droid/fdroidclient",
+      "path": "src/full/fastlane/metadata/android/en-US/images/phoneScreenshots/01-latest.png"
+    },
+    {
+      "repo": "f-droid/fdroidclient",
+      "path": "src/full/fastlane/metadata/android/en-US/images/phoneScreenshots/02-categories.png"
+    },
+    {
+      "repo": "f-droid/fdroidclient",
+      "path": "src/full/fastlane/metadata/android/en-US/images/phoneScreenshots/03-nearby.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "43:23:8d:51:2c:1e:5e:b2:d6:56:9f:4a:3a:fb:f5:52:34:18:b8:2e:0a:3e:d1:55:27:70:ab:b9:a9:c9:cc:ab",
+    "pinnedAt": "2026-10-07"
+  }
+}

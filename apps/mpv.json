@@ -1,0 +1,45 @@
+{
+  "id": "mpv",
+  "name": "mpv-android",
+  "summary": "Reprodutor de vídeo baseado no mpv, com suporte a tudo o que o ffmpeg lê",
+  "description": {
+    "en": "A hardware-accelerated port of the mpv media player: plays essentially any container and codec ffmpeg can decode, with proper subtitle rendering, audio track selection, gesture controls and a scriptable interface.",
+    "pt": "Port do reprodutor mpv com aceleração por hardware: reproduz praticamente qualquer contentor e codec que o ffmpeg descodifique, com renderização correta de legendas, escolha de faixas de áudio, gestos e interface programável."
+  },
+  "packageName": "is.xyz.mpv",
+  "license": "MIT",
+  "sourceCode": "https://github.com/mpv-android/mpv-android",
+  "categories": [
+    "multimedia"
+  ],
+  "tags": [
+    "video",
+    "player",
+    "ffmpeg",
+    "subtitles"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "mpv-android/mpv-android",
+    "excludePattern": "*allstorage*",
+    "abiAssets": {
+      "arm64-v8a": "app-default-arm64-v8a-release.apk",
+      "armeabi-v7a": "app-default-armeabi-v7a-release.apk",
+      "x86_64": "app-default-x86_64-release.apk"
+    }
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=is.xyz.mpv&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-07",
+  "notes": "Exclui as variantes *allstorage* do release: são o mesmo player com MANAGE_EXTERNAL_STORAGE, que a Play Store não aceita.",
+  "icon": {
+    "repo": "mpv-android/mpv-android",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "verification": {
+    "signingCertSha256": "fa:e7:f9:d0:23:85:cc:24:d9:6e:88:43:66:03:e2:3e:a6:ae:c7:64:9a:d1:25:0a:bb:b4:83:7d:aa:b8:2f:ff",
+    "pinnedAt": "2026-10-07"
+  }
+}

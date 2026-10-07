@@ -1,0 +1,60 @@
+{
+  "id": "newpipe",
+  "name": "NewPipe",
+  "summary": "Cliente leve de streaming para YouTube, PeerTube e SoundCloud, sem conta Google",
+  "description": {
+    "en": "A lightweight YouTube frontend for Android. It uses the site's own APIs so no Google account, no Google Play Services and no proprietary library is involved. Supports background playback, popup player, audio-only mode, 4K video and downloading.",
+    "pt": "Cliente leve de YouTube para Android. Usa apenas as APIs públicas do site, pelo que não precisa de conta Google, de Google Play Services nem de bibliotecas proprietárias. Suporta reprodução em segundo plano, popup, modo só-áudio, vídeo 4K e descarregamento."
+  },
+  "packageName": "org.schabi.newpipe",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/TeamNewPipe/NewPipe",
+  "author": "Team NewPipe",
+  "categories": [
+    "media"
+  ],
+  "tags": [
+    "youtube",
+    "streaming",
+    "no-ads",
+    "background-playback"
+  ],
+  "links": {
+    "website": "https://newpipe.net",
+    "donate": "https://newpipe.net/donate/",
+    "translate": "https://hosted.weblate.org/projects/newpipe/"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "TeamNewPipe/NewPipe",
+    "assetPattern": "NewPipe_v*.apk",
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": false
+  },
+  "antiFeatures": [],
+  "addedAt": "2026-10-07",
+  "icon": {
+    "repo": "TeamNewPipe/NewPipe",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "TeamNewPipe/NewPipe",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/00.png"
+    },
+    {
+      "repo": "TeamNewPipe/NewPipe",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/01.png"
+    },
+    {
+      "repo": "TeamNewPipe/NewPipe",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/02.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "cb:84:06:9b:d6:81:16:ba:fa:e5:ee:4e:e5:b0:8a:56:7a:a6:d8:98:40:4e:7c:b1:2f:9e:75:6d:f5:cf:5c:ab",
+    "pinnedAt": "2026-10-07"
+  }
+}

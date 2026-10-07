@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openshelf.dev/schema/app.schema.json",
+  "title": "OpenShelf app entry",
+  "description": "One curated Android app. This is the human-edited source of truth: one file per app under apps/<id>.json. The resolved, installable index (index.json) is generated from these files by tools/build-index.mjs.",
+  "type": "object",
+  "required": ["id", "name", "summary", "packageName", "license", "sourceCode", "release"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Slug. MUST equal the file name (apps/<id>.json) and stay stable forever: it is the client-side identity of the app.",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "name": { "type": "string", "minLength": 1, "maxLength": 60 },
+    "summary": {
+      "type": "string",
+      "description": "One line, no trailing period. Shown in the list.",
+      "minLength": 8,
+      "maxLength": 160
+    },
+    "description": {
+      "type": "object",
+      "description": "Longer description, keyed by BCP-47 language tag. At least 'en' is required.",
+      "minProperties": 1,
+      "propertyNames": { "pattern": "^[a-z]{2}(-[A-Z][a-z]+)?$" },
+      "additionalProperties": { "type": "string", "maxLength": 4000 },
+      "required": ["en"]
+    },
+    "packageName": {
+      "type": "string",
+      "description": "Application ID exactly as declared in the APK manifest. Verified against the APK by CI.",
+      "pattern": "^[a-zA-Z][a-zA-Z0-9_]*(\\.[a-zA-Z][a-zA-Z0-9_]*)+$"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX license identifier. Must be an OSI/FSF-approved free software license: this store is for open source only.",
+      "pattern": "^(0BSD|AGPL-3\\.0(-only|-or-later)?|Apache-2\\.0|Artistic-2\\.0|BSD-2-Clause|BSD-3-Clause|BSL-1\\.0|CC0-1\\.0|EPL-2\\.0|GPL-2\\.0(-only|-or-later)?|GPL-3\\.0(-only|-or-later)?|ISC|LGPL-2\\.1(-only|-or-later)?|LGPL-3\\.0(-only|-or-later)?|MIT|MPL-2\\.0|Unlicense|Zlib)$"
+    },
+    "sourceCode": {
+      "type": "string",
+      "format": "uri",
+      "description": "Repository the APK is built from. Must be publicly readable."
+    },
+    "author": { "type": "string", "maxLength": 120 },
+    "categories": {
+      "type": "array",
+      "description": "Fixed taxonomy so the client can render stable filters. At most 3.",
+      "items": {
+        "enum": [
+          "ai", "browser", "communication", "development", "education", "finance",
+          "games", "graphics", "health", "maps", "media", "multimedia", "navigation",
+          "notes", "privacy", "productivity", "reading", "security", "store",
+          "system", "tools", "utilities", "weather"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 24 },
+      "maxItems": 10,
+      "uniqueItems": true
+    },
+    "icon": {
+      "description": "Where the build should fetch a square icon from. Downloaded and re-hosted by the build under icons/<id>.png so the client never talks to third-party hosts. If omitted, the client renders a monogram.",
+      "oneOf": [
+        { "type": "string", "format": "uri" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["repo", "path"],
+          "properties": {
+            "repo": { "type": "string", "pattern": "^[\\w.-]+/[\\w.-]+$" },
+            "path": { "type": "string", "minLength": 1 }
+          }
+        }
+      ]
+    },
+    "screenshots": {
+      "type": "array",
+      "description": "Up to 5 images, re-hosted by the build under screenshots/<id>/.",
+      "maxItems": 5,
+      "items": {
+        "oneOf": [
+          { "type": "string", "format": "uri" },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["repo", "path"],
+            "properties": {
+              "repo": { "type": "string", "pattern": "^[\\w.-]+/[\\w.-]+$" },
+              "path": { "type": "string", "minLength": 1 }
+            }
+          }
+        ]
+      }
+    },
+    "links": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "website": { "type": "string", "format": "uri" },
+        "changelog": { "type": "string", "format": "uri" },
+        "donate": { "type": "string", "format": "uri" },
+        "docs": { "type": "string", "format": "uri" },
+        "translate": { "type": "string", "format": "uri" },
+        "issues": { "type": "string", "format": "uri" },
+        "matrix": { "type": "string", "format": "uri" },
+        "mastodon": { "type": "string", "format": "uri" }
+      }
+    },
+    "release": { "$ref": "#/$defs/release" },
+    "playStore": {
+      "type": "object",
+      "description": "Whether the same app is also on Google Play. Informational: it lets the client label apps correctly and lets the build track Play-only exclusions.",
+      "additionalProperties": false,
+      "required": ["present"],
+      "properties": {
+        "present": { "type": "boolean" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "status": {
+      "enum": ["active", "unmaintained", "archived", "deprecated"],
+      "default": "active"
+    },
+    "addedAt": { "$ref": "#/$defs/date" },
+    "lastCheckedAt": { "$ref": "#/$defs/date" },
+    "antiFeatures": {
+      "type": "array",
+      "description": "F-Droid-style warnings surfaced to the user before install.",
+      "items": {
+        "enum": [
+          "nonFreeNet", "nonFreeAssets", "nonFreeAdd", "tracking", "ads",
+          "knownVuln", "noSourceSince", "disabledAlgorithm", "upstreamNonFree"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "requires": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minSdk": { "type": "integer", "minimum": 1, "maximum": 40 },
+        "arch": {
+          "type": "array",
+          "items": { "enum": ["arm64-v8a", "armeabi-v7a", "x86", "x86_64"] },
+          "uniqueItems": true
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "description": "Trust anchors. signingCertSha256 pins the signing certificate: CI fails if a published APK is signed by a different key, which is what catches a hijacked or re-signed release.",
+      "additionalProperties": false,
+      "properties": {
+        "signingCertSha256": { "$ref": "#/$defs/sha256Colon" },
+        "pinnedAt": { "$ref": "#/$defs/date" },
+        "notes": { "type": "string", "maxLength": 500 }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Maintainer-facing notes. Not shown in the client.",
+      "maxLength": 2000
+    }
+  },
+  "$defs": {
+    "date": { "type": "string", "format": "date" },
+    "sha256Hex": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "sha256Colon": { "type": "string", "pattern": "^([0-9a-f]{2}:){31}[0-9a-f]{2}$" },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider"],
+      "properties": {
+        "provider": {
+          "enum": ["github", "direct", "fdroid", "gitlab"],
+          "description": "github: resolve the newest release of a repo and pick APK assets. direct: a fixed APK URL. fdroid: an F-Droid repo entry. gitlab: GitLab release assets."
+        },
+        "repo": {
+          "type": "string",
+          "description": "owner/name. Required for github and gitlab.",
+          "pattern": "^[\\w.-]+/[\\w.-]+$"
+        },
+        "assetPattern": {
+          "type": "string",
+          "description": "Glob applied to release asset names. Must match exactly one asset, unless abiAssets or allowMultiple are used.",
+          "default": "*.apk"
+        },
+        "excludePattern": {
+          "type": "string",
+          "description": "Glob of asset names to ignore (e.g. '*-debug.apk')."
+        },
+        "abiAssets": {
+          "type": "object",
+          "description": "Per-ABI asset patterns, for apps that ship split APKs. Keys are ABI names plus 'universal'.",
+          "propertyNames": { "enum": ["universal", "arm64-v8a", "armeabi-v7a", "x86", "x86_64"] },
+          "additionalProperties": { "type": "string" }
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Fixed APK URL for provider=direct."
+        },
+        "includePrerelease": { "type": "boolean", "default": false },
+        "allowMultiple": {
+          "type": "boolean",
+          "default": false,
+          "description": "Allow assetPattern to match more than one asset (e.g. per-ABI splits named inconsistently). Every match becomes an artifact."
+        },
+        "tagPattern": {
+          "type": "string",
+          "description": "Only consider tags matching this glob, e.g. 'v*'. Useful when a repo tags non-app releases."
+        },
+        "versionScheme": { "enum": ["semver", "calver", "date", "other"], "default": "other" },
+        "fdroidRepo": { "type": "string", "format": "uri" }
+      }
+    }
+  }
+}

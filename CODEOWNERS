@@ -1,0 +1,15 @@
+# Quem revê o quê. Alterações a chaves e a pins de certificado são as que mais
+# importam: são a fronteira de confiança de todo o projeto.
+
+# chaves de assinatura do índice
+/keys/            @ricardojrgpimentel
+
+# trust anchors por app (linha "verification.signingCertSha256")
+/apps/            @ricardojrgpimentel
+
+# o código que faz as verificações
+/tools/           @ricardojrgpimentel
+
+# o próprio índice publicado
+/index.json       @ricardojrgpimentel
+/index.json.sig   @ricardojrgpimentel

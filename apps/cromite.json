@@ -1,0 +1,39 @@
+{
+  "id": "cromite",
+  "name": "Cromite",
+  "summary": "Fork do Chromium com bloqueio de anúncios e patches de privacidade",
+  "description": {
+    "en": "A Chromium fork with ad blocking, anti-fingerprinting patches, always-incognito options and removed Google integrations. Updated frequently, and not distributed on the Play Store because it would violate Play's policies.",
+    "pt": "Fork do Chromium com bloqueio de anúncios, patches anti-fingerprinting, opções de incógnito permanente e integrações Google removidas. Atualizado com frequência e não distribuído na Play Store porque violaria as políticas da Play."
+  },
+  "packageName": "org.cromite.cromite",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/uazo/cromite",
+  "author": "uazo e contribuidores",
+  "categories": [
+    "browser",
+    "privacy"
+  ],
+  "tags": [
+    "chromium",
+    "adblock",
+    "privacy",
+    "fingerprinting"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "uazo/cromite",
+    "abiAssets": {
+      "arm64-v8a": "arm64_ChromePublic.apk"
+    }
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-07",
+  "notes": "Só se indexa a variante arm64-v8a (309 MB): as outras ABIs multiplicariam o custo de cada build sem servir a maioria dos dispositivos.",
+  "verification": {
+    "signingCertSha256": "63:3f:a4:1d:82:11:d6:d0:91:6a:81:9b:89:66:8c:6d:e9:2e:64:23:2d:a6:7f:9d:16:fd:81:c3:b7:e9:23:ff",
+    "pinnedAt": "2026-10-07"
+  }
+}
