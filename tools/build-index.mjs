@@ -21,6 +21,7 @@ import {
 } from "./lib/util.mjs";
 import { githubApi, githubToken } from "./lib/github.mjs";
 import { findApkTools, inspectApk } from "./lib/apk.mjs";
+import { inferAbi } from "./lib/assets.mjs";
 
 /* -------------------------------------------------------------------- argv */
 const args = process.argv.slice(2);
@@ -136,16 +137,6 @@ function matchAssets(entry, release) {
   );
   assign("universal", primary.sort((a, b) => b.size - a.size)[0]);
   return picks;
-}
-
-function inferAbi(name) {
-  const n = name.toLowerCase();
-  if (n.includes("arm64") || n.includes("aarch64")) return "arm64-v8a";
-  if (n.includes("armeabi") || /(^|[^a-z])arm(v7)?([^a-z0-9]|$)/.test(n)) return "armeabi-v7a";
-  if (n.includes("x86_64") || n.includes("x64")) return "x86_64";
-  if (n.includes("x86") || n.includes("i686")) return "x86";
-  if (n.includes("universal") || n.includes("all")) return "universal";
-  return null;
 }
 
 /* ------------------------------------------------------------ apk inspection */

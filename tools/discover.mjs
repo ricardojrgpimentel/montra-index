@@ -26,6 +26,7 @@ import {
 import { githubApi, githubToken } from "./lib/github.mjs";
 import { findApkTools, inspectApk } from "./lib/apk.mjs";
 import { lookupPlay, nameSimilarity } from "./lib/play.mjs";
+import { slugify, suggestPattern } from "./lib/assets.mjs";
 
 const args = process.argv.slice(2);
 const flag = (name) => args.includes(`--${name}`);
@@ -56,14 +57,18 @@ const DEFAULT_QUERIES = [
   "topic:privacy topic:android stars:>300",
 ];
 
-function slugify(name) {
-  return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 48);
+/**
+ * Libraries, SDKs and design systems publish sample APKs that pass every other
+ * check. Cheap heuristics on topics and description catch most of them before we
+ * waste a download on a `catalog-debug.apk`.
+ */
+function librarySignal(repo) {
+  const topics = (repo.topics ?? []).map((t) => t.toLowerCase());
+  if (topics.some((t) => ["library", "sdk", "framework", "components", "ui-kit", "sample-app"].includes(t))) {
+    return true;
+  }
+  const text = `${repo.name ?? ""} ${repo.description ?? ""}`.toLowerCase();
+  return /\b(sdk|library|components|design system|framework|sample app)\b/.test(text);
 }
 
 /* ------------------------------------------------------------------ search */
@@ -118,6 +123,11 @@ async function evaluate(repo, { knownRepos, knownPackages, knownIds }) {
     row.verdict = "pouco popular";
     return row;
   }
+  if (librarySignal(repo)) {
+    row.verdict = "não é uma app";
+    row.reasons.push("parece uma biblioteca/SDK, não uma aplicação instalável");
+    return row;
+  }
 
   let releases = [];
   try {
@@ -152,73 +162,22 @@ async function evaluate(repo, { knownRepos, knownPackages, knownIds }) {
   row.downloads = chosen.apks.reduce((sum, a) => sum + a.download_count, 0);
 
   const pattern = suggestPattern(chosen.apks);
+  // Um store nunca deve indexar uma build de debug. O Termux é a exceção
+  // conhecida (chama "debug" às suas releases assinadas), por isso é um aviso
+  // com destaque, não uma rejeição automática.
+  row.onlyDebugBuilds = chosen.apks.filter((a) => !/debug/i.test(a.name)).length === 0;
+  if (row.onlyDebugBuilds) {
+    row.reasons.push(
+      `todos os APKs deste release têm "debug" no nome: ${chosen.apks.map((a) => a.name).join(", ")} — ` +
+        "confirma se são builds de debug antes de indexar",
+    );
+  }
   row.assetPattern = pattern.assetPattern;
   row.abiAssets = pattern.abiAssets;
   row.assetSize = pattern.primary?.size ?? 0;
   row.apkAssetUrl = pattern.primary?.browser_download_url ?? null;
   if (pattern.notes.length) row.reasons.push(...pattern.notes);
   return row;
-}
-
-/**
- * Work out how to describe a release's assets declaratively.
- *
- * A single APK is "universal". Several APKs whose names differ only by ABI are
- * per-ABI splits. Anything else (debug beside release, WebView beside browser)
- * needs a human, and we say so rather than guessing silently.
- */
-function suggestPattern(apks) {
-  const notes = [];
-  const result = { assetPattern: null, abiAssets: null, primary: null, notes };
-
-  if (apks.length === 1) {
-    result.assetPattern = apks[0].name;
-    result.primary = apks[0];
-    return result;
-  }
-
-  const abiOf = (name) => {
-    const n = name.toLowerCase();
-    if (n.includes("arm64") || n.includes("aarch64")) return "arm64-v8a";
-    if (n.includes("armeabi") || n.includes("armv7") || /(^|[^a-z0-9])arm([^a-z0-9]|$)/.test(n)) return "armeabi-v7a";
-    if (n.includes("x86_64") || n.includes("x64")) return "x86_64";
-    if (n.includes("x86")) return "x86";
-    if (n.includes("universal") || n.includes("all")) return "universal";
-    return null;
-  };
-
-  const byAbi = new Map();
-  let unlabelled = 0;
-  for (const apk of apks) {
-    const abi = abiOf(apk.name);
-    if (abi == null) unlabelled++;
-    if (!byAbi.has(abi)) byAbi.set(abi, []);
-    byAbi.get(abi).push(apk);
-  }
-
-  if (unlabelled === apks.length) {
-    notes.push(`${apks.length} APKs e nenhum nome revela a ABI: precisa de assetPattern/abiAssets à mão`);
-    result.assetPattern = "*.apk";
-    result.primary = [...apks].sort((a, b) => b.size - a.size)[0];
-    return result;
-  }
-
-  const abiAssets = {};
-  for (const [abi, group] of byAbi) {
-    const key = abi ?? "universal";
-    // Turn the concrete name into a glob: replace version-ish and hash-ish parts.
-    const pattern = group[0].name.replace(/[0-9]+\.[0-9]+(\.[0-9]+)?[^/]*/, "*").replace(/^app-/, "app-");
-    abiAssets[key] = group.length === 1 ? group[0].name : pattern;
-    if (group.length > 1) notes.push(`${group.length} APKs para ${key}: ${group.map((a) => a.name).join(", ")}`);
-  }
-  result.abiAssets = abiAssets;
-  result.primary = abiAssets.universal
-    ? byAbi.get("universal")[0]
-    : [...apks].sort((a, b) => b.size - a.size)[0];
-
-  const debug = apks.filter((a) => /debug/i.test(a.name));
-  if (debug.length) notes.push(`há builds de debug no release (${debug.map((a) => a.name).join(", ")}): exclui-os`);
-  return result;
 }
 
 /* --------------------------------------------------------------- inspection */
@@ -371,9 +330,13 @@ async function main() {
   const good = pool
     .filter((row) => row.verdict === "candidata")
     .sort((a, b) => {
+      // 1. fora da Play Store (é o ponto do projeto)
       const aOff = a.play?.present === false ? 1 : 0;
       const bOff = b.play?.present === false ? 1 : 0;
       if (aOff !== bOff) return bOff - aOff;
+      // 2. releases que não sejam só builds de debug
+      if (!!a.onlyDebugBuilds !== !!b.onlyDebugBuilds) return a.onlyDebugBuilds ? 1 : -1;
+      // 3. e só depois popularidade
       return (b.downloads ?? 0) - (a.downloads ?? 0) || b.stars - a.stars;
     });
 
