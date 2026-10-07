@@ -278,7 +278,23 @@ async function main() {
   const knownIds = new Set(existing.map((e) => e.id));
 
   /* 1. candidates --------------------------------------------------------- */
-  const seeds = list("seed").map((s) => ({ full_name: s, stargazers_count: 0, license: {}, pushed_at: null }));
+  // Um seed traz o repositório pelo nome, mas não traz os metadados dele. Construí-lo
+  // com `license: {}` fazia com que a verificação de licença o recusasse sempre —
+  // "licença desconhecida não está na lista de licenças livres" — a menos que a busca
+  // por omissão o encontrasse por acaso e preenchesse o campo. Ou seja: o `--seed` só
+  // funcionava para repositórios que já apareciam sozinhos, que é exactamente o caso
+  // em que não era preciso. Vai-se buscar os metadados à API.
+  //
+  // Se um seed não puder ser lido, isto falha em voz alta em vez de continuar: um
+  // pedido explícito que não se consegue cumprir não pode dar um relatório sobre
+  // outros repositórios, que é o defeito que esta correcção veio resolver.
+  const seeds = await mapPool(list("seed"), 4, async (fullName) => {
+    const repo = await githubApi(`/repos/${fullName}`);
+    if (!repo?.full_name) {
+      throw new Error(`--seed ${fullName}: a API respondeu ${repo?.message ?? "sem full_name"}`);
+    }
+    return repo;
+  });
   const queries = [...DEFAULT_QUERIES, ...list("query")];
   const searchHits = [];
   for (const query of queries) {
