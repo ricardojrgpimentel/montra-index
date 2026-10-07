@@ -3,15 +3,23 @@
 //
 //   node tools/keys.mjs init      generate keys/index-signing.key.pem (private) + .pub.pem
 //   node tools/keys.mjs show      print the public key and its key id
+//   node tools/keys.mjs check     is the private key the one this repo's public key matches?
 //
 // The private key NEVER goes into git (see .gitignore) and lives in CI as the
 // INDEX_SIGNING_KEY secret. The public key is committed and is embedded in the app:
 // that is the only thing standing between a compromised mirror and a malicious app
 // being installed on a user's phone.
-import { createPublicKey, generateKeyPairSync } from "node:crypto";
+import { createPrivateKey, createPublicKey, generateKeyPairSync } from "node:crypto";
 import fs from "node:fs/promises";
 import { color, exists, fail, log } from "./lib/util.mjs";
-import { PRIVATE_KEY_PATH, PUBLIC_KEY_PATH, keyIdFromPublicKeyPem, readPublicKeyPem } from "./lib/keys.mjs";
+import {
+  PRIVATE_KEY_PATH,
+  PUBLIC_KEY_PATH,
+  keyIdFromPrivateKeyPem,
+  keyIdFromPublicKeyPem,
+  readPrivateKeyPem,
+  readPublicKeyPem,
+} from "./lib/keys.mjs";
 
 async function init() {
   const publicPem = await (async () => {
@@ -48,7 +56,40 @@ async function show() {
   console.log(`\nkey id: ${color.bold(keyIdFromPublicKeyPem(pem))}`);
 }
 
+/**
+ * A chave privada que está à mão corresponde à chave pública que este repositório
+ * publica? Se não corresponder, tudo o que for assinado com ela é recusado por
+ * todas as apps instaladas — e é melhor sabê-lo agora do que depois de um build de
+ * vinte minutos. É por isso que o build-index corre isto antes de descarregar
+ * seja o que for.
+ */
+async function check() {
+  const fromEnv = Boolean(process.env.INDEX_SIGNING_KEY);
+  const pem = await readPrivateKeyPem();
+  const source = fromEnv ? "INDEX_SIGNING_KEY" : PRIVATE_KEY_PATH;
+
+  const key = createPrivateKey(pem);
+  if (key.asymmetricKeyType !== "ec") {
+    fail(`a chave de assinatura tem de ser EC P-256, recebi ${key.asymmetricKeyType}`);
+  }
+
+  const mine = keyIdFromPrivateKeyPem(pem);
+  const committed = keyIdFromPublicKeyPem(await readPublicKeyPem());
+
+  log.info(`chave privada: ${source}`);
+  log.info(`  produz o key id ${mine}`);
+
+  if (mine !== committed) {
+    log.error(`NÃO corresponde à chave pública deste repositório (${committed}).`);
+    log.error("Um índice assinado com esta chave seria recusado por todas as apps instaladas.");
+    process.exit(1);
+  }
+
+  log.ok(`corresponde à chave pública publicada (${committed})`);
+}
+
 const command = process.argv[2] ?? "show";
 if (command === "init") await init();
 else if (command === "show") await show();
-else fail(`comando desconhecido: ${command} (usa: init | show)`);
+else if (command === "check") await check();
+else fail(`comando desconhecido: ${command} (usa: init | show | check)`);

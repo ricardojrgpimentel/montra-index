@@ -68,6 +68,14 @@ jobs:
             exit 1
           fi
 
+      # Depois da guarda (que diz o que fazer quando falta) e antes de descarregar
+      # 1,3 GB de APKs: assinar com a chave errada produz um índice que todas as apps
+      # instaladas recusam, e é melhor descobri-lo em dois segundos.
+      - name: a chave do secret é a que a app conhece
+        run: node tools/keys.mjs check
+        env:
+          INDEX_SIGNING_KEY: ${{ secrets.INDEX_SIGNING_KEY }}
+
       - name: construir o índice
         run: pnpm run build --deep ${{ github.event.inputs.deep || '3' }} --jobs 4
         env:
