@@ -1,0 +1,38 @@
+{
+  "id": "nagram",
+  "name": "Nagram",
+  "summary": "Cliente do Telegram com foco em privacidade e definições avançadas",
+  "description": {
+    "en": "Another unofficial Telegram client, built from the official source with a focus on privacy: hidden online status, disabled read receipts, local premium-style options, and a configurable interface. No Google Play Services needed.",
+    "pt": "Outro cliente não oficial do Telegram, construído a partir do código oficial, com foco em privacidade: estado online escondido, confirmações de leitura desligadas, opções locais ao estilo premium e interface configurável. Não precisa dos Google Play Services."
+  },
+  "packageName": "xyz.nextalone.nagram",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/NextAlone/Nagram",
+  "categories": [
+    "communication"
+  ],
+  "tags": [
+    "telegram",
+    "nao-oficial",
+    "privacidade",
+    "no-gms"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "NextAlone/Nagram",
+    "abiAssets": {
+      "arm64-v8a": "Nagram-*-arm64-v8a.apk",
+      "armeabi-v7a": "Nagram-*-armeabi-v7a.apk"
+    }
+  },
+  "antiFeatures": [
+    "nonFreeNet"
+  ],
+  "addedAt": "2026-10-07",
+  "notes": "Cliente não oficial, como o Nekogram: código livre, rede proprietária (nonFreeNet), nome sem a marca Telegram. Sujeito às mesmas mudanças de API que podem quebrar clientes de terceiros.",
+  "verification": {
+    "signingCertSha256": "88:a8:af:e3:cc:be:e0:80:c1:3b:73:83:2a:ab:8c:98:a9:f1:9d:1c:65:f3:bc:fd:50:b8:d0:1c:0b:c8:0e:9e",
+    "pinnedAt": "2026-10-07"
+  }
+}

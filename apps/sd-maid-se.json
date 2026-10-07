@@ -1,0 +1,37 @@
+{
+  "id": "sd-maid-se",
+  "name": "SD Maid SE",
+  "summary": "Limpeza e gestão do armazenamento do sistema, com automação por rotinas",
+  "description": {
+    "en": "A cleaning tool for Android storage: duplicate and leftover file detection, app cache cleanup, system storage analysis, and automations that run the checks you choose on a schedule. Works without root; more capable with it.",
+    "pt": "Ferramenta de limpeza do armazenamento Android: deteção de ficheiros duplicados e órfãos, limpeza de cache de apps, análise do armazenamento do sistema e rotinas automáticas que correm as verificações que escolheres. Funciona sem root; mais capaz com ele."
+  },
+  "packageName": "eu.darken.sdmse",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/d4rken-org/sdmaid-se",
+  "categories": [
+    "system",
+    "utilities"
+  ],
+  "tags": [
+    "limpeza",
+    "armazenamento",
+    "automacao",
+    "sem-ads"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "d4rken-org/sdmaid-se",
+    "assetPattern": "eu.darken.sdmse-*-FOSS-RELEASE.apk",
+    "excludePattern": "*-GPLAY-*"
+  },
+  "antiFeatures": [
+    "nonFreeAssets"
+  ],
+  "addedAt": "2026-10-07",
+  "notes": "O código é GPL-3.0, mas o README do projeto exclui explicitamente ícones, logótipos, animações, documentação e traduções dessa licença, e esses recursos estão dentro do APK: daí nonFreeAssets, à maneira do F-Droid. Só a variante FOSS é indexada; a variante da Play Store fica de fora.",
+  "verification": {
+    "signingCertSha256": "f4:90:03:2b:e5:38:3f:55:90:04:95:fa:7f:c2:07:ec:e2:e7:86:a5:c2:c6:cc:52:02:7b:99:54:8a:9c:e9:38",
+    "pinnedAt": "2026-10-07"
+  }
+}
