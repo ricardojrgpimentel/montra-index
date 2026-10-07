@@ -88,6 +88,33 @@ Se o padrão casar com mais do que um asset e as ABIs não forem óbvias, o buil
 avisa e escolhe o maior. Lê os avisos: normalmente querem dizer que falta
 configuração.
 
+## 3.1 Licenças que não são livres
+
+Se o projeto tem o código público mas a licença impõe limitações (uso comercial,
+concorrência, oferta como serviço), não é software livre e não pode ser declarado
+como tal. Ainda assim pode entrar, se valer a pena para quem usa a loja:
+
+```json
+{
+  "license": "LicenseRef-SustainableUse-1.0",
+  "licenseNote": {
+    "en": "Not a free licence. The source is public, but it may not be sold or hosted as a service.",
+    "pt": "Não é uma licença livre. O código é público, mas não pode ser vendido nem oferecido como serviço."
+  },
+  "antiFeatures": ["restrictedLicense"]
+}
+```
+
+O `node tools/validate.mjs` recusa a entrada se faltar qualquer uma das três
+partes, e a app mostra a nota **antes** do botão de instalar. O identificador tem
+de começar por `LicenseRef-` e dizer qual é a licença: nunca escrevas "MIT" (nem
+outra licença livre) num projeto que não a tem.
+
+Duas coisas a pesar antes de propor uma entrada destas: o catálogo existe para
+software livre, e cada exceção tem de ser justificável em `notes`. Código fechado
+não entra, com ou sem aviso: isso não é uma licença estranha, é ausência de
+licença.
+
 ## 4. Validar e fixar o certificado
 
 ```bash

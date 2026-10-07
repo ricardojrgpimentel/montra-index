@@ -29,6 +29,10 @@ async function main() {
   const appSchema = await loadSchema("app.schema.json");
   const validateApp = ajv.compile(appSchema);
 
+  // A lista de licenças livres vem do schema: uma só fonte de verdade, sem uma
+  // regex duplicada aqui que se desatualiza em silêncio.
+  const freeLicenses = new Set(appSchema.properties.license.oneOf[0].enum);
+
   let files = [];
   try {
     files = (await fs.readdir(DIRS.apps)).filter((f) => f.endsWith(".json")).sort();
@@ -68,6 +72,30 @@ async function main() {
       error(id, `packageName duplicado: já usado por "${seenPackages.get(entry.packageName)}"`);
     } else {
       seenPackages.set(entry.packageName, id);
+    }
+
+    // Licença restritiva: aceite, mas nunca em silêncio. Três coisas ao mesmo
+    // tempo, ou o build falha — foi assim que se decidiu incluir software com
+    // licenças estranhas sem transformar "só software livre" numa frase falsa.
+    if (!freeLicenses.has(entry.license)) {
+      if (!entry.antiFeatures?.includes("restrictedLicense")) {
+        error(
+          id,
+          `license "${entry.license}" não é uma licença livre, portanto antiFeatures tem de incluir "restrictedLicense"`,
+        );
+      }
+      if (!entry.licenseNote?.en) {
+        error(
+          id,
+          `license "${entry.license}" é restritiva, portanto licenseNote.en é obrigatório ` +
+            "e tem de explicar, em linguagem simples, o que a licença não permite",
+        );
+      }
+      if (!entry.notes) {
+        warn(id, "uma entrada com licença restritiva deve explicar em notes porque foi aceite");
+      }
+    } else if (entry.licenseNote) {
+      warn(id, "licenseNote só faz sentido com uma licença restritiva (LicenseRef-*)");
     }
 
     const rel = entry.release;

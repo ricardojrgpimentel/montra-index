@@ -7,8 +7,15 @@ base de dados, não há painel de administração: o repositório é o sistema.
 
 Uma app entra se cumprir **todos** estes critérios:
 
-1. **Código-fonte público** num repositório legível, com licença aprovada pela OSI
-   ou FSF, numa das que o schema aceita.
+1. **Código-fonte público**, num repositório legível, com licença declarada.
+   O caso normal — e a esmagadora maioria do catálogo — é uma licença livre
+   aprovada pela OSI ou FSF, uma das que o schema lista.
+   Uma licença **restritiva** (código público, mas com limitações de uso) só entra
+   com três coisas ao mesmo tempo, verificadas pelo CI: o identificador
+   `LicenseRef-*`, `antiFeatures: ["restrictedLicense"]`, e uma `licenseNote`
+   escrita que explique a restrição em linguagem que qualquer pessoa entenda.
+   Sem os três, o build falha. Nunca se apresenta uma licença restritiva como
+   livre, e a app mostra a nota antes do botão de instalar.
 2. **O projeto publica APKs** em releases do GitHub (ou GitLab). Se só publica na
    Play Store ou em F-Droid sem URLs estáveis, não é indexável hoje.
 3. **Está mantido**: commits nos últimos 12 meses. Projetos arquivados ou sem

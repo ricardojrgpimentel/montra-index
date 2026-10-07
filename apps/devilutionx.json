@@ -1,0 +1,43 @@
+{
+  "id": "devilutionx",
+  "name": "DevilutionX",
+  "summary": "Motor que corre o Diablo original em Android, com melhorias de qualidade de vida",
+  "description": {
+    "en": "An open-source reimplementation of the Diablo engine: it runs the original game data on Android with widescreen support, better controls, a shared stash, Hellfire support and quality-of-life fixes. It ships no game assets, so you need your own copy of the game files.",
+    "pt": "Reimplementação livre do motor do Diablo: corre os ficheiros do jogo original em Android, com ecrã largo, melhores controlos, baú partilhado, suporte para Hellfire e correções de qualidade de vida. Não inclui os recursos do jogo, portanto precisas dos teus próprios ficheiros."
+  },
+  "packageName": "org.diasurgical.devilutionx",
+  "license": "LicenseRef-SustainableUse-1.0",
+  "licenseNote": {
+    "en": "Not a free licence. The source is public, but the Sustainable Use License only allows personal and internal-business use: you may not sell it, host it as a service, or use it to build a competing product. It is source-available, not open source. It is in this catalogue because it is genuinely useful and the source is public — with the restriction stated here, before you install.",
+    "pt": "Não é uma licença livre. O código é público, mas a Sustainable Use License só permite uso pessoal e dentro de uma empresa: não podes vendê-lo, oferecê-lo como serviço, nem usá-lo para construir um produto concorrente. É código disponível, não é código aberto. Está neste catálogo porque é genuinamente útil e o código é público — com a restrição declarada aqui, antes de instalares."
+  },
+  "sourceCode": "https://github.com/diasurgical/devilutionX",
+  "categories": [
+    "games"
+  ],
+  "tags": [
+    "diablo",
+    "motor-de-jogo",
+    "arpg",
+    "offline"
+  ],
+  "links": {
+    "website": "https://devilutionx.com",
+    "docs": "https://github.com/diasurgical/devilutionX/wiki"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "diasurgical/devilutionX",
+    "assetPattern": "devilutionx-android.apk"
+  },
+  "antiFeatures": [
+    "restrictedLicense"
+  ],
+  "addedAt": "2026-10-07",
+  "notes": "Licença restritiva aceite por decisão explícita do projeto: o código é público e a app é útil, e a alternativa seria esconder do utilizador uma restrição que ele pode querer conhecer. O validador obriga a antiFeatures:[restrictedLicense] e a licenseNote, e a app mostra a nota antes do botão de instalar — não é uma inclusão silenciosa. Não são distribuídos recursos do jogo: é preciso ter o Diablo original.",
+  "verification": {
+    "signingCertSha256": "f9:44:67:3f:7a:19:4b:c1:7b:c6:90:cf:2f:b2:dc:3a:27:96:7b:b2:ad:d4:c5:7d:54:f3:90:96:ad:10:84:3d",
+    "pinnedAt": "2026-10-07"
+  }
+}

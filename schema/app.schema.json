@@ -34,9 +34,49 @@
       "pattern": "^[a-zA-Z][a-zA-Z0-9_]*(\\.[a-zA-Z][a-zA-Z0-9_]*)+$"
     },
     "license": {
-      "type": "string",
-      "description": "SPDX license identifier. Must be an OSI/FSF-approved free software license: this store is for open source only.",
-      "pattern": "^(0BSD|AGPL-3\\.0(-only|-or-later)?|Apache-2\\.0|Artistic-2\\.0|BSD-2-Clause|BSD-3-Clause|BSL-1\\.0|CC0-1\\.0|EPL-2\\.0|GPL-2\\.0(-only|-or-later)?|GPL-3\\.0(-only|-or-later)?|ISC|LGPL-2\\.1(-only|-or-later)?|LGPL-3\\.0(-only|-or-later)?|MIT|MPL-2\\.0|Unlicense|Zlib)$"
+      "description": "Licença declarada. Referencialmente uma licença livre aprovada pela OSI/FSF, listada em oneOf[0]. Uma licença restritiva (código público mas com limitações de uso) só é aceite como LicenseRef-*, e obriga a antiFeatures:[restrictedLicense] e a licenseNote — o validador exige os três.",
+      "oneOf": [
+        {
+          "description": "Licença livre aprovada pela OSI ou FSF.",
+          "enum": [
+          "0BSD",
+          "AGPL-3.0-only",
+          "AGPL-3.0-or-later",
+          "Apache-2.0",
+          "Artistic-2.0",
+          "BSD-2-Clause",
+          "BSD-3-Clause",
+          "BSL-1.0",
+          "CC0-1.0",
+          "EPL-2.0",
+          "GPL-2.0-only",
+          "GPL-2.0-or-later",
+          "GPL-3.0-only",
+          "GPL-3.0-or-later",
+          "ISC",
+          "LGPL-2.1-only",
+          "LGPL-2.1-or-later",
+          "LGPL-3.0-only",
+          "LGPL-3.0-or-later",
+          "MIT",
+          "MPL-2.0",
+          "Unlicense",
+          "Zlib"
+]
+        },
+        {
+          "description": "Licença restritiva, nomeada pelo repositório. Nunca é apresentada como livre.",
+          "type": "string",
+          "pattern": "^LicenseRef-[A-Za-z0-9][A-Za-z0-9.-]*$"
+        }
+      ]
+    },
+    "licenseNote": {
+      "description": "Obrigatório quando license é LicenseRef-*: o que é que a licença permite e não permite, em linguagem que um utilizador entenda. Aparece na app, antes do botão de instalar.",
+      "type": "object",
+      "minProperties": 1,
+      "required": ["en"],
+      "additionalProperties": { "type": "string", "maxLength": 1200 }
     },
     "sourceCode": {
       "type": "string",
@@ -136,7 +176,7 @@
       "items": {
         "enum": [
           "nonFreeNet", "nonFreeAssets", "nonFreeAdd", "tracking", "ads",
-          "knownVuln", "noSourceSince", "disabledAlgorithm", "upstreamNonFree"
+          "knownVuln", "noSourceSince", "disabledAlgorithm", "upstreamNonFree", "restrictedLicense"
         ]
       },
       "uniqueItems": true

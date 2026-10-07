@@ -18,6 +18,7 @@ separado.
 | --- | --- | --- |
 | `apps/<id>.json` | Uma app. A fonte de verdade. | humanos, via pull request |
 | `schema/app.schema.json` | O contrato que cada entrada cumpre | raramente |
+| `license` / `licenseNote` | Licença livre, ou `LicenseRef-*` com nota obrigatória | os autores |
 | `index.json` | O catálogo resolvido e instalável | `tools/build-index.mjs` |
 | `index.json.sig` | Assinatura destacada do índice | `tools/sign-index.mjs` |
 | `icons/`, `screenshots/` | Média re-alojada (a app não fala com terceiros) | o build |
@@ -86,6 +87,20 @@ O APK é a fonte de verdade. Nada aqui confia nos metadados do GitHub.
 A chave privada nunca entra no repositório (`.gitignore`). Guarda uma cópia
 offline: se a perderes, os clientes instalados deixam de aceitar índices novos até
 sair uma versão com outra chave.
+
+## Licenças
+
+O catálogo exige **código-fonte público**. Dentro disso há duas camadas:
+
+- **Livre** (o caso normal, e quase todo o catálogo): uma das licenças OSI/FSF que
+  o schema lista.
+- **Restritiva** (`LicenseRef-*`): código disponível, uso limitado. Só entra com
+  `antiFeatures: ["restrictedLicense"]` **e** uma `licenseNote` — as duas exigidas
+  pelo validador, e ambas mostradas na app antes de instalar. Uma destas entradas
+  é uma decisão explícita do projeto e tem de estar justificada em `notes`.
+
+Código fechado não entra. Uma licença restritiva declarada não é o mesmo que
+licença nenhuma, e a diferença é o que este catálogo insiste em tornar visível.
 
 ## Contribuir
 

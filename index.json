@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-07T12:57:18.413Z",
+  "generatedAt": "2026-10-07T13:37:30.095Z",
   "generator": "montra-index build-index.mjs",
   "signingKeyId": "4009b8eb68228f4020e56ddfcfd5b625",
   "apps": [
@@ -41,9 +41,9 @@
         "screenshots/app-manager/2.png",
         "screenshots/app-manager/3.png"
       ],
-      "downloadCount": 41167,
+      "downloadCount": 41198,
       "signingCertSha256": "32:0c:0c:0f:e8:ce:f8:73:f2:b5:54:cb:88:c8:37:f1:51:25:89:dc:ce:d5:0c:5b:25:c4:3c:04:59:67:60:ab",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "4.1.1",
         "versionCode": 451,
@@ -68,7 +68,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:56:58.834Z"
+            "verifiedAt": "2026-10-07T13:36:50.213Z"
           }
         ]
       },
@@ -107,9 +107,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 118067,
+      "downloadCount": 118191,
       "signingCertSha256": "5b:a2:56:3e:0d:13:fa:e2:ab:a0:67:d1:c2:30:cd:1c:86:3a:93:00:5c:10:d6:48:ce:5b:33:17:92:aa:0a:f1",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "2126.1.2-vanilla",
         "versionCode": 33833488,
@@ -132,7 +132,7 @@
               "arm64-v8a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:56:58.951Z"
+            "verifiedAt": "2026-10-07T13:36:50.497Z"
           }
         ]
       },
@@ -175,9 +175,9 @@
         "screenshots/breezy-weather/2.png",
         "screenshots/breezy-weather/3.png"
       ],
-      "downloadCount": 109204,
+      "downloadCount": 109241,
       "signingCertSha256": "29:d4:35:f7:0a:a9:ae:c3:c1:fa:ff:7f:7f:fa:6e:15:78:50:88:d8:7f:06:ec:fc:ab:9c:3c:c6:2d:c2:69:d8",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "6.2.2",
         "versionCode": 60202,
@@ -199,7 +199,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:56:59.119Z"
+            "verifiedAt": "2026-10-07T13:36:50.903Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -214,7 +214,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:56:59.119Z"
+            "verifiedAt": "2026-10-07T13:36:50.903Z"
           }
         ]
       },
@@ -255,9 +255,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 69591,
+      "downloadCount": 69634,
       "signingCertSha256": "63:3f:a4:1d:82:11:d6:d0:91:6a:81:9b:89:66:8c:6d:e9:2e:64:23:2d:a6:7f:9d:16:fd:81:c3:b7:e9:23:ff",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "153.0.8010.37",
         "versionCode": 801003702,
@@ -279,7 +279,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:00.950Z"
+            "verifiedAt": "2026-10-07T13:36:51.867Z"
           }
         ]
       },
@@ -288,6 +288,75 @@
         "sha256": "9db12af1af021f42b4371e76d0e9fe476a7085bbbbc76bc410a538d028bf6071",
         "size": 323809949,
         "abi": "arm64-v8a"
+      }
+    },
+    {
+      "id": "devilutionx",
+      "name": "DevilutionX",
+      "summary": "Motor que corre o Diablo original em Android, com melhorias de qualidade de vida",
+      "description": {
+        "en": "An open-source reimplementation of the Diablo engine: it runs the original game data on Android with widescreen support, better controls, a shared stash, Hellfire support and quality-of-life fixes. It ships no game assets, so you need your own copy of the game files.",
+        "pt": "Reimplementação livre do motor do Diablo: corre os ficheiros do jogo original em Android, com ecrã largo, melhores controlos, baú partilhado, suporte para Hellfire e correções de qualidade de vida. Não inclui os recursos do jogo, portanto precisas dos teus próprios ficheiros."
+      },
+      "packageName": "org.diasurgical.devilutionx",
+      "license": "LicenseRef-SustainableUse-1.0",
+      "sourceCode": "https://github.com/diasurgical/devilutionX",
+      "categories": [
+        "games"
+      ],
+      "tags": [
+        "diablo",
+        "motor-de-jogo",
+        "arpg",
+        "offline"
+      ],
+      "status": "active",
+      "antiFeatures": [
+        "restrictedLicense"
+      ],
+      "links": {
+        "website": "https://devilutionx.com",
+        "docs": "https://github.com/diasurgical/devilutionX/wiki"
+      },
+      "addedAt": "2026-10-07",
+      "icon": null,
+      "screenshots": [],
+      "downloadCount": 10310,
+      "signingCertSha256": "f9:44:67:3f:7a:19:4b:c1:7b:c6:90:cf:2f:b2:dc:3a:27:96:7b:b2:ad:d4:c5:7d:54:f3:90:96:ad:10:84:3d",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
+      "release": {
+        "versionName": "1.5.5",
+        "versionCode": 32,
+        "tag": "1.5.5",
+        "publishedAt": "2025-10-30T17:00:17Z",
+        "releaseUrl": "https://github.com/diasurgical/DevilutionX/releases/tag/1.5.5",
+        "changelog": "### Features\r\n\r\n#### Multiplayer\r\n\r\n- Adjust multiplayer game speeds\r\n- Validate character names\r\n\r\n#### Controls\r\n\r\n- Enable CTRL + mouse scroll wheel for map zoom\r\n\r\n#### Platforms\r\n\r\n- Android: Check if a file browser is installed when importing data\r\n- Android: Show \"Import Data\" on the setup screen\r\n- iOS: Add support for multiplayer via ZeroTier\r\n- Linux: Align icon with Android\r\n\r\n#### Translations\r\n\r\n- Update Polish\r\n- Update Russian\r\n\r\n#### Stability / Performance / System\r\n\r\n- Fix crash when a TCP connection times out\r\n- Guard against stash corruption\r\n- Improve text input handling\r\n\r\n### Bug Fixes\r\n\r\n#### Platforms\r\n\r\n- Android: Prevent demo and translation files from being cleared each week\r\n- Tiger: Fix icon\r\n\r\n#### Controls\r\n\r\n- Correct scroll descriptions when using a gamepad\r\n\r\n#### Gameplay\r\n\r\n- Add Murphy to Crippling Shrines\r\n- Make Auto Refill Belt work properly\r\n- Make ears usable\r\n- Prevent attacking dead monsters\r\n\r\n#### Stability / Performance / System\r\n\r\n- Fix incorrect CLX rendering",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/diasurgical/DevilutionX/releases/download/1.5.5/devilutionx-android.apk",
+            "sha256": "c5a53ff35223e367eba75ef8ed2caa31ea8e78792d8aff00f2cee51a0566b28f",
+            "size": 18840504,
+            "signingCertSha256": "f9:44:67:3f:7a:19:4b:c1:7b:c6:90:cf:2f:b2:dc:3a:27:96:7b:b2:ad:d4:c5:7d:54:f3:90:96:ad:10:84:3d",
+            "versionCode": 32,
+            "versionName": "1.5.5",
+            "minSdk": 21,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-07T13:36:54.107Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/diasurgical/DevilutionX/releases/download/1.5.5/devilutionx-android.apk",
+        "sha256": "c5a53ff35223e367eba75ef8ed2caa31ea8e78792d8aff00f2cee51a0566b28f",
+        "size": 18840504,
+        "abi": "universal"
       }
     },
     {
@@ -321,9 +390,9 @@
         "screenshots/droidify/2.png",
         "screenshots/droidify/3.png"
       ],
-      "downloadCount": 49598,
+      "downloadCount": 49633,
       "signingCertSha256": "ed:88:59:c5:5a:f3:11:16:26:58:b9:4a:f9:82:b9:f0:91:dc:d2:76:28:d4:de:34:86:d1:21:7e:bf:3c:99:35",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "0.7.8",
         "versionCode": 780,
@@ -348,7 +417,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:56:59.625Z"
+            "verifiedAt": "2026-10-07T13:36:51.374Z"
           }
         ]
       },
@@ -396,9 +465,9 @@
         "screenshots/f-droid/2.png",
         "screenshots/f-droid/3.png"
       ],
-      "downloadCount": 67095,
+      "downloadCount": 67100,
       "signingCertSha256": "43:23:8d:51:2c:1e:5e:b2:d6:56:9f:4a:3a:fb:f5:52:34:18:b8:2e:0a:3e:d1:55:27:70:ab:b9:a9:c9:cc:ab",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "1.18.0",
         "versionCode": 1018050,
@@ -418,7 +487,7 @@
             "minSdk": 23,
             "targetSdk": 28,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-07T12:56:59.736Z"
+            "verifiedAt": "2026-10-07T13:36:51.723Z"
           }
         ]
       },
@@ -461,7 +530,7 @@
       "screenshots": [],
       "downloadCount": 8831,
       "signingCertSha256": "ec:c1:20:86:db:dd:b5:fa:a3:e1:b6:50:d1:61:fb:62:3f:5f:24:18:89:92:c1:17:33:39:cd:5a:8b:2f:86:89",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "1.1.0",
         "versionCode": 33,
@@ -483,7 +552,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:00.090Z"
+            "verifiedAt": "2026-10-07T13:36:52.410Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -498,7 +567,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:00.090Z"
+            "verifiedAt": "2026-10-07T13:36:52.410Z"
           }
         ]
       },
@@ -534,9 +603,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 57021,
+      "downloadCount": 57033,
       "signingCertSha256": "07:74:79:4c:54:c7:e4:63:00:47:54:e2:ca:ba:43:2a:20:57:d9:17:e6:4c:5e:24:46:06:06:a7:47:1b:13:95",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "v2.7-1-g44e4c7b50",
         "versionCode": 3302,
@@ -561,7 +630,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:00.569Z"
+            "verifiedAt": "2026-10-07T13:36:52.661Z"
           }
         ]
       },
@@ -606,7 +675,7 @@
       ],
       "downloadCount": 547,
       "signingCertSha256": "fb:12:db:f6:d0:69:25:12:ed:70:18:15:06:37:a1:93:2e:ab:09:d6:7d:bf:99:00:45:70:96:a5:52:f8:8e:c6",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "3.1.2",
         "versionCode": 80,
@@ -626,7 +695,7 @@
             "minSdk": 26,
             "targetSdk": 37,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-07T12:57:00.399Z"
+            "verifiedAt": "2026-10-07T13:36:52.565Z"
           }
         ]
       },
@@ -671,9 +740,9 @@
         "screenshots/imagetoolbox/2.png",
         "screenshots/imagetoolbox/3.png"
       ],
-      "downloadCount": 14721,
+      "downloadCount": 14725,
       "signingCertSha256": "20:d7:68:9d:e0:87:4f:00:01:5e:a3:e3:1f:a0:67:c1:5c:03:45:7d:36:2d:41:d5:e7:93:db:3a:86:4f:a5:34",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "4.2.0-foss",
         "versionCode": 267,
@@ -695,7 +764,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:03.041Z"
+            "verifiedAt": "2026-10-07T13:36:55.180Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -710,7 +779,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:03.041Z"
+            "verifiedAt": "2026-10-07T13:36:55.180Z"
           }
         ]
       },
@@ -754,9 +823,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/jellyfin.png",
       "screenshots": [],
-      "downloadCount": 12686,
+      "downloadCount": 12697,
       "signingCertSha256": "d8:81:79:6e:d2:a6:7f:f6:ef:9f:67:68:28:72:3c:6b:1f:a1:8e:09:38:89:62:cb:a4:ab:c4:a5:94:a6:91:31",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "2.7.3",
         "versionCode": 2070399,
@@ -781,7 +850,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:02.134Z"
+            "verifiedAt": "2026-10-07T13:36:54.085Z"
           }
         ]
       },
@@ -825,9 +894,9 @@
         "screenshots/jerboa/1.png",
         "screenshots/jerboa/2.png"
       ],
-      "downloadCount": 1851,
+      "downloadCount": 1853,
       "signingCertSha256": "ea:71:95:cf:ce:63:8a:e6:b1:a8:00:2d:dc:0d:48:63:36:60:95:ea:5b:8d:95:c1:cd:5e:25:db:0f:e2:e7:c3",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "0.0.88-fdroid",
         "versionCode": 88,
@@ -852,7 +921,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:02.204Z"
+            "verifiedAt": "2026-10-07T13:36:53.950Z"
           }
         ]
       },
@@ -900,9 +969,9 @@
         "screenshots/koreader/2.png",
         "screenshots/koreader/3.png"
       ],
-      "downloadCount": 77640,
+      "downloadCount": 77668,
       "signingCertSha256": "fd:49:2a:4f:e0:01:f1:70:58:b8:26:da:43:58:a1:dc:ea:c3:8d:26:68:6f:34:25:22:c5:a4:97:bc:d4:dc:cc",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "v2026.07.1",
         "versionCode": 119462,
@@ -924,7 +993,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:03.766Z"
+            "verifiedAt": "2026-10-07T13:36:56.726Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -939,7 +1008,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:03.766Z"
+            "verifiedAt": "2026-10-07T13:36:56.726Z"
           }
         ]
       },
@@ -978,9 +1047,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 21512,
+      "downloadCount": 21518,
       "signingCertSha256": "4f:a1:cb:59:ea:4d:8c:a8:55:53:15:eb:a2:15:20:5f:66:79:75:ba:89:85:bb:e7:36:90:4f:21:bf:eb:be:af",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "1.17.0",
         "versionCode": 252,
@@ -1005,7 +1074,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:02.929Z"
+            "verifiedAt": "2026-10-07T13:36:54.910Z"
           }
         ]
       },
@@ -1049,9 +1118,9 @@
         "screenshots/libretube/2.jpg",
         "screenshots/libretube/3.jpg"
       ],
-      "downloadCount": 68425,
+      "downloadCount": 68453,
       "signingCertSha256": "72:0c:4f:ce:cf:73:8a:41:d0:33:b9:fb:e0:be:f9:7a:c2:32:03:0c:e9:3e:27:4d:2e:0a:e2:32:e4:4e:ea:ce",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "32.1",
         "versionCode": 72,
@@ -1071,7 +1140,7 @@
             "minSdk": 26,
             "targetSdk": 36,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-07T12:57:03.574Z"
+            "verifiedAt": "2026-10-07T13:36:55.434Z"
           }
         ]
       },
@@ -1112,9 +1181,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 7496,
+      "downloadCount": 7500,
       "signingCertSha256": "53:23:d1:a1:b4:f6:8b:e9:76:39:ee:c6:67:ed:f7:e4:e1:74:1a:8c:f5:22:3d:17:92:da:5d:1f:1d:6e:41:a7",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "5.17.0",
         "versionCode": 5170000,
@@ -1136,7 +1205,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:04.749Z"
+            "verifiedAt": "2026-10-07T13:36:56.740Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -1151,7 +1220,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:04.749Z"
+            "verifiedAt": "2026-10-07T13:36:56.740Z"
           },
           {
             "abi": "x86_64",
@@ -1166,7 +1235,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:04.749Z"
+            "verifiedAt": "2026-10-07T13:36:56.740Z"
           }
         ]
       },
@@ -1217,9 +1286,9 @@
         "screenshots/magisk/2.png",
         "screenshots/magisk/3.png"
       ],
-      "downloadCount": 4035355,
+      "downloadCount": 4035958,
       "signingCertSha256": "b4:cb:83:b4:da:d9:9f:99:7d:be:87:2f:01:3a:a1:6c:14:ee:c4:1d:16:70:21:f3:71:f7:e1:33:0f:27:3e:e6",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "30.7",
         "versionCode": 30700,
@@ -1244,7 +1313,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:04.441Z"
+            "verifiedAt": "2026-10-07T13:36:56.590Z"
           }
         ]
       },
@@ -1289,9 +1358,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 36217,
+      "downloadCount": 36228,
       "signingCertSha256": "6a:a8:0f:df:4a:8c:c1:37:37:cf:b4:34:fc:0c:de:48:6f:09:cf:8f:cd:a2:1a:67:be:a5:ee:1c:a2:70:08:86",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "v8.19.2-4",
         "versionCode": 171904,
@@ -1315,7 +1384,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:05.770Z"
+            "verifiedAt": "2026-10-07T13:36:57.696Z"
           }
         ]
       },
@@ -1355,9 +1424,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/mpv.png",
       "screenshots": [],
-      "downloadCount": 12069,
+      "downloadCount": 12088,
       "signingCertSha256": "fa:e7:f9:d0:23:85:cc:24:d9:6e:88:43:66:03:e2:3e:a6:ae:c7:64:9a:d1:25:0a:bb:b4:83:7d:aa:b8:2f:ff",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "2026-09-17-release",
         "versionCode": 4048,
@@ -1379,7 +1448,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:05.866Z"
+            "verifiedAt": "2026-10-07T13:36:58.674Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -1394,7 +1463,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:05.866Z"
+            "verifiedAt": "2026-10-07T13:36:58.674Z"
           },
           {
             "abi": "x86_64",
@@ -1409,7 +1478,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:05.866Z"
+            "verifiedAt": "2026-10-07T13:36:58.674Z"
           }
         ]
       },
@@ -1456,9 +1525,9 @@
         "screenshots/neo-backup/2.png",
         "screenshots/neo-backup/3.png"
       ],
-      "downloadCount": 22498,
+      "downloadCount": 22502,
       "signingCertSha256": "c9:4f:10:24:3c:14:d5:7d:d6:9d:ed:e6:1c:23:4b:b5:e8:bb:07:04:d6:1b:45:da:fe:49:67:28:ac:32:f3:78",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "8.3.18",
         "versionCode": 8331,
@@ -1483,7 +1552,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:05.678Z"
+            "verifiedAt": "2026-10-07T13:36:58.012Z"
           }
         ]
       },
@@ -1525,9 +1594,9 @@
         "screenshots/neo-store/2.png",
         "screenshots/neo-store/3.png"
       ],
-      "downloadCount": 9882,
+      "downloadCount": 9912,
       "signingCertSha256": "c5:86:01:46:13:8b:77:99:bb:9d:06:17:c3:98:c1:e5:24:15:50:f5:58:25:2a:3f:97:b2:a5:1f:15:26:3e:f7",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "1.3.2",
         "versionCode": 1303,
@@ -1552,7 +1621,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:05.940Z"
+            "verifiedAt": "2026-10-07T13:36:57.873Z"
           }
         ]
       },
@@ -1601,9 +1670,9 @@
         "screenshots/newpipe/2.png",
         "screenshots/newpipe/3.png"
       ],
-      "downloadCount": 170094,
+      "downloadCount": 170159,
       "signingCertSha256": "cb:84:06:9b:d6:81:16:ba:fa:e5:ee:4e:e5:b0:8a:56:7a:a6:d8:98:40:4e:7c:b1:2f:9e:75:6d:f5:cf:5c:ab",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "0.29.1",
         "versionCode": 1015,
@@ -1628,7 +1697,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:07.071Z"
+            "verifiedAt": "2026-10-07T13:36:59.079Z"
           }
         ]
       },
@@ -1673,9 +1742,9 @@
         "screenshots/nextplayer/2.png",
         "screenshots/nextplayer/3.png"
       ],
-      "downloadCount": 13388,
+      "downloadCount": 13394,
       "signingCertSha256": "d3:7c:ab:f3:67:6c:f5:82:24:fb:24:2c:8d:d2:09:12:9d:05:88:03:79:29:5f:aa:a6:d0:fb:60:7b:ec:13:1b",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "0.18.0",
         "versionCode": 74,
@@ -1697,7 +1766,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:07.025Z"
+            "verifiedAt": "2026-10-07T13:36:59.229Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -1712,7 +1781,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:07.025Z"
+            "verifiedAt": "2026-10-07T13:36:59.229Z"
           },
           {
             "abi": "x86_64",
@@ -1727,7 +1796,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:07.025Z"
+            "verifiedAt": "2026-10-07T13:36:59.229Z"
           }
         ]
       },
@@ -1770,9 +1839,9 @@
         "screenshots/notallyx/2.png",
         "screenshots/notallyx/3.png"
       ],
-      "downloadCount": 5869,
+      "downloadCount": 5873,
       "signingCertSha256": "d2:14:b6:05:7b:79:f8:25:09:dd:cd:1e:35:19:65:b3:c6:ec:c4:b2:a3:89:6e:5c:df:88:5a:70:a0:b6:1d:fd",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "7.11.2",
         "versionCode": 71120,
@@ -1797,7 +1866,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:07.118Z"
+            "verifiedAt": "2026-10-07T13:36:59.042Z"
           }
         ]
       },
@@ -1842,9 +1911,9 @@
         "screenshots/obtainium/2.png",
         "screenshots/obtainium/3.png"
       ],
-      "downloadCount": 353228,
+      "downloadCount": 353547,
       "signingCertSha256": "b3:53:60:1f:6a:1d:5f:d6:60:3a:e2:f5:0b:e8:0c:f3:01:36:7b:86:b6:ab:8b:1f:66:24:3d:a9:6c:d5:73:62",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "1.6.17",
         "versionCode": 23563,
@@ -1868,7 +1937,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:09.210Z"
+            "verifiedAt": "2026-10-07T13:37:02.632Z"
           },
           {
             "abi": "arm64-v8a",
@@ -1883,7 +1952,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:09.210Z"
+            "verifiedAt": "2026-10-07T13:37:02.632Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -1898,7 +1967,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:09.210Z"
+            "verifiedAt": "2026-10-07T13:37:02.632Z"
           },
           {
             "abi": "x86_64",
@@ -1913,7 +1982,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:09.210Z"
+            "verifiedAt": "2026-10-07T13:37:02.632Z"
           }
         ]
       },
@@ -1959,9 +2028,9 @@
         "screenshots/outertune/2.jpg",
         "screenshots/outertune/3.jpg"
       ],
-      "downloadCount": 402642,
+      "downloadCount": 402676,
       "signingCertSha256": "ac:dd:87:1a:3d:e2:94:7d:32:53:ec:90:cd:c5:3d:1a:07:40:d6:03:8e:25:a6:48:5d:71:89:9e:ef:a9:6d:b8",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "0.10.1",
         "versionCode": 71,
@@ -1986,7 +2055,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:08.009Z"
+            "verifiedAt": "2026-10-07T13:36:59.781Z"
           }
         ]
       },
@@ -2029,9 +2098,9 @@
         "screenshots/pipepipe/2.png",
         "screenshots/pipepipe/3.png"
       ],
-      "downloadCount": 105240,
+      "downloadCount": 105344,
       "signingCertSha256": "de:c7:34:29:ce:25:63:27:5f:5e:d1:98:25:e4:46:52:b3:2b:36:3a:46:f3:8b:df:f9:ad:6d:cd:e4:84:2d:88",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "5.4.0",
         "versionCode": 110904,
@@ -2053,7 +2122,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.059Z"
+            "verifiedAt": "2026-10-07T13:37:02.507Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2068,7 +2137,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.059Z"
+            "verifiedAt": "2026-10-07T13:37:02.507Z"
           },
           {
             "abi": "x86_64",
@@ -2083,7 +2152,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.059Z"
+            "verifiedAt": "2026-10-07T13:37:02.507Z"
           },
           {
             "abi": "x86",
@@ -2098,7 +2167,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.059Z"
+            "verifiedAt": "2026-10-07T13:37:02.507Z"
           }
         ]
       },
@@ -2144,9 +2213,9 @@
         "screenshots/readyou/2.png",
         "screenshots/readyou/3.png"
       ],
-      "downloadCount": 20783,
+      "downloadCount": 20794,
       "signingCertSha256": "72:1e:40:43:c4:39:bd:70:c9:0f:46:ae:16:6d:dc:23:3f:c7:5c:12:35:bf:8c:b2:7b:99:a4:df:09:cc:3b:99",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "0.16.2",
         "versionCode": 47,
@@ -2171,7 +2240,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:07.889Z"
+            "verifiedAt": "2026-10-07T13:36:59.973Z"
           }
         ]
       },
@@ -2216,9 +2285,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 4145814,
+      "downloadCount": 4146635,
       "signingCertSha256": "b6:36:2c:6e:a7:88:8e:fd:15:c0:80:0f:48:07:86:ad:0f:5b:13:3b:4f:84:e1:2d:46:af:ba:5f:9e:ac:12:23",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "2.6.0",
         "versionCode": 200600099,
@@ -2242,7 +2311,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:09.607Z"
+            "verifiedAt": "2026-10-07T13:37:03.426Z"
           }
         ]
       },
@@ -2286,9 +2355,9 @@
         "screenshots/seal/2.jpg",
         "screenshots/seal/3.jpg"
       ],
-      "downloadCount": 2888104,
+      "downloadCount": 2888253,
       "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "1.13.1",
         "versionCode": 11314,
@@ -2313,7 +2382,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.397Z"
+            "verifiedAt": "2026-10-07T13:37:03.362Z"
           },
           {
             "abi": "arm64-v8a",
@@ -2328,7 +2397,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.397Z"
+            "verifiedAt": "2026-10-07T13:37:03.362Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2343,7 +2412,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.397Z"
+            "verifiedAt": "2026-10-07T13:37:03.362Z"
           },
           {
             "abi": "x86_64",
@@ -2358,7 +2427,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.397Z"
+            "verifiedAt": "2026-10-07T13:37:03.362Z"
           },
           {
             "abi": "x86",
@@ -2373,7 +2442,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.397Z"
+            "verifiedAt": "2026-10-07T13:37:03.362Z"
           }
         ]
       },
@@ -2416,9 +2485,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 2173,
+      "downloadCount": 2192,
       "signingCertSha256": "d4:5f:76:0b:89:60:8b:4b:25:3a:3b:16:0d:c2:70:7f:1f:f4:e8:dd:8c:a4:d2:e8:e1:b8:1c:2c:72:d8:17:53",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "4.0.1",
         "versionCode": 920,
@@ -2443,7 +2512,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.440Z"
+            "verifiedAt": "2026-10-07T13:37:03.962Z"
           }
         ]
       },
@@ -2488,9 +2557,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/shizuku.png",
       "screenshots": [],
-      "downloadCount": 3120930,
+      "downloadCount": 3121349,
       "signingCertSha256": "26:8b:55:90:e8:68:fb:08:ba:e7:e0:ac:41:35:64:cd:1f:f8:8f:5c:cf:f7:4a:f9:db:d0:dc:91:8e:30:db:30",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "13.6.0.r1086.2650830c",
         "versionCode": 1086,
@@ -2515,7 +2584,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:11.477Z"
+            "verifiedAt": "2026-10-07T13:37:04.662Z"
           }
         ]
       },
@@ -2555,9 +2624,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 3615,
+      "downloadCount": 3616,
       "signingCertSha256": "f7:15:81:ec:7d:70:41:53:ba:c3:4a:b1:48:d9:25:68:3d:b9:20:71:22:a2:93:3b:28:c0:4c:a2:e4:f2:84:53",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "2025-09-12-1919-23762278",
         "versionCode": 149,
@@ -2582,7 +2651,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:10.183Z"
+            "verifiedAt": "2026-10-07T13:37:03.295Z"
           }
         ]
       },
@@ -2631,9 +2700,9 @@
         "screenshots/simplex/2.jpg",
         "screenshots/simplex/3.jpg"
       ],
-      "downloadCount": 11109,
+      "downloadCount": 11131,
       "signingCertSha256": "3c:52:c4:fd:3c:ad:1c:07:c9:b0:0a:70:80:e3:58:fa:b9:fe:fc:b8:af:5a:ec:14:77:65:f1:6d:0f:21:ad:85",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "7.0.3",
         "versionCode": 381,
@@ -2655,7 +2724,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:14.245Z"
+            "verifiedAt": "2026-10-07T13:37:06.382Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2670,7 +2739,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:14.245Z"
+            "verifiedAt": "2026-10-07T13:37:06.382Z"
           }
         ]
       },
@@ -2713,9 +2782,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 17578,
+      "downloadCount": 18024,
       "signingCertSha256": "d3:74:b8:de:50:57:01:31:43:c7:d1:51:5a:01:55:98:c2:df:40:3b:e8:16:0c:ae:01:a5:8c:22:7e:6e:86:aa",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "2.1.6.0",
         "versionCode": 2010600,
@@ -2737,7 +2806,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:13.256Z"
+            "verifiedAt": "2026-10-07T13:37:05.308Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2752,7 +2821,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:13.256Z"
+            "verifiedAt": "2026-10-07T13:37:05.308Z"
           }
         ]
       },
@@ -2802,9 +2871,9 @@
         "screenshots/termux/2.jpg",
         "screenshots/termux/3.jpg"
       ],
-      "downloadCount": 2404889,
+      "downloadCount": 2405114,
       "signingCertSha256": "b6:da:01:48:0e:ef:d5:fb:f2:cd:37:71:b8:d1:02:1e:c7:91:30:4b:dd:6c:4b:f4:1d:3f:aa:ba:d4:8e:e5:e1",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "0.119.0-beta.3",
         "versionCode": 1022,
@@ -2829,7 +2898,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:13.020Z"
+            "verifiedAt": "2026-10-07T13:37:06.563Z"
           },
           {
             "abi": "arm64-v8a",
@@ -2844,7 +2913,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:13.020Z"
+            "verifiedAt": "2026-10-07T13:37:06.563Z"
           }
         ]
       },
@@ -2886,9 +2955,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 773,
+      "downloadCount": 777,
       "signingCertSha256": "7d:6e:6b:ea:76:81:61:c3:d8:da:8b:3f:b0:0d:ef:53:77:ef:fe:65:dc:72:68:48:2f:8f:77:9b:b4:fc:6e:2e",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "4.22.7",
         "versionCode": 1268,
@@ -2913,7 +2982,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-07T12:57:13.729Z"
+            "verifiedAt": "2026-10-07T13:37:06.535Z"
           }
         ]
       },
@@ -2953,9 +3022,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 4461,
+      "downloadCount": 4464,
       "signingCertSha256": "26:20:79:25:96:2c:cd:73:f5:3b:e4:c4:99:9c:f2:53:32:85:31:41:9f:25:86:ae:25:10:4a:31:89:86:70:44",
-      "resolvedAt": "2026-10-07T12:57:18.406Z",
+      "resolvedAt": "2026-10-07T13:37:30.073Z",
       "release": {
         "versionName": "1.7.5",
         "versionCode": 1770,
@@ -2977,7 +3046,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-07T12:57:14.614Z"
+            "verifiedAt": "2026-10-07T13:37:06.994Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2992,7 +3061,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-07T12:57:14.614Z"
+            "verifiedAt": "2026-10-07T13:37:06.994Z"
           }
         ]
       },
