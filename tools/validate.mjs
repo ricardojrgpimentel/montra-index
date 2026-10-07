@@ -157,6 +157,14 @@ async function main() {
               "    Se a app mudou de chave de assinatura de forma legítima, atualiza o pin conscientemente; caso contrário, isto é um release comprometido.",
           );
         }
+        // Uma licença restritiva sem nota no índice é uma restrição escondida.
+        if (!freeLicenses.has(app.license) && !app.licenseNote?.en) {
+          error(
+            app.id,
+            `o índice publicado tem license "${app.license}" mas não leva licenseNote: ` +
+              "a app mostraria um aviso genérico em vez da nota do autor (corre tools/build-index.mjs)",
+          );
+        }
         if (!pinned && app.signingCertSha256) {
           warn(app.id, "sem pin de certificado em apps/*.json — corre: node tools/build-index.mjs --update-pins");
         }

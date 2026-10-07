@@ -27,6 +27,11 @@
           "description": { "type": "object", "additionalProperties": { "type": "string" } },
           "packageName": { "type": "string" },
           "license": { "type": "string" },
+          "licenseNote": {
+            "type": "object",
+            "additionalProperties": { "type": "string" },
+            "description": "Porquê, quando a licença não é livre. O cliente mostra isto antes do botão de instalar."
+          },
           "sourceCode": { "type": "string" },
           "author": { "type": "string" },
           "categories": { "type": "array", "items": { "type": "string" } },

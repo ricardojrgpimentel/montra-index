@@ -475,6 +475,9 @@ async function main() {
       description: entry.description ?? { en: entry.summary },
       packageName: entry.packageName,
       license: entry.license,
+      // A nota obrigatória das licenças restritivas tem de chegar ao cliente: sem
+      // isto a app mostra o texto genérico e a nota que o autor escreveu perde-se.
+      ...(entry.licenseNote ? { licenseNote: entry.licenseNote } : {}),
       sourceCode: entry.sourceCode,
       ...(entry.author ? { author: entry.author } : {}),
       categories: entry.categories ?? [],
