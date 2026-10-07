@@ -9,6 +9,11 @@
   "packageName": "xyz.nextalone.nagram",
   "license": "GPL-3.0-only",
   "sourceCode": "https://github.com/NextAlone/Nagram",
+  "forkOf": {
+    "name": "NekoX",
+    "repo": "NekoX-Dev/NekoX",
+    "note": "Baseado no NekoX, que está arquivado — ou seja, uma linhagem com dois níveis."
+  },
   "categories": [
     "communication"
   ],

@@ -27,6 +27,17 @@
           "description": { "type": "object", "additionalProperties": { "type": "string" } },
           "packageName": { "type": "string" },
           "license": { "type": "string" },
+          "forkOf": {
+            "type": "object",
+            "description": "Parentesco declarado pelo projeto de origem, para o cliente ligar as duas entradas.",
+            "properties": {
+              "name": { "type": "string" },
+              "repo": { "type": "string" },
+              "appId": { "type": "string" },
+              "note": { "type": "string" }
+            },
+            "required": ["name"]
+          },
           "licenseNote": {
             "type": "object",
             "additionalProperties": { "type": "string" },

@@ -9,6 +9,11 @@
   "packageName": "com.machiav3lli.fdroid",
   "license": "GPL-3.0-or-later",
   "sourceCode": "https://github.com/NeoApplications/Neo-Store",
+  "forkOf": {
+    "name": "Foxy Droid",
+    "repo": "kitsunyan/foxy-droid",
+    "note": "O README descreve-se como adaptação direta do Foxy Droid."
+  },
   "categories": [
     "store"
   ],

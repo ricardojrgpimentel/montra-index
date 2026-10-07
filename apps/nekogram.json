@@ -9,6 +9,11 @@
   "packageName": "tw.nekomimi.nekogram",
   "license": "GPL-2.0-only",
   "sourceCode": "https://github.com/Nekogram/Nekogram",
+  "forkOf": {
+    "name": "Telegram para Android",
+    "repo": "DrKLO/Telegram",
+    "note": "O README diz que é fork do cliente oficial."
+  },
   "categories": [
     "communication"
   ],

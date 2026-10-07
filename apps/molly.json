@@ -9,6 +9,11 @@
   "packageName": "im.molly.app",
   "license": "AGPL-3.0-only",
   "sourceCode": "https://github.com/mollyim/mollyim-android",
+  "forkOf": {
+    "name": "Signal",
+    "repo": "signalapp/Signal-Android",
+    "note": "A descrição do repositório diz fork do Signal."
+  },
   "author": "Molly.im",
   "categories": [
     "communication",

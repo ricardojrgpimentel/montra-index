@@ -9,6 +9,11 @@
   "packageName": "org.azahar_emu.azahar",
   "license": "GPL-3.0-only",
   "sourceCode": "https://github.com/azahar-emu/azahar",
+  "forkOf": {
+    "name": "Citra",
+    "repo": "citra-emu/citra",
+    "note": "A descrição do repositório diz que é baseado no Citra."
+  },
   "categories": [
     "emulators"
   ],

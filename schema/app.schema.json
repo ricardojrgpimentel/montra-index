@@ -84,6 +84,18 @@
       "description": "Repository the APK is built from. Must be publicly readable."
     },
     "author": { "type": "string", "maxLength": 120 },
+    "forkOf": {
+      "description": "Parentesco declarado pelo próprio projeto (README, descrição do repositório ou site). Não é um palpite: se o projeto não o diz, não se escreve. Permite ao cliente ligar duas entradas do catálogo quando o original também está indexado.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string", "maxLength": 80, "description": "Nome do projeto de origem." },
+        "repo": { "type": "string", "pattern": "^[\\w.-]+/[\\w.-]+$", "description": "owner/name do original, quando existe." },
+        "appId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "id no catálogo, quando o original também está indexado." },
+        "note": { "type": "string", "maxLength": 300, "description": "O que muda em relação ao original, em uma linha." }
+      }
+    },
     "categories": {
       "type": "array",
       "description": "Fixed taxonomy so the client can render stable filters. At most 3.",

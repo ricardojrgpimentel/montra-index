@@ -9,6 +9,11 @@
   "packageName": "com.dd3boh.outertune",
   "license": "GPL-3.0-only",
   "sourceCode": "https://github.com/OuterTune/OuterTune",
+  "forkOf": {
+    "name": "InnerTune",
+    "repo": "z-huang/InnerTune",
+    "note": "O README descreve-se como fork do InnerTune."
+  },
   "categories": [
     "media"
   ],

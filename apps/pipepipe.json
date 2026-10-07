@@ -9,6 +9,12 @@
   "packageName": "InfinityLoop1309.NewPipeEnhanced",
   "license": "GPL-3.0-or-later",
   "sourceCode": "https://github.com/InfinityLoop1308/PipePipe",
+  "forkOf": {
+    "name": "NewPipe",
+    "repo": "TeamNewPipe/NewPipe",
+    "appId": "newpipe",
+    "note": "Fork assumido no README do projeto desde 2022."
+  },
   "categories": [
     "media"
   ],

@@ -479,6 +479,7 @@ async function main() {
       // isto a app mostra o texto genérico e a nota que o autor escreveu perde-se.
       ...(entry.licenseNote ? { licenseNote: entry.licenseNote } : {}),
       sourceCode: entry.sourceCode,
+      ...(entry.forkOf ? { forkOf: entry.forkOf } : {}),
       ...(entry.author ? { author: entry.author } : {}),
       categories: entry.categories ?? [],
       tags: entry.tags ?? [],

@@ -9,6 +9,11 @@
   "packageName": "com.github.catfriend1.syncthingfork",
   "license": "MPL-2.0",
   "sourceCode": "https://github.com/Catfriend1/syncthing-android",
+  "forkOf": {
+    "name": "syncthing-android",
+    "repo": "syncthing/syncthing-android",
+    "note": "O nome do projeto é Fork e o wrapper oficial está arquivado."
+  },
   "categories": [
     "utilities",
     "system"

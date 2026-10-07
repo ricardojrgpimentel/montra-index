@@ -127,6 +127,18 @@ async function main() {
     entries.push(entry);
   }
 
+  // Parentesco: um appId tem de existir, senão o cliente mostra uma ligação morta.
+  const ids = new Set(entries.map((e) => e.id));
+  for (const entry of entries) {
+    if (!entry.forkOf?.appId) continue;
+    if (!ids.has(entry.forkOf.appId)) {
+      error(entry.id, `forkOf.appId "${entry.forkOf.appId}" não existe em apps/`);
+    }
+    if (entry.forkOf.appId === entry.id) {
+      error(entry.id, "forkOf.appId aponta para a própria entrada");
+    }
+  }
+
   // --- optional: also check the generated index ----------------------------
   const indexPath = path.join(DIRS.out, "index.json");
   let indexSummary = null;

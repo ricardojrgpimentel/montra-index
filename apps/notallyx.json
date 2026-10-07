@@ -9,6 +9,11 @@
   "packageName": "com.philkes.notallyx",
   "license": "GPL-3.0-or-later",
   "sourceCode": "https://github.com/PhilKes/NotallyX",
+  "forkOf": {
+    "name": "Notally",
+    "repo": "OmGodse/Notally",
+    "note": "A descrição diz Notally, mas estendido."
+  },
   "categories": [
     "notes",
     "productivity"
