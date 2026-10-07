@@ -295,7 +295,18 @@ async function main() {
       byRepo.set(repo.full_name, repo);
     }
   }
-  const candidates = [...byRepo.values()].sort((a, b) => (b.stargazers_count ?? 0) - (a.stargazers_count ?? 0));
+  // Um seed é uma instrução explícita: quem escreve `--seed owner/repo` quer aquele
+  // repositório avaliado, não o mais popular que a busca encontrou. A ordenar só por
+  // estrelas, os seeds ficavam em último (têm 0 — não vêm da busca) e o corte do
+  // limite deitava-os fora: o `--seed` que o CONTRIBUTING e o docs/ADD_APP mandam
+  // correr avaliava em silêncio os repositórios errados.
+  const seeded = new Set(list("seed"));
+  const candidates = [...byRepo.values()].sort((a, b) => {
+    const seedA = seeded.has(a.full_name) ? 1 : 0;
+    const seedB = seeded.has(b.full_name) ? 1 : 0;
+    if (seedA !== seedB) return seedB - seedA;
+    return (b.stargazers_count ?? 0) - (a.stargazers_count ?? 0);
+  });
   log.step(`${candidates.length} repositórios únicos a avaliar (limite ${LIMIT})`);
 
   /* 2. evaluate ---------------------------------------------------------- */
