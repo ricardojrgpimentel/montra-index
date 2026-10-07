@@ -1,5 +1,8 @@
 # montra-index
 
+> Visão geral do sistema (arquitetura, modelo de confiança, estado atual):
+> [docs/OVERVIEW.md](docs/OVERVIEW.md).
+
 O catálogo. Um repositório de dados: ficheiros JSON que descrevem aplicações
 Android de código aberto, um índice gerado e assinado, e as ferramentas que
 mantêm tudo isso honesto.
