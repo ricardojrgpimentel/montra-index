@@ -515,7 +515,7 @@ async function main() {
   const index = {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),
-    generator: "openshelf-index build-index.mjs",
+    generator: "montra-index build-index.mjs",
     ...(signingKeyId ? { signingKeyId } : {}),
     apps: indexApps,
   };

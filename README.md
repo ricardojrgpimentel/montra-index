@@ -1,4 +1,4 @@
-# openshelf-index
+# montra-index
 
 O catálogo. Um repositório de dados: ficheiros JSON que descrevem aplicações
 Android de código aberto, um índice gerado e assinado, e as ferramentas que

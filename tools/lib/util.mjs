@@ -1,4 +1,4 @@
-// Shared helpers for the OpenShelf index tooling. No dependencies beyond node: builtins.
+// Shared helpers for the Montra index tooling. No dependencies beyond node: builtins.
 import { createHash } from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -117,7 +117,7 @@ export function hexToColon(hex) {
 
 /* ------------------------------------------------------------------- network */
 const DEFAULT_HEADERS = {
-  "user-agent": "openshelf-index-bot (+https://github.com/openshelf)",
+  "user-agent": "montra-index-bot (+https://github.com/montra)",
   accept: "application/vnd.github+json, application/json;q=0.9, */*;q=0.8",
   "x-github-api-version": "2022-11-28",
 };

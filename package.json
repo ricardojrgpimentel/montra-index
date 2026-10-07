@@ -1,9 +1,9 @@
 {
-  "name": "openshelf-index",
+  "name": "montra-index",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "The OpenShelf index: a backendless Android app catalogue stored as JSON in git.",
+  "description": "The Montra index: a backendless Android app catalogue stored as JSON in git.",
   "license": "AGPL-3.0-or-later",
   "engines": {
     "node": ">=20"

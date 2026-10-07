@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://openshelf.dev/schema/app.schema.json",
-  "title": "OpenShelf app entry",
+  "$id": "https://montra.dev/schema/app.schema.json",
+  "title": "Montra app entry",
   "description": "One curated Android app. This is the human-edited source of truth: one file per app under apps/<id>.json. The resolved, installable index (index.json) is generated from these files by tools/build-index.mjs.",
   "type": "object",
   "required": ["id", "name", "summary", "packageName", "license", "sourceCode", "release"],
