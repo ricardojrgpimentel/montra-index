@@ -51,6 +51,23 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      # Sem a chave privada não há índice assinado, e sem isto o job falharia mais
+      # tarde com um erro de criptografia em vez de dizer o que falta.
+      - name: verificar o secret da chave de assinatura
+        env:
+          INDEX_SIGNING_KEY: ${{ secrets.INDEX_SIGNING_KEY }}
+        run: |
+          if [ -z "${INDEX_SIGNING_KEY}" ]; then
+            cat <<'MSG'
+          ::error::Falta o secret INDEX_SIGNING_KEY neste repositório.
+          Cria-o uma vez com:
+            gh secret set INDEX_SIGNING_KEY --repo ${{ github.repository }} < keys/index-signing.key.pem
+          Guarda também uma cópia offline da chave: se a perderes, os clientes já
+          instalados deixam de aceitar índices novos até sair uma versão com outra chave.
+          MSG
+            exit 1
+          fi
+
       - name: construir o índice
         run: pnpm run build --deep ${{ github.event.inputs.deep || '3' }} --jobs 4
         env:
