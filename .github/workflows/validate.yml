@@ -19,6 +19,9 @@ on:
       - "schema/**"
       - "tools/**"
       - "index.json"
+      # uma alteração ao próprio CI tem de correr o CI
+      - ".github/workflows/**"
+  # e uma alteração a este ficheiro tem de poder ser testada sem um commit falso
   workflow_dispatch:
 
 permissions:
