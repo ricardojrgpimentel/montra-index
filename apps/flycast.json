@@ -1,0 +1,31 @@
+{
+  "id": "flycast",
+  "name": "Flycast",
+  "summary": "Emulador de Sega Dreamcast, Naomi e Atomiswave",
+  "description": {
+    "en": "A multi-platform Dreamcast, Naomi, Naomi 2 and Atomiswave emulator with Vulkan and OpenGL renderers, widescreen hacks, per-game settings and support for physical controllers.",
+    "pt": "Emulador de Dreamcast, Naomi, Naomi 2 e Atomiswave para várias plataformas, com renderizadores Vulkan e OpenGL, ajustes para ecrã largo, configurações por jogo e suporte para comandos físicos."
+  },
+  "packageName": "com.flycast.emulator",
+  "license": "GPL-2.0-only",
+  "sourceCode": "https://github.com/flyinghead/flycast",
+  "categories": [
+    "emulators"
+  ],
+  "tags": [
+    "emulador",
+    "dreamcast",
+    "naomi",
+    "vulkan"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "flyinghead/flycast",
+    "assetPattern": "flycast-*.apk"
+  },
+  "addedAt": "2026-10-07",
+  "verification": {
+    "signingCertSha256": "07:74:79:4c:54:c7:e4:63:00:47:54:e2:ca:ba:43:2a:20:57:d9:17:e6:4c:5e:24:46:06:06:a7:47:1b:13:95",
+    "pinnedAt": "2026-10-07"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "luanti",
+  "name": "Luanti",
+  "summary": "Plataforma de jogos voxel com mods, antes conhecida como Minetest",
+  "description": {
+    "en": "A voxel game engine, not a game: install it and add games and mods from within the app. Supports single player, multiplayer servers and a large library of community content written in Lua.",
+    "pt": "Um motor de jogos voxel, não um jogo: instala-se e acrescentam-se jogos e mods dentro da própria app. Suporta um jogador, servidores multijogador e uma biblioteca enorme de conteúdo comunitário escrito em Lua."
+  },
+  "packageName": "net.minetest.minetest",
+  "license": "LGPL-2.1-or-later",
+  "sourceCode": "https://github.com/minetest/minetest",
+  "categories": [
+    "games"
+  ],
+  "tags": [
+    "voxel",
+    "minecraft-like",
+    "mods",
+    "multijogador"
+  ],
+  "links": {
+    "website": "https://www.luanti.org",
+    "docs": "https://wiki.luanti.org",
+    "translate": "https://hosted.weblate.org/projects/minetest/"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "minetest/minetest",
+    "abiAssets": {
+      "arm64-v8a": "luanti-*-arm64-v8a.apk",
+      "armeabi-v7a": "luanti-*-armeabi-v7a.apk",
+      "x86_64": "luanti-*-x86_64.apk"
+    }
+  },
+  "addedAt": "2026-10-07",
+  "notes": "O motor é LGPL-2.1-or-later (COPYING.LESSER); os recursos gráficos e sonoros são CC-BY-SA-3.0.",
+  "verification": {
+    "signingCertSha256": "53:23:d1:a1:b4:f6:8b:e9:76:39:ee:c6:67:ed:f7:e4:e1:74:1a:8c:f5:22:3d:17:92:da:5d:1f:1d:6e:41:a7",
+    "pinnedAt": "2026-10-07"
+  }
+}

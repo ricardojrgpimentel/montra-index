@@ -1,0 +1,39 @@
+{
+  "id": "vcmi",
+  "name": "VCMI",
+  "summary": "Motor livre para Heroes of Might and Magic III, com multijogador",
+  "description": {
+    "en": "An open-source engine for Heroes of Might and Magic III: it reimplements the game and adds a better AI, higher resolutions, a map editor and online multiplayer. Requires the original game data files.",
+    "pt": "Motor livre para Heroes of Might and Magic III: reimplementa o jogo e acrescenta melhor IA, resoluções mais altas, editor de mapas e multijogador online. Precisa dos ficheiros do jogo original."
+  },
+  "packageName": "is.xyz.vcmi",
+  "license": "GPL-2.0-only",
+  "sourceCode": "https://github.com/vcmi/vcmi",
+  "categories": [
+    "games"
+  ],
+  "tags": [
+    "estrategia",
+    "heroes-3",
+    "motor-de-jogo",
+    "multijogador"
+  ],
+  "links": {
+    "website": "https://vcmi.eu",
+    "docs": "https://vcmi.eu/download/"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "vcmi/vcmi",
+    "abiAssets": {
+      "arm64-v8a": "VCMI-Android-arm64-v8a.apk",
+      "armeabi-v7a": "VCMI-Android-armeabi-v7a.apk"
+    }
+  },
+  "addedAt": "2026-10-07",
+  "notes": "Precisa dos ficheiros do Heroes III original, que não são distribuídos aqui. A entrada é de um motor, não de um jogo completo.",
+  "verification": {
+    "signingCertSha256": "26:20:79:25:96:2c:cd:73:f5:3b:e4:c4:99:9c:f2:53:32:85:31:41:9f:25:86:ae:25:10:4a:31:89:86:70:44",
+    "pinnedAt": "2026-10-07"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "lemuroid",
+  "name": "Lemuroid",
+  "summary": "Emulador tudo-em-um baseado em libretro, com interface simples",
+  "description": {
+    "en": "An all-in-one emulator built on libretro cores: NES, SNES, Mega Drive, Game Boy, Game Boy Advance, PlayStation, PSP, arcade and more, with automatic controller mapping, save states, cloud sync via the system and a deliberately simple interface.",
+    "pt": "Emulador tudo-em-um construído sobre núcleos libretro: NES, SNES, Mega Drive, Game Boy, Game Boy Advance, PlayStation, PSP, arcade e mais, com mapeamento automático de comandos, save states, sincronização pelo sistema e uma interface deliberadamente simples."
+  },
+  "packageName": "com.swordfish.lemuroid",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/Swordfish90/Lemuroid",
+  "categories": [
+    "emulators"
+  ],
+  "tags": [
+    "emulador",
+    "retro",
+    "libretro",
+    "consolas"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "Swordfish90/Lemuroid",
+    "assetPattern": "lemuroid-app-free-*release.apk"
+  },
+  "addedAt": "2026-10-07",
+  "notes": "A licença cobre o frontend; cada núcleo libretro tem a sua própria licença, indicada dentro da app.",
+  "verification": {
+    "signingCertSha256": "4f:a1:cb:59:ea:4d:8c:a8:55:53:15:eb:a2:15:20:5f:66:79:75:ba:89:85:bb:e7:36:90:4f:21:bf:eb:be:af",
+    "pinnedAt": "2026-10-07"
+  }
+}

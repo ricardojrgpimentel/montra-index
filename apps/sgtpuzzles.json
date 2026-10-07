@@ -1,0 +1,35 @@
+{
+  "id": "sgtpuzzles",
+  "name": "Simon Tatham's Puzzles",
+  "summary": "Quarenta puzzles clássicos num só pacote, gerados com semente",
+  "description": {
+    "en": "A collection of forty logic puzzles (Net, Flood, Slant, Nonograms, Mines and more) with procedurally generated, always-solvable boards. Every puzzle can be shared by its seed, so no two devices need the same file.",
+    "pt": "Coleção de quarenta puzzles de lógica (Net, Flood, Slant, Nonogramas, Minas e mais) com tabuleiros gerados por procedimento e sempre resolvíveis. Cada puzzle pode ser partilhado pela semente, sem ficheiros envolvidos."
+  },
+  "packageName": "name.boyle.chris.sgtpuzzles",
+  "license": "MIT",
+  "sourceCode": "https://github.com/chrisboyle/sgtpuzzles",
+  "author": "Simon Tatham; port Android de Chris Boyle",
+  "categories": [
+    "games"
+  ],
+  "tags": [
+    "puzzles",
+    "logica",
+    "offline",
+    "sem-ads"
+  ],
+  "links": {
+    "website": "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "chrisboyle/sgtpuzzles",
+    "assetPattern": "SGTPuzzles-*.apk"
+  },
+  "addedAt": "2026-10-07",
+  "verification": {
+    "signingCertSha256": "f7:15:81:ec:7d:70:41:53:ba:c3:4a:b1:48:d9:25:68:3d:b9:20:71:22:a2:93:3b:28:c0:4c:a2:e4:f2:84:53",
+    "pinnedAt": "2026-10-07"
+  }
+}

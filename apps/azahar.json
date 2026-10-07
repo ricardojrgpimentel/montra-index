@@ -1,0 +1,35 @@
+{
+  "id": "azahar",
+  "name": "Azahar",
+  "summary": "Emulador de Nintendo 3DS, sucessor do Citra, com versão sem serviços Google",
+  "description": {
+    "en": "A 3DS emulator and the maintained continuation of Citra: runs commercial games with texture upscaling, save states and controller support. This entry tracks the vanilla build, without Google Play services.",
+    "pt": "Emulador de 3DS e continuação mantida do Citra: corre jogos comerciais com melhoria de texturas, save states e suporte para comandos. Esta entrada segue a versão vanilla, sem serviços do Google Play."
+  },
+  "packageName": "org.azahar_emu.azahar",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/azahar-emu/azahar",
+  "categories": [
+    "emulators"
+  ],
+  "tags": [
+    "emulador",
+    "3ds",
+    "citra",
+    "no-gms"
+  ],
+  "links": {
+    "website": "https://azahar-emu.org"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "azahar-emu/azahar",
+    "assetPattern": "azahar-android-vanilla-*.apk",
+    "excludePattern": "*googleplay*"
+  },
+  "addedAt": "2026-10-07",
+  "verification": {
+    "signingCertSha256": "5b:a2:56:3e:0d:13:fa:e2:ab:a0:67:d1:c2:30:cd:1c:86:3a:93:00:5c:10:d6:48:ce:5b:33:17:92:aa:0a:f1",
+    "pinnedAt": "2026-10-07"
+  }
+}

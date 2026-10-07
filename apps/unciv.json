@@ -1,0 +1,37 @@
+{
+  "id": "unciv",
+  "name": "Unciv",
+  "summary": "Remake livre do Civilization V, por turnos, com mods e multijogador",
+  "description": {
+    "en": "An open-source remake of Civ V for Android and desktop: tile-based strategy, technology trees, diplomacy, city management and mods. Small download, runs offline, and the ruleset is editable.",
+    "pt": "Remake livre do Civ V para Android e desktop: estratégia por turnos, árvores de tecnologia, diplomacia, gestão de cidades e mods. Descarregamento pequeno, funciona offline e as regras são editáveis."
+  },
+  "packageName": "com.unciv.app",
+  "license": "MPL-2.0",
+  "sourceCode": "https://github.com/yairm210/Unciv",
+  "author": "Yair Morgenstern e contribuidores",
+  "categories": [
+    "games"
+  ],
+  "tags": [
+    "estrategia",
+    "turnos",
+    "civilization",
+    "mods",
+    "offline"
+  ],
+  "links": {
+    "website": "https://unciv.app",
+    "donate": "https://www.patreon.com/yairm210"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "yairm210/Unciv",
+    "assetPattern": "Unciv-signed.apk"
+  },
+  "addedAt": "2026-10-07",
+  "verification": {
+    "signingCertSha256": "7d:6e:6b:ea:76:81:61:c3:d8:da:8b:3f:b0:0d:ef:53:77:ef:fe:65:dc:72:68:48:2f:8f:77:9b:b4:fc:6e:2e",
+    "pinnedAt": "2026-10-07"
+  }
+}

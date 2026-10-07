@@ -1,0 +1,35 @@
+{
+  "id": "shattered-pixel-dungeon",
+  "name": "Shattered Pixel Dungeon",
+  "summary": "Roguelike de masmorras com geração aleatória e progressão por runs",
+  "description": {
+    "en": "A traditional roguelike: randomly generated dungeons, permadeath, turn-based combat and five playable heroes, each with its own mechanics. A long-maintained expansion of Pixel Dungeon.",
+    "pt": "Roguelike tradicional: masmorras geradas aleatoriamente, morte permanente, combate por turnos e cinco heróis com mecânicas próprias. Expansão do Pixel Dungeon mantida há anos."
+  },
+  "packageName": "com.shatteredpixel.shatteredpixeldungeon",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/00-Evan/shattered-pixel-dungeon",
+  "author": "Evan Debenham",
+  "categories": [
+    "games"
+  ],
+  "tags": [
+    "roguelike",
+    "masmorras",
+    "pixel-art",
+    "offline"
+  ],
+  "links": {
+    "website": "https://shatteredpixel.com/shatteredpd/"
+  },
+  "release": {
+    "provider": "github",
+    "repo": "00-Evan/shattered-pixel-dungeon",
+    "assetPattern": "ShatteredPD-*-Android.apk"
+  },
+  "addedAt": "2026-10-07",
+  "verification": {
+    "signingCertSha256": "d4:5f:76:0b:89:60:8b:4b:25:3a:3b:16:0d:c2:70:7f:1f:f4:e8:dd:8c:a4:d2:e8:e1:b8:1c:2c:72:d8:17:53",
+    "pinnedAt": "2026-10-07"
+  }
+}

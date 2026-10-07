@@ -49,7 +49,7 @@
       "description": "Fixed taxonomy so the client can render stable filters. At most 3.",
       "items": {
         "enum": [
-          "ai", "browser", "communication", "development", "education", "finance",
+          "ai", "browser", "communication", "development", "education", "emulators", "finance",
           "games", "graphics", "health", "maps", "media", "multimedia", "navigation",
           "notes", "privacy", "productivity", "reading", "security", "store",
           "system", "tools", "utilities", "weather"
