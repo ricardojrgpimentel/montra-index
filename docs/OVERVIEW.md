@@ -1,4 +1,4 @@
-# OpenShelf
+# Montra
 
 Uma loja de aplicações Android **sem backend**. O catálogo é um ficheiro JSON num
 repositório git; a app descarrega-o, verifica a assinatura digital e verifica cada
@@ -6,7 +6,7 @@ APK antes de o instalar. Não há servidor para manter, nem base de dados para
 operar, nem conta para criar.
 
 ```
-                    repositório git "openshelf-index" (público, só dados)
+                    repositório git "montra-index" (público, só dados)
    apps/<id>.json ──► build-index ──► index.json ──► sign-index ──► index.json.sig
    (um ficheiro por   (resolve releases,  (48 apps)   (ECDSA P-256)   (+ chave pública
     app, via PR)       descarrega APKs,                                   no repositório)
@@ -62,7 +62,7 @@ Play está desatualizada, como o Termux).
 ## Estrutura
 
 ```
-openshelf/
+montra/
 ├── index/                     repositório do catálogo (público, dados)
 │   ├── apps/*.json            fonte de verdade: 1 ficheiro por app
 │   ├── schema/*.json          contrato, validado em CI
@@ -71,7 +71,7 @@ openshelf/
 │   ├── keys/*.pub.pem         chave pública de confiança (a privada vive em CI)
 │   └── tools/                 validador, builder, assinador, verificador, descoberta
 └── android/                   repositório da app (pode ser privado durante o desenvolvimento)
-    └── app/src/main/java/dev/openshelf/
+    └── app/src/main/java/dev/montra/
         ├── security/          verificação da assinatura e dos certificados
         ├── data/              índice: rede, cache, snapshot incluído
         ├── install/           download com hash em streaming + PackageInstaller
