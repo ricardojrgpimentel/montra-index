@@ -1,0 +1,55 @@
+{
+  "id": "capyreader",
+  "name": "Capy Reader",
+  "summary": "Leitor RSS com feeds locais e sincronização com Feedbin, FreshRSS e Miniflux",
+  "description": {
+    "en": "Read RSS feeds locally or sync them with Feedbin, FreshRSS or Miniflux. Includes a full article reading mode. Stable releases are separate from the project's nightly builds.",
+    "pt": "Lê feeds RSS localmente ou sincroniza-os com Feedbin, FreshRSS ou Miniflux. Inclui um modo de leitura do artigo completo. O catálogo usa os releases estáveis, separados das versões noturnas do projeto."
+  },
+  "packageName": "com.capyreader.app",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/jocmp/capyreader",
+  "categories": [
+    "reading"
+  ],
+  "tags": [
+    "rss",
+    "news",
+    "feeds"
+  ],
+  "icon": {
+    "repo": "jocmp/capyreader",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "jocmp/capyreader",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/list_light.png"
+    },
+    {
+      "repo": "jocmp/capyreader",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/article_light.png"
+    },
+    {
+      "repo": "jocmp/capyreader",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/list_dark.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "jocmp/capyreader",
+    "assetPattern": "app-free-release.apk"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=com.capyreader.app&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "verification": {
+    "signingCertSha256": "67:43:73:75:a1:61:f4:20:21:9d:df:f1:f2:81:df:29:2c:cb:5f:05:7a:a0:ca:f5:65:68:a7:82:b2:81:64:65",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial app-free-release.apk (2026.07.1212)."
+  },
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/jocmp/capyreader/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/jocmp/capyreader/releases/download/2026.07.1212/app-free-release.apk. SPDX confirmado também nos metadados F-Droid: https://gitlab.com/fdroid/fdroiddata/-/raw/master/metadata/com.capyreader.app.yml."
+}

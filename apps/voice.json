@@ -1,0 +1,59 @@
+{
+  "id": "voice",
+  "name": "Voice",
+  "summary": "Leitor de audiolivros locais com marcadores, velocidade e temporizador",
+  "description": {
+    "en": "Play your own audiobook files with saved listening positions, bookmarks, playback speed controls and a sleep timer. Organizes local files into a library without requiring an account or cloud service.",
+    "pt": "Reproduz os teus ficheiros de audiolivros, guardando a posição de leitura e permitindo usar marcadores, controlar a velocidade e definir um temporizador. Organiza ficheiros locais numa biblioteca, sem exigir conta ou serviço na nuvem."
+  },
+  "packageName": "de.ph1b.audiobook",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/PaulWoitaschek/Voice",
+  "categories": [
+    "media",
+    "reading"
+  ],
+  "tags": [
+    "audiobooks",
+    "offline",
+    "audio"
+  ],
+  "icon": {
+    "repo": "PaulWoitaschek/Voice",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "PaulWoitaschek/Voice",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.png"
+    },
+    {
+      "repo": "PaulWoitaschek/Voice",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2_en-US.png"
+    },
+    {
+      "repo": "PaulWoitaschek/Voice",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "PaulWoitaschek/Voice",
+    "assetPattern": "app-free-release.apk"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=de.ph1b.audiobook&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "verification": {
+    "signingCertSha256": "11:a4:ca:ee:0b:a3:eb:5a:35:2d:11:25:ab:d3:29:25:20:9e:89:60:15:a5:d9:ca:0f:d9:f8:2d:ae:20:4f:aa",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial app-free-release.apk (26.6.1-5406001)."
+  },
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/PaulWoitaschek/Voice/blob/HEAD/LICENSE.md. Release oficial inspecionado: https://github.com/PaulWoitaschek/Voice/releases/download/26.6.1-5406001/app-free-release.apk. SPDX confirmado também nos metadados F-Droid: https://gitlab.com/fdroid/fdroiddata/-/raw/master/metadata/de.ph1b.audiobook.yml.",
+  "links": {
+    "website": "https://voice.woitaschek.de"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "rethinkdns",
+  "name": "RethinkDNS",
+  "summary": "Firewall, DNS encriptado e túneis WireGuard para controlar ligações das apps",
+  "description": {
+    "en": "Control which apps can access the network, monitor their connections and use encrypted DNS with blocklists. Also supports WireGuard tunnels and routing rules. Uses Android's VPN service, so it occupies the system VPN slot.",
+    "pt": "Controla quais as apps que podem aceder à rede, mostra as suas ligações e permite usar DNS encriptado com listas de bloqueio. Suporta também túneis WireGuard e regras de encaminhamento. Usa o serviço VPN do Android."
+  },
+  "packageName": "com.celzero.bravedns",
+  "license": "Apache-2.0",
+  "sourceCode": "https://github.com/celzero/rethink-app",
+  "categories": [
+    "privacy",
+    "security",
+    "tools"
+  ],
+  "tags": [
+    "firewall",
+    "dns",
+    "wireguard"
+  ],
+  "icon": {
+    "repo": "celzero/rethink-app",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "celzero/rethink-app",
+      "path": "fastlane/metadata/android/en-US/phoneScreenshots/1.png"
+    },
+    {
+      "repo": "celzero/rethink-app",
+      "path": "fastlane/metadata/android/en-US/phoneScreenshots/2.png"
+    },
+    {
+      "repo": "celzero/rethink-app",
+      "path": "fastlane/metadata/android/en-US/phoneScreenshots/3.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "celzero/rethink-app",
+    "abiAssets": {
+      "universal": "rethink-v*-izzy-universal.apk",
+      "arm64-v8a": "rethink-v*-izzy-arm64-v8a.apk",
+      "armeabi-v7a": "rethink-v*-izzy-armeabi-v7a.apk",
+      "x86": "rethink-v*-izzy-x86.apk",
+      "x86_64": "rethink-v*-izzy-x86_64.apk"
+    }
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=com.celzero.bravedns&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "verification": {
+    "signingCertSha256": "80:e1:5f:1e:d5:a1:ec:51:2c:51:e1:4a:a2:9b:18:c7:be:fe:13:c1:ac:b6:cf:ec:4b:87:bd:31:d1:71:fe:7f",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial rethink-v0.5.7-izzy-universal.apk (v0.5.7). Corresponde também ao SHA-256 publicado no README do upstream."
+  },
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/celzero/rethink-app/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/celzero/rethink-app/releases/download/v0.5.7/rethink-v0.5.7-izzy-universal.apk. Variante Izzy do upstream: todos os APKs usam a mesma variante e o certificado publicado no README. A variante de produção da Play Store usa outra chave.",
+  "links": {
+    "website": "https://rethinkfirewall.com/"
+  }
+}

@@ -22,6 +22,7 @@ import {
 import { githubApi, githubToken } from "./lib/github.mjs";
 import { findApkTools, inspectApk } from "./lib/apk.mjs";
 import { inferAbi } from "./lib/assets.mjs";
+import { apkReleaseCandidates } from "./lib/releases.mjs";
 
 /* -------------------------------------------------------------------- argv */
 const args = process.argv.slice(2);
@@ -175,11 +176,7 @@ async function buildApp(entry, tools, ctx) {
     throw new Error(`falha a listar releases de ${rel.repo}: ${String(error.message).split("\n")[0]}`);
   }
 
-  const tagRe = rel.tagPattern ? globToRegExp(rel.tagPattern) : null;
-  const candidates = releases
-    .filter((r) => rel.includePrerelease || !r.prerelease)
-    .filter((r) => !tagRe || tagRe.test(r.tag_name))
-    .sort((a, b) => new Date(b.published_at ?? 0) - new Date(a.published_at ?? 0));
+  const candidates = apkReleaseCandidates(releases, rel);
 
   if (candidates.length === 0) throw new Error(`nenhum release elegível em ${rel.repo}`);
 

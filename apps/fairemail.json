@@ -1,0 +1,59 @@
+{
+  "id": "fairemail",
+  "name": "FairEmail",
+  "summary": "Cliente de email com várias contas e controlos de privacidade nas mensagens",
+  "description": {
+    "en": "An email client supporting IMAP, POP3 and SMTP, multiple accounts and a unified inbox. Includes controls for remote images and links to reduce email tracking. Requires your own email account; some convenience features are paid.",
+    "pt": "Cliente de email com suporte para IMAP, POP3 e SMTP, várias contas e caixa de entrada unificada. Inclui controlos para imagens remotas e ligações que ajudam a reduzir o rastreamento. Exige uma conta de email própria; algumas funcionalidades são pagas."
+  },
+  "packageName": "eu.faircode.email",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/M66B/FairEmail",
+  "categories": [
+    "communication",
+    "privacy"
+  ],
+  "tags": [
+    "email",
+    "imap",
+    "privacy"
+  ],
+  "icon": {
+    "repo": "M66B/FairEmail",
+    "path": "metadata/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "M66B/FairEmail",
+      "path": "metadata/en-US/images/phoneScreenshots/0_setup.png"
+    },
+    {
+      "repo": "M66B/FairEmail",
+      "path": "metadata/en-US/images/phoneScreenshots/1_navigation.png"
+    },
+    {
+      "repo": "M66B/FairEmail",
+      "path": "metadata/en-US/images/phoneScreenshots/2_messages.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "M66B/FairEmail",
+    "assetPattern": "FairEmail-v*-github-release.apk"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=eu.faircode.email&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "verification": {
+    "signingCertSha256": "e0:20:67:24:9f:5a:35:0e:0e:c7:03:fe:9d:f4:dd:68:2e:02:91:a0:9f:0c:2e:04:10:50:bb:e7:c0:64:f5:c9",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial FairEmail-v1.2338a-github-release.apk (1.2338)."
+  },
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/M66B/FairEmail/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/M66B/FairEmail/releases/download/1.2338/FairEmail-v1.2338a-github-release.apk. Licença GPLv3 ou posterior declarada no README. Variante github-release do upstream, excluindo large-release. O cabeçalho de app/src/main/java/eu/faircode/email/ActivityMain.java confirma GPLv3 ou posterior, tal como o README do upstream.",
+  "links": {
+    "website": "https://email.faircode.eu/"
+  }
+}

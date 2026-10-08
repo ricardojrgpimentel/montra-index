@@ -1,0 +1,62 @@
+{
+  "id": "keymapper",
+  "name": "Key Mapper",
+  "summary": "Cria atalhos e macros para botões do telemóvel, teclados e comandos",
+  "description": {
+    "en": "Remap physical buttons, keyboard keys and game controller buttons to shortcuts and macros. Supports different press gestures and conditions for when mappings should run. Some actions require accessibility access or additional permissions. May promote the paid version on Google Play.",
+    "pt": "Associa botões físicos, teclas de teclado e botões de comandos a atalhos e macros. Suporta diferentes gestos de pressão e condições de execução. Algumas ações exigem acesso de acessibilidade ou permissões adicionais. Pode promover a versão paga na Play Store."
+  },
+  "packageName": "io.github.sds100.keymapper",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/keymapperorg/KeyMapper",
+  "categories": [
+    "tools",
+    "productivity"
+  ],
+  "tags": [
+    "key-remapping",
+    "shortcuts",
+    "automation"
+  ],
+  "icon": {
+    "repo": "keymapperorg/KeyMapper",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "keymapperorg/KeyMapper",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1.png"
+    },
+    {
+      "repo": "keymapperorg/KeyMapper",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2.png"
+    },
+    {
+      "repo": "keymapperorg/KeyMapper",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "keymapperorg/KeyMapper",
+    "assetPattern": "keymapper-*-foss.apk"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=io.github.sds100.keymapper&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "verification": {
+    "signingCertSha256": "2f:41:a8:16:b8:d6:0a:a1:d7:cd:49:76:b4:45:2b:03:35:e5:83:d4:f4:ab:14:07:1f:30:31:77:85:0c:e4:60",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial keymapper-4.6.0-foss.apk (v4.6.0)."
+  },
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/keymapperorg/KeyMapper/blob/HEAD/LICENSE.md. Release oficial inspecionado: https://github.com/keymapperorg/KeyMapper/releases/download/v4.6.0/keymapper-4.6.0-foss.apk. SPDX confirmado também nos metadados F-Droid: https://gitlab.com/fdroid/fdroiddata/-/raw/master/metadata/io.github.sds100.keymapper.yml. O aviso ads refere-se à promoção da versão paga, declarada nos metadados F-Droid.",
+  "links": {
+    "website": "https://keymapper.app"
+  },
+  "antiFeatures": [
+    "ads"
+  ]
+}

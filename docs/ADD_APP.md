@@ -88,6 +88,10 @@ Se o padrão casar com mais do que um asset e as ABIs não forem óbvias, o buil
 avisa e escolhe o maior. Lê os avisos: normalmente querem dizer que falta
 configuração.
 
+Releases sem APK não contam para o limite `--deep`: o builder procura os últimos
+releases elegíveis que publicam APKs. Um APK antigo mantém a data original de
+publicação no índice, para que o cliente possa mostrar o aviso de versão antiga.
+
 ## 3.1 Licenças que não são livres
 
 Se o projeto tem o código público mas a licença impõe limitações (uso comercial,

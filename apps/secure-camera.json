@@ -1,0 +1,45 @@
+{
+  "id": "secure-camera",
+  "name": "Secure Camera",
+  "summary": "Câmara do GrapheneOS para fotografias, vídeo e leitura de códigos QR",
+  "description": {
+    "en": "The GrapheneOS camera app, built on Android CameraX for taking photos and videos and scanning QR codes. Distributed as an official standalone APK.",
+    "pt": "App de câmara do GrapheneOS, baseada no CameraX do Android, para tirar fotografias, gravar vídeo e ler códigos QR. Disponível como APK oficial independente."
+  },
+  "packageName": "app.grapheneos.camera",
+  "license": "MIT",
+  "sourceCode": "https://github.com/GrapheneOS/Camera",
+  "categories": [
+    "graphics",
+    "multimedia"
+  ],
+  "tags": [
+    "camera",
+    "photos",
+    "qr-code"
+  ],
+  "icon": {
+    "repo": "GrapheneOS/Camera",
+    "path": "app/src/main/ic_launcher-playstore.png"
+  },
+  "screenshots": [],
+  "release": {
+    "provider": "github",
+    "repo": "GrapheneOS/Camera",
+    "assetPattern": "Camera-*.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "verification": {
+    "signingCertSha256": "64:36:b1:55:b9:17:c2:f9:a9:ed:1d:15:c4:99:3a:59:68:ff:ab:c9:49:47:c1:3f:2a:ee:e1:4b:7b:27:ed:59",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial Camera-93.apk (93)."
+  },
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/GrapheneOS/Camera/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/GrapheneOS/Camera/releases/download/93/Camera-93.apk.",
+  "links": {
+    "website": "https://grapheneos.org/"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "transportr",
+  "name": "Transportr",
+  "summary": "Planeia viagens de transportes públicos e consulta partidas e percursos",
+  "description": {
+    "en": "Plan public transport journeys, find nearby stops and consult departures and trip details. Available networks and timetable information depend on the transport providers supported by the app.",
+    "pt": "Planeia viagens de transportes públicos, encontra paragens próximas e consulta partidas e detalhes dos percursos. As redes disponíveis e a informação de horários dependem dos operadores suportados pela app."
+  },
+  "packageName": "de.grobox.liberario",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/grote/Transportr",
+  "categories": [
+    "navigation",
+    "maps"
+  ],
+  "tags": [
+    "public-transport",
+    "travel",
+    "timetables"
+  ],
+  "icon": {
+    "repo": "grote/Transportr",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "grote/Transportr",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1_FirstStart.png"
+    },
+    {
+      "repo": "grote/Transportr",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2_SavedSearches.png"
+    },
+    {
+      "repo": "grote/Transportr",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3_Trips.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "grote/Transportr",
+    "assetPattern": "app-release.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "antiFeatures": [
+    "nonFreeNet"
+  ],
+  "verification": {
+    "signingCertSha256": "39:bd:8e:0f:54:c8:ab:87:ac:21:c0:7a:15:b3:0f:c9:5c:df:f1:d2:5d:75:df:02:9d:52:3b:18:df:86:4b:79",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial app-release.apk (2.2.3)."
+  },
+  "notes": "Último APK oficial no GitHub: release 2.2.3 de 2024-12-07. Os releases mais recentes não incluem APKs. A data original é preservada no índice para o aviso de versão antiga do cliente. Projeto mantido, com atividade em 2026. Licença GPLv3 ou posterior declarada no README. https://github.com/grote/Transportr/releases/download/2.2.3/app-release.apk. O aviso nonFreeNet refere-se aos dados dos operadores de transportes, conforme https://gitlab.com/fdroid/fdroiddata/-/raw/master/metadata/de.grobox.liberario.yml."
+}

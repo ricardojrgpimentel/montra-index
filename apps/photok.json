@@ -1,0 +1,60 @@
+{
+  "id": "photok",
+  "name": "Photok",
+  "summary": "Guarda fotografias e vídeos numa galeria encriptada no próprio dispositivo",
+  "description": {
+    "en": "A private photo and video vault that encrypts media locally with AES-256. Files stay on the device and are decrypted in memory while in use. No cloud upload is required.",
+    "pt": "Cofre privado para fotografias e vídeos, com encriptação AES-256 no próprio dispositivo. Os ficheiros permanecem no telemóvel e são desencriptados em memória durante a utilização. Não exige envio para a nuvem."
+  },
+  "packageName": "dev.leonlatsch.photok",
+  "license": "Apache-2.0",
+  "sourceCode": "https://github.com/leonlatsch/Photok",
+  "categories": [
+    "privacy",
+    "security",
+    "graphics"
+  ],
+  "tags": [
+    "photo-vault",
+    "encryption",
+    "offline"
+  ],
+  "icon": {
+    "repo": "leonlatsch/Photok",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "leonlatsch/Photok",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1.jpg"
+    },
+    {
+      "repo": "leonlatsch/Photok",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2.jpg"
+    },
+    {
+      "repo": "leonlatsch/Photok",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3.jpg"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "leonlatsch/Photok",
+    "assetPattern": "photok-*-foss.apk"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=dev.leonlatsch.photok&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "verification": {
+    "signingCertSha256": "b7:04:a2:d2:d5:8a:37:e9:5a:b2:34:96:c3:9a:81:91:35:b8:7a:03:b9:b3:f4:c1:4d:3f:ed:cc:e9:cc:2c:9a",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial photok-3.5.0-foss.apk (3.5.0)."
+  },
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/leonlatsch/Photok/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/leonlatsch/Photok/releases/download/3.5.0/photok-3.5.0-foss.apk.",
+  "links": {
+    "website": "https://photok.app"
+  }
+}

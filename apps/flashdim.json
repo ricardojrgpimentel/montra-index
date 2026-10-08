@@ -1,0 +1,56 @@
+{
+  "id": "flashdim",
+  "name": "FlashDim",
+  "summary": "Ajusta a intensidade da lanterna em dispositivos Android compatíveis",
+  "description": {
+    "en": "Control flashlight brightness on supported devices running Android 13 or later. Includes shortcuts and quick settings controls. Available brightness levels depend on the phone hardware.",
+    "pt": "Controla a intensidade da lanterna em dispositivos compatíveis com Android 13 ou posterior. Inclui atalhos e controlos nas definições rápidas. Os níveis de intensidade disponíveis dependem do hardware do telemóvel."
+  },
+  "packageName": "com.cyb3rko.flashdim",
+  "license": "Apache-2.0",
+  "sourceCode": "https://github.com/cyb3rko/flashdim",
+  "categories": [
+    "utilities",
+    "tools"
+  ],
+  "tags": [
+    "flashlight",
+    "shortcuts",
+    "material-you"
+  ],
+  "icon": {
+    "repo": "cyb3rko/flashdim",
+    "path": "metadata/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "cyb3rko/flashdim",
+      "path": "metadata/en-US/images/phoneScreenshots/1.png"
+    },
+    {
+      "repo": "cyb3rko/flashdim",
+      "path": "metadata/en-US/images/phoneScreenshots/2.png"
+    },
+    {
+      "repo": "cyb3rko/flashdim",
+      "path": "metadata/en-US/images/phoneScreenshots/3.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "cyb3rko/flashdim",
+    "assetPattern": "FlashDim-*.apk"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=com.cyb3rko.flashdim&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "verification": {
+    "signingCertSha256": "ea:78:69:1c:ba:41:86:00:a4:56:32:89:b1:33:f9:d0:0d:3d:0c:24:a5:f5:4c:5c:59:ee:1c:95:2b:b0:e1:1d",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial FlashDim-2.5.3.apk (v2.5.3)."
+  },
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/cyb3rko/flashdim/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/cyb3rko/flashdim/releases/download/v2.5.3/FlashDim-2.5.3.apk."
+}

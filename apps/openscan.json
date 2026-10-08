@@ -1,0 +1,56 @@
+{
+  "id": "openscan",
+  "name": "OpenScan",
+  "summary": "Digitaliza documentos, recorta páginas e exporta ficheiros PDF ou imagens",
+  "description": {
+    "en": "Scan paper documents, notes and receipts with the camera, crop the pages and share them as PDFs or images. An open source document scanner designed around local use and privacy.",
+    "pt": "Digitaliza documentos, notas e recibos com a câmara, permite recortar as páginas e partilhá-las em PDF ou como imagens. Digitalizador de código aberto pensado para utilização local e privacidade."
+  },
+  "packageName": "com.ethereal.openscan",
+  "license": "BSD-3-Clause",
+  "sourceCode": "https://github.com/ethereal-developers/OpenScan",
+  "categories": [
+    "productivity",
+    "utilities"
+  ],
+  "tags": [
+    "scanner",
+    "documents",
+    "pdf"
+  ],
+  "icon": {
+    "repo": "ethereal-developers/OpenScan",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "ethereal-developers/OpenScan",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1.png"
+    },
+    {
+      "repo": "ethereal-developers/OpenScan",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2.png"
+    },
+    {
+      "repo": "ethereal-developers/OpenScan",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "ethereal-developers/OpenScan",
+    "assetPattern": "app-release.apk"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=com.ethereal.openscan&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "verification": {
+    "signingCertSha256": "58:c2:f0:a3:98:50:57:8d:7c:17:c4:38:5f:d4:af:2b:12:91:2e:3a:2b:ef:f8:f3:c7:93:f2:d1:b0:ec:6c:79",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial app-release.apk (v3.0.0)."
+  },
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/ethereal-developers/OpenScan/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/ethereal-developers/OpenScan/releases/download/v3.0.0/app-release.apk. APK universal do release oficial; os APKs separados por arquitetura são alternativas ao mesmo artefacto."
+}

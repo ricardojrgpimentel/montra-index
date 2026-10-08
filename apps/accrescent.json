@@ -1,0 +1,45 @@
+{
+  "id": "accrescent",
+  "name": "Accrescent",
+  "summary": "Loja de apps com catálogo assinado e certificados de instalação fixados",
+  "description": {
+    "en": "An Android app store focused on privacy and verified distribution, with signed catalogue metadata and pinned app signing keys. Installing apps does not require an account. The project is currently in alpha.",
+    "pt": "Loja de apps Android focada na privacidade e na distribuição verificada, com metadados assinados e certificados de assinatura fixados. Não exige conta para instalar apps. O projeto está em fase alfa."
+  },
+  "packageName": "app.accrescent.client",
+  "license": "Apache-2.0",
+  "sourceCode": "https://github.com/accrescent/accrescent",
+  "categories": [
+    "store",
+    "security"
+  ],
+  "tags": [
+    "app-store",
+    "privacy",
+    "verification"
+  ],
+  "icon": {
+    "repo": "accrescent/accrescent",
+    "path": "app/src/main/ic_launcher-playstore.png"
+  },
+  "screenshots": [],
+  "release": {
+    "provider": "github",
+    "repo": "accrescent/accrescent",
+    "assetPattern": "accrescent-*.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-08",
+  "verification": {
+    "signingCertSha256": "06:7a:40:c4:19:3a:ad:51:ac:87:f9:dd:fd:eb:b1:5e:24:a1:85:0b:ab:fa:48:21:c2:8c:5c:25:c3:fd:c0:71",
+    "pinnedAt": "2026-10-08",
+    "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial accrescent-0.28.1.apk (0.28.1). Corresponde também ao SHA-256 publicado no README do upstream."
+  },
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/accrescent/accrescent/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/accrescent/accrescent/releases/download/0.28.1/accrescent-0.28.1.apk. As ligações de capturas publicadas no README devolviam HTTP 404 na revisão de 2026-10-08; foram omitidas.",
+  "links": {
+    "website": "https://accrescent.app"
+  }
+}
