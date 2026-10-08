@@ -1,0 +1,55 @@
+{
+  "id": "metrolist",
+  "name": "Metrolist",
+  "summary": "Cliente de YouTube Music: reprodução em segundo plano, offline, letras sincronizadas e escuta em conjunto",
+  "description": {
+    "en": "An unofficial YouTube Music client: it streams songs and videos, plays in the background, downloads tracks for offline use and adds an equaliser and a sleep timer. Lyrics are time-synced with optional AI translation, playlists can be imported or scrobbled to Last.fm, and listening can be shared with friends in real time. Syncing your library needs a YouTube Music account, and a VPN or proxy is needed where YouTube Music is blocked. The project is in maintenance mode: bug fixes only.",
+    "pt": "Cliente não oficial de YouTube Music: passa músicas e vídeos, reproduz em segundo plano, descarrega faixas para ouvir sem rede e acrescenta equalizador e temporizador de sono. As letras são sincronizadas, com tradução opcional por IA, as playlists podem ser importadas ou enviadas para o Last.fm, e a audição pode ser partilhada com amigos em tempo real. Sincronizar a tua biblioteca exige uma conta de YouTube Music, e é preciso VPN ou proxy onde o YouTube Music estiver bloqueado. O projeto está em modo de manutenção: só correções de erros."
+  },
+  "packageName": "com.metrolist.music",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/MetrolistGroup/Metrolist",
+  "author": "MetrolistGroup (Mo Agamy)",
+  "categories": [
+    "media",
+    "multimedia"
+  ],
+  "tags": [
+    "youtube-music",
+    "music",
+    "streaming",
+    "offline",
+    "lyrics"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "MetrolistGroup/Metrolist",
+    "assetPattern": "Metrolist-izzy.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-08",
+  "icon": {
+    "repo": "MetrolistGroup/Metrolist",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "MetrolistGroup/Metrolist",
+      "path": "fastlane/metadata/android/en-US/images/screenshots/screenshot_1.png"
+    },
+    {
+      "repo": "MetrolistGroup/Metrolist",
+      "path": "fastlane/metadata/android/en-US/images/screenshots/screenshot_2.png"
+    },
+    {
+      "repo": "MetrolistGroup/Metrolist",
+      "path": "fastlane/metadata/android/en-US/images/screenshots/screenshot_3.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "e3:2c:4f:2e:fd:7e:e9:54:8f:ae:e2:2e:45:a6:04:25:f7:72:8a:55:a6:10:fd:5e:8a:b9:36:4f:74:b7:bc:c9",
+    "pinnedAt": "2026-10-08"
+  }
+}

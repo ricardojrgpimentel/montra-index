@@ -17,7 +17,7 @@ import path from "node:path";
 import { createHash } from "node:crypto";
 import {
   DIRS, color, downloadCached, fetchWithRetry, globMatch, globToRegExp, hexToColon,
-  humanBytes, log, mapPool, progressBar, sha256File, writeJson,
+  humanBytes, indexPathFor, log, mapPool, progressBar, sha256File, writeJson,
 } from "./lib/util.mjs";
 import { githubApi, githubToken } from "./lib/github.mjs";
 import { findApkTools, inspectApk } from "./lib/apk.mjs";
@@ -515,7 +515,8 @@ async function main() {
     apps: indexApps,
   };
 
-  await writeJson(path.join(DIRS.out, "index.json"), index);
+  const outFile = indexPathFor(ONLY);
+  await writeJson(outFile, index);
 
   /* --- report ------------------------------------------------------------- */
   console.log("");
@@ -530,9 +531,15 @@ async function main() {
   }
   console.log("");
   log.ok(
-    `index.json: ${indexApps.length} apps, ${humanBytes(totalSize)} de APKs indexados` +
+    `${path.relative(DIRS.root, outFile)}: ${indexApps.length} apps, ${humanBytes(totalSize)} de APKs indexados` +
       `${ctx.mediaHosted ? `, ${ctx.mediaHosted} imagens re-alojadas` : ""}`,
   );
+  if (ONLY) {
+    log.warn(
+      `build com --only ${ONLY}: o índice publicado (index.json) não foi tocado — ` +
+        "o parcial ficou no cache e não se assina nem se publica",
+    );
+  }
   if (ctx.failures.length) {
     console.log("");
     for (const f of ctx.failures) log.error(`${f.id}: ${f.message.split("\n")[0]}`);
@@ -540,7 +547,8 @@ async function main() {
   }
   console.log("");
   log.info(`tempo: ${((Date.now() - started) / 1000).toFixed(1)}s`);
-  console.log(`${color.dim("próximo passo:")} node tools/sign-index.mjs\n`);
+  if (!ONLY) console.log(`${color.dim("próximo passo:")} node tools/sign-index.mjs\n`);
+  else console.log("");
 
   process.exit(ctx.failures.length ? 1 : 0);
 }

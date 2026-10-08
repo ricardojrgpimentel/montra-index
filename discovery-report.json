@@ -1,290 +1,101 @@
 {
-  "generatedAt": "2026-10-07T17:06:55.163Z",
+  "generatedAt": "2026-10-08T12:44:16.912Z",
   "candidates": [
     {
-      "repo": "AAswordman/Operit",
-      "stars": 8479,
+      "repo": "MetrolistGroup/Metrolist",
+      "stars": 13343,
       "archived": false,
-      "pushed": "2026-10-05",
-      "license": "LGPL-3.0",
-      "description": "The most powerful AI agent and AI chat software on Android/Operit是一款Android上能力最为强大、发展最久的AI Agent",
-      "homepage": "https://operit.app",
+      "pushed": "2026-10-06",
+      "license": "GPL-3.0",
+      "description": "YouTube Music client for Android",
+      "homepage": "https://metrolist.cc",
       "releases": 20,
-      "downloads": 356980,
-      "assetPattern": "app-release.apk",
+      "downloads": 784911,
+      "assetPattern": "*.apk",
       "abiAssets": null,
       "assetNames": [
-        "app-release.apk"
+        "Metrolist-izzy.apk",
+        "Metrolist-with-Google-Cast.apk",
+        "Metrolist.apk"
       ],
-      "assetSize": 404265417,
-      "apkAssetUrl": "https://github.com/AAswordman/Operit/releases/download/v1.12.2/app-release.apk",
-      "tag": "v1.12.2",
-      "prerelease": false,
-      "verdict": "candidata",
-      "reasons": [],
-      "onlyDebugBuilds": false,
-      "packageName": "com.ai.assistance.operit",
-      "versionCode": 51,
-      "versionName": "1.12.2",
-      "minSdk": 26,
-      "targetSdk": 34,
-      "nativeAbis": [
-        "arm64-v8a"
-      ],
-      "signingCertSha256": "70:f2:6f:d7:1f:fd:15:18:8d:a1:90:95:c5:11:af:59:5b:dd:87:23:28:d5:a1:a4:9d:69:84:9a:f3:eb:0d:0a",
-      "size": 404265417,
-      "play": {
-        "present": false,
-        "url": "https://play.google.com/store/apps/details?id=com.ai.assistance.operit&hl=en&gl=US"
-      }
-    },
-    {
-      "repo": "PimpinPumpkin/Vela",
-      "stars": 809,
-      "archived": false,
-      "pushed": "2026-10-07",
-      "license": "GPL-3.0",
-      "description": "Degoogled maps & turn-by-turn navigation for Android - MapLibre + Overture POI, no Google Play Services",
-      "homepage": "https://pimpinpumpkin.github.io/Vela/",
-      "releases": 20,
-      "downloads": 8197,
-      "assetPattern": "vela-maps-v0.4.1912.apk",
-      "abiAssets": null,
-      "assetNames": [
-        "vela-maps-v0.4.1912.apk"
-      ],
-      "assetSize": 114664403,
-      "apkAssetUrl": "https://github.com/PimpinPumpkin/Vela/releases/download/v0.4.1912/vela-maps-v0.4.1912.apk",
-      "tag": "v0.4.1912",
-      "prerelease": false,
-      "verdict": "candidata",
-      "reasons": [],
-      "onlyDebugBuilds": false,
-      "packageName": "app.vela",
-      "versionCode": 39120,
-      "versionName": "0.4.1912",
-      "minSdk": 26,
-      "targetSdk": 35,
-      "nativeAbis": [
-        "arm64-v8a",
-        "armeabi-v7a",
-        "x86",
-        "x86_64"
-      ],
-      "signingCertSha256": "29:93:8b:48:58:06:3e:42:e6:77:ff:95:c9:01:cd:48:24:8a:7f:03:2a:3a:e8:5f:9b:9e:56:17:56:8b:0d:36",
-      "size": 114664403,
-      "play": {
-        "present": false,
-        "url": "https://play.google.com/store/apps/details?id=app.vela&hl=en&gl=US"
-      }
-    },
-    {
-      "repo": "tema6120/ForgetMeNot",
-      "stars": 442,
-      "archived": false,
-      "pushed": "2023-04-23",
-      "license": "GPL-3.0",
-      "description": "A flashcard app for Android.",
-      "homepage": "",
-      "releases": 18,
-      "downloads": 1636,
-      "assetPattern": "ForgetMeNot_v1.9.0.apk",
-      "abiAssets": null,
-      "assetNames": [
-        "ForgetMeNot_v1.9.0.apk"
-      ],
-      "assetSize": 5131380,
-      "apkAssetUrl": "https://github.com/tema6120/ForgetMeNot/releases/download/1.9.0/ForgetMeNot_v1.9.0.apk",
-      "tag": "1.9.0",
-      "prerelease": false,
-      "verdict": "candidata",
-      "reasons": [],
-      "onlyDebugBuilds": false,
-      "packageName": "com.odnovolov.forgetmenot",
-      "versionCode": 18,
-      "versionName": "1.9.0",
-      "minSdk": 21,
-      "targetSdk": 30,
-      "nativeAbis": [],
-      "signingCertSha256": "b8:06:29:ec:64:03:c7:99:ac:39:dc:d1:7d:c2:79:12:63:85:c5:81:c3:45:3b:9a:95:12:78:3f:e2:f5:dc:11",
-      "size": 5131380,
-      "play": {
-        "present": false,
-        "url": "https://play.google.com/store/apps/details?id=com.odnovolov.forgetmenot&hl=en&gl=US"
-      }
-    },
-    {
-      "repo": "InlitX/GymMane",
-      "stars": 812,
-      "archived": false,
-      "pushed": "2026-10-05",
-      "license": "GPL-3.0",
-      "description": " Offline gym log for Android. No account, no ads, no internet.",
-      "homepage": "https://inlitx.github.io/GymMane/",
-      "releases": 5,
-      "downloads": 1531,
-      "assetPattern": null,
-      "abiAssets": {
-        "arm64-v8a": "GymMane-arm64-v8a.apk",
-        "armeabi-v7a": "GymMane-armeabi-v7a.apk",
-        "x86_64": "GymMane-x86_64.apk"
-      },
-      "assetNames": [
-        "GymMane-arm64-v8a.apk",
-        "GymMane-armeabi-v7a.apk",
-        "GymMane-x86_64.apk"
-      ],
-      "assetSize": 38929671,
-      "apkAssetUrl": "https://github.com/InlitX/GymMane/releases/download/v1.4.0/GymMane-x86_64.apk",
-      "tag": "v1.4.0",
-      "prerelease": false,
-      "verdict": "candidata",
-      "reasons": [],
-      "onlyDebugBuilds": false,
-      "packageName": "com.gymmane.app",
-      "versionCode": 53,
-      "versionName": "1.4.0",
-      "minSdk": 24,
-      "targetSdk": 36,
-      "nativeAbis": [
-        "x86_64"
-      ],
-      "signingCertSha256": "3b:c3:a9:b2:f6:50:ca:20:8c:6c:84:d5:2c:1a:9c:bd:6e:67:82:e6:90:fa:2e:8f:30:64:80:a4:c9:ca:a0:95",
-      "size": 38929671,
-      "play": {
-        "present": false,
-        "url": "https://play.google.com/store/apps/details?id=com.gymmane.app&hl=en&gl=US"
-      }
-    },
-    {
-      "repo": "jameskokoska/Cashew",
-      "stars": 4688,
-      "archived": false,
-      "pushed": "2026-03-09",
-      "license": "GPL-3.0",
-      "description": "💸 An app created to help users manage a budget and purchases",
-      "homepage": "https://cashewapp.web.app/",
-      "releases": 20,
-      "downloads": 20795,
-      "assetPattern": "app-release.apk",
-      "abiAssets": null,
-      "assetNames": [
-        "app-release.apk"
-      ],
-      "assetSize": 42509732,
-      "apkAssetUrl": "https://github.com/jameskokoska/Cashew/releases/download/5.3.4%2B396/app-release.apk",
-      "tag": "5.3.4+396",
-      "prerelease": false,
-      "verdict": "candidata",
-      "reasons": [],
-      "onlyDebugBuilds": false,
-      "packageName": "com.budget.tracker_app",
-      "versionCode": 396,
-      "versionName": "5.3.4",
-      "minSdk": 19,
-      "targetSdk": 33,
-      "nativeAbis": [
-        "arm64-v8a",
-        "armeabi-v7a",
-        "x86",
-        "x86_64"
-      ],
-      "signingCertSha256": "da:fb:b7:b4:4d:19:6d:98:0c:b1:49:f8:6c:7b:38:b4:d0:5d:e4:96:0e:1a:37:3d:89:27:ae:56:3a:77:9a:b6",
-      "size": 42509732,
-      "play": {
-        "present": true,
-        "url": "https://play.google.com/store/apps/details?id=com.budget.tracker_app&hl=en&gl=US",
-        "playName": "Cashew—Expense Budget Tracker",
-        "playAuthor": "Dapper App Developer"
-      }
-    },
-    {
-      "repo": "kylecorry31/Trail-Sense",
-      "stars": 2920,
-      "archived": false,
-      "pushed": "2026-10-05",
-      "license": "MIT",
-      "description": "An Android app that uses your phone's sensors to assist with wilderness treks or survival situations.",
-      "homepage": "https://kylecorry.com/Trail-Sense/",
-      "releases": 20,
-      "downloads": 14140,
-      "assetPattern": "Trail-Sense-8.2.0-release.apk",
-      "abiAssets": null,
-      "assetNames": [
-        "Trail-Sense-8.2.0-release.apk"
-      ],
-      "assetSize": 13288415,
-      "apkAssetUrl": "https://github.com/kylecorry31/Trail-Sense/releases/download/8.2.0/Trail-Sense-8.2.0-release.apk",
-      "tag": "8.2.0",
-      "prerelease": false,
-      "verdict": "candidata",
-      "reasons": [],
-      "onlyDebugBuilds": false,
-      "packageName": "com.kylecorry.trail_sense",
-      "versionCode": 148,
-      "versionName": "8.2.0",
-      "minSdk": 23,
-      "targetSdk": 37,
-      "nativeAbis": [
-        "arm64-v8a",
-        "armeabi-v7a",
-        "x86",
-        "x86_64"
-      ],
-      "signingCertSha256": "d3:b7:cb:bc:63:3f:7c:1b:e2:ca:a2:f7:5f:b0:72:ee:9b:40:fd:10:fa:af:96:42:69:2b:27:c4:af:5e:c4:a7",
-      "size": 13288415,
-      "play": {
-        "present": true,
-        "url": "https://play.google.com/store/apps/details?id=com.kylecorry.trail_sense&hl=en&gl=US",
-        "playName": "Trail Sense",
-        "playAuthor": "Trail Sense"
-      }
-    },
-    {
-      "repo": "ankidroid/Anki-Android",
-      "stars": 11955,
-      "archived": false,
-      "pushed": "2026-10-07",
-      "license": "GPL-3.0",
-      "description": "AnkiDroid: Anki flashcards on Android. Your secret trick to achieve superhuman information retention.",
-      "homepage": "",
-      "releases": 20,
-      "downloads": 3900,
-      "assetPattern": null,
-      "abiAssets": {
-        "arm64-v8a": "AnkiDroid-2.25.1-arm64-v8a.apk",
-        "x86": "variant-abi-AnkiDroid-2.25.1-x86.apk",
-        "x86_64": "variant-abi-AnkiDroid-2.25.1-x86_64.apk",
-        "armeabi-v7a": "variant-abi-AnkiDroid-2.25.1-armeabi-v7a.apk",
-        "universal": "AnkiDroid-*-full-universal.apk"
-      },
-      "assetNames": [
-        "AnkiDroid-2.25.1-arm64-v8a.apk",
-        "variant-abi-AnkiDroid-2.25.1-x86.apk",
-        "variant-abi-AnkiDroid-2.25.1-x86_64.apk",
-        "variant-abi-AnkiDroid-2.25.1-armeabi-v7a.apk",
-        "AnkiDroid-2.25.1-full-universal.apk",
-        "dev-AnkiDroid-2.25.1-amazon-universal.apk",
-        "dev-AnkiDroid-2.25.1-play-universal.apk",
-        "z-AnkiDroid-2.25.1-full-universal-nominify.apk",
-        "AnkiDroid-2.25.1.parallel.A.apk",
-        "AnkiDroid-2.25.1.parallel.B.apk",
-        "AnkiDroid-2.25.1.parallel.C.apk",
-        "AnkiDroid-2.25.1.parallel.D.apk",
-        "AnkiDroid-2.25.1.parallel.E.apk"
-      ],
-      "assetSize": 111758580,
-      "apkAssetUrl": "https://github.com/ankidroid/Anki-Android/releases/download/v2.25.1/AnkiDroid-2.25.1-full-universal.apk",
-      "tag": "v2.25.1",
+      "assetSize": 28479899,
+      "apkAssetUrl": "https://github.com/MetrolistGroup/Metrolist/releases/download/v13.7.0/Metrolist-with-Google-Cast.apk",
+      "tag": "v13.7.0",
       "prerelease": false,
       "verdict": "candidata",
       "reasons": [
-        "9 variantes para universal: AnkiDroid-2.25.1-full-universal.apk, dev-AnkiDroid-2.25.1-amazon-universal.apk, dev-AnkiDroid-2.25.1-play-universal.apk, z-AnkiDroid-2.25.1-full-universal-nominify.apk, AnkiDroid-2.25.1.parallel.A.apk, AnkiDroid-2.25.1.parallel.B.apk, AnkiDroid-2.25.1.parallel.C.apk, AnkiDroid-2.25.1.parallel.D.apk, AnkiDroid-2.25.1.parallel.E.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico"
+        "3 APKs e nenhum nome revela a ABI: precisa de assetPattern/abiAssets à mão"
       ],
       "onlyDebugBuilds": false,
-      "packageName": "com.ichi2.anki",
-      "versionCode": 22501300,
-      "versionName": "2.25.1",
+      "packageName": "com.metrolist.music",
+      "versionCode": 153,
+      "versionName": "13.7.0",
+      "minSdk": 26,
+      "targetSdk": 36,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "signingCertSha256": "e3:2c:4f:2e:fd:7e:e9:54:8f:ae:e2:2e:45:a6:04:25:f7:72:8a:55:a6:10:fd:5e:8a:b9:36:4f:74:b7:bc:c9",
+      "size": 28479899,
+      "play": {
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=com.metrolist.music&hl=en&gl=US"
+      }
+    },
+    {
+      "repo": "deniscerri/ytdlnis",
+      "stars": 10473,
+      "archived": false,
+      "pushed": "2026-10-07",
+      "license": "GPL-3.0",
+      "description": "Full-featured audio/video downloader for Android using yt-dlp",
+      "homepage": "https://ytdlnis.org",
+      "releases": 20,
+      "downloads": 177408,
+      "assetPattern": null,
+      "abiAssets": {
+        "arm64-v8a": "YTDLnis-*-arm64-v8a-github-release.apk",
+        "armeabi-v7a": "YTDLnis-*-armeabi-v7a-github-release.apk",
+        "universal": "YTDLnis-*-foss-universal-release.apk",
+        "x86": "YTDLnis-*-foss-x86-release.apk",
+        "x86_64": "YTDLnis-*-foss-x86_64-release.apk"
+      },
+      "assetNames": [
+        "YTDLnis-1.9.0-arm64-v8a-github-release.apk",
+        "YTDLnis-1.9.0-armeabi-v7a-github-release.apk",
+        "YTDLnis-1.9.0-foss-arm64-v8a-release.apk",
+        "YTDLnis-1.9.0-foss-armeabi-v7a-release.apk",
+        "YTDLnis-1.9.0-foss-universal-release.apk",
+        "YTDLnis-1.9.0-foss-x86-release.apk",
+        "YTDLnis-1.9.0-foss-x86_64-release.apk",
+        "YTDLnis-1.9.0-izzy-arm64-v8a-release.apk",
+        "YTDLnis-1.9.0-izzy-armeabi-v7a-release.apk",
+        "YTDLnis-1.9.0-izzy-universal-release.apk",
+        "YTDLnis-1.9.0-izzy-x86-release.apk",
+        "YTDLnis-1.9.0-izzy-x86_64-release.apk",
+        "YTDLnis-1.9.0-universal-github-release.apk",
+        "YTDLnis-1.9.0-x86-github-release.apk",
+        "YTDLnis-1.9.0-x86_64-github-release.apk"
+      ],
+      "assetSize": 212163849,
+      "apkAssetUrl": "https://github.com/deniscerri/ytdlnis/releases/download/v1.9.0/YTDLnis-1.9.0-foss-universal-release.apk",
+      "tag": "v1.9.0",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [
+        "3 variantes para arm64-v8a: YTDLnis-1.9.0-arm64-v8a-github-release.apk, YTDLnis-1.9.0-foss-arm64-v8a-release.apk, YTDLnis-1.9.0-izzy-arm64-v8a-release.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico",
+        "3 variantes para armeabi-v7a: YTDLnis-1.9.0-armeabi-v7a-github-release.apk, YTDLnis-1.9.0-foss-armeabi-v7a-release.apk, YTDLnis-1.9.0-izzy-armeabi-v7a-release.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico",
+        "3 variantes para universal: YTDLnis-1.9.0-foss-universal-release.apk, YTDLnis-1.9.0-izzy-universal-release.apk, YTDLnis-1.9.0-universal-github-release.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico",
+        "3 variantes para x86: YTDLnis-1.9.0-foss-x86-release.apk, YTDLnis-1.9.0-izzy-x86-release.apk, YTDLnis-1.9.0-x86-github-release.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico",
+        "3 variantes para x86_64: YTDLnis-1.9.0-foss-x86_64-release.apk, YTDLnis-1.9.0-izzy-x86_64-release.apk, YTDLnis-1.9.0-x86_64-github-release.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico"
+      ],
+      "onlyDebugBuilds": false,
+      "packageName": "com.deniscerri.ytdl",
+      "versionCode": 109000000,
+      "versionName": "1.9.0",
       "minSdk": 24,
       "targetSdk": 36,
       "nativeAbis": [
@@ -293,40 +104,55 @@
         "x86",
         "x86_64"
       ],
-      "signingCertSha256": "20:71:53:4f:0f:4b:5e:54:ae:95:2d:d2:75:d7:0d:a6:e3:45:9e:e6:99:09:d2:ab:1b:48:43:c4:c5:b2:1a:45",
-      "size": 111758580,
+      "signingCertSha256": "26:36:45:cb:52:72:eb:29:07:59:fe:1f:59:14:9a:e2:4d:f6:ce:17:1e:9f:66:66:ee:ad:98:1d:3f:c6:4c:95",
+      "size": 212163849,
       "play": {
-        "present": true,
-        "url": "https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=en&gl=US",
-        "playName": "AnkiDroid Flashcards",
-        "playAuthor": "AnkiDroid Open Source Team"
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=com.deniscerri.ytdl&hl=en&gl=US"
       }
     },
     {
-      "repo": "simonoppowa/OpenNutriTracker",
-      "stars": 2632,
+      "repo": "maxrave-dev/SimpMusic",
+      "stars": 11796,
       "archived": false,
-      "pushed": "2026-10-07",
+      "pushed": "2026-10-08",
       "license": "GPL-3.0",
-      "description": "🍴 OpenNutriTracker is a free and open source calorie tracker with a focus on simplicity and privacy.",
-      "homepage": "",
+      "description": "A cross-platform music app using YouTube Music for backend",
+      "homepage": "https://simpmusic.org/",
       "releases": 20,
-      "downloads": 2013,
-      "assetPattern": "app-release.apk",
-      "abiAssets": null,
+      "downloads": 90719,
+      "assetPattern": null,
+      "abiAssets": {
+        "arm64-v8a": "SimpMusic-foss-arm64-v8a-release.apk",
+        "armeabi-v7a": "SimpMusic-foss-armeabi-v7a-release.apk",
+        "universal": "SimpMusic-foss-universal-release.apk",
+        "x86_64": "SimpMusic-foss-x86_64-release.apk"
+      },
       "assetNames": [
-        "app-release.apk"
+        "SimpMusic-foss-arm64-v8a-release.apk",
+        "SimpMusic-foss-armeabi-v7a-release.apk",
+        "SimpMusic-foss-universal-release.apk",
+        "SimpMusic-foss-x86_64-release.apk",
+        "SimpMusic-full-arm64-v8a-release.apk",
+        "SimpMusic-full-armeabi-v7a-release.apk",
+        "SimpMusic-full-universal-release.apk",
+        "SimpMusic-full-x86_64-release.apk"
       ],
-      "assetSize": 104738899,
-      "apkAssetUrl": "https://github.com/simonoppowa/OpenNutriTracker/releases/download/v2.4.0/app-release.apk",
-      "tag": "v2.4.0",
+      "assetSize": 54697323,
+      "apkAssetUrl": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.2.0/SimpMusic-foss-universal-release.apk",
+      "tag": "v2.2.0",
       "prerelease": false,
       "verdict": "candidata",
-      "reasons": [],
+      "reasons": [
+        "2 variantes para arm64-v8a: SimpMusic-foss-arm64-v8a-release.apk, SimpMusic-full-arm64-v8a-release.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico",
+        "2 variantes para armeabi-v7a: SimpMusic-foss-armeabi-v7a-release.apk, SimpMusic-full-armeabi-v7a-release.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico",
+        "2 variantes para universal: SimpMusic-foss-universal-release.apk, SimpMusic-full-universal-release.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico",
+        "2 variantes para x86_64: SimpMusic-foss-x86_64-release.apk, SimpMusic-full-x86_64-release.apk — escolhe a variante certa (foss/izzy/github) e torna o padrão específico"
+      ],
       "onlyDebugBuilds": false,
-      "packageName": "com.opennutritracker.ont.opennutritracker",
-      "versionCode": 66,
-      "versionName": "2.4.0",
+      "packageName": "com.maxrave.simpmusic",
+      "versionCode": 59,
+      "versionName": "2.2.0",
       "minSdk": 26,
       "targetSdk": 36,
       "nativeAbis": [
@@ -334,55 +160,418 @@
         "armeabi-v7a",
         "x86_64"
       ],
-      "signingCertSha256": "84:e8:60:74:ec:7e:da:bb:10:f2:01:79:86:dd:f0:9e:53:1c:af:7a:73:08:0a:c1:17:2b:80:c4:9c:62:08:27",
-      "size": 104738899,
+      "signingCertSha256": "76:c5:3b:d8:13:ae:8f:1c:e2:77:8f:78:14:b5:15:78:57:19:bf:9a:82:c6:be:e0:3b:8b:2d:fd:70:60:55:a1",
+      "size": 54697323,
       "play": {
-        "present": true,
-        "url": "https://play.google.com/store/apps/details?id=com.opennutritracker.ont.opennutritracker&hl=en&gl=US",
-        "playName": "OpenNutriTracker",
-        "playAuthor": "simonO"
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=com.maxrave.simpmusic&hl=en&gl=US"
       }
     },
     {
-      "repo": "Pool-Of-Tears/GreenStash",
-      "stars": 788,
+      "repo": "aistra0528/Hail",
+      "stars": 6849,
       "archived": false,
-      "pushed": "2026-08-15",
-      "license": "MIT",
-      "description": "Simple FOSS android app to help you plan and manage your savings goals easily and establish the habit of saving money.",
-      "homepage": "https://pool-of-tears.github.io",
+      "pushed": "2026-10-07",
+      "license": "GPL-3.0",
+      "description": "Disable / Hide / Suspend / Uninstall Android apps without root.",
+      "homepage": "",
       "releases": 20,
-      "downloads": 1268,
-      "assetPattern": "GreenStash-v4.4.0.apk",
+      "downloads": 46243,
+      "assetPattern": "Hail-v1.11.0.apk",
       "abiAssets": null,
       "assetNames": [
-        "GreenStash-v4.4.0.apk"
+        "Hail-v1.11.0.apk"
       ],
-      "assetSize": 7207888,
-      "apkAssetUrl": "https://github.com/Pool-Of-Tears/GreenStash/releases/download/v4.4.0/GreenStash-v4.4.0.apk",
-      "tag": "v4.4.0",
+      "assetSize": 5760575,
+      "apkAssetUrl": "https://github.com/aistra0528/Hail/releases/download/v1.11.0/Hail-v1.11.0.apk",
+      "tag": "v1.11.0",
       "prerelease": false,
       "verdict": "candidata",
       "reasons": [],
       "onlyDebugBuilds": false,
-      "packageName": "com.starry.greenstash",
-      "versionCode": 440,
-      "versionName": "4.4.0",
-      "minSdk": 24,
-      "targetSdk": 37,
+      "packageName": "com.aistra.hail",
+      "versionCode": 35,
+      "versionName": "1.11.0",
+      "minSdk": 23,
+      "targetSdk": 36,
       "nativeAbis": [
         "arm64-v8a",
         "armeabi-v7a",
         "x86",
         "x86_64"
       ],
-      "signingCertSha256": "5d:fe:06:da:0f:e3:b0:81:3f:3f:3d:c5:30:56:99:c2:db:b9:df:db:ab:13:49:da:7c:41:c5:9d:2f:cf:31:9c",
-      "size": 7207888,
+      "signingCertSha256": "17:c2:46:3c:1e:00:2b:99:cb:50:2c:dc:da:06:7e:83:52:c6:30:ff:c4:d7:af:3f:d4:42:92:6e:54:dd:3e:78",
+      "size": 5760575,
+      "play": {
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=com.aistra.hail&hl=en&gl=US"
+      }
+    },
+    {
+      "repo": "moonlight-stream/moonlight-android",
+      "stars": 7245,
+      "archived": false,
+      "pushed": "2026-10-06",
+      "license": "GPL-3.0",
+      "description": "GameStream client for Android",
+      "homepage": "",
+      "releases": 20,
+      "downloads": 27368,
+      "assetPattern": "*.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "app-nonRoot-release.apk",
+        "app-root-release.apk"
+      ],
+      "assetSize": 11157359,
+      "apkAssetUrl": "https://github.com/moonlight-stream/moonlight-android/releases/download/v12.2/app-root-release.apk",
+      "tag": "v12.2",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [
+        "2 APKs e nenhum nome revela a ABI: precisa de assetPattern/abiAssets à mão"
+      ],
+      "onlyDebugBuilds": false,
+      "packageName": "com.limelight.root",
+      "versionCode": 315,
+      "versionName": "12.2",
+      "minSdk": 21,
+      "targetSdk": 36,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "signingCertSha256": "d6:ce:3a:4d:f1:50:60:fe:48:8f:e5:24:41:a5:49:de:e4:ba:19:9b:36:e2:cb:1e:d9:08:5c:ca:8b:fa:1a:ca",
+      "size": 11157359,
+      "play": {
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=com.limelight.root&hl=en&gl=US"
+      }
+    },
+    {
+      "repo": "niedev/RTranslator",
+      "stars": 10491,
+      "archived": false,
+      "pushed": "2026-10-08",
+      "license": "Apache-2.0",
+      "description": "Open source real-time translation app for Android that runs locally",
+      "homepage": "",
+      "releases": 19,
+      "downloads": 24845,
+      "assetPattern": "RTranslator_2.1.5.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "RTranslator_2.1.5.apk"
+      ],
+      "assetSize": 97933823,
+      "apkAssetUrl": "https://github.com/niedev/RTranslator/releases/download/2.1.5/RTranslator_2.1.5.apk",
+      "tag": "2.1.5",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "nie.translator.rtranslator",
+      "versionCode": 25,
+      "versionName": "2.1.5",
+      "minSdk": 24,
+      "targetSdk": 32,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "signingCertSha256": "7c:6f:90:12:c1:5f:f6:3a:8f:7f:11:5d:30:a8:5d:02:31:a2:3e:9b:bd:17:b0:17:bb:d6:42:65:33:0a:60:0e",
+      "size": 97933823,
+      "play": {
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=nie.translator.rtranslator&hl=en&gl=US"
+      }
+    },
+    {
+      "repo": "BeyondDimension/SteamTools",
+      "stars": 27088,
+      "archived": false,
+      "pushed": "2026-08-31",
+      "license": "GPL-3.0",
+      "description": "🛠「Watt Toolkit」是一个开源跨平台的多功能 Steam 工具箱。",
+      "homepage": "https://steampp.net",
+      "releases": 20,
+      "downloads": 9589,
+      "assetPattern": "Steam++_android_v2.8.3.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "Steam++_android_v2.8.3.apk"
+      ],
+      "assetSize": 86461031,
+      "apkAssetUrl": "https://github.com/BeyondDimension/SteamTools/releases/download/2.8.3/Steam%2B%2B_android_v2.8.3.apk",
+      "tag": "2.8.3",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "net.steampp.app",
+      "versionCode": 20220814,
+      "versionName": "2.8.3",
+      "minSdk": 21,
+      "targetSdk": 31,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "signingCertSha256": "2e:57:6d:b7:2f:f3:aa:39:47:d5:9a:b3:fc:06:a9:d6:dd:1f:51:80:a0:6d:70:4d:3a:a2:2e:7a:1c:ed:0b:1f",
+      "size": 86461031,
+      "play": {
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=net.steampp.app&hl=en&gl=US"
+      }
+    },
+    {
+      "repo": "ente/ente",
+      "stars": 29295,
+      "archived": false,
+      "pushed": "2026-10-08",
+      "license": "AGPL-3.0",
+      "description": "💚 End-to-end encrypted cloud for everything.",
+      "homepage": "https://ente.com",
+      "releases": 20,
+      "downloads": 5384,
+      "assetPattern": "ente-photos-v1.3.65.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "ente-photos-v1.3.65.apk"
+      ],
+      "assetSize": 365378331,
+      "apkAssetUrl": "https://github.com/ente/ente/releases/download/photos-v1.3.65/ente-photos-v1.3.65.apk",
+      "tag": "photos-v1.3.65",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "io.ente.photos.independent",
+      "versionCode": 2300,
+      "versionName": "1.3.65",
+      "minSdk": 26,
+      "targetSdk": 36,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86_64"
+      ],
+      "signingCertSha256": "35:ed:56:81:b7:0b:b3:bd:35:d9:0d:85:6a:f5:69:4c:50:4d:ef:46:aa:d8:3f:77:7b:1c:67:5c:f4:51:35:0b",
+      "size": 365378331,
+      "play": {
+        "present": false,
+        "url": "https://play.google.com/store/apps/details?id=io.ente.photos.independent&hl=en&gl=US"
+      }
+    },
+    {
+      "repo": "zhanghai/MaterialFiles",
+      "stars": 9157,
+      "archived": false,
+      "pushed": "2026-09-24",
+      "license": "GPL-3.0",
+      "description": "Material Design file manager for Android",
+      "homepage": "https://play.google.com/store/apps/details?id=me.zhanghai.android.files",
+      "releases": 20,
+      "downloads": 40514,
+      "assetPattern": null,
+      "abiAssets": {
+        "universal": "app-release-universal.apk"
+      },
+      "assetNames": [
+        "app-release-fdroid.apk",
+        "app-release-universal.apk"
+      ],
+      "assetSize": 13747821,
+      "apkAssetUrl": "https://github.com/zhanghai/MaterialFiles/releases/download/v1.7.5/app-release-universal.apk",
+      "tag": "v1.7.5",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "me.zhanghai.android.files",
+      "versionCode": 40,
+      "versionName": "1.7.5",
+      "minSdk": 23,
+      "targetSdk": 36,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "signingCertSha256": "87:3b:9b:60:c7:7c:f7:f3:cd:5f:ae:66:d0:fe:11:2c:4a:86:97:3e:11:8e:e8:a2:9c:34:6c:4c:67:3c:97:f0",
+      "size": 13747821,
       "play": {
         "present": true,
-        "url": "https://play.google.com/store/apps/details?id=com.starry.greenstash&hl=en&gl=US",
-        "playName": "GreenStash: Track Your Savings",
-        "playAuthor": "Pool-Of-Tears"
+        "url": "https://play.google.com/store/apps/details?id=me.zhanghai.android.files&hl=en&gl=US",
+        "playName": "Material Files",
+        "playAuthor": "Hai Zhang"
+      }
+    },
+    {
+      "repo": "Kunzisoft/KeePassDX",
+      "stars": 7429,
+      "archived": false,
+      "pushed": "2026-09-25",
+      "license": "GPL-3.0",
+      "description": "Lightweight vault and password manager for Android, KeePassDX allows editing encrypted data in a single file in KeePass format and fill in t",
+      "homepage": "https://www.keepassdx.com/",
+      "releases": 20,
+      "downloads": 17735,
+      "assetPattern": "*.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "KeePassDX-4.5.5-free.apk",
+        "KeePassDX-4.5.5-libre.apk"
+      ],
+      "assetSize": 16752789,
+      "apkAssetUrl": "https://github.com/Kunzisoft/KeePassDX/releases/download/4.5.5/KeePassDX-4.5.5-free.apk",
+      "tag": "4.5.5",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [
+        "2 APKs e nenhum nome revela a ABI: precisa de assetPattern/abiAssets à mão"
+      ],
+      "onlyDebugBuilds": false,
+      "packageName": "com.kunzisoft.keepass.free",
+      "versionCode": 45500,
+      "versionName": "4.5.5",
+      "minSdk": 19,
+      "targetSdk": 36,
+      "nativeAbis": [
+        "arm64-v8a",
+        "armeabi-v7a",
+        "x86",
+        "x86_64"
+      ],
+      "signingCertSha256": "7d:55:b8:af:21:03:81:aa:bf:96:0f:07:e1:7c:f7:85:7b:6d:2a:64:2c:a2:da:6b:f0:bd:f1:b2:00:36:2f:04",
+      "size": 16752789,
+      "play": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free&hl=en&gl=US",
+        "playName": "KeePassDX Passkey Vault",
+        "playAuthor": "Kunzisoft"
+      }
+    },
+    {
+      "repo": "LibChecker/LibChecker",
+      "stars": 7228,
+      "archived": false,
+      "pushed": "2026-10-08",
+      "license": "Apache-2.0",
+      "description": "An app to view libraries used in apps in your device.",
+      "homepage": "",
+      "releases": 20,
+      "downloads": 14747,
+      "assetPattern": "*.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "LibChecker-2.5.4.5696014-2671-foss-release.apk",
+        "LibChecker-2.5.4.5696014-2671-market-release.apk"
+      ],
+      "assetSize": 5567554,
+      "apkAssetUrl": "https://github.com/LibChecker/LibChecker/releases/download/2.5.4/LibChecker-2.5.4.5696014-2671-market-release.apk",
+      "tag": "2.5.4",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [
+        "2 APKs e nenhum nome revela a ABI: precisa de assetPattern/abiAssets à mão"
+      ],
+      "onlyDebugBuilds": false,
+      "packageName": "com.absinthe.libchecker",
+      "versionCode": 2671,
+      "versionName": "2.5.4.5696014",
+      "minSdk": 24,
+      "targetSdk": 37,
+      "nativeAbis": [],
+      "signingCertSha256": "b1:2e:1c:fb:fe:28:58:49:d6:74:00:18:02:2e:ec:22:09:fe:b2:8c:26:85:df:6f:4d:2f:97:db:de:3b:57:75",
+      "size": 5567554,
+      "play": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=com.absinthe.libchecker&hl=en&gl=US",
+        "playName": "LibChecker - View Apps Info",
+        "playAuthor": "Absinthe"
+      }
+    },
+    {
+      "repo": "super-productivity/super-productivity",
+      "stars": 22630,
+      "archived": false,
+      "pushed": "2026-10-07",
+      "license": "MIT",
+      "description": "Super Productivity is an advanced todo list app with integrated Timeboxing and time tracking capabilities. It also comes with integrations f",
+      "homepage": "http://super-productivity.com?ref=github",
+      "releases": 20,
+      "downloads": 4816,
+      "assetPattern": "app-play-release.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "app-play-release.apk"
+      ],
+      "assetSize": 22640772,
+      "apkAssetUrl": "https://github.com/super-productivity/super-productivity/releases/download/v19.1.0/app-play-release.apk",
+      "tag": "v19.1.0",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "com.superproductivity.superproductivity",
+      "versionCode": 1901009000,
+      "versionName": "19.1.0",
+      "minSdk": 24,
+      "targetSdk": 36,
+      "nativeAbis": [],
+      "signingCertSha256": "16:3c:87:6b:91:7d:76:20:a3:92:92:cc:9d:7c:3c:df:0c:3c:65:93:24:ab:45:9d:5d:af:d9:b9:97:11:17:aa",
+      "size": 22640772,
+      "play": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=com.superproductivity.superproductivity&hl=en&gl=US",
+        "playName": "Super Productivity: To-Do List",
+        "playAuthor": "The Front End"
+      }
+    },
+    {
+      "repo": "CeuiLiSA/Pixiv-Shaft",
+      "stars": 8037,
+      "archived": false,
+      "pushed": "2026-10-08",
+      "license": "GPL-2.0",
+      "description": "Pixiv第三方Android客户端",
+      "homepage": "",
+      "releases": 20,
+      "downloads": 323,
+      "assetPattern": "PixShaft_4.9.6_classic.apk",
+      "abiAssets": null,
+      "assetNames": [
+        "PixShaft_4.9.6_classic.apk"
+      ],
+      "assetSize": 47104593,
+      "apkAssetUrl": "https://github.com/CeuiLiSA/Pixiv-Shaft/releases/download/v4.9.6/PixShaft_4.9.6_classic.apk",
+      "tag": "v4.9.6",
+      "prerelease": false,
+      "verdict": "candidata",
+      "reasons": [],
+      "onlyDebugBuilds": false,
+      "packageName": "ceui.pixiv.pshaft",
+      "versionCode": 43100,
+      "versionName": "4.9.6",
+      "minSdk": 24,
+      "targetSdk": 36,
+      "nativeAbis": [
+        "arm64-v8a"
+      ],
+      "signingCertSha256": "c6:f9:57:47:17:4c:b6:79:2d:bd:c2:04:91:c4:bd:c3:ad:84:ea:f8:fb:7a:7f:c8:8b:b4:4c:0a:77:33:54:f0",
+      "size": 47104593,
+      "play": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=ceui.pixiv.pshaft&hl=en&gl=US",
+        "playName": "PixShaft",
+        "playAuthor": "CeuiLiSA"
       }
     }
   ]

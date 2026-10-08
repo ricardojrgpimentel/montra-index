@@ -1,0 +1,44 @@
+{
+  "id": "rtranslator",
+  "name": "RTranslator",
+  "summary": "Tradutor em tempo real e offline: conversa entre dois telefones ou walkie-talkie com um só",
+  "description": {
+    "en": "An offline translator: speech recognition and translation run on the phone, so nothing goes to a server and no network is needed. Conversation mode links two or more phones running the app — you talk into your phone or a Bluetooth headset and hear the other person translated. WalkieTalkie mode does the same with a single phone, detecting which of two languages is being spoken and answering in the other, in turns. The first start downloads 1.2 GB of models and the author asks for at least 6 GB of RAM.",
+    "pt": "Tradutor offline: o reconhecimento de fala e a tradução correm no telefone, por isso nada vai para um servidor e não é precisa rede. O modo Conversa liga dois ou mais telefones com a app — falas para o teu telefone ou para uns auriculares Bluetooth e ouves a outra pessoa traduzida. O modo WalkieTalkie faz o mesmo com um só telefone, detetando em qual de duas línguas se está a falar e respondendo na outra, à vez. No primeiro arranque são descarregados 1,2 GB de modelos, e o autor pede pelo menos 6 GB de RAM."
+  },
+  "packageName": "nie.translator.rtranslator",
+  "license": "Apache-2.0",
+  "sourceCode": "https://github.com/niedev/RTranslator",
+  "author": "niedev",
+  "categories": [
+    "communication",
+    "utilities"
+  ],
+  "tags": [
+    "translation",
+    "offline",
+    "speech",
+    "on-device",
+    "bluetooth"
+  ],
+  "antiFeatures": [
+    "upstreamNonFree"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "niedev/RTranslator",
+    "assetPattern": "RTranslator_*.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-08",
+  "icon": {
+    "repo": "niedev/RTranslator",
+    "path": "images/icon.png"
+  },
+  "verification": {
+    "signingCertSha256": "7c:6f:90:12:c1:5f:f6:3a:8f:7f:11:5d:30:a8:5d:02:31:a2:3e:9b:bd:17:b0:17:bb:d6:42:65:33:0a:60:0e",
+    "pinnedAt": "2026-10-08"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "ytdlnis",
+  "name": "YTDLnis",
+  "summary": "Descarregador de áudio e vídeo com yt-dlp: playlists, filas agendadas, cortes e comandos à medida",
+  "description": {
+    "en": "A yt-dlp front end for audio and video from more than a thousand sites. Playlists are handled item by item, downloads can be queued, scheduled and run several at a time, and finished files can be cut by chapters, stripped of SponsorBlock segments or split into parts. Cookies reach private or premium formats, and yt-dlp runs from a built-in terminal with custom commands and templates. Python, FFmpeg, Node, Deno and Aria2c are plugins you update yourself, which is why the APK is large.",
+    "pt": "Descarrega áudio e vídeo de mais de mil sites através do yt-dlp. As playlists são tratadas item a item, os descarregamentos podem ser postos em fila, agendados e corridos vários ao mesmo tempo, e os ficheiros finais podem ser cortados por capítulos, limpos dos segmentos do SponsorBlock ou divididos em partes. Os cookies dão acesso a formatos privados ou premium, e o yt-dlp corre a partir de um terminal integrado com comandos e modelos à medida. Python, FFmpeg, Node, Deno e Aria2c são plugins que atualizas tu mesmo — é por isso que o APK é grande."
+  },
+  "packageName": "com.deniscerri.ytdl",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/deniscerri/ytdlnis",
+  "author": "Denis Çerri",
+  "categories": [
+    "media",
+    "utilities"
+  ],
+  "tags": [
+    "downloader",
+    "yt-dlp",
+    "video",
+    "audio",
+    "sponsorblock"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "deniscerri/ytdlnis",
+    "abiAssets": {
+      "arm64-v8a": "YTDLnis-*-foss-arm64-v8a-release.apk",
+      "armeabi-v7a": "YTDLnis-*-foss-armeabi-v7a-release.apk",
+      "x86": "YTDLnis-*-foss-x86-release.apk",
+      "x86_64": "YTDLnis-*-foss-x86_64-release.apk",
+      "universal": "YTDLnis-*-foss-universal-release.apk"
+    }
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-08",
+  "icon": {
+    "repo": "deniscerri/ytdlnis",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "deniscerri/ytdlnis",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/01.png"
+    },
+    {
+      "repo": "deniscerri/ytdlnis",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/02.png"
+    },
+    {
+      "repo": "deniscerri/ytdlnis",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/03.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "26:36:45:cb:52:72:eb:29:07:59:fe:1f:59:14:9a:e2:4d:f6:ce:17:1e:9f:66:66:ee:ad:98:1d:3f:c6:4c:95",
+    "pinnedAt": "2026-10-08"
+  }
+}

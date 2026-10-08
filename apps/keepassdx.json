@@ -1,0 +1,53 @@
+{
+  "id": "keepassdx",
+  "name": "KeePassDX",
+  "summary": "Cofre local de palavras-passe e passkeys em ficheiros KeePass, sem conta nem servidor",
+  "description": {
+    "en": "A local password and passkey manager: it opens and edits .kdb and .kdbx databases encrypted with AES, Twofish, ChaCha20 and Argon2, and stays compatible with KeePass, KeePassXC and KeeWeb. Unlock with a master key, a keyfile or your fingerprint. Autofill and a custom keyboard fill forms, and it handles one-time passwords, entry history, templates and group trees. No account and no server: the database file is the app.",
+    "pt": "Um gestor local de palavras-passe e passkeys: abre e edita bases de dados .kdb e .kdbx cifradas com AES, Twofish, ChaCha20 e Argon2, compatíveis com KeePass, KeePassXC e KeeWeb. Desbloqueias com chave mestra, ficheiro-chave ou impressão digital. O preenchimento automático e um teclado próprio preenchem formulários, e a app trata de palavras-passe de uso único, histórico, modelos e árvores de grupos. Sem conta e sem servidor: o ficheiro da base de dados é a app."
+  },
+  "packageName": "com.kunzisoft.keepass.libre",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/Kunzisoft/KeePassDX",
+  "author": "Jeremy Jamet / Kunzisoft",
+  "categories": [
+    "security",
+    "privacy"
+  ],
+  "tags": [
+    "passwords",
+    "passkeys",
+    "keepass",
+    "kdbx",
+    "vault",
+    "autofill"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "Kunzisoft/KeePassDX",
+    "assetPattern": "KeePassDX-*-libre.apk"
+  },
+  "addedAt": "2026-10-08",
+  "icon": {
+    "repo": "Kunzisoft/KeePassDX",
+    "path": "src/libre/fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "Kunzisoft/KeePassDX",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/screen1.png"
+    },
+    {
+      "repo": "Kunzisoft/KeePassDX",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/screen2.png"
+    },
+    {
+      "repo": "Kunzisoft/KeePassDX",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/screen3.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "7d:55:b8:af:21:03:81:aa:bf:96:0f:07:e1:7c:f7:85:7b:6d:2a:64:2c:a2:da:6b:f0:bd:f1:b2:00:36:2f:04",
+    "pinnedAt": "2026-10-08"
+  }
+}

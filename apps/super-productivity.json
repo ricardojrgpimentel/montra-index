@@ -1,0 +1,52 @@
+{
+  "id": "super-productivity",
+  "name": "Super Productivity",
+  "summary": "Tarefas com timeboxing e registo de tempo, a ligar o Jira, GitLab e GitHub ao teu dia",
+  "description": {
+    "en": "A task manager that puts timeboxing and time tracking next to the work: organise tasks in projects, tags and sub-tasks, lay the day out on a schedule next to your calendar events, and sort them on boards such as Kanban. It imports issues from Jira, GitLab, GitHub and others and logs work back. Sync through Dropbox, WebDAV or SuperSync is optional; it collects no data and needs no account.",
+    "pt": "Um gestor de tarefas que junta timeboxing e registo de tempo ao trabalho: organiza tarefas em projetos, etiquetas e subtarefas, dispõe o dia numa linha temporal ao lado dos eventos do calendário e ordena-as em quadros como o Kanban. Importa tarefas do Jira, GitLab, GitHub e outros e devolve os registos de trabalho. A sincronização por Dropbox, WebDAV ou SuperSync é opcional; não recolhe dados e não exige conta."
+  },
+  "packageName": "com.superproductivity.superproductivity",
+  "license": "MIT",
+  "sourceCode": "https://github.com/super-productivity/super-productivity",
+  "author": "super-productivity (johannesjo)",
+  "categories": [
+    "productivity"
+  ],
+  "tags": [
+    "tarefas",
+    "timeboxing",
+    "time-tracking",
+    "jira",
+    "sync",
+    "offline"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "super-productivity/super-productivity",
+    "assetPattern": "app-play-release.apk"
+  },
+  "addedAt": "2026-10-08",
+  "icon": {
+    "repo": "super-productivity/super-productivity",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "super-productivity/super-productivity",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1_task-list-dark.png"
+    },
+    {
+      "repo": "super-productivity/super-productivity",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2_task-list-light.png"
+    },
+    {
+      "repo": "super-productivity/super-productivity",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3_daily-summary.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "16:3c:87:6b:91:7d:76:20:a3:92:92:cc:9d:7c:3c:df:0c:3c:65:93:24:ab:45:9d:5d:af:d9:b9:97:11:17:aa",
+    "pinnedAt": "2026-10-08"
+  }
+}

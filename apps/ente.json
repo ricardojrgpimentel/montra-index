@@ -1,0 +1,57 @@
+{
+  "id": "ente",
+  "name": "Ente Photos",
+  "summary": "Guarda fotos e vídeos com cifra ponta a ponta: 10 GB grátis, planos pagos ou servidor teu",
+  "description": {
+    "en": "A cloud for photos and videos where end-to-end encryption means the server holds data it cannot read. Ente gives 10 GB free; more storage and family plans are paid. Apps exist for Android, iOS, desktop and web, with background uploads, face detection, semantic search, private sharing and collaborative albums. You can also self-host the server. Using it needs an account.",
+    "pt": "Uma nuvem para fotos e vídeos em que a cifra ponta a ponta significa que o servidor guarda dados que não consegue ler. O Ente dá 10 GB grátis; mais espaço e planos de família são pagos. Há apps para Android, iOS, computador e web, com carregamento em segundo plano, deteção de rostos, pesquisa semântica, partilha privada e álbuns colaborativos. Podes alojar o servidor tu mesmo. Usá-lo exige conta."
+  },
+  "packageName": "io.ente.photos.independent",
+  "license": "AGPL-3.0-or-later",
+  "sourceCode": "https://github.com/ente/ente",
+  "author": "ente",
+  "categories": [
+    "privacy",
+    "media",
+    "utilities"
+  ],
+  "tags": [
+    "e2ee",
+    "photos",
+    "cloud",
+    "self-hosted",
+    "backup",
+    "sync"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "ente/ente",
+    "assetPattern": "ente-photos-v*.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-08",
+  "icon": {
+    "repo": "ente/ente",
+    "path": "mobile/apps/photos/android/app/src/main/play/listings/en-US/graphics/icon/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "ente/ente",
+      "path": "mobile/apps/photos/android/app/src/main/play/listings/en-US/graphics/phone-screenshots/1.png"
+    },
+    {
+      "repo": "ente/ente",
+      "path": "mobile/apps/photos/android/app/src/main/play/listings/en-US/graphics/phone-screenshots/2.png"
+    },
+    {
+      "repo": "ente/ente",
+      "path": "mobile/apps/photos/android/app/src/main/play/listings/en-US/graphics/phone-screenshots/3.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "35:ed:56:81:b7:0b:b3:bd:35:d9:0d:85:6a:f5:69:4c:50:4d:ef:46:aa:d8:3f:77:7b:1c:67:5c:f4:51:35:0b",
+    "pinnedAt": "2026-10-08"
+  }
+}

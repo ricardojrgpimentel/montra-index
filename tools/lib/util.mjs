@@ -18,6 +18,21 @@ export const DIRS = {
   out: ROOT,
 };
 
+/**
+ * Onde é que um build escreve o índice.
+ *
+ * Um build com `--only` existe para fixar o pin de uma app, não para publicar um
+ * catálogo. Se escrevesse em `index.json`, quem seguisse o `docs/ADD_APP.md` à
+ * risca — `--only exemplo --deep 3 --update-pins`, e a seguir o pull request —
+ * deixava no diff o índice publicado reduzido a uma app, à espera de que o bot o
+ * reconstruísse. O índice parcial vai para o cache, que ninguém publica.
+ */
+export function indexPathFor(only) {
+  return only
+    ? path.join(DIRS.cache, `index-only-${only}.json`)
+    : path.join(DIRS.out, "index.json");
+}
+
 /* ------------------------------------------------------------------ logging */
 const isTTY = process.stdout.isTTY && !process.env.NO_COLOR;
 const c = (code) => (s) => (isTTY ? `\x1b[${code}m${s}\x1b[0m` : String(s));

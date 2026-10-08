@@ -1,0 +1,60 @@
+{
+  "id": "simpmusic",
+  "name": "SimpMusic",
+  "summary": "Cliente de YouTube Music sem anúncios, com letras palavra a palavra, equalizador de dez bandas e Android Auto",
+  "description": {
+    "en": "A YouTube Music client with ad-free background playback, offline caching, a ten-band equaliser, word-by-word lyrics and Android Auto. It reads YouTube Music itself and layers on Spotify Canvas, SponsorBlock segments and Return YouTube Dislike counts; synced playlists and multi-account sign-in go through your YouTube Music account. The 256 kbps streams require YouTube Music Premium and AI lyric translation requires your own OpenAI or Gemini key. The project calls the app beta and warns that it can crash.",
+    "pt": "Cliente de YouTube Music com reprodução em segundo plano sem anúncios, cache offline, equalizador de dez bandas, letras palavra a palavra e Android Auto. Lê o próprio YouTube Music e acrescenta Spotify Canvas, segmentos do SponsorBlock e contagens do Return YouTube Dislike; as playlists sincronizadas e a sessão com várias contas passam pela tua conta de YouTube Music. Os streams de 256 kbps exigem YouTube Music Premium e a tradução de letras por IA exige a tua própria chave da OpenAI ou do Gemini. O projeto diz que a app está em beta e avisa que pode fechar inesperadamente."
+  },
+  "packageName": "com.maxrave.simpmusic",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/maxrave-dev/SimpMusic",
+  "author": "maxrave-dev",
+  "categories": [
+    "media",
+    "multimedia"
+  ],
+  "tags": [
+    "youtube-music",
+    "music",
+    "ad-free",
+    "lyrics",
+    "android-auto"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "maxrave-dev/SimpMusic",
+    "abiAssets": {
+      "arm64-v8a": "SimpMusic-foss-arm64-v8a-release.apk",
+      "armeabi-v7a": "SimpMusic-foss-armeabi-v7a-release.apk",
+      "x86_64": "SimpMusic-foss-x86_64-release.apk",
+      "universal": "SimpMusic-foss-universal-release.apk"
+    }
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-08",
+  "icon": {
+    "repo": "maxrave-dev/SimpMusic",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "maxrave-dev/SimpMusic",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1.jpg"
+    },
+    {
+      "repo": "maxrave-dev/SimpMusic",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2.jpg"
+    },
+    {
+      "repo": "maxrave-dev/SimpMusic",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3.jpg"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "76:c5:3b:d8:13:ae:8f:1c:e2:77:8f:78:14:b5:15:78:57:19:bf:9a:82:c6:be:e0:3b:8b:2d:fd:70:60:55:a1",
+    "pinnedAt": "2026-10-08"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "materialfiles",
+  "name": "Material Files",
+  "summary": "Gestor de ficheiros local: navega, extrai arquivos e liga-te a servidores FTP, SFTP, SMB e WebDAV",
+  "description": {
+    "en": "A Material Design file manager for local storage: move, copy, rename, compress and extract, with breadcrumbs and optional root access. It reaches FTP, SFTP, SMB and WebDAV servers, so network shares appear like folders. It uses Linux system calls and the Java NIO2 API instead of parsing the output of ls, so symbolic links, file permissions and SELinux context come through. No account and no server of its own.",
+    "pt": "Um gestor de ficheiros Material Design para o armazenamento local: move, copia, renomeia, comprime e extrai, com breadcrumbs e acesso root opcional. Chega a servidores FTP, SFTP, SMB e WebDAV, por isso as partilhas de rede aparecem como pastas. Usa chamadas ao sistema Linux e a API Java NIO2 em vez de interpretar a saída do ls, por isso ligações simbólicas, permissões de ficheiro e contexto SELinux são respeitados. Sem conta e sem servidor próprio."
+  },
+  "packageName": "me.zhanghai.android.files",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/zhanghai/MaterialFiles",
+  "author": "Hai Zhang (zhanghai)",
+  "categories": [
+    "tools",
+    "utilities",
+    "system"
+  ],
+  "tags": [
+    "files",
+    "file-manager",
+    "archives",
+    "ftp",
+    "smb",
+    "root"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "zhanghai/MaterialFiles",
+    "abiAssets": {
+      "universal": "app-release-universal.apk"
+    }
+  },
+  "addedAt": "2026-10-08",
+  "icon": {
+    "repo": "zhanghai/MaterialFiles",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "zhanghai/MaterialFiles",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/1.png"
+    },
+    {
+      "repo": "zhanghai/MaterialFiles",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/2.png"
+    },
+    {
+      "repo": "zhanghai/MaterialFiles",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/3.png"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "87:3b:9b:60:c7:7c:f7:f3:cd:5f:ae:66:d0:fe:11:2c:4a:86:97:3e:11:8e:e8:a2:9c:34:6c:4c:67:3c:97:f0",
+    "pinnedAt": "2026-10-08"
+  }
+}

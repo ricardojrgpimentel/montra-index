@@ -1,0 +1,54 @@
+{
+  "id": "pixiv-shaft",
+  "name": "Pixiv-Shaft",
+  "summary": "Cliente não oficial do Pixiv: ilustrações, manga e novels, com filtros, downloads e IA local",
+  "description": {
+    "en": "An unofficial Pixiv client. It browses illustrations, manga and novels with six sort orders, filters for upload period, bookmarks, aspect ratio and resolution, rankings, FANBOX, pixiv COMIC, local txt files and reverse image search. Downloads queue, resume and rename in batch. On-device AI upscales, cuts out characters, translates manga and interpolates ugoira. Sorting a keyword by popularity uses shared resources: without Pixiv Premium it falls back to a free quota.",
+    "pt": "Cliente não oficial do Pixiv. Navega ilustrações, manga e novels com seis ordens, filtros de período, favoritos, proporção e resolução, rankings, FANBOX, pixiv COMIC, ficheiros txt locais e pesquisa de imagem inversa. Os downloads entram em fila, retomam e são renomeados em lote. A IA corre no dispositivo para ampliar, recortar personagens, traduzir manga e interpolar ugoira. Ordenar por popularidade usa recursos partilhados: sem Pixiv Premium cai na quota gratuita."
+  },
+  "packageName": "ceui.pixiv.pshaft",
+  "license": "GPL-2.0-or-later",
+  "sourceCode": "https://github.com/CeuiLiSA/Pixiv-Shaft",
+  "author": "CeuiLiSA",
+  "categories": [
+    "multimedia",
+    "reading",
+    "graphics"
+  ],
+  "tags": [
+    "pixiv",
+    "illustrations",
+    "manga",
+    "novels",
+    "downloader",
+    "upscaling"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "CeuiLiSA/Pixiv-Shaft",
+    "assetPattern": "PixShaft_*_classic.apk"
+  },
+  "addedAt": "2026-10-08",
+  "icon": {
+    "repo": "CeuiLiSA/Pixiv-Shaft",
+    "path": "app/src/main/ic_launcher-playstore.png"
+  },
+  "screenshots": [
+    {
+      "repo": "CeuiLiSA/Pixiv-Shaft",
+      "path": "snap/pixshaft/frames/home.webp"
+    },
+    {
+      "repo": "CeuiLiSA/Pixiv-Shaft",
+      "path": "snap/pixshaft/frames/detail.webp"
+    },
+    {
+      "repo": "CeuiLiSA/Pixiv-Shaft",
+      "path": "snap/pixshaft/frames/download.webp"
+    }
+  ],
+  "verification": {
+    "signingCertSha256": "c6:f9:57:47:17:4c:b6:79:2d:bd:c2:04:91:c4:bd:c3:ad:84:ea:f8:fb:7a:7f:c8:8b:b4:4c:0a:77:33:54:f0",
+    "pinnedAt": "2026-10-08"
+  }
+}
