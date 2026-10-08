@@ -23,6 +23,10 @@
     "privacidade",
     "no-gms"
   ],
+  "icon": {
+    "repo": "NextAlone/Nagram",
+    "path": "TMessagesProj/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+  },
   "release": {
     "provider": "github",
     "repo": "NextAlone/Nagram",

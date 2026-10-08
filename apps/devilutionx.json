@@ -22,6 +22,10 @@
     "arpg",
     "offline"
   ],
+  "icon": {
+    "repo": "diasurgical/devilutionX",
+    "path": "android-project/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+  },
   "links": {
     "website": "https://devilutionx.com",
     "docs": "https://github.com/diasurgical/devilutionX/wiki"

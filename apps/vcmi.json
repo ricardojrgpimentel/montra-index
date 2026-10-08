@@ -18,6 +18,10 @@
     "motor-de-jogo",
     "multijogador"
   ],
+  "icon": {
+    "repo": "vcmi/vcmi",
+    "path": "android/vcmi-app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+  },
   "links": {
     "website": "https://vcmi.eu",
     "docs": "https://vcmi.eu/download/"

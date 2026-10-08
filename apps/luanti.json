@@ -18,6 +18,10 @@
     "mods",
     "multijogador"
   ],
+  "icon": {
+    "repo": "minetest/minetest",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
   "links": {
     "website": "https://www.luanti.org",
     "docs": "https://wiki.luanti.org",

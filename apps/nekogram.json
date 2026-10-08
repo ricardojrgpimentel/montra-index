@@ -23,6 +23,10 @@
     "mensagens",
     "no-gms"
   ],
+  "icon": {
+    "repo": "Nekogram/Nekogram",
+    "path": "TMessagesProj/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+  },
   "links": {
     "website": "https://nekogram.app"
   },

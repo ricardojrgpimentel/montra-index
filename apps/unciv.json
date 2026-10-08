@@ -20,6 +20,10 @@
     "mods",
     "offline"
   ],
+  "icon": {
+    "repo": "yairm210/Unciv",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
   "links": {
     "website": "https://unciv.app",
     "donate": "https://www.patreon.com/yairm210"

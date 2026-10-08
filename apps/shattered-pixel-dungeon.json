@@ -19,6 +19,10 @@
     "pixel-art",
     "offline"
   ],
+  "icon": {
+    "repo": "00-Evan/shattered-pixel-dungeon",
+    "path": "android/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+  },
   "links": {
     "website": "https://shatteredpixel.com/shatteredpd/"
   },

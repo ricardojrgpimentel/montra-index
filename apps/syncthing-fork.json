@@ -24,6 +24,10 @@
     "files",
     "no-cloud"
   ],
+  "icon": {
+    "repo": "Catfriend1/syncthing-android",
+    "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+  },
   "links": {
     "website": "https://syncthing.net"
   },

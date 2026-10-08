@@ -19,6 +19,10 @@
     "automacao",
     "sem-ads"
   ],
+  "icon": {
+    "repo": "d4rken-org/sdmaid-se",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
   "release": {
     "provider": "github",
     "repo": "d4rken-org/sdmaid-se",

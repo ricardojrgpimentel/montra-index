@@ -11,6 +11,21 @@ name: build-index
 on:
   schedule:
     - cron: "17 4 * * *"
+  # Um push que mexa no catálogo reconstrói logo, em vez de esperar pelas 04:17.
+  # O agendamento do GitHub é best-effort — pode atrasar-se, e desliga-se sozinho
+  # depois de 60 dias sem actividade no repositório. Acrescentar uma app não pode
+  # depender disso: quem faz merge de uma entrada quer vê-la publicada, não quer
+  # descobrir no dia seguinte que o cron não correu.
+  #
+  # Não há risco de ciclo: o commit do próprio bot muda index.json, index.json.sig,
+  # icons/ e screenshots/, e nada disto está nesta lista — e um push feito com o
+  # GITHUB_TOKEN não dispara workflows de qualquer maneira.
+  push:
+    branches: [main]
+    paths:
+      - "apps/**"
+      - "tools/**"
+      - "schema/**"
   workflow_dispatch:
     inputs:
       deep:

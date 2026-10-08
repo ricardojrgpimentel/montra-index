@@ -19,6 +19,10 @@
     "offline",
     "sem-ads"
   ],
+  "icon": {
+    "repo": "chrisboyle/sgtpuzzles",
+    "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+  },
   "links": {
     "website": "https://www.chiark.greenend.org.uk/~sgtatham/puzzles/"
   },
