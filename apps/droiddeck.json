@@ -1,0 +1,60 @@
+{
+  "id": "droiddeck",
+  "name": "DroidDeck",
+  "summary": "Steam em Big Picture e jogos de Windows no Android, com Proton ARM64 — mas só em GPUs Adreno",
+  "description": {
+    "en": "A SteamOS-like environment on Android: Valve's Steam client in Big Picture, Windows games through Valve's ARM64 Proton, and a Linux desktop where Flathub apps and emulators can be installed. No root is needed, but the hardware list is short — a supported Adreno GPU (730 or newer, or 8xx), Android 9 or newer and arm64. Adreno 6xx is experimental, and Mali, Xclipse, PowerVR and Adreno 710 are unsupported. Budget about 3 GB for the runtime and 1.1 GB more for the desktop, and turn off \"Restrict child processes\" in Developer options before the first launch. Steam is Valve's proprietary client and needs an account; frame generation needs your own copy of Lossless Scaling. The project has no website: the APK comes from its GitHub releases.",
+    "pt": "Um ambiente tipo SteamOS no Android: o cliente Steam da Valve em Big Picture, jogos de Windows através do Proton ARM64 da Valve, e um ambiente de trabalho Linux onde se instalam aplicações do Flathub e emuladores. Não é preciso root, mas a lista de hardware é curta — uma GPU Adreno suportada (730 ou mais recente, ou 8xx), Android 9 ou mais recente e arm64. A Adreno 6xx é experimental, e Mali, Xclipse, PowerVR e Adreno 710 não são suportadas. Conta com cerca de 3 GB para o runtime e mais 1,1 GB para o ambiente de trabalho, e desliga o \"Restrict child processes\" nas opções de programador antes do primeiro arranque. O Steam é o cliente proprietário da Valve e exige conta; a geração de fotogramas precisa da tua própria cópia do Lossless Scaling. O projeto não tem site: o APK vem das releases no GitHub."
+  },
+  "packageName": "com.droiddeck.launcher",
+  "license": "GPL-3.0-or-later",
+  "sourceCode": "https://github.com/Droid-Deck/DroidDeck",
+  "author": "Droid-Deck",
+  "categories": [
+    "games"
+  ],
+  "tags": [
+    "steam",
+    "proton",
+    "steamos",
+    "handheld",
+    "gaming",
+    "adreno"
+  ],
+  "antiFeatures": [
+    "nonFreeNet"
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "Droid-Deck/DroidDeck",
+    "assetPattern": "DroidDeck-*.apk",
+    "excludePattern": "*-*-*.apk"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-08",
+  "icon": {
+    "repo": "Droid-Deck/DroidDeck",
+    "path": "app/src/main/res/drawable-nodpi/logo.png"
+  },
+  "screenshots": [
+    {
+      "repo": "Droid-Deck/DroidDeck",
+      "path": "docs/releases/media/0.2.0/launcher-steam.jpg"
+    },
+    {
+      "repo": "Droid-Deck/DroidDeck",
+      "path": "docs/releases/media/0.2.0/launcher-games.jpg"
+    },
+    {
+      "repo": "Droid-Deck/DroidDeck",
+      "path": "docs/releases/media/0.2.0/linux-desktop.jpg"
+    }
+  ],
+  "notes": "O excludePattern \"*-*-*.apk\" tira as variantes antutu/ludashi/pubg: o APK principal só tem um hífen no nome, as variantes têm dois. Sem isto o assetPattern casava com quatro ficheiros. nonFreeNet porque o funcionamento depende do Steam, que é um serviço proprietário da Valve.",
+  "verification": {
+    "signingCertSha256": "b2:41:ea:7d:77:82:2d:39:b8:9d:32:27:e0:6f:3e:cf:62:ad:ec:6c:bf:d3:8a:d0:61:96:78:79:91:b5:d3:f0",
+    "pinnedAt": "2026-10-08"
+  }
+}
