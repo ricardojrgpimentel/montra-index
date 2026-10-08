@@ -31,5 +31,9 @@
   "verification": {
     "signingCertSha256": "d4:5f:76:0b:89:60:8b:4b:25:3a:3b:16:0d:c2:70:7f:1f:f4:e8:dd:8c:a4:d2:e8:e1:b8:1c:2c:72:d8:17:53",
     "pinnedAt": "2026-10-07"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=com.shatteredpixel.shatteredpixeldungeon&hl=en&gl=US"
   }
 }

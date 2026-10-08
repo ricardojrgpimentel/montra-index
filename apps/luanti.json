@@ -37,5 +37,9 @@
   "verification": {
     "signingCertSha256": "53:23:d1:a1:b4:f6:8b:e9:76:39:ee:c6:67:ed:f7:e4:e1:74:1a:8c:f5:22:3d:17:92:da:5d:1f:1d:6e:41:a7",
     "pinnedAt": "2026-10-07"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=net.minetest.minetest&hl=en&gl=US"
   }
 }

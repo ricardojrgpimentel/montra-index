@@ -28,5 +28,9 @@
   "verification": {
     "signingCertSha256": "4f:a1:cb:59:ea:4d:8c:a8:55:53:15:eb:a2:15:20:5f:66:79:75:ba:89:85:bb:e7:36:90:4f:21:bf:eb:be:af",
     "pinnedAt": "2026-10-07"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=com.swordfish.lemuroid&hl=en&gl=US"
   }
 }

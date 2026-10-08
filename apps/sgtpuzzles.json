@@ -31,5 +31,9 @@
   "verification": {
     "signingCertSha256": "f7:15:81:ec:7d:70:41:53:ba:c3:4a:b1:48:d9:25:68:3d:b9:20:71:22:a2:93:3b:28:c0:4c:a2:e4:f2:84:53",
     "pinnedAt": "2026-10-07"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=name.boyle.chris.sgtpuzzles&hl=en&gl=US"
   }
 }

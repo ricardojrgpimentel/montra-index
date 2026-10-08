@@ -36,5 +36,8 @@
   "verification": {
     "signingCertSha256": "5b:a2:56:3e:0d:13:fa:e2:ab:a0:67:d1:c2:30:cd:1c:86:3a:93:00:5c:10:d6:48:ce:5b:33:17:92:aa:0a:f1",
     "pinnedAt": "2026-10-07"
+  },
+  "playStore": {
+    "present": false
   }
 }

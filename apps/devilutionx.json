@@ -39,5 +39,9 @@
   "verification": {
     "signingCertSha256": "f9:44:67:3f:7a:19:4b:c1:7b:c6:90:cf:2f:b2:dc:3a:27:96:7b:b2:ad:d4:c5:7d:54:f3:90:96:ad:10:84:3d",
     "pinnedAt": "2026-10-07"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=org.diasurgical.devilutionx&hl=en&gl=US"
   }
 }

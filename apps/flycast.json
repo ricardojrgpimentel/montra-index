@@ -27,5 +27,9 @@
   "verification": {
     "signingCertSha256": "07:74:79:4c:54:c7:e4:63:00:47:54:e2:ca:ba:43:2a:20:57:d9:17:e6:4c:5e:24:46:06:06:a7:47:1b:13:95",
     "pinnedAt": "2026-10-07"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=com.flycast.emulator&hl=en&gl=US"
   }
 }

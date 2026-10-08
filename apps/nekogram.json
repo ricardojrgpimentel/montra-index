@@ -42,5 +42,9 @@
   "verification": {
     "signingCertSha256": "5c:e9:32:b9:70:19:9f:bd:a2:aa:e7:bf:21:e1:ad:9e:70:b0:80:9a:7b:1a:c9:4c:06:99:f5:d5:ad:a8:33:13",
     "pinnedAt": "2026-10-07"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=tw.nekomimi.nekogram&hl=en&gl=US"
   }
 }

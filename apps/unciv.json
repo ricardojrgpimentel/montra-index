@@ -33,5 +33,9 @@
   "verification": {
     "signingCertSha256": "7d:6e:6b:ea:76:81:61:c3:d8:da:8b:3f:b0:0d:ef:53:77:ef:fe:65:dc:72:68:48:2f:8f:77:9b:b4:fc:6e:2e",
     "pinnedAt": "2026-10-07"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=com.unciv.app&hl=en&gl=US"
   }
 }

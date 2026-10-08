@@ -35,5 +35,9 @@
   "verification": {
     "signingCertSha256": "26:20:79:25:96:2c:cd:73:f5:3b:e4:c4:99:9c:f2:53:32:85:31:41:9f:25:86:ae:25:10:4a:31:89:86:70:44",
     "pinnedAt": "2026-10-07"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=is.xyz.vcmi&hl=en&gl=US"
   }
 }
