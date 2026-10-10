@@ -1,7 +1,7 @@
 {
   "id": "unciv",
   "name": "Unciv",
-  "summary": "Remake livre do Civilization V, por turnos, com mods e multijogador",
+  "summary": "Free, turn-based Civilization V remake with mods and multiplayer",
   "description": {
     "en": "An open-source remake of Civ V for Android and desktop: tile-based strategy, technology trees, diplomacy, city management and mods. Small download, runs offline, and the ruleset is editable.",
     "pt": "Remake livre do Civ V para Android e desktop: estratégia por turnos, árvores de tecnologia, diplomacia, gestão de cidades e mods. Descarregamento pequeno, funciona offline e as regras são editáveis."
@@ -41,5 +41,8 @@
   "playStore": {
     "present": true,
     "url": "https://play.google.com/store/apps/details?id=com.unciv.app&hl=en&gl=US"
+  },
+  "summaryTranslations": {
+    "pt": "Remake livre do Civilization V, por turnos, com mods e multijogador"
   }
 }

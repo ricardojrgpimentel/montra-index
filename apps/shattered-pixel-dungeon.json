@@ -1,7 +1,7 @@
 {
   "id": "shattered-pixel-dungeon",
   "name": "Shattered Pixel Dungeon",
-  "summary": "Roguelike de masmorras com geração aleatória e progressão por runs",
+  "summary": "Dungeon roguelike with random generation and progression within each run",
   "description": {
     "en": "A traditional roguelike: randomly generated dungeons, permadeath, turn-based combat and five playable heroes, each with its own mechanics. A long-maintained expansion of Pixel Dungeon.",
     "pt": "Roguelike tradicional: masmorras geradas aleatoriamente, morte permanente, combate por turnos e cinco heróis com mecânicas próprias. Expansão do Pixel Dungeon mantida há anos."
@@ -39,5 +39,8 @@
   "playStore": {
     "present": true,
     "url": "https://play.google.com/store/apps/details?id=com.shatteredpixel.shatteredpixeldungeon&hl=en&gl=US"
+  },
+  "summaryTranslations": {
+    "pt": "Roguelike de masmorras com geração aleatória e progressão por runs"
   }
 }

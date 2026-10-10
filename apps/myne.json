@@ -1,7 +1,7 @@
 {
   "id": "myne",
   "name": "Myne",
-  "summary": "Descarrega livros do Projeto Gutenberg e lê ficheiros EPUB locais",
+  "summary": "Download Project Gutenberg books and read local EPUB files",
   "description": {
     "en": "Browse and download ebooks from Project Gutenberg, then read them on your device. Myne also imports local EPUB books, combining an online catalogue with a personal reading library.",
     "pt": "Permite procurar e descarregar livros do Projeto Gutenberg para os ler no dispositivo. Também importa livros EPUB locais, combinando um catálogo online com uma biblioteca pessoal de leitura."
@@ -58,5 +58,8 @@
   },
   "antiFeatures": [
     "nonFreeNet"
-  ]
+  ],
+  "summaryTranslations": {
+    "pt": "Descarrega livros do Projeto Gutenberg e lê ficheiros EPUB locais"
+  }
 }

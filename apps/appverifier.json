@@ -1,7 +1,7 @@
 {
   "id": "appverifier",
   "name": "AppVerifier",
-  "summary": "Verifica a identidade das apps através dos certificados de assinatura",
+  "summary": "Verify app identity through signing certificates",
   "description": {
     "en": "View and compare app signing certificate fingerprints against a built-in database or values shared by other people. Helps check whether an installed app has the expected signing identity.",
     "pt": "Mostra e compara os certificados de assinatura das apps com uma base de dados integrada ou valores partilhados por outras pessoas. Ajuda a confirmar se uma app instalada tem a identidade de assinatura esperada."
@@ -38,5 +38,8 @@
     "pinnedAt": "2026-10-08",
     "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial AppVerifier-13.apk (13). Corresponde também ao SHA-256 publicado no README do upstream."
   },
-  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/soupslurpr/AppVerifier/blob/HEAD/LICENSE.txt. Release oficial inspecionado: https://github.com/soupslurpr/AppVerifier/releases/download/13/AppVerifier-13.apk."
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/soupslurpr/AppVerifier/blob/HEAD/LICENSE.txt. Release oficial inspecionado: https://github.com/soupslurpr/AppVerifier/releases/download/13/AppVerifier-13.apk.",
+  "summaryTranslations": {
+    "pt": "Verifica a identidade das apps através dos certificados de assinatura"
+  }
 }

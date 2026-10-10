@@ -1,7 +1,7 @@
 {
   "id": "app-manager",
   "name": "App Manager",
-  "summary": "Gestor de pacotes completo: congela, desinstala, faz backup e inspeciona apps",
+  "summary": "Full package manager: freeze, uninstall, back up and inspect apps",
   "description": {
     "en": "A full-featured package manager for Android: uninstall and freeze system apps, back up APKs and data, inspect trackers, permissions and components, and browse what an app actually ships. Much more capable with ADB or root.",
     "pt": "Gestor de pacotes completo para Android: desinstala e congela apps de sistema, faz cópias de segurança de APKs e dados, inspeciona trackers, permissões e componentes, e mostra o que uma app realmente traz. Muito mais capaz com ADB ou root."
@@ -66,5 +66,8 @@
       "pt": "As funções básicas funcionam sem root. Para funções privilegiadas, escolhe Root ou ADB em Definições > Modo de operação. O App Manager não usa Shizuku."
     },
     "guideUrl": "https://muntashir.dev/AppManager/en/#subsec:Mode-of-Operation"
+  },
+  "summaryTranslations": {
+    "pt": "Gestor de pacotes completo: congela, desinstala, faz backup e inspeciona apps"
   }
 }

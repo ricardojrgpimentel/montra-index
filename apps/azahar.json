@@ -1,7 +1,7 @@
 {
   "id": "azahar",
   "name": "Azahar",
-  "summary": "Emulador de Nintendo 3DS, sucessor do Citra, com versão sem serviços Google",
+  "summary": "Nintendo 3DS emulator and Citra successor, with a build free of Google services",
   "description": {
     "en": "A 3DS emulator and the maintained continuation of Citra: runs commercial games with texture upscaling, save states and controller support. This entry tracks the vanilla build, without Google Play services.",
     "pt": "Emulador de 3DS e continuação mantida do Citra: corre jogos comerciais com melhoria de texturas, save states e suporte para comandos. Esta entrada segue a versão vanilla, sem serviços do Google Play."
@@ -39,5 +39,8 @@
   },
   "playStore": {
     "present": false
+  },
+  "summaryTranslations": {
+    "pt": "Emulador de Nintendo 3DS, sucessor do Citra, com versão sem serviços Google"
   }
 }

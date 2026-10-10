@@ -127,13 +127,13 @@ node tools/discover.mjs --inspect --limit 120 --inspect-limit 20 \
    Uma proposta já aberta é preservada, incluindo as tuas edições. Repetir o
    formulário não recria PRs que já fechaste; para retomar uma proposta, reabre o PR.
 3. No PR, usa **editar a entrada** para rever nome, resumo, categorias, tags e
-   imagens, completar `description.pt` e declarar requisitos de acesso quando
+   imagens, rever o resumo e a descrição em inglês, preservando a língua do projeto de origem e declarar requisitos de acesso quando
    aplicável. A categoria inicial é `utilities`, uma sugestão genérica para rever.
    A identificação GPL do GitHub não prova "or later": confirma o SPDX exato na
    licença de origem. O pin é observado nos APKs, mas a sua origem também precisa
    de confirmação humana.
 4. Marca a checklist no corpo do PR e escolhe **Ready for review**. O check de
-   revisão exige todas as confirmações e uma descrição portuguesa preenchida;
+   revisão exige todas as confirmações e uma descrição original preenchida;
    é normal falhar enquanto a proposta estiver em rascunho. Se o GitHub mostrar
    **Approve and run** para o workflow do PR criado pelo bot, autoriza essa execução.
 5. Depois de os checks passarem, faz merge. O `build-index` reconstrói, assina e
@@ -169,3 +169,12 @@ licença nenhuma, e a diferença é o que este catálogo insiste em tornar visí
 Ver [CONTRIBUTING.md](CONTRIBUTING.md) e [docs/ADD_APP.md](docs/ADD_APP.md). Em
 resumo: um ficheiro por app, licença livre, APK publicado em releases, mantido, e
 o package name verdadeiro.
+
+## Idiomas do catálogo
+
+Todas as entradas incluem `summary` e `description.en` em inglês. A língua nativa
+é preservada em `summaryTranslations` e `description` quando difere do inglês.
+As 80 entradas atuais têm resumos e descrições em português e inglês. Outras
+traduções podem ser acrescentadas por PR, sem alterar a identidade ou os APKs.
+A Montra escolhe o idioma atual, a língua base e depois inglês. Changelogs
+mantêm o texto de origem. Ver [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -1,7 +1,7 @@
 {
   "id": "devilutionx",
   "name": "DevilutionX",
-  "summary": "Motor que corre o Diablo original em Android, com melhorias de qualidade de vida",
+  "summary": "Engine for playing the original Diablo on Android, with quality-of-life improvements",
   "description": {
     "en": "An open-source reimplementation of the Diablo engine: it runs the original game data on Android with widescreen support, better controls, a shared stash, Hellfire support and quality-of-life fixes. It ships no game assets, so you need your own copy of the game files.",
     "pt": "Reimplementação livre do motor do Diablo: corre os ficheiros do jogo original em Android, com ecrã largo, melhores controlos, baú partilhado, suporte para Hellfire e correções de qualidade de vida. Não inclui os recursos do jogo, portanto precisas dos teus próprios ficheiros."
@@ -47,5 +47,8 @@
   "playStore": {
     "present": true,
     "url": "https://play.google.com/store/apps/details?id=org.diasurgical.devilutionx&hl=en&gl=US"
+  },
+  "summaryTranslations": {
+    "pt": "Motor que corre o Diablo original em Android, com melhorias de qualidade de vida"
   }
 }

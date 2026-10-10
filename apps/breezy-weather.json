@@ -1,7 +1,7 @@
 {
   "id": "breezy-weather",
   "name": "Breezy Weather",
-  "summary": "App de meteorologia com mais de 50 fontes de dados e widgets detalhados",
+  "summary": "Weather app with over 50 data sources and detailed widgets",
   "description": {
     "en": "A feature-rich weather app: over 50 data sources, hourly and daily forecasts, air quality, pollen, alerts, radar and a set of home screen widgets. Free of ads and trackers.",
     "pt": "App de meteorologia cheio de funcionalidades: mais de 50 fontes de dados, previsões horárias e diárias, qualidade do ar, pólen, alertas, radar e vários widgets de ecrã inicial. Sem anúncios nem rastreadores."
@@ -52,5 +52,8 @@
   "verification": {
     "signingCertSha256": "29:d4:35:f7:0a:a9:ae:c3:c1:fa:ff:7f:7f:fa:6e:15:78:50:88:d8:7f:06:ec:fc:ab:9c:3c:c6:2d:c2:69:d8",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "App de meteorologia com mais de 50 fontes de dados e widgets detalhados"
   }
 }

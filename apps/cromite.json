@@ -1,7 +1,7 @@
 {
   "id": "cromite",
   "name": "Cromite",
-  "summary": "Fork do Chromium com bloqueio de anúncios e patches de privacidade",
+  "summary": "Chromium fork with ad blocking and privacy patches",
   "description": {
     "en": "A Chromium fork with ad blocking, anti-fingerprinting patches, always-incognito options and removed Google integrations. Updated frequently, and not distributed on the Play Store because it would violate Play's policies.",
     "pt": "Fork do Chromium com bloqueio de anúncios, patches anti-fingerprinting, opções de incógnito permanente e integrações Google removidas. Atualizado com frequência e não distribuído na Play Store porque violaria as políticas da Play."
@@ -35,5 +35,8 @@
   "verification": {
     "signingCertSha256": "63:3f:a4:1d:82:11:d6:d0:91:6a:81:9b:89:66:8c:6d:e9:2e:64:23:2d:a6:7f:9d:16:fd:81:c3:b7:e9:23:ff",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Fork do Chromium com bloqueio de anúncios e patches de privacidade"
   }
 }

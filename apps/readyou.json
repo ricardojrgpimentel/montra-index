@@ -1,7 +1,7 @@
 {
   "id": "readyou",
   "name": "Read You",
-  "summary": "Leitor de RSS com Material You e sincronização com FreshRSS e Fever",
+  "summary": "RSS reader with Material You and FreshRSS and Fever sync",
   "description": {
     "en": "An RSS reader in Material You style: feed management, read/unread state, and optional synchronisation with FreshRSS, Fever, Google Reader or Miniflux accounts. Also imports and exports OPML.",
     "pt": "Leitor de RSS no estilo Material You: gestão de feeds, estado lido/não lido e sincronização opcional com contas FreshRSS, Fever, Google Reader ou Miniflux. Também importa e exporta OPML."
@@ -48,5 +48,8 @@
   "verification": {
     "signingCertSha256": "72:1e:40:43:c4:39:bd:70:c9:0f:46:ae:16:6d:dc:23:3f:c7:5c:12:35:bf:8c:b2:7b:99:a4:df:09:cc:3b:99",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Leitor de RSS com Material You e sincronização com FreshRSS e Fever"
   }
 }

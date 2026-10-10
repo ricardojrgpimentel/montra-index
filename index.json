@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T20:01:33.207Z",
+  "generatedAt": "2026-10-10T22:20:36.606Z",
   "generator": "montra-index build-index.mjs",
   "signingKeyId": "4009b8eb68228f4020e56ddfcfd5b625",
   "apps": [
     {
       "id": "accrescent",
       "name": "Accrescent",
-      "summary": "Loja de apps com catálogo assinado e certificados de instalação fixados",
+      "summary": "App store with a signed catalogue and pinned installation certificates",
       "description": {
         "en": "An Android app store focused on privacy and verified distribution, with signed catalogue metadata and pinned app signing keys. Installing apps does not require an account. The project is currently in alpha.",
         "pt": "Loja de apps Android focada na privacidade e na distribuição verificada, com metadados assinados e certificados de assinatura fixados. Não exige conta para instalar apps. O projeto está em fase alfa."
@@ -71,12 +71,15 @@
         "sha256": "40f97ac3ee659d8b1f91dba8b84449fe3c14e05c1e82754375252d8746e6b1f5",
         "size": 6954309,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Loja de apps com catálogo assinado e certificados de instalação fixados"
       }
     },
     {
       "id": "afwall",
       "name": "AFWall+",
-      "summary": "Firewall com root: controla o acesso à rede por app e tipo de ligação",
+      "summary": "Root firewall: control network access for each app and connection type",
       "description": {
         "en": "An Android firewall built on iptables. Choose which apps can access Wi-Fi, mobile data and other network types, manage profiles and inspect blocked connections. Requires root access; it does not create a local VPN to filter traffic. This entry tracks the Free release APK.",
         "pt": "Firewall Android baseado em iptables. Escolhe que apps podem usar Wi-Fi, dados móveis e outros tipos de ligação, gere perfis e consulta ligações bloqueadas. Requer acesso root; não cria uma VPN local para filtrar o tráfego. Esta entrada acompanha o APK Free da release."
@@ -149,12 +152,15 @@
         "sha256": "920f48c916a7eeddafe64403f03b7cce5c99682c03007cecde9bc7d60ef8d950",
         "size": 13088155,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Firewall com root: controla o acesso à rede por app e tipo de ligação"
       }
     },
     {
       "id": "app-manager",
       "name": "App Manager",
-      "summary": "Gestor de pacotes completo: congela, desinstala, faz backup e inspeciona apps",
+      "summary": "Full package manager: freeze, uninstall, back up and inspect apps",
       "description": {
         "en": "A full-featured package manager for Android: uninstall and freeze system apps, back up APKs and data, inspect trackers, permissions and components, and browse what an app actually ships. Much more capable with ADB or root.",
         "pt": "Gestor de pacotes completo para Android: desinstala e congela apps de sistema, faz cópias de segurança de APKs e dados, inspeciona trackers, permissões e componentes, e mostra o que uma app realmente traz. Muito mais capaz com ADB ou root."
@@ -236,12 +242,15 @@
         "sha256": "2540d6d9352acd8b04d6210140630a380abb1bc46ad4745c89ad97603dee3c40",
         "size": 28270163,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Gestor de pacotes completo: congela, desinstala, faz backup e inspeciona apps"
       }
     },
     {
       "id": "appverifier",
       "name": "AppVerifier",
-      "summary": "Verifica a identidade das apps através dos certificados de assinatura",
+      "summary": "Verify app identity through signing certificates",
       "description": {
         "en": "View and compare app signing certificate fingerprints against a built-in database or values shared by other people. Helps check whether an installed app has the expected signing identity.",
         "pt": "Mostra e compara os certificados de assinatura das apps com uma base de dados integrada ou valores partilhados por outras pessoas. Ajuda a confirmar se uma app instalada tem a identidade de assinatura esperada."
@@ -302,12 +311,15 @@
         "sha256": "e1b8c7d477fbd873bd46afcc8c2067b6cefb897532a1e81ccc41a40a2a4c4ad0",
         "size": 2512030,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Verifica a identidade das apps através dos certificados de assinatura"
       }
     },
     {
       "id": "azahar",
       "name": "Azahar",
-      "summary": "Emulador de Nintendo 3DS, sucessor do Citra, com versão sem serviços Google",
+      "summary": "Nintendo 3DS emulator and Citra successor, with a build free of Google services",
       "description": {
         "en": "A 3DS emulator and the maintained continuation of Citra: runs commercial games with texture upscaling, save states and controller support. This entry tracks the vanilla build, without Google Play services.",
         "pt": "Emulador de 3DS e continuação mantida do Citra: corre jogos comerciais com melhoria de texturas, save states e suporte para comandos. Esta entrada segue a versão vanilla, sem serviços do Google Play."
@@ -374,12 +386,15 @@
         "sha256": "b511d1d38012c5ab0dfdb4479335059bb89ef17acfbf0ba45e79107ed4185ba3",
         "size": 50187175,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Emulador de Nintendo 3DS, sucessor do Citra, com versão sem serviços Google"
       }
     },
     {
       "id": "breezy-weather",
       "name": "Breezy Weather",
-      "summary": "App de meteorologia com mais de 50 fontes de dados e widgets detalhados",
+      "summary": "Weather app with over 50 data sources and detailed widgets",
       "description": {
         "en": "A feature-rich weather app: over 50 data sources, hourly and daily forecasts, air quality, pollen, alerts, radar and a set of home screen widgets. Free of ads and trackers.",
         "pt": "App de meteorologia cheio de funcionalidades: mais de 50 fontes de dados, previsões horárias e diárias, qualidade do ar, pólen, alertas, radar e vários widgets de ecrã inicial. Sem anúncios nem rastreadores."
@@ -456,12 +471,15 @@
         "sha256": "829175ceb23d0e539f99b27d22ff10e06ba8d446ac070b28585a36316fd295d5",
         "size": 15737358,
         "abi": "arm64-v8a"
+      },
+      "summaryTranslations": {
+        "pt": "App de meteorologia com mais de 50 fontes de dados e widgets detalhados"
       }
     },
     {
       "id": "canta",
       "name": "Canta",
-      "summary": "Remove apps pré-instaladas e de utilizador com a ajuda do Shizuku",
+      "summary": "Remove preinstalled and user apps with Shizuku",
       "description": {
         "en": "Uninstalls pre-installed and user apps using Shizuku. Integrates the Universal Debloat List to explain packages and help choose what to remove, and can detect previously uninstalled apps. Requires Shizuku running and permission to use it. Removing critical system apps can cause problems, including a boot loop that needs a factory reset.",
         "pt": "Desinstala apps pré-instaladas e de utilizador através do Shizuku. Integra a Universal Debloat List para explicar os pacotes e ajudar a escolher o que remover, e deteta apps anteriormente desinstaladas. Precisa do Shizuku em execução e de autorização para o usar. Remover apps essenciais do sistema pode causar problemas, incluindo um ciclo de arranque que exija repor o telemóvel."
@@ -539,12 +557,15 @@
         "sha256": "7ad02041900c1ab2f2ffca0ecfc2d2c01f217a5894e92c95f37852ba975560ce",
         "size": 5022883,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Remove apps pré-instaladas e de utilizador com a ajuda do Shizuku"
       }
     },
     {
       "id": "capyreader",
       "name": "Capy Reader",
-      "summary": "Leitor RSS com feeds locais e sincronização com Feedbin, FreshRSS e Miniflux",
+      "summary": "RSS reader with local feeds and Feedbin, FreshRSS and Miniflux sync",
       "description": {
         "en": "Read RSS feeds locally or sync them with Feedbin, FreshRSS or Miniflux. Includes a full article reading mode. Stable releases are separate from the project's nightly builds.",
         "pt": "Lê feeds RSS localmente ou sincroniza-os com Feedbin, FreshRSS ou Miniflux. Inclui um modo de leitura do artigo completo. O catálogo usa os releases estáveis, separados das versões noturnas do projeto."
@@ -609,12 +630,15 @@
         "sha256": "6ff068efc58658c568f0288c71a2120ae637d35214c436e60ec19b779fa38833",
         "size": 13978180,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Leitor RSS com feeds locais e sincronização com Feedbin, FreshRSS e Miniflux"
       }
     },
     {
       "id": "catima",
       "name": "Catima",
-      "summary": "Organiza cartões de fidelização e apresenta os seus códigos de barras",
+      "summary": "Organise loyalty cards and display their barcodes",
       "description": {
         "en": "Store loyalty cards, barcodes and other scannable cards on your phone. Keeps a local collection of cards ready to show at the checkout, with no account required.",
         "pt": "Guarda cartões de fidelização, códigos de barras e outros cartões digitalizáveis no telemóvel. Mantém uma coleção local pronta a mostrar na caixa, sem exigir conta."
@@ -683,12 +707,15 @@
         "sha256": "271980b62f73137db2d843fb4fc35f103c4126d769f816d365206c5c1adff3a9",
         "size": 5311894,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Organiza cartões de fidelização e apresenta os seus códigos de barras"
       }
     },
     {
       "id": "cromite",
       "name": "Cromite",
-      "summary": "Fork do Chromium com bloqueio de anúncios e patches de privacidade",
+      "summary": "Chromium fork with ad blocking and privacy patches",
       "description": {
         "en": "A Chromium fork with ad blocking, anti-fingerprinting patches, always-incognito options and removed Google integrations. Updated frequently, and not distributed on the Play Store because it would violate Play's policies.",
         "pt": "Fork do Chromium com bloqueio de anúncios, patches anti-fingerprinting, opções de incógnito permanente e integrações Google removidas. Atualizado com frequência e não distribuído na Play Store porque violaria as políticas da Play."
@@ -748,12 +775,15 @@
         "sha256": "9db12af1af021f42b4371e76d0e9fe476a7085bbbbc76bc410a538d028bf6071",
         "size": 323809949,
         "abi": "arm64-v8a"
+      },
+      "summaryTranslations": {
+        "pt": "Fork do Chromium com bloqueio de anúncios e patches de privacidade"
       }
     },
     {
       "id": "databackup",
       "name": "DataBackup",
-      "summary": "Cópias de segurança de apps e dados com root, na variante FOSS",
+      "summary": "Back up apps and data with root, using the FOSS build",
       "description": {
         "en": "Backs up and restores Android apps and their data with root access. Supports multiple users and profiles. This entry selects only the FOSS APKs; premium builds are separate packages and are excluded. The stable release is older than the ongoing development on the source branches.",
         "pt": "Cria e restaura cópias de segurança de apps Android e dos seus dados com acesso root. Suporta vários utilizadores e perfis. Esta entrada escolhe apenas os APKs FOSS; as builds premium têm outro pacote e ficam excluídas. A release estável é anterior ao desenvolvimento que continua nos ramos de código."
@@ -876,12 +906,15 @@
       },
       "warnings": [
         "versionCode difere entre ABIs (3501194, 3501193, 3501191, 3501192); a usar 3501194"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Cópias de segurança de apps e dados com root, na variante FOSS"
+      }
     },
     {
       "id": "devilutionx",
       "name": "DevilutionX",
-      "summary": "Motor que corre o Diablo original em Android, com melhorias de qualidade de vida",
+      "summary": "Engine for playing the original Diablo on Android, with quality-of-life improvements",
       "description": {
         "en": "An open-source reimplementation of the Diablo engine: it runs the original game data on Android with widescreen support, better controls, a shared stash, Hellfire support and quality-of-life fixes. It ships no game assets, so you need your own copy of the game files.",
         "pt": "Reimplementação livre do motor do Diablo: corre os ficheiros do jogo original em Android, com ecrã largo, melhores controlos, baú partilhado, suporte para Hellfire e correções de qualidade de vida. Não inclui os recursos do jogo, portanto precisas dos teus próprios ficheiros."
@@ -953,12 +986,15 @@
         "sha256": "c5a53ff35223e367eba75ef8ed2caa31ea8e78792d8aff00f2cee51a0566b28f",
         "size": 18840504,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Motor que corre o Diablo original em Android, com melhorias de qualidade de vida"
       }
     },
     {
       "id": "droidify",
       "name": "Droid-ify",
-      "summary": "Cliente de F-Droid rápido e sem distrações, com Material You",
+      "summary": "Fast, distraction-free F-Droid client with Material You",
       "description": {
         "en": "A clutter-free F-Droid client: fast repository sync, instant search, Material You theming, and support for the IzzyOnDroid repository. Good when you mainly want to search, install and forget.",
         "pt": "Cliente de F-Droid sem distrações: sincronização rápida de repositórios, pesquisa instantânea, temas Material You e suporte para o repositório IzzyOnDroid. Bom quando queres apenas procurar, instalar e seguir em frente."
@@ -1022,12 +1058,15 @@
         "sha256": "3e7934ff9b811c2f77794793381241095a02bac2d163bf922cb5a5a0ed25ca82",
         "size": 5997579,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente de F-Droid rápido e sem distrações, com Material You"
       }
     },
     {
       "id": "droiddeck",
       "name": "DroidDeck",
-      "summary": "Steam em Big Picture e jogos de Windows no Android, com Proton ARM64 — mas só em GPUs Adreno",
+      "summary": "Steam Big Picture and Windows games on Android with Proton ARM64, requiring an Adreno GPU",
       "description": {
         "en": "A SteamOS-like environment on Android: Valve's Steam client in Big Picture, Windows games through Valve's ARM64 Proton, and a Linux desktop where Flathub apps and emulators can be installed. No root is needed, but the hardware list is short — a supported Adreno GPU (730 or newer, or 8xx), Android 9 or newer and arm64. Adreno 6xx is experimental, and Mali, Xclipse, PowerVR and Adreno 710 are unsupported. Budget about 3 GB for the runtime and 1.1 GB more for the desktop, and turn off \"Restrict child processes\" in Developer options before the first launch. Steam is Valve's proprietary client and needs an account; frame generation needs your own copy of Lossless Scaling. The project has no website: the APK comes from its GitHub releases.",
         "pt": "Um ambiente tipo SteamOS no Android: o cliente Steam da Valve em Big Picture, jogos de Windows através do Proton ARM64 da Valve, e um ambiente de trabalho Linux onde se instalam aplicações do Flathub e emuladores. Não é preciso root, mas a lista de hardware é curta — uma GPU Adreno suportada (730 ou mais recente, ou 8xx), Android 9 ou mais recente e arm64. A Adreno 6xx é experimental, e Mali, Xclipse, PowerVR e Adreno 710 não são suportadas. Conta com cerca de 3 GB para o runtime e mais 1,1 GB para o ambiente de trabalho, e desliga o \"Restrict child processes\" nas opções de programador antes do primeiro arranque. O Steam é o cliente proprietário da Valve e exige conta; a geração de fotogramas precisa da tua própria cópia do Lossless Scaling. O projeto não tem site: o APK vem das releases no GitHub."
@@ -1094,12 +1133,15 @@
         "sha256": "22600e354e2e1337ca99d27df33a8e0af9f3d0c01508458a286f1691e1f927cf",
         "size": 38253215,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Steam em Big Picture e jogos de Windows no Android, com Proton ARM64 — mas só em GPUs Adreno"
       }
     },
     {
       "id": "ente",
       "name": "Ente Photos",
-      "summary": "Guarda fotos e vídeos com cifra ponta a ponta: 10 GB grátis, planos pagos ou servidor teu",
+      "summary": "End-to-end encrypted photos and videos: 10 GB free, paid plans or your own server",
       "description": {
         "en": "A cloud for photos and videos where end-to-end encryption means the server holds data it cannot read. Ente gives 10 GB free; more storage and family plans are paid. Apps exist for Android, iOS, desktop and web, with background uploads, face detection, semantic search, private sharing and collaborative albums. You can also self-host the server. Using it needs an account.",
         "pt": "Uma nuvem para fotos e vídeos em que a cifra ponta a ponta significa que o servidor guarda dados que não consegue ler. O Ente dá 10 GB grátis; mais espaço e planos de família são pagos. Há apps para Android, iOS, computador e web, com carregamento em segundo plano, deteção de rostos, pesquisa semântica, partilha privada e álbuns colaborativos. Podes alojar o servidor tu mesmo. Usá-lo exige conta."
@@ -1168,12 +1210,15 @@
         "sha256": "c587fb2ef7e69448a5704c3398533cb4b284dec479904cbad621c15b5dd4e201",
         "size": 365378331,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Guarda fotos e vídeos com cifra ponta a ponta: 10 GB grátis, planos pagos ou servidor teu"
       }
     },
     {
       "id": "f-droid",
       "name": "F-Droid",
-      "summary": "O cliente oficial do repositório F-Droid de aplicações livres",
+      "summary": "The official client for the F-Droid free software repository",
       "description": {
         "en": "The official client for the F-Droid catalogue: browse free software apps, install them, and get updates without any Google account. Every app it ships is built from source by F-Droid's own build servers.",
         "pt": "O cliente oficial do catálogo F-Droid: navega por aplicações de software livre, instala-as e recebe atualizações sem qualquer conta Google. Tudo o que distribui é compilado a partir do código-fonte pelos servidores do F-Droid."
@@ -1238,12 +1283,15 @@
         "sha256": "605479594b0b372427ca624840f35de3d65fadfbc9d14acf4904191fa83a0ab5",
         "size": 12688611,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "O cliente oficial do repositório F-Droid de aplicações livres"
       }
     },
     {
       "id": "fairemail",
       "name": "FairEmail",
-      "summary": "Cliente de email com várias contas e controlos de privacidade nas mensagens",
+      "summary": "Email client with multiple accounts and message privacy controls",
       "description": {
         "en": "An email client supporting IMAP, POP3 and SMTP, multiple accounts and a unified inbox. Includes controls for remote images and links to reduce email tracking. Requires your own email account; some convenience features are paid.",
         "pt": "Cliente de email com suporte para IMAP, POP3 e SMTP, várias contas e caixa de entrada unificada. Inclui controlos para imagens remotas e ligações que ajudam a reduzir o rastreamento. Exige uma conta de email própria; algumas funcionalidades são pagas."
@@ -1312,12 +1360,15 @@
         "sha256": "666b9f4ada53f69199355f1ccc2bed73e01fa23786fc0189cf81cc51932dc5a9",
         "size": 29473364,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente de email com várias contas e controlos de privacidade nas mensagens"
       }
     },
     {
       "id": "findroid",
       "name": "Findroid",
-      "summary": "Cliente Jellyfin nativo com foco em downloads offline e UI Material You",
+      "summary": "Native Jellyfin client focused on offline downloads and Material You",
       "description": {
         "en": "A third-party Jellyfin client built with native Android UI instead of a webview: fast, Material You themed, with solid offline download support and external player integration.",
         "pt": "Cliente Jellyfin de terceiros construído com interface nativa em vez de webview: rápido, com tema Material You, bom suporte de downloads offline e integração com reprodutores externos."
@@ -1392,12 +1443,15 @@
         "sha256": "42594a3f84972caf0ff3561b5ad1ea1d2c0dbdcdd1bfba17781c93b046621a54",
         "size": 38696636,
         "abi": "arm64-v8a"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente Jellyfin nativo com foco em downloads offline e UI Material You"
       }
     },
     {
       "id": "flashdim",
       "name": "FlashDim",
-      "summary": "Ajusta a intensidade da lanterna em dispositivos Android compatíveis",
+      "summary": "Adjust flashlight brightness on compatible Android devices",
       "description": {
         "en": "Control flashlight brightness on supported devices running Android 13 or later. Includes shortcuts and quick settings controls. Available brightness levels depend on the phone hardware.",
         "pt": "Controla a intensidade da lanterna em dispositivos compatíveis com Android 13 ou posterior. Inclui atalhos e controlos nas definições rápidas. Os níveis de intensidade disponíveis dependem do hardware do telemóvel."
@@ -1458,12 +1512,15 @@
         "sha256": "c955995e5f9b52a402ae68135442afcaa65abe36708ff5f443bde7d875c57e00",
         "size": 2312818,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Ajusta a intensidade da lanterna em dispositivos Android compatíveis"
       }
     },
     {
       "id": "flycast",
       "name": "Flycast",
-      "summary": "Emulador de Sega Dreamcast, Naomi e Atomiswave",
+      "summary": "Sega Dreamcast, Naomi and Atomiswave emulator",
       "description": {
         "en": "A multi-platform Dreamcast, Naomi, Naomi 2 and Atomiswave emulator with Vulkan and OpenGL renderers, widescreen hacks, per-game settings and support for physical controllers.",
         "pt": "Emulador de Dreamcast, Naomi, Naomi 2 e Atomiswave para várias plataformas, com renderizadores Vulkan e OpenGL, ajustes para ecrã largo, configurações por jogo e suporte para comandos físicos."
@@ -1525,12 +1582,15 @@
         "sha256": "1ac54d77b8283f6d58d077396d0916ec12c15b7e4ada9d957836a64590756c00",
         "size": 36280670,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Emulador de Sega Dreamcast, Naomi e Atomiswave"
       }
     },
     {
       "id": "forgetmenot",
       "name": "ForgetMeNot",
-      "summary": "Cartões de memorização para estudar, feitos à volta de ser simples e rápido",
+      "summary": "Simple, fast flashcards for studying",
       "description": {
         "en": "A flashcard app for memorising information, built around simplicity, usability and speed. Decks and cards live on the phone, it works without a network, and you can export what you made instead of leaving it locked in the app.",
         "pt": "Aplicação de cartões (flashcards) para memorizar informação, feita à volta de simplicidade, usabilidade e rapidez. Os baralhos e os cartões ficam no telemóvel, funciona sem rede, e podes exportar o que fizeste em vez de o deixar preso na app."
@@ -1587,12 +1647,15 @@
         "sha256": "5412f708562367d50e620a4900125c04d9d4d26311124b2015b205832d50c38a",
         "size": 5131380,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cartões de memorização para estudar, feitos à volta de ser simples e rápido"
       }
     },
     {
       "id": "greenstash",
       "name": "GreenStash",
-      "summary": "Planeia objetivos de poupança, com uma imagem em cada um para te manter motivado",
+      "summary": "Plan savings goals with an image for each one to keep you motivated",
       "description": {
         "en": "A savings goal tracker. You create a goal with an amount and a date, give it a picture, and log deposits as you go; it shows how far along each goal is and what is left. No account, no ads, and the data stays on the phone.",
         "pt": "Aplicação para planear e acompanhar objetivos de poupança. Crias um objetivo com um valor e uma data, pões-lhe uma imagem e registas os depósitos à medida que acontecem; ela mostra quanto falta para cada um. Sem conta, sem publicidade, e os dados ficam no telemóvel."
@@ -1655,12 +1718,15 @@
         "sha256": "81c272cde2dd28b3342f74774a30d6e7330b928a780562a4f0ab4283eddf51ea",
         "size": 7207888,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Planeia objetivos de poupança, com uma imagem em cada um para te manter motivado"
       }
     },
     {
       "id": "gymmane",
       "name": "GymMane",
-      "summary": "Registo de ginásio offline: escolhes os músculos, registas as séries e vês a progressão",
+      "summary": "Offline gym log: choose muscles, record sets and track progress",
       "description": {
         "en": "An offline gym log. You tap the muscles you want to train, log your sets during the session, and it keeps the history and the progression per exercise. The screens are the phone's own: today, body map, live session, progress, history, library and routines.",
         "pt": "Registo de treino que funciona sem rede. Tocas nos músculos que queres treinar, registas as séries durante a sessão, e a app guarda o histórico e a progressão por exercício. Os ecrãs são os do telemóvel: hoje, mapa corporal, sessão em curso, progresso, histórico, biblioteca e rotinas."
@@ -1753,12 +1819,15 @@
       },
       "warnings": [
         "versionCode difere entre ABIs (52, 51, 53); a usar 53"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Registo de ginásio offline: escolhes os músculos, registas as séries e vês a progressão"
+      }
     },
     {
       "id": "hail",
       "name": "Hail",
-      "summary": "Congela aplicações: desativa, esconde ou suspende sem as desinstalar",
+      "summary": "Freeze apps: disable, hide or suspend them without uninstalling",
       "description": {
         "en": "Freezes the apps you are not using: forces them to stop, disables, hides or suspends them, and brings them back when you need them again. The package keeps its data, so the state is reversible — nothing is uninstalled. Freezing what is idle cuts RAM and battery use, and a whole group can be frozen at once. It works through the system's own mechanisms and needs privileges for that: Shizuku, root, or another supported privileged mode. Available operations depend on the chosen mode.",
         "pt": "Congela as aplicações que não estás a usar: força-as a parar, desativa, esconde ou suspende, e devolve-as ao normal quando voltas a precisar delas. O pacote mantém os dados, por isso o estado é reversível — nada é desinstalado. Congelar o que está parado poupa RAM e bateria, e pode congelar-se um grupo inteiro de uma vez. Usa os mecanismos do próprio sistema e precisa de privilégios para isso: Shizuku, root ou outro modo privilegiado suportado. As operações disponíveis dependem do modo escolhido."
@@ -1841,12 +1910,15 @@
         "sha256": "3be0c4a210b0472198ea3b675fcbd5720fa16288dcff119557644ea947003236",
         "size": 5760575,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Congela aplicações: desativa, esconde ou suspende sem as desinstalar"
       }
     },
     {
       "id": "harmonic",
       "name": "Harmonic",
-      "summary": "Cliente de Hacker News com navegação por comentários e leitura offline",
+      "summary": "Hacker News client with comment navigation and offline reading",
       "description": {
         "en": "A modern Hacker News client: collapsible threaded comments, saved stories, offline reading, font size and theme controls, and search. No account, no tracking, no ads.",
         "pt": "Cliente moderno do Hacker News: comentários em árvore que se colapsam, histórias guardadas, leitura offline, controlo de tamanho de letra e tema, e pesquisa. Sem conta, sem rastreio, sem anúncios."
@@ -1906,12 +1978,15 @@
         "sha256": "de65ca1f2ba6c6287cc464c4883c8db32d6b562bf56614aff0fe43869f4e1f00",
         "size": 7551235,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente de Hacker News com navegação por comentários e leitura offline"
       }
     },
     {
       "id": "imagetoolbox",
       "name": "Image Toolbox",
-      "summary": "Conjunto de ferramentas de imagem: conversão, filtros, OCR e edição em lote",
+      "summary": "Image tools for conversion, filters, OCR and batch editing",
       "description": {
         "en": "An image manipulation toolbox: format conversion, resizing, cropping, filters, background removal, OCR, EXIF editing and batch operations over hundreds of files. Everything runs on the device.",
         "pt": "Conjunto de ferramentas de manipulação de imagem: conversão de formato, redimensionamento, recorte, filtros, remoção de fundo, OCR, edição de EXIF e operações em lote sobre centenas de ficheiros. Tudo corre no dispositivo."
@@ -1990,12 +2065,15 @@
         "sha256": "7df1317a461dd46fba91225b098e4fb24b69118e3bedd641f8072e26aecd3c30",
         "size": 107826476,
         "abi": "arm64-v8a"
+      },
+      "summaryTranslations": {
+        "pt": "Conjunto de ferramentas de imagem: conversão, filtros, OCR e edição em lote"
       }
     },
     {
       "id": "install-with-options",
       "name": "Install with Options",
-      "summary": "Instala APKs e pacotes divididos com opções avançadas através do Shizuku",
+      "summary": "Install APKs and split packages with advanced options through Shizuku",
       "description": {
         "en": "Uses Shizuku to install APKs with advanced options, including test-only packages and split APKs, and batch-install multiple apps. Available flags depend on Android and granted privileges: it cannot bypass signature mismatches, and package downgrades may need root or a debug/test build.",
         "pt": "Usa o Shizuku para instalar APKs com opções avançadas, incluindo pacotes de teste e APKs divididos, e instalar várias apps em lote. As opções dependem do Android e dos privilégios concedidos: não contorna conflitos de assinatura, e baixar a versão de um pacote pode exigir root ou uma build de teste/debug."
@@ -2073,12 +2151,15 @@
         "sha256": "e448eb297733b7a194b27f47b502f2ae14d17b97e98b799925eb3dc0e15f937f",
         "size": 13092588,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Instala APKs e pacotes divididos com opções avançadas através do Shizuku"
       }
     },
     {
       "id": "jellyfin",
       "name": "Jellyfin",
-      "summary": "Cliente oficial do Jellyfin, o servidor de media caseiro livre",
+      "summary": "Official client for Jellyfin, the free home media server",
       "description": {
         "en": "The official Jellyfin Android client: browse and stream your own film, series and music library from your own server, with download for offline playback. This entry tracks the libre build, which excludes proprietary Google Cast libraries.",
         "pt": "Cliente Android oficial do Jellyfin: navega e transmite a tua biblioteca de filmes, séries e música a partir do teu próprio servidor, com descarregamento para ver offline. Esta entrada segue a build libre, que exclui as bibliotecas proprietárias do Google Cast."
@@ -2144,12 +2225,15 @@
         "sha256": "f9f4b3ab46cc9434df811194c2d4351417f4db83a4c1a0facd0a662d69533f7f",
         "size": 8964986,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente oficial do Jellyfin, o servidor de media caseiro livre"
       }
     },
     {
       "id": "jerboa",
       "name": "Jerboa",
-      "summary": "Cliente nativo de Lemmy, a alternativa federada ao Reddit",
+      "summary": "Native Lemmy client for the federated alternative to Reddit",
       "description": {
         "en": "A native Android client for Lemmy: browse any instance, post, comment and vote on a federated link aggregator that no single company controls. Supports multiple accounts across different instances.",
         "pt": "Cliente Android nativo para o Lemmy: navega em qualquer instância, publica, comenta e vota num agregador de links federado que nenhuma empresa controla. Suporta várias contas em instâncias diferentes."
@@ -2215,12 +2299,15 @@
         "sha256": "736b9b85ad8e889d56df34af4c11a39e32966f56645a97a646d602e37378def9",
         "size": 6149642,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente nativo de Lemmy, a alternativa federada ao Reddit"
       }
     },
     {
       "id": "keepassdx",
       "name": "KeePassDX",
-      "summary": "Cofre local de palavras-passe e passkeys em ficheiros KeePass, sem conta nem servidor",
+      "summary": "Local password and passkey vault in KeePass files, with no account or server",
       "description": {
         "en": "A local password and passkey manager: it opens and edits .kdb and .kdbx databases encrypted with AES, Twofish, ChaCha20 and Argon2, and stays compatible with KeePass, KeePassXC and KeeWeb. Unlock with a master key, a keyfile or your fingerprint. Autofill and a custom keyboard fill forms, and it handles one-time passwords, entry history, templates and group trees. No account and no server: the database file is the app.",
         "pt": "Um gestor local de palavras-passe e passkeys: abre e edita bases de dados .kdb e .kdbx cifradas com AES, Twofish, ChaCha20 e Argon2, compatíveis com KeePass, KeePassXC e KeeWeb. Desbloqueias com chave mestra, ficheiro-chave ou impressão digital. O preenchimento automático e um teclado próprio preenchem formulários, e a app trata de palavras-passe de uso único, histórico, modelos e árvores de grupos. Sem conta e sem servidor: o ficheiro da base de dados é a app."
@@ -2286,12 +2373,15 @@
         "sha256": "99dccd0c350be4a97dc7b90ccd3c83dfa41f8179f5db1a7c071c17cc0278cc3a",
         "size": 16746852,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cofre local de palavras-passe e passkeys em ficheiros KeePass, sem conta nem servidor"
       }
     },
     {
       "id": "keymapper",
       "name": "Key Mapper",
-      "summary": "Cria atalhos e macros para botões do telemóvel, teclados e comandos",
+      "summary": "Create shortcuts and macros for phone buttons, keyboards and controllers",
       "description": {
         "en": "Remap physical buttons, keyboard keys and game controller buttons to shortcuts and macros. Supports different press gestures and conditions for when mappings should run. Some actions require accessibility access or additional permissions. May promote the paid version on Google Play.",
         "pt": "Associa botões físicos, teclas de teclado e botões de comandos a atalhos e macros. Suporta diferentes gestos de pressão e condições de execução. Algumas ações exigem acesso de acessibilidade ou permissões adicionais. Pode promover a versão paga na Play Store."
@@ -2362,12 +2452,15 @@
         "sha256": "cb26fb63378bfac629721a49e81407cdf541bb4c2159a7bc6279d0b10994565d",
         "size": 15000244,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cria atalhos e macros para botões do telemóvel, teclados e comandos"
       }
     },
     {
       "id": "koreader",
       "name": "KOReader",
-      "summary": "Leitor de ebooks e PDF com dicionários, notas e gestão de biblioteca",
+      "summary": "Ebook and PDF reader with dictionaries, notes and library management",
       "description": {
         "en": "An ebook reader for PDF, EPUB, DjVu, CBZ and FB2 with reflow, dictionary lookup, highlights, page cropping and multi-column support. Built for e-ink devices but works well on Android tablets and phones.",
         "pt": "Leitor de ebooks para PDF, EPUB, DjVu, CBZ e FB2 com reflow, consulta de dicionário, destaques, recorte de páginas e suporte multi-coluna. Feito para e-ink, mas funciona bem em tablets e telefones Android."
@@ -2452,12 +2545,15 @@
       },
       "warnings": [
         "versionCode difere entre ABIs (119462, 119461); a usar 119462"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Leitor de ebooks e PDF com dicionários, notas e gestão de biblioteca"
+      }
     },
     {
       "id": "lemuroid",
       "name": "Lemuroid",
-      "summary": "Emulador tudo-em-um baseado em libretro, com interface simples",
+      "summary": "All-in-one emulator based on libretro, with a simple interface",
       "description": {
         "en": "An all-in-one emulator built on libretro cores: NES, SNES, Mega Drive, Game Boy, Game Boy Advance, PlayStation, PSP, arcade and more, with automatic controller mapping, save states, cloud sync via the system and a deliberately simple interface.",
         "pt": "Emulador tudo-em-um construído sobre núcleos libretro: NES, SNES, Mega Drive, Game Boy, Game Boy Advance, PlayStation, PSP, arcade e mais, com mapeamento automático de comandos, save states, sincronização pelo sistema e uma interface deliberadamente simples."
@@ -2519,12 +2615,15 @@
         "sha256": "d44cfa0cdc3e43fd91df97f625938366ccef9793b06a80b9e6fad97a6cd88e51",
         "size": 11985230,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Emulador tudo-em-um baseado em libretro, com interface simples"
       }
     },
     {
       "id": "libchecker",
       "name": "LibChecker",
-      "summary": "Mostra que bibliotecas e SDKs cada app traz, e o que mudou entre versões instaladas",
+      "summary": "See the libraries and SDKs in each app and changes between installed versions",
       "description": {
         "en": "Looks at the apps on your phone and at APK, split and APKS packages, and lists what is inside them: known SDKs and libraries matched against LibChecker-Rules, native libraries with their ABIs and 32/64-bit coverage, permissions, components, signing schemes and other package details. It also snapshots installed apps and compares them later, so you see what an update changed. Export a report and open it in a browser WebUI.",
         "pt": "Olha para as apps do teu telefone e para pacotes APK, split e APKS e lista o que está lá dentro: SDKs e bibliotecas conhecidos identificados pelas LibChecker-Rules, bibliotecas nativas com as suas ABIs e cobertura de 32/64 bits, permissões, componentes, esquemas de assinatura e outros detalhes do pacote. Também tira snapshots das apps instaladas e compara-os depois, para veres o que uma atualização mudou. Exporta o relatório e abre-o numa página WebUI no navegador."
@@ -2581,12 +2680,15 @@
         "sha256": "d10fc81fde48cc9dc697b389ae13f3c9dcdc07a5b04e811ff812f4314b95052d",
         "size": 4779938,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Mostra que bibliotecas e SDKs cada app traz, e o que mudou entre versões instaladas"
       }
     },
     {
       "id": "libretube",
       "name": "LibreTube",
-      "summary": "Frontend alternativo para YouTube que passa por instâncias Piped",
+      "summary": "Alternative YouTube frontend using Piped instances",
       "description": {
         "en": "Watches YouTube through Piped instances, so the device never talks to YouTube directly and no account is needed. Includes subscriptions without a Google account, playlists and background audio playback.",
         "pt": "Vê YouTube através de instâncias Piped, pelo que o dispositivo nunca fala diretamente com o YouTube e não é precisa conta. Inclui subscrições sem conta Google, listas de reprodução e áudio em segundo plano."
@@ -2647,12 +2749,15 @@
         "sha256": "437dbb55540ac573f864938fc3595f69fc13df5d568b237aded9935559fe1353",
         "size": 9253519,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Frontend alternativo para YouTube que passa por instâncias Piped"
       }
     },
     {
       "id": "luanti",
       "name": "Luanti",
-      "summary": "Plataforma de jogos voxel com mods, antes conhecida como Minetest",
+      "summary": "Voxel game platform with mods, formerly known as Minetest",
       "description": {
         "en": "A voxel game engine, not a game: install it and add games and mods from within the app. Supports single player, multiplayer servers and a large library of community content written in Lua.",
         "pt": "Um motor de jogos voxel, não um jogo: instala-se e acrescentam-se jogos e mods dentro da própria app. Suporta um jogador, servidores multijogador e uma biblioteca enorme de conteúdo comunitário escrito em Lua."
@@ -2746,12 +2851,15 @@
         "sha256": "58d4b9090ca2c837625eafc5c62668224cf1051b35b943f994cad8d7705d1292",
         "size": 17515108,
         "abi": "arm64-v8a"
+      },
+      "summaryTranslations": {
+        "pt": "Plataforma de jogos voxel com mods, antes conhecida como Minetest"
       }
     },
     {
       "id": "magisk",
       "name": "Magisk",
-      "summary": "Solução de root systemless com MagiskSU, módulos e Zygisk",
+      "summary": "Systemless root solution with MagiskSU, modules and Zygisk",
       "description": {
         "en": "The standard way to root a modern Android device without modifying system partitions: MagiskSU for root access, a module system, Zygisk for injecting code into app processes, and a DenyList for hiding modifications from apps that check for root.",
         "pt": "A forma padrão de obter root num Android moderno sem alterar as partições de sistema: MagiskSU para acesso root, sistema de módulos, Zygisk para injetar código nos processos das apps e DenyList para esconder modificações de apps que verificam root."
@@ -2824,12 +2932,15 @@
         "sha256": "e0d32d2123532860f97123d927b1bb86c4e08e6fd8a48bfc6b5bee0afae9ebd5",
         "size": 11613864,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Solução de root systemless com MagiskSU, módulos e Zygisk"
       }
     },
     {
       "id": "materialfiles",
       "name": "Material Files",
-      "summary": "Gestor de ficheiros local: navega, extrai arquivos e liga-te a servidores FTP, SFTP, SMB e WebDAV",
+      "summary": "Local file manager: browse, extract archives and connect to FTP, SFTP, SMB and WebDAV servers",
       "description": {
         "en": "A Material Design file manager for local storage: move, copy, rename, compress and extract, with breadcrumbs and optional root access. It reaches FTP, SFTP, SMB and WebDAV servers, so network shares appear like folders. It uses Linux system calls and the Java NIO2 API instead of parsing the output of ls, so symbolic links, file permissions and SELinux context come through. No account and no server of its own.",
         "pt": "Um gestor de ficheiros Material Design para o armazenamento local: move, copia, renomeia, comprime e extrai, com breadcrumbs e acesso root opcional. Chega a servidores FTP, SFTP, SMB e WebDAV, por isso as partilhas de rede aparecem como pastas. Usa chamadas ao sistema Linux e a API Java NIO2 em vez de interpretar a saída do ls, por isso ligações simbólicas, permissões de ficheiro e contexto SELinux são respeitados. Sem conta e sem servidor próprio."
@@ -2907,12 +3018,15 @@
         "sha256": "f2e7f028fbddf51d7ee90ace27a1ae4b247511e12514d1def6c9e52435feac40",
         "size": 13747821,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Gestor de ficheiros local: navega, extrai arquivos e liga-te a servidores FTP, SFTP, SMB e WebDAV"
       }
     },
     {
       "id": "metrolist",
       "name": "Metrolist",
-      "summary": "Cliente de YouTube Music: reprodução em segundo plano, offline, letras sincronizadas e escuta em conjunto",
+      "summary": "YouTube Music client with background and offline playback, synced lyrics and shared listening",
       "description": {
         "en": "An unofficial YouTube Music client: it streams songs and videos, plays in the background, downloads tracks for offline use and adds an equaliser and a sleep timer. Lyrics are time-synced with optional AI translation, playlists can be imported or scrobbled to Last.fm, and listening can be shared with friends in real time. Syncing your library needs a YouTube Music account, and a VPN or proxy is needed where YouTube Music is blocked. The project is in maintenance mode: bug fixes only.",
         "pt": "Cliente não oficial de YouTube Music: passa músicas e vídeos, reproduz em segundo plano, descarrega faixas para ouvir sem rede e acrescenta equalizador e temporizador de sono. As letras são sincronizadas, com tradução opcional por IA, as playlists podem ser importadas ou enviadas para o Last.fm, e a audição pode ser partilhada com amigos em tempo real. Sincronizar a tua biblioteca exige uma conta de YouTube Music, e é preciso VPN ou proxy onde o YouTube Music estiver bloqueado. O projeto está em modo de manutenção: só correções de erros."
@@ -2980,12 +3094,15 @@
         "sha256": "6d2a5b6a2c7df2b09c6c31969a3978a61898879556f226bb3095596f07c874d7",
         "size": 26868210,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente de YouTube Music: reprodução em segundo plano, offline, letras sincronizadas e escuta em conjunto"
       }
     },
     {
       "id": "molly",
       "name": "Molly",
-      "summary": "Fork do Signal com cifra da base de dados e sem dependência do Play Services",
+      "summary": "Signal fork with database encryption and no Play Services dependency",
       "description": {
         "en": "A hardened Signal fork: the local database can be encrypted with a passphrase, the app locks when idle, and the FOSS build drops Google Play Services entirely (using a websocket instead of FCM). Talks to the same Signal network.",
         "pt": "Fork reforçado do Signal: a base de dados local pode ser cifrada com uma frase-passe, a app bloqueia quando fica inativa e a versão FOSS dispensa por completo os Google Play Services (usa websocket em vez de FCM). Usa a mesma rede Signal."
@@ -3056,12 +3173,15 @@
         "sha256": "f1c6fd929f9047809a7a9bb4e663d1ec1ec4d9f33d9794799c8e2f8e1663ec11",
         "size": 96755948,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Fork do Signal com cifra da base de dados e sem dependência do Play Services"
       }
     },
     {
       "id": "moonlight-android",
       "name": "Moonlight",
-      "summary": "Cliente de streaming de jogos: recebe o jogo do PC através de NVIDIA GameStream ou Sunshine",
+      "summary": "Stream games from your PC through NVIDIA GameStream or Sunshine",
       "description": {
         "en": "An open-source client for NVIDIA GameStream and Sunshine: it streams games running on your Windows PC to the Android device, at home or over the internet. The PC has to run GameStream (GeForce Experience) or Sunshine; the phone only decodes the video and sends input back. The release ships two builds — the standard one (com.limelight), which is also on Play, Amazon and F-Droid, and a root build (com.limelight.root) for Android 7.1 and below that requires root and adds an evdev mouse/keyboard capture provider.",
         "pt": "Cliente de código aberto para NVIDIA GameStream e Sunshine: transmite para o Android os jogos que correm no teu PC Windows, em casa ou pela internet. O PC tem de correr o GameStream (GeForce Experience) ou o Sunshine; o telefone só descodifica o vídeo e envia o input de volta. A release traz duas builds — a normal (com.limelight), que também está na Play, na Amazon e no F-Droid, e uma build root (com.limelight.root) para Android 7.1 e anteriores, que precisa de root e acrescenta a captura de rato e teclado por evdev."
@@ -3128,12 +3248,15 @@
         "sha256": "a871f6190365386ef3ac5722a016d4da015ee1555631ec257f6e5dc3f4a45fe0",
         "size": 11137885,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente de streaming de jogos: recebe o jogo do PC através de NVIDIA GameStream ou Sunshine"
       }
     },
     {
       "id": "mpv",
       "name": "mpv-android",
-      "summary": "Reprodutor de vídeo baseado no mpv, com suporte a tudo o que o ffmpeg lê",
+      "summary": "Video player based on mpv, supporting everything ffmpeg can read",
       "description": {
         "en": "A hardware-accelerated port of the mpv media player: plays essentially any container and codec ffmpeg can decode, with proper subtitle rendering, audio track selection, gesture controls and a scriptable interface.",
         "pt": "Port do reprodutor mpv com aceleração por hardware: reproduz praticamente qualquer contentor e codec que o ffmpeg descodifique, com renderização correta de legendas, escolha de faixas de áudio, gestos e interface programável."
@@ -3225,12 +3348,15 @@
       },
       "warnings": [
         "versionCode difere entre ABIs (2048, 1048, 4048); a usar 4048"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Reprodutor de vídeo baseado no mpv, com suporte a tudo o que o ffmpeg lê"
+      }
     },
     {
       "id": "myne",
       "name": "Myne",
-      "summary": "Descarrega livros do Projeto Gutenberg e lê ficheiros EPUB locais",
+      "summary": "Download Project Gutenberg books and read local EPUB files",
       "description": {
         "en": "Browse and download ebooks from Project Gutenberg, then read them on your device. Myne also imports local EPUB books, combining an online catalogue with a personal reading library.",
         "pt": "Permite procurar e descarregar livros do Projeto Gutenberg para os ler no dispositivo. Também importa livros EPUB locais, combinando um catálogo online com uma biblioteca pessoal de leitura."
@@ -3301,12 +3427,15 @@
         "sha256": "b4949a2ff9530f9ac1c64f9e5ea73843910a03286a1bb540496c3cf8e1c630cb",
         "size": 6432230,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Descarrega livros do Projeto Gutenberg e lê ficheiros EPUB locais"
       }
     },
     {
       "id": "nagram",
       "name": "Nagram",
-      "summary": "Cliente do Telegram com foco em privacidade e definições avançadas",
+      "summary": "Telegram client focused on privacy and advanced settings",
       "description": {
         "en": "Another unofficial Telegram client, built from the official source with a focus on privacy: hidden online status, disabled read receipts, local premium-style options, and a configurable interface. No Google Play Services needed.",
         "pt": "Outro cliente não oficial do Telegram, construído a partir do código oficial, com foco em privacidade: estado online escondido, confirmações de leitura desligadas, opções locais ao estilo premium e interface configurável. Não precisa dos Google Play Services."
@@ -3386,12 +3515,15 @@
         "sha256": "391af6a4f28a735c4f61532121836f01ce5d1e97cec4e5afc1d28bd8f05d2322",
         "size": 62698898,
         "abi": "arm64-v8a"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente do Telegram com foco em privacidade e definições avançadas"
       }
     },
     {
       "id": "nekogram",
       "name": "Nekogram",
-      "summary": "Cliente não oficial do Telegram, livre, com funcionalidades extra",
+      "summary": "Free, unofficial Telegram client with extra features",
       "description": {
         "en": "An unofficial Telegram client built from the official source: no Google Play Services required, built-in proxy and MTProto settings, message filtering, translation on tap, and a set of interface options the official app does not expose.",
         "pt": "Cliente não oficial do Telegram construído a partir do código oficial: não precisa dos Google Play Services, tem definições de proxy e MTProto integradas, filtragem de mensagens, tradução ao toque e um conjunto de opções de interface que a app oficial não expõe."
@@ -3475,12 +3607,15 @@
         "sha256": "5901ae69198db59b417a0c946f147ac3d657a20a7be4a6e14a992ca35a66a3cd",
         "size": 50203868,
         "abi": "arm64-v8a"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente não oficial do Telegram, livre, com funcionalidades extra"
       }
     },
     {
       "id": "neo-backup",
       "name": "Neo Backup",
-      "summary": "Cópias de segurança locais de apps e dados, para telemóveis com root",
+      "summary": "Local app and data backups for rooted phones",
       "description": {
         "en": "Back up and restore individual apps and their data, in batches or on a schedule. Requires root access. Formerly OAndBackupX, part of the Neo Applications suite.",
         "pt": "Cria e restaura cópias de segurança de apps e dos seus dados, individualmente, em lote ou por agendamento. Requer acesso root. Anteriormente OAndBackupX, faz parte do conjunto Neo Applications."
@@ -3557,12 +3692,15 @@
         "sha256": "d2bd2fbd57bf1e99d12a40ba4418e66543a2983742f16b0f3509262f36f7b4f7",
         "size": 11430871,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cópias de segurança locais de apps e dados, para telemóveis com root"
       }
     },
     {
       "id": "neo-store",
       "name": "Neo Store",
-      "summary": "Cliente de F-Droid com interface moderna e funcionalidades extra",
+      "summary": "F-Droid client with a modern interface and extra features",
       "description": {
         "en": "An F-Droid client with a modern Material interface, better search, repository management, and the ability to install apps that F-Droid's own client refuses because of signature or compatibility checks.",
         "pt": "Cliente de F-Droid com interface Material moderna, melhor pesquisa, gestão de repositórios e capacidade de instalar apps que o cliente oficial recusa por verificações de assinatura ou compatibilidade."
@@ -3631,12 +3769,15 @@
         "sha256": "87a3d6f553f7ce0e9fe1858748f94c83aa2bc3e54e25410e31a317a2cb93cc3b",
         "size": 5924118,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente de F-Droid com interface moderna e funcionalidades extra"
       }
     },
     {
       "id": "newpipe",
       "name": "NewPipe",
-      "summary": "Cliente leve de streaming para YouTube, PeerTube e SoundCloud, sem conta Google",
+      "summary": "Lightweight streaming client for YouTube, PeerTube and SoundCloud, without a Google account",
       "description": {
         "en": "A lightweight YouTube frontend for Android. It uses the site's own APIs so no Google account, no Google Play Services and no proprietary library is involved. Supports background playback, popup player, audio-only mode, 4K video and downloading.",
         "pt": "Cliente leve de YouTube para Android. Usa apenas as APIs públicas do site, pelo que não precisa de conta Google, de Google Play Services nem de bibliotecas proprietárias. Suporta reprodução em segundo plano, popup, modo só-áudio, vídeo 4K e descarregamento."
@@ -3707,12 +3848,15 @@
         "sha256": "18447bfb1e06d113edc88df93f471827280de06f6f3d4dc42f56f28b9c1bab79",
         "size": 11507122,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente leve de streaming para YouTube, PeerTube e SoundCloud, sem conta Google"
       }
     },
     {
       "id": "nextplayer",
       "name": "Next Player",
-      "summary": "Reprodutor de vídeo nativo em Compose, simples e sem anúncios",
+      "summary": "Simple, ad-free native video player built with Compose",
       "description": {
         "en": "A video player written with Jetpack Compose and ExoPlayer/Media3: clean library, gesture controls, subtitles, background audio, playlists and support for network streams. No ads, no tracking, no unnecessary permissions.",
         "pt": "Reprodutor de vídeo escrito em Jetpack Compose com ExoPlayer/Media3: biblioteca limpa, controlos por gestos, legendas, áudio em segundo plano, listas de reprodução e suporte para streams de rede. Sem anúncios, sem rastreio, sem permissões desnecessárias."
@@ -3806,12 +3950,15 @@
         "sha256": "1912899f4d520e676f059584a69c778db4409c9e09de3180ae56f8348b818748",
         "size": 19056893,
         "abi": "arm64-v8a"
+      },
+      "summaryTranslations": {
+        "pt": "Reprodutor de vídeo nativo em Compose, simples e sem anúncios"
       }
     },
     {
       "id": "notallyx",
       "name": "NotallyX",
-      "summary": "App de notas minimalista com etiquetas, listas e pesquisa avançada",
+      "summary": "Minimalist notes app with labels, lists and advanced search",
       "description": {
         "en": "A minimal notes app that grew up: rich text, lists, labels, colours, pinning, reminders and powerful search over a local database. No cloud, no account, plus backup and export.",
         "pt": "App de notas minimalista que cresceu: texto formatado, listas, etiquetas, cores, fixação, lembretes e pesquisa avançada sobre uma base de dados local. Sem nuvem, sem conta, com cópia de segurança e exportação."
@@ -3881,12 +4028,15 @@
         "sha256": "0f5204889e86e9cb130d07b4be60a009d421d3f4c7f8ebfc5af24dcb2cee0301",
         "size": 13993709,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "App de notas minimalista com etiquetas, listas e pesquisa avançada"
       }
     },
     {
       "id": "obtainium",
       "name": "Obtainium",
-      "summary": "Obtém atualizações de apps diretamente das fontes originais",
+      "summary": "Get app updates directly from their original sources",
       "description": {
         "en": "Install and update apps from GitHub, GitLab, F-Droid, APKMirror and other sources, comparing versions and downloading the APK itself. The reference implementation of the 'no store needed' idea, and the tool that proved this catalogue was worth building.",
         "pt": "Instala e atualiza apps a partir do GitHub, GitLab, F-Droid, APKMirror e outras fontes, comparando versões e descarregando o APK. É a implementação de referência da ideia de 'não precisas de loja' e a ferramenta que provou que este catálogo valia a pena."
@@ -4000,12 +4150,15 @@
       },
       "warnings": [
         "versionCode difere entre ABIs (2356, 23563, 23562, 23561); a usar 23563"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Obtém atualizações de apps diretamente das fontes originais"
+      }
     },
     {
       "id": "opencalc",
       "name": "OpenCalc",
-      "summary": "Calculadora com modo científico, histórico e temas claro e escuro",
+      "summary": "Calculator with scientific mode, history and light and dark themes",
       "description": {
         "en": "A lightweight calculator with scientific mode, calculation history and support for portrait and landscape layouts. Includes light, dark and Material You themes and a quick settings tile.",
         "pt": "Calculadora leve com modo científico, histórico de cálculos e utilização na vertical ou horizontal. Inclui temas claro, escuro e Material You, além de um atalho nas definições rápidas."
@@ -4066,12 +4219,15 @@
         "sha256": "43b6befd1fecc686ba1611bbda18896cc26d966047e788be995def569a4510f3",
         "size": 2298891,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Calculadora com modo científico, histórico e temas claro e escuro"
       }
     },
     {
       "id": "openscan",
       "name": "OpenScan",
-      "summary": "Digitaliza documentos, recorta páginas e exporta ficheiros PDF ou imagens",
+      "summary": "Scan documents, crop pages and export PDF files or images",
       "description": {
         "en": "Scan paper documents, notes and receipts with the camera, crop the pages and share them as PDFs or images. An open source document scanner designed around local use and privacy.",
         "pt": "Digitaliza documentos, notas e recibos com a câmara, permite recortar as páginas e partilhá-las em PDF ou como imagens. Digitalizador de código aberto pensado para utilização local e privacidade."
@@ -4136,12 +4292,15 @@
         "sha256": "4b60af791057e5ac32648e7d36a0f71157a5f71bd103c13b8c7aa9ab36bd9877",
         "size": 62307276,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Digitaliza documentos, recorta páginas e exporta ficheiros PDF ou imagens"
       }
     },
     {
       "id": "operit",
       "name": "Operit AI",
-      "summary": "Agente de IA para Android que liga modelos locais ou na nuvem às capacidades do próprio sistema",
+      "summary": "Android AI agent connecting local or cloud models to system capabilities",
       "description": {
         "en": "An open source AI agent platform for Android. It talks to cloud models or runs them locally (MNN and GGUF) and, once you grant permission, connects them to the system itself: reading and operating app interfaces, running tasks over files, keeping long-term memory, and opening a terminal with an Ubuntu user space. It needs no account, and the local models work offline.",
         "pt": "Plataforma de agente de IA de código aberto para Android. Fala com modelos na nuvem ou corre-os localmente (MNN e GGUF) e, depois de autorizares, liga-os ao próprio sistema: lê e opera interfaces de apps, executa tarefas sobre ficheiros, mantém memória de longo prazo e abre um terminal com um espaço Ubuntu. Não precisa de conta, e os modelos locais funcionam sem rede."
@@ -4202,12 +4361,15 @@
         "sha256": "a04d283464b72d5734af22bff77a025c2b56b5679a95cbe5d57b8c31b41c0cb0",
         "size": 404265417,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Agente de IA para Android que liga modelos locais ou na nuvem às capacidades do próprio sistema"
       }
     },
     {
       "id": "outertune",
       "name": "OuterTune",
-      "summary": "Cliente de YouTube Music com downloads, letras e reprodução local",
+      "summary": "YouTube Music client with downloads, lyrics and local playback",
       "description": {
         "en": "A Material 3 YouTube Music client with library sync, downloads for offline playback, synchronized lyrics, playback speed control, sleep timer and Discord presence. Plays your local files in the same library.",
         "pt": "Cliente de YouTube Music com Material 3, sincronização de biblioteca, downloads para ouvir offline, letras sincronizadas, controlo de velocidade, temporizador e presença no Discord. Reproduz também ficheiros locais na mesma biblioteca."
@@ -4277,12 +4439,15 @@
         "sha256": "da2e768f0cd63e2125125679f28bfb9fbaa7d9c87db99c7495c2521e2e34bb19",
         "size": 28599336,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente de YouTube Music com downloads, letras e reprodução local"
       }
     },
     {
       "id": "photok",
       "name": "Photok",
-      "summary": "Guarda fotografias e vídeos numa galeria encriptada no próprio dispositivo",
+      "summary": "Store photos and videos in an encrypted gallery on your device",
       "description": {
         "en": "A private photo and video vault that encrypts media locally with AES-256. Files stay on the device and are decrypted in memory while in use. No cloud upload is required.",
         "pt": "Cofre privado para fotografias e vídeos, com encriptação AES-256 no próprio dispositivo. Os ficheiros permanecem no telemóvel e são desencriptados em memória durante a utilização. Não exige envio para a nuvem."
@@ -4352,12 +4517,15 @@
         "sha256": "23bfc057388aad9832051d7f931dc8b8baf4e622671fed58e281df7c711378b0",
         "size": 13076945,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Guarda fotografias e vídeos numa galeria encriptada no próprio dispositivo"
       }
     },
     {
       "id": "pipepipe",
       "name": "PipePipe",
-      "summary": "Fork do NewPipe com suporte a mais serviços e funcionalidades extra",
+      "summary": "NewPipe fork supporting more services and extra features",
       "description": {
         "en": "A NewPipe fork that adds support for Bilibili, NicoNico, a built-in comment viewer, sponsor-block style segment skipping and a download manager. Actively maintained where upstream is slower to merge.",
         "pt": "Fork do NewPipe que acrescenta suporte a Bilibili, NicoNico, visualizador de comentários integrado, salto de segmentos e gestor de downloads. Mantido ativamente onde o projeto original demora a integrar contribuições."
@@ -4473,12 +4641,15 @@
       },
       "warnings": [
         "versionCode difere entre ABIs (110904, 110901, 110903, 110902); a usar 110904"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Fork do NewPipe com suporte a mais serviços e funcionalidades extra"
+      }
     },
     {
       "id": "pixiv-shaft",
       "name": "Pixiv-Shaft",
-      "summary": "Cliente não oficial do Pixiv: ilustrações, manga e novels, com filtros, downloads e IA local",
+      "summary": "Unofficial Pixiv client for illustrations, manga and novels, with filters, downloads and local AI",
       "description": {
         "en": "An unofficial Pixiv client. It browses illustrations, manga and novels with six sort orders, filters for upload period, bookmarks, aspect ratio and resolution, rankings, FANBOX, pixiv COMIC, local txt files and reverse image search. Downloads queue, resume and rename in batch. On-device AI upscales, cuts out characters, translates manga and interpolates ugoira. Sorting a keyword by popularity uses shared resources: without Pixiv Premium it falls back to a free quota.",
         "pt": "Cliente não oficial do Pixiv. Navega ilustrações, manga e novels com seis ordens, filtros de período, favoritos, proporção e resolução, rankings, FANBOX, pixiv COMIC, ficheiros txt locais e pesquisa de imagem inversa. Os downloads entram em fila, retomam e são renomeados em lote. A IA corre no dispositivo para ampliar, recortar personagens, traduzir manga e interpolar ugoira. Ordenar por popularidade usa recursos partilhados: sem Pixiv Premium cai na quota gratuita."
@@ -4542,12 +4713,15 @@
         "sha256": "e91fa1da6b7a2feb05a002c83263a8e0335ca9ae183e75e6396bfce871cc0b29",
         "size": 47104593,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Cliente não oficial do Pixiv: ilustrações, manga e novels, com filtros, downloads e IA local"
       }
     },
     {
       "id": "readyou",
       "name": "Read You",
-      "summary": "Leitor de RSS com Material You e sincronização com FreshRSS e Fever",
+      "summary": "RSS reader with Material You and FreshRSS and Fever sync",
       "description": {
         "en": "An RSS reader in Material You style: feed management, read/unread state, and optional synchronisation with FreshRSS, Fever, Google Reader or Miniflux accounts. Also imports and exports OPML.",
         "pt": "Leitor de RSS no estilo Material You: gestão de feeds, estado lido/não lido e sincronização opcional com contas FreshRSS, Fever, Google Reader ou Miniflux. Também importa e exporta OPML."
@@ -4612,12 +4786,15 @@
         "sha256": "a27f6da6961f2d5cd27b515349dc71844a0d20cfacc38b5fc398152fa034ce5e",
         "size": 11213788,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Leitor de RSS com Material You e sincronização com FreshRSS e Fever"
       }
     },
     {
       "id": "rethinkdns",
       "name": "RethinkDNS",
-      "summary": "Firewall, DNS encriptado e túneis WireGuard para controlar ligações das apps",
+      "summary": "Firewall, encrypted DNS and WireGuard tunnels to control app connections",
       "description": {
         "en": "Control which apps can access the network, monitor their connections and use encrypted DNS with blocklists. Also supports WireGuard tunnels and routing rules. Uses Android's VPN service, so it occupies the system VPN slot.",
         "pt": "Controla quais as apps que podem aceder à rede, mostra as suas ligações e permite usar DNS encriptado com listas de bloqueio. Suporta também túneis WireGuard e regras de encaminhamento. Usa o serviço VPN do Android."
@@ -4749,12 +4926,15 @@
       },
       "warnings": [
         "versionCode difere entre ABIs (30000069, 30000069, 20000069, 80000069, 90000069); a usar 90000069"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Firewall, DNS encriptado e túneis WireGuard para controlar ligações das apps"
+      }
     },
     {
       "id": "revanced-manager",
       "name": "ReVanced Manager",
-      "summary": "Aplica patches a APKs instalados para acrescentar funcionalidades e remover anúncios",
+      "summary": "Patch installed APKs to add features and remove ads",
       "description": {
         "en": "Downloads patches from the ReVanced project and applies them to APKs on the device, letting you rebuild an app you already have with extra features and without ads. It ships no patched apps itself; it is a build tool.",
         "pt": "Descarrega patches do projeto ReVanced e aplica-os a APKs no dispositivo, permitindo reconstruir uma app que já tens com funcionalidades extra e sem anúncios. Não distribui apps modificadas: é uma ferramenta de compilação."
@@ -4820,12 +5000,15 @@
         "sha256": "cba4c461553ea74eb25a7b2e1842419c7f4f40adc619b10d518c114204b7e846",
         "size": 46860298,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Aplica patches a APKs instalados para acrescentar funcionalidades e remover anúncios"
       }
     },
     {
       "id": "rtranslator",
       "name": "RTranslator",
-      "summary": "Tradutor em tempo real e offline: conversa entre dois telefones ou walkie-talkie com um só",
+      "summary": "Offline real-time translator: conversations between two phones or walkie-talkie mode on one",
       "description": {
         "en": "An offline translator: speech recognition and translation run on the phone, so nothing goes to a server and no network is needed. Conversation mode links two or more phones running the app — you talk into your phone or a Bluetooth headset and hear the other person translated. WalkieTalkie mode does the same with a single phone, detecting which of two languages is being spoken and answering in the other, in turns. The first start downloads 1.2 GB of models and the author asks for at least 6 GB of RAM.",
         "pt": "Tradutor offline: o reconhecimento de fala e a tradução correm no telefone, por isso nada vai para um servidor e não é precisa rede. O modo Conversa liga dois ou mais telefones com a app — falas para o teu telefone ou para uns auriculares Bluetooth e ouves a outra pessoa traduzida. O modo WalkieTalkie faz o mesmo com um só telefone, detetando em qual de duas línguas se está a falar e respondendo na outra, à vez. No primeiro arranque são descarregados 1,2 GB de modelos, e o autor pede pelo menos 6 GB de RAM."
@@ -4891,12 +5074,15 @@
         "sha256": "6dbc90f569cb5f0a4ed6520ebe40e3d77ae314a0a79a2b40245a71efb45649f7",
         "size": 97933823,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Tradutor em tempo real e offline: conversa entre dois telefones ou walkie-talkie com um só"
       }
     },
     {
       "id": "sd-maid-se",
       "name": "SD Maid SE",
-      "summary": "Limpeza e gestão do armazenamento do sistema, com automação por rotinas",
+      "summary": "Clean and manage system storage with automated routines",
       "description": {
         "en": "A cleaning tool for Android storage: duplicate and leftover file detection, app cache cleanup, system storage analysis, and automations that run the checks you choose on a schedule. Works without root; more capable with it.",
         "pt": "Ferramenta de limpeza do armazenamento Android: deteção de ficheiros duplicados e órfãos, limpeza de cache de apps, análise do armazenamento do sistema e rotinas automáticas que correm as verificações que escolheres. Funciona sem root; mais capaz com ele."
@@ -4973,12 +5159,15 @@
         "sha256": "5eca1e036951741f9ed32d8594399f167091d6ea2a10a38680d3ce0debd235b0",
         "size": 18079991,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Limpeza e gestão do armazenamento do sistema, com automação por rotinas"
       }
     },
     {
       "id": "seal",
       "name": "Seal",
-      "summary": "Descarregador de vídeo e áudio para Android, feito sobre o yt-dlp",
+      "summary": "Android video and audio downloader built on yt-dlp",
       "description": {
         "en": "A video and audio downloader built on yt-dlp and YouTube-DL, wrapped in a Material You interface. Can use aria2c for faster downloads and ffmpeg for conversion, and can be driven from the Android share sheet.",
         "pt": "Descarregador de vídeo e áudio construído sobre yt-dlp e YouTube-DL, com interface Material You. Pode usar aria2c para downloads mais rápidos e ffmpeg para conversão, e aceita pedidos a partir do menu de partilha do Android."
@@ -5107,12 +5296,15 @@
       },
       "warnings": [
         "versionCode difere entre ABIs (11310, 11312, 11311, 11314, 11313); a usar 11314"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Descarregador de vídeo e áudio para Android, feito sobre o yt-dlp"
+      }
     },
     {
       "id": "secure-camera",
       "name": "Secure Camera",
-      "summary": "Câmara do GrapheneOS para fotografias, vídeo e leitura de códigos QR",
+      "summary": "GrapheneOS camera for photos, video and QR code scanning",
       "description": {
         "en": "The GrapheneOS camera app, built on Android CameraX for taking photos and videos and scanning QR codes. Distributed as an official standalone APK.",
         "pt": "App de câmara do GrapheneOS, baseada no CameraX do Android, para tirar fotografias, gravar vídeo e ler códigos QR. Disponível como APK oficial independente."
@@ -5176,12 +5368,15 @@
         "sha256": "6e1d05a7b96b308f3a9dff3103db55cfee2cbea38b3249b5879fe35cfcf179ff",
         "size": 3931896,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Câmara do GrapheneOS para fotografias, vídeo e leitura de códigos QR"
       }
     },
     {
       "id": "shattered-pixel-dungeon",
       "name": "Shattered Pixel Dungeon",
-      "summary": "Roguelike de masmorras com geração aleatória e progressão por runs",
+      "summary": "Dungeon roguelike with random generation and progression within each run",
       "description": {
         "en": "A traditional roguelike: randomly generated dungeons, permadeath, turn-based combat and five playable heroes, each with its own mechanics. A long-maintained expansion of Pixel Dungeon.",
         "pt": "Roguelike tradicional: masmorras geradas aleatoriamente, morte permanente, combate por turnos e cinco heróis com mecânicas próprias. Expansão do Pixel Dungeon mantida há anos."
@@ -5247,12 +5442,15 @@
         "sha256": "ceef4cdd4beddcb3d85379ac004cb4ab5d918b89dc7366b4ce9c4a3585a5e78e",
         "size": 30275058,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Roguelike de masmorras com geração aleatória e progressão por runs"
       }
     },
     {
       "id": "shizuku",
       "name": "Shizuku",
-      "summary": "Dá a apps normais acesso a APIs de sistema através de adb ou root",
+      "summary": "Give regular apps access to system APIs through adb or root",
       "description": {
         "en": "Starts a privileged Java process over ADB (or root) and lends those permissions to other apps through a documented API, so apps that need system-level access do not need root themselves. Many apps in this catalogue build on it.",
         "pt": "Inicia um processo Java privilegiado por ADB (ou root) e empresta essas permissões a outras apps através de uma API documentada, para que apps que precisam de acesso ao sistema não precisem de root. Muitas apps deste catálogo dependem dele."
@@ -5319,12 +5517,15 @@
         "sha256": "6e273ab0e991c4e79bc8b1bbb9b9dd739ccac1a8712a541a214078886b7b790f",
         "size": 2571773,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Dá a apps normais acesso a APIs de sistema através de adb ou root"
       }
     },
     {
       "id": "sgtpuzzles",
       "name": "Simon Tatham's Puzzles",
-      "summary": "Quarenta puzzles clássicos num só pacote, gerados com semente",
+      "summary": "Forty classic puzzles in one package, generated from a seed",
       "description": {
         "en": "A collection of forty logic puzzles (Net, Flood, Slant, Nonograms, Mines and more) with procedurally generated, always-solvable boards. Every puzzle can be shared by its seed, so no two devices need the same file.",
         "pt": "Coleção de quarenta puzzles de lógica (Net, Flood, Slant, Nonogramas, Minas e mais) com tabuleiros gerados por procedimento e sempre resolvíveis. Cada puzzle pode ser partilhado pela semente, sem ficheiros envolvidos."
@@ -5390,12 +5591,15 @@
         "sha256": "f37590d8ef6cc4953ac5133b4649b3fa6a58a82ed0d85ecea888acef0b4b478c",
         "size": 10811960,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Quarenta puzzles clássicos num só pacote, gerados com semente"
       }
     },
     {
       "id": "simplex",
       "name": "SimpleX Chat",
-      "summary": "Mensagens privadas sem identificadores de utilizador, nem sequer números de telefone",
+      "summary": "Private messaging without user identifiers, including phone numbers",
       "description": {
         "en": "A messaging network with no user identifiers at all: no phone number, no username, no account. Conversations happen over unidirectional queues, and the design means the servers cannot see who talks to whom. End-to-end encrypted by default.",
         "pt": "Rede de mensagens sem qualquer identificador de utilizador: sem número de telefone, sem nome de utilizador, sem conta. As conversas passam por filas unidirecionais e o desenho garante que os servidores não conseguem ver quem fala com quem. Cifrado ponta a ponta por omissão."
@@ -5478,12 +5682,15 @@
         "sha256": "d535e5a8986d4e11b9abd5656a3c0e1be5a08e06b00a7b20d6b7587ed0c3457f",
         "size": 87519748,
         "abi": "arm64-v8a"
+      },
+      "summaryTranslations": {
+        "pt": "Mensagens privadas sem identificadores de utilizador, nem sequer números de telefone"
       }
     },
     {
       "id": "simpmusic",
       "name": "SimpMusic",
-      "summary": "Cliente de YouTube Music sem anúncios, com letras palavra a palavra, equalizador de dez bandas e Android Auto",
+      "summary": "Ad-free YouTube Music client with word-by-word lyrics, a ten-band equaliser and Android Auto",
       "description": {
         "en": "A YouTube Music client with ad-free background playback, offline caching, a ten-band equaliser, word-by-word lyrics and Android Auto. It reads YouTube Music itself and layers on Spotify Canvas, SponsorBlock segments and Return YouTube Dislike counts; synced playlists and multi-account sign-in go through your YouTube Music account. The 256 kbps streams require YouTube Music Premium and AI lyric translation requires your own OpenAI or Gemini key. The project calls the app beta and warns that it can crash.",
         "pt": "Cliente de YouTube Music com reprodução em segundo plano sem anúncios, cache offline, equalizador de dez bandas, letras palavra a palavra e Android Auto. Lê o próprio YouTube Music e acrescenta Spotify Canvas, segmentos do SponsorBlock e contagens do Return YouTube Dislike; as playlists sincronizadas e a sessão com várias contas passam pela tua conta de YouTube Music. Os streams de 256 kbps exigem YouTube Music Premium e a tradução de letras por IA exige a tua própria chave da OpenAI ou do Gemini. O projeto diz que a app está em beta e avisa que pode fechar inesperadamente."
@@ -5601,12 +5808,15 @@
         "abiAssets[\"armeabi-v7a\"] (SimpMusic-foss-armeabi-v7a-release.apk) não encontrou nada no release v2.3.0",
         "abiAssets[\"x86_64\"] (SimpMusic-foss-x86_64-release.apk) não encontrou nada no release v2.3.0",
         "abiAssets[\"universal\"] (SimpMusic-foss-universal-release.apk) não encontrou nada no release v2.3.0"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Cliente de YouTube Music sem anúncios, com letras palavra a palavra, equalizador de dez bandas e Android Auto"
+      }
     },
     {
       "id": "super-productivity",
       "name": "Super Productivity",
-      "summary": "Tarefas com timeboxing e registo de tempo, a ligar o Jira, GitLab e GitHub ao teu dia",
+      "summary": "Tasks with timeboxing and time tracking, connecting Jira, GitLab and GitHub to your day",
       "description": {
         "en": "A task manager that puts timeboxing and time tracking next to the work: organise tasks in projects, tags and sub-tasks, lay the day out on a schedule next to your calendar events, and sort them on boards such as Kanban. It imports issues from Jira, GitLab, GitHub and others and logs work back. Sync through Dropbox, WebDAV or SuperSync is optional; it collects no data and needs no account.",
         "pt": "Um gestor de tarefas que junta timeboxing e registo de tempo ao trabalho: organiza tarefas em projetos, etiquetas e subtarefas, dispõe o dia numa linha temporal ao lado dos eventos do calendário e ordena-as em quadros como o Kanban. Importa tarefas do Jira, GitLab, GitHub e outros e devolve os registos de trabalho. A sincronização por Dropbox, WebDAV ou SuperSync é opcional; não recolhe dados e não exige conta."
@@ -5666,12 +5876,15 @@
         "sha256": "127af90995763d88a502eae428af9dc395dcdf17d3f8f1be498f56dfa4aab9dc",
         "size": 22640772,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Tarefas com timeboxing e registo de tempo, a ligar o Jira, GitLab e GitHub ao teu dia"
       }
     },
     {
       "id": "syncthing-fork",
       "name": "Syncthing-Fork",
-      "summary": "Sincronização de ficheiros ponto-a-ponto com o fork mantido do cliente Syncthing",
+      "summary": "Peer-to-peer file sync with the maintained fork of the Syncthing client",
       "description": {
         "en": "A maintained fork of the Syncthing Android wrapper: continuous folder sync between your devices with no cloud in the middle, per-folder settings, and fixes the upstream wrapper no longer gets.",
         "pt": "Fork mantido do cliente Syncthing para Android: sincronização contínua de pastas entre os teus dispositivos sem nuvem pelo meio, configuração por pasta e correções que o cliente original já não recebe."
@@ -5753,12 +5966,15 @@
         "sha256": "15f17037805d87f67d9407eef436691e458ea4185b42871889297c7e98bbfd67",
         "size": 32424982,
         "abi": "arm64-v8a"
+      },
+      "summaryTranslations": {
+        "pt": "Sincronização de ficheiros ponto-a-ponto com o fork mantido do cliente Syncthing"
       }
     },
     {
       "id": "termux",
       "name": "Termux",
-      "summary": "Emulador de terminal com um ambiente Linux completo e gestor de pacotes",
+      "summary": "Terminal emulator with a full Linux environment and package manager",
       "description": {
         "en": "A terminal emulator with its own APT package repository: bash, git, ssh, Python, Node, compilers and more, all running on the device without root. The GitHub build is far newer than the abandoned Play Store listing.",
         "pt": "Emulador de terminal com repositório APT próprio: bash, git, ssh, Python, Node, compiladores e muito mais, tudo a correr no dispositivo sem root. A versão do GitHub está muito mais atual do que a listagem abandonada na Play Store."
@@ -5845,12 +6061,15 @@
         "sha256": "a11d1e97b06e779be3c8c938cf89903d7dcc46b99cc7c6e5a9409b5bebdcb131",
         "size": 119267555,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Emulador de terminal com um ambiente Linux completo e gestor de pacotes"
       }
     },
     {
       "id": "trail-sense",
       "name": "Trail Sense",
-      "summary": "Transforma os sensores do telemóvel em ferramentas de navegação e de apoio a trilhos, sem rede",
+      "summary": "Turn phone sensors into navigation and trail tools, without a network connection",
       "description": {
         "en": "Uses the phone's sensors to help on wilderness treks or in survival situations, and is designed to work entirely offline. The project is explicit that it is a tool to carry alongside proper equipment and skills, not a replacement for them.",
         "pt": "Usa os sensores do telemóvel para ajudar em trilhos ou em situações de sobrevivência, e foi desenhada para funcionar inteiramente sem rede. O próprio projeto diz claramente que é uma ferramenta para levar a par de equipamento e conhecimentos a sério, e não um substituto deles."
@@ -5914,12 +6133,15 @@
         "sha256": "b5fb5bef2e89b2ae2992a20bc53496fb2e986cb41ac4af659a6e36a479c29516",
         "size": 13288415,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Transforma os sensores do telemóvel em ferramentas de navegação e de apoio a trilhos, sem rede"
       }
     },
     {
       "id": "transportr",
       "name": "Transportr",
-      "summary": "Planeia viagens de transportes públicos e consulta partidas e percursos",
+      "summary": "Plan public transport journeys and check departures and routes",
       "description": {
         "en": "Plan public transport journeys, find nearby stops and consult departures and trip details. Available networks and timetable information depend on the transport providers supported by the app.",
         "pt": "Planeia viagens de transportes públicos, encontra paragens próximas e consulta partidas e detalhes dos percursos. As redes disponíveis e a informação de horários dependem dos operadores suportados pela app."
@@ -5986,12 +6208,15 @@
         "sha256": "59c3e8bd977bf8f5af80c2092c00b9cd435e82ad1098bae332f4c2ad43592822",
         "size": 18499749,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Planeia viagens de transportes públicos e consulta partidas e percursos"
       }
     },
     {
       "id": "unciv",
       "name": "Unciv",
-      "summary": "Remake livre do Civilization V, por turnos, com mods e multijogador",
+      "summary": "Free, turn-based Civilization V remake with mods and multiplayer",
       "description": {
         "en": "An open-source remake of Civ V for Android and desktop: tile-based strategy, technology trees, diplomacy, city management and mods. Small download, runs offline, and the ruleset is editable.",
         "pt": "Remake livre do Civ V para Android e desktop: estratégia por turnos, árvores de tecnologia, diplomacia, gestão de cidades e mods. Descarregamento pequeno, funciona offline e as regras são editáveis."
@@ -6059,12 +6284,15 @@
         "sha256": "14a6d892c3eb5874370c07c2c855a68e51f56625782c4efef843c51ea0835a84",
         "size": 27531553,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Remake livre do Civilization V, por turnos, com mods e multijogador"
       }
     },
     {
       "id": "vcmi",
       "name": "VCMI",
-      "summary": "Motor livre para Heroes of Might and Magic III, com multijogador",
+      "summary": "Free engine for Heroes of Might and Magic III, with multiplayer",
       "description": {
         "en": "An open-source engine for Heroes of Might and Magic III: it reimplements the game and adds a better AI, higher resolutions, a map editor and online multiplayer. Requires the original game data files.",
         "pt": "Motor livre para Heroes of Might and Magic III: reimplementa o jogo e acrescenta melhor IA, resoluções mais altas, editor de mapas e multijogador online. Precisa dos ficheiros do jogo original."
@@ -6145,12 +6373,15 @@
       },
       "warnings": [
         "versionCode difere entre ABIs (1770, 1769); a usar 1770"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Motor livre para Heroes of Might and Magic III, com multijogador"
+      }
     },
     {
       "id": "vela",
       "name": "Vela Maps",
-      "summary": "Mapas e navegação passo-a-passo sem serviços da Google, sobre dados abertos",
+      "summary": "Maps and turn-by-turn navigation using open data, without Google services",
       "description": {
         "en": "A degoogled maps and navigation client: open vector tiles for the basemap and place data built from Overture Maps, AllThePlaces and OpenStreetMap, with live traffic and turn-by-turn navigation and no Google Play Services. The project describes it as being to Google Maps what NewPipe is to YouTube, and labels the current series as beta.",
         "pt": "Cliente de mapas e navegação sem Google: tiles vetoriais abertos para o mapa e dados de lugares construídos a partir de Overture Maps, AllThePlaces e OpenStreetMap, com trânsito em tempo real e navegação passo-a-passo, sem Google Play Services. O projeto descreve-o como sendo para os Mapas da Google o que o NewPipe é para o YouTube, e declara a série atual como beta."
@@ -6214,12 +6445,15 @@
         "sha256": "faa839fecb1c0fa26e849ca18aa07097f8eb020a5b5c7a10f516b114dd6c3415",
         "size": 116310721,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Mapas e navegação passo-a-passo sem serviços da Google, sobre dados abertos"
       }
     },
     {
       "id": "voice",
       "name": "Voice",
-      "summary": "Leitor de audiolivros locais com marcadores, velocidade e temporizador",
+      "summary": "Local audiobook player with bookmarks, speed controls and a sleep timer",
       "description": {
         "en": "Play your own audiobook files with saved listening positions, bookmarks, playback speed controls and a sleep timer. Organizes local files into a library without requiring an account or cloud service.",
         "pt": "Reproduz os teus ficheiros de audiolivros, guardando a posição de leitura e permitindo usar marcadores, controlar a velocidade e definir um temporizador. Organiza ficheiros locais numa biblioteca, sem exigir conta ou serviço na nuvem."
@@ -6288,12 +6522,15 @@
         "sha256": "930b10c7fa7253909448337d047b83e27082313a098abc0226df2a995ae4eebe",
         "size": 6967039,
         "abi": "universal"
+      },
+      "summaryTranslations": {
+        "pt": "Leitor de audiolivros locais com marcadores, velocidade e temporizador"
       }
     },
     {
       "id": "ytdlnis",
       "name": "YTDLnis",
-      "summary": "Descarregador de áudio e vídeo com yt-dlp: playlists, filas agendadas, cortes e comandos à medida",
+      "summary": "Audio and video downloader with yt-dlp: playlists, scheduled queues, trimming and custom commands",
       "description": {
         "en": "A yt-dlp front end for audio and video from more than a thousand sites. Playlists are handled item by item, downloads can be queued, scheduled and run several at a time, and finished files can be cut by chapters, stripped of SponsorBlock segments or split into parts. Cookies reach private or premium formats, and yt-dlp runs from a built-in terminal with custom commands and templates. Python, FFmpeg, Node, Deno and Aria2c are plugins you update yourself, which is why the APK is large.",
         "pt": "Descarrega áudio e vídeo de mais de mil sites através do yt-dlp. As playlists são tratadas item a item, os descarregamentos podem ser postos em fila, agendados e corridos vários ao mesmo tempo, e os ficheiros finais podem ser cortados por capítulos, limpos dos segmentos do SponsorBlock ou divididos em partes. Os cookies dão acesso a formatos privados ou premium, e o yt-dlp corre a partir de um terminal integrado com comandos e modelos à medida. Python, FFmpeg, Node, Deno e Aria2c são plugins que atualizas tu mesmo — é por isso que o APK é grande."
@@ -6424,7 +6661,10 @@
       },
       "warnings": [
         "versionCode difere entre ABIs (109000004, 109000001, 109000002, 109000003, 109000000); a usar 109000004"
-      ]
+      ],
+      "summaryTranslations": {
+        "pt": "Descarregador de áudio e vídeo com yt-dlp: playlists, filas agendadas, cortes e comandos à medida"
+      }
     }
   ]
 }

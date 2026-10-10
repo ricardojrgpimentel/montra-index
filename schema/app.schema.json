@@ -4,7 +4,7 @@
   "title": "Montra app entry",
   "description": "One curated Android app. This is the human-edited source of truth: one file per app under apps/<id>.json. The resolved, installable index (index.json) is generated from these files by tools/build-index.mjs.",
   "type": "object",
-  "required": ["id", "name", "summary", "packageName", "license", "sourceCode", "release"],
+  "required": ["id", "name", "summary", "packageName", "license", "sourceCode", "release", "description"],
   "additionalProperties": false,
   "properties": {
     "id": {
@@ -16,17 +16,38 @@
     "name": { "type": "string", "minLength": 1, "maxLength": 60 },
     "summary": {
       "type": "string",
-      "description": "One line, no trailing period. Shown in the list.",
+      "description": "English default summary: one line, no trailing period. Shown in the list.",
       "minLength": 8,
       "maxLength": 160
     },
+    "summaryTranslations": {
+      "type": "object",
+      "description": "Optional translations of summary, keyed by BCP-47 language tag. Keep the native language when it differs from English.",
+      "propertyNames": {
+        "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]{2,8})*$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 8,
+        "maxLength": 160,
+        "pattern": "^\\S[^\\r\\n]*\\S$"
+      }
+    },
     "description": {
       "type": "object",
-      "description": "Longer description, keyed by BCP-47 language tag. At least 'en' is required.",
+      "description": "Descriptions keyed by BCP-47 language tag. English is required; retain the native text and accept other translations by PR. und preserves unidentified upstream prose in drafts.",
       "minProperties": 1,
-      "propertyNames": { "pattern": "^[a-z]{2}(-[A-Z][a-z]+)?$" },
-      "additionalProperties": { "type": "string", "maxLength": 4000 },
-      "required": ["en"]
+      "propertyNames": {
+        "pattern": "^(und|[a-z]{2,3})(-[A-Za-z0-9]{2,8})*$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "maxLength": 4000,
+        "minLength": 8
+      },
+      "required": [
+        "en"
+      ]
     },
     "packageName": {
       "type": "string",

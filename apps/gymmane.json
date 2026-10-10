@@ -1,7 +1,7 @@
 {
   "id": "gymmane",
   "name": "GymMane",
-  "summary": "Registo de ginásio offline: escolhes os músculos, registas as séries e vês a progressão",
+  "summary": "Offline gym log: choose muscles, record sets and track progress",
   "description": {
     "en": "An offline gym log. You tap the muscles you want to train, log your sets during the session, and it keeps the history and the progression per exercise. The screens are the phone's own: today, body map, live session, progress, history, library and routines.",
     "pt": "Registo de treino que funciona sem rede. Tocas nos músculos que queres treinar, registas as séries durante a sessão, e a app guarda o histórico e a progressão por exercício. Os ecrãs são os do telemóvel: hoje, mapa corporal, sessão em curso, progresso, histórico, biblioteca e rotinas."
@@ -41,5 +41,8 @@
   "verification": {
     "signingCertSha256": "3b:c3:a9:b2:f6:50:ca:20:8c:6c:84:d5:2c:1a:9c:bd:6e:67:82:e6:90:fa:2e:8f:30:64:80:a4:c9:ca:a0:95",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Registo de ginásio offline: escolhes os músculos, registas as séries e vês a progressão"
   }
 }

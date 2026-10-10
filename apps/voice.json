@@ -1,7 +1,7 @@
 {
   "id": "voice",
   "name": "Voice",
-  "summary": "Leitor de audiolivros locais com marcadores, velocidade e temporizador",
+  "summary": "Local audiobook player with bookmarks, speed controls and a sleep timer",
   "description": {
     "en": "Play your own audiobook files with saved listening positions, bookmarks, playback speed controls and a sleep timer. Organizes local files into a library without requiring an account or cloud service.",
     "pt": "Reproduz os teus ficheiros de audiolivros, guardando a posição de leitura e permitindo usar marcadores, controlar a velocidade e definir um temporizador. Organiza ficheiros locais numa biblioteca, sem exigir conta ou serviço na nuvem."
@@ -55,5 +55,8 @@
   "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/PaulWoitaschek/Voice/blob/HEAD/LICENSE.md. Release oficial inspecionado: https://github.com/PaulWoitaschek/Voice/releases/download/26.6.1-5406001/app-free-release.apk. SPDX confirmado também nos metadados F-Droid: https://gitlab.com/fdroid/fdroiddata/-/raw/master/metadata/de.ph1b.audiobook.yml.",
   "links": {
     "website": "https://voice.woitaschek.de"
+  },
+  "summaryTranslations": {
+    "pt": "Leitor de audiolivros locais com marcadores, velocidade e temporizador"
   }
 }

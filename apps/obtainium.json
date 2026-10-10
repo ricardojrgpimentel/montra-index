@@ -1,7 +1,7 @@
 {
   "id": "obtainium",
   "name": "Obtainium",
-  "summary": "Obtém atualizações de apps diretamente das fontes originais",
+  "summary": "Get app updates directly from their original sources",
   "description": {
     "en": "Install and update apps from GitHub, GitLab, F-Droid, APKMirror and other sources, comparing versions and downloading the APK itself. The reference implementation of the 'no store needed' idea, and the tool that proved this catalogue was worth building.",
     "pt": "Instala e atualiza apps a partir do GitHub, GitLab, F-Droid, APKMirror e outras fontes, comparando versões e descarregando o APK. É a implementação de referência da ideia de 'não precisas de loja' e a ferramenta que provou que este catálogo valia a pena."
@@ -56,5 +56,8 @@
   "verification": {
     "signingCertSha256": "b3:53:60:1f:6a:1d:5f:d6:60:3a:e2:f5:0b:e8:0c:f3:01:36:7b:86:b6:ab:8b:1f:66:24:3d:a9:6c:d5:73:62",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Obtém atualizações de apps diretamente das fontes originais"
   }
 }

@@ -3,6 +3,7 @@
 // cross-entry rules that a schema cannot express (unique package names, id
 // matching the file name, release config sanity). This is what CI runs on every
 // pull request, so a bad contribution fails before it can reach a user's phone.
+import { catalogueTextErrors } from "./lib/catalogue-text.mjs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
@@ -64,6 +65,8 @@ async function main() {
       for (const msg of formatAjvErrors(validateApp.errors)) error(id, `schema: ${msg}`);
       continue;
     }
+
+    for (const msg of catalogueTextErrors(entry)) error(id, msg);
 
     // --- rules the schema cannot express -----------------------------------
     if (entry.id !== id) error(id, `campo "id" ("${entry.id}") tem de ser igual ao nome do ficheiro ("${id}")`);

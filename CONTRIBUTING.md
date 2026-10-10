@@ -64,9 +64,17 @@ passe não é revisto.
 
 ## Estilo das entradas
 
-- `summary`: uma linha, sem ponto final, até 160 caracteres, sem marketing.
-- `description`: `en` obrigatório, `pt` bem-vindo. Diz o que a app faz e o que a
-  distingue, sem superlativos.
+- `summary`: em inglês, uma linha, sem ponto final, até 160 caracteres, sem marketing.
+- `summaryTranslations`: resumos noutras línguas, com as mesmas regras.
+- `description.en`: descrição inglesa obrigatória, traduzida se necessário.
+  Preserva também a língua nativa em `description` quando difere do inglês.
+  Usa etiquetas BCP-47, como `pt` ou `pt-BR`. Outras traduções são opcionais e
+  podem ser acrescentadas por PR; não é preciso traduzir para todas as línguas
+  da interface. A app usa a tradução disponível e inglês como alternativa.
+  `und` guarda provisoriamente texto de origem sem língua identificada nas
+  propostas automáticas. Identifica a língua e substitui os marcadores ingleses
+  antes da publicação; o CI rejeita textos pendentes de revisão.
+  As traduções da interface da Montra são independentes destes textos.
 - `categories`: da taxonomia fixa do schema, no máximo três.
 - `tags`: minúsculas, com hífens.
 - `license`: SPDX moderno (`GPL-3.0-or-later`, não `GPL-3.0`).

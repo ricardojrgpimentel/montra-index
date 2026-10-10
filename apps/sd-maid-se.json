@@ -1,7 +1,7 @@
 {
   "id": "sd-maid-se",
   "name": "SD Maid SE",
-  "summary": "Limpeza e gestão do armazenamento do sistema, com automação por rotinas",
+  "summary": "Clean and manage system storage with automated routines",
   "description": {
     "en": "A cleaning tool for Android storage: duplicate and leftover file detection, app cache cleanup, system storage analysis, and automations that run the checks you choose on a schedule. Works without root; more capable with it.",
     "pt": "Ferramenta de limpeza do armazenamento Android: deteção de ficheiros duplicados e órfãos, limpeza de cache de apps, análise do armazenamento do sistema e rotinas automáticas que correm as verificações que escolheres. Funciona sem root; mais capaz com ele."
@@ -53,5 +53,8 @@
       "pt": "Funciona sem root nem Shizuku. Estes acessos opcionais permitem funções adicionais de limpeza; configura-os no ecrã de configuração da app."
     },
     "guideUrl": "https://github.com/d4rken-org/sdmaid-se/wiki/Setup"
+  },
+  "summaryTranslations": {
+    "pt": "Limpeza e gestão do armazenamento do sistema, com automação por rotinas"
   }
 }

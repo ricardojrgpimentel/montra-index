@@ -469,6 +469,7 @@ async function main() {
       id: entry.id,
       name: entry.name,
       summary: entry.summary,
+      ...(entry.summaryTranslations ? { summaryTranslations: entry.summaryTranslations } : {}),
       description: entry.description ?? { en: entry.summary },
       packageName: entry.packageName,
       license: entry.license,

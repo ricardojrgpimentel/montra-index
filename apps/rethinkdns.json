@@ -1,7 +1,7 @@
 {
   "id": "rethinkdns",
   "name": "RethinkDNS",
-  "summary": "Firewall, DNS encriptado e túneis WireGuard para controlar ligações das apps",
+  "summary": "Firewall, encrypted DNS and WireGuard tunnels to control app connections",
   "description": {
     "en": "Control which apps can access the network, monitor their connections and use encrypted DNS with blocklists. Also supports WireGuard tunnels and routing rules. Uses Android's VPN service, so it occupies the system VPN slot.",
     "pt": "Controla quais as apps que podem aceder à rede, mostra as suas ligações e permite usar DNS encriptado com listas de bloqueio. Suporta também túneis WireGuard e regras de encaminhamento. Usa o serviço VPN do Android."
@@ -62,5 +62,8 @@
   "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/celzero/rethink-app/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/celzero/rethink-app/releases/download/v0.5.7/rethink-v0.5.7-izzy-universal.apk. Variante Izzy do upstream: todos os APKs usam a mesma variante e o certificado publicado no README. A variante de produção da Play Store usa outra chave.",
   "links": {
     "website": "https://rethinkfirewall.com/"
+  },
+  "summaryTranslations": {
+    "pt": "Firewall, DNS encriptado e túneis WireGuard para controlar ligações das apps"
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "nagram",
   "name": "Nagram",
-  "summary": "Cliente do Telegram com foco em privacidade e definições avançadas",
+  "summary": "Telegram client focused on privacy and advanced settings",
   "description": {
     "en": "Another unofficial Telegram client, built from the official source with a focus on privacy: hidden online status, disabled read receipts, local premium-style options, and a configurable interface. No Google Play Services needed.",
     "pt": "Outro cliente não oficial do Telegram, construído a partir do código oficial, com foco em privacidade: estado online escondido, confirmações de leitura desligadas, opções locais ao estilo premium e interface configurável. Não precisa dos Google Play Services."
@@ -46,5 +46,8 @@
   },
   "playStore": {
     "present": false
+  },
+  "summaryTranslations": {
+    "pt": "Cliente do Telegram com foco em privacidade e definições avançadas"
   }
 }

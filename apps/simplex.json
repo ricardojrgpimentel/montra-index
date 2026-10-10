@@ -1,7 +1,7 @@
 {
   "id": "simplex",
   "name": "SimpleX Chat",
-  "summary": "Mensagens privadas sem identificadores de utilizador, nem sequer números de telefone",
+  "summary": "Private messaging without user identifiers, including phone numbers",
   "description": {
     "en": "A messaging network with no user identifiers at all: no phone number, no username, no account. Conversations happen over unidirectional queues, and the design means the servers cannot see who talks to whom. End-to-end encrypted by default.",
     "pt": "Rede de mensagens sem qualquer identificador de utilizador: sem número de telefone, sem nome de utilizador, sem conta. As conversas passam por filas unidirecionais e o desenho garante que os servidores não conseguem ver quem fala com quem. Cifrado ponta a ponta por omissão."
@@ -58,5 +58,8 @@
   "verification": {
     "signingCertSha256": "3c:52:c4:fd:3c:ad:1c:07:c9:b0:0a:70:80:e3:58:fa:b9:fe:fc:b8:af:5a:ec:14:77:65:f1:6d:0f:21:ad:85",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Mensagens privadas sem identificadores de utilizador, nem sequer números de telefone"
   }
 }

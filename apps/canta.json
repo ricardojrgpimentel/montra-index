@@ -1,7 +1,7 @@
 {
   "id": "canta",
   "name": "Canta",
-  "summary": "Remove apps pré-instaladas e de utilizador com a ajuda do Shizuku",
+  "summary": "Remove preinstalled and user apps with Shizuku",
   "description": {
     "en": "Uninstalls pre-installed and user apps using Shizuku. Integrates the Universal Debloat List to explain packages and help choose what to remove, and can detect previously uninstalled apps. Requires Shizuku running and permission to use it. Removing critical system apps can cause problems, including a boot loop that needs a factory reset.",
     "pt": "Desinstala apps pré-instaladas e de utilizador através do Shizuku. Integra a Universal Debloat List para explicar os pacotes e ajudar a escolher o que remover, e deteta apps anteriormente desinstaladas. Precisa do Shizuku em execução e de autorização para o usar. Remover apps essenciais do sistema pode causar problemas, incluindo um ciclo de arranque que exija repor o telemóvel."
@@ -68,5 +68,8 @@
     "notes": "Primeiro pin: certificado lido por apksigner no APK oficial da release v4.0.0."
   },
   "notes": "Entrada revista após descoberta de 2026-10-10. Licença e requisito confirmados na documentação oficial; package name e certificado obtidos do APK. O certificado obtido do APK corresponde também ao fingerprint publicado no README oficial: 0a:26:40:31:7c:43:27:21:88:c3:e1:31:94:c1:54:60:69:1f:12:c3:9e:a1:9b:ba:72:7d:d6:7f:b5:62:89:d4.",
-  "author": "samolego"
+  "author": "samolego",
+  "summaryTranslations": {
+    "pt": "Remove apps pré-instaladas e de utilizador com a ajuda do Shizuku"
+  }
 }

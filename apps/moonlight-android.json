@@ -1,7 +1,7 @@
 {
   "id": "moonlight-android",
   "name": "Moonlight",
-  "summary": "Cliente de streaming de jogos: recebe o jogo do PC através de NVIDIA GameStream ou Sunshine",
+  "summary": "Stream games from your PC through NVIDIA GameStream or Sunshine",
   "description": {
     "en": "An open-source client for NVIDIA GameStream and Sunshine: it streams games running on your Windows PC to the Android device, at home or over the internet. The PC has to run GameStream (GeForce Experience) or Sunshine; the phone only decodes the video and sends input back. The release ships two builds — the standard one (com.limelight), which is also on Play, Amazon and F-Droid, and a root build (com.limelight.root) for Android 7.1 and below that requires root and adds an evdev mouse/keyboard capture provider.",
     "pt": "Cliente de código aberto para NVIDIA GameStream e Sunshine: transmite para o Android os jogos que correm no teu PC Windows, em casa ou pela internet. O PC tem de correr o GameStream (GeForce Experience) ou o Sunshine; o telefone só descodifica o vídeo e envia o input de volta. A release traz duas builds — a normal (com.limelight), que também está na Play, na Amazon e no F-Droid, e uma build root (com.limelight.root) para Android 7.1 e anteriores, que precisa de root e acrescenta a captura de rato e teclado por evdev."
@@ -47,5 +47,8 @@
   "verification": {
     "signingCertSha256": "d6:ce:3a:4d:f1:50:60:fe:48:8f:e5:24:41:a5:49:de:e4:ba:19:9b:36:e2:cb:1e:d9:08:5c:ca:8b:fa:1a:ca",
     "pinnedAt": "2026-10-08"
+  },
+  "summaryTranslations": {
+    "pt": "Cliente de streaming de jogos: recebe o jogo do PC através de NVIDIA GameStream ou Sunshine"
   }
 }

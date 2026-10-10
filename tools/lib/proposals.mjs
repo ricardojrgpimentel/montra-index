@@ -1,3 +1,4 @@
+import { draftCatalogueText, catalogueTextErrors } from "./catalogue-text.mjs";
 import { globMatch } from "./util.mjs";
 import { inferAbi, slugify } from "./assets.mjs";
 import { createHash } from "node:crypto";
@@ -6,7 +7,7 @@ export const PROPOSAL_MARKER = "<!-- montra:app-proposal -->";
 export const REVIEW_CHECKS = [
   ["license", "Confirmei a licença exata no projeto de origem"],
   ["artifact", "Confirmei a variante do APK e a origem do certificado observado"],
-  ["description", "Revi o nome, resumo e descrições em inglês e português"],
+  ["description", "Revi o nome, o resumo e a descrição em inglês e preservei a língua original"],
   ["category", "Revi as categorias, tags e imagens"],
   ["access", "Confirmei os requisitos de acesso; declarei root/Shizuku e alternativas quando aplicável"],
 ];
@@ -91,11 +92,9 @@ export function proposedRelease(repo, release, primary, info) {
 
 export function proposedEntry({ repo, info, license, licenseUrl, media, release, play, now = new Date() }) {
   const name = (info.label || repo.name).replace(/[\r\n]+/g, " ").slice(0, 60);
-  const description = repo.description?.trim() || `${name} is an open-source Android app.`;
   return {
     id: slugify(repo.name), name,
-    summary: description.replace(/[\r\n]+/g, " ").replace(/\.$/, "").slice(0, 160),
-    description: { en: description.slice(0, 4000), pt: "" },
+    ...draftCatalogueText(repo.description),
     packageName: info.packageName, license,
     sourceCode: `https://github.com/${repo.full_name}`,
     categories: ["utilities"], tags: [], ...media, release,
@@ -123,7 +122,7 @@ export function proposalBody({ catalogue, branch, entry, built, licenseUrl, warn
   return [
     PROPOSAL_MARKER, `Proposta de **${markdownText(entry.name)}**, preparada a partir dos APKs oficiais.`, "",
     `Este PR é um rascunho. Para o aprovar: [editar a entrada](https://github.com/${catalogue}/edit/${branch}/${file}), ` +
-      "completar a descrição portuguesa, rever os restantes campos, marcar a checklist e escolher **Ready for review**. " +
+      "substituir os marcadores ingleses por textos revistos, identificar a língua de `description.und` e preservá-la, rever os restantes campos, marcar a checklist e escolher **Ready for review**. " +
       "Depois de os checks passarem, podes fazer merge. A publicação e assinatura do catálogo acontecem após o merge.", "",
     `Origem: ${entry.sourceCode}`, `Licença a confirmar: ${licenseUrl}`,
     ...(runUrl ? [`Execução de preparação: ${runUrl}`] : []), "",
@@ -149,8 +148,7 @@ export function proposalReviewErrors(pr, entries) {
   }
   if (entries.length !== 1) errors.push("Uma proposta deve adicionar exatamente uma app.");
   for (const entry of entries) {
-    if (!entry.description?.pt?.trim() || entry.description.pt.trim().length < 8) errors.push("Completa a descrição em português na entrada.");
-    if (!entry.description?.en?.trim()) errors.push("Completa a descrição em inglês na entrada.");
+    errors.push(...catalogueTextErrors(entry));
     if (!entry.verification?.signingCertSha256) errors.push("A proposta precisa de um pin de certificado.");
   }
   return errors;

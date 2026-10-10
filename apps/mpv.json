@@ -1,7 +1,7 @@
 {
   "id": "mpv",
   "name": "mpv-android",
-  "summary": "Reprodutor de vídeo baseado no mpv, com suporte a tudo o que o ffmpeg lê",
+  "summary": "Video player based on mpv, supporting everything ffmpeg can read",
   "description": {
     "en": "A hardware-accelerated port of the mpv media player: plays essentially any container and codec ffmpeg can decode, with proper subtitle rendering, audio track selection, gesture controls and a scriptable interface.",
     "pt": "Port do reprodutor mpv com aceleração por hardware: reproduz praticamente qualquer contentor e codec que o ffmpeg descodifique, com renderização correta de legendas, escolha de faixas de áudio, gestos e interface programável."
@@ -41,5 +41,8 @@
   "verification": {
     "signingCertSha256": "fa:e7:f9:d0:23:85:cc:24:d9:6e:88:43:66:03:e2:3e:a6:ae:c7:64:9a:d1:25:0a:bb:b4:83:7d:aa:b8:2f:ff",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Reprodutor de vídeo baseado no mpv, com suporte a tudo o que o ffmpeg lê"
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "pipepipe",
   "name": "PipePipe",
-  "summary": "Fork do NewPipe com suporte a mais serviços e funcionalidades extra",
+  "summary": "NewPipe fork supporting more services and extra features",
   "description": {
     "en": "A NewPipe fork that adds support for Bilibili, NicoNico, a built-in comment viewer, sponsor-block style segment skipping and a download manager. Actively maintained where upstream is slower to merge.",
     "pt": "Fork do NewPipe que acrescenta suporte a Bilibili, NicoNico, visualizador de comentários integrado, salto de segmentos e gestor de downloads. Mantido ativamente onde o projeto original demora a integrar contribuições."
@@ -60,5 +60,8 @@
   "verification": {
     "signingCertSha256": "de:c7:34:29:ce:25:63:27:5f:5e:d1:98:25:e4:46:52:b3:2b:36:3a:46:f3:8b:df:f9:ad:6d:cd:e4:84:2d:88",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Fork do NewPipe com suporte a mais serviços e funcionalidades extra"
   }
 }

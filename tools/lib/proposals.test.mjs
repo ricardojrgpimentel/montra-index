@@ -53,26 +53,30 @@ describe("selected app proposals", () => {
     assert.deepEqual(proposedMedia("owner/app", [{ path: "app/src/icon.png", type: "blob" }]), {});
   });
 
-  it("keeps human translation and access decisions explicit", () => {
+  it("preserves upstream prose and marks English text for review", () => {
     const entry = proposedEntry({ repo: { name: "App", full_name: "owner/App", description: "An Android app." }, info: signed,
       license: "MIT", licenseUrl: "https://github.com/owner/App/blob/v1/LICENSE", media: {}, release: { provider: "github", repo: "owner/App" },
       play: { present: null }, now: new Date("2026-10-10T00:00:00Z") });
-    assert.equal(entry.description.pt, "");
+    assert.deepEqual(entry.description, { en: "English description pending review", und: "An Android app." });
     assert.equal(entry.accessRequirements, undefined);
     assert.equal(entry.playStore, undefined);
-    assert.equal(entry.summary, "An Android app");
+    assert.equal(entry.summary, "English summary pending review");
     assert.equal(entry.verification.signingCertSha256, signed.signingCertSha256);
   });
 
-  it("requires a non-draft PR, every review decision and a Portuguese description", () => {
+  it("requires a non-draft PR, every review decision and reviewed English text", () => {
     const body = [PROPOSAL_MARKER, ...REVIEW_CHECKS.map(([id, text]) => `- [x] ${text} <!-- montra-review:${id} -->`)].join("\n");
     const pr = { draft: false, head: { ref: "proposals/example" }, body };
-    const entry = { description: { en: "An app", pt: "Uma app Android útil" }, verification: { signingCertSha256: "aa:bb" } };
+    const entry = { summary: "Useful Android app", description: { en: "An Android app", pt: "Uma app Android útil" }, verification: { signingCertSha256: "aa:bb" } };
     assert.deepEqual(proposalReviewErrors(pr, [entry]), []);
     assert.ok(proposalReviewErrors({ ...pr, draft: true }, [entry]).length);
     assert.ok(proposalReviewErrors({ ...pr, body: body.replace("[x]", "[ ]") }, [entry]).length);
     assert.ok(proposalReviewErrors({ ...pr, body: "" }, [entry]).length);
-    assert.ok(proposalReviewErrors(pr, [{ ...entry, description: { en: "An app", pt: "" } }]).length);
+    assert.deepEqual(proposalReviewErrors(pr, [{ ...entry, description: { ja: "元の説明をそのまま使います" } }]).length > 0, true);
+    assert.deepEqual(proposalReviewErrors(pr, [{ ...entry, description: { und: "An original app description" } }]).length > 0, true);
+    assert.ok(proposalReviewErrors(pr, [{ ...entry, description: { en: "", pt: "" } }]).length);
+    assert.ok(proposalReviewErrors(pr, [{ ...entry, summary: "English summary pending review" }]).length);
+    assert.ok(proposalReviewErrors(pr, [{ ...entry, description: { en: "English description pending review" } }]).length);
     assert.ok(proposalReviewErrors(pr, []).length);
     assert.deepEqual(proposalReviewErrors({ draft: false, head: { ref: "normal" }, body: "Normal PR" }, []), []);
   });
@@ -84,7 +88,7 @@ describe("selected app proposals", () => {
     }, built: { release: { versionName: "1.2.3", assets: [] } }, licenseUrl: "https://github.com/owner/app/blob/main/LICENSE" });
     assert.ok(body.includes(PROPOSAL_MARKER));
     assert.ok(body.includes("Ready for review"));
-    assert.ok(body.includes("completar a descrição portuguesa"));
+    assert.ok(body.includes("substituir os marcadores ingleses"));
     assert.ok(!body.includes("<script>"));
     assert.ok(body.includes("&lt;script&gt;"));
     assert.ok(body.includes("montra-review:access"));

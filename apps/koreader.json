@@ -1,7 +1,7 @@
 {
   "id": "koreader",
   "name": "KOReader",
-  "summary": "Leitor de ebooks e PDF com dicionários, notas e gestão de biblioteca",
+  "summary": "Ebook and PDF reader with dictionaries, notes and library management",
   "description": {
     "en": "An ebook reader for PDF, EPUB, DjVu, CBZ and FB2 with reflow, dictionary lookup, highlights, page cropping and multi-column support. Built for e-ink devices but works well on Android tablets and phones.",
     "pt": "Leitor de ebooks para PDF, EPUB, DjVu, CBZ e FB2 com reflow, consulta de dicionário, destaques, recorte de páginas e suporte multi-coluna. Feito para e-ink, mas funciona bem em tablets e telefones Android."
@@ -58,5 +58,8 @@
   "verification": {
     "signingCertSha256": "fd:49:2a:4f:e0:01:f1:70:58:b8:26:da:43:58:a1:dc:ea:c3:8d:26:68:6f:34:25:22:c5:a4:97:bc:d4:dc:cc",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Leitor de ebooks e PDF com dicionários, notas e gestão de biblioteca"
   }
 }

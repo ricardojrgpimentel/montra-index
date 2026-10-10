@@ -1,7 +1,7 @@
 {
   "id": "revanced-manager",
   "name": "ReVanced Manager",
-  "summary": "Aplica patches a APKs instalados para acrescentar funcionalidades e remover anúncios",
+  "summary": "Patch installed APKs to add features and remove ads",
   "description": {
     "en": "Downloads patches from the ReVanced project and applies them to APKs on the device, letting you rebuild an app you already have with extra features and without ads. It ships no patched apps itself; it is a build tool.",
     "pt": "Descarrega patches do projeto ReVanced e aplica-os a APKs no dispositivo, permitindo reconstruir uma app que já tens com funcionalidades extra e sem anúncios. Não distribui apps modificadas: é uma ferramenta de compilação."
@@ -39,5 +39,8 @@
   "verification": {
     "signingCertSha256": "b6:36:2c:6e:a7:88:8e:fd:15:c0:80:0f:48:07:86:ad:0f:5b:13:3b:4f:84:e1:2d:46:af:ba:5f:9e:ac:12:23",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Aplica patches a APKs instalados para acrescentar funcionalidades e remover anúncios"
   }
 }

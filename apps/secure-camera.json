@@ -1,7 +1,7 @@
 {
   "id": "secure-camera",
   "name": "Secure Camera",
-  "summary": "Câmara do GrapheneOS para fotografias, vídeo e leitura de códigos QR",
+  "summary": "GrapheneOS camera for photos, video and QR code scanning",
   "description": {
     "en": "The GrapheneOS camera app, built on Android CameraX for taking photos and videos and scanning QR codes. Distributed as an official standalone APK.",
     "pt": "App de câmara do GrapheneOS, baseada no CameraX do Android, para tirar fotografias, gravar vídeo e ler códigos QR. Disponível como APK oficial independente."
@@ -41,5 +41,8 @@
   "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/GrapheneOS/Camera/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/GrapheneOS/Camera/releases/download/93/Camera-93.apk.",
   "links": {
     "website": "https://grapheneos.org/"
+  },
+  "summaryTranslations": {
+    "pt": "Câmara do GrapheneOS para fotografias, vídeo e leitura de códigos QR"
   }
 }

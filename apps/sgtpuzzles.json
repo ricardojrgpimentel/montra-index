@@ -1,7 +1,7 @@
 {
   "id": "sgtpuzzles",
   "name": "Simon Tatham's Puzzles",
-  "summary": "Quarenta puzzles clássicos num só pacote, gerados com semente",
+  "summary": "Forty classic puzzles in one package, generated from a seed",
   "description": {
     "en": "A collection of forty logic puzzles (Net, Flood, Slant, Nonograms, Mines and more) with procedurally generated, always-solvable boards. Every puzzle can be shared by its seed, so no two devices need the same file.",
     "pt": "Coleção de quarenta puzzles de lógica (Net, Flood, Slant, Nonogramas, Minas e mais) com tabuleiros gerados por procedimento e sempre resolvíveis. Cada puzzle pode ser partilhado pela semente, sem ficheiros envolvidos."
@@ -39,5 +39,8 @@
   "playStore": {
     "present": true,
     "url": "https://play.google.com/store/apps/details?id=name.boyle.chris.sgtpuzzles&hl=en&gl=US"
+  },
+  "summaryTranslations": {
+    "pt": "Quarenta puzzles clássicos num só pacote, gerados com semente"
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "accrescent",
   "name": "Accrescent",
-  "summary": "Loja de apps com catálogo assinado e certificados de instalação fixados",
+  "summary": "App store with a signed catalogue and pinned installation certificates",
   "description": {
     "en": "An Android app store focused on privacy and verified distribution, with signed catalogue metadata and pinned app signing keys. Installing apps does not require an account. The project is currently in alpha.",
     "pt": "Loja de apps Android focada na privacidade e na distribuição verificada, com metadados assinados e certificados de assinatura fixados. Não exige conta para instalar apps. O projeto está em fase alfa."
@@ -41,5 +41,8 @@
   "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/accrescent/accrescent/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/accrescent/accrescent/releases/download/0.28.1/accrescent-0.28.1.apk. As ligações de capturas publicadas no README devolviam HTTP 404 na revisão de 2026-10-08; foram omitidas.",
   "links": {
     "website": "https://accrescent.app"
+  },
+  "summaryTranslations": {
+    "pt": "Loja de apps com catálogo assinado e certificados de instalação fixados"
   }
 }

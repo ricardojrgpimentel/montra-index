@@ -1,7 +1,7 @@
 {
   "id": "notallyx",
   "name": "NotallyX",
-  "summary": "App de notas minimalista com etiquetas, listas e pesquisa avançada",
+  "summary": "Minimalist notes app with labels, lists and advanced search",
   "description": {
     "en": "A minimal notes app that grew up: rich text, lists, labels, colours, pinning, reminders and powerful search over a local database. No cloud, no account, plus backup and export.",
     "pt": "App de notas minimalista que cresceu: texto formatado, listas, etiquetas, cores, fixação, lembretes e pesquisa avançada sobre uma base de dados local. Sem nuvem, sem conta, com cópia de segurança e exportação."
@@ -53,5 +53,8 @@
   "verification": {
     "signingCertSha256": "d2:14:b6:05:7b:79:f8:25:09:dd:cd:1e:35:19:65:b3:c6:ec:c4:b2:a3:89:6e:5c:df:88:5a:70:a0:b6:1d:fd",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "App de notas minimalista com etiquetas, listas e pesquisa avançada"
   }
 }

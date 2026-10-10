@@ -1,7 +1,7 @@
 {
   "id": "trail-sense",
   "name": "Trail Sense",
-  "summary": "Transforma os sensores do telemóvel em ferramentas de navegação e de apoio a trilhos, sem rede",
+  "summary": "Turn phone sensors into navigation and trail tools, without a network connection",
   "description": {
     "en": "Uses the phone's sensors to help on wilderness treks or in survival situations, and is designed to work entirely offline. The project is explicit that it is a tool to carry alongside proper equipment and skills, not a replacement for them.",
     "pt": "Usa os sensores do telemóvel para ajudar em trilhos ou em situações de sobrevivência, e foi desenhada para funcionar inteiramente sem rede. O próprio projeto diz claramente que é uma ferramenta para levar a par de equipamento e conhecimentos a sério, e não um substituto deles."
@@ -37,5 +37,8 @@
   "verification": {
     "signingCertSha256": "d3:b7:cb:bc:63:3f:7c:1b:e2:ca:a2:f7:5f:b0:72:ee:9b:40:fd:10:fa:af:96:42:69:2b:27:c4:af:5e:c4:a7",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Transforma os sensores do telemóvel em ferramentas de navegação e de apoio a trilhos, sem rede"
   }
 }

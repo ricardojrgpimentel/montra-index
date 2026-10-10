@@ -1,7 +1,7 @@
 {
   "id": "neo-backup",
   "name": "Neo Backup",
-  "summary": "Cópias de segurança locais de apps e dados, para telemóveis com root",
+  "summary": "Local app and data backups for rooted phones",
   "description": {
     "en": "Back up and restore individual apps and their data, in batches or on a schedule. Requires root access. Formerly OAndBackupX, part of the Neo Applications suite.",
     "pt": "Cria e restaura cópias de segurança de apps e dos seus dados, individualmente, em lote ou por agendamento. Requer acesso root. Anteriormente OAndBackupX, faz parte do conjunto Neo Applications."
@@ -60,5 +60,8 @@
       "pt": "Precisa de root para criar e restaurar cópias de segurança de apps e dados. Autoriza o Neo Backup no teu gestor de root."
     },
     "guideUrl": "https://github.com/NeoApplications/Neo-Backup#features-"
+  },
+  "summaryTranslations": {
+    "pt": "Cópias de segurança locais de apps e dados, para telemóveis com root"
   }
 }

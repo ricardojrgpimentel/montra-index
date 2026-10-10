@@ -9,7 +9,7 @@
 - [ ] `packageName` é o applicationId real do APK (não uma suposição)
 - [ ] `release.assetPattern`/`abiAssets` escolhe exatamente o APK certo
       (sem builds de debug, sem variantes de outra app)
-- [ ] `summary` é uma linha, sem ponto final, e `description` tem `en` e `pt`
+- [ ] `summary` e `description.en` estão em inglês; a língua original está preservada e as traduções usam etiquetas BCP-47
 - [ ] `categories` vem da taxonomia fixa do schema
 - [ ] Corri `node tools/build-index.mjs --update-pins` e revi o diff dos pins
 

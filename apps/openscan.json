@@ -1,7 +1,7 @@
 {
   "id": "openscan",
   "name": "OpenScan",
-  "summary": "Digitaliza documentos, recorta páginas e exporta ficheiros PDF ou imagens",
+  "summary": "Scan documents, crop pages and export PDF files or images",
   "description": {
     "en": "Scan paper documents, notes and receipts with the camera, crop the pages and share them as PDFs or images. An open source document scanner designed around local use and privacy.",
     "pt": "Digitaliza documentos, notas e recibos com a câmara, permite recortar as páginas e partilhá-las em PDF ou como imagens. Digitalizador de código aberto pensado para utilização local e privacidade."
@@ -52,5 +52,8 @@
     "pinnedAt": "2026-10-08",
     "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial app-release.apk (v3.0.0)."
   },
-  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/ethereal-developers/OpenScan/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/ethereal-developers/OpenScan/releases/download/v3.0.0/app-release.apk. APK universal do release oficial; os APKs separados por arquitetura são alternativas ao mesmo artefacto."
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/ethereal-developers/OpenScan/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/ethereal-developers/OpenScan/releases/download/v3.0.0/app-release.apk. APK universal do release oficial; os APKs separados por arquitetura são alternativas ao mesmo artefacto.",
+  "summaryTranslations": {
+    "pt": "Digitaliza documentos, recorta páginas e exporta ficheiros PDF ou imagens"
+  }
 }

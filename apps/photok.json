@@ -1,7 +1,7 @@
 {
   "id": "photok",
   "name": "Photok",
-  "summary": "Guarda fotografias e vídeos numa galeria encriptada no próprio dispositivo",
+  "summary": "Store photos and videos in an encrypted gallery on your device",
   "description": {
     "en": "A private photo and video vault that encrypts media locally with AES-256. Files stay on the device and are decrypted in memory while in use. No cloud upload is required.",
     "pt": "Cofre privado para fotografias e vídeos, com encriptação AES-256 no próprio dispositivo. Os ficheiros permanecem no telemóvel e são desencriptados em memória durante a utilização. Não exige envio para a nuvem."
@@ -56,5 +56,8 @@
   "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/leonlatsch/Photok/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/leonlatsch/Photok/releases/download/3.5.0/photok-3.5.0-foss.apk.",
   "links": {
     "website": "https://photok.app"
+  },
+  "summaryTranslations": {
+    "pt": "Guarda fotografias e vídeos numa galeria encriptada no próprio dispositivo"
   }
 }

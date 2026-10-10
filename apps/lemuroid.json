@@ -1,7 +1,7 @@
 {
   "id": "lemuroid",
   "name": "Lemuroid",
-  "summary": "Emulador tudo-em-um baseado em libretro, com interface simples",
+  "summary": "All-in-one emulator based on libretro, with a simple interface",
   "description": {
     "en": "An all-in-one emulator built on libretro cores: NES, SNES, Mega Drive, Game Boy, Game Boy Advance, PlayStation, PSP, arcade and more, with automatic controller mapping, save states, cloud sync via the system and a deliberately simple interface.",
     "pt": "Emulador tudo-em-um construído sobre núcleos libretro: NES, SNES, Mega Drive, Game Boy, Game Boy Advance, PlayStation, PSP, arcade e mais, com mapeamento automático de comandos, save states, sincronização pelo sistema e uma interface deliberadamente simples."
@@ -32,5 +32,8 @@
   "playStore": {
     "present": true,
     "url": "https://play.google.com/store/apps/details?id=com.swordfish.lemuroid&hl=en&gl=US"
+  },
+  "summaryTranslations": {
+    "pt": "Emulador tudo-em-um baseado em libretro, com interface simples"
   }
 }

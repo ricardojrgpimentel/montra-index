@@ -1,7 +1,7 @@
 {
   "id": "luanti",
   "name": "Luanti",
-  "summary": "Plataforma de jogos voxel com mods, antes conhecida como Minetest",
+  "summary": "Voxel game platform with mods, formerly known as Minetest",
   "description": {
     "en": "A voxel game engine, not a game: install it and add games and mods from within the app. Supports single player, multiplayer servers and a large library of community content written in Lua.",
     "pt": "Um motor de jogos voxel, não um jogo: instala-se e acrescentam-se jogos e mods dentro da própria app. Suporta um jogador, servidores multijogador e uma biblioteca enorme de conteúdo comunitário escrito em Lua."
@@ -45,5 +45,8 @@
   "playStore": {
     "present": true,
     "url": "https://play.google.com/store/apps/details?id=net.minetest.minetest&hl=en&gl=US"
+  },
+  "summaryTranslations": {
+    "pt": "Plataforma de jogos voxel com mods, antes conhecida como Minetest"
   }
 }
