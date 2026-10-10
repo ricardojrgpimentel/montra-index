@@ -9,6 +9,7 @@ name: validate
 # config still resolves to a real asset. Fast enough to be a required check.
 on:
   pull_request:
+    types: [opened, synchronize, reopened, edited, ready_for_review, converted_to_draft]
     paths:
       - "apps/**"
       - "schema/**"
@@ -30,6 +31,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: read
 
 jobs:
   schema:
@@ -47,6 +49,12 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - name: testes das ferramentas
         run: pnpm test
+
+      - name: revisão das propostas automáticas
+        if: github.event_name == 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/check-proposal-review.mjs
 
       - name: validar entradas
         run: pnpm run validate

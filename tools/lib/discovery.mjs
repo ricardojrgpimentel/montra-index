@@ -72,6 +72,8 @@ export function discoverySummary(report) {
     "Estas candidatas precisam de revisão de licença, variante do APK, certificado, " +
       "requisitos de acesso, descrição e imagens antes de entrar no catálogo.",
     "O relatório JSON e o log completo estão no artefacto desta execução. Nenhuma app foi adicionada automaticamente.",
+    "Para preparar as candidatas escolhidas: [abrir o formulário propose-apps](https://github.com/ricardojrgpimentel/montra-index/actions/workflows/propose-apps.yml), " +
+      "selecionar **Run workflow** e indicar os repositórios. Será criado um PR em rascunho por app, com a revisão ainda por completar.",
     "",
     "| Repositório | Licença declarada | Package | Play Store | APK |",
     "| --- | --- | --- | --- | --- |",

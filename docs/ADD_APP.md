@@ -5,6 +5,12 @@ a identidade da app no cliente: mudá-lo depois faz a app parecer nova.
 
 ## 1. Reconhecimento
 
+Para uma candidata da descoberta, podes começar em **Actions → propose-apps →
+Run workflow**: indica `owner/repo` para receber um PR em rascunho com APKs e pins
+verificados. Completa os dados na entrada, confirma a checklist e marca **Ready
+for review**; o CI verifica a revisão antes do merge. O processo está detalhado
+no [README](../README.md#preparar-e-aprovar-candidatas-no-github).
+
 ```bash
 node tools/probe.mjs owner/repo
 ```

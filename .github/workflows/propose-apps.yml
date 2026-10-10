@@ -1,0 +1,106 @@
+name: propose-apps
+
+# Seleção explícita do mantenedor. Um PR em rascunho por app; sem auto-merge.
+on:
+  workflow_dispatch:
+    inputs:
+      repositories:
+        description: "Apps a preparar: owner/repo, separadas por vírgulas (máximo 5)"
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: propose-apps
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    outputs:
+      has_proposals: ${{ steps.result.outputs.has_proposals }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        with:
+          version: 9
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: build-tools do Android SDK
+        run: |
+          SDKMANAGER="$(command -v sdkmanager || echo "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager")"
+          yes | "$SDKMANAGER" --install "build-tools;36.0.0" "platforms;android-36" > /dev/null
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - name: preparar e verificar as apps escolhidas
+        env:
+          SELECTED_REPOS: ${{ inputs.repositories }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/prepare-proposals.mjs --output .cache/proposals
+      - name: resultado da preparação
+        id: result
+        if: always()
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const file = '.cache/proposals/manifest.json';
+          const result = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : null;
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `has_proposals=${!!result?.proposals.length}\n`);
+          const lines = ['# Preparação de propostas', ''];
+          if (!result) lines.push('A preparação não terminou. Consulta o log desta execução.');
+          else {
+            lines.push(`${result.proposals.length} apps preparadas; ${result.skipped.length} ignoradas; ${result.failed.length} falhas.`);
+            for (const item of [...result.skipped, ...result.failed]) lines.push(`- ${item.repo}: ${item.reason.replace(/[\r\n]+/g, ' ')}${item.url ? ` — ${item.url}` : ''}`);
+          }
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join('\n') + '\n');
+          JS
+      - name: guardar propostas e evidência de verificação
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: app-proposals-${{ github.run_id }}
+          path: .cache/proposals/
+          if-no-files-found: warn
+          retention-days: 90
+
+  publish:
+    if: always() && github.ref == 'refs/heads/main' && needs.prepare.outputs.has_proposals == 'true'
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        with:
+          version: 9
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: descarregar propostas verificadas
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: app-proposals-${{ github.run_id }}
+          path: .cache/proposals
+      - name: abrir um PR em rascunho por app
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/publish-proposals.mjs .cache/proposals/manifest.json

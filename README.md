@@ -79,6 +79,9 @@ O APK é a fonte de verdade. Nada aqui confia nos metadados do GitHub.
   Mostra um resumo na execução e guarda JSON, resumo e log num artefacto durante
   90 dias. Usa apenas o `GITHUB_TOKEN` automático; não precisa da chave de assinatura.
   As candidatas não entram no catálogo até serem revistas.
+- `propose-apps.yml` — manual: escolhe até cinco repositórios no formulário e recebe
+  um PR em rascunho por app. Verifica APKs de todas as ABIs selecionadas, propõe o
+  primeiro pin e procura imagens de fastlane. Não assina nem publica o catálogo.
 - `verify-published.yml` — semanal: volta a descarregar tudo o que foi publicado e
   compara hashes e certificados. É a deteção de um asset substituído à posteriori.
 
@@ -114,6 +117,33 @@ Para produzir o mesmo relatório localmente sem alterar `discovery-report.json`:
 node tools/discover.mjs --inspect --limit 120 --inspect-limit 20 \
   --output .cache/discovery/report.json --summary .cache/discovery/summary.md
 ```
+
+### Preparar e aprovar candidatas no GitHub
+
+1. Em **Actions → propose-apps → Run workflow**, mantém a branch `main` e indica
+   os repositórios escolhidos, por exemplo `z-huang/InnerTune,plainhub/plain-app`.
+2. A execução cria um PR em rascunho por app e mostra as ligações no seu resumo.
+   Cada PR inclui versões, hashes, certificado e referências ao projeto e licença.
+   Uma proposta já aberta é preservada, incluindo as tuas edições. Repetir o
+   formulário não recria PRs que já fechaste; para retomar uma proposta, reabre o PR.
+3. No PR, usa **editar a entrada** para rever nome, resumo, categorias, tags e
+   imagens, completar `description.pt` e declarar requisitos de acesso quando
+   aplicável. A categoria inicial é `utilities`, uma sugestão genérica para rever.
+   A identificação GPL do GitHub não prova "or later": confirma o SPDX exato na
+   licença de origem. O pin é observado nos APKs, mas a sua origem também precisa
+   de confirmação humana.
+4. Marca a checklist no corpo do PR e escolhe **Ready for review**. O check de
+   revisão exige todas as confirmações e uma descrição portuguesa preenchida;
+   é normal falhar enquanto a proposta estiver em rascunho. Se o GitHub mostrar
+   **Approve and run** para o workflow do PR criado pelo bot, autoriza essa execução.
+5. Depois de os checks passarem, faz merge. O `build-index` reconstrói, assina e
+   publica a app no catálogo; não é necessário copiar a chave privada.
+
+Permissões: o job que descarrega e inspeciona APKs tem apenas leitura. Só o job
+que cria branches e PRs recebe `contents: write` e `pull-requests: write`.
+Nenhum deles recebe `INDEX_SIGNING_KEY`. Em **Settings → Actions → General**,
+deve estar ativa a opção **Allow GitHub Actions to create and approve pull
+requests**; o fluxo só cria PRs, nunca os aprova nem faz merge automaticamente.
 
 ## Licenças
 
