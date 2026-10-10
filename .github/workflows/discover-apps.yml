@@ -1,0 +1,96 @@
+name: discover-apps
+
+# Descobre candidatas; a revisão das entradas continua a ser feita em apps/.
+# Os relatórios são artefactos do Actions, sem alterações ao catálogo assinado.
+on:
+  schedule:
+    - cron: "29 7 * * 1"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Máximo de repositórios a avaliar"
+        type: choice
+        options: ["40", "120", "240"]
+        default: "120"
+      inspect_limit:
+        description: "Máximo de APKs a inspecionar"
+        type: choice
+        options: ["5", "20", "40"]
+        default: "20"
+      query:
+        description: "Pesquisas extra do GitHub, separadas por vírgulas"
+        type: string
+        required: false
+      seed:
+        description: "Repositórios específicos, owner/repo, separados por vírgulas"
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: discover-apps-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      REPORT_DIR: ${{ github.workspace }}/.cache/discovery
+    steps:
+      # Os mesmos pins usados pelos workflows de construção e validação.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+        with:
+          version: 9
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: build-tools do Android SDK
+        run: |
+          SDKMANAGER="$(command -v sdkmanager || echo "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager")"
+          yes | "$SDKMANAGER" --install "build-tools;36.0.0" "platforms;android-36" > /dev/null
+      - run: pnpm install --frozen-lockfile
+      - name: testes das ferramentas
+        run: pnpm test
+      - name: pesquisar e inspecionar candidatas
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCOVERY_LIMIT: ${{ inputs.limit || '120' }}
+          INSPECT_LIMIT: ${{ inputs.inspect_limit || '20' }}
+          EXTRA_QUERY: ${{ inputs.query }}
+          SEED_REPOS: ${{ inputs.seed }}
+        run: |
+          mkdir -p "$REPORT_DIR"
+          args=(--inspect --limit "$DISCOVERY_LIMIT" --inspect-limit "$INSPECT_LIMIT"
+                --output "$REPORT_DIR/discovery-report.json" --summary "$REPORT_DIR/summary.md")
+          if [[ -n "$EXTRA_QUERY" ]]; then args+=(--query "$EXTRA_QUERY"); fi
+          if [[ -n "$SEED_REPOS" ]]; then args+=(--seed "$SEED_REPOS"); fi
+          node tools/discover.mjs "${args[@]}" 2>&1 | tee "$REPORT_DIR/discovery.log"
+      - name: resumo da descoberta
+        if: always()
+        shell: bash
+        run: |
+          if [[ -f "$REPORT_DIR/summary.md" ]]; then
+            cat "$REPORT_DIR/summary.md" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "A descoberta não terminou. Consulta o log da execução; não foi gerado um relatório novo." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: guardar relatório e log para revisão
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: discovery-${{ github.run_number }}
+          path: ${{ env.REPORT_DIR }}/
+          if-no-files-found: warn
+          retention-days: 90

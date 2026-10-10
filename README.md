@@ -72,8 +72,13 @@ O APK é a fonte de verdade. Nada aqui confia nos metadados do GitHub.
 - `validate.yml` — em cada pull request: schema, regras cruzadas, e cada app tem
   de resolver para um asset real (`--dry`). Não descarrega APKs, por isso é rápido
   e pode ser um check obrigatório.
-- `build-index.yml` — noturno e manual: reconstrói, assina, verifica e faz commit.
+- `build-index.yml` — noturno, após alterações ao catálogo e manual: reconstrói, assina, verifica e faz commit.
   Precisa do secret `INDEX_SIGNING_KEY`.
+- `discover-apps.yml` — segunda-feira às 07:29 UTC e manual: pesquisa apps novas,
+  incluindo Shizuku/root, e inspeciona até 20 APKs de 120 repositórios avaliados.
+  Mostra um resumo na execução e guarda JSON, resumo e log num artefacto durante
+  90 dias. Usa apenas o `GITHUB_TOKEN` automático; não precisa da chave de assinatura.
+  As candidatas não entram no catálogo até serem revistas.
 - `verify-published.yml` — semanal: volta a descarregar tudo o que foi publicado e
   compara hashes e certificados. É a deteção de um asset substituído à posteriori.
 
@@ -87,6 +92,28 @@ O APK é a fonte de verdade. Nada aqui confia nos metadados do GitHub.
 A chave privada nunca entra no repositório (`.gitignore`). Guarda uma cópia
 offline: se a perderes, os clientes instalados deixam de aceitar índices novos até
 sair uma versão com outra chave.
+
+### Consultar a descoberta de apps
+
+Em **Actions → discover-apps**, abre a execução mais recente: o resumo lista as
+candidatas e distingue APKs inspecionados de apps ainda por verificar. Descarrega
+o artefacto `discovery-<número>` para consultar o relatório completo, incluindo
+falhas e motivos de exclusão. **Run workflow** permite mudar os limites, acrescentar
+pesquisas ou indicar repositórios específicos (`owner/repo`).
+
+A ferramenta exclui repositórios já indexados, arquivados, sem manutenção nos
+últimos 12 meses, bibliotecas, licenças não aceites e releases sem APK. Após a
+inspeção, exclui também packages já indexados e APKs cuja assinatura não consiga
+verificar. Requisitos de root/Shizuku, variantes e licença exata continuam a
+precisar de confirmação na documentação oficial; uma correspondência na pesquisa
+não prova esses requisitos. Para promover uma candidata, segue [docs/ADD_APP.md](docs/ADD_APP.md).
+
+Para produzir o mesmo relatório localmente sem alterar `discovery-report.json`:
+
+```bash
+node tools/discover.mjs --inspect --limit 120 --inspect-limit 20 \
+  --output .cache/discovery/report.json --summary .cache/discovery/summary.md
+```
 
 ## Licenças
 

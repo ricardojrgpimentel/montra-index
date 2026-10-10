@@ -15,6 +15,8 @@
 //                                                        check the Play Store
 //   node tools/discover.mjs --inspect --write --limit 5  also write draft
 //                                                        apps/<id>.json entries
+//   --output report.json --summary summary.md          save reports outside the
+//                                                        tracked catalogue (CI)
 //
 // Nothing is committed automatically: a candidate that passes is a *draft* for a
 // human to review, because curation is the product.
@@ -27,6 +29,7 @@ import { githubApi, githubToken } from "./lib/github.mjs";
 import { findApkTools, inspectApk } from "./lib/apk.mjs";
 import { lookupPlay, nameSimilarity } from "./lib/play.mjs";
 import { slugify, suggestPattern } from "./lib/assets.mjs";
+import { boundedInteger, discoveryReport, discoverySummary, inspectionResult, recentlyMaintained } from "./lib/discovery.mjs";
 
 const args = process.argv.slice(2);
 const flag = (name) => args.includes(`--${name}`);
@@ -36,10 +39,13 @@ const opt = (name, fallback = null) => {
 };
 const list = (name) => (opt(name) ? opt(name).split(",").map((s) => s.trim()).filter(Boolean) : []);
 
-const LIMIT = Number(opt("limit", "40"));
+const LIMIT = boundedInteger(opt("limit", "40"), "limit", 1000);
+const INSPECT_LIMIT = boundedInteger(opt("inspect-limit", String(LIMIT)), "inspect-limit", 1000);
 const INSPECT = flag("inspect");
 const WRITE = flag("write");
-const MIN_STARS = Number(opt("min-stars", "150"));
+const MIN_STARS = boundedInteger(opt("min-stars", "150"), "min-stars", 1_000_000, 0);
+const REPORT_PATH = path.resolve(opt("output", path.join(DIRS.root, "discovery-report.json")));
+const SUMMARY_PATH = opt("summary");
 
 const LICENSES = new Set([
   "0BSD", "AGPL-3.0", "AGPL-3.0-only", "AGPL-3.0-or-later", "Apache-2.0", "Artistic-2.0",
@@ -55,6 +61,8 @@ const DEFAULT_QUERIES = [
   "topic:android-app stars:>500",
   "topic:android topic:material-design stars:>800 archived:false",
   "topic:privacy topic:android stars:>300",
+  "topic:shizuku stars:>150 archived:false",
+  "topic:root topic:android stars:>150 archived:false",
 ];
 
 /**
@@ -112,6 +120,11 @@ async function evaluate(repo, { knownRepos, knownPackages, knownIds }) {
   }
   if (repo.archived) {
     row.verdict = "arquivada";
+    return row;
+  }
+  if (!recentlyMaintained(repo.pushed_at)) {
+    row.verdict = "sem manutenção recente";
+    row.reasons.push("sem atividade no repositório nos últimos 12 meses");
     return row;
   }
   if (!LICENSES.has(row.license ?? "")) {
@@ -181,7 +194,7 @@ async function evaluate(repo, { knownRepos, knownPackages, knownIds }) {
 }
 
 /* --------------------------------------------------------------- inspection */
-async function inspectCandidate(row, tools) {
+async function inspectCandidate(row, tools, knownPackages) {
   if (!row.apkAssetUrl) return row;
   const file = await downloadCached(row.apkAssetUrl, { subdir: "discover", token: process.env.GITHUB_TOKEN });
   const info = await inspectApk(file, { tools });
@@ -193,6 +206,11 @@ async function inspectCandidate(row, tools) {
   row.nativeAbis = info.nativeAbis;
   row.signingCertSha256 = info.signingCertSha256;
   row.size = (await fs.stat(file)).size;
+  const result = inspectionResult(info, knownPackages);
+  row.verdict = result.verdict;
+  row.inspectionStatus = result.inspectionStatus;
+  if (result.reason) row.reasons.push(result.reason);
+  if (row.verdict !== "candidata") return row;
   try {
     row.play = await lookupPlay(info.packageName);
   } catch (error) {
@@ -337,35 +355,25 @@ async function main() {
   ).filter(Boolean);
 
   /* 3. optionally inspect the top ones ----------------------------------- */
-  let pool = evaluated.filter((row) => row.verdict === "candidata");
+  const pool = evaluated.filter((row) => row.verdict === "candidata");
   if (INSPECT) {
-    const toInspect = pool.slice(0, Number(opt("inspect-limit", String(pool.length))));
+    const toInspect = pool.slice(0, INSPECT_LIMIT);
     log.step(`a descarregar 1 APK por candidata para confirmar o package name (${toInspect.length})`);
-    const inspected = await mapPool(toInspect, 3, async (row) => {
+    await mapPool(toInspect, 3, async (row) => {
       try {
-        return await inspectCandidate(row, tools);
+        return await inspectCandidate(row, tools, knownPackages);
       } catch (error) {
         row.verdict = "inspeção falhou";
+        row.inspectionStatus = "failed";
         row.reasons.push(String(error.message).slice(0, 120));
         return row;
       }
     });
-    pool = inspected;
   }
 
   /* 4. report ------------------------------------------------------------ */
-  const good = pool
-    .filter((row) => row.verdict === "candidata")
-    .sort((a, b) => {
-      // 1. fora da Play Store (é o ponto do projeto)
-      const aOff = a.play?.present === false ? 1 : 0;
-      const bOff = b.play?.present === false ? 1 : 0;
-      if (aOff !== bOff) return bOff - aOff;
-      // 2. releases que não sejam só builds de debug
-      if (!!a.onlyDebugBuilds !== !!b.onlyDebugBuilds) return a.onlyDebugBuilds ? 1 : -1;
-      // 3. e só depois popularidade
-      return (b.downloads ?? 0) - (a.downloads ?? 0) || b.stars - a.stars;
-    });
+  const report = discoveryReport(evaluated, { searches: queries, found: candidates.length });
+  const good = report.candidates;
 
   console.log("");
   console.log(color.bold(`  ${good.length} candidatas utilizáveis\n`));
@@ -399,7 +407,7 @@ async function main() {
     console.log("");
   }
 
-  const rejected = evaluated.filter((row) => row.verdict !== "candidata");
+  const rejected = report.rejected;
   if (rejected.length) {
     console.log(color.dim(`  descartadas: ${rejected.length}`));
     const byVerdict = new Map();
@@ -409,8 +417,12 @@ async function main() {
     }
   }
 
-  await writeJson(path.join(DIRS.root, "discovery-report.json"), { generatedAt: new Date().toISOString(), candidates: good.map((row) => ({ ...row, play: row.play ?? null })) });
-  log.info("relatório completo em discovery-report.json");
+  await writeJson(REPORT_PATH, report);
+  log.info(`relatório completo em ${REPORT_PATH}`);
+  if (SUMMARY_PATH) {
+    await fs.mkdir(path.dirname(path.resolve(SUMMARY_PATH)), { recursive: true });
+    await fs.writeFile(SUMMARY_PATH, discoverySummary(report), "utf8");
+  }
 
   if (WRITE) {
     console.log("");
