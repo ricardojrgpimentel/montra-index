@@ -155,3 +155,17 @@ export function proposalReviewErrors(pr, entries) {
   }
   return errors;
 }
+
+export function artifactVerificationErrors(entry, built) {
+  const errors = [];
+  if (built?.packageName !== entry.packageName) errors.push("O package resolvido não corresponde à entrada.");
+  const assets = built?.release?.assets ?? [];
+  if (!assets.length) errors.push("Nenhum APK foi verificado.");
+  for (const asset of assets) {
+    if (!asset.signingCertSha256 || asset.signingCertSha256 !== entry.verification?.signingCertSha256) {
+      errors.push(`${asset.abi}: certificado não verificado ou diferente do pin da entrada.`);
+    }
+    if (!/^[a-f0-9]{64}$/.test(asset.sha256 ?? "")) errors.push(`${asset.abi}: hash do APK em falta.`);
+  }
+  return errors;
+}

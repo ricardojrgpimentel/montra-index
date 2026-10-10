@@ -14,7 +14,7 @@ import { recentlyMaintained } from "./lib/discovery.mjs";
 import { apkReleaseCandidates } from "./lib/releases.mjs";
 import { suggestPattern } from "./lib/assets.mjs";
 import { lookupPlay } from "./lib/play.mjs";
-import { selectedRepos, proposalBranch, proposedLicense, proposedMedia, proposedRelease, proposedEntry, proposalBody } from "./lib/proposals.mjs";
+import { selectedRepos, proposalBranch, proposedLicense, proposedMedia, proposedRelease, proposedEntry, proposalBody, artifactVerificationErrors } from "./lib/proposals.mjs";
 
 const execFileAsync = promisify(execFile);
 const args = process.argv.slice(2);
@@ -60,7 +60,8 @@ async function main() {
       const release = apkReleaseCandidates(releases)[0];
       if (!release) throw new Error("Não há release estável com APK.");
       const apks = release.assets.filter((asset) => /\.apk$/i.test(asset.name) && !/debug/i.test(asset.name));
-      const primary = suggestPattern(apks).primary;
+      const suggested = suggestPattern(apks);
+      const primary = suggested.primary;
       if (!primary) throw new Error("Não há APK sem indicação de debug; esta app precisa de preparação manual.");
       const apk = await downloadCached(primary.browser_download_url, { subdir: "apk", token: process.env.GITHUB_TOKEN });
       const info = await inspectApk(apk, { tools });
@@ -72,7 +73,7 @@ async function main() {
       const content = Buffer.from(licence.content ?? "", "base64").toString("utf8");
       const license = proposedLicense(licence.license?.spdx_id, content, licenses);
       const config = proposedRelease(repo.full_name, release, primary, info);
-      const warnings = [];
+      const warnings = [...suggested.notes];
       let media = {};
       try {
         const tree = await githubApi(`/repos/${repo.full_name}/git/trees/${encodeURIComponent(repo.default_branch)}?recursive=1`);
@@ -96,9 +97,8 @@ async function main() {
       await fs.writeFile(path.join(output, `${entry.id}-verification.log`), build.stdout + build.stderr);
       const built = JSON.parse(await fs.readFile(indexPathFor(entry.id), "utf8")).apps[0];
       if (built?.release?.tag !== release.tag_name) throw new Error("O release mudou durante a preparação; repete para rever os metadados da mesma versão.");
-      if (!built?.release?.assets?.length || built.release.assets.some((asset) => !asset.signingCertSha256 || asset.signingCertSha256 !== info.signingCertSha256)) {
-        throw new Error("A assinatura de todos os APKs selecionados não ficou confirmada.");
-      }
+      const artifactErrors = artifactVerificationErrors(entry, built);
+      if (artifactErrors.length) throw new Error(artifactErrors.join(" "));
       if (built.warnings?.length) warnings.push(...built.warnings);
       const runUrl = process.env.GITHUB_RUN_ID ? `https://github.com/${catalogue}/actions/runs/${process.env.GITHUB_RUN_ID}` : null;
       const body = proposalBody({ catalogue, branch, entry, built, licenseUrl: licence.html_url, warnings, runUrl });

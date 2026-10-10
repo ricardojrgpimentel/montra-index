@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { selectedRepos, proposalBranch, proposedLicense, proposedMedia, proposedRelease,
-  proposedEntry, proposalBody, proposalReviewErrors, PROPOSAL_MARKER, REVIEW_CHECKS } from "./proposals.mjs";
+  proposedEntry, proposalBody, proposalReviewErrors, artifactVerificationErrors, PROPOSAL_MARKER, REVIEW_CHECKS } from "./proposals.mjs";
 
 const signed = { packageName: "dev.example.app", label: "Example", versionName: "1.2.3", minSdk: 26, signingCertSha256: "aa:bb" };
 const release = { tag_name: "v1.2.3", assets: [
@@ -88,5 +88,17 @@ describe("selected app proposals", () => {
     assert.ok(!body.includes("<script>"));
     assert.ok(body.includes("&lt;script&gt;"));
     assert.ok(body.includes("montra-review:access"));
+  });
+
+  it("requires every ABI to have a matching verified certificate, not just one", () => {
+    const entry = { packageName: "dev.example.app", verification: { signingCertSha256: "aa:bb" } };
+    const asset = { abi: "arm64-v8a", sha256: "a".repeat(64), signingCertSha256: "aa:bb" };
+    const built = { packageName: entry.packageName, release: { assets: [asset] } };
+    assert.deepEqual(artifactVerificationErrors(entry, built), []);
+    assert.ok(artifactVerificationErrors(entry, { ...built, release: { assets: [asset, { ...asset, abi: "x86", signingCertSha256: null }] } }).length);
+    assert.ok(artifactVerificationErrors(entry, { ...built, release: { assets: [{ ...asset, signingCertSha256: "cc:dd" }] } }).length);
+    assert.ok(artifactVerificationErrors(entry, { ...built, packageName: "dev.premium.app" }).length);
+    assert.ok(artifactVerificationErrors(entry, { ...built, release: { assets: [] } }).length);
+    assert.ok(artifactVerificationErrors(entry, { ...built, release: { assets: [{ ...asset, sha256: null }] } }).length);
   });
 });

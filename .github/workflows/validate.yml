@@ -86,3 +86,19 @@ jobs:
         run: pnpm run build --dry --deep 3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'proposals/')
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: build-tools para verificar a proposta revista
+        if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'proposals/')
+        run: |
+          SDKMANAGER="$(command -v sdkmanager || echo "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager")"
+          yes | "$SDKMANAGER" --install "build-tools;36.0.0" "platforms;android-36" > /dev/null
+      - name: verificar APKs e pins depois da revisão
+        if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'proposals/')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/check-proposal-artifacts.mjs

@@ -139,6 +139,11 @@ node tools/discover.mjs --inspect --limit 120 --inspect-limit 20 \
 5. Depois de os checks passarem, faz merge. O `build-index` reconstrói, assina e
    publica a app no catálogo; não é necessário copiar a chave privada.
 
+O CI volta a descarregar e verificar os APKs da entrada revista antes do merge,
+para confirmar que alterações aos padrões ou ao pin continuam a escolher o
+package e certificado certos. Enquanto o PR estiver em rascunho, só exige a
+conclusão da revisão, poupando esse download.
+
 Permissões: o job que descarrega e inspeciona APKs tem apenas leitura. Só o job
 que cria branches e PRs recebe `contents: write` e `pull-requests: write`.
 Nenhum deles recebe `INDEX_SIGNING_KEY`. Em **Settings → Actions → General**,
