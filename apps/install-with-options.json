@@ -1,0 +1,72 @@
+{
+  "id": "install-with-options",
+  "name": "Install with Options",
+  "summary": "Instala APKs e pacotes divididos com opções avançadas através do Shizuku",
+  "description": {
+    "en": "Uses Shizuku to install APKs with advanced options, including test-only packages and split APKs, and batch-install multiple apps. Available flags depend on Android and granted privileges: it cannot bypass signature mismatches, and package downgrades may need root or a debug/test build.",
+    "pt": "Usa o Shizuku para instalar APKs com opções avançadas, incluindo pacotes de teste e APKs divididos, e instalar várias apps em lote. As opções dependem do Android e dos privilégios concedidos: não contorna conflitos de assinatura, e baixar a versão de um pacote pode exigir root ou uma build de teste/debug."
+  },
+  "packageName": "dev.zwander.installwithoptions",
+  "license": "MIT",
+  "sourceCode": "https://github.com/zacharee/InstallWithOptions",
+  "categories": [
+    "system",
+    "tools"
+  ],
+  "tags": [
+    "installer",
+    "apk",
+    "split-apk",
+    "shizuku"
+  ],
+  "icon": {
+    "repo": "zacharee/InstallWithOptions",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "zacharee/InstallWithOptions",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/01.png"
+    },
+    {
+      "repo": "zacharee/InstallWithOptions",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/02.png"
+    },
+    {
+      "repo": "zacharee/InstallWithOptions",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/03.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "zacharee/InstallWithOptions",
+    "assetPattern": "InstallWithOptions_*-release.apk",
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-10",
+  "lastCheckedAt": "2026-10-10",
+  "requires": {
+    "minSdk": 24
+  },
+  "accessRequirements": {
+    "mode": "required",
+    "methods": [
+      "shizuku"
+    ],
+    "note": {
+      "en": "Requires Shizuku running and permission for this app. Some installation options need privileges beyond Shizuku in ADB mode; the official FAQ explains the Android-specific limits.",
+      "pt": "Precisa do Shizuku em execução e de autorização para esta app. Algumas opções exigem privilégios além do Shizuku em modo ADB; a FAQ oficial explica os limites de cada versão do Android."
+    },
+    "guideUrl": "https://github.com/zacharee/InstallWithOptions#shizuku"
+  },
+  "verification": {
+    "signingCertSha256": "e6:56:5e:92:74:0a:44:d5:55:0a:03:dc:34:f1:b2:a7:36:f8:b1:3f:60:a2:a5:f2:9f:1f:b9:36:4b:6f:c5:6e",
+    "pinnedAt": "2026-10-10",
+    "notes": "Primeiro pin: certificado lido por apksigner no APK oficial da release 0.9.2."
+  },
+  "notes": "Entrada revista após descoberta de 2026-10-10. Licença e requisito confirmados na documentação oficial; package name e certificado obtidos do APK. ",
+  "author": "Zachary Wander"
+}

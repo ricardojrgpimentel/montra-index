@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-10T10:37:51.383Z",
+  "generatedAt": "2026-10-10T18:37:50.473Z",
   "generator": "montra-index build-index.mjs",
   "signingKeyId": "4009b8eb68228f4020e56ddfcfd5b625",
   "apps": [
@@ -35,9 +35,9 @@
       "addedAt": "2026-10-08",
       "icon": "icons/accrescent.png",
       "screenshots": [],
-      "downloadCount": 24094,
+      "downloadCount": 24284,
       "signingCertSha256": "06:7a:40:c4:19:3a:ad:51:ac:87:f9:dd:fd:eb:b1:5e:24:a1:85:0b:ab:fa:48:21:c2:8c:5c:25:c3:fd:c0:71",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
       "release": {
         "versionName": "0.28.1",
         "versionCode": 55,
@@ -62,7 +62,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:02.818Z"
+            "verifiedAt": "2026-10-10T18:36:07.678Z"
           }
         ]
       },
@@ -74,12 +74,90 @@
       }
     },
     {
+      "id": "afwall",
+      "name": "AFWall+",
+      "summary": "Firewall com root: controla o acesso à rede por app e tipo de ligação",
+      "description": {
+        "en": "An Android firewall built on iptables. Choose which apps can access Wi-Fi, mobile data and other network types, manage profiles and inspect blocked connections. Requires root access; it does not create a local VPN to filter traffic. This entry tracks the Free release APK.",
+        "pt": "Firewall Android baseado em iptables. Escolhe que apps podem usar Wi-Fi, dados móveis e outros tipos de ligação, gere perfis e consulta ligações bloqueadas. Requer acesso root; não cria uma VPN local para filtrar o tráfego. Esta entrada acompanha o APK Free da release."
+      },
+      "packageName": "dev.ukanth.ufirewall",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/ukanth/afwall",
+      "author": "ukanth",
+      "categories": [
+        "security",
+        "privacy",
+        "system"
+      ],
+      "tags": [
+        "firewall",
+        "network",
+        "root"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "accessRequirements": {
+        "mode": "required",
+        "methods": [
+          "root"
+        ],
+        "note": {
+          "en": "Root is required to apply firewall rules. Grant AFWall+ access through your root manager, enable the firewall and apply the rules for the connections you use.",
+          "pt": "Precisa de root para aplicar as regras do firewall. Autoriza o AFWall+ no teu gestor de root, ativa o firewall e aplica as regras para as ligações que usas."
+        },
+        "guideUrl": "https://github.com/ukanth/afwall#quick-start-guide"
+      },
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=dev.ukanth.ufirewall&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-10",
+      "icon": "icons/afwall.png",
+      "screenshots": [
+        "screenshots/afwall/1.png",
+        "screenshots/afwall/2.png"
+      ],
+      "downloadCount": 4590,
+      "signingCertSha256": "71:5e:26:c1:25:4e:70:f4:45:43:45:3a:f8:d6:af:9c:22:fe:ee:2c:f1:19:1d:e1:5e:6a:9f:2d:f7:e2:a2:48",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
+      "release": {
+        "versionName": "4.1.0",
+        "versionCode": 20260801,
+        "tag": "v4.1.0",
+        "publishedAt": "2026-08-06T07:05:09Z",
+        "releaseUrl": "https://github.com/ukanth/afwall/releases/tag/v4.1.0",
+        "changelog": "AFWall+ v4.1.0\r\n\r\n- Custom rules at the application level - direct per-app allow/block rules\r\n- Custom theme maker with pre-built themes (Amber, Ocean, Forest, Slate, Plum, Black) plus a high-contrast light theme\r\n- Multi-user / work-profile app detection and improved app search\r\n- Option to show package name alongside app name in the list\r\n- Improved firewall rule generation - IPv6 control traffic (ICMPv6 RS/RA/NS/NA), loopback routing, LAN discovery (multicast/broadcast/mDNS/SSDP), tethered DHCP replies, Tor redirect ordering, reject-chain logging\r\n- Improved root apply reliability - consistent failure handling; success now waits for both IPv4 and IPv6 rule application to complete\r\n- Log service reliability - watchdog restarts a dead log watcher, batched log writes\r\n- Multiple LAN subnets now route correctly to WAN (Issue #1362)\r\n- Missing system apps caused by removal of QUERY_ALL_PACKAGES\r\n- Import/export - removed filter that hid valid AFWall+ backup files\r\n- Widget bugs - repeated toggle callback reuse, activity reference leak\r\n- Per-app localhost blocking (Issue #1421) - reverted pending a more reliable approach\r\n- Updated Target SDK 36 (Android 16) support",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/ukanth/afwall/releases/download/v4.1.0/AFWall_4.1.0_Free.apk",
+            "sha256": "920f48c916a7eeddafe64403f03b7cce5c99682c03007cecde9bc7d60ef8d950",
+            "size": 13088155,
+            "signingCertSha256": "71:5e:26:c1:25:4e:70:f4:45:43:45:3a:f8:d6:af:9c:22:fe:ee:2c:f1:19:1d:e1:5e:6a:9f:2d:f7:e2:a2:48",
+            "versionCode": 20260801,
+            "versionName": "4.1.0",
+            "minSdk": 23,
+            "targetSdk": 36,
+            "nativeAbis": [],
+            "verifiedAt": "2026-10-10T18:36:08.608Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/ukanth/afwall/releases/download/v4.1.0/AFWall_4.1.0_Free.apk",
+        "sha256": "920f48c916a7eeddafe64403f03b7cce5c99682c03007cecde9bc7d60ef8d950",
+        "size": 13088155,
+        "abi": "universal"
+      }
+    },
+    {
       "id": "app-manager",
       "name": "App Manager",
       "summary": "Gestor de pacotes completo: congela, desinstala, faz backup e inspeciona apps",
       "description": {
-        "en": "A full-featured package manager for Android: uninstall and freeze system apps, back up APKs and data, inspect trackers, permissions and components, and browse what an app actually ships. Much more capable with Shizuku or root.",
-        "pt": "Gestor de pacotes completo para Android: desinstala e congela apps de sistema, faz cópias de segurança de APKs e dados, inspeciona trackers, permissões e componentes, e mostra o que uma app realmente traz. Muito mais capaz com Shizuku ou root."
+        "en": "A full-featured package manager for Android: uninstall and freeze system apps, back up APKs and data, inspect trackers, permissions and components, and browse what an app actually ships. Much more capable with ADB or root.",
+        "pt": "Gestor de pacotes completo para Android: desinstala e congela apps de sistema, faz cópias de segurança de APKs e dados, inspeciona trackers, permissões e componentes, e mostra o que uma app realmente traz. Muito mais capaz com ADB ou root."
       },
       "packageName": "io.github.muntashirakon.AppManager",
       "license": "GPL-3.0-or-later",
@@ -97,6 +175,18 @@
       ],
       "status": "active",
       "antiFeatures": [],
+      "accessRequirements": {
+        "mode": "optional",
+        "methods": [
+          "root",
+          "adb"
+        ],
+        "note": {
+          "en": "Basic features work in no-root mode. Select Root or ADB in Settings > Mode of operation for privileged features. App Manager does not use Shizuku.",
+          "pt": "As funções básicas funcionam sem root. Para funções privilegiadas, escolhe Root ou ADB em Definições > Modo de operação. O App Manager não usa Shizuku."
+        },
+        "guideUrl": "https://muntashir.dev/AppManager/en/#subsec:Mode-of-Operation"
+      },
       "links": {
         "docs": "https://muntashirakon.github.io/AppManager/"
       },
@@ -110,9 +200,9 @@
         "screenshots/app-manager/2.png",
         "screenshots/app-manager/3.png"
       ],
-      "downloadCount": 44008,
+      "downloadCount": 44439,
       "signingCertSha256": "32:0c:0c:0f:e8:ce:f8:73:f2:b5:54:cb:88:c8:37:f1:51:25:89:dc:ce:d5:0c:5b:25:c4:3c:04:59:67:60:ab",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
       "release": {
         "versionName": "4.1.1",
         "versionCode": 451,
@@ -137,7 +227,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:03.484Z"
+            "verifiedAt": "2026-10-10T18:36:08.745Z"
           }
         ]
       },
@@ -176,9 +266,9 @@
       "addedAt": "2026-10-08",
       "icon": "icons/appverifier.png",
       "screenshots": [],
-      "downloadCount": 43663,
+      "downloadCount": 43688,
       "signingCertSha256": "3a:04:a8:0b:2a:88:33:4c:74:74:85:f0:b2:15:16:40:a3:8b:b3:d2:d7:3a:8e:ab:81:df:50:3e:0f:02:02:b2",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
       "release": {
         "versionName": "13",
         "versionCode": 13,
@@ -203,7 +293,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:02.856Z"
+            "verifiedAt": "2026-10-10T18:36:06.997Z"
           }
         ]
       },
@@ -250,9 +340,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 30284,
+      "downloadCount": 34045,
       "signingCertSha256": "5b:a2:56:3e:0d:13:fa:e2:ab:a0:67:d1:c2:30:cd:1c:86:3a:93:00:5c:10:d6:48:ce:5b:33:17:92:aa:0a:f1",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
       "release": {
         "versionName": "2126.2-vanilla",
         "versionCode": 33989150,
@@ -275,7 +365,7 @@
               "arm64-v8a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:03.166Z"
+            "verifiedAt": "2026-10-10T18:36:09.247Z"
           }
         ]
       },
@@ -318,9 +408,9 @@
         "screenshots/breezy-weather/2.png",
         "screenshots/breezy-weather/3.png"
       ],
-      "downloadCount": 112366,
+      "downloadCount": 113638,
       "signingCertSha256": "29:d4:35:f7:0a:a9:ae:c3:c1:fa:ff:7f:7f:fa:6e:15:78:50:88:d8:7f:06:ec:fc:ab:9c:3c:c6:2d:c2:69:d8",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
       "release": {
         "versionName": "6.2.2",
         "versionCode": 60202,
@@ -342,7 +432,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:06.545Z"
+            "verifiedAt": "2026-10-10T18:36:10.612Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -357,7 +447,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:06.545Z"
+            "verifiedAt": "2026-10-10T18:36:10.612Z"
           }
         ]
       },
@@ -366,6 +456,89 @@
         "sha256": "829175ceb23d0e539f99b27d22ff10e06ba8d446ac070b28585a36316fd295d5",
         "size": 15737358,
         "abi": "arm64-v8a"
+      }
+    },
+    {
+      "id": "canta",
+      "name": "Canta",
+      "summary": "Remove apps pré-instaladas e de utilizador com a ajuda do Shizuku",
+      "description": {
+        "en": "Uninstalls pre-installed and user apps using Shizuku. Integrates the Universal Debloat List to explain packages and help choose what to remove, and can detect previously uninstalled apps. Requires Shizuku running and permission to use it. Removing critical system apps can cause problems, including a boot loop that needs a factory reset.",
+        "pt": "Desinstala apps pré-instaladas e de utilizador através do Shizuku. Integra a Universal Debloat List para explicar os pacotes e ajudar a escolher o que remover, e deteta apps anteriormente desinstaladas. Precisa do Shizuku em execução e de autorização para o usar. Remover apps essenciais do sistema pode causar problemas, incluindo um ciclo de arranque que exija repor o telemóvel."
+      },
+      "packageName": "io.github.samolego.canta",
+      "license": "LGPL-3.0-only",
+      "sourceCode": "https://github.com/samolego/Canta",
+      "author": "samolego",
+      "categories": [
+        "system",
+        "tools"
+      ],
+      "tags": [
+        "debloat",
+        "uninstall",
+        "shizuku"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "accessRequirements": {
+        "mode": "required",
+        "methods": [
+          "shizuku"
+        ],
+        "note": {
+          "en": "Requires Shizuku running and authorization for Canta. Enable Shizuku first, then grant access when Canta asks. The project notes that Android 16 may need a compatible Shizuku fork.",
+          "pt": "Precisa do Shizuku em execução e de autorização para o Canta. Ativa o Shizuku e autoriza o acesso quando o Canta pedir. O projeto indica que Android 16 pode precisar de um fork compatível do Shizuku."
+        },
+        "guideUrl": "https://github.com/samolego/Canta#how-to"
+      },
+      "playStore": {
+        "present": true,
+        "url": "https://play.google.com/store/apps/details?id=io.github.samolego.canta&hl=en&gl=US"
+      },
+      "addedAt": "2026-10-10",
+      "icon": "icons/canta.png",
+      "screenshots": [
+        "screenshots/canta/1.png",
+        "screenshots/canta/2.png",
+        "screenshots/canta/3.png"
+      ],
+      "downloadCount": 32860,
+      "signingCertSha256": "0a:26:40:31:7c:43:27:21:88:c3:e1:31:94:c1:54:60:69:1f:12:c3:9e:a1:9b:ba:72:7d:d6:7f:b5:62:89:d4",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
+      "release": {
+        "versionName": "4.0.0",
+        "versionCode": 226,
+        "tag": "v4.0.0",
+        "publishedAt": "2026-10-02T14:18:45Z",
+        "releaseUrl": "https://github.com/samolego/Canta/releases/tag/v4.0.0",
+        "changelog": "* Canta is recomposed: now migrated to Kotlin Multiplatform for support on [web](https://samolego.github.io/Canta/app/) too via WebUSB on chromium browsers\r\n  * desktop support is possible but not released yet. For desktops, you might want to check out fantastic project [UAD](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/) (btw, that's where Canta gets its descriptions from!)\r\n* Added support for loading icons in uninstalled menu (#70)\r\n* Fixed issue with landscape mode not working (#365)",
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/samolego/Canta/releases/download/v4.0.0/androidApp-release.apk",
+            "sha256": "7ad02041900c1ab2f2ffca0ecfc2d2c01f217a5894e92c95f37852ba975560ce",
+            "size": 5022883,
+            "signingCertSha256": "0a:26:40:31:7c:43:27:21:88:c3:e1:31:94:c1:54:60:69:1f:12:c3:9e:a1:9b:ba:72:7d:d6:7f:b5:62:89:d4",
+            "versionCode": 226,
+            "versionName": "4.0.0",
+            "minSdk": 28,
+            "targetSdk": 37,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-10T18:36:09.704Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/samolego/Canta/releases/download/v4.0.0/androidApp-release.apk",
+        "sha256": "7ad02041900c1ab2f2ffca0ecfc2d2c01f217a5894e92c95f37852ba975560ce",
+        "size": 5022883,
+        "abi": "universal"
       }
     },
     {
@@ -400,9 +573,9 @@
         "screenshots/capyreader/2.png",
         "screenshots/capyreader/3.png"
       ],
-      "downloadCount": 6233,
+      "downloadCount": 6281,
       "signingCertSha256": "67:43:73:75:a1:61:f4:20:21:9d:df:f1:f2:81:df:29:2c:cb:5f:05:7a:a0:ca:f5:65:68:a7:82:b2:81:64:65",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
       "release": {
         "versionName": "2026.07.1212",
         "versionCode": 1212,
@@ -427,7 +600,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:04.429Z"
+            "verifiedAt": "2026-10-10T18:36:10.151Z"
           }
         ]
       },
@@ -474,9 +647,9 @@
         "screenshots/catima/2.png",
         "screenshots/catima/3.png"
       ],
-      "downloadCount": 6514,
+      "downloadCount": 6579,
       "signingCertSha256": "d4:05:cd:69:ed:e4:c2:20:74:c3:28:fb:82:56:89:a8:4a:b3:fc:a4:b3:fd:f0:b6:cc:13:33:af:62:c6:7e:b3",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
       "release": {
         "versionName": "2.45.1",
         "versionCode": 1004,
@@ -501,7 +674,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:04.933Z"
+            "verifiedAt": "2026-10-10T18:36:10.736Z"
           }
         ]
       },
@@ -542,9 +715,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 74802,
+      "downloadCount": 75498,
       "signingCertSha256": "63:3f:a4:1d:82:11:d6:d0:91:6a:81:9b:89:66:8c:6d:e9:2e:64:23:2d:a6:7f:9d:16:fd:81:c3:b7:e9:23:ff",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
       "release": {
         "versionName": "153.0.8010.37",
         "versionCode": 801003702,
@@ -566,7 +739,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:12.831Z"
+            "verifiedAt": "2026-10-10T18:36:14.637Z"
           }
         ]
       },
@@ -576,6 +749,134 @@
         "size": 323809949,
         "abi": "arm64-v8a"
       }
+    },
+    {
+      "id": "databackup",
+      "name": "DataBackup",
+      "summary": "Cópias de segurança de apps e dados com root, na variante FOSS",
+      "description": {
+        "en": "Backs up and restores Android apps and their data with root access. Supports multiple users and profiles. This entry selects only the FOSS APKs; premium builds are separate packages and are excluded. The stable release is older than the ongoing development on the source branches.",
+        "pt": "Cria e restaura cópias de segurança de apps Android e dos seus dados com acesso root. Suporta vários utilizadores e perfis. Esta entrada escolhe apenas os APKs FOSS; as builds premium têm outro pacote e ficam excluídas. A release estável é anterior ao desenvolvimento que continua nos ramos de código."
+      },
+      "packageName": "com.xayah.databackup.foss",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/XayahSuSuSu/Android-DataBackup",
+      "author": "Xayah",
+      "categories": [
+        "system",
+        "utilities"
+      ],
+      "tags": [
+        "backup",
+        "restore",
+        "root",
+        "foss"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "accessRequirements": {
+        "mode": "required",
+        "methods": [
+          "root"
+        ],
+        "note": {
+          "en": "Root is required to back up and restore app data. The project supports Magisk, KernelSU and APatch. This is the FOSS build.",
+          "pt": "Precisa de root para criar e restaurar cópias dos dados das apps. O projeto suporta Magisk, KernelSU e APatch. Esta é a build FOSS."
+        },
+        "guideUrl": "https://github.com/XayahSuSuSu/Android-DataBackup#features"
+      },
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-10",
+      "icon": "icons/databackup.png",
+      "screenshots": [
+        "screenshots/databackup/1.jpg",
+        "screenshots/databackup/2.jpg",
+        "screenshots/databackup/3.jpg"
+      ],
+      "downloadCount": 50418,
+      "signingCertSha256": "7f:b9:ec:20:77:05:a0:fb:b9:ca:61:25:3e:59:63:64:c7:27:62:86:8a:83:81:52:39:e7:ca:19:23:ac:b3:9f",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
+      "release": {
+        "versionName": "2.0.12",
+        "versionCode": 3501194,
+        "tag": "2.0.12",
+        "publishedAt": "2025-09-20T09:36:11Z",
+        "releaseUrl": "https://github.com/XayahSuSuSu/Android-DataBackup/releases/tag/2.0.12",
+        "changelog": "## What's Changed\r\n\r\n### Bug Fixes\r\n\r\n* [#419 Fixed that app may not show internal storage](https://github.com/XayahSuSuSu/Android-DataBackup/issues/419) ([230ff1d](https://github.com/XayahSuSuSu/Android-DataBackup/commit/230ff1d855df01b25187db573a65481e85728659))\r\n* [#423 Fixed that smb backup for apps not working](https://github.com/XayahSuSuSu/Android-DataBackup/issues/423) ([5685845](https://github.com/XayahSuSuSu/Android-DataBackup/commit/568584565d5ad321128e8347d43d64efc0912c47))\r\n\r\n### Next plan\r\n* We are preparing for the next generation of DataBackup, this may need a lot of time. The update process will be delayed for `2.x`, thanks for understanding :)\r\n\r\n**Full Changelog**: https://github.com/XayahSuSuSu/Android-DataBackup/compare/2.0.11...2.0.12\r\n**CI builds**: [actions/runs/17877235200](https://github.com/XayahSuSuSu/Android-DataBackup/actions/runs/17877235200)",
+        "assets": [
+          {
+            "abi": "arm64-v8a",
+            "url": "https://github.com/XayahSuSuSu/Android-DataBackup/releases/download/2.0.12/DataBackup-2.0.12-arm64-v8a-foss-release.apk",
+            "sha256": "3a7b9ab820ea33d02a84ee5403d99dc8e35c73b7c3705615bfa371c958f57b4e",
+            "size": 14497657,
+            "signingCertSha256": "7f:b9:ec:20:77:05:a0:fb:b9:ca:61:25:3e:59:63:64:c7:27:62:86:8a:83:81:52:39:e7:ca:19:23:ac:b3:9f",
+            "versionCode": 3501194,
+            "versionName": "2.0.12",
+            "minSdk": 24,
+            "targetSdk": 35,
+            "nativeAbis": [
+              "arm64-v8a"
+            ],
+            "verifiedAt": "2026-10-10T18:36:15.886Z"
+          },
+          {
+            "abi": "armeabi-v7a",
+            "url": "https://github.com/XayahSuSuSu/Android-DataBackup/releases/download/2.0.12/DataBackup-2.0.12-armeabi-v7a-foss-release.apk",
+            "sha256": "1593e2888e1cc9a9511e350b72a68803ee7acbdc0f64fb65140e68b1b096c8bc",
+            "size": 13404913,
+            "signingCertSha256": "7f:b9:ec:20:77:05:a0:fb:b9:ca:61:25:3e:59:63:64:c7:27:62:86:8a:83:81:52:39:e7:ca:19:23:ac:b3:9f",
+            "versionCode": 3501193,
+            "versionName": "2.0.12",
+            "minSdk": 24,
+            "targetSdk": 35,
+            "nativeAbis": [
+              "armeabi-v7a"
+            ],
+            "verifiedAt": "2026-10-10T18:36:15.886Z"
+          },
+          {
+            "abi": "x86_64",
+            "url": "https://github.com/XayahSuSuSu/Android-DataBackup/releases/download/2.0.12/DataBackup-2.0.12-x86_64-foss-release.apk",
+            "sha256": "0e36152683d8788e366d1bf99c08a5a1a6765462b09c8a8484fce6e399c75d75",
+            "size": 14985055,
+            "signingCertSha256": "7f:b9:ec:20:77:05:a0:fb:b9:ca:61:25:3e:59:63:64:c7:27:62:86:8a:83:81:52:39:e7:ca:19:23:ac:b3:9f",
+            "versionCode": 3501192,
+            "versionName": "2.0.12",
+            "minSdk": 24,
+            "targetSdk": 35,
+            "nativeAbis": [
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-10T18:36:15.886Z"
+          },
+          {
+            "abi": "x86",
+            "url": "https://github.com/XayahSuSuSu/Android-DataBackup/releases/download/2.0.12/DataBackup-2.0.12-x86-foss-release.apk",
+            "sha256": "cb3adf5174b5921d111bf09d846678e2febdb52242095d67485906e29c12c5b4",
+            "size": 15050525,
+            "signingCertSha256": "7f:b9:ec:20:77:05:a0:fb:b9:ca:61:25:3e:59:63:64:c7:27:62:86:8a:83:81:52:39:e7:ca:19:23:ac:b3:9f",
+            "versionCode": 3501191,
+            "versionName": "2.0.12",
+            "minSdk": 24,
+            "targetSdk": 35,
+            "nativeAbis": [
+              "x86"
+            ],
+            "verifiedAt": "2026-10-10T18:36:15.886Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/XayahSuSuSu/Android-DataBackup/releases/download/2.0.12/DataBackup-2.0.12-arm64-v8a-foss-release.apk",
+        "sha256": "3a7b9ab820ea33d02a84ee5403d99dc8e35c73b7c3705615bfa371c958f57b4e",
+        "size": 14497657,
+        "abi": "arm64-v8a"
+      },
+      "warnings": [
+        "versionCode difere entre ABIs (3501194, 3501193, 3501191, 3501192); a usar 3501194"
+      ]
     },
     {
       "id": "devilutionx",
@@ -616,9 +917,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/devilutionx.webp",
       "screenshots": [],
-      "downloadCount": 10508,
+      "downloadCount": 10528,
       "signingCertSha256": "f9:44:67:3f:7a:19:4b:c1:7b:c6:90:cf:2f:b2:dc:3a:27:96:7b:b2:ad:d4:c5:7d:54:f3:90:96:ad:10:84:3d",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
       "release": {
         "versionName": "1.5.5",
         "versionCode": 32,
@@ -643,7 +944,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:06.363Z"
+            "verifiedAt": "2026-10-10T18:36:11.701Z"
           }
         ]
       },
@@ -685,9 +986,9 @@
         "screenshots/droidify/2.png",
         "screenshots/droidify/3.png"
       ],
-      "downloadCount": 53708,
+      "downloadCount": 54307,
       "signingCertSha256": "ed:88:59:c5:5a:f3:11:16:26:58:b9:4a:f9:82:b9:f0:91:dc:d2:76:28:d4:de:34:86:d1:21:7e:bf:3c:99:35",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "0.7.8",
         "versionCode": 780,
@@ -712,7 +1013,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:07.574Z"
+            "verifiedAt": "2026-10-10T18:36:12.594Z"
           }
         ]
       },
@@ -760,9 +1061,9 @@
         "screenshots/droiddeck/2.jpg",
         "screenshots/droiddeck/3.jpg"
       ],
-      "downloadCount": 34610,
+      "downloadCount": 41696,
       "signingCertSha256": "b2:41:ea:7d:77:82:2d:39:b8:9d:32:27:e0:6f:3e:cf:62:ad:ec:6c:bf:d3:8a:d0:61:96:78:79:91:b5:d3:f0",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.463Z",
       "release": {
         "versionName": "0.3.2",
         "versionCode": 12,
@@ -784,7 +1085,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:06.673Z"
+            "verifiedAt": "2026-10-10T18:36:11.974Z"
           }
         ]
       },
@@ -832,9 +1133,9 @@
         "screenshots/ente/2.png",
         "screenshots/ente/3.png"
       ],
-      "downloadCount": 6488,
+      "downloadCount": 6663,
       "signingCertSha256": "35:ed:56:81:b7:0b:b3:bd:35:d9:0d:85:6a:f5:69:4c:50:4d:ef:46:aa:d8:3f:77:7b:1c:67:5c:f4:51:35:0b",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.3.65",
         "versionCode": 2300,
@@ -858,7 +1159,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:13.442Z"
+            "verifiedAt": "2026-10-10T18:36:14.138Z"
           }
         ]
       },
@@ -906,9 +1207,9 @@
         "screenshots/f-droid/2.png",
         "screenshots/f-droid/3.png"
       ],
-      "downloadCount": 67437,
+      "downloadCount": 67488,
       "signingCertSha256": "43:23:8d:51:2c:1e:5e:b2:d6:56:9f:4a:3a:fb:f5:52:34:18:b8:2e:0a:3e:d1:55:27:70:ab:b9:a9:c9:cc:ab",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.18.0",
         "versionCode": 1018050,
@@ -928,7 +1229,7 @@
             "minSdk": 23,
             "targetSdk": 28,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-10T10:36:08.036Z"
+            "verifiedAt": "2026-10-10T18:36:13.583Z"
           }
         ]
       },
@@ -975,16 +1276,16 @@
         "screenshots/fairemail/2.png",
         "screenshots/fairemail/3.png"
       ],
-      "downloadCount": 11343,
+      "downloadCount": 11512,
       "signingCertSha256": "e0:20:67:24:9f:5a:35:0e:0e:c7:03:fe:9d:f4:dd:68:2e:02:91:a0:9f:0c:2e:04:10:50:bb:e7:c0:64:f5:c9",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.2338",
         "versionCode": 2338,
         "tag": "1.2338",
         "publishedAt": "2026-10-02T14:08:35Z",
         "releaseUrl": "https://github.com/M66B/FairEmail/releases/tag/1.2338",
-        "changelog": "<a href=\"https://en.wikipedia.org/wiki/Elopteryx\">\r\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/4/43/Stamps_of_Romania%2C_2005-011.jpg\" width=\"194\" height=\"133\" alt=\"Elopteryx\" />\r\n<p><strong>Elopteryx</strong></p>\r\n</a>\r\n\r\n<br>\r\n\r\n**Changelog**\r\n\r\nMain changes: https://github.com/M66B/FairEmail/blob/master/CHANGELOG.md\r\n\r\nAll changes: https://github.com/M66B/FairEmail/compare/1.2337...1.2338?w=1\r\n\r\n<br>\r\n\r\n[Feedback](https://contact.faircode.eu/?product=fairemailsupport) &#x1F5E8;, [reviews](https://play.google.com/store/apps/details?id=eu.faircode.email) &#x2B50;, thanks &#x1F44D;, [donations](https://email.faircode.eu/donate/) and [purchases](https://play.google.com/store/apps/details?id=eu.faircode.email) &#x1f4b2; are appreciated.\r\n\r\n<br>\r\n\r\n*You might need to expand the **Assets** section below to download the **APK file**, which can be installed as an update.*\r\n\r\n*Möglicherweise müssen Sie den nun folgenden Abschnitt **Assets** aufklappen, um die **APK-Datei** herunterzuladen, die dann als Update installiert werden kann.*\r\n\r\n<br>\r\n\r\n<sup>The \"[large](https://developer.android.com/guide/topics/manifest/application-element#largeHeap)\" version will request more working memory from Android, which may be necessary when more than 10-20 accounts are configured.</sup>\r\n\r\n<p align=\"right\"><sup>4.785</sup></p>",
+        "changelog": "<a href=\"https://en.wikipedia.org/wiki/Elopteryx\">\r\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/4/43/Stamps_of_Romania%2C_2005-011.jpg\" width=\"194\" height=\"133\" alt=\"Elopteryx\" />\r\n<p><strong>Elopteryx</strong></p>\r\n</a>\r\n\r\n<br>\r\n\r\n**Changelog**\r\n\r\nMain changes: https://github.com/M66B/FairEmail/blob/master/CHANGELOG.md\r\n\r\nAll changes: https://github.com/M66B/FairEmail/compare/1.2337...1.2338?w=1\r\n\r\n<br>\r\n\r\n[Feedback](https://contact.faircode.eu/?product=fairemailsupport) &#x1F5E8;, [reviews](https://play.google.com/store/apps/details?id=eu.faircode.email) &#x2B50;, thanks &#x1F44D;, [donations](https://email.faircode.eu/donate/) and [purchases](https://play.google.com/store/apps/details?id=eu.faircode.email) &#x1f4b2; are appreciated.\r\n\r\n<br>\r\n\r\n*You might need to expand the **Assets** section below to download the **APK file**, which can be installed as an update.*\r\n\r\n*Möglicherweise müssen Sie den nun folgenden Abschnitt **Assets** aufklappen, um die **APK-Datei** herunterzuladen, die dann als Update installiert werden kann.*\r\n\r\n<br>\r\n\r\n<sup>The \"[large](https://developer.android.com/guide/topics/manifest/application-element#largeHeap)\" version will request more working memory from Android, which may be necessary when more than 10-20 accounts are configured.</sup>\r\n\r\n<p align=\"right\"><sup>4.784</sup></p>",
         "assets": [
           {
             "abi": "universal",
@@ -1002,7 +1303,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:10.016Z"
+            "verifiedAt": "2026-10-10T18:36:15.622Z"
           }
         ]
       },
@@ -1043,9 +1344,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/findroid.png",
       "screenshots": [],
-      "downloadCount": 8990,
+      "downloadCount": 9016,
       "signingCertSha256": "ec:c1:20:86:db:dd:b5:fa:a3:e1:b6:50:d1:61:fb:62:3f:5f:24:18:89:92:c1:17:33:39:cd:5a:8b:2f:86:89",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.1.0",
         "versionCode": 33,
@@ -1067,7 +1368,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:12.146Z"
+            "verifiedAt": "2026-10-10T18:36:15.382Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -1082,7 +1383,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:12.146Z"
+            "verifiedAt": "2026-10-10T18:36:15.382Z"
           }
         ]
       },
@@ -1126,9 +1427,9 @@
         "screenshots/flashdim/2.png",
         "screenshots/flashdim/3.png"
       ],
-      "downloadCount": 3262,
+      "downloadCount": 3280,
       "signingCertSha256": "ea:78:69:1c:ba:41:86:00:a4:56:32:89:b1:33:f9:d0:0d:3d:0c:24:a5:f5:4c:5c:59:ee:1c:95:2b:b0:e1:1d",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "2.5.3",
         "versionCode": 35,
@@ -1148,7 +1449,7 @@
             "minSdk": 33,
             "targetSdk": 37,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-10T10:36:11.040Z"
+            "verifiedAt": "2026-10-10T18:36:15.372Z"
           }
         ]
       },
@@ -1188,9 +1489,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 59526,
+      "downloadCount": 59838,
       "signingCertSha256": "07:74:79:4c:54:c7:e4:63:00:47:54:e2:ca:ba:43:2a:20:57:d9:17:e6:4c:5e:24:46:06:06:a7:47:1b:13:95",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "v2.7-1-g44e4c7b50",
         "versionCode": 3302,
@@ -1215,7 +1516,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:12.679Z"
+            "verifiedAt": "2026-10-10T18:36:16.473Z"
           }
         ]
       },
@@ -1255,9 +1556,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/forgetmenot.png",
       "screenshots": [],
-      "downloadCount": 1652,
+      "downloadCount": 1653,
       "signingCertSha256": "b8:06:29:ec:64:03:c7:99:ac:39:dc:d1:7d:c2:79:12:63:85:c5:81:c3:45:3b:9a:95:12:78:3f:e2:f5:dc:11",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.9.0",
         "versionCode": 18,
@@ -1277,7 +1578,7 @@
             "minSdk": 21,
             "targetSdk": 30,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-10T10:36:13.471Z"
+            "verifiedAt": "2026-10-10T18:36:16.369Z"
           }
         ]
       },
@@ -1318,9 +1619,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/greenstash.png",
       "screenshots": [],
-      "downloadCount": 1301,
+      "downloadCount": 1306,
       "signingCertSha256": "5d:fe:06:da:0f:e3:b0:81:3f:3f:3d:c5:30:56:99:c2:db:b9:df:db:ab:13:49:da:7c:41:c5:9d:2f:cf:31:9c",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "4.4.0",
         "versionCode": 440,
@@ -1345,7 +1646,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:13.803Z"
+            "verifiedAt": "2026-10-10T18:36:16.629Z"
           }
         ]
       },
@@ -1386,9 +1687,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/gymmane.png",
       "screenshots": [],
-      "downloadCount": 2083,
+      "downloadCount": 2152,
       "signingCertSha256": "3b:c3:a9:b2:f6:50:ca:20:8c:6c:84:d5:2c:1a:9c:bd:6e:67:82:e6:90:fa:2e:8f:30:64:80:a4:c9:ca:a0:95",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.4.0",
         "versionCode": 53,
@@ -1410,7 +1711,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:17.638Z"
+            "verifiedAt": "2026-10-10T18:36:17.640Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -1425,7 +1726,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:17.638Z"
+            "verifiedAt": "2026-10-10T18:36:17.640Z"
           },
           {
             "abi": "x86_64",
@@ -1440,7 +1741,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:17.638Z"
+            "verifiedAt": "2026-10-10T18:36:17.640Z"
           }
         ]
       },
@@ -1459,8 +1760,8 @@
       "name": "Hail",
       "summary": "Congela aplicações: desativa, esconde ou suspende sem as desinstalar",
       "description": {
-        "en": "Freezes the apps you are not using: forces them to stop, disables, hides or suspends them, and brings them back when you need them again. The package keeps its data, so the state is reversible — nothing is uninstalled. Freezing what is idle cuts RAM and battery use, and a whole group can be frozen at once. It works through the system's own mechanisms and needs privileges for that: Shizuku over wireless debugging (Android 11+) or root. Without one of them, the app can only show you what is installed.",
-        "pt": "Congela as aplicações que não estás a usar: força-as a parar, desativa, esconde ou suspende, e devolve-as ao normal quando voltas a precisar delas. O pacote mantém os dados, por isso o estado é reversível — nada é desinstalado. Congelar o que está parado poupa RAM e bateria, e pode congelar-se um grupo inteiro de uma vez. Usa os mecanismos do próprio sistema e precisa de privilégios para isso: Shizuku por depuração sem fios (Android 11+) ou root. Sem um deles, a app só consegue mostrar o que está instalado."
+        "en": "Freezes the apps you are not using: forces them to stop, disables, hides or suspends them, and brings them back when you need them again. The package keeps its data, so the state is reversible — nothing is uninstalled. Freezing what is idle cuts RAM and battery use, and a whole group can be frozen at once. It works through the system's own mechanisms and needs privileges for that: Shizuku, root, or another supported privileged mode. Available operations depend on the chosen mode.",
+        "pt": "Congela as aplicações que não estás a usar: força-as a parar, desativa, esconde ou suspende, e devolve-as ao normal quando voltas a precisar delas. O pacote mantém os dados, por isso o estado é reversível — nada é desinstalado. Congelar o que está parado poupa RAM e bateria, e pode congelar-se um grupo inteiro de uma vez. Usa os mecanismos do próprio sistema e precisa de privilégios para isso: Shizuku, root ou outro modo privilegiado suportado. As operações disponíveis dependem do modo escolhido."
       },
       "packageName": "com.aistra.hail",
       "license": "GPL-3.0-or-later",
@@ -1478,6 +1779,22 @@
       ],
       "status": "active",
       "antiFeatures": [],
+      "accessRequirements": {
+        "mode": "required",
+        "methods": [
+          "shizuku",
+          "root",
+          "deviceOwner",
+          "dhizuku",
+          "systemApp",
+          "workProfile"
+        ],
+        "note": {
+          "en": "Freezing needs a privileged working mode. Shizuku or root are options; device owner, Dhizuku, a privileged system app or Island/Insular offer alternatives with different operations. Choose one in the app settings.",
+          "pt": "Congelar apps exige um modo de funcionamento privilegiado. Podes usar Shizuku ou root; gestão do dispositivo, Dhizuku, app de sistema privilegiada ou Island/Insular são alternativas com operações diferentes. Escolhe o modo nas definições da app."
+        },
+        "guideUrl": "https://github.com/aistra0528/Hail#working-mode"
+      },
       "playStore": {
         "present": false
       },
@@ -1488,9 +1805,9 @@
         "screenshots/hail/2.png",
         "screenshots/hail/3.png"
       ],
-      "downloadCount": 47578,
+      "downloadCount": 47854,
       "signingCertSha256": "17:c2:46:3c:1e:00:2b:99:cb:50:2c:dc:da:06:7e:83:52:c6:30:ff:c4:d7:af:3f:d4:42:92:6e:54:dd:3e:78",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.11.0",
         "versionCode": 35,
@@ -1515,7 +1832,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:14.373Z"
+            "verifiedAt": "2026-10-10T18:36:17.220Z"
           }
         ]
       },
@@ -1558,9 +1875,9 @@
         "screenshots/harmonic/2.png",
         "screenshots/harmonic/3.png"
       ],
-      "downloadCount": 585,
+      "downloadCount": 587,
       "signingCertSha256": "fb:12:db:f6:d0:69:25:12:ed:70:18:15:06:37:a1:93:2e:ab:09:d6:7d:bf:99:00:45:70:96:a5:52:f8:8e:c6",
-      "resolvedAt": "2026-10-10T10:37:51.371Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "3.1.2",
         "versionCode": 80,
@@ -1580,7 +1897,7 @@
             "minSdk": 26,
             "targetSdk": 37,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-10T10:36:14.977Z"
+            "verifiedAt": "2026-10-10T18:36:17.238Z"
           }
         ]
       },
@@ -1625,9 +1942,9 @@
         "screenshots/imagetoolbox/2.png",
         "screenshots/imagetoolbox/3.png"
       ],
-      "downloadCount": 15180,
+      "downloadCount": 15251,
       "signingCertSha256": "20:d7:68:9d:e0:87:4f:00:01:5e:a3:e3:1f:a0:67:c1:5c:03:45:7d:36:2d:41:d5:e7:93:db:3a:86:4f:a5:34",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "4.2.0-foss",
         "versionCode": 267,
@@ -1649,7 +1966,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:21.935Z"
+            "verifiedAt": "2026-10-10T18:36:21.197Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -1664,7 +1981,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:21.935Z"
+            "verifiedAt": "2026-10-10T18:36:21.197Z"
           }
         ]
       },
@@ -1673,6 +1990,89 @@
         "sha256": "7df1317a461dd46fba91225b098e4fb24b69118e3bedd641f8072e26aecd3c30",
         "size": 107826476,
         "abi": "arm64-v8a"
+      }
+    },
+    {
+      "id": "install-with-options",
+      "name": "Install with Options",
+      "summary": "Instala APKs e pacotes divididos com opções avançadas através do Shizuku",
+      "description": {
+        "en": "Uses Shizuku to install APKs with advanced options, including test-only packages and split APKs, and batch-install multiple apps. Available flags depend on Android and granted privileges: it cannot bypass signature mismatches, and package downgrades may need root or a debug/test build.",
+        "pt": "Usa o Shizuku para instalar APKs com opções avançadas, incluindo pacotes de teste e APKs divididos, e instalar várias apps em lote. As opções dependem do Android e dos privilégios concedidos: não contorna conflitos de assinatura, e baixar a versão de um pacote pode exigir root ou uma build de teste/debug."
+      },
+      "packageName": "dev.zwander.installwithoptions",
+      "license": "MIT",
+      "sourceCode": "https://github.com/zacharee/InstallWithOptions",
+      "author": "Zachary Wander",
+      "categories": [
+        "system",
+        "tools"
+      ],
+      "tags": [
+        "installer",
+        "apk",
+        "split-apk",
+        "shizuku"
+      ],
+      "status": "active",
+      "antiFeatures": [],
+      "accessRequirements": {
+        "mode": "required",
+        "methods": [
+          "shizuku"
+        ],
+        "note": {
+          "en": "Requires Shizuku running and permission for this app. Some installation options need privileges beyond Shizuku in ADB mode; the official FAQ explains the Android-specific limits.",
+          "pt": "Precisa do Shizuku em execução e de autorização para esta app. Algumas opções exigem privilégios além do Shizuku em modo ADB; a FAQ oficial explica os limites de cada versão do Android."
+        },
+        "guideUrl": "https://github.com/zacharee/InstallWithOptions#shizuku"
+      },
+      "playStore": {
+        "present": false
+      },
+      "addedAt": "2026-10-10",
+      "icon": "icons/install-with-options.png",
+      "screenshots": [
+        "screenshots/install-with-options/1.png",
+        "screenshots/install-with-options/2.png",
+        "screenshots/install-with-options/3.png"
+      ],
+      "downloadCount": 256152,
+      "signingCertSha256": "e6:56:5e:92:74:0a:44:d5:55:0a:03:dc:34:f1:b2:a7:36:f8:b1:3f:60:a2:a5:f2:9f:1f:b9:36:4b:6f:c5:6e",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
+      "release": {
+        "versionName": "0.9.2",
+        "versionCode": 27,
+        "tag": "0.9.2",
+        "publishedAt": "2026-03-14T18:38:31Z",
+        "releaseUrl": "https://github.com/zacharee/InstallWithOptions/releases/tag/0.9.2",
+        "changelog": null,
+        "assets": [
+          {
+            "abi": "universal",
+            "url": "https://github.com/zacharee/InstallWithOptions/releases/download/0.9.2/InstallWithOptions_0.9.2-release.apk",
+            "sha256": "e448eb297733b7a194b27f47b502f2ae14d17b97e98b799925eb3dc0e15f937f",
+            "size": 13092588,
+            "signingCertSha256": "e6:56:5e:92:74:0a:44:d5:55:0a:03:dc:34:f1:b2:a7:36:f8:b1:3f:60:a2:a5:f2:9f:1f:b9:36:4b:6f:c5:6e",
+            "versionCode": 27,
+            "versionName": "0.9.2",
+            "minSdk": 24,
+            "targetSdk": 36,
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-10T18:36:18.406Z"
+          }
+        ]
+      },
+      "artifact": {
+        "url": "https://github.com/zacharee/InstallWithOptions/releases/download/0.9.2/InstallWithOptions_0.9.2-release.apk",
+        "sha256": "e448eb297733b7a194b27f47b502f2ae14d17b97e98b799925eb3dc0e15f937f",
+        "size": 13092588,
+        "abi": "universal"
       }
     },
     {
@@ -1708,9 +2108,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/jellyfin.png",
       "screenshots": [],
-      "downloadCount": 13821,
+      "downloadCount": 13953,
       "signingCertSha256": "d8:81:79:6e:d2:a6:7f:f6:ef:9f:67:68:28:72:3c:6b:1f:a1:8e:09:38:89:62:cb:a4:ab:c4:a5:94:a6:91:31",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "2.7.3",
         "versionCode": 2070399,
@@ -1735,7 +2135,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:15.905Z"
+            "verifiedAt": "2026-10-10T18:36:18.685Z"
           }
         ]
       },
@@ -1779,9 +2179,9 @@
         "screenshots/jerboa/1.png",
         "screenshots/jerboa/2.png"
       ],
-      "downloadCount": 1888,
+      "downloadCount": 1894,
       "signingCertSha256": "ea:71:95:cf:ce:63:8a:e6:b1:a8:00:2d:dc:0d:48:63:36:60:95:ea:5b:8d:95:c1:cd:5e:25:db:0f:e2:e7:c3",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "0.0.88-fdroid",
         "versionCode": 88,
@@ -1806,7 +2206,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:16.634Z"
+            "verifiedAt": "2026-10-10T18:36:19.367Z"
           }
         ]
       },
@@ -1850,9 +2250,9 @@
         "screenshots/keepassdx/2.png",
         "screenshots/keepassdx/3.png"
       ],
-      "downloadCount": 14576,
+      "downloadCount": 14753,
       "signingCertSha256": "7d:55:b8:af:21:03:81:aa:bf:96:0f:07:e1:7c:f7:85:7b:6d:2a:64:2c:a2:da:6b:f0:bd:f1:b2:00:36:2f:04",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "4.5.5",
         "versionCode": 45500,
@@ -1877,7 +2277,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:17.921Z"
+            "verifiedAt": "2026-10-10T18:36:20.302Z"
           }
         ]
       },
@@ -1926,9 +2326,9 @@
         "screenshots/keymapper/2.png",
         "screenshots/keymapper/3.png"
       ],
-      "downloadCount": 3333,
+      "downloadCount": 3551,
       "signingCertSha256": "2f:41:a8:16:b8:d6:0a:a1:d7:cd:49:76:b4:45:2b:03:35:e5:83:d4:f4:ab:14:07:1f:30:31:77:85:0c:e4:60",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "4.6.0-foss",
         "versionCode": 279,
@@ -1953,7 +2353,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:18.133Z"
+            "verifiedAt": "2026-10-10T18:36:20.149Z"
           }
         ]
       },
@@ -2001,9 +2401,9 @@
         "screenshots/koreader/2.png",
         "screenshots/koreader/3.png"
       ],
-      "downloadCount": 80552,
+      "downloadCount": 81130,
       "signingCertSha256": "fd:49:2a:4f:e0:01:f1:70:58:b8:26:da:43:58:a1:dc:ea:c3:8d:26:68:6f:34:25:22:c5:a4:97:bc:d4:dc:cc",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "v2026.07.1",
         "versionCode": 119462,
@@ -2025,7 +2425,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:21.701Z"
+            "verifiedAt": "2026-10-10T18:36:22.257Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2040,7 +2440,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:21.701Z"
+            "verifiedAt": "2026-10-10T18:36:22.257Z"
           }
         ]
       },
@@ -2083,9 +2483,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 22117,
+      "downloadCount": 22228,
       "signingCertSha256": "4f:a1:cb:59:ea:4d:8c:a8:55:53:15:eb:a2:15:20:5f:66:79:75:ba:89:85:bb:e7:36:90:4f:21:bf:eb:be:af",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.17.0",
         "versionCode": 252,
@@ -2110,7 +2510,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:19.535Z"
+            "verifiedAt": "2026-10-10T18:36:21.162Z"
           }
         ]
       },
@@ -2150,9 +2550,9 @@
       "addedAt": "2026-10-08",
       "icon": "icons/libchecker.png",
       "screenshots": [],
-      "downloadCount": 8852,
+      "downloadCount": 8875,
       "signingCertSha256": "b1:2e:1c:fb:fe:28:58:49:d6:74:00:18:02:2e:ec:22:09:fe:b2:8c:26:85:df:6f:4d:2f:97:db:de:3b:57:75",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "2.5.4.5696014",
         "versionCode": 2671,
@@ -2172,7 +2572,7 @@
             "minSdk": 24,
             "targetSdk": 37,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-10T10:36:19.604Z"
+            "verifiedAt": "2026-10-10T18:36:21.550Z"
           }
         ]
       },
@@ -2216,9 +2616,9 @@
         "screenshots/libretube/2.jpg",
         "screenshots/libretube/3.jpg"
       ],
-      "downloadCount": 71542,
+      "downloadCount": 71989,
       "signingCertSha256": "72:0c:4f:ce:cf:73:8a:41:d0:33:b9:fb:e0:be:f9:7a:c2:32:03:0c:e9:3e:27:4d:2e:0a:e2:32:e4:4e:ea:ce",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "32.1",
         "versionCode": 72,
@@ -2238,7 +2638,7 @@
             "minSdk": 26,
             "targetSdk": 36,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-10T10:36:21.594Z"
+            "verifiedAt": "2026-10-10T18:36:22.849Z"
           }
         ]
       },
@@ -2283,9 +2683,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/luanti.png",
       "screenshots": [],
-      "downloadCount": 7964,
+      "downloadCount": 8041,
       "signingCertSha256": "53:23:d1:a1:b4:f6:8b:e9:76:39:ee:c6:67:ed:f7:e4:e1:74:1a:8c:f5:22:3d:17:92:da:5d:1f:1d:6e:41:a7",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "5.17.0",
         "versionCode": 5170000,
@@ -2307,7 +2707,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:23.934Z"
+            "verifiedAt": "2026-10-10T18:36:23.772Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2322,7 +2722,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:23.934Z"
+            "verifiedAt": "2026-10-10T18:36:23.772Z"
           },
           {
             "abi": "x86_64",
@@ -2337,7 +2737,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:23.934Z"
+            "verifiedAt": "2026-10-10T18:36:23.772Z"
           }
         ]
       },
@@ -2388,9 +2788,9 @@
         "screenshots/magisk/2.png",
         "screenshots/magisk/3.png"
       ],
-      "downloadCount": 4091521,
+      "downloadCount": 4099850,
       "signingCertSha256": "b4:cb:83:b4:da:d9:9f:99:7d:be:87:2f:01:3a:a1:6c:14:ee:c4:1d:16:70:21:f3:71:f7:e1:33:0f:27:3e:e6",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "30.7",
         "versionCode": 30700,
@@ -2415,7 +2815,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:23.179Z"
+            "verifiedAt": "2026-10-10T18:36:23.270Z"
           }
         ]
       },
@@ -2453,6 +2853,17 @@
       ],
       "status": "active",
       "antiFeatures": [],
+      "accessRequirements": {
+        "mode": "optional",
+        "methods": [
+          "root"
+        ],
+        "note": {
+          "en": "Normal file management works without root. Root access is optional for browsing protected files.",
+          "pt": "A gestão normal de ficheiros funciona sem root. O acesso root é opcional para navegar em ficheiros protegidos."
+        },
+        "guideUrl": "https://github.com/zhanghai/MaterialFiles#features"
+      },
       "addedAt": "2026-10-08",
       "icon": "icons/materialfiles.png",
       "screenshots": [
@@ -2460,9 +2871,9 @@
         "screenshots/materialfiles/2.png",
         "screenshots/materialfiles/3.png"
       ],
-      "downloadCount": 38030,
+      "downloadCount": 38253,
       "signingCertSha256": "87:3b:9b:60:c7:7c:f7:f3:cd:5f:ae:66:d0:fe:11:2c:4a:86:97:3e:11:8e:e8:a2:9c:34:6c:4c:67:3c:97:f0",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.7.5",
         "versionCode": 40,
@@ -2487,7 +2898,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:23.130Z"
+            "verifiedAt": "2026-10-10T18:36:23.480Z"
           }
         ]
       },
@@ -2533,9 +2944,9 @@
         "screenshots/metrolist/2.jpg",
         "screenshots/metrolist/3.jpg"
       ],
-      "downloadCount": 34327,
+      "downloadCount": 34679,
       "signingCertSha256": "e3:2c:4f:2e:fd:7e:e9:54:8f:ae:e2:2e:45:a6:04:25:f7:72:8a:55:a6:10:fd:5e:8a:b9:36:4f:74:b7:bc:c9",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "13.7.0",
         "versionCode": 153,
@@ -2560,7 +2971,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:23.691Z"
+            "verifiedAt": "2026-10-10T18:36:24.509Z"
           }
         ]
       },
@@ -2610,9 +3021,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 37237,
+      "downloadCount": 37367,
       "signingCertSha256": "6a:a8:0f:df:4a:8c:c1:37:37:cf:b4:34:fc:0c:de:48:6f:09:cf:8f:cd:a2:1a:67:be:a5:ee:1c:a2:70:08:86",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "v8.19.2-4",
         "versionCode": 171904,
@@ -2636,7 +3047,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:28.598Z"
+            "verifiedAt": "2026-10-10T18:36:27.445Z"
           }
         ]
       },
@@ -2681,9 +3092,9 @@
         "screenshots/moonlight-android/1.png",
         "screenshots/moonlight-android/2.png"
       ],
-      "downloadCount": 25305,
+      "downloadCount": 25709,
       "signingCertSha256": "d6:ce:3a:4d:f1:50:60:fe:48:8f:e5:24:41:a5:49:de:e4:ba:19:9b:36:e2:cb:1e:d9:08:5c:ca:8b:fa:1a:ca",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "12.2",
         "versionCode": 315,
@@ -2708,7 +3119,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:24.583Z"
+            "verifiedAt": "2026-10-10T18:36:24.840Z"
           }
         ]
       },
@@ -2748,9 +3159,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/mpv.png",
       "screenshots": [],
-      "downloadCount": 13504,
+      "downloadCount": 13714,
       "signingCertSha256": "fa:e7:f9:d0:23:85:cc:24:d9:6e:88:43:66:03:e2:3e:a6:ae:c7:64:9a:d1:25:0a:bb:b4:83:7d:aa:b8:2f:ff",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "2026-09-17-release",
         "versionCode": 4048,
@@ -2772,7 +3183,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:29.024Z"
+            "verifiedAt": "2026-10-10T18:36:26.881Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2787,7 +3198,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:29.024Z"
+            "verifiedAt": "2026-10-10T18:36:26.881Z"
           },
           {
             "abi": "x86_64",
@@ -2802,7 +3213,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:29.024Z"
+            "verifiedAt": "2026-10-10T18:36:26.881Z"
           }
         ]
       },
@@ -2854,9 +3265,9 @@
         "screenshots/myne/2.png",
         "screenshots/myne/3.png"
       ],
-      "downloadCount": 2177,
+      "downloadCount": 2193,
       "signingCertSha256": "5d:fe:06:da:0f:e3:b0:81:3f:3f:3d:c5:30:56:99:c2:db:b9:df:db:ab:13:49:da:7c:41:c5:9d:2f:cf:31:9c",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "5.1.0",
         "versionCode": 510,
@@ -2881,7 +3292,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:25.363Z"
+            "verifiedAt": "2026-10-10T18:36:25.976Z"
           }
         ]
       },
@@ -2927,9 +3338,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/nagram.png",
       "screenshots": [],
-      "downloadCount": 10475,
+      "downloadCount": 10646,
       "signingCertSha256": "88:a8:af:e3:cc:be:e0:80:c1:3b:73:83:2a:ab:8c:98:a9:f1:9d:1c:65:f3:bc:fd:50:b8:d0:1c:0b:c8:0e:9e",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "12.10.1",
         "versionCode": 1248,
@@ -2951,7 +3362,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:30.764Z"
+            "verifiedAt": "2026-10-10T18:36:30.533Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2966,7 +3377,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:30.764Z"
+            "verifiedAt": "2026-10-10T18:36:30.533Z"
           }
         ]
       },
@@ -3016,9 +3427,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/nekogram.png",
       "screenshots": [],
-      "downloadCount": 6106,
+      "downloadCount": 6312,
       "signingCertSha256": "5c:e9:32:b9:70:19:9f:bd:a2:aa:e7:bf:21:e1:ad:9e:70:b0:80:9a:7b:1a:c9:4c:06:99:f5:d5:ad:a8:33:13",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "12.10.6",
         "versionCode": 71120,
@@ -3040,7 +3451,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:31.398Z"
+            "verifiedAt": "2026-10-10T18:36:30.689Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -3055,7 +3466,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:31.398Z"
+            "verifiedAt": "2026-10-10T18:36:30.689Z"
           }
         ]
       },
@@ -3069,10 +3480,10 @@
     {
       "id": "neo-backup",
       "name": "Neo Backup",
-      "summary": "Cópias de segurança locais de APKs e dados de apps, com ou sem root",
+      "summary": "Cópias de segurança locais de apps e dados, para telemóveis com root",
       "description": {
-        "en": "Back up and restore apps and their data to local storage or a document provider. Works without root for APKs, and with root or Shizuku for app data. The maintained successor to OAndBackupX.",
-        "pt": "Cria e restaura cópias de segurança de apps e dos seus dados no armazenamento local ou num fornecedor de documentos. Funciona sem root para os APKs, e com root ou Shizuku para os dados das apps. É o sucessor mantido do OAndBackupX."
+        "en": "Back up and restore individual apps and their data, in batches or on a schedule. Requires root access. Formerly OAndBackupX, part of the Neo Applications suite.",
+        "pt": "Cria e restaura cópias de segurança de apps e dos seus dados, individualmente, em lote ou por agendamento. Requer acesso root. Anteriormente OAndBackupX, faz parte do conjunto Neo Applications."
       },
       "packageName": "com.machiav3lli.backup",
       "license": "AGPL-3.0-only",
@@ -3085,10 +3496,21 @@
         "backup",
         "restore",
         "apk",
-        "shizuku"
+        "root"
       ],
       "status": "active",
       "antiFeatures": [],
+      "accessRequirements": {
+        "mode": "required",
+        "methods": [
+          "root"
+        ],
+        "note": {
+          "en": "Root access is required to back up and restore apps and their data. Grant Neo Backup access through your root manager.",
+          "pt": "Precisa de root para criar e restaurar cópias de segurança de apps e dados. Autoriza o Neo Backup no teu gestor de root."
+        },
+        "guideUrl": "https://github.com/NeoApplications/Neo-Backup#features-"
+      },
       "playStore": {
         "present": false
       },
@@ -3099,9 +3521,9 @@
         "screenshots/neo-backup/2.png",
         "screenshots/neo-backup/3.png"
       ],
-      "downloadCount": 22925,
+      "downloadCount": 22988,
       "signingCertSha256": "c9:4f:10:24:3c:14:d5:7d:d6:9d:ed:e6:1c:23:4b:b5:e8:bb:07:04:d6:1b:45:da:fe:49:67:28:ac:32:f3:78",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "8.3.18",
         "versionCode": 8331,
@@ -3126,7 +3548,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:30.227Z"
+            "verifiedAt": "2026-10-10T18:36:28.888Z"
           }
         ]
       },
@@ -3173,9 +3595,9 @@
         "screenshots/neo-store/2.png",
         "screenshots/neo-store/3.png"
       ],
-      "downloadCount": 12484,
+      "downloadCount": 12744,
       "signingCertSha256": "c5:86:01:46:13:8b:77:99:bb:9d:06:17:c3:98:c1:e5:24:15:50:f5:58:25:2a:3f:97:b2:a5:1f:15:26:3e:f7",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.3.2",
         "versionCode": 1303,
@@ -3200,7 +3622,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:30.512Z"
+            "verifiedAt": "2026-10-10T18:36:29.350Z"
           }
         ]
       },
@@ -3249,9 +3671,9 @@
         "screenshots/newpipe/2.png",
         "screenshots/newpipe/3.png"
       ],
-      "downloadCount": 176304,
+      "downloadCount": 177210,
       "signingCertSha256": "cb:84:06:9b:d6:81:16:ba:fa:e5:ee:4e:e5:b0:8a:56:7a:a6:d8:98:40:4e:7c:b1:2f:9e:75:6d:f5:cf:5c:ab",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "0.29.1",
         "versionCode": 1015,
@@ -3276,7 +3698,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:32.067Z"
+            "verifiedAt": "2026-10-10T18:36:31.234Z"
           }
         ]
       },
@@ -3321,9 +3743,9 @@
         "screenshots/nextplayer/2.png",
         "screenshots/nextplayer/3.png"
       ],
-      "downloadCount": 2242,
+      "downloadCount": 2839,
       "signingCertSha256": "d3:7c:ab:f3:67:6c:f5:82:24:fb:24:2c:8d:d2:09:12:9d:05:88:03:79:29:5f:aa:a6:d0:fb:60:7b:ec:13:1b",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "0.19.0",
         "versionCode": 75,
@@ -3345,7 +3767,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:33.529Z"
+            "verifiedAt": "2026-10-10T18:36:31.742Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -3360,7 +3782,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:33.529Z"
+            "verifiedAt": "2026-10-10T18:36:31.742Z"
           },
           {
             "abi": "x86_64",
@@ -3375,7 +3797,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:33.529Z"
+            "verifiedAt": "2026-10-10T18:36:31.742Z"
           }
         ]
       },
@@ -3423,9 +3845,9 @@
         "screenshots/notallyx/2.png",
         "screenshots/notallyx/3.png"
       ],
-      "downloadCount": 6026,
+      "downloadCount": 6053,
       "signingCertSha256": "d2:14:b6:05:7b:79:f8:25:09:dd:cd:1e:35:19:65:b3:c6:ec:c4:b2:a3:89:6e:5c:df:88:5a:70:a0:b6:1d:fd",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "7.11.2",
         "versionCode": 71120,
@@ -3450,7 +3872,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:32.372Z"
+            "verifiedAt": "2026-10-10T18:36:31.811Z"
           }
         ]
       },
@@ -3495,9 +3917,9 @@
         "screenshots/obtainium/2.png",
         "screenshots/obtainium/3.png"
       ],
-      "downloadCount": 383724,
+      "downloadCount": 387447,
       "signingCertSha256": "b3:53:60:1f:6a:1d:5f:d6:60:3a:e2:f5:0b:e8:0c:f3:01:36:7b:86:b6:ab:8b:1f:66:24:3d:a9:6c:d5:73:62",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.6.17",
         "versionCode": 23563,
@@ -3521,7 +3943,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:38.988Z"
+            "verifiedAt": "2026-10-10T18:36:34.626Z"
           },
           {
             "abi": "arm64-v8a",
@@ -3536,7 +3958,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:38.988Z"
+            "verifiedAt": "2026-10-10T18:36:34.626Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -3551,7 +3973,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:38.988Z"
+            "verifiedAt": "2026-10-10T18:36:34.626Z"
           },
           {
             "abi": "x86_64",
@@ -3566,7 +3988,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:38.988Z"
+            "verifiedAt": "2026-10-10T18:36:34.626Z"
           }
         ]
       },
@@ -3613,9 +4035,9 @@
         "screenshots/opencalc/2.png",
         "screenshots/opencalc/3.png"
       ],
-      "downloadCount": 12574,
+      "downloadCount": 12588,
       "signingCertSha256": "21:05:0f:d6:d3:67:98:d9:75:8b:6c:a5:20:2a:eb:50:a5:bb:bd:c7:56:14:1d:94:e3:6f:6c:8c:16:8c:09:59",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "3.2.1",
         "versionCode": 54,
@@ -3635,7 +4057,7 @@
             "minSdk": 21,
             "targetSdk": 35,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-10T10:36:33.350Z"
+            "verifiedAt": "2026-10-10T18:36:32.545Z"
           }
         ]
       },
@@ -3679,9 +4101,9 @@
         "screenshots/openscan/2.png",
         "screenshots/openscan/3.png"
       ],
-      "downloadCount": 191,
+      "downloadCount": 192,
       "signingCertSha256": "58:c2:f0:a3:98:50:57:8d:7c:17:c4:38:5f:d4:af:2b:12:91:2e:3a:2b:ef:f8:f3:c7:93:f2:d1:b0:ec:6c:79",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "3.0.0",
         "versionCode": 9,
@@ -3705,7 +4127,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:35.025Z"
+            "verifiedAt": "2026-10-10T18:36:32.490Z"
           }
         ]
       },
@@ -3747,9 +4169,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 382666,
+      "downloadCount": 388156,
       "signingCertSha256": "70:f2:6f:d7:1f:fd:15:18:8d:a1:90:95:c5:11:af:59:5b:dd:87:23:28:d5:a1:a4:9d:69:84:9a:f3:eb:0d:0a",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.12.2",
         "versionCode": 51,
@@ -3771,7 +4193,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:37.779Z"
+            "verifiedAt": "2026-10-10T18:36:34.494Z"
           }
         ]
       },
@@ -3819,9 +4241,9 @@
         "screenshots/outertune/2.jpg",
         "screenshots/outertune/3.jpg"
       ],
-      "downloadCount": 405175,
+      "downloadCount": 405612,
       "signingCertSha256": "ac:dd:87:1a:3d:e2:94:7d:32:53:ec:90:cd:c5:3d:1a:07:40:d6:03:8e:25:a6:48:5d:71:89:9e:ef:a9:6d:b8",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "0.10.1",
         "versionCode": 71,
@@ -3846,7 +4268,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:35.274Z"
+            "verifiedAt": "2026-10-10T18:36:33.487Z"
           }
         ]
       },
@@ -3894,9 +4316,9 @@
         "screenshots/photok/2.jpg",
         "screenshots/photok/3.jpg"
       ],
-      "downloadCount": 313,
+      "downloadCount": 372,
       "signingCertSha256": "b7:04:a2:d2:d5:8a:37:e9:5a:b2:34:96:c3:9a:81:91:35:b8:7a:03:b9:b3:f4:c1:4d:3f:ed:cc:e9:cc:2c:9a",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "3.6.0",
         "versionCode": 77,
@@ -3921,7 +4343,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:37.061Z"
+            "verifiedAt": "2026-10-10T18:36:34.137Z"
           }
         ]
       },
@@ -3970,9 +4392,9 @@
         "screenshots/pipepipe/2.png",
         "screenshots/pipepipe/3.png"
       ],
-      "downloadCount": 113899,
+      "downloadCount": 114960,
       "signingCertSha256": "de:c7:34:29:ce:25:63:27:5f:5e:d1:98:25:e4:46:52:b3:2b:36:3a:46:f3:8b:df:f9:ad:6d:cd:e4:84:2d:88",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "5.4.0",
         "versionCode": 110904,
@@ -3994,7 +4416,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:43.781Z"
+            "verifiedAt": "2026-10-10T18:36:38.549Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -4009,7 +4431,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:43.781Z"
+            "verifiedAt": "2026-10-10T18:36:38.549Z"
           },
           {
             "abi": "x86_64",
@@ -4024,7 +4446,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:43.781Z"
+            "verifiedAt": "2026-10-10T18:36:38.549Z"
           },
           {
             "abi": "x86",
@@ -4039,7 +4461,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-10T10:36:43.781Z"
+            "verifiedAt": "2026-10-10T18:36:38.549Z"
           }
         ]
       },
@@ -4087,9 +4509,9 @@
         "screenshots/pixiv-shaft/2.webp",
         "screenshots/pixiv-shaft/3.webp"
       ],
-      "downloadCount": 1813,
+      "downloadCount": 2141,
       "signingCertSha256": "c6:f9:57:47:17:4c:b6:79:2d:bd:c2:04:91:c4:bd:c3:ad:84:ea:f8:fb:7a:7f:c8:8b:b4:4c:0a:77:33:54:f0",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "4.9.6",
         "versionCode": 43100,
@@ -4111,7 +4533,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:38.903Z"
+            "verifiedAt": "2026-10-10T18:36:35.724Z"
           }
         ]
       },
@@ -4154,9 +4576,9 @@
         "screenshots/readyou/2.png",
         "screenshots/readyou/3.png"
       ],
-      "downloadCount": 21256,
+      "downloadCount": 21313,
       "signingCertSha256": "72:1e:40:43:c4:39:bd:70:c9:0f:46:ae:16:6d:dc:23:3f:c7:5c:12:35:bf:8c:b2:7b:99:a4:df:09:cc:3b:99",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "0.16.2",
         "versionCode": 47,
@@ -4181,7 +4603,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:39.082Z"
+            "verifiedAt": "2026-10-10T18:36:35.393Z"
           }
         ]
       },
@@ -4229,9 +4651,9 @@
         "screenshots/rethinkdns/2.png",
         "screenshots/rethinkdns/3.png"
       ],
-      "downloadCount": 8617,
+      "downloadCount": 8693,
       "signingCertSha256": "80:e1:5f:1e:d5:a1:ec:51:2c:51:e1:4a:a2:9b:18:c7:be:fe:13:c1:ac:b6:cf:ec:4b:87:bd:31:d1:71:fe:7f",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "v0.5.7",
         "versionCode": 90000069,
@@ -4255,7 +4677,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:49.326Z"
+            "verifiedAt": "2026-10-10T18:36:39.209Z"
           },
           {
             "abi": "arm64-v8a",
@@ -4270,7 +4692,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:49.326Z"
+            "verifiedAt": "2026-10-10T18:36:39.209Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -4285,7 +4707,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:49.326Z"
+            "verifiedAt": "2026-10-10T18:36:39.209Z"
           },
           {
             "abi": "x86_64",
@@ -4300,7 +4722,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:49.326Z"
+            "verifiedAt": "2026-10-10T18:36:39.209Z"
           },
           {
             "abi": "x86",
@@ -4315,7 +4737,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-10T10:36:49.326Z"
+            "verifiedAt": "2026-10-10T18:36:39.209Z"
           }
         ]
       },
@@ -4363,9 +4785,9 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 4212954,
+      "downloadCount": 4222039,
       "signingCertSha256": "b6:36:2c:6e:a7:88:8e:fd:15:c0:80:0f:48:07:86:ad:0f:5b:13:3b:4f:84:e1:2d:46:af:ba:5f:9e:ac:12:23",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "2.6.0",
         "versionCode": 200600099,
@@ -4389,7 +4811,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:40.753Z"
+            "verifiedAt": "2026-10-10T18:36:37.277Z"
           }
         ]
       },
@@ -4433,9 +4855,9 @@
       "addedAt": "2026-10-08",
       "icon": "icons/rtranslator.png",
       "screenshots": [],
-      "downloadCount": 25088,
+      "downloadCount": 25122,
       "signingCertSha256": "7c:6f:90:12:c1:5f:f6:3a:8f:7f:11:5d:30:a8:5d:02:31:a2:3e:9b:bd:17:b0:17:bb:d6:42:65:33:0a:60:0e",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "2.1.5",
         "versionCode": 25,
@@ -4460,7 +4882,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:40.523Z"
+            "verifiedAt": "2026-10-10T18:36:36.544Z"
           }
         ]
       },
@@ -4496,6 +4918,18 @@
       "antiFeatures": [
         "nonFreeAssets"
       ],
+      "accessRequirements": {
+        "mode": "optional",
+        "methods": [
+          "shizuku",
+          "root"
+        ],
+        "note": {
+          "en": "Works without root or Shizuku. These optional access methods enable additional cleaning features; configure them in Setup.",
+          "pt": "Funciona sem root nem Shizuku. Estes acessos opcionais permitem funções adicionais de limpeza; configura-os no ecrã de configuração da app."
+        },
+        "guideUrl": "https://github.com/d4rken-org/sdmaid-se/wiki/Setup"
+      },
       "playStore": {
         "present": true,
         "url": "https://play.google.com/store/apps/details?id=eu.darken.sdmse&hl=en&gl=US"
@@ -4503,9 +4937,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/sd-maid-se.png",
       "screenshots": [],
-      "downloadCount": 21893,
+      "downloadCount": 23860,
       "signingCertSha256": "f4:90:03:2b:e5:38:3f:55:90:04:95:fa:7f:c2:07:ec:e2:e7:86:a5:c2:c6:cc:52:02:7b:99:54:8a:9c:e9:38",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "2.2.1-rc0",
         "versionCode": 20201000,
@@ -4530,7 +4964,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:42.301Z"
+            "verifiedAt": "2026-10-10T18:36:38.625Z"
           }
         ]
       },
@@ -4574,9 +5008,9 @@
         "screenshots/seal/2.jpg",
         "screenshots/seal/3.jpg"
       ],
-      "downloadCount": 2900811,
+      "downloadCount": 2902581,
       "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.13.1",
         "versionCode": 11314,
@@ -4601,7 +5035,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:53.147Z"
+            "verifiedAt": "2026-10-10T18:36:41.965Z"
           },
           {
             "abi": "arm64-v8a",
@@ -4616,7 +5050,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:53.147Z"
+            "verifiedAt": "2026-10-10T18:36:41.965Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -4631,7 +5065,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:53.147Z"
+            "verifiedAt": "2026-10-10T18:36:41.965Z"
           },
           {
             "abi": "x86_64",
@@ -4646,7 +5080,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:53.147Z"
+            "verifiedAt": "2026-10-10T18:36:41.965Z"
           },
           {
             "abi": "x86",
@@ -4661,7 +5095,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-10T10:36:53.147Z"
+            "verifiedAt": "2026-10-10T18:36:41.965Z"
           }
         ]
       },
@@ -4706,9 +5140,9 @@
       "addedAt": "2026-10-08",
       "icon": "icons/secure-camera.png",
       "screenshots": [],
-      "downloadCount": 9487,
+      "downloadCount": 9526,
       "signingCertSha256": "64:36:b1:55:b9:17:c2:f9:a9:ed:1d:15:c4:99:3a:59:68:ff:ab:c9:49:47:c1:3f:2a:ee:e1:4b:7b:27:ed:59",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "93",
         "versionCode": 93,
@@ -4733,7 +5167,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:43.748Z"
+            "verifiedAt": "2026-10-10T18:36:39.746Z"
           }
         ]
       },
@@ -4777,9 +5211,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/shattered-pixel-dungeon.png",
       "screenshots": [],
-      "downloadCount": 1965,
+      "downloadCount": 2119,
       "signingCertSha256": "d4:5f:76:0b:89:60:8b:4b:25:3a:3b:16:0d:c2:70:7f:1f:f4:e8:dd:8c:a4:d2:e8:e1:b8:1c:2c:72:d8:17:53",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "4.0.2",
         "versionCode": 922,
@@ -4804,7 +5238,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:45.938Z"
+            "verifiedAt": "2026-10-10T18:36:40.664Z"
           }
         ]
       },
@@ -4849,9 +5283,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/shizuku.png",
       "screenshots": [],
-      "downloadCount": 3149100,
+      "downloadCount": 3154529,
       "signingCertSha256": "26:8b:55:90:e8:68:fb:08:ba:e7:e0:ac:41:35:64:cd:1f:f8:8f:5c:cf:f7:4a:f9:db:d0:dc:91:8e:30:db:30",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "13.6.0.r1086.2650830c",
         "versionCode": 1086,
@@ -4876,7 +5310,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:46.849Z"
+            "verifiedAt": "2026-10-10T18:36:40.727Z"
           }
         ]
       },
@@ -4920,9 +5354,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/sgtpuzzles.png",
       "screenshots": [],
-      "downloadCount": 3659,
+      "downloadCount": 3663,
       "signingCertSha256": "f7:15:81:ec:7d:70:41:53:ba:c3:4a:b1:48:d9:25:68:3d:b9:20:71:22:a2:93:3b:28:c0:4c:a2:e4:f2:84:53",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "2025-09-12-1919-23762278",
         "versionCode": 149,
@@ -4947,7 +5381,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:45.630Z"
+            "verifiedAt": "2026-10-10T18:36:39.624Z"
           }
         ]
       },
@@ -4996,9 +5430,9 @@
         "screenshots/simplex/2.jpg",
         "screenshots/simplex/3.jpg"
       ],
-      "downloadCount": 12953,
+      "downloadCount": 13217,
       "signingCertSha256": "3c:52:c4:fd:3c:ad:1c:07:c9:b0:0a:70:80:e3:58:fa:b9:fe:fc:b8:af:5a:ec:14:77:65:f1:6d:0f:21:ad:85",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "7.0.3",
         "versionCode": 381,
@@ -5020,7 +5454,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:52.899Z"
+            "verifiedAt": "2026-10-10T18:36:43.359Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -5035,7 +5469,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:52.899Z"
+            "verifiedAt": "2026-10-10T18:36:43.359Z"
           }
         ]
       },
@@ -5081,25 +5515,25 @@
         "screenshots/simpmusic/2.png",
         "screenshots/simpmusic/3.png"
       ],
-      "downloadCount": 20421,
+      "downloadCount": 302,
       "signingCertSha256": "76:c5:3b:d8:13:ae:8f:1c:e2:77:8f:78:14:b5:15:78:57:19:bf:9a:82:c6:be:e0:3b:8b:2d:fd:70:60:55:a1",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
-        "versionName": "2.2.0",
-        "versionCode": 59,
-        "tag": "v2.2.0",
-        "publishedAt": "2026-09-26T16:18:39Z",
-        "releaseUrl": "https://github.com/maxrave-dev/SimpMusic/releases/tag/v2.2.0",
-        "changelog": "### Full changlogs here: https://www.simpmusic.org/blogs/new-update-simpmusic-v220\r\n### Read user-guide: https://www.simpmusic.org/docs\r\n\r\n## New\r\n- **Sign in on Desktop from your phone** by scanning a QR code with the Android app.\r\n- **Landscape fullscreen lyrics**, and a timing offset to match Bluetooth delay.\r\n- **Word-by-word lyrics** with interlude dots and a light that travels along each word.\r\n- **\"More\" on Home** opens a section's full list.\r\n- **Artist pages**: your liked songs from that artist, Canvas toggle and share.\r\n- **Preferred audio language** for videos with several audio tracks.\r\n- **System equalizer** option on Android.\r\n- **Swedish and Croatian** languages.\r\n\r\n## Improved\r\n- New default mini player, refreshed artist pages, and grids that fit the window.\r\n- Radio stays smooth in long sessions and plays songs instead of music videos.\r\n- The queue always saves and resumes where you left off.\r\n\r\n## Fixed\r\n- Brand accounts loading another channel's data.\r\n- Requests failing after changing a setting, and flaky YouTube loading.\r\n- Linux title bar, Wayland and multi-monitor freezes.\r\n- Crashes on Intel Mac startup, some Xiaomi devices, and an Android crash loop (\"Keep service alive\" is removed).\r\n- Plus many smaller fixes.\r\n\r\n## What's Changed\r\n* Feat/tap search icon open keyboard by @laoluogun in https://github.com/maxrave-dev/SimpMusic/pull/2348\r\n* fix(account): store and send each channel's authuser (#2505) by @Me-xico in https://github.com/maxrave-dev/SimpMusic/pull/2506\r\n* docs: update API reference link to the core repository by @Shxiao101 in https://github.com/maxrave-dev/SimpMusic/pull/2468\r\n* fix(playlist): move instead of swap when reordering local playlist by @Phoenix1808 in https://github.com/maxrave-dev/SimpMusic/pull/2466\r\n* feat: add issue templates for playback errors and desktop issues by @chrisdebian in https://github.com/maxrave-dev/SimpMusic/pull/2354\r\n* New version: v2.2.0 by @maxrave-dev in https://github.com/maxrave-dev/SimpMusic/",
+        "versionName": "2.3.0",
+        "versionCode": 60,
+        "tag": "v2.3.0",
+        "publishedAt": "2026-10-10T17:41:41Z",
+        "releaseUrl": "https://github.com/maxrave-dev/SimpMusic/releases/tag/v2.3.0",
+        "changelog": "### Full changlogs here: https://www.simpmusic.org/blogs/new-update-simpmusic-v230\r\n### Read user-guide: https://www.simpmusic.org/docs\r\n\r\n### New\r\n- Redesigned Apple Music player: the whole artwork, animated artwork, colours from the artwork and the current lyric line above the seek bar\r\n- Apple Music-style lyrics: lines move up one after another as the song plays\r\n- Redesigned Home: a \"Your daily discover\" carousel, \"Play all\" on sections and a play button on hover\r\n- New Library cards for Favorite, Followed, Most played and Downloaded\r\n- Listening receipt: share your most played songs as a printed receipt\r\n- What's your music taste?: an AI card in Library describes your taste\r\n- Audio output picker: speaker, headphones or Cast, right from the player\r\n- Live broadcasts from YouTube Music, with a LIVE badge\r\n- Animated artwork on artist pages\r\n- App log: export it and attach it to a bug report\r\n- Song options in the queue: move up, move down, play next and remove\r\n- What's new banners that take you straight to new features\r\n- SimpMusic for vivo: a separate APK that works with Origin Island\r\n### Improved\r\n- Animated artwork in the Classic and Material 3 Expressive players\r\n- Settings grouped into cards\r\n- Lyrics offset right in the lyrics view, native Windows title bar, artwork available offline\r\n- Add to queue now says why it is off while a radio, mix or Endless queue is playing\r\n### Fixed\r\n- Windows settings crash, desktop file picker crash and antivirus warnings, Android 11 crash\r\n- No sound on Fedora, seek bar while paused, search history, right-to-left lyrics\r\n\r\n## What's Changed\r\n* fix(ci): update artifact path to match macOS zip naming and handle missing files by @cuong-tran in https://github.com/maxrave-dev/SimpMusic/pull/2575\r\n* v2.3.0: New update by @maxrave-dev in https://github.com/maxrave-dev/SimpMusic/pull/2628\r\n\r\n\r\n**Full Changelog**: https://github.com/maxrave-dev/SimpMusic/compare/v2.2.0...v2.3.0",
         "assets": [
           {
             "abi": "universal",
-            "url": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.2.0/SimpMusic-foss-universal-release.apk",
-            "sha256": "36f53aed85b67871851009464aaa35d27dd42ae1bf8dc6de8d1fa3ec57ab34a2",
-            "size": 54697323,
+            "url": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.3.0/SimpMusic-foss-universal-release.apk",
+            "sha256": "488009f24b4978cd44f38c68d10a4a74205ff5a57490d1dbee64c90774dc7a3a",
+            "size": 55271038,
             "signingCertSha256": "76:c5:3b:d8:13:ae:8f:1c:e2:77:8f:78:14:b5:15:78:57:19:bf:9a:82:c6:be:e0:3b:8b:2d:fd:70:60:55:a1",
-            "versionCode": 59,
-            "versionName": "2.2.0",
+            "versionCode": 60,
+            "versionName": "2.3.0",
             "minSdk": 26,
             "targetSdk": 36,
             "nativeAbis": [
@@ -5107,59 +5541,59 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:52.611Z"
+            "verifiedAt": "2026-10-10T18:36:50.572Z"
           },
           {
             "abi": "arm64-v8a",
-            "url": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.2.0/SimpMusic-foss-arm64-v8a-release.apk",
-            "sha256": "1b93a9cdc1bdee379f4089c0306fabcb45cc627b4146f53feff46be460926a72",
-            "size": 27497350,
+            "url": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.3.0/SimpMusic-foss-arm64-v8a-release.apk",
+            "sha256": "679a4fcbf4fd4e00d53790d2ac698910b468e244ba888fe5dee6996bdb4e4926",
+            "size": 27907225,
             "signingCertSha256": "76:c5:3b:d8:13:ae:8f:1c:e2:77:8f:78:14:b5:15:78:57:19:bf:9a:82:c6:be:e0:3b:8b:2d:fd:70:60:55:a1",
-            "versionCode": 59,
-            "versionName": "2.2.0",
+            "versionCode": 60,
+            "versionName": "2.3.0",
             "minSdk": 26,
             "targetSdk": 36,
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:52.611Z"
+            "verifiedAt": "2026-10-10T18:36:50.572Z"
           },
           {
             "abi": "armeabi-v7a",
-            "url": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.2.0/SimpMusic-foss-armeabi-v7a-release.apk",
-            "sha256": "4078f26e9ce63b9b631d1674e729ae573fd0969bb8fe8da10e3bae022f0ae6cb",
-            "size": 27489237,
+            "url": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.3.0/SimpMusic-foss-armeabi-v7a-release.apk",
+            "sha256": "6035c2e72020cc2302a6cfa0675404d5b948c71dde73ffbe45c0cfc33cfb15e0",
+            "size": 27903208,
             "signingCertSha256": "76:c5:3b:d8:13:ae:8f:1c:e2:77:8f:78:14:b5:15:78:57:19:bf:9a:82:c6:be:e0:3b:8b:2d:fd:70:60:55:a1",
-            "versionCode": 59,
-            "versionName": "2.2.0",
+            "versionCode": 60,
+            "versionName": "2.3.0",
             "minSdk": 26,
             "targetSdk": 36,
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:52.611Z"
+            "verifiedAt": "2026-10-10T18:36:50.572Z"
           },
           {
             "abi": "x86_64",
-            "url": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.2.0/SimpMusic-foss-x86_64-release.apk",
-            "sha256": "08b019894fd5ad01810fdbfbe83683d29b7c40ea0b28f134723142752fa0dac7",
-            "size": 29000534,
+            "url": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.3.0/SimpMusic-foss-x86_64-release.apk",
+            "sha256": "d27d4c55e4f1d7dd6dadfa884b63adeab060b18f95add016a40fb537d73eb7e4",
+            "size": 29373545,
             "signingCertSha256": "76:c5:3b:d8:13:ae:8f:1c:e2:77:8f:78:14:b5:15:78:57:19:bf:9a:82:c6:be:e0:3b:8b:2d:fd:70:60:55:a1",
-            "versionCode": 59,
-            "versionName": "2.2.0",
+            "versionCode": 60,
+            "versionName": "2.3.0",
             "minSdk": 26,
             "targetSdk": 36,
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:52.611Z"
+            "verifiedAt": "2026-10-10T18:36:50.572Z"
           }
         ]
       },
       "artifact": {
-        "url": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.2.0/SimpMusic-foss-universal-release.apk",
-        "sha256": "36f53aed85b67871851009464aaa35d27dd42ae1bf8dc6de8d1fa3ec57ab34a2",
-        "size": 54697323,
+        "url": "https://github.com/maxrave-dev/SimpMusic/releases/download/v2.3.0/SimpMusic-foss-universal-release.apk",
+        "sha256": "488009f24b4978cd44f38c68d10a4a74205ff5a57490d1dbee64c90774dc7a3a",
+        "size": 55271038,
         "abi": "universal"
       }
     },
@@ -5195,9 +5629,9 @@
         "screenshots/super-productivity/2.png",
         "screenshots/super-productivity/3.png"
       ],
-      "downloadCount": 5034,
+      "downloadCount": 5096,
       "signingCertSha256": "16:3c:87:6b:91:7d:76:20:a3:92:92:cc:9d:7c:3c:df:0c:3c:65:93:24:ab:45:9d:5d:af:d9:b9:97:11:17:aa",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "19.1.0",
         "versionCode": 1901009000,
@@ -5217,7 +5651,7 @@
             "minSdk": 24,
             "targetSdk": 36,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-10T10:36:51.995Z"
+            "verifiedAt": "2026-10-10T18:36:43.400Z"
           }
         ]
       },
@@ -5265,9 +5699,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/syncthing-fork.png",
       "screenshots": [],
-      "downloadCount": 43816,
+      "downloadCount": 46575,
       "signingCertSha256": "d3:74:b8:de:50:57:01:31:43:c7:d1:51:5a:01:55:98:c2:df:40:3b:e8:16:0c:ae:01:a5:8c:22:7e:6e:86:aa",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "2.1.6.0",
         "versionCode": 2010600,
@@ -5289,7 +5723,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:55.801Z"
+            "verifiedAt": "2026-10-10T18:36:44.461Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -5304,7 +5738,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:55.801Z"
+            "verifiedAt": "2026-10-10T18:36:44.461Z"
           }
         ]
       },
@@ -5354,9 +5788,9 @@
         "screenshots/termux/2.jpg",
         "screenshots/termux/3.jpg"
       ],
-      "downloadCount": 2423525,
+      "downloadCount": 2426491,
       "signingCertSha256": "b6:da:01:48:0e:ef:d5:fb:f2:cd:37:71:b8:d1:02:1e:c7:91:30:4b:dd:6c:4b:f4:1d:3f:aa:ba:d4:8e:e5:e1",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "0.119.0-beta.3",
         "versionCode": 1022,
@@ -5381,7 +5815,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:56.154Z"
+            "verifiedAt": "2026-10-10T18:36:45.192Z"
           },
           {
             "abi": "arm64-v8a",
@@ -5396,7 +5830,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:56.154Z"
+            "verifiedAt": "2026-10-10T18:36:45.192Z"
           }
         ]
       },
@@ -5438,9 +5872,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/trail-sense.png",
       "screenshots": [],
-      "downloadCount": 14948,
+      "downloadCount": 15038,
       "signingCertSha256": "d3:b7:cb:bc:63:3f:7c:1b:e2:ca:a2:f7:5f:b0:72:ee:9b:40:fd:10:fa:af:96:42:69:2b:27:c4:af:5e:c4:a7",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "8.2.0",
         "versionCode": 148,
@@ -5465,7 +5899,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:55.015Z"
+            "verifiedAt": "2026-10-10T18:36:45.492Z"
           }
         ]
       },
@@ -5510,9 +5944,9 @@
         "screenshots/transportr/2.png",
         "screenshots/transportr/3.png"
       ],
-      "downloadCount": 3311,
+      "downloadCount": 3314,
       "signingCertSha256": "39:bd:8e:0f:54:c8:ab:87:ac:21:c0:7a:15:b3:0f:c9:5c:df:f1:d2:5d:75:df:02:9d:52:3b:18:df:86:4b:79",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "2.2.3",
         "versionCode": 127,
@@ -5537,7 +5971,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:54.965Z"
+            "verifiedAt": "2026-10-10T18:36:45.802Z"
           }
         ]
       },
@@ -5583,9 +6017,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/unciv.png",
       "screenshots": [],
-      "downloadCount": 803,
+      "downloadCount": 863,
       "signingCertSha256": "7d:6e:6b:ea:76:81:61:c3:d8:da:8b:3f:b0:0d:ef:53:77:ef:fe:65:dc:72:68:48:2f:8f:77:9b:b4:fc:6e:2e",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "4.22.8",
         "versionCode": 1269,
@@ -5610,7 +6044,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:57.178Z"
+            "verifiedAt": "2026-10-10T18:36:47.387Z"
           }
         ]
       },
@@ -5654,9 +6088,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/vcmi.png",
       "screenshots": [],
-      "downloadCount": 4706,
+      "downloadCount": 4741,
       "signingCertSha256": "26:20:79:25:96:2c:cd:73:f5:3b:e4:c4:99:9c:f2:53:32:85:31:41:9f:25:86:ae:25:10:4a:31:89:86:70:44",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.7.5",
         "versionCode": 1770,
@@ -5678,7 +6112,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:36:59.372Z"
+            "verifiedAt": "2026-10-10T18:36:47.542Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -5693,7 +6127,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:36:59.372Z"
+            "verifiedAt": "2026-10-10T18:36:47.542Z"
           }
         ]
       },
@@ -5738,9 +6172,9 @@
       "addedAt": "2026-10-07",
       "icon": "icons/vela.png",
       "screenshots": [],
-      "downloadCount": 7107,
+      "downloadCount": 7805,
       "signingCertSha256": "29:93:8b:48:58:06:3e:42:e6:77:ff:95:c9:01:cd:48:24:8a:7f:03:2a:3a:e8:5f:9b:9e:56:17:56:8b:0d:36",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "0.5.2435",
         "versionCode": 44350,
@@ -5765,7 +6199,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:37:04.344Z"
+            "verifiedAt": "2026-10-10T18:36:53.070Z"
           }
         ]
       },
@@ -5812,9 +6246,9 @@
         "screenshots/voice/2.png",
         "screenshots/voice/3.png"
       ],
-      "downloadCount": 8085,
+      "downloadCount": 8120,
       "signingCertSha256": "11:a4:ca:ee:0b:a3:eb:5a:35:2d:11:25:ab:d3:29:25:20:9e:89:60:15:a5:d9:ca:0f:d9:f8:2d:ae:20:4f:aa",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "26.6.1",
         "versionCode": 5406001,
@@ -5839,7 +6273,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:36:57.558Z"
+            "verifiedAt": "2026-10-10T18:36:48.708Z"
           }
         ]
       },
@@ -5885,9 +6319,9 @@
         "screenshots/ytdlnis/2.png",
         "screenshots/ytdlnis/3.png"
       ],
-      "downloadCount": 19966,
+      "downloadCount": 20082,
       "signingCertSha256": "26:36:45:cb:52:72:eb:29:07:59:fe:1f:59:14:9a:e2:4d:f6:ce:17:1e:9f:66:66:ee:ad:98:1d:3f:c6:4c:95",
-      "resolvedAt": "2026-10-10T10:37:51.372Z",
+      "resolvedAt": "2026-10-10T18:37:50.464Z",
       "release": {
         "versionName": "1.9.0",
         "versionCode": 109000004,
@@ -5912,7 +6346,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:37:10.582Z"
+            "verifiedAt": "2026-10-10T18:36:52.063Z"
           },
           {
             "abi": "arm64-v8a",
@@ -5927,7 +6361,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-10T10:37:10.582Z"
+            "verifiedAt": "2026-10-10T18:36:52.063Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -5942,7 +6376,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-10T10:37:10.582Z"
+            "verifiedAt": "2026-10-10T18:36:52.063Z"
           },
           {
             "abi": "x86_64",
@@ -5957,7 +6391,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-10T10:37:10.582Z"
+            "verifiedAt": "2026-10-10T18:36:52.063Z"
           },
           {
             "abi": "x86",
@@ -5972,7 +6406,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-10T10:37:10.582Z"
+            "verifiedAt": "2026-10-10T18:36:52.063Z"
           }
         ]
       },

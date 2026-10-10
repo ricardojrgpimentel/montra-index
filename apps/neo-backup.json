@@ -1,10 +1,10 @@
 {
   "id": "neo-backup",
   "name": "Neo Backup",
-  "summary": "Cópias de segurança locais de APKs e dados de apps, com ou sem root",
+  "summary": "Cópias de segurança locais de apps e dados, para telemóveis com root",
   "description": {
-    "en": "Back up and restore apps and their data to local storage or a document provider. Works without root for APKs, and with root or Shizuku for app data. The maintained successor to OAndBackupX.",
-    "pt": "Cria e restaura cópias de segurança de apps e dos seus dados no armazenamento local ou num fornecedor de documentos. Funciona sem root para os APKs, e com root ou Shizuku para os dados das apps. É o sucessor mantido do OAndBackupX."
+    "en": "Back up and restore individual apps and their data, in batches or on a schedule. Requires root access. Formerly OAndBackupX, part of the Neo Applications suite.",
+    "pt": "Cria e restaura cópias de segurança de apps e dos seus dados, individualmente, em lote ou por agendamento. Requer acesso root. Anteriormente OAndBackupX, faz parte do conjunto Neo Applications."
   },
   "packageName": "com.machiav3lli.backup",
   "license": "AGPL-3.0-only",
@@ -17,7 +17,7 @@
     "backup",
     "restore",
     "apk",
-    "shizuku"
+    "root"
   ],
   "release": {
     "provider": "github",
@@ -49,5 +49,16 @@
   "verification": {
     "signingCertSha256": "c9:4f:10:24:3c:14:d5:7d:d6:9d:ed:e6:1c:23:4b:b5:e8:bb:07:04:d6:1b:45:da:fe:49:67:28:ac:32:f3:78",
     "pinnedAt": "2026-10-07"
+  },
+  "accessRequirements": {
+    "mode": "required",
+    "methods": [
+      "root"
+    ],
+    "note": {
+      "en": "Root access is required to back up and restore apps and their data. Grant Neo Backup access through your root manager.",
+      "pt": "Precisa de root para criar e restaurar cópias de segurança de apps e dados. Autoriza o Neo Backup no teu gestor de root."
+    },
+    "guideUrl": "https://github.com/NeoApplications/Neo-Backup#features-"
   }
 }

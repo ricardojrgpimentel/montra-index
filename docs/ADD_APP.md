@@ -137,3 +137,50 @@ primeira vez de uma app, ou depois de confirmares uma rotação anunciada).
 
 Preenche o template. Se o teu PR altera um pin, explica a mudança e liga ao
 anúncio do projeto de origem.
+
+## Requisitos de acesso: Shizuku, root e alternativas
+
+Declara o acesso em `accessRequirements`, separado de categorias, tags e avisos:
+
+```json
+"accessRequirements": {
+  "mode": "required",
+  "methods": ["shizuku"],
+  "note": {
+    "en": "Requires Shizuku running and authorization for this app.",
+    "pt": "Precisa do Shizuku em execução e de autorização para esta app."
+  },
+  "guideUrl": "https://shizuku.rikka.app/guide/setup/"
+}
+```
+
+- `required`: a função principal precisa de um dos acessos declarados.
+- `optional`: a app funciona sem eles, mas ganha funcionalidades. Explica quais.
+- `methods` são **alternativas (OU)**: `["shizuku", "root"]` significa que basta
+  um deles. Nunca uses isto para expressar que ambos são obrigatórios.
+- Também se aceitam `adb`, `deviceOwner`, `dhizuku`, `systemApp` e `workProfile`,
+  para não declarar falsamente que root/Shizuku são as únicas opções (caso Hail).
+- `guideUrl` tem de ser HTTPS e apontar para documentação oficial que sustente a
+  classificação. A nota inglesa é obrigatória; acrescenta a tradução portuguesa.
+- Não deduzas requisitos das tags nem da capacidade de criar root (Magisk) ou de
+  fornecer acesso a outras apps (Shizuku). Confirma a versão/APK indexado.
+- Ausência do campo significa **nenhum requisito declarado**, não uma auditoria
+  de compatibilidade. O filtro “Sem requisitos especiais” inclui essas entradas
+  e apps com acesso opcional. Shizuku/Root incluem os dois modos.
+
+O builder transporta este objeto para o índice assinado. Clientes antigos ignoram
+este campo adicional; o cliente novo continua a ler catálogos sem ele.
+
+### Publicar alterações a requisitos
+
+1. Edita as entradas e corre `pnpm test` e `pnpm validate`.
+2. Publica as alterações de `apps/`, `schema/` e `tools/` no repositório. Um push
+   para `main` desencadeia `build-index`, que reconstrói e assina com o secret
+   `INDEX_SIGNING_KEY` já configurado. Não é preciso copiar a chave do Bitwarden.
+3. Para uma build local: `node tools/keys.mjs check`, `pnpm build --deep 3`,
+   `pnpm sign`, `pnpm check`. A chave privada permanece ignorada pelo Git.
+4. No cliente, corre `./scripts/sync-index-assets.sh`, testes, lint e build antes
+   de distribuir o APK. O catálogo remoto novo chega às instalações existentes;
+   os chips e filtros precisam de uma versão do cliente que os implemente.
+
+Nunca edites `index.json` à mão nem substituas a chave pública para publicar dados.

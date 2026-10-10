@@ -182,6 +182,60 @@
     },
     "addedAt": { "$ref": "#/$defs/date" },
     "lastCheckedAt": { "$ref": "#/$defs/date" },
+    "accessRequirements": {
+      "type": "object",
+      "description": "Acesso especial para usar a app. methods são alternativas (OU), nunca requisitos cumulativos. Ausente: nenhum requisito declarado.",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "methods",
+        "note",
+        "guideUrl"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "required",
+            "optional"
+          ]
+        },
+        "methods": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "shizuku",
+              "root",
+              "adb",
+              "deviceOwner",
+              "dhizuku",
+              "systemApp",
+              "workProfile"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 7,
+          "uniqueItems": true
+        },
+        "note": {
+          "type": "object",
+          "required": [
+            "en"
+          ],
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1200
+          }
+        },
+        "guideUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://",
+          "description": "Documentação oficial que comprova o requisito e explica a configuração."
+        }
+      }
+    },
     "antiFeatures": {
       "type": "array",
       "description": "F-Droid-style warnings surfaced to the user before install.",

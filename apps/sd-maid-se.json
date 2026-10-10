@@ -41,5 +41,17 @@
   "playStore": {
     "present": true,
     "url": "https://play.google.com/store/apps/details?id=eu.darken.sdmse&hl=en&gl=US"
+  },
+  "accessRequirements": {
+    "mode": "optional",
+    "methods": [
+      "shizuku",
+      "root"
+    ],
+    "note": {
+      "en": "Works without root or Shizuku. These optional access methods enable additional cleaning features; configure them in Setup.",
+      "pt": "Funciona sem root nem Shizuku. Estes acessos opcionais permitem funções adicionais de limpeza; configura-os no ecrã de configuração da app."
+    },
+    "guideUrl": "https://github.com/d4rken-org/sdmaid-se/wiki/Setup"
   }
 }

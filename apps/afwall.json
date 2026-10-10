@@ -1,0 +1,69 @@
+{
+  "id": "afwall",
+  "name": "AFWall+",
+  "summary": "Firewall com root: controla o acesso à rede por app e tipo de ligação",
+  "description": {
+    "en": "An Android firewall built on iptables. Choose which apps can access Wi-Fi, mobile data and other network types, manage profiles and inspect blocked connections. Requires root access; it does not create a local VPN to filter traffic. This entry tracks the Free release APK.",
+    "pt": "Firewall Android baseado em iptables. Escolhe que apps podem usar Wi-Fi, dados móveis e outros tipos de ligação, gere perfis e consulta ligações bloqueadas. Requer acesso root; não cria uma VPN local para filtrar o tráfego. Esta entrada acompanha o APK Free da release."
+  },
+  "packageName": "dev.ukanth.ufirewall",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/ukanth/afwall",
+  "categories": [
+    "security",
+    "privacy",
+    "system"
+  ],
+  "tags": [
+    "firewall",
+    "network",
+    "root"
+  ],
+  "icon": {
+    "repo": "ukanth/afwall",
+    "path": "app/src/main/ic_launcher-web.png"
+  },
+  "screenshots": [
+    {
+      "repo": "ukanth/afwall",
+      "path": "playstore/screenshots/Main_2.0.png"
+    },
+    {
+      "repo": "ukanth/afwall",
+      "path": "playstore/screenshots/Settings_2.0.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "ukanth/afwall",
+    "assetPattern": "AFWall_*_Free.apk",
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=dev.ukanth.ufirewall&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-10",
+  "lastCheckedAt": "2026-10-10",
+  "requires": {
+    "minSdk": 23
+  },
+  "accessRequirements": {
+    "mode": "required",
+    "methods": [
+      "root"
+    ],
+    "note": {
+      "en": "Root is required to apply firewall rules. Grant AFWall+ access through your root manager, enable the firewall and apply the rules for the connections you use.",
+      "pt": "Precisa de root para aplicar as regras do firewall. Autoriza o AFWall+ no teu gestor de root, ativa o firewall e aplica as regras para as ligações que usas."
+    },
+    "guideUrl": "https://github.com/ukanth/afwall#quick-start-guide"
+  },
+  "verification": {
+    "signingCertSha256": "71:5e:26:c1:25:4e:70:f4:45:43:45:3a:f8:d6:af:9c:22:fe:ee:2c:f1:19:1d:e1:5e:6a:9f:2d:f7:e2:a2:48",
+    "pinnedAt": "2026-10-10",
+    "notes": "Primeiro pin: certificado lido por apksigner no APK oficial da release v4.1.0."
+  },
+  "notes": "Entrada revista após descoberta de 2026-10-10. Licença e requisito confirmados na documentação oficial; package name e certificado obtidos do APK. Selecionada a variante Free. As capturas oficiais disponíveis no repositório mostram uma interface anterior à release atual.",
+  "author": "ukanth"
+}

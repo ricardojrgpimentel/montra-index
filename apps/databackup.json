@@ -1,0 +1,77 @@
+{
+  "id": "databackup",
+  "name": "DataBackup",
+  "summary": "Cópias de segurança de apps e dados com root, na variante FOSS",
+  "description": {
+    "en": "Backs up and restores Android apps and their data with root access. Supports multiple users and profiles. This entry selects only the FOSS APKs; premium builds are separate packages and are excluded. The stable release is older than the ongoing development on the source branches.",
+    "pt": "Cria e restaura cópias de segurança de apps Android e dos seus dados com acesso root. Suporta vários utilizadores e perfis. Esta entrada escolhe apenas os APKs FOSS; as builds premium têm outro pacote e ficam excluídas. A release estável é anterior ao desenvolvimento que continua nos ramos de código."
+  },
+  "packageName": "com.xayah.databackup.foss",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/XayahSuSuSu/Android-DataBackup",
+  "categories": [
+    "system",
+    "utilities"
+  ],
+  "tags": [
+    "backup",
+    "restore",
+    "root",
+    "foss"
+  ],
+  "icon": {
+    "repo": "XayahSuSuSu/Android-DataBackup",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "XayahSuSuSu/Android-DataBackup",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/01.jpg"
+    },
+    {
+      "repo": "XayahSuSuSu/Android-DataBackup",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/02.jpg"
+    },
+    {
+      "repo": "XayahSuSuSu/Android-DataBackup",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/03.jpg"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "XayahSuSuSu/Android-DataBackup",
+    "abiAssets": {
+      "arm64-v8a": "DataBackup-*-arm64-v8a-foss-release.apk",
+      "armeabi-v7a": "DataBackup-*-armeabi-v7a-foss-release.apk",
+      "x86": "DataBackup-*-x86-foss-release.apk",
+      "x86_64": "DataBackup-*-x86_64-foss-release.apk"
+    },
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-10",
+  "lastCheckedAt": "2026-10-10",
+  "requires": {
+    "minSdk": 24
+  },
+  "accessRequirements": {
+    "mode": "required",
+    "methods": [
+      "root"
+    ],
+    "note": {
+      "en": "Root is required to back up and restore app data. The project supports Magisk, KernelSU and APatch. This is the FOSS build.",
+      "pt": "Precisa de root para criar e restaurar cópias dos dados das apps. O projeto suporta Magisk, KernelSU e APatch. Esta é a build FOSS."
+    },
+    "guideUrl": "https://github.com/XayahSuSuSu/Android-DataBackup#features"
+  },
+  "verification": {
+    "signingCertSha256": "7f:b9:ec:20:77:05:a0:fb:b9:ca:61:25:3e:59:63:64:c7:27:62:86:8a:83:81:52:39:e7:ca:19:23:ac:b3:9f",
+    "pinnedAt": "2026-10-10",
+    "notes": "Primeiro pin: certificado lido por apksigner no APK oficial da release 2.0.12."
+  },
+  "notes": "Entrada revista após descoberta de 2026-10-10. Licença e requisito confirmados na documentação oficial; package name e certificado obtidos do APK. A inspeção automática inicial escolheu premium. A variante FOSS foi descarregada e verificada separadamente: com.xayah.databackup.foss. A release estável 2.0.12 é de 2025-09-20; há commits recentes em 2026-10-08, pelo que o projeto continua mantido. Não incluir prereleases nesta entrada.",
+  "author": "Xayah"
+}

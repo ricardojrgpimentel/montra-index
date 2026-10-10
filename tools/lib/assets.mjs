@@ -79,9 +79,13 @@ export function suggestPattern(apks) {
     }
   }
   result.abiAssets = abiAssets;
+  // Inspect a variant that the proposed config would actually download. Picking
+  // the largest APK across all variants could inspect premium while suggesting
+  // FOSS, producing the wrong package name in the discovery report/draft.
+  const selected = [...byAbi.values()].map((group) => group[0]);
   result.primary = byAbi.has("universal")
     ? byAbi.get("universal")[0]
-    : [...apks].sort((a, b) => b.size - a.size)[0];
+    : selected.sort((a, b) => b.size - a.size)[0];
   return result;
 }
 

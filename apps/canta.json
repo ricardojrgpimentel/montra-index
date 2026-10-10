@@ -1,0 +1,72 @@
+{
+  "id": "canta",
+  "name": "Canta",
+  "summary": "Remove apps pré-instaladas e de utilizador com a ajuda do Shizuku",
+  "description": {
+    "en": "Uninstalls pre-installed and user apps using Shizuku. Integrates the Universal Debloat List to explain packages and help choose what to remove, and can detect previously uninstalled apps. Requires Shizuku running and permission to use it. Removing critical system apps can cause problems, including a boot loop that needs a factory reset.",
+    "pt": "Desinstala apps pré-instaladas e de utilizador através do Shizuku. Integra a Universal Debloat List para explicar os pacotes e ajudar a escolher o que remover, e deteta apps anteriormente desinstaladas. Precisa do Shizuku em execução e de autorização para o usar. Remover apps essenciais do sistema pode causar problemas, incluindo um ciclo de arranque que exija repor o telemóvel."
+  },
+  "packageName": "io.github.samolego.canta",
+  "license": "LGPL-3.0-only",
+  "sourceCode": "https://github.com/samolego/Canta",
+  "categories": [
+    "system",
+    "tools"
+  ],
+  "tags": [
+    "debloat",
+    "uninstall",
+    "shizuku"
+  ],
+  "icon": {
+    "repo": "samolego/Canta",
+    "path": "metadata/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "samolego/Canta",
+      "path": "metadata/en-US/images/phoneScreenshots/screenshot-main.png"
+    },
+    {
+      "repo": "samolego/Canta",
+      "path": "metadata/en-US/images/phoneScreenshots/screenshot-app-description.png"
+    },
+    {
+      "repo": "samolego/Canta",
+      "path": "metadata/en-US/images/phoneScreenshots/screenshot-uninstalled-list.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "samolego/Canta",
+    "assetPattern": "androidApp-release.apk",
+    "versionScheme": "semver"
+  },
+  "playStore": {
+    "present": true,
+    "url": "https://play.google.com/store/apps/details?id=io.github.samolego.canta&hl=en&gl=US"
+  },
+  "addedAt": "2026-10-10",
+  "lastCheckedAt": "2026-10-10",
+  "requires": {
+    "minSdk": 28
+  },
+  "accessRequirements": {
+    "mode": "required",
+    "methods": [
+      "shizuku"
+    ],
+    "note": {
+      "en": "Requires Shizuku running and authorization for Canta. Enable Shizuku first, then grant access when Canta asks. The project notes that Android 16 may need a compatible Shizuku fork.",
+      "pt": "Precisa do Shizuku em execução e de autorização para o Canta. Ativa o Shizuku e autoriza o acesso quando o Canta pedir. O projeto indica que Android 16 pode precisar de um fork compatível do Shizuku."
+    },
+    "guideUrl": "https://github.com/samolego/Canta#how-to"
+  },
+  "verification": {
+    "signingCertSha256": "0a:26:40:31:7c:43:27:21:88:c3:e1:31:94:c1:54:60:69:1f:12:c3:9e:a1:9b:ba:72:7d:d6:7f:b5:62:89:d4",
+    "pinnedAt": "2026-10-10",
+    "notes": "Primeiro pin: certificado lido por apksigner no APK oficial da release v4.0.0."
+  },
+  "notes": "Entrada revista após descoberta de 2026-10-10. Licença e requisito confirmados na documentação oficial; package name e certificado obtidos do APK. O certificado obtido do APK corresponde também ao fingerprint publicado no README oficial: 0a:26:40:31:7c:43:27:21:88:c3:e1:31:94:c1:54:60:69:1f:12:c3:9e:a1:9b:ba:72:7d:d6:7f:b5:62:89:d4.",
+  "author": "samolego"
+}

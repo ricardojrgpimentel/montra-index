@@ -77,6 +77,18 @@ describe("suggestPattern", () => {
     assert.ok(s.notes.some((n) => n.includes("nenhum nome revela a ABI")));
   });
 
+  it("inspeciona a variante sugerida mesmo quando premium é maior que FOSS", () => {
+    const s = suggestPattern([
+      apk("DataBackup-2.0.12-arm64-v8a-foss-release.apk", 10),
+      apk("DataBackup-2.0.12-arm64-v8a-premium-release.apk", 30),
+      apk("DataBackup-2.0.12-x86-foss-release.apk", 40),
+      apk("DataBackup-2.0.12-x86-premium-release.apk", 50),
+    ]);
+    assert.equal(s.primary.name, "DataBackup-2.0.12-x86-foss-release.apk");
+    assert.equal(s.abiAssets.x86, "DataBackup-*-x86-foss-release.apk");
+    assert.ok(s.notes.some((n) => n.includes("variantes")));
+  });
+
   it("assinala builds de debug", () => {
     const s = suggestPattern([apk("app-release.apk"), apk("app-debug.apk")]);
     assert.ok(s.notes.some((n) => n.includes("debug")));

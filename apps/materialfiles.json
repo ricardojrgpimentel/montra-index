@@ -52,5 +52,16 @@
   "verification": {
     "signingCertSha256": "87:3b:9b:60:c7:7c:f7:f3:cd:5f:ae:66:d0:fe:11:2c:4a:86:97:3e:11:8e:e8:a2:9c:34:6c:4c:67:3c:97:f0",
     "pinnedAt": "2026-10-08"
+  },
+  "accessRequirements": {
+    "mode": "optional",
+    "methods": [
+      "root"
+    ],
+    "note": {
+      "en": "Normal file management works without root. Root access is optional for browsing protected files.",
+      "pt": "A gestão normal de ficheiros funciona sem root. O acesso root é opcional para navegar em ficheiros protegidos."
+    },
+    "guideUrl": "https://github.com/zhanghai/MaterialFiles#features"
   }
 }

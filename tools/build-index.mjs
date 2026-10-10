@@ -482,6 +482,7 @@ async function main() {
       tags: entry.tags ?? [],
       status: entry.status ?? "active",
       antiFeatures: entry.antiFeatures ?? [],
+      ...(entry.accessRequirements ? { accessRequirements: entry.accessRequirements } : {}),
       ...(entry.links ? { links: entry.links } : {}),
       ...(entry.playStore ? { playStore: entry.playStore } : {}),
       addedAt: entry.addedAt ?? null,
