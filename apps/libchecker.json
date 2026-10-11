@@ -1,7 +1,7 @@
 {
   "id": "libchecker",
   "name": "LibChecker",
-  "summary": "Mostra que bibliotecas e SDKs cada app traz, e o que mudou entre versões instaladas",
+  "summary": "See the libraries and SDKs in each app and changes between installed versions",
   "description": {
     "en": "Looks at the apps on your phone and at APK, split and APKS packages, and lists what is inside them: known SDKs and libraries matched against LibChecker-Rules, native libraries with their ABIs and 32/64-bit coverage, permissions, components, signing schemes and other package details. It also snapshots installed apps and compares them later, so you see what an update changed. Export a report and open it in a browser WebUI.",
     "pt": "Olha para as apps do teu telefone e para pacotes APK, split e APKS e lista o que está lá dentro: SDKs e bibliotecas conhecidos identificados pelas LibChecker-Rules, bibliotecas nativas com as suas ABIs e cobertura de 32/64 bits, permissões, componentes, esquemas de assinatura e outros detalhes do pacote. Também tira snapshots das apps instaladas e compara-os depois, para veres o que uma atualização mudou. Exporta o relatório e abre-o numa página WebUI no navegador."
@@ -35,5 +35,8 @@
   "verification": {
     "signingCertSha256": "b1:2e:1c:fb:fe:28:58:49:d6:74:00:18:02:2e:ec:22:09:fe:b2:8c:26:85:df:6f:4d:2f:97:db:de:3b:57:75",
     "pinnedAt": "2026-10-08"
+  },
+  "summaryTranslations": {
+    "pt": "Mostra que bibliotecas e SDKs cada app traz, e o que mudou entre versões instaladas"
   }
 }

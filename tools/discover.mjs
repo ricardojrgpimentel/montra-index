@@ -20,6 +20,7 @@
 //
 // Nothing is committed automatically: a candidate that passes is a *draft* for a
 // human to review, because curation is the product.
+import { draftCatalogueText } from "./lib/catalogue-text.mjs";
 import fs from "node:fs/promises";
 import path from "node:path";
 import {
@@ -244,8 +245,7 @@ async function writeEntry(row, { knownPackages, knownIds }) {
   const entry = {
     id,
     name,
-    summary: (row.description || name).slice(0, 155),
-    description: { en: (row.description || name).slice(0, 2000) },
+    ...draftCatalogueText(row.description),
     packageName: row.packageName,
     license: normaliseLicense(row.license),
     sourceCode: `https://github.com/${row.repo}`,

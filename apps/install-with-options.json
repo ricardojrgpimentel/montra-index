@@ -1,7 +1,7 @@
 {
   "id": "install-with-options",
   "name": "Install with Options",
-  "summary": "Instala APKs e pacotes divididos com opções avançadas através do Shizuku",
+  "summary": "Install APKs and split packages with advanced options through Shizuku",
   "description": {
     "en": "Uses Shizuku to install APKs with advanced options, including test-only packages and split APKs, and batch-install multiple apps. Available flags depend on Android and granted privileges: it cannot bypass signature mismatches, and package downgrades may need root or a debug/test build.",
     "pt": "Usa o Shizuku para instalar APKs com opções avançadas, incluindo pacotes de teste e APKs divididos, e instalar várias apps em lote. As opções dependem do Android e dos privilégios concedidos: não contorna conflitos de assinatura, e baixar a versão de um pacote pode exigir root ou uma build de teste/debug."
@@ -68,5 +68,8 @@
     "notes": "Primeiro pin: certificado lido por apksigner no APK oficial da release 0.9.2."
   },
   "notes": "Entrada revista após descoberta de 2026-10-10. Licença e requisito confirmados na documentação oficial; package name e certificado obtidos do APK. ",
-  "author": "Zachary Wander"
+  "author": "Zachary Wander",
+  "summaryTranslations": {
+    "pt": "Instala APKs e pacotes divididos com opções avançadas através do Shizuku"
+  }
 }

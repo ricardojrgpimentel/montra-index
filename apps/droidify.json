@@ -1,7 +1,7 @@
 {
   "id": "droidify",
   "name": "Droid-ify",
-  "summary": "Cliente de F-Droid rápido e sem distrações, com Material You",
+  "summary": "Fast, distraction-free F-Droid client with Material You",
   "description": {
     "en": "A clutter-free F-Droid client: fast repository sync, instant search, Material You theming, and support for the IzzyOnDroid repository. Good when you mainly want to search, install and forget.",
     "pt": "Cliente de F-Droid sem distrações: sincronização rápida de repositórios, pesquisa instantânea, temas Material You e suporte para o repositório IzzyOnDroid. Bom quando queres apenas procurar, instalar e seguir em frente."
@@ -47,5 +47,8 @@
   "verification": {
     "signingCertSha256": "ed:88:59:c5:5a:f3:11:16:26:58:b9:4a:f9:82:b9:f0:91:dc:d2:76:28:d4:de:34:86:d1:21:7e:bf:3c:99:35",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Cliente de F-Droid rápido e sem distrações, com Material You"
   }
 }

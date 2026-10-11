@@ -1,7 +1,7 @@
 {
   "id": "vcmi",
   "name": "VCMI",
-  "summary": "Motor livre para Heroes of Might and Magic III, com multijogador",
+  "summary": "Free engine for Heroes of Might and Magic III, with multiplayer",
   "description": {
     "en": "An open-source engine for Heroes of Might and Magic III: it reimplements the game and adds a better AI, higher resolutions, a map editor and online multiplayer. Requires the original game data files.",
     "pt": "Motor livre para Heroes of Might and Magic III: reimplementa o jogo e acrescenta melhor IA, resoluções mais altas, editor de mapas e multijogador online. Precisa dos ficheiros do jogo original."
@@ -43,5 +43,8 @@
   "playStore": {
     "present": true,
     "url": "https://play.google.com/store/apps/details?id=is.xyz.vcmi&hl=en&gl=US"
+  },
+  "summaryTranslations": {
+    "pt": "Motor livre para Heroes of Might and Magic III, com multijogador"
   }
 }

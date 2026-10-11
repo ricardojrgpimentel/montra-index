@@ -1,7 +1,7 @@
 {
   "id": "nextplayer",
   "name": "Next Player",
-  "summary": "Reprodutor de vídeo nativo em Compose, simples e sem anúncios",
+  "summary": "Simple, ad-free native video player built with Compose",
   "description": {
     "en": "A video player written with Jetpack Compose and ExoPlayer/Media3: clean library, gesture controls, subtitles, background audio, playlists and support for network streams. No ads, no tracking, no unnecessary permissions.",
     "pt": "Reprodutor de vídeo escrito em Jetpack Compose com ExoPlayer/Media3: biblioteca limpa, controlos por gestos, legendas, áudio em segundo plano, listas de reprodução e suporte para streams de rede. Sem anúncios, sem rastreio, sem permissões desnecessárias."
@@ -54,5 +54,8 @@
   "verification": {
     "signingCertSha256": "d3:7c:ab:f3:67:6c:f5:82:24:fb:24:2c:8d:d2:09:12:9d:05:88:03:79:29:5f:aa:a6:d0:fb:60:7b:ec:13:1b",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Reprodutor de vídeo nativo em Compose, simples e sem anúncios"
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "fairemail",
   "name": "FairEmail",
-  "summary": "Cliente de email com várias contas e controlos de privacidade nas mensagens",
+  "summary": "Email client with multiple accounts and message privacy controls",
   "description": {
     "en": "An email client supporting IMAP, POP3 and SMTP, multiple accounts and a unified inbox. Includes controls for remote images and links to reduce email tracking. Requires your own email account; some convenience features are paid.",
     "pt": "Cliente de email com suporte para IMAP, POP3 e SMTP, várias contas e caixa de entrada unificada. Inclui controlos para imagens remotas e ligações que ajudam a reduzir o rastreamento. Exige uma conta de email própria; algumas funcionalidades são pagas."
@@ -55,5 +55,8 @@
   "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/M66B/FairEmail/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/M66B/FairEmail/releases/download/1.2338/FairEmail-v1.2338a-github-release.apk. Licença GPLv3 ou posterior declarada no README. Variante github-release do upstream, excluindo large-release. O cabeçalho de app/src/main/java/eu/faircode/email/ActivityMain.java confirma GPLv3 ou posterior, tal como o README do upstream.",
   "links": {
     "website": "https://email.faircode.eu/"
+  },
+  "summaryTranslations": {
+    "pt": "Cliente de email com várias contas e controlos de privacidade nas mensagens"
   }
 }

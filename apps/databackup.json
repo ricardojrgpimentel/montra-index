@@ -1,7 +1,7 @@
 {
   "id": "databackup",
   "name": "DataBackup",
-  "summary": "Cópias de segurança de apps e dados com root, na variante FOSS",
+  "summary": "Back up apps and data with root, using the FOSS build",
   "description": {
     "en": "Backs up and restores Android apps and their data with root access. Supports multiple users and profiles. This entry selects only the FOSS APKs; premium builds are separate packages and are excluded. The stable release is older than the ongoing development on the source branches.",
     "pt": "Cria e restaura cópias de segurança de apps Android e dos seus dados com acesso root. Suporta vários utilizadores e perfis. Esta entrada escolhe apenas os APKs FOSS; as builds premium têm outro pacote e ficam excluídas. A release estável é anterior ao desenvolvimento que continua nos ramos de código."
@@ -73,5 +73,8 @@
     "notes": "Primeiro pin: certificado lido por apksigner no APK oficial da release 2.0.12."
   },
   "notes": "Entrada revista após descoberta de 2026-10-10. Licença e requisito confirmados na documentação oficial; package name e certificado obtidos do APK. A inspeção automática inicial escolheu premium. A variante FOSS foi descarregada e verificada separadamente: com.xayah.databackup.foss. A release estável 2.0.12 é de 2025-09-20; há commits recentes em 2026-10-08, pelo que o projeto continua mantido. Não incluir prereleases nesta entrada.",
-  "author": "Xayah"
+  "author": "Xayah",
+  "summaryTranslations": {
+    "pt": "Cópias de segurança de apps e dados com root, na variante FOSS"
+  }
 }

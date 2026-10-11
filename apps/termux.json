@@ -1,7 +1,7 @@
 {
   "id": "termux",
   "name": "Termux",
-  "summary": "Emulador de terminal com um ambiente Linux completo e gestor de pacotes",
+  "summary": "Terminal emulator with a full Linux environment and package manager",
   "description": {
     "en": "A terminal emulator with its own APT package repository: bash, git, ssh, Python, Node, compilers and more, all running on the device without root. The GitHub build is far newer than the abandoned Play Store listing.",
     "pt": "Emulador de terminal com repositório APT próprio: bash, git, ssh, Python, Node, compiladores e muito mais, tudo a correr no dispositivo sem root. A versão do GitHub está muito mais atual do que a listagem abandonada na Play Store."
@@ -60,5 +60,8 @@
   "verification": {
     "signingCertSha256": "b6:da:01:48:0e:ef:d5:fb:f2:cd:37:71:b8:d1:02:1e:c7:91:30:4b:dd:6c:4b:f4:1d:3f:aa:ba:d4:8e:e5:e1",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Emulador de terminal com um ambiente Linux completo e gestor de pacotes"
   }
 }

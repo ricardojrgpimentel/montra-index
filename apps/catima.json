@@ -1,7 +1,7 @@
 {
   "id": "catima",
   "name": "Catima",
-  "summary": "Organiza cartões de fidelização e apresenta os seus códigos de barras",
+  "summary": "Organise loyalty cards and display their barcodes",
   "description": {
     "en": "Store loyalty cards, barcodes and other scannable cards on your phone. Keeps a local collection of cards ready to show at the checkout, with no account required.",
     "pt": "Guarda cartões de fidelização, códigos de barras e outros cartões digitalizáveis no telemóvel. Mantém uma coleção local pronta a mostrar na caixa, sem exigir conta."
@@ -55,5 +55,8 @@
   "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/CatimaLoyalty/Android/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/CatimaLoyalty/Android/releases/download/v2.45.1/app-foss-release.apk. Licença GPLv3+ declarada no README. Apenas o APK FOSS para telemóveis; releases de Wear OS não são selecionados.",
   "links": {
     "website": "https://catima.app"
+  },
+  "summaryTranslations": {
+    "pt": "Organiza cartões de fidelização e apresenta os seus códigos de barras"
   }
 }

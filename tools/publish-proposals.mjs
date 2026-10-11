@@ -7,7 +7,7 @@ import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { DIRS, log, writeJson } from "./lib/util.mjs";
 import { githubApi, githubToken } from "./lib/github.mjs";
-import { selectedRepos, proposalBranch, PROPOSAL_MARKER, markdownText } from "./lib/proposals.mjs";
+import { selectedRepos, proposalBranch, PROPOSAL_MARKER, markdownText, artifactVerificationErrors } from "./lib/proposals.mjs";
 
 const manifestPath = process.argv[2];
 if (!manifestPath) throw new Error("Uso: node tools/publish-proposals.mjs manifest.json");
@@ -44,8 +44,7 @@ for (const proposal of manifest.proposals ?? []) {
     const { entry, branch, repo, body, built } = proposal;
     if (!validate(entry) || branch !== proposalBranch(repo) || entry.release.repo !== repo ||
         entry.sourceCode !== `https://github.com/${repo}` || !body.includes(PROPOSAL_MARKER) || !entry.verification?.signingCertSha256 ||
-        built?.packageName !== entry.packageName || !built.release?.assets?.length ||
-        built.release.assets.some((asset) => asset.signingCertSha256 !== entry.verification.signingCertSha256 || !/^[a-f0-9]{64}$/.test(asset.sha256))) {
+        artifactVerificationErrors(entry, built).length) {
       throw new Error("Proposta inválida; só são permitidas entradas novas verificadas e branches proposals/.");
     }
     const prior = await githubApi(`${prefix}/pulls?head=${encodeURIComponent(`${owner}:${branch}`)}&state=all`);

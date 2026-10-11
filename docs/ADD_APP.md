@@ -32,10 +32,11 @@ se existe na Play Store.
 {
   "id": "exemplo",
   "name": "Exemplo",
-  "summary": "Uma linha sobre o que faz, sem ponto final",
+  "summary": "One line about what the app does, without a trailing period",
+  "summaryTranslations": { "pt": "Uma linha sobre o que faz, sem ponto final" },
   "description": {
-    "en": "What it does, and what makes it different.",
-    "pt": "O que faz e o que a distingue."
+    "en": "An English description of the app, translated if necessary.",
+    "pt": "A descrição na língua nativa, preservada quando difere do inglês."
   },
   "packageName": "com.exemplo.app",
   "license": "GPL-3.0-or-later",
@@ -58,6 +59,10 @@ se existe na Play Store.
   "addedAt": "2026-10-07"
 }
 ```
+
+Resumo e descrição em inglês são obrigatórios. Preserva a língua nativa e aceita
+outras traduções por PR, usando etiquetas BCP-47. A interface usa a tradução
+disponível e inglês como alternativa. Changelogs mantêm o texto de origem.
 
 O ícone e os screenshots são **caminhos dentro do repositório**, não URLs. O build
 descarrega-os e re-aloja-os em `icons/` e `screenshots/`, para que o cliente só

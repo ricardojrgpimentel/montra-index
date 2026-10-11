@@ -1,7 +1,7 @@
 {
   "id": "keymapper",
   "name": "Key Mapper",
-  "summary": "Cria atalhos e macros para botões do telemóvel, teclados e comandos",
+  "summary": "Create shortcuts and macros for phone buttons, keyboards and controllers",
   "description": {
     "en": "Remap physical buttons, keyboard keys and game controller buttons to shortcuts and macros. Supports different press gestures and conditions for when mappings should run. Some actions require accessibility access or additional permissions. May promote the paid version on Google Play.",
     "pt": "Associa botões físicos, teclas de teclado e botões de comandos a atalhos e macros. Suporta diferentes gestos de pressão e condições de execução. Algumas ações exigem acesso de acessibilidade ou permissões adicionais. Pode promover a versão paga na Play Store."
@@ -58,5 +58,8 @@
   },
   "antiFeatures": [
     "ads"
-  ]
+  ],
+  "summaryTranslations": {
+    "pt": "Cria atalhos e macros para botões do telemóvel, teclados e comandos"
+  }
 }

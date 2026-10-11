@@ -1,7 +1,7 @@
 {
   "id": "keepassdx",
   "name": "KeePassDX",
-  "summary": "Cofre local de palavras-passe e passkeys em ficheiros KeePass, sem conta nem servidor",
+  "summary": "Local password and passkey vault in KeePass files, with no account or server",
   "description": {
     "en": "A local password and passkey manager: it opens and edits .kdb and .kdbx databases encrypted with AES, Twofish, ChaCha20 and Argon2, and stays compatible with KeePass, KeePassXC and KeeWeb. Unlock with a master key, a keyfile or your fingerprint. Autofill and a custom keyboard fill forms, and it handles one-time passwords, entry history, templates and group trees. No account and no server: the database file is the app.",
     "pt": "Um gestor local de palavras-passe e passkeys: abre e edita bases de dados .kdb e .kdbx cifradas com AES, Twofish, ChaCha20 e Argon2, compatíveis com KeePass, KeePassXC e KeeWeb. Desbloqueias com chave mestra, ficheiro-chave ou impressão digital. O preenchimento automático e um teclado próprio preenchem formulários, e a app trata de palavras-passe de uso único, histórico, modelos e árvores de grupos. Sem conta e sem servidor: o ficheiro da base de dados é a app."
@@ -49,5 +49,8 @@
   "verification": {
     "signingCertSha256": "7d:55:b8:af:21:03:81:aa:bf:96:0f:07:e1:7c:f7:85:7b:6d:2a:64:2c:a2:da:6b:f0:bd:f1:b2:00:36:2f:04",
     "pinnedAt": "2026-10-08"
+  },
+  "summaryTranslations": {
+    "pt": "Cofre local de palavras-passe e passkeys em ficheiros KeePass, sem conta nem servidor"
   }
 }

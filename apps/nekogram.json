@@ -1,7 +1,7 @@
 {
   "id": "nekogram",
   "name": "Nekogram",
-  "summary": "Cliente não oficial do Telegram, livre, com funcionalidades extra",
+  "summary": "Free, unofficial Telegram client with extra features",
   "description": {
     "en": "An unofficial Telegram client built from the official source: no Google Play Services required, built-in proxy and MTProto settings, message filtering, translation on tap, and a set of interface options the official app does not expose.",
     "pt": "Cliente não oficial do Telegram construído a partir do código oficial: não precisa dos Google Play Services, tem definições de proxy e MTProto integradas, filtragem de mensagens, tradução ao toque e um conjunto de opções de interface que a app oficial não expõe."
@@ -50,5 +50,8 @@
   "playStore": {
     "present": true,
     "url": "https://play.google.com/store/apps/details?id=tw.nekomimi.nekogram&hl=en&gl=US"
+  },
+  "summaryTranslations": {
+    "pt": "Cliente não oficial do Telegram, livre, com funcionalidades extra"
   }
 }

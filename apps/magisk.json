@@ -1,7 +1,7 @@
 {
   "id": "magisk",
   "name": "Magisk",
-  "summary": "Solução de root systemless com MagiskSU, módulos e Zygisk",
+  "summary": "Systemless root solution with MagiskSU, modules and Zygisk",
   "description": {
     "en": "The standard way to root a modern Android device without modifying system partitions: MagiskSU for root access, a module system, Zygisk for injecting code into app processes, and a DenyList for hiding modifications from apps that check for root.",
     "pt": "A forma padrão de obter root num Android moderno sem alterar as partições de sistema: MagiskSU para acesso root, sistema de módulos, Zygisk para injetar código nos processos das apps e DenyList para esconder modificações de apps que verificam root."
@@ -55,5 +55,8 @@
   "verification": {
     "signingCertSha256": "b4:cb:83:b4:da:d9:9f:99:7d:be:87:2f:01:3a:a1:6c:14:ee:c4:1d:16:70:21:f3:71:f7:e1:33:0f:27:3e:e6",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Solução de root systemless com MagiskSU, módulos e Zygisk"
   }
 }

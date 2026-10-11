@@ -1,7 +1,7 @@
 {
   "id": "opencalc",
   "name": "OpenCalc",
-  "summary": "Calculadora com modo científico, histórico e temas claro e escuro",
+  "summary": "Calculator with scientific mode, history and light and dark themes",
   "description": {
     "en": "A lightweight calculator with scientific mode, calculation history and support for portrait and landscape layouts. Includes light, dark and Material You themes and a quick settings tile.",
     "pt": "Calculadora leve com modo científico, histórico de cálculos e utilização na vertical ou horizontal. Inclui temas claro, escuro e Material You, além de um atalho nas definições rápidas."
@@ -52,5 +52,8 @@
     "pinnedAt": "2026-10-08",
     "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial OpenCalc.v3.2.1.apk (v3.2.1)."
   },
-  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/clementwzk/OpenCalc/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/clementwzk/OpenCalc/releases/download/v3.2.1/OpenCalc.v3.2.1.apk. SPDX confirmado também nos metadados F-Droid: https://gitlab.com/fdroid/fdroiddata/-/raw/master/metadata/com.darkempire78.opencalculator.yml."
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/clementwzk/OpenCalc/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/clementwzk/OpenCalc/releases/download/v3.2.1/OpenCalc.v3.2.1.apk. SPDX confirmado também nos metadados F-Droid: https://gitlab.com/fdroid/fdroiddata/-/raw/master/metadata/com.darkempire78.opencalculator.yml.",
+  "summaryTranslations": {
+    "pt": "Calculadora com modo científico, histórico e temas claro e escuro"
+  }
 }

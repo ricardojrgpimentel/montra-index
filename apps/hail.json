@@ -1,7 +1,7 @@
 {
   "id": "hail",
   "name": "Hail",
-  "summary": "Congela aplicações: desativa, esconde ou suspende sem as desinstalar",
+  "summary": "Freeze apps: disable, hide or suspend them without uninstalling",
   "description": {
     "en": "Freezes the apps you are not using: forces them to stop, disables, hides or suspends them, and brings them back when you need them again. The package keeps its data, so the state is reversible — nothing is uninstalled. Freezing what is idle cuts RAM and battery use, and a whole group can be frozen at once. It works through the system's own mechanisms and needs privileges for that: Shizuku, root, or another supported privileged mode. Available operations depend on the chosen mode.",
     "pt": "Congela as aplicações que não estás a usar: força-as a parar, desativa, esconde ou suspende, e devolve-as ao normal quando voltas a precisar delas. O pacote mantém os dados, por isso o estado é reversível — nada é desinstalado. Congelar o que está parado poupa RAM e bateria, e pode congelar-se um grupo inteiro de uma vez. Usa os mecanismos do próprio sistema e precisa de privilégios para isso: Shizuku, root ou outro modo privilegiado suportado. As operações disponíveis dependem do modo escolhido."
@@ -66,5 +66,8 @@
       "pt": "Congelar apps exige um modo de funcionamento privilegiado. Podes usar Shizuku ou root; gestão do dispositivo, Dhizuku, app de sistema privilegiada ou Island/Insular são alternativas com operações diferentes. Escolhe o modo nas definições da app."
     },
     "guideUrl": "https://github.com/aistra0528/Hail#working-mode"
+  },
+  "summaryTranslations": {
+    "pt": "Congela aplicações: desativa, esconde ou suspende sem as desinstalar"
   }
 }

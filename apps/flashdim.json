@@ -1,7 +1,7 @@
 {
   "id": "flashdim",
   "name": "FlashDim",
-  "summary": "Ajusta a intensidade da lanterna em dispositivos Android compatíveis",
+  "summary": "Adjust flashlight brightness on compatible Android devices",
   "description": {
     "en": "Control flashlight brightness on supported devices running Android 13 or later. Includes shortcuts and quick settings controls. Available brightness levels depend on the phone hardware.",
     "pt": "Controla a intensidade da lanterna em dispositivos compatíveis com Android 13 ou posterior. Inclui atalhos e controlos nas definições rápidas. Os níveis de intensidade disponíveis dependem do hardware do telemóvel."
@@ -52,5 +52,8 @@
     "pinnedAt": "2026-10-08",
     "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial FlashDim-2.5.3.apk (v2.5.3)."
   },
-  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/cyb3rko/flashdim/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/cyb3rko/flashdim/releases/download/v2.5.3/FlashDim-2.5.3.apk."
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/cyb3rko/flashdim/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/cyb3rko/flashdim/releases/download/v2.5.3/FlashDim-2.5.3.apk.",
+  "summaryTranslations": {
+    "pt": "Ajusta a intensidade da lanterna em dispositivos Android compatíveis"
+  }
 }

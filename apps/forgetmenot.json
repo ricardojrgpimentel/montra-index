@@ -1,7 +1,7 @@
 {
   "id": "forgetmenot",
   "name": "ForgetMeNot",
-  "summary": "Cartões de memorização para estudar, feitos à volta de ser simples e rápido",
+  "summary": "Simple, fast flashcards for studying",
   "description": {
     "en": "A flashcard app for memorising information, built around simplicity, usability and speed. Decks and cards live on the phone, it works without a network, and you can export what you made instead of leaving it locked in the app.",
     "pt": "Aplicação de cartões (flashcards) para memorizar informação, feita à volta de simplicidade, usabilidade e rapidez. Os baralhos e os cartões ficam no telemóvel, funciona sem rede, e podes exportar o que fizeste em vez de o deixar preso na app."
@@ -36,5 +36,8 @@
   "verification": {
     "signingCertSha256": "b8:06:29:ec:64:03:c7:99:ac:39:dc:d1:7d:c2:79:12:63:85:c5:81:c3:45:3b:9a:95:12:78:3f:e2:f5:dc:11",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Cartões de memorização para estudar, feitos à volta de ser simples e rápido"
   }
 }

@@ -1,7 +1,7 @@
 {
   "id": "seal",
   "name": "Seal",
-  "summary": "Descarregador de vídeo e áudio para Android, feito sobre o yt-dlp",
+  "summary": "Android video and audio downloader built on yt-dlp",
   "description": {
     "en": "A video and audio downloader built on yt-dlp and YouTube-DL, wrapped in a Material You interface. Can use aria2c for faster downloads and ffmpeg for conversion, and can be driven from the Android share sheet.",
     "pt": "Descarregador de vídeo e áudio construído sobre yt-dlp e YouTube-DL, com interface Material You. Pode usar aria2c para downloads mais rápidos e ffmpeg para conversão, e aceita pedidos a partir do menu de partilha do Android."
@@ -56,5 +56,8 @@
   "verification": {
     "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Descarregador de vídeo e áudio para Android, feito sobre o yt-dlp"
   }
 }

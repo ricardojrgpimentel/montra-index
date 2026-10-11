@@ -1,7 +1,7 @@
 {
   "id": "ente",
   "name": "Ente Photos",
-  "summary": "Guarda fotos e vídeos com cifra ponta a ponta: 10 GB grátis, planos pagos ou servidor teu",
+  "summary": "End-to-end encrypted photos and videos: 10 GB free, paid plans or your own server",
   "description": {
     "en": "A cloud for photos and videos where end-to-end encryption means the server holds data it cannot read. Ente gives 10 GB free; more storage and family plans are paid. Apps exist for Android, iOS, desktop and web, with background uploads, face detection, semantic search, private sharing and collaborative albums. You can also self-host the server. Using it needs an account.",
     "pt": "Uma nuvem para fotos e vídeos em que a cifra ponta a ponta significa que o servidor guarda dados que não consegue ler. O Ente dá 10 GB grátis; mais espaço e planos de família são pagos. Há apps para Android, iOS, computador e web, com carregamento em segundo plano, deteção de rostos, pesquisa semântica, partilha privada e álbuns colaborativos. Podes alojar o servidor tu mesmo. Usá-lo exige conta."
@@ -53,5 +53,8 @@
   "verification": {
     "signingCertSha256": "35:ed:56:81:b7:0b:b3:bd:35:d9:0d:85:6a:f5:69:4c:50:4d:ef:46:aa:d8:3f:77:7b:1c:67:5c:f4:51:35:0b",
     "pinnedAt": "2026-10-08"
+  },
+  "summaryTranslations": {
+    "pt": "Guarda fotos e vídeos com cifra ponta a ponta: 10 GB grátis, planos pagos ou servidor teu"
   }
 }

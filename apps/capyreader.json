@@ -1,7 +1,7 @@
 {
   "id": "capyreader",
   "name": "Capy Reader",
-  "summary": "Leitor RSS com feeds locais e sincronização com Feedbin, FreshRSS e Miniflux",
+  "summary": "RSS reader with local feeds and Feedbin, FreshRSS and Miniflux sync",
   "description": {
     "en": "Read RSS feeds locally or sync them with Feedbin, FreshRSS or Miniflux. Includes a full article reading mode. Stable releases are separate from the project's nightly builds.",
     "pt": "Lê feeds RSS localmente ou sincroniza-os com Feedbin, FreshRSS ou Miniflux. Inclui um modo de leitura do artigo completo. O catálogo usa os releases estáveis, separados das versões noturnas do projeto."
@@ -51,5 +51,8 @@
     "pinnedAt": "2026-10-08",
     "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial app-free-release.apk (2026.07.1212)."
   },
-  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/jocmp/capyreader/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/jocmp/capyreader/releases/download/2026.07.1212/app-free-release.apk. SPDX confirmado também nos metadados F-Droid: https://gitlab.com/fdroid/fdroiddata/-/raw/master/metadata/com.capyreader.app.yml."
+  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/jocmp/capyreader/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/jocmp/capyreader/releases/download/2026.07.1212/app-free-release.apk. SPDX confirmado também nos metadados F-Droid: https://gitlab.com/fdroid/fdroiddata/-/raw/master/metadata/com.capyreader.app.yml.",
+  "summaryTranslations": {
+    "pt": "Leitor RSS com feeds locais e sincronização com Feedbin, FreshRSS e Miniflux"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "afwall",
   "name": "AFWall+",
-  "summary": "Firewall com root: controla o acesso à rede por app e tipo de ligação",
+  "summary": "Root firewall: control network access for each app and connection type",
   "description": {
     "en": "An Android firewall built on iptables. Choose which apps can access Wi-Fi, mobile data and other network types, manage profiles and inspect blocked connections. Requires root access; it does not create a local VPN to filter traffic. This entry tracks the Free release APK.",
     "pt": "Firewall Android baseado em iptables. Escolhe que apps podem usar Wi-Fi, dados móveis e outros tipos de ligação, gere perfis e consulta ligações bloqueadas. Requer acesso root; não cria uma VPN local para filtrar o tráfego. Esta entrada acompanha o APK Free da release."
@@ -65,5 +65,8 @@
     "notes": "Primeiro pin: certificado lido por apksigner no APK oficial da release v4.1.0."
   },
   "notes": "Entrada revista após descoberta de 2026-10-10. Licença e requisito confirmados na documentação oficial; package name e certificado obtidos do APK. Selecionada a variante Free. As capturas oficiais disponíveis no repositório mostram uma interface anterior à release atual.",
-  "author": "ukanth"
+  "author": "ukanth",
+  "summaryTranslations": {
+    "pt": "Firewall com root: controla o acesso à rede por app e tipo de ligação"
+  }
 }

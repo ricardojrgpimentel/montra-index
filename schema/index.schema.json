@@ -24,6 +24,7 @@
           "id": { "type": "string" },
           "name": { "type": "string" },
           "summary": { "type": "string" },
+          "summaryTranslations": { "type": "object", "additionalProperties": { "type": "string" } },
           "description": { "type": "object", "additionalProperties": { "type": "string" } },
           "packageName": { "type": "string" },
           "license": { "type": "string" },

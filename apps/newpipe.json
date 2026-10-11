@@ -1,7 +1,7 @@
 {
   "id": "newpipe",
   "name": "NewPipe",
-  "summary": "Cliente leve de streaming para YouTube, PeerTube e SoundCloud, sem conta Google",
+  "summary": "Lightweight streaming client for YouTube, PeerTube and SoundCloud, without a Google account",
   "description": {
     "en": "A lightweight YouTube frontend for Android. It uses the site's own APIs so no Google account, no Google Play Services and no proprietary library is involved. Supports background playback, popup player, audio-only mode, 4K video and downloading.",
     "pt": "Cliente leve de YouTube para Android. Usa apenas as APIs públicas do site, pelo que não precisa de conta Google, de Google Play Services nem de bibliotecas proprietárias. Suporta reprodução em segundo plano, popup, modo só-áudio, vídeo 4K e descarregamento."
@@ -56,5 +56,8 @@
   "verification": {
     "signingCertSha256": "cb:84:06:9b:d6:81:16:ba:fa:e5:ee:4e:e5:b0:8a:56:7a:a6:d8:98:40:4e:7c:b1:2f:9e:75:6d:f5:cf:5c:ab",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Cliente leve de streaming para YouTube, PeerTube e SoundCloud, sem conta Google"
   }
 }

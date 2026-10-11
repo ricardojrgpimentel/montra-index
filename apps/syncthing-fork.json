@@ -1,7 +1,7 @@
 {
   "id": "syncthing-fork",
   "name": "Syncthing-Fork",
-  "summary": "Sincronização de ficheiros ponto-a-ponto com o fork mantido do cliente Syncthing",
+  "summary": "Peer-to-peer file sync with the maintained fork of the Syncthing client",
   "description": {
     "en": "A maintained fork of the Syncthing Android wrapper: continuous folder sync between your devices with no cloud in the middle, per-folder settings, and fixes the upstream wrapper no longer gets.",
     "pt": "Fork mantido do cliente Syncthing para Android: sincronização contínua de pastas entre os teus dispositivos sem nuvem pelo meio, configuração por pasta e correções que o cliente original já não recebe."
@@ -46,5 +46,8 @@
   "verification": {
     "signingCertSha256": "d3:74:b8:de:50:57:01:31:43:c7:d1:51:5a:01:55:98:c2:df:40:3b:e8:16:0c:ae:01:a5:8c:22:7e:6e:86:aa",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Sincronização de ficheiros ponto-a-ponto com o fork mantido do cliente Syncthing"
   }
 }

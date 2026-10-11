@@ -1,7 +1,7 @@
 {
   "id": "flycast",
   "name": "Flycast",
-  "summary": "Emulador de Sega Dreamcast, Naomi e Atomiswave",
+  "summary": "Sega Dreamcast, Naomi and Atomiswave emulator",
   "description": {
     "en": "A multi-platform Dreamcast, Naomi, Naomi 2 and Atomiswave emulator with Vulkan and OpenGL renderers, widescreen hacks, per-game settings and support for physical controllers.",
     "pt": "Emulador de Dreamcast, Naomi, Naomi 2 e Atomiswave para várias plataformas, com renderizadores Vulkan e OpenGL, ajustes para ecrã largo, configurações por jogo e suporte para comandos físicos."
@@ -31,5 +31,8 @@
   "playStore": {
     "present": true,
     "url": "https://play.google.com/store/apps/details?id=com.flycast.emulator&hl=en&gl=US"
+  },
+  "summaryTranslations": {
+    "pt": "Emulador de Sega Dreamcast, Naomi e Atomiswave"
   }
 }

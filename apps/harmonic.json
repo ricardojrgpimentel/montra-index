@@ -1,7 +1,7 @@
 {
   "id": "harmonic",
   "name": "Harmonic",
-  "summary": "Cliente de Hacker News com navegação por comentários e leitura offline",
+  "summary": "Hacker News client with comment navigation and offline reading",
   "description": {
     "en": "A modern Hacker News client: collapsible threaded comments, saved stories, offline reading, font size and theme controls, and search. No account, no tracking, no ads.",
     "pt": "Cliente moderno do Hacker News: comentários em árvore que se colapsam, histórias guardadas, leitura offline, controlo de tamanho de letra e tema, e pesquisa. Sem conta, sem rastreio, sem anúncios."
@@ -48,5 +48,8 @@
   "verification": {
     "signingCertSha256": "fb:12:db:f6:d0:69:25:12:ed:70:18:15:06:37:a1:93:2e:ab:09:d6:7d:bf:99:00:45:70:96:a5:52:f8:8e:c6",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Cliente de Hacker News com navegação por comentários e leitura offline"
   }
 }

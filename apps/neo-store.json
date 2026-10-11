@@ -1,7 +1,7 @@
 {
   "id": "neo-store",
   "name": "Neo Store",
-  "summary": "Cliente de F-Droid com interface moderna e funcionalidades extra",
+  "summary": "F-Droid client with a modern interface and extra features",
   "description": {
     "en": "An F-Droid client with a modern Material interface, better search, repository management, and the ability to install apps that F-Droid's own client refuses because of signature or compatibility checks.",
     "pt": "Cliente de F-Droid com interface Material moderna, melhor pesquisa, gestão de repositórios e capacidade de instalar apps que o cliente oficial recusa por verificações de assinatura ou compatibilidade."
@@ -52,5 +52,8 @@
   "verification": {
     "signingCertSha256": "c5:86:01:46:13:8b:77:99:bb:9d:06:17:c3:98:c1:e5:24:15:50:f5:58:25:2a:3f:97:b2:a5:1f:15:26:3e:f7",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Cliente de F-Droid com interface moderna e funcionalidades extra"
   }
 }

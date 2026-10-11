@@ -1,7 +1,7 @@
 {
   "id": "jellyfin",
   "name": "Jellyfin",
-  "summary": "Cliente oficial do Jellyfin, o servidor de media caseiro livre",
+  "summary": "Official client for Jellyfin, the free home media server",
   "description": {
     "en": "The official Jellyfin Android client: browse and stream your own film, series and music library from your own server, with download for offline playback. This entry tracks the libre build, which excludes proprietary Google Cast libraries.",
     "pt": "Cliente Android oficial do Jellyfin: navega e transmite a tua biblioteca de filmes, séries e música a partir do teu próprio servidor, com descarregamento para ver offline. Esta entrada segue a build libre, que exclui as bibliotecas proprietárias do Google Cast."
@@ -41,5 +41,8 @@
   "verification": {
     "signingCertSha256": "d8:81:79:6e:d2:a6:7f:f6:ef:9f:67:68:28:72:3c:6b:1f:a1:8e:09:38:89:62:cb:a4:ab:c4:a5:94:a6:91:31",
     "pinnedAt": "2026-10-07"
+  },
+  "summaryTranslations": {
+    "pt": "Cliente oficial do Jellyfin, o servidor de media caseiro livre"
   }
 }
