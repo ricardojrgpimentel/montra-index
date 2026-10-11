@@ -6,12 +6,12 @@ name: build-index
 
 # Re-resolves every app's newest release, downloads the APKs, hashes them, reads
 # the signing certificates, re-hosts icons/screenshots, signs the result and
-# commits it. A nightly run is what keeps "update available" honest without any
+# commits it. Twice-daily runs keep "update available" honest without any
 # backend doing it on demand.
 on:
   schedule:
-    - cron: "17 4 * * *"
-  # Um push que mexa no catálogo reconstrói logo, em vez de esperar pelas 04:17.
+    - cron: "17 4,16 * * *"
+  # Um push que mexa no catálogo reconstrói logo, sem esperar pela próxima execução.
   # O agendamento do GitHub é best-effort — pode atrasar-se, e desliga-se sozinho
   # depois de 60 dias sem actividade no repositório. Acrescentar uma app não pode
   # depender disso: quem faz merge de uma entrada quer vê-la publicada, não quer

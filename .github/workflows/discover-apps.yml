@@ -4,7 +4,7 @@ name: discover-apps
 # Os relatórios são artefactos do Actions, sem alterações ao catálogo assinado.
 on:
   schedule:
-    - cron: "29 7 * * 1"
+    - cron: "29 7 * * 1,3,5"
   workflow_dispatch:
     inputs:
       limit:

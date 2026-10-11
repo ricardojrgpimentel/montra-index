@@ -72,9 +72,10 @@ O APK é a fonte de verdade. Nada aqui confia nos metadados do GitHub.
 - `validate.yml` — em cada pull request: schema, regras cruzadas, e cada app tem
   de resolver para um asset real (`--dry`). Não descarrega APKs, por isso é rápido
   e pode ser um check obrigatório.
-- `build-index.yml` — noturno, após alterações ao catálogo e manual: reconstrói, assina, verifica e faz commit.
+- `build-index.yml` — todos os dias às 04:17 e 16:17 UTC, após alterações ao catálogo
+  e manual: reconstrói, assina, verifica e faz commit.
   Precisa do secret `INDEX_SIGNING_KEY`.
-- `discover-apps.yml` — segunda-feira às 07:29 UTC e manual: pesquisa apps novas,
+- `discover-apps.yml` — segunda, quarta e sexta-feira às 07:29 UTC e manual: pesquisa apps novas,
   incluindo Shizuku/root, e inspeciona até 20 APKs de 120 repositórios avaliados.
   Mostra um resumo na execução e guarda JSON, resumo e log num artefacto durante
   90 dias. Usa apenas o `GITHUB_TOKEN` automático; não precisa da chave de assinatura.
@@ -82,7 +83,7 @@ O APK é a fonte de verdade. Nada aqui confia nos metadados do GitHub.
 - `propose-apps.yml` — manual: escolhe até cinco repositórios no formulário e recebe
   um PR em rascunho por app. Verifica APKs de todas as ABIs selecionadas, propõe o
   primeiro pin e procura imagens de fastlane. Não assina nem publica o catálogo.
-- `verify-published.yml` — semanal: volta a descarregar tudo o que foi publicado e
+- `verify-published.yml` — domingo às 03:41 UTC e manual: volta a descarregar tudo o que foi publicado e
   compara hashes e certificados. É a deteção de um asset substituído à posteriori.
 
 ### Secrets
