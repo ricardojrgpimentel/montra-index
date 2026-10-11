@@ -1,0 +1,66 @@
+{
+  "id": "innertune",
+  "name": "InnerTune",
+  "summary": "A Material 3 YouTube Music client for Android",
+  "description": {
+    "en": "A Material 3 YouTube Music client for Android",
+    "pt": ""
+  },
+  "packageName": "com.zionhuang.music",
+  "license": "GPL-3.0-only",
+  "sourceCode": "https://github.com/z-huang/InnerTune",
+  "categories": [
+    "utilities"
+  ],
+  "tags": [],
+  "icon": {
+    "repo": "z-huang/InnerTune",
+    "path": "fastlane/metadata/android/en-US/images/icon.png"
+  },
+  "screenshots": [
+    {
+      "repo": "z-huang/InnerTune",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/01.png"
+    },
+    {
+      "repo": "z-huang/InnerTune",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/02.png"
+    },
+    {
+      "repo": "z-huang/InnerTune",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/03.png"
+    },
+    {
+      "repo": "z-huang/InnerTune",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/04.png"
+    },
+    {
+      "repo": "z-huang/InnerTune",
+      "path": "fastlane/metadata/android/en-US/images/phoneScreenshots/05.png"
+    }
+  ],
+  "release": {
+    "provider": "github",
+    "repo": "z-huang/InnerTune",
+    "excludePattern": "*debug*",
+    "abiAssets": {
+      "x86_64": "InnerTune_*_full_x86_64.apk",
+      "arm64-v8a": "InnerTune_*_full_arm64-v8a.apk",
+      "armeabi-v7a": "InnerTune_*_full_armeabi-v7a.apk",
+      "x86": "InnerTune_*_full_x86.apk"
+    }
+  },
+  "playStore": {
+    "present": false
+  },
+  "addedAt": "2026-10-10",
+  "requires": {
+    "minSdk": 24
+  },
+  "verification": {
+    "signingCertSha256": "5d:55:f9:08:6e:95:43:ee:4d:9e:5f:50:bd:60:59:5e:d4:e9:ac:84:2d:e3:34:fd:e9:00:f3:c6:16:e3:2a:f2",
+    "pinnedAt": "2026-10-10",
+    "notes": "Primeiro pin observado no APK oficial; requer confirmação na revisão desta proposta."
+  },
+  "notes": "Proposta automática a partir de z-huang/InnerTune. Licença de referência: https://github.com/z-huang/InnerTune/blob/v0.5.10/LICENSE. A revisão do mantenedor deve confirmar categorias, textos, imagens, requisitos de acesso e pin antes do merge."
+}
