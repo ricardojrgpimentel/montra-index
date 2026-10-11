@@ -35,15 +35,18 @@
     },
     "description": {
       "type": "object",
-      "description": "Descriptions keyed by BCP-47 language tag. English is required; retain the native text and accept other translations by PR. und preserves unidentified upstream prose in drafts.",
+      "description": "Descriptions keyed by BCP-47 language tag. English is required; other languages may be omitted or empty to fall back to English. Retain native text when available. und preserves unidentified upstream prose in drafts.",
       "minProperties": 1,
       "propertyNames": {
         "pattern": "^(und|[a-z]{2,3})(-[A-Za-z0-9]{2,8})*$"
       },
+      "properties": {
+        "en": { "type": "string", "minLength": 8, "maxLength": 4000 }
+      },
       "additionalProperties": {
         "type": "string",
         "maxLength": 4000,
-        "minLength": 8
+        "anyOf": [{ "const": "" }, { "minLength": 8 }]
       },
       "required": [
         "en"

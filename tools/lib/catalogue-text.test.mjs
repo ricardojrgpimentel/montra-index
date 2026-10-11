@@ -24,6 +24,18 @@ describe("catalogue language policy", () => {
     assert.equal(validate({ ...sample, summaryTranslations: { "not a locale": "A translated summary" } }), false);
     assert.equal(validate({ ...sample, summaryTranslations: { fr: " " } }), false);
   });
+  it("accepts empty optional descriptions while requiring valid English", () => {
+    const entry = { ...sample, description: { en: sample.description.en, pt: "", "pt-BR": "", fr: "" } };
+    assert.equal(validate(entry), true, JSON.stringify(validate.errors));
+    assert.deepEqual(catalogueTextErrors(entry), []);
+    for (const en of ["", "short"]) {
+      assert.equal(validate({ ...entry, description: { ...entry.description, en } }), false);
+    }
+    assert.equal(validate({ ...entry, description: { pt: "" } }), false);
+    for (const pt of ["short", null, 42, "x".repeat(4001)]) {
+      assert.equal(validate({ ...entry, description: { ...entry.description, pt } }), false);
+    }
+  });
   it("keeps original prose in schema-valid drafts, but rejects publishing placeholders", () => {
     const draft = { ...sample, ...draftCatalogueText("  元の説明をそのまま使います  ") };
     assert.equal(validate(draft), true);

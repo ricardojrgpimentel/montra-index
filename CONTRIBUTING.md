@@ -70,7 +70,9 @@ passe não é revisto.
   Preserva também a língua nativa em `description` quando difere do inglês.
   Usa etiquetas BCP-47, como `pt` ou `pt-BR`. Outras traduções são opcionais e
   podem ser acrescentadas por PR; não é preciso traduzir para todas as línguas
-  da interface. A app usa a tradução disponível e inglês como alternativa.
+  da interface. Uma descrição opcional pode estar ausente ou vazia (`""`);
+  quando preenchida, deve ter entre 8 e 4000 caracteres. A app usa a tradução
+  disponível e inglês como alternativa.
   `und` guarda provisoriamente texto de origem sem língua identificada nas
   propostas automáticas. Identifica a língua e substitui os marcadores ingleses
   antes da publicação; o CI rejeita textos pendentes de revisão.
