@@ -140,12 +140,21 @@ export async function findApkTools({ required = true } = {}) {
   return tools;
 }
 
-/** aapt2 dump badging -> the handful of fields we index. */
-export async function inspectApk(apkPath, { tools } = {}) {
-  const { aapt2, apksigner, javaHome } = tools ?? (await findApkTools());
-  const { stdout } = await execFileAsync(aapt2, ["dump", "badging", apkPath], {
-    maxBuffer: 64 * 1024 * 1024,
-  });
+// Um nome com um espaço, um apóstrofo perdido ou um `%s` é um parse falhado, não
+// uma permissão. A lista chega ao ecrã do utilizador na ficha da app, por isso só
+// entra o que tem a forma de um identificador Java (android.permission.INTERNET).
+// O schema do índice usa a mesma regra: se as duas divergirem, uma build futura
+// grava um valor que a validação recusa.
+const PERMISSION_NAME = /^[A-Za-z][A-Za-z0-9_.]*$/;
+
+/**
+ * aapt2 dump badging -> the handful of fields we index.
+ *
+ * Separada do `inspectApk` para ser testável sem o aapt2 instalado: é aqui que se
+ * decide o que entra no índice, e um teste que exija o SDK inteiro acaba por não
+ * ser corrido.
+ */
+export function parseBadging(stdout) {
   const info = {
     packageName: null,
     versionCode: null,
@@ -155,8 +164,10 @@ export async function inspectApk(apkPath, { tools } = {}) {
     compileSdk: null,
     label: null,
     nativeAbis: [],
+    permissions: [],
     signingCertSha256: null,
   };
+  const permissions = new Set();
   for (const line of stdout.split("\n")) {
     const val = (re) => {
       const m = line.match(re);
@@ -179,8 +190,26 @@ export async function inspectApk(apkPath, { tools } = {}) {
       info.label = val(/:'?(.*?)'?$/);
     } else if (line.startsWith("native-code:")) {
       info.nativeAbis = [...line.matchAll(/'([^']+)'/g)].map((m) => m[1]).sort();
+    } else if (line.startsWith("uses-permission:") || line.startsWith("uses-permission-sdk-23:")) {
+      // A variante -sdk-23 só se aplica a aparelhos novos, mas para quem lê a ficha
+      // da app é uma permissão declarada como as outras: a lista é a união das duas.
+      const name = val(/name='([^']+)'/);
+      if (name && PERMISSION_NAME.test(name)) permissions.add(name);
     }
   }
+  // Ordenadas e sem repetições: o índice é comparado e revisto em diffs, e duas
+  // builds do mesmo APK têm de produzir exatamente o mesmo array.
+  info.permissions = [...permissions].sort();
+  return info;
+}
+
+/** aapt2 dump badging + apksigner verify -> what the index records about an APK. */
+export async function inspectApk(apkPath, { tools } = {}) {
+  const { aapt2, apksigner, javaHome } = tools ?? (await findApkTools());
+  const { stdout } = await execFileAsync(aapt2, ["dump", "badging", apkPath], {
+    maxBuffer: 64 * 1024 * 1024,
+  });
+  const info = parseBadging(stdout);
 
   if (apksigner) {
     try {

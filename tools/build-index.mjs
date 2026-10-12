@@ -267,6 +267,10 @@ async function buildApp(entry, tools, ctx) {
 
   const minSdk = Math.max(...inspected.map((i) => i.info.minSdk ?? 0)) || null;
   const nativeAbis = [...new Set(inspected.flatMap((i) => i.info.nativeAbis))].sort();
+  // União das permissões de todos os assets inspecionados deste release: o cliente
+  // mostra-as na ficha da app e não sabe (nem deve saber) qual dos splits vai
+  // instalar. Sem união, o universal e o arm64 davam fichas diferentes.
+  const permissions = [...new Set(inspected.flatMap((i) => i.info.permissions ?? []))].sort();
   if (entry.requires?.minSdk && minSdk && entry.requires.minSdk !== minSdk) {
     warnFor(entry.id, `requires.minSdk diz ${entry.requires.minSdk} mas o APK declara ${minSdk}`);
   }
@@ -305,6 +309,7 @@ async function buildApp(entry, tools, ctx) {
     minSdk,
     targetSdk: primary.info.targetSdk ?? null,
     nativeAbis,
+    permissions,
     iconUrl: null,
     screenshotUrls: [],
     downloadCount: downloads,
@@ -491,6 +496,10 @@ async function main() {
       screenshots: media?.screenshots ?? [],
       downloadCount: built.downloadCount ?? null,
       signingCertSha256: built.signingCertSha256 ?? null,
+      // Ausente quando o APK não pede nada: um array vazio e um campo em falta
+      // diriam o mesmo, e o índice publicado hoje não tem o campo de todo — o
+      // schema não o pode exigir sem invalidar o que está em produção.
+      ...(built.permissions?.length ? { permissions: built.permissions } : {}),
       resolvedAt: new Date().toISOString(),
       release: built.release,
       artifact: built.artifact,

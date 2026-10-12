@@ -104,6 +104,15 @@
             }
           },
           "antiFeatures": { "type": "array", "items": { "type": "string" } },
+          "permissions": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_.]*$"
+            },
+            "description": "Nomes completos das permissões pedidas pelo APK (lidos com aapt2 dump badging), união de todos os assets inspecionados, únicos e por ordem alfabética. Derivado do APK, nunca escrito à mão: não está em required porque o índice publicado antes desta versão não o tem e não pode passar a ser inválido. Ausente ou vazio quando o APK não pede nada."
+          },
           "links": { "type": "object" },
           "playStore": { "type": "object" },
           "addedAt": { "type": "string" },
