@@ -68,6 +68,66 @@ A chave de assinatura do índice está fixada no APK. Rodá-la exige:
 O passo 2 ainda não está implementado (`TrustStore` tem uma chave). É a limitação
 conhecida mais importante e está registada no README.
 
+## A decisão sobre `provider: fdroid`
+
+O `schema/app.schema.json` já prevê `release.provider: "fdroid"` e o validador já
+exige `release.fdroidRepo` para ele, mas o builder só resolve `github`. Uma
+entrada com outra fonte — `fdroid`, `gitlab` ou `direct` — não produz artefacto
+nenhum: o build escreve um aviso no log e a app fica de fora do índice. Isto não
+é uma tarefa em falta, é uma decisão de produto por tomar. Enquanto não estiver
+escrito o que passa a estar garantido e o que deixa de estar, não se constrói
+nada: um segundo modelo de confiança publicado em silêncio é pior do que uma
+ausência.
+
+### O que o modelo atual garante
+
+O build fixa o artefacto que **ele próprio** inspecionou. Descarrega o APK do URL
+do release, calcula o SHA-256 dos bytes que recebeu e lê o certificado de
+assinatura do próprio ficheiro com o `apksigner`. Só depois é que o sha256 e o
+fingerprint entram no índice, e é esse índice que a chave de assinatura cobre.
+Nada aqui confia no que o host de origem afirma — nem no `versionCode`, nem no
+nome do asset, nem no texto da release: o `aapt2` lê o package name real do
+binário e o build falha se não corresponder à entrada. O pin de certificado é,
+por app, o que o build observou no APK que guardou; um release assinado com
+outra chave **falha o build** em vez de atualizar o índice.
+
+### O que mudaria com o F-Droid como fonte de releases
+
+O download deixava de vir do projeto de origem e passava a vir do que o índice do
+F-Droid diz: que versão existe, em que URL, e o que ele afirmar sobre o
+artefacto. Passa a confiar-se na chave que assina esse índice e na afirmação de
+que o APK apontado foi construído a partir do código declarado. O pin de
+certificado continua a ser nosso, mas muda de significado: passa a fixar a chave
+com que o F-Droid assina, não a do projeto de origem. É por isso que uma mesma app
+não pode ter, ao mesmo tempo, o pin da origem e o pin do F-Droid — são dois
+binários diferentes para o mesmo package.
+
+### Por decidir
+
+- **Quem assina o APK.** Muitos projetos publicam assinados por si e o F-Droid
+  republica com a chave do F-Droid. Se a entrada apontar para o F-Droid, o pin
+  passa a ser o do F-Droid, e a versão assinada pelo projeto deixa de ser
+  instalável por cima. Qual das duas o catálogo promete?
+- **O que acontece a quem já tem a app instalada.** O Android recusa instalar por
+  cima um APK assinado com outra chave: a atualização falha, e a saída é
+  desinstalar (perdendo os dados) e reinstalar. Trocar de fonte obriga a essa
+  escolha; se o catálogo não a explicar antes, o utilizador descobre-a com um erro
+  do instalador.
+- **Quem responde quando um APK do F-Droid não corresponde ao esperado.** Com a
+  origem, o `verify-published.yml` volta a descarregar e compara, e quem publicou
+  o ficheiro é o projeto. Com um intermediário, um sha256 que não bate certo pode
+  ser do índice deles, do build deles ou de um espelho. Quem é avisado, e o que
+  fica publicado até haver resposta?
+- **Se o catálogo passa a ter duas fontes por app.** Manter origem e F-Droid ao
+  mesmo tempo exige dizer ao cliente qual instalar; hoje o cliente recebe um
+  artefacto preferido por app e não tem como escolher entre dois com chaves
+  diferentes.
+- **O que se indexa quando o F-Droid está atrasado.** O F-Droid acompanha as
+  versões com atraso variável. A entrada passa a mostrar uma versão mais antiga do
+  que a que o projeto publicou, e é essa que a app anuncia como disponível.
+
+A implementação do builder fica pendente desta decisão.
+
 ## Reportar um problema
 
 Se encontrares um APK que não corresponde ao índice, um pin de certificado que

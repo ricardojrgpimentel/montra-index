@@ -123,7 +123,9 @@ node tools/discover.mjs --inspect --write --limit 5   # cria rascunhos em apps/
   índice é verificado primeiro; as imagens são conteúdo não confiável servido do
   mesmo host, sem consequências de segurança).
 - Verificação de atualizações em segundo plano (hoje acontece quando a app abre).
-- Suporte a `provider: fdroid` no builder (o schema já o prevê).
+- Suporte a `provider: fdroid` no builder: é uma decisão de produto, não uma
+  tarefa. O que fica garantido e o que fica por decidir está escrito em
+  [SECURITY.md](SECURITY.md).
 - Repositório de índice federado: a app já aceita qualquer URL de índice, portanto
   um fork é uma loja nova.
 
