@@ -70,6 +70,14 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      # O build re-codifica as capturas para WebP, e o `cwebp` não vem na imagem do
+      # runner. Sem ele o build **não falha**: guarda o formato de origem e deixa um
+      # aviso no fim, o que dá um repositório de 66 MB sem ninguém dar por isso. Hoje
+      # isto funciona por o runner trazer ImageMagick por acaso; instalá-lo aqui é o
+      # que torna a conversão uma garantia em vez de uma sorte.
+      - name: conversor de imagens (webp)
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends webp
+
       # Sem a chave privada não há índice assinado, e sem isto o job falharia mais
       # tarde com um erro de criptografia em vez de dizer o que falta.
       - name: verificar o secret da chave de assinatura

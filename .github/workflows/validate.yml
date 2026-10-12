@@ -47,6 +47,13 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+
+      # O `cwebp` não vem na imagem do runner. Sem ele, os testes da conversão real
+      # saltam-se em silêncio — e um teste que se salta sozinho é um teste que não
+      # corre. Instalar aqui é o que faz esses testes valerem no CI.
+      - name: conversor de imagens (webp)
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends webp
+
       - name: testes das ferramentas
         run: pnpm test
 
