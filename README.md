@@ -42,6 +42,7 @@ node tools/verify-index.mjs --artifact newpipe --rehash   # volta a descarregar 
 node tools/verify-index.mjs --all --rehash                # tudo (1,3 GB, semanal em CI)
 
 node tools/check-play.mjs --update       # grava "está na Play Store?" em cada entrada
+node tools/report.mjs                    # o que falta ao catálogo: capturas, ícones, requisitos, apps paradas
 node tools/probe.mjs owner/repo ...      # inspeciona repositórios candidatos
 node tools/discover.mjs                  # procura apps novas no GitHub e classifica-as
 node tools/keys.mjs show                 # chave pública + key id
