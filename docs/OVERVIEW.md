@@ -53,7 +53,7 @@ infraestrutura:
 | Tamanho do índice | 379 KB (assinado) + 3,0 MB de ícones + 66 MB de screenshots |
 | APKs indexados | 5,2 GB |
 | Cliente | APK de release **1,67 MB** (R8), minSdk 26, sem dependências de UI de terceiros |
-| Testes | 53 unitários (JVM) + 13 instrumentados num dispositivo real (rede, verificação e recusa de índice adulterado) |
+| Testes | 89 unitários (JVM) + 25 instrumentados num dispositivo real (rede, verificação e recusa de índice adulterado) |
 
 Verificado com `node tools/check-play.mjs`: das 81 apps, 41 não existem na Play
 Store (404 para o package name), 35 existem (incluindo casos em que a versão da
