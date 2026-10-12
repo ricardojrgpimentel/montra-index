@@ -21,6 +21,9 @@ import {
 } from "./lib/util.mjs";
 import { githubApi, githubToken } from "./lib/github.mjs";
 import { findApkTools, inspectApk } from "./lib/apk.mjs";
+import {
+  directorySize, filesToRemove, findImageTools, imageExtension, mediaBudgetWarning, toIndexImage,
+} from "./lib/images.mjs";
 import { inferAbi } from "./lib/assets.mjs";
 import { apkReleaseCandidates } from "./lib/releases.mjs";
 
@@ -38,20 +41,6 @@ const ONLY = opt("only");
 const DEEP = Number(opt("deep", "1"));
 const CONCURRENCY = Number(opt("jobs", "3"));
 const SKIP_ICONS = flag("no-icons");
-
-const IMAGE_MAGIC = [
-  { ext: "png", test: (b) => b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47 },
-  { ext: "jpg", test: (b) => b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff },
-  { ext: "webp", test: (b) => b.subarray(0, 4).toString("latin1") === "RIFF" && b.subarray(8, 12).toString("latin1") === "WEBP" },
-  { ext: "gif", test: (b) => b.subarray(0, 3).toString("latin1") === "GIF" },
-];
-
-function imageExtension(buffer) {
-  for (const { ext, test } of IMAGE_MAGIC) if (test(buffer)) return ext;
-  const head = buffer.subarray(0, 200).toString("utf8").trimStart().toLowerCase();
-  if (head.startsWith("<svg") || head.startsWith("<?xml")) return "svg";
-  return null;
-}
 
 const warningsFor = new Map();
 const warnFor = (id, message) => {
@@ -334,12 +323,16 @@ function resolveMediaSource(source) {
   return `https://raw.githubusercontent.com/${source.repo}/HEAD/${source.path.replace(/^\//, "")}`;
 }
 
-async function rehostMedia(entry, ctx) {
+async function rehostMedia(entry, ctx, imageTools) {
   if (SKIP_ICONS) return { icon: null, screenshots: [] };
 
   const token = process.env.GITHUB_TOKEN;
   let icon = null;
   const screenshots = [];
+  // Nomes escritos nesta build, para apagar os que já não são referidos. Sem
+  // isto, uma captura que passa de PNG a WebP deixa o PNG em git para sempre e o
+  // orçamento de icons/ + screenshots/ nunca desce.
+  const written = [];
 
   if (entry.icon) {
     const url = resolveMediaSource(entry.icon);
@@ -356,6 +349,12 @@ async function rehostMedia(entry, ctx) {
         await fs.writeFile(file, buffer);
         icon = `icons/${entry.id}.${ext}`;
         ctx.mediaHosted++;
+        for (const name of await fs.readdir(DIRS.icons).catch(() => [])) {
+          if (name.startsWith(`${entry.id}.`) && name !== path.basename(file)) {
+            await fs.rm(path.join(DIRS.icons, name), { force: true });
+            ctx.mediaPruned++;
+          }
+        }
       }
     } catch (error) {
       warnFor(entry.id, `falha a buscar o ícone (${url}): ${String(error.message).slice(0, 80)}`);
@@ -371,14 +370,34 @@ async function rehostMedia(entry, ctx) {
         warnFor(entry.id, `screenshot ${index + 1} ignorado (formato não suportado)`);
         continue;
       }
+      const prepared = await toIndexImage(buffer, { ext, tools: imageTools });
+      if (!prepared.converted && prepared.reason === "falhou") {
+        warnFor(entry.id, `screenshot ${index + 1}: conversão para WebP falhou, guardado em ${prepared.ext}`);
+      }
+      const name = `${index + 1}.${prepared.ext}`;
       const dir = path.join(DIRS.screenshots, entry.id);
       await fs.mkdir(dir, { recursive: true });
-      const rel = `screenshots/${entry.id}/${index + 1}.${ext}`;
-      await fs.writeFile(path.join(DIRS.root, rel), buffer);
+      const rel = `screenshots/${entry.id}/${name}`;
+      await fs.writeFile(path.join(DIRS.root, rel), prepared.buffer);
       screenshots.push(rel);
+      written.push(name);
       ctx.mediaHosted++;
+      if (prepared.converted) ctx.imagesConverted++;
+      if (prepared.resized) ctx.imagesResized++;
     } catch (error) {
       warnFor(entry.id, `falha no screenshot ${index + 1}: ${String(error.message).slice(0, 80)}`);
+    }
+  }
+
+  // Só se limpa o que foi escrito agora, ou quando a entrada já não declara
+  // capturas nenhumas: se a rede falhar a meio, o que lá estava fica — não se
+  // apaga a ficha de uma app por causa de um erro de download.
+  if (written.length > 0 || !(entry.screenshots ?? []).length) {
+    const dir = path.join(DIRS.screenshots, entry.id);
+    const existing = await fs.readdir(dir).catch(() => []);
+    for (const name of filesToRemove(existing, written)) {
+      await fs.rm(path.join(dir, name), { recursive: true, force: true });
+      ctx.mediaPruned++;
     }
   }
 
@@ -415,7 +434,18 @@ async function main() {
     log.warn("apksigner em falta: os fingerprints de certificado ficarão nulos nesta build");
   }
 
-  const ctx = { newPins: [], mediaHosted: 0, failures: [] };
+  // Sem conversor não há WebP nem teto de largura. Os ficheiros ficam no formato
+  // de origem em vez de o build inventar um caminho .webp para bytes que não são
+  // WebP — um aviso é mais útil do que um formato mentiroso.
+  const imageTools = DRY || SKIP_ICONS ? null : await findImageTools();
+  if (imageTools && !imageTools.converter) {
+    log.warn(
+      "sem cwebp nem ImageMagick: as capturas ficam no formato de origem, sem re-codificação para WebP " +
+        "nem limite de largura (instala o pacote webp ou o ImageMagick)",
+    );
+  }
+
+  const ctx = { newPins: [], mediaHosted: 0, imagesConverted: 0, imagesResized: 0, mediaPruned: 0, failures: [] };
 
   const results = await mapPool(entries, CONCURRENCY, async (entry) => {
     try {
@@ -435,8 +465,17 @@ async function main() {
       apps.push({ entry, built });
       continue;
     }
-    const media = await rehostMedia(entry, ctx);
+    const media = await rehostMedia(entry, ctx, imageTools);
     apps.push({ entry, built, media });
+  }
+
+  // Peso do que o git guarda (ícones + capturas): um aviso, nunca uma falha. O
+  // build não tem autoridade para decidir cortar capturas de uma app, mas quem
+  // revê o PR deve saber quando o repositório passou do orçamento.
+  if (imageTools) {
+    ctx.mediaBytes = (await directorySize(DIRS.icons)) + (await directorySize(DIRS.screenshots));
+    const overBudget = mediaBudgetWarning(ctx.mediaBytes);
+    if (overBudget) log.warn(overBudget);
   }
 
   /* --- write pins back into apps/*.json (reviewable diff) ------------------ */
@@ -540,7 +579,10 @@ async function main() {
   console.log("");
   log.ok(
     `${path.relative(DIRS.root, outFile)}: ${indexApps.length} apps, ${humanBytes(totalSize)} de APKs indexados` +
-      `${ctx.mediaHosted ? `, ${ctx.mediaHosted} imagens re-alojadas` : ""}`,
+      `${ctx.mediaHosted ? `, ${ctx.mediaHosted} imagens re-alojadas` : ""}` +
+      `${ctx.imagesConverted ? ` (${ctx.imagesConverted} para WebP, ${ctx.imagesResized} reduzidas)` : ""}` +
+      `${ctx.mediaPruned ? `, ${ctx.mediaPruned} ficheiros antigos removidos` : ""}` +
+      `${ctx.mediaBytes ? `, ${humanBytes(ctx.mediaBytes)} de ícones e capturas` : ""}`,
   );
   if (ONLY) {
     log.warn(

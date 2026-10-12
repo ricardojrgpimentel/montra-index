@@ -67,7 +67,11 @@ disponível e inglês como alternativa. Changelogs mantêm o texto de origem.
 O ícone e os screenshots são **caminhos dentro do repositório**, não URLs. O build
 descarrega-os e re-aloja-os em `icons/` e `screenshots/`, para que o cliente só
 fale com um host. Aceita PNG, JPEG, WebP e GIF; SVG não (o cliente não tem
-descodificador de vetores).
+descodificador de vetores). As capturas são re-codificadas para WebP até 1080 px de
+largura — a largura que a maioria dos projetos publica, e acima da qual o cliente
+encolhe a imagem de qualquer maneira. O GIF fica como está, por poder ser animado.
+Não é preciso otimizar as imagens antes do PR; o build trata disso e avisa quando o
+total de `icons/` + `screenshots/` passa os 24 MB.
 
 ## 3. Escolher o APK certo
 
