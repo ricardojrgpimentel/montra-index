@@ -8,7 +8,7 @@ operar, nem conta para criar.
 ```
                     repositório git "montra-index" (público, só dados)
    apps/<id>.json ──► build-index ──► index.json ──► sign-index ──► index.json.sig
-   (um ficheiro por   (resolve releases,  (48 apps)   (ECDSA P-256)   (+ chave pública
+   (um ficheiro por   (resolve releases,  (81 apps)   (ECDSA P-256)   (+ chave pública
     app, via PR)       descarrega APKs,                                   no repositório)
                        calcula sha256,
                        lê certificados)
@@ -30,7 +30,7 @@ operar, nem conta para criar.
 
 ## Porque é que isto funciona sem servidor
 
-Um catálogo é **dados + confiança**. Os dados cabem num ficheiro (128 KB para 30
+Um catálogo é **dados + confiança**. Os dados cabem num ficheiro (379 KB para 81
 apps) e o git já é um sistema de edição, revisão, histórico e distribuição
 gratuito. O que falta é confiança, e isso resolve-se com criptografia em vez de
 infraestrutura:
@@ -47,17 +47,17 @@ infraestrutura:
 
 | | |
 | --- | --- |
-| Apps no catálogo | **48**, todas com release real, sha256 e certificado fixados |
-| Fora da Google Play | **27** (verificado package a package contra a Play Store) |
+| Apps no catálogo | **81**, todas com release real, sha256 e certificado fixados |
+| Fora da Google Play | **41** (verificado package a package contra a Play Store) |
 | Categorias | **24 de 24** preenchidas, da taxonomia fixa do schema |
-| Tamanho do índice | 208 KB (assinado) + 2,0 MB de ícones + 26 MB de screenshots |
-| APKs indexados | 2,3 GB |
+| Tamanho do índice | 379 KB (assinado) + 3,0 MB de ícones + 66 MB de screenshots |
+| APKs indexados | 5,2 GB |
 | Cliente | APK de release **1,67 MB** (R8), minSdk 26, sem dependências de UI de terceiros |
-| Testes | 27 unitários (JVM) + 3 instrumentados num dispositivo real (rede, verificação e recusa de índice adulterado) |
+| Testes | 53 unitários (JVM) + 13 instrumentados num dispositivo real (rede, verificação e recusa de índice adulterado) |
 
-Verificado com `node tools/check-play.mjs`: das 48 apps, 27 não existem na Play
-Store (404 para o package name) e 21 existem (incluindo casos em que a versão da
-Play está desatualizada, como o Termux).
+Verificado com `node tools/check-play.mjs`: das 81 apps, 41 não existem na Play
+Store (404 para o package name), 35 existem (incluindo casos em que a versão da
+Play está desatualizada, como o Termux) e 5 ainda não foram confirmadas.
 
 ## Estrutura
 
