@@ -117,12 +117,11 @@ node tools/discover.mjs --inspect --write --limit 5   # cria rascunhos em apps/
 
 ## O que falta
 
-- Rotação de chave de assinatura do índice (hoje exige uma atualização da app; é
-  uma decisão deliberada, documentada em `index/docs/SECURITY.md`).
+- Rotação de chave de assinatura do índice: o cliente já aceita mais do que uma chave e
+  o procedimento está em [SECURITY.md](SECURITY.md). Falta corrê-lo uma vez, a sério.
 - Verificação de assinatura *antes* de mostrar o ícone de uma app nova (hoje o
   índice é verificado primeiro; as imagens são conteúdo não confiável servido do
   mesmo host, sem consequências de segurança).
-- Verificação de atualizações em segundo plano (hoje acontece quando a app abre).
 - Suporte a `provider: fdroid` no builder: é uma decisão de produto, não uma
   tarefa. O que fica garantido e o que fica por decidir está escrito em
   [SECURITY.md](SECURITY.md).

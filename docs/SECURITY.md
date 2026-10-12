@@ -58,15 +58,36 @@ mostrado ao utilizador.
 
 ## Rotação de chave
 
-A chave de assinatura do índice está fixada no APK. Rodá-la exige:
+A chave de assinatura do índice está fixada no APK: uma chave fixada não se substitui
+sem uma atualização da app. Com uma chave só, uma chave comprometida não tinha
+substituição possível — quem a tivesse podia servir índices válidos a toda a base
+instalada, para sempre. O cliente aceita agora **mais do que uma** chave, e é isso que
+transforma a rotação num procedimento em vez de num beco.
 
-1. gerar um novo par (`node tools/keys.mjs init` noutro diretório),
-2. publicar uma versão da app que aceite **as duas** chaves,
-3. esperar que a base instalada atualize,
-4. passar a assinar só com a nova.
+O procedimento, por ordem, sem saltar passos:
 
-O passo 2 ainda não está implementado (`TrustStore` tem uma chave). É a limitação
-conhecida mais importante e está registada no README.
+1. gerar um novo par (`node tools/keys.mjs init` noutro diretório) e guardar a privada
+   onde o segredo de CI passa a estar;
+2. pôr a chave pública nova em `keys/`, com o nome `index-signing-<nome>.pub.pem`. A
+   principal continua a ser `index-signing.pub.pem`, e é o nome do ficheiro que o diz;
+3. publicar uma versão da app que traga as duas chaves. O
+   `android/scripts/sync-index-assets.sh` copia todas as `keys/*.pub.pem`, e a app
+   aceita um índice assinado por qualquer delas — dizendo nas Definições que a
+   assinatura não é da chave principal, porque durante uma rotação isso é verdade e é
+   útil sabê-lo;
+4. esperar que a base instalada atualize. **Este passo demora o que demorar.** Uma app
+   que não atualize continua a confiar só na chave antiga, e é por isso que a chave
+   antiga não sai da lista a seguir;
+5. passar a assinar com a nova (trocar o segredo de CI) e confirmar que o índice
+   publicado é aceite;
+6. só então tirar a chave antiga de `keys/`, numa versão da app que já não a precise.
+
+O que isto **não** resolve: uma chave comprometida numa altura em que ainda não existe
+uma versão publicada que aceite a nova. Nessa janela, a única defesa é o histórico git
+do repositório, que é público, e a rapidez da rotação.
+
+**O que falta:** correr isto uma vez, de verdade, numa chave de ensaio. Está escrito e
+implementado; não está exercitado.
 
 ## A decisão sobre `provider: fdroid`
 
