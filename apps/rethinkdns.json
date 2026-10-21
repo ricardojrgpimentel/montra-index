@@ -6,7 +6,7 @@
     "en": "Control which apps can access the network, monitor their connections and use encrypted DNS with blocklists. Also supports WireGuard tunnels and routing rules. Uses Android's VPN service, so it occupies the system VPN slot.",
     "pt": "Controla quais as apps que podem aceder à rede, mostra as suas ligações e permite usar DNS encriptado com listas de bloqueio. Suporta também túneis WireGuard e regras de encaminhamento. Usa o serviço VPN do Android."
   },
-  "packageName": "com.celzero.bravedns",
+  "packageName": "com.celzero.bravedns.izzy",
   "license": "Apache-2.0",
   "sourceCode": "https://github.com/celzero/rethink-app",
   "categories": [
@@ -53,13 +53,13 @@
     "url": "https://play.google.com/store/apps/details?id=com.celzero.bravedns&hl=en&gl=US"
   },
   "addedAt": "2026-10-08",
-  "lastCheckedAt": "2026-10-08",
+  "lastCheckedAt": "2026-10-21",
   "verification": {
     "signingCertSha256": "80:e1:5f:1e:d5:a1:ec:51:2c:51:e1:4a:a2:9b:18:c7:be:fe:13:c1:ac:b6:cf:ec:4b:87:bd:31:d1:71:fe:7f",
     "pinnedAt": "2026-10-08",
     "notes": "Primeiro pin: certificado verificado com apksigner no APK oficial rethink-v0.5.7-izzy-universal.apk (v0.5.7). Corresponde também ao SHA-256 publicado no README do upstream."
   },
-  "notes": "Entrada revista em 2026-10-08. Código e licença: https://github.com/celzero/rethink-app/blob/HEAD/LICENSE. Release oficial inspecionado: https://github.com/celzero/rethink-app/releases/download/v0.5.7/rethink-v0.5.7-izzy-universal.apk. Variante Izzy do upstream: todos os APKs usam a mesma variante e o certificado publicado no README. A variante de produção da Play Store usa outra chave.",
+  "notes": "Entrada revista em 2026-10-21. Código e licença: https://github.com/celzero/rethink-app/blob/HEAD/LICENSE. O catálogo segue a variante Izzy do upstream (chave publicada no README), não a de produção da Play Store, que usa outra chave. O v0.5.8 (2026-10-13) mudou o package desta variante para com.celzero.bravedns.izzy, para poder conviver com a versão da F-Droid (com.celzero.bravedns); até ao v0.5.7 era com.celzero.bravedns. A chave de assinatura não mudou. Quem tinha a versão anterior instalada fica com outra app e não recebe esta actualização.",
   "links": {
     "website": "https://rethinkfirewall.com/"
   },
