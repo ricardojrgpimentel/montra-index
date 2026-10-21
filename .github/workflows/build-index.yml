@@ -142,3 +142,54 @@ jobs:
           fi
           git commit -m "chore(index): reconstruir $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
+
+      # O build publica o que conseguiu e mantém a entrada anterior das apps que
+      # falharam: uma app partida a montante não pode congelar o catálogo inteiro.
+      # Este resumo e o passo seguinte é que dão o sinal, já depois do commit.
+      - name: resumo da construção
+        if: always()
+        shell: bash
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const file = '.cache/build-report.json';
+          const lines = ['## build-index', ''];
+          if (!fs.existsSync(file)) {
+            lines.push('A construção não chegou a produzir índice — vê o log da execução.');
+          } else {
+            const report = JSON.parse(fs.readFileSync(file, 'utf8'));
+            lines.push(`${report.apps} apps no índice; **${report.failures.length} falharam**.`, '');
+            if (report.carried.length) {
+              lines.push('### Mantiveram a versão já publicada', '', '| app | versão | resolvida em |', '| --- | --- | --- |');
+              for (const app of report.carried) {
+                lines.push(`| ${app.id} | ${app.versionName ?? '?'} | ${app.resolvedAt ?? '?'} |`);
+              }
+              lines.push('');
+            }
+            if (report.orphans.length) {
+              lines.push(`Entradas novas que ficaram de fora: ${report.orphans.join(', ')}`, '');
+            }
+            if (report.failures.length) {
+              lines.push('### Falhas', '');
+              for (const failure of report.failures) lines.push(`- **${failure.id}**: ${failure.message}`);
+              lines.push('');
+            }
+          }
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, lines.join('\n') + '\n');
+          JS
+
+      # Uma app que falha é um problema a corrigir, não um run silenciosamente
+      # verde: o índice já foi publicado, mas a execução fica vermelha.
+      - name: falhar se alguma app não resolveu
+        if: always()
+        shell: bash
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const file = '.cache/build-report.json';
+          if (!fs.existsSync(file)) process.exit(0);
+          const report = JSON.parse(fs.readFileSync(file, 'utf8'));
+          if (!report.failures.length) process.exit(0);
+          console.log(`::error title=build-index::${report.failures.length} app(s) falharam: ${report.failures.map((f) => f.id).join(', ')}`);
+          process.exit(1);
+          JS

@@ -26,6 +26,7 @@ import {
 } from "./lib/images.mjs";
 import { inferAbi } from "./lib/assets.mjs";
 import { apkReleaseCandidates } from "./lib/releases.mjs";
+import { carryOver } from "./lib/carry-over.mjs";
 
 /* -------------------------------------------------------------------- argv */
 const args = process.argv.slice(2);
@@ -64,6 +65,20 @@ async function githubReleases(repo) {
     if (batch.length < 50) break;
   }
   return releases.filter((r) => !r.draft);
+}
+
+/**
+ * O índice que está publicado agora. É a rede de segurança das apps que falham
+ * nesta build: sem ele não há entrada anterior para reaproveitar. Um ficheiro
+ * ausente ou inválido não é fatal — a build segue, só não tem de onde copiar.
+ */
+async function readPublishedIndex() {
+  try {
+    const index = JSON.parse(await fs.readFile(indexPathFor(null), "utf8"));
+    return Array.isArray(index?.apps) ? index.apps : null;
+  } catch {
+    return null;
+  }
 }
 
 /** Pick the release assets that match the entry's patterns. */
@@ -447,6 +462,10 @@ async function main() {
 
   const ctx = { newPins: [], mediaHosted: 0, imagesConverted: 0, imagesResized: 0, mediaPruned: 0, failures: [] };
 
+  // Só um build que publica tem de onde copiar: o `--dry` valida (e falha), o
+  // `--only` escreve num índice parcial que não substitui o publicado.
+  const published = DRY || ONLY ? null : await readPublishedIndex();
+
   const results = await mapPool(entries, CONCURRENCY, async (entry) => {
     try {
       const built = await buildApp(entry, tools, ctx);
@@ -467,6 +486,22 @@ async function main() {
     }
     const media = await rehostMedia(entry, ctx, imageTools);
     apps.push({ entry, built, media });
+  }
+
+  // Uma app que falha não pode congelar o catálogo: mantém-se a entrada que já
+  // estava publicada (mesma versão, mesmos hashes, mesmo certificado) e as outras
+  // seguem. Só uma entrada nova sem nada por trás é que fica de fora.
+  const { carried, orphans } = DRY || ONLY
+    ? { carried: [], orphans: [] }
+    : carryOver(published, ctx.failures.map((f) => f.id));
+  for (const app of carried) {
+    log.warn(
+      `${app.id}: falhou nesta build; fica a entrada publicada ` +
+        `(${app.release?.versionName ?? "?"}, resolvida em ${app.resolvedAt ?? "?"})`,
+    );
+  }
+  for (const id of orphans) {
+    log.warn(`${id}: falhou nesta build e não há entrada anterior — fica de fora do índice`);
   }
 
   // Peso do que o git guarda (ícones + capturas): um aviso, nunca uma falha. O
@@ -508,7 +543,7 @@ async function main() {
   }
 
   /* --- emit index.json ---------------------------------------------------- */
-  const indexApps = apps
+  const builtApps = apps
     .map(({ entry, built, media }) => ({
       id: entry.id,
       name: entry.name,
@@ -546,6 +581,15 @@ async function main() {
     }))
     .sort((a, b) => a.name.localeCompare(b.name, "en"));
 
+  // As apps que falharam entram com a entrada que já estava publicada: o índice
+  // continua completo e só perde a actualização dessas apps.
+  const indexApps = [...builtApps, ...carried].sort((a, b) => a.name.localeCompare(b.name, "en"));
+
+  if (indexApps.length === 0) {
+    log.error("nenhuma app entrou no índice: não se publica um catálogo vazio");
+    process.exit(1);
+  }
+
   const { keyIdFromPublicKeyPem } = await import("./lib/keys.mjs");
   let signingKeyId = null;
   try {
@@ -564,6 +608,22 @@ async function main() {
 
   const outFile = indexPathFor(ONLY);
   await writeJson(outFile, index);
+
+  // Relatório para o workflow: o passo que resume a execução e o que a marca como
+  // falhada lêem daqui. O log diz o mesmo, mas ninguém lê logs de 150 segundos.
+  if (!ONLY) {
+    await writeJson(path.join(DIRS.cache, "build-report.json"), {
+      generatedAt: index.generatedAt,
+      apps: indexApps.length,
+      failures: ctx.failures.map((f) => ({ id: f.id, message: f.message.split("\n")[0] })),
+      carried: carried.map((a) => ({
+        id: a.id,
+        versionName: a.release?.versionName ?? null,
+        resolvedAt: a.resolvedAt ?? null,
+      })),
+      orphans,
+    });
+  }
 
   /* --- report ------------------------------------------------------------- */
   console.log("");
@@ -593,14 +653,29 @@ async function main() {
   if (ctx.failures.length) {
     console.log("");
     for (const f of ctx.failures) log.error(`${f.id}: ${f.message.split("\n")[0]}`);
-    log.error(`${ctx.failures.length} app(s) falharam`);
+    log.error(
+      `${ctx.failures.length} app(s) falharam` +
+        (carried.length ? `; ${carried.length} mantêm a entrada publicada` : "") +
+        (orphans.length ? `; ${orphans.length} ficaram de fora (${orphans.join(", ")})` : ""),
+    );
+    // A anotação fica visível na página do commit e do run, não só no log.
+    if (process.env.GITHUB_ACTIONS === "true") {
+      console.log(
+        `::warning title=build-index::${ctx.failures.length} app(s) falharam: ` +
+          `${ctx.failures.map((f) => f.id).join(", ")}` +
+          (carried.length ? ` — ${carried.length} mantêm a versão publicada` : ""),
+      );
+    }
   }
   console.log("");
   log.info(`tempo: ${((Date.now() - started) / 1000).toFixed(1)}s`);
   if (!ONLY) console.log(`${color.dim("próximo passo:")} node tools/sign-index.mjs\n`);
   else console.log("");
 
-  process.exit(ctx.failures.length ? 1 : 0);
+  // Num build normal as falhas já não impedem a publicação: o índice sai com as
+  // entradas anteriores e quem marca o run como falhado é o passo seguinte do
+  // workflow. O --only é uma verificação de uma app e continua a falhar.
+  process.exit(ONLY && ctx.failures.length ? 1 : 0);
 }
 
 await main();

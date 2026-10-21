@@ -95,6 +95,14 @@ instalaria, não com o máximo do release.
 **`artifact`** é a escolha preferida do builder, para clientes simples; a app usa
 `bestAssetFor()` (ABIs do dispositivo, depois universal).
 
+**Uma app que falha não pára o catálogo.** O build resolve todas as entradas numa
+passagem; se uma falhar (release renomeado, package mudado, chave trocada), fica
+com a entrada que já estava publicada — mesmos hashes, mesmo certificado — e as
+outras seguem. O run fica vermelho e o resumo diz qual falhou e com que versão
+ficou; o que não acontece é o índice inteiro parar à espera de uma correcção. Uma
+entrada nova que falhe não entra: não há versão anterior para reutilizar. O
+`--dry` continua a falhar, porque é uma verificação e não uma publicação.
+
 ## O cliente
 
 ```
