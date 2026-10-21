@@ -103,6 +103,13 @@ ficou; o que não acontece é o índice inteiro parar à espera de uma correcç�
 entrada nova que falhe não entra: não há versão anterior para reutilizar. O
 `--dry` continua a falhar, porque é uma verificação e não uma publicação.
 
+**O que falhou fica escrito no repositório.** O log do Actions expira e o resumo
+do run não se lê uma semana depois. Por isso cada build escreve
+`docs/BUILD_HEALTH.md` (legível: app, desde quando falha, versão que mantém,
+entrada, motivo) e `docs/build-health.json` (o estado em bruto, para não
+reiniciar a contagem de dias), e o bot commita-os com o índice. Quando a falha
+desaparece, a entrada sai da lista; o histórico fica no git.
+
 ## O cliente
 
 ```

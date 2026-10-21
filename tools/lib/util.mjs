@@ -14,6 +14,7 @@ export const DIRS = {
   icons: path.join(ROOT, "icons"),
   screenshots: path.join(ROOT, "screenshots"),
   cache: path.join(ROOT, ".cache"),
+  docs: path.join(ROOT, "docs"),
   keys: path.join(ROOT, "keys"),
   out: ROOT,
 };

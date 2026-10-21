@@ -27,6 +27,7 @@ import {
 import { inferAbi } from "./lib/assets.mjs";
 import { apkReleaseCandidates } from "./lib/releases.mjs";
 import { carryOver } from "./lib/carry-over.mjs";
+import { renderHealth, updateHealth } from "./lib/health.mjs";
 
 /* -------------------------------------------------------------------- argv */
 const args = process.argv.slice(2);
@@ -76,6 +77,15 @@ async function readPublishedIndex() {
   try {
     const index = JSON.parse(await fs.readFile(indexPathFor(null), "utf8"));
     return Array.isArray(index?.apps) ? index.apps : null;
+  } catch {
+    return null;
+  }
+}
+
+/** Estado das falhas da build anterior, para não reiniciar a contagem de dias. */
+async function readHealth() {
+  try {
+    return JSON.parse(await fs.readFile(path.join(DIRS.docs, "build-health.json"), "utf8"));
   } catch {
     return null;
   }
@@ -623,6 +633,26 @@ async function main() {
       })),
       orphans,
     });
+
+    // O registo durável, commitado com o índice: o run passa, o log expira, mas
+    // quem abre o repositório daqui a duas semanas vê o que está preso e porquê.
+    const entryById = new Map(entries.map((entry) => [entry.id, entry]));
+    const carriedById = new Map(carried.map((app) => [app.id, app]));
+    const details = ctx.failures.map((failure) => {
+      const previous = carriedById.get(failure.id);
+      return {
+        id: failure.id,
+        message: failure.message,
+        release: entryById.get(failure.id)?.release ?? null,
+        published: previous
+          ? { versionName: previous.release?.versionName ?? null, resolvedAt: previous.resolvedAt ?? null }
+          : null,
+      };
+    });
+    const health = updateHealth(await readHealth(), details, { now: new Date() });
+    await fs.mkdir(DIRS.docs, { recursive: true });
+    await writeJson(path.join(DIRS.docs, "build-health.json"), health);
+    await fs.writeFile(path.join(DIRS.docs, "BUILD_HEALTH.md"), renderHealth(health, { totalApps: indexApps.length }));
   }
 
   /* --- report ------------------------------------------------------------- */
