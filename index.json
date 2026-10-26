@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T19:03:43.989Z",
+  "generatedAt": "2026-10-26T10:07:29.178Z",
   "generator": "montra-index build-index.mjs",
   "signingKeyId": "4009b8eb68228f4020e56ddfcfd5b625",
   "apps": [
@@ -38,7 +38,7 @@
       "addedAt": "2026-10-08",
       "icon": "icons/accrescent.png",
       "screenshots": [],
-      "downloadCount": 32222,
+      "downloadCount": 32498,
       "signingCertSha256": "06:7a:40:c4:19:3a:ad:51:ac:87:f9:dd:fd:eb:b1:5e:24:a1:85:0b:ab:fa:48:21:c2:8c:5c:25:c3:fd:c0:71",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -55,7 +55,7 @@
         "android.permission.WAKE_LOCK",
         "app.accrescent.client.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.28.1",
         "versionCode": 55,
@@ -80,7 +80,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:48.044Z"
+            "verifiedAt": "2026-10-26T10:04:56.426Z"
           }
         ]
       },
@@ -139,7 +139,7 @@
         "screenshots/afwall/1.webp",
         "screenshots/afwall/2.webp"
       ],
-      "downloadCount": 1520,
+      "downloadCount": 1569,
       "signingCertSha256": "71:5e:26:c1:25:4e:70:f4:45:43:45:3a:f8:d6:af:9c:22:fe:ee:2c:f1:19:1d:e1:5e:6a:9f:2d:f7:e2:a2:48",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -158,7 +158,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "dev.ukanth.ufirewall.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "5.0.0",
         "versionCode": 20261004,
@@ -178,7 +178,7 @@
             "minSdk": 23,
             "targetSdk": 36,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-25T19:01:48.379Z"
+            "verifiedAt": "2026-10-26T10:04:56.965Z"
           }
         ]
       },
@@ -241,7 +241,7 @@
         "screenshots/app-manager/2.webp",
         "screenshots/app-manager/3.webp"
       ],
-      "downloadCount": 61316,
+      "downloadCount": 61879,
       "signingCertSha256": "32:0c:0c:0f:e8:ce:f8:73:f2:b5:54:cb:88:c8:37:f1:51:25:89:dc:ce:d5:0c:5b:25:c4:3c:04:59:67:60:ab",
       "permissions": [
         "android.permission.ACCESS_HIDDEN_PROFILES",
@@ -308,7 +308,7 @@
         "com.termux.permission.RUN_COMMAND",
         "io.github.muntashirakon.AppManager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "4.1.1",
         "versionCode": 451,
@@ -333,7 +333,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:49.136Z"
+            "verifiedAt": "2026-10-26T10:04:57.537Z"
           }
         ]
       },
@@ -375,13 +375,13 @@
       "addedAt": "2026-10-08",
       "icon": "icons/appverifier.png",
       "screenshots": [],
-      "downloadCount": 46100,
+      "downloadCount": 46145,
       "signingCertSha256": "3a:04:a8:0b:2a:88:33:4c:74:74:85:f0:b2:15:16:40:a3:8b:b3:d2:d7:3a:8e:ab:81:df:50:3e:0f:02:02:b2",
       "permissions": [
         "android.permission.QUERY_ALL_PACKAGES",
         "dev.soupslurpr.appverifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "13",
         "versionCode": 13,
@@ -406,7 +406,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:47.985Z"
+            "verifiedAt": "2026-10-26T10:04:56.401Z"
           }
         ]
       },
@@ -456,7 +456,7 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 123323,
+      "downloadCount": 126139,
       "signingCertSha256": "5b:a2:56:3e:0d:13:fa:e2:ab:a0:67:d1:c2:30:cd:1c:86:3a:93:00:5c:10:d6:48:ce:5b:33:17:92:aa:0a:f1",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -472,7 +472,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "org.azahar_emu.azahar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2126.2-vanilla",
         "versionCode": 33989150,
@@ -495,7 +495,7 @@
               "arm64-v8a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:50.675Z"
+            "verifiedAt": "2026-10-26T10:04:59.994Z"
           }
         ]
       },
@@ -541,7 +541,7 @@
         "screenshots/breezy-weather/2.webp",
         "screenshots/breezy-weather/3.webp"
       ],
-      "downloadCount": 129922,
+      "downloadCount": 130440,
       "signingCertSha256": "29:d4:35:f7:0a:a9:ae:c3:c1:fa:ff:7f:7f:fa:6e:15:78:50:88:d8:7f:06:ec:fc:ab:9c:3c:c6:2d:c2:69:d8",
       "permissions": [
         "android.permission.ACCESS_BACKGROUND_LOCATION",
@@ -563,7 +563,7 @@
         "com.android.alarm.permission.SET_ALARM",
         "org.breezyweather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "6.2.2",
         "versionCode": 60202,
@@ -585,7 +585,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:01:51.597Z"
+            "verifiedAt": "2026-10-26T10:05:00.466Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -600,7 +600,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:01:51.597Z"
+            "verifiedAt": "2026-10-26T10:05:00.466Z"
           }
         ]
       },
@@ -659,7 +659,7 @@
         "screenshots/canta/2.webp",
         "screenshots/canta/3.webp"
       ],
-      "downloadCount": 69302,
+      "downloadCount": 70742,
       "signingCertSha256": "0a:26:40:31:7c:43:27:21:88:c3:e1:31:94:c1:54:60:69:1f:12:c3:9e:a1:9b:ba:72:7d:d6:7f:b5:62:89:d4",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -670,7 +670,7 @@
         "io.github.samolego.canta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "4.0.0",
         "versionCode": 226,
@@ -695,7 +695,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:49.258Z"
+            "verifiedAt": "2026-10-26T10:04:58.039Z"
           }
         ]
       },
@@ -741,7 +741,7 @@
         "screenshots/capyreader/2.webp",
         "screenshots/capyreader/3.webp"
       ],
-      "downloadCount": 2639,
+      "downloadCount": 2696,
       "signingCertSha256": "67:43:73:75:a1:61:f4:20:21:9d:df:f1:f2:81:df:29:2c:cb:5f:05:7a:a0:ca:f5:65:68:a7:82:b2:81:64:65",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -754,7 +754,7 @@
         "android.permission.WAKE_LOCK",
         "com.capyreader.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2026.10.1214",
         "versionCode": 1214,
@@ -779,7 +779,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:50.821Z"
+            "verifiedAt": "2026-10-26T10:04:59.460Z"
           }
         ]
       },
@@ -829,7 +829,7 @@
         "screenshots/catima/2.webp",
         "screenshots/catima/3.webp"
       ],
-      "downloadCount": 5301,
+      "downloadCount": 5422,
       "signingCertSha256": "d4:05:cd:69:ed:e4:c2:20:74:c3:28:fb:82:56:89:a8:4a:b3:fc:a4:b3:fd:f0:b6:cc:13:33:af:62:c6:7e:b3",
       "permissions": [
         "android.permission.BLUETOOTH",
@@ -843,7 +843,7 @@
         "android.permission.READ_EXTERNAL_STORAGE",
         "me.hackerchick.catima.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.45.2",
         "versionCode": 1006,
@@ -868,7 +868,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:51.136Z"
+            "verifiedAt": "2026-10-26T10:05:00.136Z"
           }
         ]
       },
@@ -912,7 +912,7 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 99997,
+      "downloadCount": 101005,
       "signingCertSha256": "63:3f:a4:1d:82:11:d6:d0:91:6a:81:9b:89:66:8c:6d:e9:2e:64:23:2d:a6:7f:9d:16:fd:81:c3:b7:e9:23:ff",
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
@@ -961,7 +961,7 @@
         "org.cromite.cromite.TOS_ACKED",
         "org.cromite.cromite.permission.READ_WRITE_BOOKMARK_FOLDERS"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "153.0.8010.37",
         "versionCode": 801003702,
@@ -983,7 +983,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:00.770Z"
+            "verifiedAt": "2026-10-26T10:05:09.587Z"
           }
         ]
       },
@@ -1042,7 +1042,7 @@
         "screenshots/databackup/2.webp",
         "screenshots/databackup/3.webp"
       ],
-      "downloadCount": 52828,
+      "downloadCount": 52900,
       "signingCertSha256": "7f:b9:ec:20:77:05:a0:fb:b9:ca:61:25:3e:59:63:64:c7:27:62:86:8a:83:81:52:39:e7:ca:19:23:ac:b3:9f",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -1058,7 +1058,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "com.xayah.databackup.foss.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.0.12",
         "versionCode": 3501194,
@@ -1080,7 +1080,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:01:54.660Z"
+            "verifiedAt": "2026-10-26T10:05:05.111Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -1095,7 +1095,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:01:54.660Z"
+            "verifiedAt": "2026-10-26T10:05:05.111Z"
           },
           {
             "abi": "x86_64",
@@ -1110,7 +1110,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:54.660Z"
+            "verifiedAt": "2026-10-26T10:05:05.111Z"
           },
           {
             "abi": "x86",
@@ -1125,7 +1125,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-25T19:01:54.660Z"
+            "verifiedAt": "2026-10-26T10:05:05.111Z"
           }
         ]
       },
@@ -1181,7 +1181,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/devilutionx.webp",
       "screenshots": [],
-      "downloadCount": 14594,
+      "downloadCount": 14760,
       "signingCertSha256": "f9:44:67:3f:7a:19:4b:c1:7b:c6:90:cf:2f:b2:dc:3a:27:96:7b:b2:ad:d4:c5:7d:54:f3:90:96:ad:10:84:3d",
       "permissions": [
         "android.permission.INTERNET",
@@ -1189,7 +1189,7 @@
         "android.permission.VIBRATE",
         "android.permission.WRITE_EXTERNAL_STORAGE"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.5.5",
         "versionCode": 32,
@@ -1214,7 +1214,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:52.819Z"
+            "verifiedAt": "2026-10-26T10:05:01.850Z"
           }
         ]
       },
@@ -1259,7 +1259,7 @@
         "screenshots/droidify/2.webp",
         "screenshots/droidify/3.webp"
       ],
-      "downloadCount": 70710,
+      "downloadCount": 71344,
       "signingCertSha256": "ed:88:59:c5:5a:f3:11:16:26:58:b9:4a:f9:82:b9:f0:91:dc:d2:76:28:d4:de:34:86:d1:21:7e:bf:3c:99:35",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -1280,7 +1280,7 @@
         "com.looker.droidify.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.7.8",
         "versionCode": 780,
@@ -1305,7 +1305,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:54.358Z"
+            "verifiedAt": "2026-10-26T10:05:03.277Z"
           }
         ]
       },
@@ -1356,7 +1356,7 @@
         "screenshots/droiddeck/2.webp",
         "screenshots/droiddeck/3.webp"
       ],
-      "downloadCount": 109187,
+      "downloadCount": 125916,
       "signingCertSha256": "b2:41:ea:7d:77:82:2d:39:b8:9d:32:27:e0:6f:3e:cf:62:ad:ec:6c:bf:d3:8a:d0:61:96:78:79:91:b5:d3:f0",
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
@@ -1382,7 +1382,7 @@
         "org.khronos.openxr.permission.OPENXR",
         "org.khronos.openxr.permission.OPENXR_SYSTEM"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.6.0",
         "versionCode": 15,
@@ -1404,7 +1404,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:01:54.269Z"
+            "verifiedAt": "2026-10-26T10:05:03.180Z"
           }
         ]
       },
@@ -1455,7 +1455,7 @@
         "screenshots/ente/2.webp",
         "screenshots/ente/3.webp"
       ],
-      "downloadCount": 7420,
+      "downloadCount": 7780,
       "signingCertSha256": "35:ed:56:81:b7:0b:b3:bd:35:d9:0d:85:6a:f5:69:4c:50:4d:ef:46:aa:d8:3f:77:7b:1c:67:5c:f4:51:35:0b",
       "permissions": [
         "android.permission.ACCESS_MEDIA_LOCATION",
@@ -1481,7 +1481,7 @@
         "com.google.android.c2dm.permission.RECEIVE",
         "io.ente.photos.independent.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.3.66",
         "versionCode": 2317,
@@ -1504,7 +1504,7 @@
               "arm64-v8a",
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:00.581Z"
+            "verifiedAt": "2026-10-26T10:05:09.351Z"
           }
         ]
       },
@@ -1555,7 +1555,7 @@
         "screenshots/f-droid/2.webp",
         "screenshots/f-droid/3.webp"
       ],
-      "downloadCount": 69674,
+      "downloadCount": 69829,
       "signingCertSha256": "43:23:8d:51:2c:1e:5e:b2:d6:56:9f:4a:3a:fb:f5:52:34:18:b8:2e:0a:3e:d1:55:27:70:ab:b9:a9:c9:cc:ab",
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
@@ -1585,7 +1585,7 @@
         "android.permission.WRITE_SETTINGS",
         "org.fdroid.fdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.18.0",
         "versionCode": 1018050,
@@ -1605,7 +1605,7 @@
             "minSdk": 23,
             "targetSdk": 28,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-25T19:01:55.887Z"
+            "verifiedAt": "2026-10-26T10:05:04.791Z"
           }
         ]
       },
@@ -1655,7 +1655,7 @@
         "screenshots/fairemail/2.webp",
         "screenshots/fairemail/3.webp"
       ],
-      "downloadCount": 6042,
+      "downloadCount": 6874,
       "signingCertSha256": "e0:20:67:24:9f:5a:35:0e:0e:c7:03:fe:9d:f4:dd:68:2e:02:91:a0:9f:0c:2e:04:10:50:bb:e7:c0:64:f5:c9",
       "permissions": [
         "android.permission.ACCESS_LOCAL_NETWORK",
@@ -1699,7 +1699,7 @@
         "me.everything.badger.permission.BADGE_COUNT_READ",
         "me.everything.badger.permission.BADGE_COUNT_WRITE"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.2339",
         "versionCode": 2339,
@@ -1724,7 +1724,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:01:57.852Z"
+            "verifiedAt": "2026-10-26T10:05:07.748Z"
           }
         ]
       },
@@ -1768,9 +1768,10 @@
       "addedAt": "2026-10-07",
       "icon": "icons/findroid.png",
       "screenshots": [],
-      "downloadCount": 10203,
+      "downloadCount": 1136,
       "signingCertSha256": "ec:c1:20:86:db:dd:b5:fa:a3:e1:b6:50:d1:61:fb:62:3f:5f:24:18:89:92:c1:17:33:39:cd:5a:8b:2f:86:89",
       "permissions": [
+        "android.permission.ACCESS_LOCAL_NETWORK",
         "android.permission.ACCESS_NETWORK_STATE",
         "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
         "android.permission.FOREGROUND_SERVICE",
@@ -1780,51 +1781,51 @@
         "android.permission.WAKE_LOCK",
         "dev.jdtech.jellyfin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
-        "versionName": "1.1.0",
-        "versionCode": 33,
-        "tag": "v1.1.0",
-        "publishedAt": "2026-07-18T21:41:02Z",
-        "releaseUrl": "https://github.com/jarnedemeulemeester/findroid/releases/tag/v1.1.0",
-        "changelog": "# New features\r\n- Edit `mpv.conf` and `input.conf` directly in the settings.\r\n\r\n\r\n# Improvements\r\n- Updated mpv and use system fonts instead of hardwired font.\r\n\r\n# Fixes\r\n- Fixed mpv seeking with millisecond precision.\r\n- Fixed a resource leak in the downloader.",
+        "versionName": "1.2.0",
+        "versionCode": 34,
+        "tag": "v1.2.0",
+        "publishedAt": "2026-10-25T23:13:07Z",
+        "releaseUrl": "https://github.com/jarnedemeulemeester/findroid/releases/tag/v1.2.0",
+        "changelog": "⚠️ This update requires Jellyfin Server 12.0 or higher. Please update your server before installing.\r\n\r\n# New features\r\n- Full support for Jellyfin 12\r\n- Added runtime permission requests during setup, e.g. for local network access, with permission management in the settings.\r\n\r\n# Improvements\r\n- Migrated to Navigation 3.\r\n- Updated the Jellyfin SDK to 1.9.2.\r\n- Target Android 17 and raised the minimum supported version to 10.\r\n\r\n# Fixes\r\n- Fixed a crash when showing multiple cast roles.\r\n- Fixed seasons not showing on cards in Home.\r\n- Fixed predictive back transitions.\r\n\r\n# Translations\r\n- Updated translations for Portuguese, Portuguese (Brazil) and Spanish.",
         "assets": [
           {
             "abi": "arm64-v8a",
-            "url": "https://github.com/jarnedemeulemeester/findroid/releases/download/v1.1.0/findroid-v1.1.0-libre-arm64-v8a.apk",
-            "sha256": "42594a3f84972caf0ff3561b5ad1ea1d2c0dbdcdd1bfba17781c93b046621a54",
-            "size": 38696636,
+            "url": "https://github.com/jarnedemeulemeester/findroid/releases/download/v1.2.0/findroid-v1.2.0-libre-arm64-v8a.apk",
+            "sha256": "f84b2b292c98e34bbcb7fd44b0d1d02c45baea4fb5f2f3cdeecd7dc6c69dbd96",
+            "size": 38494038,
             "signingCertSha256": "ec:c1:20:86:db:dd:b5:fa:a3:e1:b6:50:d1:61:fb:62:3f:5f:24:18:89:92:c1:17:33:39:cd:5a:8b:2f:86:89",
-            "versionCode": 33,
-            "versionName": "1.1.0",
-            "minSdk": 28,
-            "targetSdk": 36,
+            "versionCode": 34,
+            "versionName": "1.2.0",
+            "minSdk": 29,
+            "targetSdk": 37,
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:01:59.092Z"
+            "verifiedAt": "2026-10-26T10:05:08.224Z"
           },
           {
             "abi": "armeabi-v7a",
-            "url": "https://github.com/jarnedemeulemeester/findroid/releases/download/v1.1.0/findroid-v1.1.0-libre-armeabi-v7a.apk",
-            "sha256": "827ef6267eb32e92d19c1466e1ea2d7d7a7d34c9454556cd6d9b4fc1709d73d6",
-            "size": 36279100,
+            "url": "https://github.com/jarnedemeulemeester/findroid/releases/download/v1.2.0/findroid-v1.2.0-libre-armeabi-v7a.apk",
+            "sha256": "d0068fe81480a990528cbe3df52ba759d8004576ce4df60fc76782fca1da24ed",
+            "size": 36076502,
             "signingCertSha256": "ec:c1:20:86:db:dd:b5:fa:a3:e1:b6:50:d1:61:fb:62:3f:5f:24:18:89:92:c1:17:33:39:cd:5a:8b:2f:86:89",
-            "versionCode": 33,
-            "versionName": "1.1.0",
-            "minSdk": 28,
-            "targetSdk": 36,
+            "versionCode": 34,
+            "versionName": "1.2.0",
+            "minSdk": 29,
+            "targetSdk": 37,
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:01:59.092Z"
+            "verifiedAt": "2026-10-26T10:05:08.224Z"
           }
         ]
       },
       "artifact": {
-        "url": "https://github.com/jarnedemeulemeester/findroid/releases/download/v1.1.0/findroid-v1.1.0-libre-arm64-v8a.apk",
-        "sha256": "42594a3f84972caf0ff3561b5ad1ea1d2c0dbdcdd1bfba17781c93b046621a54",
-        "size": 38696636,
+        "url": "https://github.com/jarnedemeulemeester/findroid/releases/download/v1.2.0/findroid-v1.2.0-libre-arm64-v8a.apk",
+        "sha256": "f84b2b292c98e34bbcb7fd44b0d1d02c45baea4fb5f2f3cdeecd7dc6c69dbd96",
+        "size": 38494038,
         "abi": "arm64-v8a"
       }
     },
@@ -1864,14 +1865,14 @@
         "screenshots/flashdim/2.webp",
         "screenshots/flashdim/3.webp"
       ],
-      "downloadCount": 3766,
+      "downloadCount": 3780,
       "signingCertSha256": "ea:78:69:1c:ba:41:86:00:a4:56:32:89:b1:33:f9:d0:0d:3d:0c:24:a5:f5:4c:5c:59:ee:1c:95:2b:b0:e1:1d",
       "permissions": [
         "android.permission.FLASHLIGHT",
         "android.permission.VIBRATE",
         "com.cyb3rko.flashdim.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.5.3",
         "versionCode": 35,
@@ -1891,7 +1892,7 @@
             "minSdk": 33,
             "targetSdk": 37,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-25T19:01:58.960Z"
+            "verifiedAt": "2026-10-26T10:05:09.392Z"
           }
         ]
       },
@@ -1934,7 +1935,7 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 74247,
+      "downloadCount": 74777,
       "signingCertSha256": "07:74:79:4c:54:c7:e4:63:00:47:54:e2:ca:ba:43:2a:20:57:d9:17:e6:4c:5e:24:46:06:06:a7:47:1b:13:95",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -1948,7 +1949,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "com.flycast.emulator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "v2.7-1-g44e4c7b50",
         "versionCode": 3302,
@@ -1973,7 +1974,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:01.429Z"
+            "verifiedAt": "2026-10-26T10:05:10.473Z"
           }
         ]
       },
@@ -2016,14 +2017,14 @@
       "addedAt": "2026-10-07",
       "icon": "icons/forgetmenot.png",
       "screenshots": [],
-      "downloadCount": 1722,
+      "downloadCount": 1724,
       "signingCertSha256": "b8:06:29:ec:64:03:c7:99:ac:39:dc:d1:7d:c2:79:12:63:85:c5:81:c3:45:3b:9a:95:12:78:3f:e2:f5:dc:11",
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
         "android.permission.VIBRATE",
         "android.permission.WAKE_LOCK"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.9.0",
         "versionCode": 18,
@@ -2043,7 +2044,7 @@
             "minSdk": 21,
             "targetSdk": 30,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-25T19:02:01.007Z"
+            "verifiedAt": "2026-10-26T10:05:11.001Z"
           }
         ]
       },
@@ -2087,7 +2088,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/greenstash.png",
       "screenshots": [],
-      "downloadCount": 1514,
+      "downloadCount": 1518,
       "signingCertSha256": "5d:fe:06:da:0f:e3:b0:81:3f:3f:3d:c5:30:56:99:c2:db:b9:df:db:ab:13:49:da:7c:41:c5:9d:2f:cf:31:9c",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -2099,7 +2100,7 @@
         "android.permission.WAKE_LOCK",
         "com.starry.greenstash.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "4.4.0",
         "versionCode": 440,
@@ -2124,7 +2125,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:01.808Z"
+            "verifiedAt": "2026-10-26T10:05:10.834Z"
           }
         ]
       },
@@ -2168,7 +2169,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/gymmane.png",
       "screenshots": [],
-      "downloadCount": 904,
+      "downloadCount": 1365,
       "signingCertSha256": "3b:c3:a9:b2:f6:50:ca:20:8c:6c:84:d5:2c:1a:9c:bd:6e:67:82:e6:90:fa:2e:8f:30:64:80:a4:c9:ca:a0:95",
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
@@ -2185,7 +2186,7 @@
         "android.permission.health.READ_STEPS",
         "com.gymmane.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.7.0",
         "versionCode": 83,
@@ -2207,7 +2208,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:04.546Z"
+            "verifiedAt": "2026-10-26T10:05:16.017Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2222,7 +2223,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:04.546Z"
+            "verifiedAt": "2026-10-26T10:05:16.017Z"
           },
           {
             "abi": "x86_64",
@@ -2237,7 +2238,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:04.546Z"
+            "verifiedAt": "2026-10-26T10:05:16.017Z"
           }
         ]
       },
@@ -2304,7 +2305,7 @@
         "screenshots/hail/2.webp",
         "screenshots/hail/3.webp"
       ],
-      "downloadCount": 60544,
+      "downloadCount": 61065,
       "signingCertSha256": "17:c2:46:3c:1e:00:2b:99:cb:50:2c:dc:da:06:7e:83:52:c6:30:ff:c4:d7:af:3f:d4:42:92:6e:54:dd:3e:78",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -2328,7 +2329,7 @@
         "com.rosan.dhizuku.permission.API",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.11.0",
         "versionCode": 35,
@@ -2353,7 +2354,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:02.601Z"
+            "verifiedAt": "2026-10-26T10:05:12.241Z"
           }
         ]
       },
@@ -2399,7 +2400,7 @@
         "screenshots/harmonic/2.webp",
         "screenshots/harmonic/3.webp"
       ],
-      "downloadCount": 755,
+      "downloadCount": 116,
       "signingCertSha256": "fb:12:db:f6:d0:69:25:12:ed:70:18:15:06:37:a1:93:2e:ab:09:d6:7d:bf:99:00:45:70:96:a5:52:f8:8e:c6",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -2411,34 +2412,39 @@
         "android.permission.WAKE_LOCK",
         "com.simon.harmonichackernews.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
-        "versionName": "3.1.2",
-        "versionCode": 80,
-        "tag": "v3.1.2",
-        "publishedAt": "2026-07-30T12:06:30Z",
-        "releaseUrl": "https://github.com/SimonHalvdansson/Harmonic-HN/releases/tag/v3.1.2",
-        "changelog": "Only minor changes since 3.1.2, found out I wanted to fix them before releasing 3.1 wide. Will put this up on Google Play and check for any crashes as release goes wider.",
+        "versionName": "3.2",
+        "versionCode": 81,
+        "tag": "v3.2",
+        "publishedAt": "2026-10-25T20:52:48Z",
+        "releaseUrl": "https://github.com/SimonHalvdansson/Harmonic-HN/releases/tag/v3.2",
+        "changelog": "Full compose rewrite, a lot of work went into this. Currently rolled out to 5% of Google Play users as we look for issues but after months of iterating and testing, I feel this is ready to release widely now, but we should expect some point releases in the near future as feedback comes in.",
         "assets": [
           {
             "abi": "universal",
-            "url": "https://github.com/SimonHalvdansson/Harmonic-HN/releases/download/v3.1.2/app-release.apk",
-            "sha256": "de65ca1f2ba6c6287cc464c4883c8db32d6b562bf56614aff0fe43869f4e1f00",
-            "size": 7551235,
+            "url": "https://github.com/SimonHalvdansson/Harmonic-HN/releases/download/v3.2/app-release.apk",
+            "sha256": "d54444c63ce68d8e1f834446a886936c688a7b4e65eaddfba4dcce3da29c6f06",
+            "size": 12896665,
             "signingCertSha256": "fb:12:db:f6:d0:69:25:12:ed:70:18:15:06:37:a1:93:2e:ab:09:d6:7d:bf:99:00:45:70:96:a5:52:f8:8e:c6",
-            "versionCode": 80,
-            "versionName": "3.1.2",
+            "versionCode": 81,
+            "versionName": "3.2",
             "minSdk": 26,
             "targetSdk": 37,
-            "nativeAbis": [],
-            "verifiedAt": "2026-10-25T19:02:02.746Z"
+            "nativeAbis": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "verifiedAt": "2026-10-26T10:05:12.381Z"
           }
         ]
       },
       "artifact": {
-        "url": "https://github.com/SimonHalvdansson/Harmonic-HN/releases/download/v3.1.2/app-release.apk",
-        "sha256": "de65ca1f2ba6c6287cc464c4883c8db32d6b562bf56614aff0fe43869f4e1f00",
-        "size": 7551235,
+        "url": "https://github.com/SimonHalvdansson/Harmonic-HN/releases/download/v3.2/app-release.apk",
+        "sha256": "d54444c63ce68d8e1f834446a886936c688a7b4e65eaddfba4dcce3da29c6f06",
+        "size": 12896665,
         "abi": "universal"
       }
     },
@@ -2479,7 +2485,7 @@
         "screenshots/imagetoolbox/2.webp",
         "screenshots/imagetoolbox/3.webp"
       ],
-      "downloadCount": 17565,
+      "downloadCount": 17638,
       "signingCertSha256": "20:d7:68:9d:e0:87:4f:00:01:5e:a3:e3:1f:a0:67:c1:5c:03:45:7d:36:2d:41:d5:e7:93:db:3a:86:4f:a5:34",
       "permissions": [
         "android.permission.ACCESS_MEDIA_LOCATION",
@@ -2498,7 +2504,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "ru.tech.imageresizershrinker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "4.2.0-foss",
         "versionCode": 267,
@@ -2520,7 +2526,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:09.879Z"
+            "verifiedAt": "2026-10-26T10:05:21.074Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2535,7 +2541,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:09.879Z"
+            "verifiedAt": "2026-10-26T10:05:21.074Z"
           }
         ]
       },
@@ -2575,7 +2581,7 @@
         "screenshots/innertune/4.webp",
         "screenshots/innertune/5.webp"
       ],
-      "downloadCount": 308034,
+      "downloadCount": 308190,
       "signingCertSha256": "5d:55:f9:08:6e:95:43:ee:4d:9e:5f:50:bd:60:59:5e:d4:e9:ac:84:2d:e3:34:fd:e9:00:f3:c6:16:e3:2a:f2",
       "permissions": [
         "android.permission.ACCESS_ADSERVICES_AD_ID",
@@ -2592,7 +2598,7 @@
         "com.google.android.gms.permission.AD_ID",
         "com.zionhuang.music.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.5.10",
         "versionCode": 26,
@@ -2614,7 +2620,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:06.945Z"
+            "verifiedAt": "2026-10-26T10:05:18.272Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -2629,7 +2635,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:06.945Z"
+            "verifiedAt": "2026-10-26T10:05:18.272Z"
           },
           {
             "abi": "x86_64",
@@ -2644,7 +2650,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:06.945Z"
+            "verifiedAt": "2026-10-26T10:05:18.272Z"
           },
           {
             "abi": "x86",
@@ -2659,7 +2665,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-25T19:02:06.945Z"
+            "verifiedAt": "2026-10-26T10:05:18.272Z"
           }
         ]
       },
@@ -2718,7 +2724,7 @@
         "screenshots/install-with-options/2.webp",
         "screenshots/install-with-options/3.webp"
       ],
-      "downloadCount": 276906,
+      "downloadCount": 277599,
       "signingCertSha256": "e6:56:5e:92:74:0a:44:d5:55:0a:03:dc:34:f1:b2:a7:36:f8:b1:3f:60:a2:a5:f2:9f:1f:b9:36:4b:6f:c5:6e",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -2728,7 +2734,7 @@
         "dev.zwander.installwithoptions.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.9.2",
         "versionCode": 27,
@@ -2753,7 +2759,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:04.071Z"
+            "verifiedAt": "2026-10-26T10:05:13.675Z"
           }
         ]
       },
@@ -2800,7 +2806,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/jellyfin.png",
       "screenshots": [],
-      "downloadCount": 18198,
+      "downloadCount": 18316,
       "signingCertSha256": "d8:81:79:6e:d2:a6:7f:f6:ef:9f:67:68:28:72:3c:6b:1f:a1:8e:09:38:89:62:cb:a4:ab:c4:a5:94:a6:91:31",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -2816,7 +2822,7 @@
         "android.permission.WAKE_LOCK",
         "org.jellyfin.mobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.7.3",
         "versionCode": 2070399,
@@ -2841,7 +2847,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:06.330Z"
+            "verifiedAt": "2026-10-26T10:05:15.959Z"
           }
         ]
       },
@@ -2888,7 +2894,7 @@
         "screenshots/jerboa/1.webp",
         "screenshots/jerboa/2.webp"
       ],
-      "downloadCount": 2678,
+      "downloadCount": 2721,
       "signingCertSha256": "ea:71:95:cf:ce:63:8a:e6:b1:a8:00:2d:dc:0d:48:63:36:60:95:ea:5b:8d:95:c1:cd:5e:25:db:0f:e2:e7:c3",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -2901,7 +2907,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "com.jerboa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.0.88-fdroid",
         "versionCode": 88,
@@ -2926,7 +2932,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:06.100Z"
+            "verifiedAt": "2026-10-26T10:05:17.555Z"
           }
         ]
       },
@@ -2973,7 +2979,7 @@
         "screenshots/keepassdx/2.webp",
         "screenshots/keepassdx/3.webp"
       ],
-      "downloadCount": 12672,
+      "downloadCount": 12990,
       "signingCertSha256": "7d:55:b8:af:21:03:81:aa:bf:96:0f:07:e1:7c:f7:85:7b:6d:2a:64:2c:a2:da:6b:f0:bd:f1:b2:00:36:2f:04",
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
@@ -2986,7 +2992,7 @@
         "android.permission.VIBRATE",
         "com.kunzisoft.keepass.libre.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "4.5.6",
         "versionCode": 45600,
@@ -3011,7 +3017,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:08.250Z"
+            "verifiedAt": "2026-10-26T10:05:18.305Z"
           }
         ]
       },
@@ -3063,7 +3069,7 @@
         "screenshots/keymapper/2.webp",
         "screenshots/keymapper/3.webp"
       ],
-      "downloadCount": 2828,
+      "downloadCount": 3126,
       "signingCertSha256": "2f:41:a8:16:b8:d6:0a:a1:d7:cd:49:76:b4:45:2b:03:35:e5:83:d4:f4:ab:14:07:1f:30:31:77:85:0c:e4:60",
       "permissions": [
         "android.permission.ACCESS_FINE_LOCATION",
@@ -3100,7 +3106,7 @@
         "io.github.sds100.keymapper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "4.6.2-foss",
         "versionCode": 288,
@@ -3125,7 +3131,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:08.005Z"
+            "verifiedAt": "2026-10-26T10:05:19.305Z"
           }
         ]
       },
@@ -3176,7 +3182,7 @@
         "screenshots/koreader/2.webp",
         "screenshots/koreader/3.webp"
       ],
-      "downloadCount": 97078,
+      "downloadCount": 97792,
       "signingCertSha256": "fd:49:2a:4f:e0:01:f1:70:58:b8:26:da:43:58:a1:dc:ea:c3:8d:26:68:6f:34:25:22:c5:a4:97:bc:d4:dc:cc",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -3189,7 +3195,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "android.permission.WRITE_SETTINGS"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "v2026.07.1",
         "versionCode": 119462,
@@ -3211,7 +3217,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:10.368Z"
+            "verifiedAt": "2026-10-26T10:05:21.962Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -3226,7 +3232,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:10.369Z"
+            "verifiedAt": "2026-10-26T10:05:21.962Z"
           }
         ]
       },
@@ -3272,7 +3278,7 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 26242,
+      "downloadCount": 26467,
       "signingCertSha256": "4f:a1:cb:59:ea:4d:8c:a8:55:53:15:eb:a2:15:20:5f:66:79:75:ba:89:85:bb:e7:36:90:4f:21:bf:eb:be:af",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -3289,7 +3295,7 @@
         "com.android.providers.tv.permission.WRITE_EPG_DATA",
         "com.swordfish.lemuroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.17.0",
         "versionCode": 252,
@@ -3314,7 +3320,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:09.628Z"
+            "verifiedAt": "2026-10-26T10:05:19.857Z"
           }
         ]
       },
@@ -3357,7 +3363,7 @@
       "addedAt": "2026-10-08",
       "icon": "icons/libchecker.png",
       "screenshots": [],
-      "downloadCount": 10025,
+      "downloadCount": 10136,
       "signingCertSha256": "b1:2e:1c:fb:fe:28:58:49:d6:74:00:18:02:2e:ec:22:09:fe:b2:8c:26:85:df:6f:4d:2f:97:db:de:3b:57:75",
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
@@ -3367,7 +3373,7 @@
         "com.android.permission.GET_INSTALLED_APPS",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.5.4.5696014",
         "versionCode": 2671,
@@ -3387,7 +3393,7 @@
             "minSdk": 24,
             "targetSdk": 37,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-25T19:02:09.784Z"
+            "verifiedAt": "2026-10-26T10:05:20.859Z"
           }
         ]
       },
@@ -3434,7 +3440,7 @@
         "screenshots/libretube/2.webp",
         "screenshots/libretube/3.webp"
       ],
-      "downloadCount": 87823,
+      "downloadCount": 88401,
       "signingCertSha256": "72:0c:4f:ce:cf:73:8a:41:d0:33:b9:fb:e0:be:f9:7a:c2:32:03:0c:e9:3e:27:4d:2e:0a:e2:32:e4:4e:ea:ce",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -3447,7 +3453,7 @@
         "android.permission.WAKE_LOCK",
         "com.github.libretube.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "32.1",
         "versionCode": 72,
@@ -3467,7 +3473,7 @@
             "minSdk": 26,
             "targetSdk": 36,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-25T19:02:11.214Z"
+            "verifiedAt": "2026-10-26T10:05:21.758Z"
           }
         ]
       },
@@ -3515,14 +3521,14 @@
       "addedAt": "2026-10-07",
       "icon": "icons/luanti.png",
       "screenshots": [],
-      "downloadCount": 10276,
+      "downloadCount": 10363,
       "signingCertSha256": "53:23:d1:a1:b4:f6:8b:e9:76:39:ee:c6:67:ed:f7:e4:e1:74:1a:8c:f5:22:3d:17:92:da:5d:1f:1d:6e:41:a7",
       "permissions": [
         "android.permission.INTERNET",
         "android.permission.POST_NOTIFICATIONS",
         "net.minetest.minetest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "5.17.0",
         "versionCode": 5170000,
@@ -3544,7 +3550,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:13.575Z"
+            "verifiedAt": "2026-10-26T10:05:25.597Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -3559,7 +3565,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:13.575Z"
+            "verifiedAt": "2026-10-26T10:05:25.597Z"
           },
           {
             "abi": "x86_64",
@@ -3574,7 +3580,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:13.575Z"
+            "verifiedAt": "2026-10-26T10:05:25.597Z"
           }
         ]
       },
@@ -3627,7 +3633,7 @@
         "screenshots/magisk/1.webp",
         "screenshots/magisk/2.webp"
       ],
-      "downloadCount": 4415959,
+      "downloadCount": 4427225,
       "signingCertSha256": "b4:cb:83:b4:da:d9:9f:99:7d:be:87:2f:01:3a:a1:6c:14:ee:c4:1d:16:70:21:f3:71:f7:e1:33:0f:27:3e:e6",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -3642,7 +3648,7 @@
         "android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION",
         "android.permission.WRITE_EXTERNAL_STORAGE"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "30.7",
         "versionCode": 30700,
@@ -3667,7 +3673,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:11.997Z"
+            "verifiedAt": "2026-10-26T10:05:22.905Z"
           }
         ]
       },
@@ -3726,7 +3732,7 @@
         "screenshots/materialfiles/2.webp",
         "screenshots/materialfiles/3.webp"
       ],
-      "downloadCount": 48723,
+      "downloadCount": 49141,
       "signingCertSha256": "87:3b:9b:60:c7:7c:f7:f3:cd:5f:ae:66:d0:fe:11:2c:4a:86:97:3e:11:8e:e8:a2:9c:34:6c:4c:67:3c:97:f0",
       "permissions": [
         "android.permission.ACCESS_ADSERVICES_AD_ID",
@@ -3749,7 +3755,7 @@
         "me.zhanghai.android.files.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.7.5",
         "versionCode": 40,
@@ -3774,7 +3780,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:12.142Z"
+            "verifiedAt": "2026-10-26T10:05:23.344Z"
           }
         ]
       },
@@ -3823,7 +3829,7 @@
         "screenshots/metrolist/2.webp",
         "screenshots/metrolist/3.webp"
       ],
-      "downloadCount": 47948,
+      "downloadCount": 48413,
       "signingCertSha256": "e3:2c:4f:2e:fd:7e:e9:54:8f:ae:e2:2e:45:a6:04:25:f7:72:8a:55:a6:10:fd:5e:8a:b9:36:4f:74:b7:bc:c9",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -3839,7 +3845,7 @@
         "android.permission.WAKE_LOCK",
         "com.metrolist.music.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "13.7.0",
         "versionCode": 153,
@@ -3864,7 +3870,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:12.808Z"
+            "verifiedAt": "2026-10-26T10:05:24.249Z"
           }
         ]
       },
@@ -3917,7 +3923,7 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 41388,
+      "downloadCount": 41501,
       "signingCertSha256": "6a:a8:0f:df:4a:8c:c1:37:37:cf:b4:34:fc:0c:de:48:6f:09:cf:8f:cd:a2:1a:67:be:a5:ee:1c:a2:70:08:86",
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
@@ -3994,7 +4000,7 @@
         "me.everything.badger.permission.BADGE_COUNT_READ",
         "me.everything.badger.permission.BADGE_COUNT_WRITE"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "v8.19.2-4",
         "versionCode": 171904,
@@ -4018,7 +4024,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:16.832Z"
+            "verifiedAt": "2026-10-26T10:05:27.747Z"
           }
         ]
       },
@@ -4066,7 +4072,7 @@
         "screenshots/moonlight-android/1.webp",
         "screenshots/moonlight-android/2.webp"
       ],
-      "downloadCount": 41757,
+      "downloadCount": 42358,
       "signingCertSha256": "d6:ce:3a:4d:f1:50:60:fe:48:8f:e5:24:41:a5:49:de:e4:ba:19:9b:36:e2:cb:1e:d9:08:5c:ca:8b:fa:1a:ca",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -4079,7 +4085,7 @@
         "com.android.providers.tv.permission.READ_EPG_DATA",
         "com.android.providers.tv.permission.WRITE_EPG_DATA"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "12.2",
         "versionCode": 315,
@@ -4104,7 +4110,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:13.701Z"
+            "verifiedAt": "2026-10-26T10:05:25.024Z"
           }
         ]
       },
@@ -4147,7 +4153,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/mpv.png",
       "screenshots": [],
-      "downloadCount": 20144,
+      "downloadCount": 20385,
       "signingCertSha256": "fa:e7:f9:d0:23:85:cc:24:d9:6e:88:43:66:03:e2:3e:a6:ae:c7:64:9a:d1:25:0a:bb:b4:83:7d:aa:b8:2f:ff",
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
@@ -4160,7 +4166,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "is.xyz.mpv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2026-09-17-release",
         "versionCode": 4048,
@@ -4182,7 +4188,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:18.466Z"
+            "verifiedAt": "2026-10-26T10:05:30.824Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -4197,7 +4203,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:18.466Z"
+            "verifiedAt": "2026-10-26T10:05:30.824Z"
           },
           {
             "abi": "x86_64",
@@ -4212,7 +4218,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:18.466Z"
+            "verifiedAt": "2026-10-26T10:05:30.824Z"
           }
         ]
       },
@@ -4267,7 +4273,7 @@
         "screenshots/myne/2.webp",
         "screenshots/myne/3.webp"
       ],
-      "downloadCount": 2701,
+      "downloadCount": 2719,
       "signingCertSha256": "5d:fe:06:da:0f:e3:b0:81:3f:3f:3d:c5:30:56:99:c2:db:b9:df:db:ab:13:49:da:7c:41:c5:9d:2f:cf:31:9c",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -4275,7 +4281,7 @@
         "android.permission.INTERNET",
         "com.starry.myne.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "5.1.0",
         "versionCode": 510,
@@ -4300,7 +4306,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:14.930Z"
+            "verifiedAt": "2026-10-26T10:05:26.539Z"
           }
         ]
       },
@@ -4349,7 +4355,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/nagram.png",
       "screenshots": [],
-      "downloadCount": 648,
+      "downloadCount": 1621,
       "signingCertSha256": "88:a8:af:e3:cc:be:e0:80:c1:3b:73:83:2a:ab:8c:98:a9:f1:9d:1c:65:f3:bc:fd:50:b8:d0:1c:0b:c8:0e:9e",
       "permissions": [
         "android.permission.ACCESS_BACKGROUND_LOCATION",
@@ -4422,7 +4428,7 @@
         "me.everything.badger.permission.BADGE_COUNT_WRITE",
         "xyz.nextalone.nagram.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "13.0.2",
         "versionCode": 1255,
@@ -4444,7 +4450,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:19.981Z"
+            "verifiedAt": "2026-10-26T10:05:32.325Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -4459,7 +4465,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:19.981Z"
+            "verifiedAt": "2026-10-26T10:05:32.325Z"
           }
         ]
       },
@@ -4512,7 +4518,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/nekogram.png",
       "screenshots": [],
-      "downloadCount": 1429,
+      "downloadCount": 1726,
       "signingCertSha256": "5c:e9:32:b9:70:19:9f:bd:a2:aa:e7:bf:21:e1:ad:9e:70:b0:80:9a:7b:1a:c9:4c:06:99:f5:d5:ad:a8:33:13",
       "permissions": [
         "android.permission.ACCESS_ADSERVICES_AD_ID",
@@ -4587,7 +4593,7 @@
         "me.everything.badger.permission.BADGE_COUNT_WRITE",
         "tw.nekomimi.nekogram.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "13.0.3",
         "versionCode": 71830,
@@ -4609,7 +4615,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:20.194Z"
+            "verifiedAt": "2026-10-26T10:05:32.945Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -4624,7 +4630,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:20.194Z"
+            "verifiedAt": "2026-10-26T10:05:32.945Z"
           }
         ]
       },
@@ -4682,7 +4688,7 @@
         "screenshots/neo-backup/2.webp",
         "screenshots/neo-backup/3.webp"
       ],
-      "downloadCount": 25522,
+      "downloadCount": 25611,
       "signingCertSha256": "c9:4f:10:24:3c:14:d5:7d:d6:9d:ed:e6:1c:23:4b:b5:e8:bb:07:04:d6:1b:45:da:fe:49:67:28:ac:32:f3:78",
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
@@ -4712,7 +4718,7 @@
         "android.provider.Telephony.SMS_RECEIVED",
         "com.machiav3lli.backup.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "8.3.18",
         "versionCode": 8331,
@@ -4737,7 +4743,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:18.771Z"
+            "verifiedAt": "2026-10-26T10:05:29.628Z"
           }
         ]
       },
@@ -4787,7 +4793,7 @@
         "screenshots/neo-store/2.webp",
         "screenshots/neo-store/3.webp"
       ],
-      "downloadCount": 6078,
+      "downloadCount": 6865,
       "signingCertSha256": "c5:86:01:46:13:8b:77:99:bb:9d:06:17:c3:98:c1:e5:24:15:50:f5:58:25:2a:3f:97:b2:a5:1f:15:26:3e:f7",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -4813,7 +4819,7 @@
         "com.machiav3lli.fdroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.3.3",
         "versionCode": 1304,
@@ -4838,7 +4844,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:21.555Z"
+            "verifiedAt": "2026-10-26T10:05:31.121Z"
           }
         ]
       },
@@ -4890,7 +4896,7 @@
         "screenshots/newpipe/2.webp",
         "screenshots/newpipe/3.webp"
       ],
-      "downloadCount": 209489,
+      "downloadCount": 210645,
       "signingCertSha256": "cb:84:06:9b:d6:81:16:ba:fa:e5:ee:4e:e5:b0:8a:56:7a:a6:d8:98:40:4e:7c:b1:2f:9e:75:6d:f5:cf:5c:ab",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -4906,7 +4912,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "org.schabi.newpipe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.29.1",
         "versionCode": 1015,
@@ -4931,7 +4937,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:20.751Z"
+            "verifiedAt": "2026-10-26T10:05:33.097Z"
           }
         ]
       },
@@ -4979,7 +4985,7 @@
         "screenshots/nextplayer/2.webp",
         "screenshots/nextplayer/3.webp"
       ],
-      "downloadCount": 10421,
+      "downloadCount": 10632,
       "signingCertSha256": "d3:7c:ab:f3:67:6c:f5:82:24:fb:24:2c:8d:d2:09:12:9d:05:88:03:79:29:5f:aa:a6:d0:fb:60:7b:ec:13:1b",
       "permissions": [
         "android.permission.ACCESS_LOCAL_NETWORK",
@@ -4995,7 +5001,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "dev.anilbeesetti.nextplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.19.0",
         "versionCode": 75,
@@ -5017,7 +5023,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:22.951Z"
+            "verifiedAt": "2026-10-26T10:05:35.054Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -5032,7 +5038,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:22.951Z"
+            "verifiedAt": "2026-10-26T10:05:35.054Z"
           },
           {
             "abi": "x86_64",
@@ -5047,7 +5053,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:22.951Z"
+            "verifiedAt": "2026-10-26T10:05:35.054Z"
           }
         ]
       },
@@ -5098,7 +5104,7 @@
         "screenshots/notallyx/2.webp",
         "screenshots/notallyx/3.webp"
       ],
-      "downloadCount": 2592,
+      "downloadCount": 2626,
       "signingCertSha256": "d2:14:b6:05:7b:79:f8:25:09:dd:cd:1e:35:19:65:b3:c6:ec:c4:b2:a3:89:6e:5c:df:88:5a:70:a0:b6:1d:fd",
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
@@ -5113,7 +5119,7 @@
         "android.permission.WAKE_LOCK",
         "com.philkes.notallyx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "7.11.3",
         "versionCode": 71134,
@@ -5138,7 +5144,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:21.412Z"
+            "verifiedAt": "2026-10-26T10:05:33.814Z"
           }
         ]
       },
@@ -5186,7 +5192,7 @@
         "screenshots/obtainium/2.webp",
         "screenshots/obtainium/3.webp"
       ],
-      "downloadCount": 40771,
+      "downloadCount": 60618,
       "signingCertSha256": "b3:53:60:1f:6a:1d:5f:d6:60:3a:e2:f5:0b:e8:0c:f3:01:36:7b:86:b6:ab:8b:1f:66:24:3d:a9:6c:d5:73:62",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -5208,7 +5214,7 @@
         "dev.imranr.obtainium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.7.3",
         "versionCode": 23613,
@@ -5232,7 +5238,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:27.357Z"
+            "verifiedAt": "2026-10-26T10:05:40.135Z"
           },
           {
             "abi": "arm64-v8a",
@@ -5247,7 +5253,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:27.357Z"
+            "verifiedAt": "2026-10-26T10:05:40.135Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -5262,7 +5268,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:27.357Z"
+            "verifiedAt": "2026-10-26T10:05:40.135Z"
           },
           {
             "abi": "x86_64",
@@ -5277,7 +5283,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:27.357Z"
+            "verifiedAt": "2026-10-26T10:05:40.135Z"
           }
         ]
       },
@@ -5327,7 +5333,7 @@
         "screenshots/opencalc/2.webp",
         "screenshots/opencalc/3.webp"
       ],
-      "downloadCount": 13576,
+      "downloadCount": 13613,
       "signingCertSha256": "21:05:0f:d6:d3:67:98:d9:75:8b:6c:a5:20:2a:eb:50:a5:bb:bd:c7:56:14:1d:94:e3:6f:6c:8c:16:8c:09:59",
       "permissions": [
         "android.permission.SYSTEM_ALERT_WINDOW",
@@ -5335,7 +5341,7 @@
         "android.permission.VIBRATE",
         "com.darkempire78.opencalculator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "3.2.1",
         "versionCode": 54,
@@ -5355,7 +5361,7 @@
             "minSdk": 21,
             "targetSdk": 35,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-25T19:02:22.878Z"
+            "verifiedAt": "2026-10-26T10:05:34.635Z"
           }
         ]
       },
@@ -5402,14 +5408,14 @@
         "screenshots/openscan/2.webp",
         "screenshots/openscan/3.webp"
       ],
-      "downloadCount": 80,
+      "downloadCount": 82,
       "signingCertSha256": "58:c2:f0:a3:98:50:57:8d:7c:17:c4:38:5f:d4:af:2b:12:91:2e:3a:2b:ef:f8:f3:c7:93:f2:d1:b0:ec:6c:79",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
         "android.permission.CAMERA",
         "com.ethereal.openscan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "3.1.0",
         "versionCode": 10,
@@ -5433,7 +5439,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:23.193Z"
+            "verifiedAt": "2026-10-26T10:05:36.666Z"
           }
         ]
       },
@@ -5478,7 +5484,7 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 530825,
+      "downloadCount": 534171,
       "signingCertSha256": "70:f2:6f:d7:1f:fd:15:18:8d:a1:90:95:c5:11:af:59:5b:dd:87:23:28:d5:a1:a4:9d:69:84:9a:f3:eb:0d:0a",
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
@@ -5522,7 +5528,7 @@
         "com.android.alarm.permission.SET_ALARM",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.12.2",
         "versionCode": 51,
@@ -5544,7 +5550,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:31.042Z"
+            "verifiedAt": "2026-10-26T10:05:44.905Z"
           }
         ]
       },
@@ -5595,7 +5601,7 @@
         "screenshots/outertune/2.webp",
         "screenshots/outertune/3.webp"
       ],
-      "downloadCount": 415863,
+      "downloadCount": 416152,
       "signingCertSha256": "ac:dd:87:1a:3d:e2:94:7d:32:53:ec:90:cd:c5:3d:1a:07:40:d6:03:8e:25:a6:48:5d:71:89:9e:ef:a9:6d:b8",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -5611,7 +5617,7 @@
         "android.permission.WAKE_LOCK",
         "com.dd3boh.outertune.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.10.1",
         "versionCode": 71,
@@ -5636,7 +5642,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:24.110Z"
+            "verifiedAt": "2026-10-26T10:05:36.932Z"
           }
         ]
       },
@@ -5687,7 +5693,7 @@
         "screenshots/photok/2.webp",
         "screenshots/photok/3.webp"
       ],
-      "downloadCount": 684,
+      "downloadCount": 711,
       "signingCertSha256": "b7:04:a2:d2:d5:8a:37:e9:5a:b2:34:96:c3:9a:81:91:35:b8:7a:03:b9:b3:f4:c1:4d:3f:ed:cc:e9:cc:2c:9a",
       "permissions": [
         "android.permission.CAMERA",
@@ -5702,7 +5708,7 @@
         "android.permission.WAKE_LOCK",
         "dev.leonlatsch.photok.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "3.7.0",
         "versionCode": 81,
@@ -5727,7 +5733,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:24.757Z"
+            "verifiedAt": "2026-10-26T10:05:38.611Z"
           }
         ]
       },
@@ -5779,7 +5785,7 @@
         "screenshots/pipepipe/2.webp",
         "screenshots/pipepipe/3.webp"
       ],
-      "downloadCount": 72741,
+      "downloadCount": 76203,
       "signingCertSha256": "de:c7:34:29:ce:25:63:27:5f:5e:d1:98:25:e4:46:52:b3:2b:36:3a:46:f3:8b:df:f9:ad:6d:cd:e4:84:2d:88",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -5795,7 +5801,7 @@
         "android.permission.WAKE_LOCK",
         "android.permission.WRITE_EXTERNAL_STORAGE"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "5.5.0",
         "versionCode": 111004,
@@ -5817,7 +5823,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:33.068Z"
+            "verifiedAt": "2026-10-26T10:05:47.072Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -5832,7 +5838,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:33.068Z"
+            "verifiedAt": "2026-10-26T10:05:47.072Z"
           },
           {
             "abi": "x86_64",
@@ -5847,7 +5853,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:33.068Z"
+            "verifiedAt": "2026-10-26T10:05:47.072Z"
           },
           {
             "abi": "x86",
@@ -5862,7 +5868,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-25T19:02:33.068Z"
+            "verifiedAt": "2026-10-26T10:05:47.072Z"
           }
         ]
       },
@@ -5913,7 +5919,7 @@
         "screenshots/pixiv-shaft/2.webp",
         "screenshots/pixiv-shaft/3.webp"
       ],
-      "downloadCount": 5799,
+      "downloadCount": 6032,
       "signingCertSha256": "c6:f9:57:47:17:4c:b6:79:2d:bd:c2:04:91:c4:bd:c3:ad:84:ea:f8:fb:7a:7f:c8:8b:b4:4c:0a:77:33:54:f0",
       "permissions": [
         "android.permission.ACCESS_ADSERVICES_AD_ID",
@@ -5937,7 +5943,7 @@
         "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
         "com.google.android.gms.permission.AD_ID"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "4.9.8",
         "versionCode": 43400,
@@ -5959,7 +5965,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:27.191Z"
+            "verifiedAt": "2026-10-26T10:05:40.588Z"
           }
         ]
       },
@@ -6005,7 +6011,7 @@
         "screenshots/readyou/2.webp",
         "screenshots/readyou/3.webp"
       ],
-      "downloadCount": 23624,
+      "downloadCount": 23703,
       "signingCertSha256": "72:1e:40:43:c4:39:bd:70:c9:0f:46:ae:16:6d:dc:23:3f:c7:5c:12:35:bf:8c:b2:7b:99:a4:df:09:cc:3b:99",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -6018,7 +6024,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "me.ash.reader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.16.2",
         "versionCode": 47,
@@ -6043,7 +6049,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:28.490Z"
+            "verifiedAt": "2026-10-26T10:05:41.324Z"
           }
         ]
       },
@@ -6094,7 +6100,7 @@
         "screenshots/rethinkdns/2.webp",
         "screenshots/rethinkdns/3.webp"
       ],
-      "downloadCount": 4447,
+      "downloadCount": 4517,
       "signingCertSha256": "80:e1:5f:1e:d5:a1:ec:51:2c:51:e1:4a:a2:9b:18:c7:be:fe:13:c1:ac:b6:cf:ec:4b:87:bd:31:d1:71:fe:7f",
       "permissions": [
         "android.permission.ACCESS_BACKGROUND_LOCATION",
@@ -6119,7 +6125,7 @@
         "android.permission.WAKE_LOCK",
         "com.celzero.bravedns.izzy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "v0.5.8",
         "versionCode": 90000070,
@@ -6143,7 +6149,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:37.438Z"
+            "verifiedAt": "2026-10-26T10:05:51.980Z"
           },
           {
             "abi": "arm64-v8a",
@@ -6158,7 +6164,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:37.438Z"
+            "verifiedAt": "2026-10-26T10:05:51.980Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -6173,7 +6179,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:37.438Z"
+            "verifiedAt": "2026-10-26T10:05:51.980Z"
           },
           {
             "abi": "x86_64",
@@ -6188,7 +6194,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:37.438Z"
+            "verifiedAt": "2026-10-26T10:05:51.980Z"
           },
           {
             "abi": "x86",
@@ -6203,7 +6209,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-25T19:02:37.438Z"
+            "verifiedAt": "2026-10-26T10:05:51.980Z"
           }
         ]
       },
@@ -6254,7 +6260,7 @@
       "addedAt": "2026-10-07",
       "icon": null,
       "screenshots": [],
-      "downloadCount": 4484302,
+      "downloadCount": 4492658,
       "signingCertSha256": "b6:36:2c:6e:a7:88:8e:fd:15:c0:80:0f:48:07:86:ad:0f:5b:13:3b:4f:84:e1:2d:46:af:ba:5f:9e:ac:12:23",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -6276,7 +6282,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "app.revanced.manager.flutter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.6.0",
         "versionCode": 200600099,
@@ -6300,7 +6306,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:31.007Z"
+            "verifiedAt": "2026-10-26T10:05:43.714Z"
           }
         ]
       },
@@ -6347,7 +6353,7 @@
       "addedAt": "2026-10-08",
       "icon": "icons/rtranslator.png",
       "screenshots": [],
-      "downloadCount": 26822,
+      "downloadCount": 27010,
       "signingCertSha256": "7c:6f:90:12:c1:5f:f6:3a:8f:7f:11:5d:30:a8:5d:02:31:a2:3e:9b:bd:17:b0:17:bb:d6:42:65:33:0a:60:0e",
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
@@ -6368,7 +6374,7 @@
         "android.permission.WAKE_LOCK",
         "nie.translator.rtranslator.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.1.5",
         "versionCode": 25,
@@ -6393,7 +6399,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:33.749Z"
+            "verifiedAt": "2026-10-26T10:05:46.275Z"
           }
         ]
       },
@@ -6451,7 +6457,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/sd-maid-se.png",
       "screenshots": [],
-      "downloadCount": 36868,
+      "downloadCount": 38933,
       "signingCertSha256": "f4:90:03:2b:e5:38:3f:55:90:04:95:fa:7f:c2:07:ec:e2:e7:86:a5:c2:c6:cc:52:02:7b:99:54:8a:9c:e9:38",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -6477,7 +6483,7 @@
         "eu.darken.sdmse.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.2.2-rc0",
         "versionCode": 20202000,
@@ -6502,7 +6508,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:33.480Z"
+            "verifiedAt": "2026-10-26T10:05:47.215Z"
           }
         ]
       },
@@ -6549,7 +6555,7 @@
         "screenshots/seal/2.webp",
         "screenshots/seal/3.webp"
       ],
-      "downloadCount": 2974875,
+      "downloadCount": 2977680,
       "signingCertSha256": "44:93:58:2a:41:48:df:38:fc:26:90:73:c8:78:7c:31:c4:31:ed:5b:6d:62:71:08:92:a0:40:6f:f5:0c:4d:67",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -6564,7 +6570,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "com.junkfood.seal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.13.1",
         "versionCode": 11314,
@@ -6589,7 +6595,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:43.326Z"
+            "verifiedAt": "2026-10-26T10:06:00.749Z"
           },
           {
             "abi": "arm64-v8a",
@@ -6604,7 +6610,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:43.326Z"
+            "verifiedAt": "2026-10-26T10:06:00.749Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -6619,7 +6625,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:43.326Z"
+            "verifiedAt": "2026-10-26T10:06:00.749Z"
           },
           {
             "abi": "x86_64",
@@ -6634,7 +6640,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:43.326Z"
+            "verifiedAt": "2026-10-26T10:06:00.749Z"
           },
           {
             "abi": "x86",
@@ -6649,7 +6655,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-25T19:02:43.326Z"
+            "verifiedAt": "2026-10-26T10:06:00.749Z"
           }
         ]
       },
@@ -6697,7 +6703,7 @@
       "addedAt": "2026-10-08",
       "icon": "icons/secure-camera.png",
       "screenshots": [],
-      "downloadCount": 10999,
+      "downloadCount": 11048,
       "signingCertSha256": "64:36:b1:55:b9:17:c2:f9:a9:ed:1d:15:c4:99:3a:59:68:ff:ab:c9:49:47:c1:3f:2a:ee:e1:4b:7b:27:ed:59",
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
@@ -6710,7 +6716,7 @@
         "android.permission.WAKE_LOCK",
         "app.grapheneos.camera.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "93",
         "versionCode": 93,
@@ -6735,7 +6741,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:34.701Z"
+            "verifiedAt": "2026-10-26T10:05:48.725Z"
           }
         ]
       },
@@ -6782,14 +6788,14 @@
       "addedAt": "2026-10-07",
       "icon": "icons/shattered-pixel-dungeon.png",
       "screenshots": [],
-      "downloadCount": 5684,
+      "downloadCount": 5826,
       "signingCertSha256": "d4:5f:76:0b:89:60:8b:4b:25:3a:3b:16:0d:c2:70:7f:1f:f4:e8:dd:8c:a4:d2:e8:e1:b8:1c:2c:72:d8:17:53",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
         "android.permission.INTERNET",
         "android.permission.VIBRATE"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "4.0.2",
         "versionCode": 922,
@@ -6814,7 +6820,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:36.889Z"
+            "verifiedAt": "2026-10-26T10:05:51.310Z"
           }
         ]
       },
@@ -6862,7 +6868,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/shizuku.png",
       "screenshots": [],
-      "downloadCount": 3357895,
+      "downloadCount": 3365600,
       "signingCertSha256": "26:8b:55:90:e8:68:fb:08:ba:e7:e0:ac:41:35:64:cd:1f:f8:8f:5c:cf:f7:4a:f9:db:d0:dc:91:8e:30:db:30",
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
@@ -6872,7 +6878,7 @@
         "android.permission.WRITE_SECURE_SETTINGS",
         "moe.shizuku.manager.permission.MANAGER"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "13.6.0.r1086.2650830c",
         "versionCode": 1086,
@@ -6897,7 +6903,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:37.120Z"
+            "verifiedAt": "2026-10-26T10:05:50.712Z"
           }
         ]
       },
@@ -6944,12 +6950,12 @@
       "addedAt": "2026-10-07",
       "icon": "icons/sgtpuzzles.png",
       "screenshots": [],
-      "downloadCount": 3881,
+      "downloadCount": 3887,
       "signingCertSha256": "f7:15:81:ec:7d:70:41:53:ba:c3:4a:b1:48:d9:25:68:3d:b9:20:71:22:a2:93:3b:28:c0:4c:a2:e4:f2:84:53",
       "permissions": [
         "name.boyle.chris.sgtpuzzles.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2025-09-12-1919-23762278",
         "versionCode": 149,
@@ -6974,7 +6980,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:35.756Z"
+            "verifiedAt": "2026-10-26T10:05:49.260Z"
           }
         ]
       },
@@ -7026,7 +7032,7 @@
         "screenshots/simplex/2.webp",
         "screenshots/simplex/3.webp"
       ],
-      "downloadCount": 22603,
+      "downloadCount": 23113,
       "signingCertSha256": "3c:52:c4:fd:3c:ad:1c:07:c9:b0:0a:70:80:e3:58:fa:b9:fe:fc:b8:af:5a:ec:14:77:65:f1:6d:0f:21:ad:85",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -7052,7 +7058,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "chat.simplex.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.979Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "7.0.3",
         "versionCode": 381,
@@ -7074,7 +7080,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:42.969Z"
+            "verifiedAt": "2026-10-26T10:05:57.989Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -7089,7 +7095,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:42.969Z"
+            "verifiedAt": "2026-10-26T10:05:57.989Z"
           }
         ]
       },
@@ -7138,7 +7144,7 @@
         "screenshots/simpmusic/2.webp",
         "screenshots/simpmusic/3.webp"
       ],
-      "downloadCount": 1962,
+      "downloadCount": 4516,
       "signingCertSha256": "76:c5:3b:d8:13:ae:8f:1c:e2:77:8f:78:14:b5:15:78:57:19:bf:9a:82:c6:be:e0:3b:8b:2d:fd:70:60:55:a1",
       "permissions": [
         "android.permission.ACCESS_LOCAL_NETWORK",
@@ -7157,7 +7163,7 @@
         "androidx.car.app.MEDIA_TEMPLATES",
         "com.maxrave.simpmusic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.4.0",
         "versionCode": 61,
@@ -7181,7 +7187,7 @@
               "armeabi-v7a",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:41.928Z"
+            "verifiedAt": "2026-10-26T10:05:57.402Z"
           },
           {
             "abi": "arm64-v8a",
@@ -7196,7 +7202,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:41.928Z"
+            "verifiedAt": "2026-10-26T10:05:57.402Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -7211,7 +7217,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:41.928Z"
+            "verifiedAt": "2026-10-26T10:05:57.402Z"
           },
           {
             "abi": "x86_64",
@@ -7226,7 +7232,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:41.928Z"
+            "verifiedAt": "2026-10-26T10:05:57.402Z"
           }
         ]
       },
@@ -7272,7 +7278,7 @@
         "screenshots/super-productivity/2.webp",
         "screenshots/super-productivity/3.webp"
       ],
-      "downloadCount": 403,
+      "downloadCount": 1140,
       "signingCertSha256": "16:3c:87:6b:91:7d:76:20:a3:92:92:cc:9d:7c:3c:df:0c:3c:65:93:24:ab:45:9d:5d:af:d9:b9:97:11:17:aa",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -7287,7 +7293,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "com.superproductivity.superproductivity.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "19.3.1",
         "versionCode": 1903019000,
@@ -7307,7 +7313,7 @@
             "minSdk": 24,
             "targetSdk": 36,
             "nativeAbis": [],
-            "verifiedAt": "2026-10-25T19:02:40.539Z"
+            "verifiedAt": "2026-10-26T10:05:55.267Z"
           }
         ]
       },
@@ -7358,7 +7364,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/syncthing-fork.png",
       "screenshots": [],
-      "downloadCount": 47451,
+      "downloadCount": 52615,
       "signingCertSha256": "d3:74:b8:de:50:57:01:31:43:c7:d1:51:5a:01:55:98:c2:df:40:3b:e8:16:0c:ae:01:a5:8c:22:7e:6e:86:aa",
       "permissions": [
         "android.permission.ACCESS_BACKGROUND_LOCATION",
@@ -7382,7 +7388,7 @@
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "com.github.catfriend1.syncthingfork.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.1.7.0",
         "versionCode": 2010700,
@@ -7404,7 +7410,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:43.747Z"
+            "verifiedAt": "2026-10-26T10:05:58.378Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -7419,7 +7425,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:43.747Z"
+            "verifiedAt": "2026-10-26T10:05:58.378Z"
           }
         ]
       },
@@ -7472,7 +7478,7 @@
         "screenshots/termux/2.webp",
         "screenshots/termux/3.webp"
       ],
-      "downloadCount": 2537767,
+      "downloadCount": 2541795,
       "signingCertSha256": "b6:da:01:48:0e:ef:d5:fb:f2:cd:37:71:b8:d1:02:1e:c7:91:30:4b:dd:6c:4b:f4:1d:3f:aa:ba:d4:8e:e5:e1",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -7493,7 +7499,7 @@
         "android.permission.WRITE_SECURE_SETTINGS",
         "com.android.alarm.permission.SET_ALARM"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.119.0-beta.3",
         "versionCode": 1022,
@@ -7518,7 +7524,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:45.228Z"
+            "verifiedAt": "2026-10-26T10:06:00.758Z"
           },
           {
             "abi": "arm64-v8a",
@@ -7533,7 +7539,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:45.228Z"
+            "verifiedAt": "2026-10-26T10:06:00.758Z"
           }
         ]
       },
@@ -7578,7 +7584,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/trail-sense.png",
       "screenshots": [],
-      "downloadCount": 19173,
+      "downloadCount": 19364,
       "signingCertSha256": "d3:b7:cb:bc:63:3f:7c:1b:e2:ca:a2:f7:5f:b0:72:ee:9b:40:fd:10:fa:af:96:42:69:2b:27:c4:af:5e:c4:a7",
       "permissions": [
         "android.permission.ACCESS_BACKGROUND_LOCATION",
@@ -7599,7 +7605,7 @@
         "android.permission.WAKE_LOCK",
         "com.kylecorry.trail_sense.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "8.2.0",
         "versionCode": 148,
@@ -7624,7 +7630,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:45.007Z"
+            "verifiedAt": "2026-10-26T10:06:00.822Z"
           }
         ]
       },
@@ -7672,7 +7678,7 @@
         "screenshots/transportr/2.webp",
         "screenshots/transportr/3.webp"
       ],
-      "downloadCount": 3419,
+      "downloadCount": 3421,
       "signingCertSha256": "39:bd:8e:0f:54:c8:ab:87:ac:21:c0:7a:15:b3:0f:c9:5c:df:f1:d2:5d:75:df:02:9d:52:3b:18:df:86:4b:79",
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
@@ -7682,7 +7688,7 @@
         "android.permission.INTERNET",
         "com.android.launcher.permission.INSTALL_SHORTCUT"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "2.2.3",
         "versionCode": 127,
@@ -7707,7 +7713,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:45.320Z"
+            "verifiedAt": "2026-10-26T10:06:00.828Z"
           }
         ]
       },
@@ -7756,7 +7762,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/unciv.png",
       "screenshots": [],
-      "downloadCount": 576,
+      "downloadCount": 242,
       "signingCertSha256": "7d:6e:6b:ea:76:81:61:c3:d8:da:8b:3f:b0:0d:ef:53:77:ef:fe:65:dc:72:68:48:2f:8f:77:9b:b4:fc:6e:2e",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -7767,23 +7773,23 @@
         "android.permission.WAKE_LOCK",
         "com.unciv.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
-        "versionName": "4.22.13-patch1",
-        "versionCode": 1276,
-        "tag": "4.22.13-patch1",
-        "publishedAt": "2026-10-24T18:29:31Z",
-        "releaseUrl": "https://github.com/yairm210/Unciv/releases/tag/4.22.13-patch1",
-        "changelog": "## 4.22.13-patch1",
+        "versionName": "4.22.14-patch1",
+        "versionCode": 1278,
+        "tag": "4.22.14-patch1",
+        "publishedAt": "2026-10-26T04:10:43Z",
+        "releaseUrl": "https://github.com/yairm210/Unciv/releases/tag/4.22.14-patch1",
+        "changelog": "## 4.22.14-patch1",
         "assets": [
           {
             "abi": "universal",
-            "url": "https://github.com/yairm210/Unciv/releases/download/4.22.13-patch1/Unciv-signed.apk",
-            "sha256": "7d294761cd97f0e4c898515f24a888e456edf9e106b83419f77eb90a9cee3980",
-            "size": 27552033,
+            "url": "https://github.com/yairm210/Unciv/releases/download/4.22.14-patch1/Unciv-signed.apk",
+            "sha256": "cdc2762f17a4ccbb0d950b018224baab4961483507e97c74dd4c9903f7fd87e4",
+            "size": 27556129,
             "signingCertSha256": "7d:6e:6b:ea:76:81:61:c3:d8:da:8b:3f:b0:0d:ef:53:77:ef:fe:65:dc:72:68:48:2f:8f:77:9b:b4:fc:6e:2e",
-            "versionCode": 1276,
-            "versionName": "4.22.13-patch1",
+            "versionCode": 1278,
+            "versionName": "4.22.14-patch1",
             "minSdk": 21,
             "targetSdk": 36,
             "nativeAbis": [
@@ -7792,14 +7798,14 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:45.969Z"
+            "verifiedAt": "2026-10-26T10:06:03.294Z"
           }
         ]
       },
       "artifact": {
-        "url": "https://github.com/yairm210/Unciv/releases/download/4.22.13-patch1/Unciv-signed.apk",
-        "sha256": "7d294761cd97f0e4c898515f24a888e456edf9e106b83419f77eb90a9cee3980",
-        "size": 27552033,
+        "url": "https://github.com/yairm210/Unciv/releases/download/4.22.14-patch1/Unciv-signed.apk",
+        "sha256": "cdc2762f17a4ccbb0d950b018224baab4961483507e97c74dd4c9903f7fd87e4",
+        "size": 27556129,
         "abi": "universal"
       }
     },
@@ -7839,7 +7845,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/vcmi.png",
       "screenshots": [],
-      "downloadCount": 5982,
+      "downloadCount": 6028,
       "signingCertSha256": "26:20:79:25:96:2c:cd:73:f5:3b:e4:c4:99:9c:f2:53:32:85:31:41:9f:25:86:ae:25:10:4a:31:89:86:70:44",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -7847,7 +7853,7 @@
         "android.permission.VIBRATE",
         "is.xyz.vcmi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.7.5",
         "versionCode": 1770,
@@ -7869,7 +7875,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:47.703Z"
+            "verifiedAt": "2026-10-26T10:06:05.415Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -7884,7 +7890,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:47.703Z"
+            "verifiedAt": "2026-10-26T10:06:05.415Z"
           }
         ]
       },
@@ -7932,7 +7938,7 @@
       "addedAt": "2026-10-07",
       "icon": "icons/vela.png",
       "screenshots": [],
-      "downloadCount": 12231,
+      "downloadCount": 12707,
       "signingCertSha256": "29:93:8b:48:58:06:3e:42:e6:77:ff:95:c9:01:cd:48:24:8a:7f:03:2a:3a:e8:5f:9b:9e:56:17:56:8b:0d:36",
       "permissions": [
         "android.car.permission.CAR_INFO",
@@ -7954,7 +7960,7 @@
         "androidx.car.app.NAVIGATION_TEMPLATES",
         "app.vela.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "0.5.2621",
         "versionCode": 46210,
@@ -7979,7 +7985,7 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:52.135Z"
+            "verifiedAt": "2026-10-26T10:06:07.863Z"
           }
         ]
       },
@@ -8029,7 +8035,7 @@
         "screenshots/voice/2.webp",
         "screenshots/voice/3.webp"
       ],
-      "downloadCount": 1745,
+      "downloadCount": 1205,
       "signingCertSha256": "11:a4:ca:ee:0b:a3:eb:5a:35:2d:11:25:ab:d3:29:25:20:9e:89:60:15:a5:d9:ca:0f:d9:f8:2d:ae:20:4f:aa",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -8043,23 +8049,23 @@
         "android.permission.WAKE_LOCK",
         "de.ph1b.audiobook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
-        "versionName": "26.10.5",
-        "versionCode": 5410005,
-        "tag": "26.10.5-5410005",
-        "publishedAt": "2026-10-24T12:12:32Z",
-        "releaseUrl": "https://github.com/PaulWoitaschek/Voice/releases/tag/26.10.5-5410005",
-        "changelog": "## What's New\n\n### A calmer player 🌊\n\n<img src=\"https://github.com/user-attachments/assets/2abeda4f-f1bb-45e8-b98d-766e9f0a57e5\" alt=\"The calmer player\" width=\"250\">\n\n- The seek bar wave is half as high and a third as fast. It now flows away from your position, like the wave in the media notification and on the Continue listening card.\n- The elapsed and remaining time and the sleep timer no longer roll every second. They change in place.\n- Long titles, authors and chapter names scroll once, then rest at their start instead of scrolling forever.\n- When you open the player from the Continue listening card, its play button now flies in with it, like it already did on the way back.\n\n### More ✨\n\n- A card in the library invites you to a short survey until November 13. \"No thanks\" hides it for good. The link tells the survey your app version, which app installed Voice and how many days you've had it.\n\n### Fixes 🐞\n\n- On Nova Launcher, the 4×2 Now playing widget no longer shrinks to a round strip, and the Shelf widget no longer cuts off its covers.\n- The Sardinian translation used Italian words in places and left out accents. A native speaker corrected it.\n\n## Support Voice ❤️\n\nVoice has no ads, no investors and no company behind it. It's made by one developer and kept going by its listeners. Monthly support is what lets me plan the next release, not just the next fix. Ko-fi needs no account:\n\n<a href=\"https://ko-fi.com/paul_voice\"><img alt=\"Support on Ko-fi\" height=\"40\" src=\"https://storage.ko-fi.com/cdn/brandasset/v2/support_me_on_kofi_dark.png\" /></a>\n\nOr [sponsor monthly on GitHub](https://github.com/sponsors/PaulWoitaschek). A one-time tip helps too.",
+        "versionName": "26.10.6",
+        "versionCode": 5410006,
+        "tag": "26.10.6-5410006",
+        "publishedAt": "2026-10-25T20:23:41Z",
+        "releaseUrl": "https://github.com/PaulWoitaschek/Voice/releases/tag/26.10.6-5410006",
+        "changelog": "## What's New\n\n### At home on tablets 📱\n\n<img src=\"https://github.com/user-attachments/assets/e283cb92-07dd-4c63-8a3a-435d3f322bb3\" alt=\"The library on a tablet\" width=\"400\"> <img src=\"https://github.com/user-attachments/assets/93a65711-e961-4c9f-bb55-8e7bc869cbe3\" alt=\"The player on a tablet\" width=\"400\">\n\n- The library list, search, bookmarks and history no longer stretch across a wide screen. They sit in a centered column, like the settings.\n- The library grid still fills the screen and fits as many columns as there's room for, in split screen too.\n- In landscape, the player keeps the cover and its controls together, and only makes the controls smaller when they don't fit.\n\n### More ✨\n\n- A new \"Cover colors\" switch in the Appearance settings. Turn it off to keep your color scheme in the player, the bookmarks, the Continue listening card and the widgets, instead of colors from the book's cover.\n- In books with a single chapter, the player shows how far you are as a percentage under the seek bar, instead of a second progress bar above it. The remaining time at your playback speed isn't shown for these books anymore.\n- The survey card is gone. Thanks to everyone who answered!\n\n### Fixes 🐞\n\n- In books whose chapters have no names, the chapter list showed only numbers and times, and the current chapter's time was hard to read. They now read \"Chapter 2\", and the time is readable.\n- With animations turned off in Android's settings, pressing a skip button made it jump wider and push the other buttons aside, and the skip burst and the play button flashed for a moment. They now stay still. Thanks to @steliyan for fixing it!\n- Voice 26.10.5 could sometimes freeze and stop responding.\n- A few Sardinian words and accents were still off. Thanks to @asereze, a native speaker, for correcting them!\n\n## Support Voice ❤️\n\nVoice has no ads, no investors and no company behind it. It's made by one developer and kept going by its listeners. Monthly support is what lets me plan the ne",
         "assets": [
           {
             "abi": "universal",
-            "url": "https://github.com/PaulWoitaschek/Voice/releases/download/26.10.5-5410005/app-free-release.apk",
-            "sha256": "5f03583d140f893459bcd9b51d4b7671836ca34d2bd0308ec58c2fc8a6031acd",
-            "size": 10419733,
+            "url": "https://github.com/PaulWoitaschek/Voice/releases/download/26.10.6-5410006/app-free-release.apk",
+            "sha256": "37fedd0aaa31e054d0b4653d186008d295ed0fc262a72e1bce4ef2bda6153c62",
+            "size": 10442557,
             "signingCertSha256": "11:a4:ca:ee:0b:a3:eb:5a:35:2d:11:25:ab:d3:29:25:20:9e:89:60:15:a5:d9:ca:0f:d9:f8:2d:ae:20:4f:aa",
-            "versionCode": 5410005,
-            "versionName": "26.10.5",
+            "versionCode": 5410006,
+            "versionName": "26.10.6",
             "minSdk": 28,
             "targetSdk": 36,
             "nativeAbis": [
@@ -8068,14 +8074,14 @@
               "x86",
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:46.667Z"
+            "verifiedAt": "2026-10-26T10:06:02.618Z"
           }
         ]
       },
       "artifact": {
-        "url": "https://github.com/PaulWoitaschek/Voice/releases/download/26.10.5-5410005/app-free-release.apk",
-        "sha256": "5f03583d140f893459bcd9b51d4b7671836ca34d2bd0308ec58c2fc8a6031acd",
-        "size": 10419733,
+        "url": "https://github.com/PaulWoitaschek/Voice/releases/download/26.10.6-5410006/app-free-release.apk",
+        "sha256": "37fedd0aaa31e054d0b4653d186008d295ed0fc262a72e1bce4ef2bda6153c62",
+        "size": 10442557,
         "abi": "universal"
       }
     },
@@ -8117,7 +8123,7 @@
         "screenshots/ytdlnis/2.webp",
         "screenshots/ytdlnis/3.webp"
       ],
-      "downloadCount": 3754,
+      "downloadCount": 3916,
       "signingCertSha256": "26:36:45:cb:52:72:eb:29:07:59:fe:1f:59:14:9a:e2:4d:f6:ce:17:1e:9f:66:66:ee:ad:98:1d:3f:c6:4c:95",
       "permissions": [
         "android.permission.ACCESS_NETWORK_STATE",
@@ -8143,7 +8149,7 @@
         "com.deniscerri.ytdl.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
         "moe.shizuku.manager.permission.API_V23"
       ],
-      "resolvedAt": "2026-10-25T19:03:43.980Z",
+      "resolvedAt": "2026-10-26T10:07:29.168Z",
       "release": {
         "versionName": "1.9.1.1",
         "versionCode": 109010104,
@@ -8165,7 +8171,7 @@
             "nativeAbis": [
               "arm64-v8a"
             ],
-            "verifiedAt": "2026-10-25T19:02:51.885Z"
+            "verifiedAt": "2026-10-26T10:06:13.018Z"
           },
           {
             "abi": "armeabi-v7a",
@@ -8180,7 +8186,7 @@
             "nativeAbis": [
               "armeabi-v7a"
             ],
-            "verifiedAt": "2026-10-25T19:02:51.885Z"
+            "verifiedAt": "2026-10-26T10:06:13.018Z"
           },
           {
             "abi": "x86_64",
@@ -8195,7 +8201,7 @@
             "nativeAbis": [
               "x86_64"
             ],
-            "verifiedAt": "2026-10-25T19:02:51.885Z"
+            "verifiedAt": "2026-10-26T10:06:13.018Z"
           },
           {
             "abi": "x86",
@@ -8210,7 +8216,7 @@
             "nativeAbis": [
               "x86"
             ],
-            "verifiedAt": "2026-10-25T19:02:51.885Z"
+            "verifiedAt": "2026-10-26T10:06:13.018Z"
           }
         ]
       },
